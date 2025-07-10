@@ -1,0 +1,20 @@
+---
+sidebar: sidebar
+permalink: protect-data/restore-data.html
+keywords: 
+summary: 
+---
+= Restore data on an ONTAP AFX storage system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+xxx
+
+Model after ASA r2 topic:
+
+https://docs.netapp.com/us-en/asa-r2/data-protection/restore-data.html[Restore data on ASA r2 storage systems^]
+
+Link to unified ONTAP topic.
+
+*---------- PLACEHOLDER MUST UPDATE ----------*

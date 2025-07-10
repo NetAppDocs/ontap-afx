@@ -1,0 +1,18 @@
+---
+sidebar: sidebar
+permalink: rest/learn-rest-api.html
+keywords: 
+summary: 
+---
+
+= Learn about the ONTAP AFX REST API
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+The ONTAP AFX REST API is based on the REST API provided with the unified ONTAP personality, with a number of changes adapted to the unique characteristics and capabilities of the AFX personality.
+
+*=> DP: This page will describe the AFX REST API and differences with the unified ONTAP. It will be modeled on the content I wrote for ASA r2. See emails June 23 from Sunil and Nathan.*

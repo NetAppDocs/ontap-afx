@@ -1,0 +1,28 @@
+---
+sidebar: sidebar
+permalink: administer/node-reboot-take-over-give-back.html
+keywords: reboot, take over, give back, nodes, asa r2, asa a1k, asa a90, asa a70, asa a50, asa a30, asa a20
+summary: "You might need to reboot a node for maintenance, troubleshooting, software updates or other administrative reasons."
+---
+= Reboot an ONTAP AFX node
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You might need to reboot a node for maintenance, troubleshooting, software updates or other administrative reasons.  When a node is rebooted, its HA partner automatically executes a takeover. The partner node then performs an automatic giveback after the rebooted node comes back online.
+
+*EAP use case #12*
+
+*---------- PLACEHOLDER MUST UPDATE ----------*
+
+.Steps
+
+. In System Manager, select *Cluster > Overview*.
+. Select image:icon_kabob.gif[three vertical blue dots] next to the node you want to reboot; then select *Reboot*.
+. Enter the reason you are rebooting the node; then select *Reboot*.
++
+The reason you enter for the reboot is recorded in the system audit log.
+
+.What's next?
+
+While the node is being rebooted, its HA partner performs a takeover so that there is no interruption in data service.  When the reboot is complete, the HA partner performs a giveback.

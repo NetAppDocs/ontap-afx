@@ -1,0 +1,38 @@
+---
+sidebar: sidebar
+permalink: administer/monitor-cluster-performance.html
+keywords: 
+summary: 
+---
+= Monitor ONTAP AFX cluster performance
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can get a high-level view of the performance of your ONTAP AFX cluster, including storage usage and general performance.
+
+== Storage capacity
+
+The System Manager dashboard includes a high-level display of the storage utilization for the cluster.
+
+.Steps
+
+. In System Manager, locate *Capacity* in the dashboard. Note the physical storage available and used.
+
+. Select *History* to access Active IQ and view the historical data.
+
+== Cluster performance
+
+System Manager provides a detailed overview of the overall ONTAP AFX cluster performance.
+
+*=> DP: Must create a volume to complete this topic.*
+
+.Steps
+
+. In System Manager, select *Analysis* and then *Performance*.
+
+. Review the cluster performance summary at top.
+
+. Under the *Top actors* tab, XXX
+
+. Under the *Volume performance* tab, XXX

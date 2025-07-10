@@ -1,0 +1,29 @@
+---
+sidebar: sidebar
+permalink: administer/additional-ontap-cluster.html
+keywords: 
+summary: 
+---
+= Additional ONTAP AFX cluster features and configuration
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Because AFX is an ONTAP personality closely related to unified ONTAP, it includes most of the same capabilities. But given the AI/ML workloads that ONTAP AFX is designed for, all the ONTAP features may not always be needed for AFX customers. And so for clarity and convenience, these supplemental cluster administrative options are collected and described in a single location.
+
+[TIP]
+You should also review the link:../administer/advanced-cluster.html[Advanced cluster administration] for optional tasks or procedures unique to ONTAP AFX.
+
+== Security
+
+xxx
+
+=== Multifactor authentication
+// SM doc link: yes
+
+xxx
+
+=== Data at rest encryption
+// SM doc link: yes
+
+xxx

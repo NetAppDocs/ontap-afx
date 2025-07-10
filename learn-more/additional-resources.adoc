@@ -1,0 +1,24 @@
+---
+sidebar: sidebar
+permalink: learn-more/additional-resources.html
+keywords: 
+summary: 
+---
+= Additional resources for ONTAP AFX
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+There are additional resources you can access to get help with AFX and find more information about ONTAP as well as related NetApp products and services.
+
+== ONTAP documentation
+
+* https://docs.netapp.com/us-en/ontap/[Unified ONTAP^]
+* https://docs.netapp.com/us-en/asa-r2/[ASA r2^]
+* https://docs.netapp.com/us-en/ontap-automation/[ONTAP automation^]
+* https://docs.netapp.com/us-en/ontap-family[ONTAP Family^]
+
+== NetApp Support
+
+* https://mysupport.netapp.com/[NetApp Support Site^]
+* https://kb.netapp.com/[NetApp Knowledge Base]

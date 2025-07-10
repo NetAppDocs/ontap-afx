@@ -1,0 +1,29 @@
+---
+sidebar: sidebar
+permalink: administer/view-insights.html
+keywords: 
+summary: 
+---
+= Use Insights to optimize ONTAP AFX cluster performance and security
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+View _Insights_ in the ONTAP System Manager to identify suggested configuration updates which align with best practices. These are changes you can implement to optimize the security and performance of your ONTAP AFX cluster.
+
+For example, the Autonomous Ransomware Protection (ARP) feature is available with ONTAP and provides anti-ransomware protection. It uses workload analysis of the NAS environments to detect abnormal activity that might indicate an attack. Insights will notify you if ARP is not configured for one or more of the cluster SVMs.
+
+*=> DP: Consider adding a screen capture here to align with the equivalent ASA r2 topic.*
+
+.About this task
+
+Each of the insights is presented as a separate card or tile on the page which you can choose to fix or dismiss. You can also select the associated documentation link to learn more about the specific technology.
+
+.Steps
+
+. In System Manager, select *Analysis* and then *Insights*.
+. Review the available recommendations.
+
+.What's next
+
+Perform any recommended actions to implement AFX security and performance best practices.

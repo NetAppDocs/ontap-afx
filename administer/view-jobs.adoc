@@ -1,0 +1,18 @@
+---
+sidebar: sidebar
+permalink: administer/view-jobs.html
+keywords: 
+summary: 
+---
+= View ONTAP AFX jobs
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+ONTAP AFX includes an internal framework for running asynchronlus jobs in the background based on your configuration. These jobs can be long-running AFX components or short-term processes executed in response to an administrative or REST API request.
+
+.Steps
+
+. In System Manager, select *Events & Jobs* and then *Jobs* in the navigation pane.
+
+. You can customize the job display as well as search and download the job information.

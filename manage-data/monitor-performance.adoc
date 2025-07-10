@@ -1,0 +1,18 @@
+---
+sidebar: sidebar
+permalink: manage-data/monitor-performance.html
+keywords: 
+summary: 
+---
+= Monitor ONTAP AFX SVM performance
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+xxx
+
+*---------- PLACEHOLDER MUST UPDATE ----------*
+
+*=> DP: This will focus on volume performance but can include other topics as I've done with the cluster performance topic.*
+
+link:../administer/monitor-cluster-performance.html[Monitor ONTAP AFX cluster performance]

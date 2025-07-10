@@ -1,0 +1,39 @@
+---
+sidebar: sidebar
+permalink: rest/api-reference.html
+keywords: 
+summary: 
+---
+
+= API reference for the ONTAP AFX REST API
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+The ONTAP AFX REST API reference contains details about all the API calls. This reference is helpful when developing automation applications.
+
+*=> DP: Is the string *Platform Specifics still in the Swagger doc for ONTAP 9.17.1? Can users search for it? What is the status of the personality specific reference doc?*
+
+.Before you begin
+
+You'll need the following:
+
+* IP address or FQDN of the ONTAP AFX cluster management LIF
+* Credentials for a cluster administrator account
+
+.Steps
+
+. Connect your web browser to the cluster management IP address or domain name:
++
+`\https://$FQDN_IP_PORT/docs/api`
++
+*Example*
++
+`\https://10.61.25.33/docs/api`
+
+. Provide the username and password if prompted and sign in.
+
+. Scroll down to the *Cluster* category and select *GET* next to the endpoint `/cluster` for an example of an individual API call.

@@ -1,0 +1,29 @@
+---
+sidebar: sidebar
+permalink: administer/create-svm.html
+keywords: 
+summary: 
+---
+= Create and set up an ONTAP AFX SVM
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can create a data SVM to provide data and configuration isolation. You might do this for different groups or projects within your organization.
+
+.Before you begin
+
+You'll need the following:
+
+* A minimum of four IP addresses
+* Name of an IPspace or default
+
+.Steps
+
+. In System Manager, select *Cluster* and then *Storage VMs* in the navigation pane.
+. Select *XXX* yyy
+
+.Related information
+
+* link:../administer/display-svm.html[Display and monitor the ONTAP AFX SVMs]
+* link:../get-started/prepare-cluster-svm-admin.html[Understand storage virtual machines]

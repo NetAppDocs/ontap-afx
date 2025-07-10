@@ -1,0 +1,59 @@
+section: administer
+title: Administer your cluster
+entries:
+  - title: Monitor cluster processes
+    entries:
+    - title: View dashboard and cluster status
+      url: /administer/view-dashboard.html
+    - title: View Insights
+      url: /administer/view-insights.html
+    - title: Monitor performance
+      url: /administer/monitor-cluster-performance.html
+    - title: View events and log
+      url: /administer/view-events-log.html
+    - title: View jobs
+      url: /administer/view-jobs.html
+  - title: Manage networking and security
+    entries:
+    - title: Manage cluster networking
+      url: /administer/cluster-networking.html
+    - title: Prepare authentication services
+      url: /administer/prepare-authentication.html
+    - title: Users and roles
+      url: /administer/users-roles.html
+    - title: Protect against ransomware attacks
+      url: /administer/ransomware-protection.html
+  - title: Manage storage VMs
+    entries:
+    - title: Display and monitor
+      url: /administer/display-svm.html
+    - title: Manage and prepare networking
+      url: /administer/svm-networking.html
+    - title: Create
+      url: /administer/create-svm.html
+    - title: Configure
+      url: /administer/configure-svm.html
+  - title: Support the cluster
+    entries:
+    - title: Manage AutoSupport
+      url: /administer/manage-autosupport.html
+    - title: View and submit support cases
+      url: /administer/submit-view-case.html
+  - title: Upgrade and maintain the cluster
+    entries:
+    - title: Expand cluster
+      url: /administer/expand-cluster.html
+    - title: Upgrade ONTAP
+      url: /administer/upgrade-ontap.html
+    - title: Maintain the hardware
+      url: /administer/maintain-hardware.html
+    - title: Manage cluster nodes
+      entries:
+      - title: Reboot, takeover, giveback a node
+        url: /administer/node-reboot-take-over-give-back.html
+  - title: Advanced administration
+    entries:
+    - title: Advanced AFX administration
+      url: /administer/advanced-cluster.html
+    - title: Additional ONTAP configuration
+      url: /administer/additional-ontap-cluster.html

@@ -1,0 +1,25 @@
+section: svm-admin
+title: Administer your storage VMs
+entries:
+  - title: Manage and secure data
+    entries:
+      - title: Create and manage volumes
+        url: /manage-data/create-manage-volume.html
+      - title: Create and manage buckets
+        url: /manage-data/create-manage-bucket.html
+      - title: Monitor performance
+        url: /manage-data/monitor-performance.html
+  - title: Protect data
+    entries:
+      - title: Create a snapshot
+        url: /protect-data/create-snapshot.html
+      - title: Set up snapshot replication
+        url: /protect-data/snapshot-replication.html
+      - title: Restore data
+        url: /protect-data/restore-data.html
+  - title: Advanced administration
+    entries:
+    - title: Advanced AFX administration
+      url: /administer/advanced-svm.html
+    - title: Additional ONTAP configuration
+      url: /administer/additional-ontap-svm.html
