@@ -1,0 +1,44 @@
+indexpage:
+  title: ONTAP AFX documentation
+  lead: The NetApp ONTAP AFX storage system is a disaggregated hardware and software solution focused on the unique needs of high-performance NAS and S3 customers. The performance and scalability are specifically designed to meet the requirements of AI and ML workloads. AFX provides a simplified user experience enabling it to be administered by both storage specialists and non-specialists.
+  summary: The NetApp ONTAP AFX storage system is a disaggregated hardware and software solution focused on the unique needs of high-performance NAS and S3 customers. The performance and scalability are specifically designed to meet the requirements of AI and ML workloads. AFX provides a simplified user experience enabling it to be administered by both storage specialists and non-specialists.
+  keywords: ontap afx, afx
+  tiles:  
+    - title: Get started
+      links: 
+        - title: Learn about ONTAP AFX
+          url: /get-started/system-design.html
+        - title: Quick start
+          url: /get-started/quick-start.html
+        - title: Install ONTAP AFX hardware
+          url: /install-setup/workflow-install.html
+        - title: Set up ONTAP AFX cluster
+          url: /install-setup/workflow-setup.html
+    - title: Cluster administration
+      links: 
+        - title: Prepare for cluster administration
+          url: /get-started/prepare-cluster-svm-admin.html
+        - title: Manage storage VMs
+          url: /administer/display-svm.html
+        - title: Upgrade and maintain the cluster
+          url: /administer/expand-cluster-controllers.html
+        - title: Advanced and additional administration
+          url: /administer/advanced-cluster.html
+    - title: Storage VM administration
+      links: 
+        - title: Prepare for SVM administration
+          url: /get-started/prepare-cluster-svm-admin.html
+        - title: Manage and secure your data
+          url: /manage-data/create-manage-volume.html
+        - title: Advanced and additional administration
+          url: /administer/advanced-svm.html
+    - title: Manage data and access
+      links: 
+        - title: Create and manage volumes
+          url: /manage-data/create-manage-volume.html
+        - title: Create and manage buckets
+          url: /manage-data/create-manage-bucket.html
+    - title: Protect and secure data
+      links: 
+        - title: Create Snapshots
+          url: /protect-data/create-snapshot.html
