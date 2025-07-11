@@ -1,7 +1,7 @@
 section: svm-admin
 title: Administer your storage VMs
 entries:
-  - title: Manage and secure data
+  - title: Manage data
     entries:
       - title: Create and manage volumes
         url: /manage-data/create-manage-volume.html
@@ -9,8 +9,10 @@ entries:
         url: /manage-data/create-manage-bucket.html
       - title: Monitor performance
         url: /manage-data/monitor-performance.html
-  - title: Protect data
+  - title: Secure and protect data
     entries:
+      - title: Encrypt data at rest
+        url: /secure-data/encrypt-data-at-rest.html
       - title: Create a snapshot
         url: /protect-data/create-snapshot.html
       - title: Set up snapshot replication

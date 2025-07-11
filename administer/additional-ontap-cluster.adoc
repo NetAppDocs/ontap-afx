@@ -29,3 +29,5 @@ xxx
 === Data at rest encryption
 
 xxx
+
+>> Just added a topic under SVM for data at REST
