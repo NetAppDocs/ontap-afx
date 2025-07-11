@@ -47,6 +47,8 @@ entries:
       url: /administer/expand-cluster.html
     - title: Upgrade ONTAP
       url: /administer/upgrade-ontap.html
+    - title: Upgrade firmware
+      url: /administer/upgrade-firmware.html
     - title: Maintain the hardware
       url: /administer/maintain-hardware.html
     - title: Manage cluster nodes

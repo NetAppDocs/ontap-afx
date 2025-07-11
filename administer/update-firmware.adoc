@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
-permalink: administer/manage-certificates.html
+permalink: administer/update-firmware.html
 keywords: 
 summary: 
 ---
-= Manage certificates on ONTAP AFX storage systems
+= Update firmware on ONTAP AFX storage systems
 :icons: font
 :imagesdir: ../media/
 
