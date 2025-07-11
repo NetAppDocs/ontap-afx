@@ -14,16 +14,18 @@ Because AFX is an ONTAP personality closely related to unified ONTAP, it include
 [TIP]
 You should also review the link:../administer/advanced-cluster.html[Advanced cluster administration] for optional tasks or procedures unique to ONTAP AFX.
 
+== ONTAP AFX Licensing
+
+xxx
+
 == Security
 
 xxx
 
 === Multifactor authentication
-// SM doc link: yes
 
 xxx
 
 === Data at rest encryption
-// SM doc link: yes
 
 xxx

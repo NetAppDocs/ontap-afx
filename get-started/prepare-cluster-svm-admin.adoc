@@ -74,7 +74,7 @@ The LIF (IP address) you need to use varies depending on the administrative inte
 
 The System Manager user interface includes a robust set of features enabling you to access and display the information you need. Learning to use these capabilities will help you to better administer the ONTAP AFX storage system. See https://docs.netapp.com/us-en/ontap/task_admin_search_filter_sort.html[Search, filter, sort information in System Manager^] for more information.
 
-== Check cluster health
+== Confirm AFX system health
 
 Before performing any of the ONTAP AFX administration tasks, you should check the health of the cluster.
 

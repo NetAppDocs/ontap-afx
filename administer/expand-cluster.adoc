@@ -4,7 +4,7 @@ permalink: administer/expand-cluster.html
 keywords: 
 summary: 
 ---
-= Expand the ONTAP AFX cluster controllers
+= Expand the ONTAP AFX cluster node controllers
 :icons: font
 :imagesdir: ../media/
 

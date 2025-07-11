@@ -21,6 +21,8 @@ entries:
       url: /administer/prepare-authentication.html
     - title: Users and roles
       url: /administer/users-roles.html
+    - title: Manage certificates
+      url: /administer/manage-certificates.html
     - title: Protect against ransomware attacks
       url: /administer/ransomware-protection.html
   - title: Manage storage VMs

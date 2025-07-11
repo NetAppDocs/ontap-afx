@@ -11,7 +11,9 @@ summary: "You might need to reboot a node for maintenance, troubleshooting, soft
 [.lead]
 You might need to reboot a node for maintenance, troubleshooting, software updates or other administrative reasons.  When a node is rebooted, its HA partner automatically executes a takeover. The partner node then performs an automatic giveback after the rebooted node comes back online.
 
-*EAP use case #12*
+*=> DP: Must confirm AFX needs this topic.*
+
+*=> DP: Add link to the expand cluster topic.*
 
 *---------- PLACEHOLDER MUST UPDATE ----------*
 

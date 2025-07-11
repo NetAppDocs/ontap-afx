@@ -11,6 +11,10 @@ summary:
 [.lead]
 You can use ONTAP System Manager to perform basic storage network administration on your ONTAP AFX storage system. For example, you can add a broadcast domain or reassign ports to a different broadcast domain.
 
+*=> DP: Add content or section about downloading cluster networking data. See link below.*
+
+https://docs.netapp.com/us-en/ontap/networking/view_network_information_overview.html[View ONTAP network information^]
+
 == Add a broadcast domain
 
 Use broadcast domains to simplify management of your cluster network by grouping network ports that belong to the same layer 2 network.  Storage virtual machines (VMs) can then use the ports in the group for data or management traffic.
