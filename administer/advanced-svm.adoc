@@ -27,9 +27,3 @@ There are several concepts that can apply when you are performing advanced admin
 == Advanced configuration procedures
 
 There are situations where you may need to use the ONTAP AFX to perform SVM administration tasks.
-
-=== Manage SVM user accounts and roles
-
-xxx
-
->> Provide an introduction and then a brief example; possibly link to the unified ONTAP doc
