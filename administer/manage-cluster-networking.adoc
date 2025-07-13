@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: administer/cluster-networking.html
+permalink: administer/manage-cluster-networking.html
 keywords: 
 summary: 
 ---
