@@ -1,0 +1,25 @@
+---
+sidebar: sidebar
+permalink: administer/additional-ontap-svm.html
+keywords: 
+summary: 
+---
+= Additional ONTAP AFX SVM features and configuration
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Because AFX is an ONTAP personality closely related to unified ONTAP, it includes most of the same capabilities. But given the AI/ML workloads that ONTAP AFX is designed for, all the ONTAP features may not always be needed by AFX customers. And so for clarity and convenience, these supplemental cluster administrative options are collected and described in a single location.
+
+[TIP]
+You should also review the link:../administer/advanced-svm.html[Advanced SVM administration] for optional tasks or procedures unique to ONTAP AFX.
+
+== Security
+
+xxx
+
+=== Manage SVM user accounts and roles
+
+xxx
+
+>> Provide an introduction and then a brief example; possibly link to the unified ONTAP doc

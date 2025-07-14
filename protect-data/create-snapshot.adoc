@@ -1,0 +1,18 @@
+---
+sidebar: sidebar
+permalink: protect-data/create-snapshot.html
+keywords: 
+summary: 
+---
+= Create a data snapshot on ONTAP AFX
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+xxx
+
+>> Include at least two sections. One to create and another on policy. For configuring policy, link to the following toplic:
+
+https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html[Create an ONTAP snapshot policy^]
+
+*---------- PLACEHOLDER MUST UPDATE ----------*

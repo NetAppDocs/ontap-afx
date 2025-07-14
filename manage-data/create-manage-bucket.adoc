@@ -1,0 +1,14 @@
+---
+sidebar: sidebar
+permalink: manage-data/create-manage-bucket.html
+keywords: 
+summary: 
+---
+= Create and manage ONTAP AFX buckets
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+xxx
+
+*---------- PLACEHOLDER MUST UPDATE ----------*

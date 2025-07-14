@@ -1,0 +1,25 @@
+---
+sidebar: sidebar
+permalink: install-setup/workflow-setup.html
+keywords: 
+summary: 
+---
+= Setup workflow for ONTAP AFX systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After you have installed and powered on your AFX system, you need to complete the cluster set up and configuration. There are two phases to the cluster setup process.
+
+[CAUTION]
+If you haven't completed the hardware installation, follow the procedure described in link:../install-setup/workflow-install.html[Install your AFX system].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Perform initial cluster setup
+
+[role="quick-margin-para"]
+link:../install-setup/initial-cluster-setup.html[Set up your ONTAP AFX cluster] and perform the initial configuration.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Complete cluster configuration
+
+[role="quick-margin-para"]
+link:../install-setup/complete-cluster-configuration.html[Complete the set up of your ONTAP AFX cluster] to prepare for client access.

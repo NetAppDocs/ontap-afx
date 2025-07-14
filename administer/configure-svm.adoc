@@ -1,0 +1,21 @@
+---
+sidebar: sidebar
+permalink: administer/configure-svm.html
+keywords: 
+summary: 
+---
+= Configure an ONTAP AFX SVM for data access
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can configure an SVM to meet the needs of the clients.
+
+.Before you begin
+
+>> Need SVM, might be default SVM
+
+.Steps
+
+. In System Manager, select *Cluster* and then *Storage VMs* in the navigation pane.
+. Select the desired SVM to display its configuration.

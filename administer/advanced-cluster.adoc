@@ -1,0 +1,49 @@
+---
+sidebar: sidebar
+permalink: administer/advanced-cluster.html
+keywords: 
+summary: 
+---
+= ONTAP AFX advanced cluster administration
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use System Manager to perform most of the administrative tasks needed to support an ONTAP AFX cluster. However, depending on your deployment environment and goals, you may need to use one of the other administrative interfaces as well. You should be familiar with the advanced administration tasks and the ONTAP AFX command line interface.
+
+.Related information
+
+* link:../faq.html[Frequently asked questions about ONTAP AFX storage systems]
+* link:../administer/additional-ontap-cluster.html[Additional ONTAP AFX cluster configuration]
+
+== Concepts and terminology
+
+There are several additional concepts related to the ONTAP AFX advanced administration tasks.
+
+.Storage availability zone
+
+A storage availability zone is a collection of storage shelves and disks that are accessed as a single storage pool and administrative entity. There is one storage availability zone defined for each ONTAP AFX cluster.
+
+.Data container
+
+This is a general term that can refer to either a volume (FlexTree) or an S3 bucket.
+
+.Automated Topology Management
+
+xxx
+
+>> Runs as a job in the background
+
+.Zero copy volume move
+
+xxx
+
+== Advanced configuration procedures
+
+There are several advanced configuration procedures you may need to perform using the ONTAP AFX CLI or REST API.
+
+*=> DP: See the EAP plan for ideas. This should include tasks that are unique with AFX and cannot be performed using System Manager.*
+
+=== XXX
+
+xxx

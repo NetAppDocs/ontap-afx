@@ -1,0 +1,21 @@
+---
+sidebar: sidebar
+permalink: administer/submit-view-case.html
+keywords: 
+summary:
+---
+= Submit and view support cases for ONTAP AFX
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If you have an issue that requires assistance, you can use ONTAP System Manager to submit a case to technical support.  You can also use ONTAP System Manager to view cases that are closed or in progress.
+
+.Before you begin
+
+You must be link:https://activeiq-link.netapp.com/[registered with Active IQ] to view support cases for your ONTAO AFX system.
+
+.Steps
+
+. To submit a support case, in System Manager, select *Cluster >Support*; then select *Go to NetApp Support*.
+. To view a previously submitted case, in System Manager, select *Cluster >Support*; then select *View my cases*.

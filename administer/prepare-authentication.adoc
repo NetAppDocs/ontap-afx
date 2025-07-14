@@ -1,0 +1,77 @@
+---
+sidebar: sidebar
+permalink: administer/prepare-authentication.html
+keywords: 
+summary:
+---
+= Prepare authentication services
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use System Manager to prepare the authentication and authorization services needed to define user accounts and roles. This includes configuring active directory domain controller access, LDAP, and SAML.
+
+[NOTE]
+Each ONTAP user needs to have one role assigned. The role includes privileges and determines what the user is allowed to access and do.
+
+.Related information
+
+* link:../administer/users-roles.html[Manage ONTAP AFX cluster users and roles]
+
+== Configure active directory domain controller access
+
+Configure active directory (AD) domain controller access for your cluster or storage VM so that you can enable AD account access.
+
+.Steps
+
+. In System Manager, select *Cluster* and then *Settings*.
+. In the *Security* section under *Active Directory*, select *Configure*.
+
+.What's next?
+
+You can enable AD account access on your ONTAP AFX storage system.
+
+== Configure LDAP
+
+Configure a Lightweight Directory Access Protocol (LDAP) server to centrally maintain user information for authentication. 
+
+.Before you begin
+
+You must have generated a certificate signing request and added a CA-signed server digital certificate.
+
+.Steps
+
+. In System Manager, select *Cluster* and then *Settings*.
+. In the *Security* section next to *LDAP*, select image:icon_gear_white_bg.png[outline of a blue mechanical gear].
+. Enter the necessary LDAP server and binding information and select *Save*.
+
+.What's next?
+
+You can now use LDAP for user information and authentication.
+
+== Configure SAML authentication
+
+Security Assertion Markup Language (SAML) authentication allows users to be authenticated by a secure identity provider (IdP) instead of the providers such as Active Directory and LDAP.
+
+.Before you begin
+
+* The IdP that you plan to use for remote authentication must be configured. See the IdP documentation for configuration.
+* You must have the URI of the IdP.
+
+.Steps
+
+. In System Manager, select *Cluster* and then *Settings*.
+. Under *Security* next to *SAML authentication*, select image:icon_gear_white_bg.png[blue outline of a mechanical gear].
+. Select *Enable SAML authentication*.
+. Enter the IdP URL and the host system IP address and select *Save*.
++
+A confirmation window displays the metadata information, which has been automatically copied to your clipboard.
+. Navigate to the IdP system you specified and copy the metadata from your clipboard to update the system metadata.
+. Return to the confirmation window in System Manager and select *I have configured the IdP with the host URI or metadata*.
+. Select *Logout* to enable SAML-based authentication.
++
+The IdP system will display an authentication screen.
+
+.What's next?
+
+You can now use SAML authentication for your user accounts.

@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: administer/expand-cluster.html
+keywords: 
+summary: 
+---
+= Expand the ONTAP AFX cluster node controllers
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+xxx
+
+*---------- PLACEHOLDER MUST UPDATE ----------*
+
+*=> DP: Must carefully review the EAP plan. This might only be possible with the CLI. If so, then possibly move this content to the advanced admin tasks. Also see TOI topics.*

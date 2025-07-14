@@ -1,0 +1,9 @@
+section: rest
+title: Use the REST API
+entries:
+  - title: Learn about the REST API
+    url: /rest/learn-rest-api.html
+  - title: Your first REST API call
+    url: /rest/first-call.html
+  - title: REST API reference
+    url: /rest/api-reference.html

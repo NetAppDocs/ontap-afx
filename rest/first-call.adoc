@@ -1,0 +1,43 @@
+---
+sidebar: sidebar
+permalink: rest/first-call.html
+keywords: 
+summary: 
+---
+
+= Your first ONTAP REST API call
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+You can issue a simple curl command to get started using the ONTAP AFX REST API and confirm its availability.
+
+.About this task
+
+You can use this REST API call to determine the ONTAP personality of the cluster based on two fields retrieved from the API call.
+
+.Before you begin
+
+In addition to having the curl utility available on your local workstation, you need the following:
+
+* IP address or FQDN of the ONTAP AFX cluster management LIF
+* ONTAP credentials for an account with authority to access the ONTAP REST API
+
+.Steps
+
+. Issue the following command at the CLI of your local workstation:
++
+[source,curl]
+curl --request GET \
+"https://$FQDN_IP/api/cluster?fields=disaggregated,san_optimized" \
+--user username:password
+
+. Based on the response, determine the ONTAP personality as follows:
++
+* If “disaggregated” is *true* and:
+** If “san_optimized” is *false* the personality is ONTAP AFX
+** If “san_optimized” is *true* the personality is ASA r2
+* If “disaggregated” is *false* the personality is unified ONTAP

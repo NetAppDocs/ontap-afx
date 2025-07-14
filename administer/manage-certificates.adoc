@@ -1,0 +1,14 @@
+---
+sidebar: sidebar
+permalink: administer/manage-certificates.html
+keywords: 
+summary: 
+---
+= Manage certificates on ONTAP AFX storage systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+xxx
+
+*=> DP: Review ASA r2 doc*

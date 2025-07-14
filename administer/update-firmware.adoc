@@ -1,0 +1,14 @@
+---
+sidebar: sidebar
+permalink: administer/update-firmware.html
+keywords: 
+summary: 
+---
+= Update firmware on ONTAP AFX storage systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+xxx
+
+*=> DP: Review ASA r2 doc*

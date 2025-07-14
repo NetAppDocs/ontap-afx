@@ -1,0 +1,28 @@
+---
+sidebar: sidebar
+permalink: get-started/quick-start.html
+keywords: 
+summary: 
+---
+
+= Quick start for setting up an ONTAP AFX system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To initially get up and running with your ONTAP AFX system, you need to install the hardware components, set up your cluster, and prepare to administer your cluster and SVMs.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Install and set up your hardware
+
+[role="quick-margin-para"]
+link:../install-setup/workflow-install.html[Install] your ONTAP AFX storage system and prepare to set up the cluster.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Set up your cluster
+
+[role="quick-margin-para"]
+Follow the quick and easy process to link:../install-setup/workflow-setup.html[Set up] your ONTAP cluster using System Manager.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Prepare to administer your cluster
+
+[role="quick-margin-para"]
+link:../get-started/prepare-cluster-svm-admin.html[Prepare to administer ONTAP AFX] before performing any of the administrative tasks in a production environment.
