@@ -31,9 +31,9 @@ entries:
       url: /administer/display-svm.html
     - title: Manage and prepare networking
       url: /administer/manage-svm-networking.html
-    - title: Create
+    - title: Create a data SVM
       url: /administer/create-svm.html
-    - title: Configure
+    - title: Configure for data access
       url: /administer/configure-svm.html
   - title: Support the cluster
     entries:
