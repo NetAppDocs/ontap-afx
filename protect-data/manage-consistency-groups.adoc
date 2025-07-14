@@ -1,0 +1,14 @@
+---
+sidebar: sidebar
+permalink: protect-data/manage-consistency-groups.html
+keywords: 
+summary: 
+---
+= Manage consistency groups
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+xxx
+
+*---------- PLACEHOLDER MUST UPDATE ----------*
