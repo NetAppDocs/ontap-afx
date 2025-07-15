@@ -1,5 +1,5 @@
 section: svm-admin
-title: Administer your storage VMs
+title: Administer your storage VMs and data
 entries:
   - title: Manage data
     entries:
@@ -19,8 +19,8 @@ entries:
     entries:
       - title: Encrypt data at rest
         url: /secure-data/encrypt-data-at-rest.html
-      - title: Create a snapshot
-        url: /protect-data/create-snapshot.html
+      - title: Create and manage snapshots
+        url: /protect-data/create-manage-snapshots.html
       - title: Manage consistency groups
         url: /protect-data/manage-consistency-groups.html
       - title: Set up snapshot replication

@@ -11,6 +11,26 @@ summary:
 [.lead]
 xxx
 
+>> Create users?
+
+>> data containers
+
+== Storage options and terminology
+
+xxx
+
+.FlexVolumes
+
+xxx
+
+.FlexGroups
+
+xxx
+
+.S3 buckets
+
+xxx
+
 == Storage limits
 
 xxx
