@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
-permalink: manage-data/create-manage-bucket.html
+permalink: manage-data/manage-buckets.html
 keywords: 
 summary: 
 ---
-= Create and manage ONTAP AFX buckets
+= Manage ONTAP AFX buckets
 :icons: font
 :imagesdir: ../media/
 
