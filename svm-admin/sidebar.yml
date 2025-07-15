@@ -5,12 +5,16 @@ entries:
     entries:
       - title: Prepare to provision storage
         url: /manage-data/prepare-provision-storage.html
-      - title: Create and manage volumes
-        url: /manage-data/create-manage-volume.html
-      - title: Create and manage buckets
-        url: /manage-data/create-manage-bucket.html
+      - title: Create and configure a volume
+        url: /manage-data/create-configure-volume.html
+      - title: Manage volumes
+        url: /manage-data/manage-volumes.html
+      - title: Create and configure a bucket
+        url: /manage-data/create-configure-bucket.html
+      - title: Manage buckets
+        url: /manage-data/manage-buckets.html
       - title: Monitor storage performance
-        url: /manage-data/monitor-performance.html
+        url: /manage-data/monitor-storage.html
   - title: Secure and protect data
     entries:
       - title: Encrypt data at rest

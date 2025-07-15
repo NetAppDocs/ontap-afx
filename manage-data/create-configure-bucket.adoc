@@ -1,0 +1,14 @@
+---
+sidebar: sidebar
+permalink: manage-data/create-configure-bucket.html
+keywords: 
+summary: 
+---
+= Create and configure an ONTAP AFX bucket
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+xxx
+
+*---------- PLACEHOLDER MUST UPDATE ----------*

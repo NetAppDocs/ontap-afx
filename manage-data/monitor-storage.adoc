@@ -1,0 +1,14 @@
+---
+sidebar: sidebar
+permalink: manage-data/monitor-storage.html
+keywords: 
+summary: 
+---
+= Monitor ONTAP AFX storage performance
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+xxx
+
+*---------- PLACEHOLDER MUST UPDATE ----------*
