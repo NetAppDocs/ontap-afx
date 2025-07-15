@@ -3,11 +3,13 @@ title: Administer your storage VMs
 entries:
   - title: Manage data
     entries:
+      - title: Prepare to provision storage
+        url: /manage-data/prepare-provision-storage.html
       - title: Create and manage volumes
         url: /manage-data/create-manage-volume.html
       - title: Create and manage buckets
         url: /manage-data/create-manage-bucket.html
-      - title: Monitor performance
+      - title: Monitor storage performance
         url: /manage-data/monitor-performance.html
   - title: Secure and protect data
     entries:

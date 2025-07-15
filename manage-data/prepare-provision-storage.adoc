@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: manage-data/prepare-provision-storage.html
+keywords: 
+summary: 
+---
+= Prepare to provision storage
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+xxx
+
+== Storage limits
+
+xxx

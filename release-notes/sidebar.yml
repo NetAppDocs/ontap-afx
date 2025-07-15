@@ -3,5 +3,3 @@ title: Release notes
 entries:
   - title: What's new in ONTAP 9.17.1
     url: /release-notes/whats-new-9171.html
-  - title: Changes to defaults and limits
-    url: /release-notes/defaults-limits.html
