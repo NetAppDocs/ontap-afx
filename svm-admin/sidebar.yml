@@ -13,8 +13,8 @@ entries:
         url: /manage-data/create-configure-bucket.html
       - title: Manage buckets
         url: /manage-data/manage-buckets.html
-      - title: Monitor storage performance
-        url: /manage-data/monitor-storage.html
+      - title: Monitor and troubleshoot storage
+        url: /manage-data/monitor-debug-storage.html
   - title: Secure and protect data
     entries:
       - title: Encrypt data at rest

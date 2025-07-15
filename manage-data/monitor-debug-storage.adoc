@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
-permalink: manage-data/monitor-storage.html
+permalink: manage-data/monitor-debug-storage.html
 keywords: 
 summary: 
 ---
-= Monitor ONTAP AFX storage performance
+= Monitor and troubleshoot ONTAP AFX storage
 :icons: font
 :imagesdir: ../media/
 
