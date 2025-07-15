@@ -17,12 +17,14 @@ entries:
         url: /manage-data/monitor-debug-storage.html
   - title: Protect data
     entries:
-      - title: Create and manage snapshots
-        url: /protect-data/create-manage-snapshots.html
-      - title: Manage consistency groups
-        url: /protect-data/manage-consistency-groups.html
+      - title: Create a snapshot
+        url: /protect-data/create-snapshot.html
+      - title: Manage snapshots
+        url: /protect-data/manage-snapshots.html
       - title: Set up snapshot replication
         url: /protect-data/snapshot-replication.html
+      - title: Manage consistency groups
+        url: /protect-data/manage-consistency-groups.html
       - title: Restore data
         url: /protect-data/restore-data.html
   - title: Secure data

@@ -11,13 +11,13 @@ summary:
 [.lead]
 xxx
 
->> Create users?
-
->> data containers
-
 == Storage options and terminology
 
 xxx
+
+.Data containers
+
+>> volume or bucket
 
 .FlexVolumes
 
@@ -31,10 +31,20 @@ xxx
 
 xxx
 
-== Storage limits
+== Client authentication and authorization
+
+>> Move to secure data section in SB? Separate topic?
+
+>> intro, overview
+
+>> link to UOD if needed
+
+>> Create users?
+
+== Exporting data and client access
 
 xxx
 
-== Exporting data and client access
+== Storage limits
 
 xxx
