@@ -23,8 +23,6 @@ entries:
       url: /administer/manage-users-roles.html
     - title: Manage certificates
       url: /administer/manage-certificates.html
-    - title: Protect against ransomware attacks
-      url: /administer/ransomware-protection.html
   - title: Manage storage VMs
     entries:
     - title: Display and monitor
