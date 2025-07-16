@@ -4,11 +4,13 @@ permalink: manage-data/create-configure-volume.html
 keywords: 
 summary: 
 ---
-= Create and configure an ONTAP AFX volume
+= Create and configure an ONTAP AFX volume for access
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 xxx
+
+>> client access
 
 *---------- PLACEHOLDER MUST UPDATE ----------*

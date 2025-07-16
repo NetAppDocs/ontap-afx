@@ -4,12 +4,14 @@ permalink: manage-data/prepare-provision-storage.html
 keywords: 
 summary: 
 ---
-= Prepare to provision storage
+= Prepare to provision ONTAP AFX storage
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 xxx
+
+>> Exporting data and client access MOVES TO THE TWO CREATE/ACCESS TOPICS
 
 == Storage options and terminology
 
@@ -41,7 +43,7 @@ xxx
 
 >> Create users?
 
-== Exporting data and client access
+== NFS trunking
 
 xxx
 
