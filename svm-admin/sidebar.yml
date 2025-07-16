@@ -27,7 +27,7 @@ entries:
         url: /protect-data/manage-consistency-groups.html
       - title: Restore data
         url: /protect-data/restore-data.html
-      - title: Administer cloud backups
+      - title: Cloud backups
         url: /protect-data/cloud-backups.html
   - title: Secure data
     entries:
