@@ -14,9 +14,9 @@ Because AFX is an ONTAP personality closely related to unified ONTAP, it include
 [TIP]
 You should also review the link:../administer/advanced-svm.html[Advanced SVM administration] for optional tasks or procedures unique to ONTAP AFX.
 
-*Cloud backup*
+*Add cloud backup*
 
-*NFS trunking?*
+*NFS trunking already has a section in manage-data/prepare, maybe include more detail here?*
 
 == Security
 

@@ -33,6 +33,10 @@ xxx
 
 xxx
 
+== Storage limits
+
+xxx
+
 == Client authentication and authorization
 
 >> Move to secure data section in SB? Separate topic?
@@ -47,6 +51,6 @@ xxx
 
 xxx
 
-== Storage limits
+== File system analytics
 
 xxx
