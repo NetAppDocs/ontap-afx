@@ -14,6 +14,10 @@ Because AFX is an ONTAP personality closely related to unified ONTAP, it include
 [TIP]
 You should also review the link:../administer/advanced-svm.html[Advanced SVM administration] for optional tasks or procedures unique to ONTAP AFX.
 
+*Cloud backup*
+
+*NFS trunking?*
+
 == Security
 
 xxx
