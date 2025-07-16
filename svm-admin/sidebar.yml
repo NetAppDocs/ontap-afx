@@ -25,6 +25,8 @@ entries:
         url: /protect-data/snapshot-replication.html
       - title: Manage consistency groups
         url: /protect-data/manage-consistency-groups.html
+      - title: Manage policies and schedules
+        url: /protect-data/policies-schedules.html
       - title: Restore data
         url: /protect-data/restore-data.html
       - title: Cloud backups
