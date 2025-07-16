@@ -4,7 +4,7 @@ permalink: manage-data/create-configure-bucket.html
 keywords: 
 summary: 
 ---
-= Create and configure an ONTAP AFX bucket for access
+= Create and configure an ONTAP AFX bucket with client access
 :icons: font
 :imagesdir: ../media/
 
