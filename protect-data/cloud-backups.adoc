@@ -1,0 +1,14 @@
+---
+sidebar: sidebar
+permalink: protect-data/cloud-backups.html
+keywords: 
+summary: 
+---
+= Administer cloud backups
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+xxx
+
+*---------- PLACEHOLDER MUST UPDATE ----------*

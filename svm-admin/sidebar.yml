@@ -21,12 +21,14 @@ entries:
         url: /protect-data/create-snapshot.html
       - title: Manage snapshots
         url: /protect-data/manage-snapshots.html
-      - title: Set up snapshot replication
+      - title: Set up and manage snapshot replication
         url: /protect-data/snapshot-replication.html
       - title: Manage consistency groups
         url: /protect-data/manage-consistency-groups.html
       - title: Restore data
         url: /protect-data/restore-data.html
+      - title: Administer cloud backups
+        url: /protect-data/cloud-backups.html
   - title: Secure data
     entries:
       - title: Encrypt data at rest
