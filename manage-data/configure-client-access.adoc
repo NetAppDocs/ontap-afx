@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: manage-data/prepare-provision-storage.html
+permalink: manage-data/configure-client-access.html
 keywords: 
 summary: 
 ---
