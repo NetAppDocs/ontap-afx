@@ -29,8 +29,6 @@ entries:
         url: /protect-data/policies-schedules.html
       - title: Restore data
         url: /protect-data/restore-data.html
-      - title: Cloud backups
-        url: /protect-data/cloud-backups.html
   - title: Secure data
     entries:
       - title: Encrypt data at rest
