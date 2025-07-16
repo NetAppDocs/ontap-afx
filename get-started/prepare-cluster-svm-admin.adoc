@@ -131,7 +131,7 @@ link:../administer/create-svm.html[Create] an SVM to isolate and protect your ap
 [role="quick-margin-para"]
 link:../administer/configure-svm.html[Configure] your SVM and prepare for client access.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Create a volume
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Prepare to provision storage
 
 [role="quick-margin-para"]
-link:../manage-data/create-manage-volume.html[Create] a volume attached to your ONTAP AFX SVM.
+link:../manage-data/prepare-provision-storage.html[Prepare] to allocate and administer a data container

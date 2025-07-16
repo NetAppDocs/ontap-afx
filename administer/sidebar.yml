@@ -23,17 +23,15 @@ entries:
       url: /administer/manage-users-roles.html
     - title: Manage certificates
       url: /administer/manage-certificates.html
-    - title: Protect against ransomware attacks
-      url: /administer/ransomware-protection.html
   - title: Manage storage VMs
     entries:
     - title: Display and monitor
       url: /administer/display-svm.html
     - title: Manage and prepare networking
       url: /administer/manage-svm-networking.html
-    - title: Create
+    - title: Create a data SVM
       url: /administer/create-svm.html
-    - title: Configure
+    - title: Configure SVM for data access
       url: /administer/configure-svm.html
   - title: Support the cluster
     entries:

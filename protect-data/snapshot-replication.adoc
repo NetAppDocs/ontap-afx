@@ -4,7 +4,7 @@ permalink: protect-data/snapshot-replication.html
 keywords: 
 summary: 
 ---
-= Replicate snapshots to a remote cluster from ONTAP AFX
+= Set up and manage snapshots replication with ONTAP AFX
 :icons: font
 :imagesdir: ../media/
 

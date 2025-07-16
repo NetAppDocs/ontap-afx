@@ -1,0 +1,14 @@
+---
+sidebar: sidebar
+permalink: protect-data/policies-schedules.html
+keywords: 
+summary: 
+---
+= Manage ONTAP AFX data protection policies
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+xxx
+
+*---------- PLACEHOLDER MUST UPDATE ----------*

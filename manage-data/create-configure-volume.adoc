@@ -1,14 +1,16 @@
 ---
 sidebar: sidebar
-permalink: manage-data/create-manage-bucket.html
+permalink: manage-data/create-configure-volume.html
 keywords: 
 summary: 
 ---
-= Create and manage ONTAP AFX buckets
+= Create and configure an ONTAP AFX volume for client access
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 xxx
+
+>> client access
 
 *---------- PLACEHOLDER MUST UPDATE ----------*

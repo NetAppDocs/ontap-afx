@@ -1,0 +1,14 @@
+---
+sidebar: sidebar
+permalink: manage-data/monitor-debug-storage.html
+keywords: 
+summary: 
+---
+= Monitor and troubleshoot ONTAP AFX storage
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+xxx
+
+*---------- PLACEHOLDER MUST UPDATE ----------*

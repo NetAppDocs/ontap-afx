@@ -1,0 +1,14 @@
+---
+sidebar: sidebar
+permalink: manage-data/manage-buckets.html
+keywords: 
+summary: 
+---
+= Manage ONTAP AFX buckets
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+xxx
+
+*---------- PLACEHOLDER MUST UPDATE ----------*

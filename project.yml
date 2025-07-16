@@ -1,6 +1,6 @@
 ---
 settings:
-  name: ndac
+  name: ONTAP AFX
   internal:
     pdf_enabled: true
   prod:

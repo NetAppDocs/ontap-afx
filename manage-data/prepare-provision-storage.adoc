@@ -1,0 +1,56 @@
+---
+sidebar: sidebar
+permalink: manage-data/prepare-provision-storage.html
+keywords: 
+summary: 
+---
+= Prepare to provision ONTAP AFX storage
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+xxx
+
+>> Exporting data and client access MOVES TO THE TWO CREATE/ACCESS TOPICS
+
+== Storage options and terminology
+
+xxx
+
+.Data containers
+
+>> volume or bucket
+
+.FlexVolumes
+
+xxx
+
+.FlexGroups
+
+xxx
+
+.S3 buckets
+
+xxx
+
+== Storage limits
+
+xxx
+
+== Client authentication and authorization
+
+>> Move to secure data section in SB? Separate topic?
+
+>> intro, overview
+
+>> link to UOD if needed
+
+>> Create users?
+
+== NFS trunking
+
+xxx
+
+== File system analytics
+
+xxx

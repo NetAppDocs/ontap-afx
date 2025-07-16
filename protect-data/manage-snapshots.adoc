@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
-permalink: protect-data/create-snapshot.html
+permalink: protect-data/manage-snapshots.html
 keywords: 
 summary: 
 ---
-= Create a snapshot on ONTAP AFX
+= Manage snapshots on ONTAP AFX
 :icons: font
 :imagesdir: ../media/
 

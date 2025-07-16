@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: administer/ransomware-protection.html
+permalink: secure-data/ransomware-protection.html
 keywords: 
 summary: 
 ---

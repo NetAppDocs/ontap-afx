@@ -1,0 +1,14 @@
+---
+sidebar: sidebar
+permalink: manage-data/manage-volumes.html
+keywords: 
+summary: 
+---
+= Manage ONTAP AFX volumes
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+xxx
+
+*---------- PLACEHOLDER MUST UPDATE ----------*
