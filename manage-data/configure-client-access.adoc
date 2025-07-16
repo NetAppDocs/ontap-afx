@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: manage-data/prepare-provision-storage.html
+keywords: 
+summary: 
+---
+= Configure and manage ONTAP AFX client access
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+xxx
+
+Anything needed beyond creating the volume or bucket needed at or for client to access data
+
+>> Rows 262, 264, etc.

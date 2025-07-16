@@ -11,9 +11,11 @@ summary:
 [.lead]
 xxx
 
+*Add section with overview on quotas and qtrees*
+
 >> Exporting data and client access MOVES TO THE TWO CREATE/ACCESS TOPICS
 
-== Storage options and terminology
+== Storage terminology and options
 
 xxx
 
