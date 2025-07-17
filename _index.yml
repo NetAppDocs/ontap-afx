@@ -13,7 +13,7 @@ indexpage:
         - title: Install ONTAP AFX hardware
           url: /install-setup/workflow-install.html
         - title: Set up ONTAP AFX cluster
-          url: /install-setup/workflow-setup.html
+          url: /install-setup/cluster-setup.html
     - title: Cluster administration
       links: 
         - title: Prepare for cluster administration
@@ -21,23 +21,23 @@ indexpage:
         - title: Manage storage VMs
           url: /administer/display-svm.html
         - title: Upgrade and maintain the cluster
-          url: /administer/expand-cluster-controllers.html
+          url: /administer/expand-cluster.html
         - title: Advanced and additional administration
           url: /administer/advanced-cluster.html
     - title: Storage VM administration
       links: 
         - title: Prepare for SVM administration
-          url: /get-started/prepare-cluster-svm-admin.html
-        - title: Manage and secure your data
+          url: /get-started/prepare-provision-storage.html
+        - title: Manage your data
           url: /manage-data/create-manage-volume.html
         - title: Advanced and additional administration
           url: /administer/advanced-svm.html
     - title: Manage data and access
       links: 
-        - title: Create and manage volumes
-          url: /manage-data/create-manage-volume.html
-        - title: Create and manage buckets
-          url: /manage-data/create-manage-bucket.html
+        - title: Create and configure volumes
+          url: /manage-data/create-configure-volume.html
+        - title: Create and configure buckets
+          url: /manage-data/create-configure-bucket.html
     - title: Protect and secure data
       links: 
         - title: Create Snapshots
