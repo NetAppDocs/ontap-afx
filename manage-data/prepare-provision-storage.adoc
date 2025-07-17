@@ -11,9 +11,11 @@ summary:
 [.lead]
 xxx
 
+*Add section with overview on quotas and qtrees*
+
 >> Exporting data and client access MOVES TO THE TWO CREATE/ACCESS TOPICS
 
-== Storage options and terminology
+== Storage terminology and options
 
 xxx
 
@@ -37,7 +39,7 @@ xxx
 
 xxx
 
-== Client authentication and authorization
+== Client authentication and authorization options
 
 >> Move to secure data section in SB? Separate topic?
 
@@ -50,6 +52,10 @@ xxx
 == NFS trunking
 
 xxx
+
+.Related information
+
+* link:../administer/additional-ontap-svm.html[More details on NFS trunking]
 
 == File system analytics
 
