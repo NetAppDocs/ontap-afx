@@ -23,6 +23,8 @@ entries:
         url: /protect-data/create-snapshot.html
       - title: Manage snapshots
         url: /protect-data/manage-snapshots.html
+      - title: Use SnapMirror
+        url: /protect-data/use-snapmirror.html
       - title: Set up and manage snapshot replication
         url: /protect-data/snapshot-replication.html
       - title: Manage consistency groups
