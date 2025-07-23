@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: protect-data/restore-data.html
+permalink: protect-data/backup-restore-data.html
 keywords: 
 summary: 
 ---
