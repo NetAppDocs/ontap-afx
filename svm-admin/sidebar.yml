@@ -31,8 +31,8 @@ entries:
         url: /protect-data/manage-consistency-groups.html
       - title: Manage policies and schedules
         url: /protect-data/policies-schedules.html
-      - title: Restore data
-        url: /protect-data/restore-data.html
+      - title: Back up and restore
+        url: /protect-data/backup-restore.html
   - title: Secure data
     entries:
       - title: Encrypt data at rest
