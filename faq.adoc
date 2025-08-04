@@ -13,15 +13,19 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-This FAQ list provides answers to questions that customers have about ONTAP AFX storage systems. It contains concepts and terminology that can be valuable when exploring AFX in more detail and performing advanced cluster or SVM administration.
+This FAQ list provides answers to questions that customers typically have about ONTAP AFX storage systems. It contains concepts and terminology that can be valuable when exploring AFX in more detail and performing advanced cluster or SVM administration.
 
 // --- Additional topics (see terminology section in advanced admin)
-// What is an ONTAP personality?
-// What are the available personalities?
 // automated topology management (ATM)
 // volume placement and the API
 // zero copy volume move
 // ---
+
+.What is an ONTAP "personality"?
+
+xxx
+
+>> Include a description of the three personalities.
 
 .What does "disaggregated" mean with the ONTAP AFX storage systems?
 
