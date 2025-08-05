@@ -4,7 +4,7 @@ permalink: administer/view-events-log.html
 keywords: 
 summary: 
 ---
-= View ONTAP AFX events and audit log
+= View ONTAP AFX events and the audit log
 :icons: font
 :imagesdir: ../media/
 

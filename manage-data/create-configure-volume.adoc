@@ -9,8 +9,16 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-xxx
+You can create a volume and attach it to a data SVM. Each volume can be exposed to clients using one of the access protocols supported by ONTAP AFX.
 
->> client access
+.About this task
 
-*---------- PLACEHOLDER MUST UPDATE ----------*
+When creating a volume, you need to provide a minimum amount of configuration details. Additional details can be provided during volume creation or afterwards by editing the volume. You need to select the SVM for the volume if you've created additional data SVMs.
+
+.Steps
+
+. In System Manager, select *Storage* and then *Volumes*.
+
+. Select image:icon_add_blue_bg.png[Add with blue background] and provide the basic configuration including name, capacity, and optimization.
+
+. Optionally select *More options* for additional configuration related to data protection, SnapLock, and NFS access.

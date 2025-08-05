@@ -4,12 +4,12 @@ permalink: administer/view-dashboard.html
 keywords: 
 summary: 
 ---
-= View ONTAP AFX dashboard and cluster status
+= View the ONTAP AFX dashboard and cluster status
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can sign in to System Manager to access the AFX dashboard and cluster status. This is a good first step as you begin your ONTAP AFX administration tasks.
+You can sign in to System Manager to access the AFX dashboard and display the cluster status. This is a good first step as you begin your ONTAP AFX administrative tasks.
 
 .Before you begin
 
@@ -20,7 +20,7 @@ You'll need the following:
 
 .Steps
 
-. Connect to System Manager using a browser:
+. Connect to System Manager using a browser and the cluster management LIF:
 +
 `\https://$FQDN_IPADDR/`
 +
@@ -28,7 +28,7 @@ You'll need the following:
 +
 `\https://10.61.25.33/`
 
-. Provide the administrator username and password and select *Sign in*.
+. Provide the username and password for the administrator account and select *Sign in*.
 
 . Review the dashboard including the cluster health.
 
@@ -36,6 +36,6 @@ You'll need the following:
 
 . Review the cluster details including the name, version, and ONTAP personality.
 
-. At the top of the overview page, select *Cabling* for a visual display of the cluster hardware and connections.
+. At the top of the cluster overview page, select *Cabling* for a visual display of the cluster hardware and connections.
 
-. In the navigation pane, select *Events & Jobs* and then *System alerts* to review the system alerts.
+. In the navigation pane, select *Events & Jobs* and then *System alerts* to display and review the system alerts.

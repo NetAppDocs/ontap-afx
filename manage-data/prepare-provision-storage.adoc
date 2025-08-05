@@ -15,6 +15,10 @@ xxx
 
 >> Exporting data and client access MOVES TO THE TWO CREATE/ACCESS TOPICS
 
+>> Review volume create (more options) and edit to get a list of the configuration options to describe
+
+>> For example, have two options (data protection and high throughput), describe what these mean
+
 == Storage terminology and options
 
 xxx

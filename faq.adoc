@@ -16,7 +16,7 @@ summary:
 This FAQ list provides answers to questions that customers typically have about ONTAP AFX storage systems. It contains concepts and terminology that can be valuable when exploring AFX in more detail and performing advanced cluster or SVM administration.
 
 // --- Additional topics (see terminology section in advanced admin)
-// automated topology management (ATM)
+// automated topology management (ATM), this is included as a background job
 // volume placement and the API
 // zero copy volume move
 // ---

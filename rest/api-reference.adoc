@@ -5,7 +5,7 @@ keywords:
 summary: 
 ---
 
-= API reference for the ONTAP AFX REST API
+= ONTAP AFX REST API reference documentation
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,9 +13,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-The ONTAP AFX REST API reference contains details about all the API calls. This reference is helpful when developing automation applications.
-
-*=> DP: Is the string *Platform Specifics still in the Swagger doc for ONTAP 9.17.1? Can users search for it? What is the status of the personality specific reference doc?*
+The ONTAP AFX REST API reference contains details about all the API calls. This documentation is helpful when developing automation applications.
 
 .Before you begin
 
@@ -34,6 +32,6 @@ You'll need the following:
 +
 `\https://10.61.25.33/docs/api`
 
-. Provide the username and password if prompted and sign in.
+. Provide the username and password if prompted.
 
 . Scroll down to the *Cluster* category and select *GET* next to the endpoint `/cluster` for an example of an individual API call.
