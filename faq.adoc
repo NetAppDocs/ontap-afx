@@ -25,9 +25,7 @@ This FAQ list provides answers to questions that customers typically have about 
 
 ONTAP is a robust and versatile storage platform, known for its comprehensive feature set and adaptability to a wide range of storage requirements. While its flexibility makes it an excellent choice for organizations with diverse workloads, some customers can benefit from a more tailored solution optimized for the needs of their specific environment.
 
-To address these specialized needs, NetApp offers distinct ONTAP personalities, each of which is designed with a feature set to support the unique customer requirements. An ONTAP personality is a combination of hardware and software capabilities, purpose-built to deliver an optimized experience for targeted use cases.
-
-NetApp provides three ONTAP personalities:
+To address these specialized needs, NetApp offers distinct ONTAP personalities, each of which is designed with a feature set to support the unique customer requirements. An ONTAP personality is a combination of hardware and software capabilities, purpose-built to deliver an optimized experience for targeted use cases. NetApp provides three ONTAP personalities:
 
 Unified ONTAP::
 This is the NetApp flagship offering, available on AFF and FAS systems as well as virtualized deployments such as ONTAP Select. Unified ONTAP delivers a broad set of data management features, supporting NAS, SAN, and S3 protocols for maximum flexibility.
