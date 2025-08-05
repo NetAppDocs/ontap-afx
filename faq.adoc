@@ -33,13 +33,17 @@ Unified ONTAP::
 This is the NetApp flagship offering, available on AFF and FAS systems as well as virtualized deployments such as ONTAP Select. Unified ONTAP delivers a broad set of data management features, supporting NAS, SAN, and S3 protocols for maximum flexibility.
 
 ASA r2::
-This is a unified hardware and software solution designed specifically for SAN-only environments. ASA r2 streamlines the storage experience for block workloads, providing simplified management and performance optimized for SAN customers.
+This is a hardware and software solution designed specifically for SAN-only environments. ASA r2 streamlines the storage experience for block workloads, providing simplified management and performance optimized for SAN customers.
 
 ONTAP AFX::
-This is the a disaggregated hardware and software solution engineered to meet the rigorous requirements of high-performance NAS and S3 workloads. ONTAP AFX delivers specialized capabilities for customers requiring scalable, high-throughput file and object storage.
+This is a disaggregated hardware and software solution engineered to meet the rigorous requirements of high-performance NAS and S3 workloads, including AI/ML applications. ONTAP AFX delivers specialized capabilities for customers requiring scalable, high-throughput file and object storage.
 
-By offering these ONTAP personalities, NetApp enables organizations to select a storage solution that aligns precisely with their operational requirements and application workloads.
+By offering these unique ONTAP personalities, NetApp enables organizations to select a storage solution that aligns with their operational requirements and application workloads.
 
 .What does "disaggregated" mean with the ONTAP AFX storage systems?
 
-The term "disaggregated" can have two different though related meanings with ONTAP AFX. The first concept is based on decoupling the compute capability in the controller nodes from the storage shelves. With ONTAP AFX, the cluster compute and storage components are no longer tightly coupled as they are with unified ONTAP. Rather, they are connected through one or more cluster switches. Each controller has a complete view of the cluster storage pool. The second concept, which is a result of the decoupling, is that the aggregates and RAID management are removed as administrable entites. The AFX storage abstraction layer automatically configures and manages the aggregates and physical disks and RAID groups. The AFX administrator can instead focus on the higher level storage configuration based on volumes and buckets.
+The term "disaggregated" can have two different though related meanings with ONTAP AFX.
+
+The first concept is based on decoupling the compute capability in the controller nodes from the storage shelves. With ONTAP AFX, the cluster compute and storage components are no longer tightly coupled as they are with unified ONTAP. Rather, they are connected through one or more cluster switches. Each controller has a complete view of the cluster storage pool.
+
+The second concept, which is a result of the decoupling, is that the aggregates and RAID management are removed as administrable entites. The AFX storage abstraction layer automatically configures and manages the aggregates and physical disks and RAID groups. The AFX administrator can instead focus on the higher level storage configuration based on volumes and buckets.
