@@ -39,7 +39,7 @@ You can optionally add members of your internal support organization to the list
 +
 * *Partner* for your partners
 * *General* for members of your internal support organization
-. Select save.
+. Select *Save*.
 
 .Result
 

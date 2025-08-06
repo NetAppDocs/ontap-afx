@@ -11,6 +11,4 @@ summary:
 [.lead]
 You can maintain the controller nodes of your ONTAP AFX cluster.
 
-*---------- PLACEHOLDER MUST UPDATE ----------*
-
 Review the https://docs.netapp.com/us-en/ontap-systems/asa-r2-landing-maintain/index.html[ONTAP AFX maintenance documentation^] to learn how to perform maintenance procedures on your AFX system components.
