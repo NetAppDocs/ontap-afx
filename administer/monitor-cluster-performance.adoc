@@ -9,7 +9,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can get a high-level view of the performance of your ONTAP AFX cluster, including storage usage and general performance.
+You display a high-level view of your ONTAP AFX cluster, including storage usage and general performance.
 
 == Storage capacity
 
@@ -17,7 +17,9 @@ The System Manager dashboard includes a high-level display of the storage utiliz
 
 .Steps
 
-. In System Manager, locate *Capacity* in the dashboard. Note the physical storage available and used.
+. In System Manager, select *Dashboard* in the navigation pane.
+
+. Locate the *Capacity* tile and note the physical storage available and used.
 
 . Select *History* to access Active IQ and view the historical data.
 
@@ -25,14 +27,12 @@ The System Manager dashboard includes a high-level display of the storage utiliz
 
 System Manager provides a detailed overview of the overall ONTAP AFX cluster performance.
 
-*=> DP: Must create a volume to complete this topic.*
-
 .Steps
 
 . In System Manager, select *Analysis* and then *Performance*.
 
-. Review the cluster performance summary at top.
+. Review the cluster performance summary at top including latency and throughput.
 
-. Under the *Top actors* tab, XXX
+. Under the *Top actors* tab, select the desired SVM and then *Enable activity tracking*.
 
-. Under the *Volume performance* tab, XXX
+. Under the *Volume performance* tab, view the performance details and a specific volume if needed.
