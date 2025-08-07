@@ -12,10 +12,11 @@ summary:
 [.lead]
 You should prepare to administer your ONTAP AFX cluster before configuring and using it in a production environment.
 
-== Understand storage virtual machines
-// Need to confirm usage of the terms "storage virtual machine" and "SVM". Both are acceptable with Acrolinx.
+*=> DP: Need to confirm usage of the terms "storage virtual machine" and "SVM". Both are acceptable with Acrolinx.*
 
-A storage virtual machine (SVM) is an isolated server or tenant environment within an ONTAP cluster. SVMs are configured to serve data to the connected clients. One data SVM is created by default with a new ONTAP AFX cluster and you can create additional SVMs if needed. You should be familiar with the capabilities and characteristics of ONTAP AFX SVMs.
+== Understand storage virtual machines
+
+A storage virtual machine (SVM) is an isolated server or tenant environment within an ONTAP cluster. SVMs are configured to serve data to the connected clients. One data SVM is created by default with a new ONTAP AFX cluster and you can create additional SVMs if needed. You should be familiar with the capabilities and characteristics of the ONTAP AFX SVMs.
 
 
 .Administrative control
@@ -24,11 +25,11 @@ Data SVMs can be used to establish and enforce isolation of your data and applic
 
 .Accounts and RBAC roles
 
-It's important to note there are two levels of authentication and authorization with ONTAP AFX: cluster level and SVM level. Every SVM has its own set of users and roles which are distinct and separate from the cluster accounts. In most situations, using the cluster level accounts is adequate. But depending on your environment, you might need to configure the more restrictive SVM accounts and roles as well. See link:../administer/advanced-svm.html[ONTAP AFX advanced SVM administration] for more information.
+It's important to note there are two levels of authentication and authorization with ONTAP AFX: cluster level and SVM level. In addition to the cluster accounts, every SVM has its own distinct set of users and roles. In most situations, using the cluster level accounts is adequate. But depending on your environment, you might need to configure and use the more restrictive SVM accounts and roles as well. See link:../administer/additional-ontap-svm.html[Additional ONTAP AFX SVM features and configuration] for more information.
 
 .SVM-scoped resources
 
-ONTAP AFX resources and configurable entities are associated either with the entire cluster or with a specific SVM. There are many resources with an SVM scope, including volumes and buckets as well as the SVM user accounts and RBAC roles.
+ONTAP AFX resources and configurable entities are associated either with the cluster or a specific SVM. There are many resources with an SVM scope, including volumes and buckets as well as the SVM user accounts and RBAC roles.
 
 .Dedicated network interfaces
 
@@ -42,11 +43,11 @@ It's important to note that these levels describe how the administrative tasks a
 
 .Cluster administrator
 
-The cluster administrator has complete control of the AFX cluster including all the data SVMs. However, this AFX administrative level includes only the tasks that a cluster admin can perform and not any of the SVM-specific administration tasks. See link:../administer/view-dashboard.html[Administer your cluster] for more information.
+The cluster administrator has complete control of the AFX cluster including all the data SVMs. However, for clarity this AFX administrative level includes only the tasks that a cluster admin can perform and not any of the SVM-specific administration tasks. See link:../administer/view-dashboard.html[Administer your cluster] for more information.
 
 .SVM administrator
 
-An SVM administrator has control of a specific data SVM and so is more restricted compared to the cluster administrator. This administration involves performing tasks with objects and resources that have an SVM scope, such as creating a volume. See link:../manage-data/create-manage-volume.html[Administer your storage VMs] for more information.
+An SVM administrator has control of a specific data SVM and so is more restricted compared to the cluster administrator. This administration involves performing tasks with objects and resources that have an SVM scope, such as creating a volume. See link:../manage-data/prepare-provision-storage.html[Administer your storage VMs] for more information.
 
 //* Data administrator. This is a more restricted role within a specific tenant. It allows self-serve access to a subset of the administrative functions and API calls by storage users including data scientists and data engineers.
 
@@ -66,7 +67,7 @@ The LIF (IP address) you need to use varies depending on the administrative inte
 |Command line interface
 |The ONTAP CLI is accessible using SSH. Depending on your account, you can access the cluster management LIF or SVM management LIF. The CLI is more difficult to use but is more robust. It's preferred, and sometimes required, for advanced administration tasks.
 |REST API
-|ONTAP AFX includes a REST API you can use to automate the administration of your AFX cluster. As with AFX in general, the API is based on the unified ONTAP REST API with modifications to support the unique AFX features and restrictions.
+|ONTAP AFX includes a REST API you can use to automate the administration of your AFX cluster. The API is based on the unified ONTAP REST API with modifications to support the unique AFX features and restrictions.
 |===
 
 == Learn to search, filter, and sort information in System Manager
@@ -76,7 +77,7 @@ The System Manager user interface includes a robust set of features enabling you
 
 == Confirm AFX system health
 
-Before performing any of the ONTAP AFX administration tasks, you should check the health of the cluster.
+Before performing any ONTAP AFX administration tasks, you should check the health of the cluster.
 
 [TIP]
 You can check the health of your ONTAP AFX cluster at any time, including when you suspect an operational or performance issue.
@@ -104,22 +105,22 @@ You'll need the following:
 +
 link:../administer/view-dashboard.html[View dashboard and cluster status]
 
-. Display the system events and audit log
+. Display the system events and audit log messages.
 +
 link:../administer/view-events-log.html[View ONTAP AFX events and audit log]
 
 . Display and note any *Insight* recommendations.
 +
-link:../administer/view-insights.html[Optimize ONTAP AFX cluster performance and security with insights]
+link:../administer/view-insights.html[Use Insights to optimize ONTAP AFX cluster performance and security]
 
 == Quick start for creating and using data SVMs
 
-After installing and setting up the ONTAP AFX cluster, you can begin performing the administration tasks typical of most AFX deployments. Here are the steps needed to begin sharing data with clients using a storage VM.
+After installing and setting up the ONTAP AFX cluster, you can begin performing the administration tasks typical of most AFX deployments. Here are the high-level steps needed to begin sharing data with clients.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Display the available data SVMs
 
 [role="quick-margin-para"]
-link:../administer/display-svm.html[Display] the list of data SVMs and determine if there's one you can use.
+link:../administer/display-svms.html[Display] the list of data SVMs and determine if there's one you can use.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Optionally create a data SVM
 
