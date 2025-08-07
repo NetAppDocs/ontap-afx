@@ -113,7 +113,7 @@ link:../administer/view-events-log.html[View ONTAP AFX events and audit log]
 +
 link:../administer/view-insights.html[Use Insights to optimize ONTAP AFX cluster performance and security]
 
-== Quick start for creating and using data SVMs
+== Quick start for creating and using a data SVM
 
 After installing and setting up the ONTAP AFX cluster, you can begin performing the administration tasks typical of most AFX deployments. Here are the high-level steps needed to begin sharing data with clients.
 
