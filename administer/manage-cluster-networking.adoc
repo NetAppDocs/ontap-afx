@@ -9,7 +9,10 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can use ONTAP System Manager to perform basic network administration for your ONTAP AFX storage system. There are several useful tasks, such as adding a broadcast domain or creating a VLAN.
+You can use perform basic network administration for your ONTAP AFX storage system. There are several useful tasks, such as adding a broadcast domain or creating a network interface.
+
+[TIP]
+Administration of the ONTAP AFX cluster networking is presented as adding or creating various definitions. However, in each case there are also options for other actions such as editing and deleting the configuration. You should explore the System Manager user interface to learn more about the options. Links to the unified ONTAP documentation are included where appropriate.
 
 //https://docs.netapp.com/us-en/ontap/networking/view_network_information_overview.html[View ONTAP network information^]
 
@@ -52,3 +55,19 @@ MTU is the largest data packet that can be accepted in your broadcast domain.
 .Result
 
 You have added a new broadcast domain.
+
+== Add an IPspace
+
+xxx
+
+.Related information
+
+* https://docs.netapp.com/us-en/ontap/networking/configure_ipspaces_cluster_administrators_only_overview.html[Learn about ONTAP IPspace configuration]
+
+== Add a network interface
+
+xxx
+
+== Add a subnetwork
+
+xxx
