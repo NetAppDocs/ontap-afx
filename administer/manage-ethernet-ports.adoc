@@ -13,7 +13,7 @@ xxx
 
 .Related information
 
-* link:../administer/manage-cluster-networking.html[Manage ONTAP AFX cluster networking]
+* link:../administer/manage-cluster-networking.html[Manage ONTAP AFX cluster networking^]
 
 == Create a LAG
 

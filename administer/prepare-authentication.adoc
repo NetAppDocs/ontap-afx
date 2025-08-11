@@ -16,7 +16,7 @@ Each ONTAP user needs to have one role assigned. The role includes privileges an
 
 .Related information
 
-* link:../administer/users-roles.html[Manage ONTAP AFX cluster users and roles]
+* link:../administer/manage-users-roles.html[Manage ONTAP AFX cluster users and roles]
 
 == Configure active directory domain controller access
 

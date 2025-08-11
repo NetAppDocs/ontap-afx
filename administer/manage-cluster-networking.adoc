@@ -9,10 +9,10 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can perform basic network administration for your ONTAP AFX storage system. There are several useful tasks, such as adding a broadcast domain or creating a network interface. For each of the ONTAP resource, there are also options for additional configuration such as editing and deleting an object. You should explore the System Manager user interface to learn more about the options. Links to the unified ONTAP documentation are included where appropriate.
+You can perform network administration of your ONTAP AFX storage system, such as adding a broadcast domain or creating a network interface. For each of the ONTAP resources, there are additional configuration options such as editing and deleting objects. You should explore the System Manager user interface to learn more about ONTAP AFX network configuration.
 
 [TIP]
-The unified ONTAP documentation provides additional details. Links are included where appropriate.
+Links to the unified ONTAP documentation are provided for additional information where appropriate.
 
 //https://docs.netapp.com/us-en/ontap/networking/view_network_information_overview.html[View ONTAP network information^]
 
