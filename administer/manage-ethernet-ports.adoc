@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: administer/manage-cluster-networking.html
+keywords: 
+summary: 
+---
+= Manage ONTAP AFX Ethernet ports
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+xxx

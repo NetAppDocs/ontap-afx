@@ -17,6 +17,8 @@ entries:
     entries:
     - title: Manage cluster networking
       url: /administer/manage-cluster-networking.html
+    - title: Manage Ethernet ports
+      url: /administer/manage-ethernet-ports.html
     - title: Prepare authentication services
       url: /administer/prepare-authentication.html
     - title: Manage users and roles
