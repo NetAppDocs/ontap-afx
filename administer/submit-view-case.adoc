@@ -23,3 +23,7 @@ You need to be link:https://activeiq-link.netapp.com/[registered with Active IQ]
 . To view a previously submitted case, in System Manager select:
 .. *Cluster* and then *Support*
 .. *View my cases*
+
+.Related information
+
+* https://docs.netapp.com/us-en/ontap/task_admin_view_submit_support_cases.html[View and submit support cases with ONTAP System Manager^]

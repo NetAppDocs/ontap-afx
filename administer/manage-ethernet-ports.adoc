@@ -1,0 +1,56 @@
+---
+sidebar: sidebar
+permalink: administer/manage-ethernet-ports.html
+keywords: 
+summary: 
+---
+= Manage ONTAP AFX Ethernet ports
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+xxx
+
+.Related information
+
+* link:../administer/manage-cluster-networking.html[Manage ONTAP AFX cluster networking^]
+
+== Create a LAG
+
+xxx
+
+.Related information
+
+* https://docs.netapp.com/us-en/ontap/networking/combine_physical_ports_to_create_interface_groups.html[Combine physical ports to create ONTAP interface groups^]
+
+== Create a VLAN
+
+A VLAN consists of switch ports grouped together into a broadcast domain.  VLANs enable you to increase security, isolate problems, and limit available paths within your IP network infrastructure.
+
+.Before you begin
+
+The switches deployed in the network must either comply with IEEE 802.1Q standards or have a vendor-specific implementation of VLANs.
+
+.About this task
+
+* A VLAN can’t be created on an interface group port that contains no member ports.
+* When you configure a VLAN over a port for the first time, the port might go down, resulting in a temporary disconnection of the network. Subsequent VLAN additions to the same port do not affect the port state.
+* You should not create a VLAN on a network interface with the same identifier as the native VLAN of the switch. For example, if the network interface e0b is on native VLAN 10, you should not create a VLAN e0b-10 on that interface.
+
+.Steps
+
+. In System Manager, select *Network > Ethernet ports*; then select image:icon_vlan.png[a blue plus sign followed by the word vlan].
+. Select the node and broadcast domain for the VLAN.
+. Select the port for the VLAN.
++
+The VLAN can’t be attached to a port hosting a cluster LIF or to ports assigned to the cluster IPspace.  
+. Enter a VLAN ID.
+. Select *Save*.
+
+.Result
+
+You have created a VLAN to increase security, isolate problems, and limit available paths within your IP network infrastructure.
+
+.Related information
+
+* https://docs.netapp.com/us-en/ontap/networking/configure_network_ports_cluster_administrators_only_overview.html[Learn about ONTAP network port configuration^]
