@@ -19,6 +19,10 @@ xxx
 
 xxx
 
+.Related information
+
+* https://docs.netapp.com/us-en/ontap/networking/combine_physical_ports_to_create_interface_groups.html[Combine physical ports to create ONTAP interface groups^]
+
 == Create a VLAN
 
 A VLAN consists of switch ports grouped together into a broadcast domain.  VLANs enable you to increase security, isolate problems, and limit available paths within your IP network infrastructure.
@@ -46,3 +50,7 @@ The VLAN can’t be attached to a port hosting a cluster LIF or to ports assigne
 .Result
 
 You have created a VLAN to increase security, isolate problems, and limit available paths within your IP network infrastructure.
+
+.Related information
+
+* https://docs.netapp.com/us-en/ontap/networking/configure_network_ports_cluster_administrators_only_overview.html[Learn about ONTAP network port configuration^]

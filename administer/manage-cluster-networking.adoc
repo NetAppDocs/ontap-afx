@@ -9,10 +9,10 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can use perform basic network administration for your ONTAP AFX storage system. There are several useful tasks, such as adding a broadcast domain or creating a network interface.
+You can perform basic network administration for your ONTAP AFX storage system. There are several useful tasks, such as adding a broadcast domain or creating a network interface. For each of the ONTAP resource, there are also options for additional configuration such as editing and deleting an object. You should explore the System Manager user interface to learn more about the options. Links to the unified ONTAP documentation are included where appropriate.
 
 [TIP]
-Administration of the ONTAP AFX cluster networking is presented as adding or creating various definitions. However, in each case there are also options for other actions such as editing and deleting the configuration. You should explore the System Manager user interface to learn more about the options. Links to the unified ONTAP documentation are included where appropriate.
+The unified ONTAP documentation provides additional details. Links are included where appropriate.
 
 //https://docs.netapp.com/us-en/ontap/networking/view_network_information_overview.html[View ONTAP network information^]
 
@@ -52,9 +52,9 @@ If you don’t specify an IPspace name, the broadcast domain is created in the "
 MTU is the largest data packet that can be accepted in your broadcast domain.
 . Select the desired ports; then select *Save*.
 
-.Result
+.Related information
 
-You have added a new broadcast domain.
+* https://docs.netapp.com/us-en/ontap/networking/configure_broadcast_domains_cluster_administrators_only_overview.html[Learn about ONTAP broadcast domains^]
 
 == Add an IPspace
 
@@ -62,12 +62,20 @@ xxx
 
 .Related information
 
-* https://docs.netapp.com/us-en/ontap/networking/configure_ipspaces_cluster_administrators_only_overview.html[Learn about ONTAP IPspace configuration]
+* https://docs.netapp.com/us-en/ontap/networking/configure_ipspaces_cluster_administrators_only_overview.html[Learn about ONTAP IPspace configuration^]
 
 == Add a network interface
 
 xxx
 
+.Related information
+
+* https://docs.netapp.com/us-en/ontap/concepts/network-connectivity-concept.html[Network architecture overview^]
+
 == Add a subnetwork
 
 xxx
+
+.Related information
+
+* https://docs.netapp.com/us-en/ontap/networking/configure_subnets_cluster_administrators_only_overview.html[Learn about subnets for the ONTAP network^]
