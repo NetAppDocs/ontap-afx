@@ -12,16 +12,16 @@ summary:
 [.lead]
 You can create a bucket and attach it to a data SVM. Each bucket can be exposed to clients using the S3 access protocol supported by ONTAP AFX.
 
-*--- PLACEHOLDER ---*
-
 .About this task
 
-When creating a volume, you need to provide a minimum amount of configuration details. Additional details can be provided during volume creation or afterwards by editing the volume. You need to select the SVM for the volume if you've created additional data SVMs.
+When creating a bucket, you need to provide a minimum amount of configuration details. Additional details can be provided during creation or afterwards by editing the bucket. You need to select the SVM for the bucket if you've created additional data SVMs.
 
 .Steps
 
-. In System Manager, select *Storage* and then *Volumes*.
+. In System Manager, select *Storage* and then *Buckets*.
 
-. Select image:icon_add_blue_bg.png[Add with blue background] and provide the basic configuration including name, capacity, and optimization.
+. Select image:icon_add_blue_bg.png[Add with blue background] and provide the basic configuration including name and capacity.
 
-. Optionally select *More options* for additional configuration related to data protection, SnapLock, and NFS access.
+. Optionally select *More options* for additional configuration related to data protection, locking, and permissions.
+
+. Select *Save* to add the bucket.

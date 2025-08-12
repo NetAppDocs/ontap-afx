@@ -9,16 +9,12 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can perform network administration of your ONTAP AFX storage system, such as adding a broadcast domain or creating a network interface. For each of the ONTAP resources, there are additional configuration options such as editing and deleting objects. You should explore the System Manager user interface to learn more about ONTAP AFX network configuration.
+You can manage the networking of your ONTAP AFX storage system. After adding or creating network resources, you can perform additional administration tasks. System Manager provides a robust set of options that you can explore to learn more about ONTAP AFX configuration.
 
 [TIP]
-Links to the unified ONTAP documentation are provided for additional information where appropriate.
+Links to the unified ONTAP documentation are provided for additional details where appropriate. Also see link:../administer/manage-ethernet-ports.html[Manage ONTAP AFX Ethernet ports] for related networking configuration.
 
 //https://docs.netapp.com/us-en/ontap/networking/view_network_information_overview.html[View ONTAP network information^]
-
-.Related information
-
-* link:../administer/manage-ethernet-ports.html[Manage ONTAP AFX Ethernet ports]
 
 == Add a broadcast domain
 
@@ -31,26 +27,26 @@ This broadcast domain contains ports in the “Default” IPspace. These ports a
 Cluster::
 This broadcast domain contains ports in the “Cluster” IPspace. These ports are used for cluster communication and include all cluster ports from all nodes in the cluster.
 
-You can also create additional broadcast domains after your cluster has been initialized. When you create a broadcast domain, a failover group that contains the same ports is automatically created.
+You can create additional broadcast domains after your cluster has been initialized. When you create a broadcast domain, a failover group that contains the same ports is automatically created.
 
 .About this task
 
-The maximum transmission unit (MTU) of the ports added to a broadcast domain are updated to the MTU value set in the broadcast domain.
+The maximum transmission unit (MTU) values of the ports defined for a broadcast domain are updated to the MTU value set in the broadcast domain.
 
 .Steps
 
 .  In System Manager, select *Network* and then *Overview*.
 . Under *Broadcast domains*, select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
-. Provide a name for the broadcast domain or accept the default.
+. Provide the name of the broadcast domain or accept the default.
 +
 All broadcast domain names must be unique within an IPspace.
 . Select the IPspace for the broadcast domain.
 +
 If you don’t specify an IPspace name, the broadcast domain is created in the "Default" IPspace.
-. Enter the maximum transmission unit (MTU).
+. Provide the maximum transmission unit (MTU).
 +
 MTU is the largest data packet that can be accepted in your broadcast domain.
-. Select the desired ports; then select *Save*.
+. Select the desired ports and then select *Save*.
 
 .Related information
 
@@ -58,7 +54,16 @@ MTU is the largest data packet that can be accepted in your broadcast domain.
 
 == Add an IPspace
 
-xxx
+IPspaces allow a single cluster to be accessed by clients in separately administered network domains. This provides isolation of the client traffic to ensure security and data privacy.
+
+.Steps
+
+.  In System Manager, select *Network* and then *Overview*.
+. Under *IPspaces*, select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
+. Provide the name of the IPspace or accept the default.
++
+All IPspace names must be unique within a cluster.
+. Select *Save*.
 
 .Related information
 
@@ -66,15 +71,27 @@ xxx
 
 == Add a network interface
 
-xxx
+A logical network interface provides the network access for clients as well as cluster management traffic.
+
+.  In System Manager, select *Network* and then *Overview*.
+. Scroll to the bottom of the page and select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters] under the tab *Network interfaces*.
+. Select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
+. Provide the configuration details, including the interface type, supported protocols, and name.
+. Select *Save*.
 
 .Related information
 
 * https://docs.netapp.com/us-en/ontap/concepts/network-connectivity-concept.html[Network architecture overview^]
 
-== Add a subnetwork
+== Add a subnet
 
-xxx
+Subnetworks provide a logical division of the IP address space in your network. You can define subnets and use them when adding the logicl network interfaces.
+
+.  In System Manager, select *Network* and then *Overview*.
+. Scroll to the bottom of the page and select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters] under the tab *Subnets*.
+. Select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
+. Provide the configuration details, including the name, IP address details, and broadcast domain.
+. Select *Save*.
 
 .Related information
 

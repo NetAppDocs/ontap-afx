@@ -9,32 +9,28 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can define user accounts and roles with System Manager based on the supporting authentication and authorization services you have configured.
+You can define user accounts and roles with System Manager based on the supporting authentication and authorization services available to ONTAP AFX.
 
 .Related information
 
 * link:../administer/prepare-authentication.html[Prepare authentication services]
-* link:../administer/advanced-svm.html[ONTAP AFX advanced SVM administration]
+* link:../administer/additional-ontap-svm.html[Additional SVM features and configuration]
 
-== Create user account roles
+== Create an account role
 
-Roles for cluster administrators and storage VM administrators are automatically created when your cluster is initialized. Create additional user account roles to define specific functions that users assigned to the roles can perform on your cluster.
+Roles for cluster administrators and storage VM administrators are automatically created when your ONTAP AFX cluster is set up and initialized. You can create additional user account roles to define specific functions that users assigned to the roles can perform on your cluster.
 
 *DP: Rewrite*
 
 .Steps
 
-. In System Manager, select *Cluster > Settings*.
+. In System Manager, select *Cluster* and then *Settings*.
 . In the *Security* section, next to *Users and roles*, select image:icon_arrow.gif[blue arrow pointing to the right].
 . Under *Roles*, select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
-. Select the role attributes.
+. Provide the name of the role and the attributes.
 +
 To add multiple attributes, select image:icon_add.gif[plus sign followed by the word add in blue letters].
 . Select *Save*.
-
-.Result
-
-A new user account is created and available for use on your ONTAP AFX storage system.
 
 == Create an administrator account 
 

@@ -15,6 +15,10 @@ xxx
 
 * link:../administer/manage-cluster-networking.html[Manage ONTAP AFX cluster networking^]
 
+== Display cluster nodes
+
+xxx
+
 == Create a LAG
 
 xxx
