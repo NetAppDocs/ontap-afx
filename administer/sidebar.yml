@@ -15,10 +15,10 @@ entries:
       url: /administer/view-jobs.html
   - title: Manage networking and security
     entries:
-    - title: Manage Ethernet ports
-      url: /administer/manage-ethernet-ports.html
     - title: Manage cluster networking
       url: /administer/manage-cluster-networking.html
+    - title: Manage Ethernet ports
+      url: /administer/manage-ethernet-ports.html
     - title: Prepare authentication services
       url: /administer/prepare-authentication.html
     - title: Manage users and roles

@@ -14,7 +14,11 @@ You can manage the networking of your ONTAP AFX storage system. In addition to a
 [TIP]
 Links to the unified ONTAP documentation are provided where appropriate for additional details. Also see link:../administer/manage-ethernet-ports.html[Manage ONTAP AFX Ethernet ports] for related networking administration.
 
-//https://docs.netapp.com/us-en/ontap/networking/view_network_information_overview.html[View ONTAP network information^]
+.Related information
+
+* link:../administer/manage-ethernet-ports.html[Manage ONTAP AFX Ethernet ports]
+
+//https://docs.netapp.com/us-en/ontap/networking/view_network_information_overview.html[View ONTAP network information^]  ???
 
 == Create an IPspace
 

@@ -11,15 +11,25 @@ summary:
 [.lead]
 xxx
 
+>> Lower level
+
 .Related information
 
-* link:../administer/manage-cluster-networking.html[Manage ONTAP AFX cluster networking^]
+* link:../administer/manage-cluster-networking.html[Manage ONTAP AFX cluster networking]
 
 == Display network configuration of cluster nodes
 
 xxx
 
+.Steps
+
+xxx
+
 == Create a LAG
+
+xxx
+
+.Steps
 
 xxx
 
