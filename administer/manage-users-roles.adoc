@@ -11,6 +11,9 @@ summary:
 [.lead]
 You can define user accounts and roles with System Manager based on the supporting authentication and authorization services available to ONTAP AFX.
 
+[NOTE]
+Each ONTAP user needs to have one role assigned. The role includes privileges and determines what the user is allowed to access and do.
+
 .Related information
 
 * link:../administer/prepare-authentication.html[Prepare authentication services]

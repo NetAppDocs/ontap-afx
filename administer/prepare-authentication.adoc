@@ -9,10 +9,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can use System Manager to prepare the authentication and authorization services needed to define user accounts and roles. This includes configuring active directory domain controller access, LDAP, and SAML.
-
-[NOTE]
-Each ONTAP user needs to have one role assigned. The role includes privileges and determines what the user is allowed to access and do.
+You can prepare the authentication and authorization services needed to define user accounts and roles. This includes configuring active directory domain controller access, LDAP, and SAML.
 
 .Related information
 
@@ -20,16 +17,12 @@ Each ONTAP user needs to have one role assigned. The role includes privileges an
 
 == Configure active directory domain controller access
 
-Configure active directory (AD) domain controller access for your cluster or storage VM so that you can enable AD account access.
+Configure Active Directory (AD) domain controller access for your cluster or storage VM so that you can enable AD account access.
 
 .Steps
 
 . In System Manager, select *Cluster* and then *Settings*.
 . In the *Security* section under *Active Directory*, select *Configure*.
-
-.What's next?
-
-You can enable AD account access on your ONTAP AFX storage system.
 
 == Configure LDAP
 
@@ -44,10 +37,6 @@ You must have generated a certificate signing request and added a CA-signed serv
 . In System Manager, select *Cluster* and then *Settings*.
 . In the *Security* section next to *LDAP*, select image:icon_gear_white_bg.png[outline of a blue mechanical gear].
 . Enter the necessary LDAP server and binding information and select *Save*.
-
-.What's next?
-
-You can now use LDAP for user information and authentication.
 
 == Configure SAML authentication
 
@@ -71,7 +60,3 @@ A confirmation window displays the metadata information, which has been automati
 . Select *Logout* to enable SAML-based authentication.
 +
 The IdP system will display an authentication screen.
-
-.What's next?
-
-You can now use SAML authentication for your user accounts.
