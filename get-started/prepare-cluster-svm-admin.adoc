@@ -54,7 +54,7 @@ An SVM administrator has control of a specific data SVM and so is more restricte
 As with unified ONTAP, AFX has three administrative interfaces. The LIF (IP address) you need to use varies depending on the administrative interface and your environment.
 
 [NOTE]
-The System Manager user interface is preferred in most cases and is used to describe the administrative tasks. Exceptions are noted where appropriate.
+The System Manager user interface is preferred in most cases and is used to describe the administrative tasks. Exceptions are noted where appropriate. For most tasks you need to be using an administrator account.
 
 [cols="25,75"*,options="header"]
 |===
@@ -69,7 +69,6 @@ The System Manager user interface is preferred in most cases and is used to desc
 |===
 
 == Learn to search, filter, and sort information in System Manager
-// SM doc link
 
 The System Manager user interface includes a robust set of features enabling you to access and display the information you need. Learning to use these capabilities will help you to better administer the ONTAP AFX storage system. See https://docs.netapp.com/us-en/ontap/task_admin_search_filter_sort.html[Search, filter, sort information in System Manager^] for more information.
 
@@ -137,7 +136,7 @@ link:../manage-data/prepare-provision-storage.html[Prepare] to allocate and admi
 
 == References to additional documentation
 
-NetApp offers ONTAP in three distinct personalities. Where appropriate, the ONTAP AFX documentation includes links to the unified ONTAP doc site. In many cases, this provides more depth and a different perspective which can be helpful as you administer ONTAP AFX.
+NetApp offers ONTAP in three distinct personalities. Where appropriate, this ONTAP AFX documentation includes links to topics ar the unified ONTAP doc site. In many cases, this additional information provides more depth and a different perspective that can be helpful as you begin administering your ONTAP AFX storage system.
 
 .Related information
 

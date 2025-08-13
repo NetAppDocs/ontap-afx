@@ -9,10 +9,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You need to set up and administer the networking configuration of your ONTAP AFX storage system as part of providing clients access to shared data. In addition to creating network definitions, you can perform other related administration tasks. There is a robust set of options to explore as part of learning more about ONTAP AFX network configuration.
-
-[NOTE]
-You need to be a cluster administrator to perform the ONTAP AFX network configuration.
+You need to set up and administer the networking configuration of your ONTAP AFX storage system as part of providing clients access to shared data. In addition to creating network definitions, you can edit the definitions and perform other related tasks. There is a robust set of options to explore as part of learning more about ONTAP AFX network configuration.
 
 .Related information
 

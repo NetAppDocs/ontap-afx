@@ -9,7 +9,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-ONTAP AFX includes an internal framework to run asynchronous background jobs based on your configuration. These jobs can be long-running AFX components or short-term processes executed in response to an administrative task or REST API request.
+ONTAP AFX includes an internal platform to run asynchronous background jobs based on your configuration and actions. These jobs are long-running AFX components or short-term processes executed in response to an administrative task or REST API request. You can display and monitor these internal jobs.
 
 .Steps
 

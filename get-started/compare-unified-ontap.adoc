@@ -15,8 +15,6 @@ Comparing ONTAP AFX to unified ONTAP provides a valuable perspective and can be 
 
 ONTAP AFX is derived from the unified ONTAP personality. Because of this, it includes a robust set of features and administrative options. If you're an experienced ONTAP user, you'll find it very easy to work with AFX. And if you're new to ONTAP, the simplified System Manager user interface and streamlined administration will help you get started quickly.
 
-*=> DP: Need to confirm the language used around "personality" above.*
-
 There are several new and updated features available with ONTAP AFX. Review the related information for more details.
 
 .Related information
@@ -34,7 +32,7 @@ There are a few areas where the default AFX configuration differs from unified O
 
 .GDD
 
-The GDD otpion is enabled by for all FlexGroup volumes.
+The GDD option is enabled by for all FlexGroup volumes.
 
 == Unsupported or restricted unified ONTAP capabilities
 
