@@ -53,10 +53,10 @@ An SVM administrator has control of a specific data SVM and so is more restricte
 
 == Administrative interfaces
 
-As with unified ONTAP, AFX has three administrative interfaces.
+As with unified ONTAP, AFX has three administrative interfaces. The LIF (IP address) you need to use varies depending on the administrative interface and your environment.
 
-[TIP]
-The LIF (IP address) you need to use varies depending on the administrative interface and your environment.
+[NOTE]
+The System Manager user interface is preferred in most cases and will be used to describe the administrative tasks. Exceptions will be noted where appropriate.
 
 [cols="25,75"*,options="header"]
 |===
