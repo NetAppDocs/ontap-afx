@@ -9,14 +9,16 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can create a data SVM to provide data and configuration isolation. You might do this for different groups or projects within your organization.
+You can create a data SVM to provide configuration isolation and improve security. You might do this for different groups or projects within your organization.
 
 .Before you begin
 
 You'll need the following:
 
 * A minimum of four IP addresses
-* Name of an IPspace or default
+* Name of an IPspace or 
+
+Review link:../administer/manage-cluster-networking.html[Manage ONTAP AFX cluster networking] for more information.
 
 .Steps
 

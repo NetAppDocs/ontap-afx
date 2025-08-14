@@ -11,6 +11,10 @@ summary:
 [.lead]
 You display a high-level view of your ONTAP AFX cluster, including storage usage and general performance.
 
+.Related information
+
+* link:../administer/advanced-cluster.html[ONTAP AFX advanced cluster administration]
+
 == Storage capacity
 
 The System Manager dashboard includes a high-level display of the storage utilization for the cluster.

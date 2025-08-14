@@ -27,8 +27,6 @@ entries:
       url: /administer/manage-certificates.html
   - title: Manage storage VMs
     entries:
-    - title: Manage and prepare networking
-      url: /administer/manage-svm-networking.html
     - title: Display and monitor
       url: /administer/display-svms.html
     - title: Create a data SVM

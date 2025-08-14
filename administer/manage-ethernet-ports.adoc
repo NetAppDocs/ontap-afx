@@ -4,6 +4,7 @@ permalink: administer/manage-ethernet-ports.html
 keywords: 
 summary: 
 ---
+
 = Manage ONTAP AFX Ethernet ports
 :icons: font
 :imagesdir: ../media/
@@ -11,17 +12,47 @@ summary:
 [.lead]
 xxx
 
-.Related information
-
-* link:../administer/manage-cluster-networking.html[Manage ONTAP AFX cluster networking^]
-
-== Create a LAG
-
-xxx
+>> Lower level
 
 .Related information
 
-* https://docs.netapp.com/us-en/ontap/networking/combine_physical_ports_to_create_interface_groups.html[Combine physical ports to create ONTAP interface groups^]
+* link:../administer/manage-cluster-networking.html[Manage ONTAP AFX cluster networking]
+
+== Add a broadcast domain
+
+A broadcast domain simplifies management of your cluster network by grouping ports that are part of the same layer 2 network. The storage virtual machines (SVMs) can then be assigned ports in the group for data or management traffic.
+
+There are several broadcast domains created during cluster setup, including:
+
+Default::
+This broadcast domain contains ports in the “Default” IPspace. These ports are used primarily to serve data. Cluster management and node management ports are also in this broadcast domain.
+Cluster::
+This broadcast domain contains ports in the “Cluster” IPspace. These ports are used for cluster communication and include all cluster ports from all nodes in the cluster.
+
+You can create additional broadcast domains after your cluster has been initialized. When you create a broadcast domain, a failover group that contains the same ports is automatically created.
+
+.About this task
+
+The maximum transmission unit (MTU) values of the ports defined for a broadcast domain are updated to the MTU value set in the broadcast domain.
+
+.Steps
+
+.  In System Manager, select *Network* and then *Overview*.
+. Under *Broadcast domains*, select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
+. Provide the name of the broadcast domain or accept the default.
++
+All broadcast domain names must be unique within an IPspace.
+. Select the IPspace for the broadcast domain.
++
+If you don’t specify an IPspace name, the broadcast domain is created in the "Default" IPspace.
+. Provide the maximum transmission unit (MTU).
++
+MTU is the largest data packet that can be accepted in your broadcast domain.
+. Select the desired ports and then select *Save*.
+
+.Related information
+
+* https://docs.netapp.com/us-en/ontap/networking/configure_broadcast_domains_cluster_administrators_only_overview.html[Learn about ONTAP broadcast domains^]
 
 == Create a VLAN
 
@@ -54,3 +85,16 @@ You have created a VLAN to increase security, isolate problems, and limit availa
 .Related information
 
 * https://docs.netapp.com/us-en/ontap/networking/configure_network_ports_cluster_administrators_only_overview.html[Learn about ONTAP network port configuration^]
+
+== Create a LAG
+
+A link aggregate group (LAG) is a technique that combines multiple physical network connections into a single logical connection. It can be used to increase the bandwidth and provide redundancy between nodes.
+
+.Steps
+
+xxx
+
+.Related information
+
+* https://docs.netapp.com/us-en/ontap/networking/combine_physical_ports_to_create_interface_groups.html[Combine physical ports to create ONTAP interface groups^]
+

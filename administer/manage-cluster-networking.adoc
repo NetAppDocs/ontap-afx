@@ -9,73 +9,77 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can perform network administration of your ONTAP AFX storage system, such as adding a broadcast domain or creating a network interface. For each of the ONTAP resources, there are additional configuration options such as editing and deleting objects. You should explore the System Manager user interface to learn more about ONTAP AFX network configuration.
-
-[TIP]
-Links to the unified ONTAP documentation are provided for additional information where appropriate.
-
-//https://docs.netapp.com/us-en/ontap/networking/view_network_information_overview.html[View ONTAP network information^]
+You need to set up and administer the networking configuration of your ONTAP AFX storage system as part of providing clients access to shared data. In addition to creating network definitions, you can edit the definitions and perform other related tasks. There is a robust set of options to explore as part of learning more about ONTAP AFX network configuration.
 
 .Related information
 
 * link:../administer/manage-ethernet-ports.html[Manage ONTAP AFX Ethernet ports]
 
-== Add a broadcast domain
+//https://docs.netapp.com/us-en/ontap/networking/view_network_information_overview.html[View ONTAP network information^]  ???
 
-A broadcast domain simplifies management of your cluster network by grouping ports that are part of the same layer 2 network. The storage virtual machines (SVMs) can then be assigned ports in the group for data or management traffic.
+== Create an IPspace
 
-There are several broadcast domains created during cluster setup, including:
+An IPspace is an administrative domain for IP addresses and related network configuration. These spaces can be used to support your SVMs through isolated administration and routing. For example, they are useful when clients use overlapping IP addresses from the same IP address and subnet range.
 
-Default::
-This broadcast domain contains ports in the “Default” IPspace. These ports are used primarily to serve data. Cluster management and node management ports are also in this broadcast domain.
-Cluster::
-This broadcast domain contains ports in the “Cluster” IPspace. These ports are used for cluster communication and include all cluster ports from all nodes in the cluster.
-
-You can also create additional broadcast domains after your cluster has been initialized. When you create a broadcast domain, a failover group that contains the same ports is automatically created.
-
-.About this task
-
-The maximum transmission unit (MTU) of the ports added to a broadcast domain are updated to the MTU value set in the broadcast domain.
+[TIP]
+You must create an IPspace before you can create a subnet.
 
 .Steps
 
 .  In System Manager, select *Network* and then *Overview*.
-. Under *Broadcast domains*, select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
-. Provide a name for the broadcast domain or accept the default.
+. Under *IPspaces*, select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
+. Provide the name of the IPspace or accept the default.
 +
-All broadcast domain names must be unique within an IPspace.
-. Select the IPspace for the broadcast domain.
-+
-If you don’t specify an IPspace name, the broadcast domain is created in the "Default" IPspace.
-. Enter the maximum transmission unit (MTU).
-+
-MTU is the largest data packet that can be accepted in your broadcast domain.
-. Select the desired ports; then select *Save*.
+All IPspace names must be unique within a cluster.
+. Select *Save*.
 
-.Related information
+.What's next
 
-* https://docs.netapp.com/us-en/ontap/networking/configure_broadcast_domains_cluster_administrators_only_overview.html[Learn about ONTAP broadcast domains^]
-
-== Add an IPspace
-
-xxx
+You can use the IPspace to create a subnet.
 
 .Related information
 
 * https://docs.netapp.com/us-en/ontap/networking/configure_ipspaces_cluster_administrators_only_overview.html[Learn about ONTAP IPspace configuration^]
 
-== Add a network interface
+== Create a subnet
 
-xxx
+A subnetwork enforces a logical division of the IP address space in your network. It enables you to allocate dedicated blocks of IP addresses for the creation of a network interface (LIF). Subnet simplify LIF creation by allowing you to specify the subnet name instead of a specific IP address and network mask.
 
-.Related information
+.Before you begin
 
-* https://docs.netapp.com/us-en/ontap/concepts/network-connectivity-concept.html[Network architecture overview^]
+You must create a broadcast domain and IPspace where the subnet will be defined. Also note the following:
 
-== Add a subnetwork
+* All subnet names must be unique within a specific IPspace.
+* The IP address range used for a subnet cannot overlap with the IP addresses of other subnets.
 
-xxx
+.Steps
+
+.  In System Manager, select *Network* and then *Overview*.
+. Scroll to the bottom of the page and select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters] under the *Subnets* tab.
+. Select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
+. Provide the configuration details, including the name, IP address details, and broadcast domain.
+. Select *Save*.
+
+.What's next
+
+The new subnet will simplify the creation of your network interfaces.
 
 .Related information
 
 * https://docs.netapp.com/us-en/ontap/networking/configure_subnets_cluster_administrators_only_overview.html[Learn about subnets for the ONTAP network^]
+
+== Create a network interface
+
+A logical network interface (LIF) consists of an IP address and related network configuration. It can be associated with a physical or logical port and is typically used by the clients to access data provided by an SVM. LIFs provide resiliency in the event of a failure and can migrate among the node ports so communication is not interrupted.
+
+.Steps
+
+.  In System Manager, select *Network* and then *Overview*.
+. Scroll to the bottom of the page and select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters] under the tab *Network interfaces*.
+. Select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
+. Provide the configuration details, including the interface type, supported protocols, and name.
+. Select *Save*.
+
+.Related information
+
+* https://docs.netapp.com/us-en/ontap/concepts/network-connectivity-concept.html[Network architecture overview^]

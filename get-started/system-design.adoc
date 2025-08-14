@@ -27,13 +27,11 @@ ONTAP AFX is designed as a next generation data platform and is specifically tar
 //* Workloads that require high concurrency and parallel I/O, such as multi‑GPU systems employing CUDA with RDMA or Infiniband transport.
 * Deployment scenarios where overall data center rack-to-power density is critical, allowing a reduced storage footprint.
 
-*=> DP: Should we mention CUDA in the next to the last bullet above? For example, "... such as multi‑GPU systems employing CUDA with RDMA or Infiniband transport." If so, spell it out? The term "CUDA" is mentioned in the arch spec page.*
-
 == Design principles and goals
 
 There are several principles and goals guiding the design and evolution of ONTAP AFX storage systems.
 
-.Decouple storage and compute
+.Decouple storage and compute capabilities
 
 Unlike unified ONTAP, the AFX storage and compute elements of the cluster are decoupled. The controllers are not restricted to accessing a limited set of local disks.
 
@@ -59,9 +57,7 @@ The set of controller nodes and storage shelves in a cluster can be independentl
 
 .High availability
 
-With the traditional HA-pair architecture available with unified ONTAP, concurrent failure of two nodes can result in data loss. AFX provides a more robust and resilient architecture supporting flexible partner selection as well as full N-way configuration. This design tolerates concurrent failures without disruption or data loss.
-
-*=> DP: Above, is "N-way" an acceptable term? It is used in the arch spec page.*
+With the traditional HA-pair architecture available with unified ONTAP, concurrent failure of two nodes can result in data loss. AFX provides a more robust and resilient architecture supporting flexible partner selection as well as full _N-way_ configuration. This design tolerates concurrent failures without disruption or data loss.
 
 .Improved data mobility
 

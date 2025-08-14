@@ -12,7 +12,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-Learn about the new capabilities available with ONTAP 9.17.1 for AFX storage systems.
+Learn about the new capabilities available with ONTAP 9.17.1 that are available with ONTAP AFX storage systems.
 
 .Related information
 

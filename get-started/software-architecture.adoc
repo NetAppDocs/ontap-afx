@@ -47,8 +47,6 @@ The common storage pool (or _storage availability zone_) is a collection of disk
 
 FlexTrees and buckets are the _data containers_ exposed to the customer based on the client access protocols. These scalable containers are designed to abstract away many of the complex internal storage details.
 
-*=> DP: Need to confirm that AFX includes and exposes FlexTrees.*
-
 .Data layout and access
 
 The data layout and access is tuned for seamless access and efficient utilization of GPUs. This plays a critical role in eliminating bottlenecks and maintaining consistent performance.
