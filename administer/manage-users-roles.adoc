@@ -9,10 +9,10 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can define user accounts and roles with System Manager based on the supporting authentication and authorization services available to ONTAP AFX.
+You can define user accounts and roles using the supporting authentication and authorization services available to ONTAP AFX.
 
 [NOTE]
-Each ONTAP user needs to have one role assigned. The role includes privileges and determines what the user is allowed to access and do.
+Each ONTAP user needs to have one role assigned. A role includes privileges and determines what the user is allowed to access and do.
 
 .Related information
 
@@ -22,8 +22,6 @@ Each ONTAP user needs to have one role assigned. The role includes privileges an
 == Create an account role
 
 Roles for cluster administrators and storage VM administrators are automatically created when your ONTAP AFX cluster is set up and initialized. You can create additional user account roles to define specific functions that users assigned to the roles can perform on your cluster.
-
-*DP: Rewrite*
 
 .Steps
 
