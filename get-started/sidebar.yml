@@ -13,8 +13,30 @@ entries:
     url: /get-started/quick-start.html
   - title: Install your AFX system
     entries:
-    - title: Installation workflow
-      url: /install-setup/workflow-install.html
+    - title: Install workflow
+      url: "/afx/install-setup-workflow.html"
+    - title: Review hardware requirements
+      url: "/afx/install-setup-requirements.html"    
+    - title: Prepare to install
+      url: "/afx/prepare-hardware.html"
+    - title: Install hardware
+      entries:
+        - title: Install switches
+          url: "/afx/install-switches.html"  
+        - title: Install storage system and shelves
+          url: "/afx/deploy-hardware.html"
+    - title: Cabling 
+      entries:
+        - title: Review supported configurations
+          url: "/afx/afx-cable-overview.html"
+        - title: Gather network information
+          url: "/afx/install-network-reqs.html"
+        - title: Cable hardware
+          url: "/afx/cable-hardware.html"  
+    - title: Power on and configure switches
+      url: "/afx/power-on-configure-switch.html"  
+    - title: Power on system
+      url: "/afx/power-on-hardware.html"    
   - title: Set up your AFX system
     entries:
     - title: Set up the cluster
