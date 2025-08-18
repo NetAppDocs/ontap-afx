@@ -13,7 +13,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-This FAQ list provides answers to questions that customers typically have about ONTAP AFX storage systems. It contains concepts and terminology that can be valuable when exploring AFX in more detail or performing advanced administration tasks.
+This FAQ list provides answers to questions that customers typically have about their ONTAP AFX storage systems. It also contains concepts and terminology that can be valuable when exploring AFX in more detail or performing advanced administration tasks.
 
 // --- Additional topics (see terminology section in advanced admin)
 // automated topology management (ATM), this is included as a background job
@@ -23,9 +23,9 @@ This FAQ list provides answers to questions that customers typically have about 
 
 .What is an ONTAP "personality"?
 
-ONTAP is a robust and versatile storage platform, known for its comprehensive feature set and adaptability to a wide range of storage requirements. While its flexibility makes it an excellent choice for organizations with diverse workloads, some customers can benefit from a more tailored solution optimized for the needs of their specific environment.
+ONTAP is a robust and versatile storage platform, known for its comprehensive feature set and adaptability to a wide range of storage requirements. While this flexibility makes it an excellent choice for organizations with diverse workloads, some customers can benefit from a more tailored storage solution optimized for the needs of their specific environment.
 
-To address these specialized needs, NetApp offers distinct ONTAP personalities, each of which is designed with a feature set to support the unique customer requirements. An ONTAP personality is a combination of hardware and software capabilities, purpose-built to deliver an optimized experience for targeted use cases. NetApp provides three ONTAP personalities:
+To address these specialized needs, NetApp offers distinct ONTAP personalities, each of which includes a feature set designed to support the unique customer requirements. An ONTAP personality is a combination of hardware and software capabilities and purpose-built to deliver an optimized experience for targeted use cases. NetApp provides three ONTAP personalities:
 
 Unified ONTAP::
 This is the NetApp flagship offering, available on AFF and FAS systems as well as virtualized deployments such as ONTAP Select. Unified ONTAP delivers a broad set of data management features, supporting NAS, SAN, and S3 protocols for maximum flexibility.
@@ -36,12 +36,12 @@ This is a hardware and software solution designed specifically for SAN-only envi
 ONTAP AFX::
 This is a disaggregated hardware and software solution engineered to meet the rigorous requirements of high-performance NAS and S3 workloads, including AI/ML applications. ONTAP AFX delivers specialized capabilities for customers requiring scalable, high-throughput file and object storage.
 
-By offering these unique ONTAP personalities, NetApp enables organizations to select a storage solution that aligns with their operational requirements and application workloads.
+By offering these unique ONTAP personalities, NetApp enables organizations to select a storage solution aligned with their operational requirements and application workloads.
 
-.What does "disaggregated" mean with the ONTAP AFX storage systems?
+.What does "disaggregated" mean with ONTAP AFX storage systems?
 
-The term "disaggregated" can have two different though related meanings with ONTAP AFX.
+The term "disaggregated" can have different though related meanings with ONTAP AFX.
 
-The first concept is based on decoupling the compute capability in the controller nodes from the storage shelves. With ONTAP AFX, the cluster compute and storage components are no longer tightly coupled as they are with unified ONTAP. Rather, they are connected through one or more cluster switches. Each controller has a complete view of the cluster storage pool.
+An important first concept is based on decoupling the compute capability in the controller nodes from the storage shelves. With ONTAP AFX, the cluster compute and storage components are no longer tightly coupled as they are with unified ONTAP. Instead they are connected through one or more cluster switches. Each controller has a complete view of the entire cluster storage pool.
 
-The second concept, which is a result of the decoupling, is that the aggregates and RAID management are removed as administrable entites. The AFX storage abstraction layer automatically configures and manages the aggregates and physical disks and RAID groups. The AFX administrator can instead focus on the higher level storage configuration based on volumes and buckets.
+The second related concept with disaggregated storage is the aggregates and RAID management are removed as administrable entities. The AFX storage abstraction layer automatically configures and manages the aggregates, physical disks, and RAID groups. The AFX administrator can focus on the higher level storage configuration based on volumes and buckets.
