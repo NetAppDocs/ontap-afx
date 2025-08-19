@@ -41,7 +41,7 @@ While ONTAP AFX is derived from unified ONTAP, there are several features that a
 [TIP]
 You should review the updates and changes for ONTAP AFX in the appropriate link:../release-notes/whats-new-9171.html[What's new] section based on your release.
 
-*=> DP: Need to carefully review the organization below. Or should we go back to a single simple "flat" list rather than breaking this into sections?*
+*=> DP: Need to carefully review the organization below. Should we go back to a single simple "flat" list rather than breaking this content into sections?*
 
 The following features, organized in several categories, are not available or have changed with the initial release of ONTAP AFX.
 

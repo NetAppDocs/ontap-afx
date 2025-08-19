@@ -9,7 +9,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You display a high-level view of your ONTAP AFX cluster, including storage usage and general performance.
+You can display a high-level view of your ONTAP AFX cluster, including the storage usage and general performance.
 
 .Related information
 
