@@ -33,10 +33,10 @@ entries:
         url: /protect-data/create-peer-relationship.html
       - title: Set up and manage snapshot replication
         url: /protect-data/snapshot-replication.html
-      - title: Manage policies and schedules
-        url: /protect-data/policies-schedules.html
       - title: Manage consistency groups
         url: /protect-data/manage-consistency-groups.html
+      - title: Manage policies and schedules
+        url: /protect-data/policies-schedules.html
       - title: Back up and restore
         url: /protect-data/backup-restore.html
   - title: Secure data
