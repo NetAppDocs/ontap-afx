@@ -1,0 +1,53 @@
+---
+sidebar: sidebar
+permalink: administer/view-data-protection.html
+keywords: 
+summary: 
+---
+= View an overview of ONTAP AFX data protection
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+xxx
+
+You can sign in to System Manager to access the AFX dashboard and display the cluster status. This is a good first step before beginning your ONTAP AFX administrative tasks or if you suspect an operational issue.
+
+*Placeholder*
+
+== Prepare to use data protection
+
+xxx
+
+== Overview of data protection configuration
+
+xxx
+
+.Before you begin
+
+You'll need the following:
+
+* IP address or domain name of the cluster management LIF
+* Administrator account credentials
+
+.Steps
+
+. Connect to System Manager using a browser and the cluster management IP address:
++
+`\https://$FQDN_IPADDR/`
++
+*Example*
++
+`\https://10.61.25.33/`
+
+. Provide the username and password for the administrator account and select *Sign in*.
+
+. Select *Dashboard* in the left navigation pane and review the cluster health.
+
+. In the navigation pane, select *Cluster* and then *Overview*.
+
+. Review the cluster name, version, ONTAP personality and the other details.
+
+. At the top of the overview page, select *Cabling* for a visual display of the cluster hardware and connections.
+
+. In the navigation pane, select *Events & Jobs* and then *System alerts* to display and review the system alerts.
