@@ -21,6 +21,8 @@ entries:
     entries:
       - title: Overview of data protection
         url: /protect-data/view-data-protection.html
+      - title: Manage consistency groups
+        url: /protect-data/manage-consistency-groups.html
       - title: Create a snapshot
         url: /protect-data/create-snapshot.html
       - title: Manage snapshots
@@ -29,8 +31,6 @@ entries:
         url: /protect-data/use-snapmirror.html
       - title: Set up and manage snapshot replication
         url: /protect-data/snapshot-replication.html
-      - title: Manage consistency groups
-        url: /protect-data/manage-consistency-groups.html
       - title: Manage policies and schedules
         url: /protect-data/policies-schedules.html
       - title: Back up and restore
