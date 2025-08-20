@@ -33,6 +33,8 @@ entries:
       url: /administer/create-svm.html
     - title: Configure SVM for data access
       url: /administer/configure-svm.html
+    - title: Migrate an SVM
+      url: /administer/migrate-svm.html
   - title: Support the cluster
     entries:
     - title: Manage AutoSupport
