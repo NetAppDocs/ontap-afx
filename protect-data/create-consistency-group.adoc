@@ -1,0 +1,18 @@
+---
+sidebar: sidebar
+permalink: protect-data/create-consistency-group.html
+keywords: 
+summary: 
+---
+= Create a consistency group on ONTAP AFX
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+xxx
+
+>> Take from first H2 in create snapshot
+
+.Related information
+
+* link:../protect-data/manage-consistency-groups.html[Manage consistency groups]
