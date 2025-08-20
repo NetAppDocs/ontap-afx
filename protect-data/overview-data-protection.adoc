@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
-permalink: protect-data/view-data-protection.html
+permalink: protect-data/overview-data-protection.html
 keywords: 
 summary: 
 ---
-= Overview of ONTAP AFX data protection
+= Overview of ONTAP AFX data protection configuration
 :icons: font
 :imagesdir: ../media/
 
@@ -12,14 +12,6 @@ summary:
 xxx
 
 You can sign in to System Manager to access the AFX dashboard and display the cluster status. This is a good first step before beginning your ONTAP AFX administrative tasks or if you suspect an operational issue.
-
-*Placeholder*
-
-== Prepare to use data protection
-
-xxx
-
-== Overview of data protection configuration
 
 xxx
 

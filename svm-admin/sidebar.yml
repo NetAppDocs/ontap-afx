@@ -20,7 +20,7 @@ entries:
   - title: Protect data
     entries:
       - title: Overview of data protection
-        url: /protect-data/view-data-protection.html
+        url: /protect-data/overview-data-protection.html
       - title: Manage consistency groups
         url: /protect-data/manage-consistency-groups.html
       - title: Create a snapshot
