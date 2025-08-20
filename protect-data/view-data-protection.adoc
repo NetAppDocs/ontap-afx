@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: administer/view-data-protection.html
+permalink: protect-data/view-data-protection.html
 keywords: 
 summary: 
 ---
