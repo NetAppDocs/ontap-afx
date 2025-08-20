@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: administer/migrate-svm.html
+keywords: 
+summary: 
+---
+= Migrate an SVM to an ONTAP AFX cluster
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+xxx
+
+*Provide description of the feature and conceptual overview. Then link to unitified ONTAP.*
+
+https://docs.netapp.com/us-en/ontap/svm-migrate/index.html[SVM data mobility^]
