@@ -11,6 +11,8 @@ summary:
 [.lead]
 xxx
 
+*Introduce SnapMirror options. Describe SnapMirror async. Link to large section covering SnapMirror Synchronous.*
+
 SnapMirror has more robust support in ONTAP AFX than ASA r2. According to Akshatha, SnapMirror can be configured in AFX with a:
 
 * Volume
