@@ -33,8 +33,6 @@ entries:
         url: /protect-data/create-peer-relationship.html
       - title: Set up and manage snapshot replication
         url: /protect-data/snapshot-replication.html
-      - title: Administer SnapMirror synchronous
-        entries:
       - title: Manage consistency groups
         url: /protect-data/manage-consistency-groups.html
       - title: Manage policies and schedules
