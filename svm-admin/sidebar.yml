@@ -29,6 +29,8 @@ entries:
         url: /protect-data/manage-snapshots.html
       - title: Use SnapMirror
         url: /protect-data/use-snapmirror.html
+      - title: Create an SVM peer relationship
+        url: /protect-data/create-peer-relationship.html
       - title: Set up and manage snapshot replication
         url: /protect-data/snapshot-replication.html
       - title: Manage policies and schedules
