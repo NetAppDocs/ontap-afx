@@ -27,5 +27,4 @@ Review link:../administer/manage-cluster-networking.html[Manage ONTAP AFX cluste
 
 .Related information
 
-* link:../administer/display-svm.html[Display and monitor the ONTAP AFX SVMs]
-* link:../get-started/prepare-cluster-svm-admin.html[Understand storage virtual machines]
+* link:../administer/display-svms.html[Display and monitor the ONTAP AFX SVMs]

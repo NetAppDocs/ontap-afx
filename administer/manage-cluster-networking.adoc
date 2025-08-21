@@ -9,7 +9,10 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You need to set up and administer the networking configuration of your ONTAP AFX storage system as part of providing clients access to the shared data. In addition to creating network definitions, you can edit them and perform other related tasks. There is a robust set of options for managing your ONTAP AFX network configuration.
+You need to set up and administer the network configuration of your ONTAP AFX storage system as part of providing clients access to data. There is a robust set of options for managing your networking environment.
+
+[NOTE]
+Creating a network resource such as a broadcast domain is an important first step. You can also perform additional actions, such as editing or deleting the definitions, as needed.
 
 .Related information
 
@@ -17,7 +20,7 @@ You need to set up and administer the networking configuration of your ONTAP AFX
 
 //https://docs.netapp.com/us-en/ontap/networking/view_network_information_overview.html[View ONTAP network information^]  ???
 
-== Add a broadcast domain
+== Create a broadcast domain
 
 A broadcast domain simplifies management of your cluster network by grouping ports that are part of the same layer 2 network. The storage virtual machines (SVMs) can then be assigned ports in the group for data or management traffic.
 

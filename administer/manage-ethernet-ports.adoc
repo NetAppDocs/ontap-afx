@@ -10,9 +10,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-xxx
-
->> Lower level
+The ports used by ONTAP AFX provide the foundation for network connectivity and communication. There are several configuration options available.
 
 .Related information
 

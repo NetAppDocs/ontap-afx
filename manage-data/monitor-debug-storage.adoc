@@ -9,6 +9,4 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-xxx
-
-*---------- PLACEHOLDER MUST UPDATE ----------*
+ONTAP AFX includes several options to monitor the storage each cluster manages.

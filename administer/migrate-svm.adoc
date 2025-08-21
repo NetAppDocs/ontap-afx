@@ -9,8 +9,10 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-xxx
+Migrating a data SVM from one ONTAP cluster to another is an important administrative task. This can be used to relocate functionality or as part of a backup or disaster recovery strategy.
 
-*Provide description of the feature and conceptual overview. Then link to unitified ONTAP.*
+*Review recording of meeting with Paul Ngan.*
 
-https://docs.netapp.com/us-en/ontap/svm-migrate/index.html[SVM data mobility^]
+.Related information
+
+* https://docs.netapp.com/us-en/ontap/svm-migrate/index.html[SVM data mobility^]

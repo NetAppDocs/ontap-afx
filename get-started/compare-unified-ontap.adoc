@@ -28,7 +28,7 @@ There are several new and updated features available with ONTAP AFX. Review the 
 
 There are a few areas where the default AFX configuration differs from unified ONTAP.
 
-*=> DP: IE needs help from PM/TME to confirm GDD and add more content to this section.*
+*=> DP: IE needs input from PM/TME to confirm GDD and add more content to this section.*
 
 .GDD
 

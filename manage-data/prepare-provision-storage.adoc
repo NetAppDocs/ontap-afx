@@ -23,23 +23,24 @@ xxx
 
 xxx
 
-.Data containers
+Data container::
+xxx volume or bucket
 
->> volume or bucket
-
-.FlexVolumes
-
+FlexVolume::
 xxx
 
-.FlexGroups
-
+FlexGroup::
 xxx
 
-.S3 buckets
-
+S3 bucket::
 xxx
+
+NFS trunking::
+NFS trunking is a technology that enables NFS v4.1 clients to open multiple connections to different LIFs on the NFS server. This increases the data transfer speed and provide resilience through multi-pathing. Trunking is beneficial for exporting FlexVol volumes to trunking-capable clients.
 
 == Storage limits
+
+There are several storage limits enforced by ONTAP AFX. These include:
 
 xxx
 
@@ -53,9 +54,11 @@ xxx
 
 >> Create users?
 
-== NFS trunking
+== ONTAP AFX support for NFS trunking
 
 xxx
+
+>> To enable trunking, you need to have an SVM configured for NFS, and NFSv4.1 should be enabled. It requires remounting all NFSv4.x clients, which can be disruptive.
 
 .Related information
 

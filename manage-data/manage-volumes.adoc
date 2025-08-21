@@ -9,6 +9,8 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-xxx
+There are several administrative tasks you can perform as part of administering the volumes defined at your ONTAP AFX cluster.
 
-*---------- PLACEHOLDER MUST UPDATE ----------*
+.Steps
+
+. In System Manager, select *Storage* and then *Volumes*.
