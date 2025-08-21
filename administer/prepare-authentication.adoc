@@ -4,7 +4,7 @@ permalink: administer/prepare-authentication.html
 keywords: 
 summary:
 ---
-= Prepare authentication services
+= Prepare authentication services for ONTAP AFX clients
 :icons: font
 :imagesdir: ../media/
 

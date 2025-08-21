@@ -13,10 +13,12 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-The ONTAP AFX REST API is based on the REST API provided with the unified ONTAP personality, with a number of changes adapted to the unique characteristics and capabilities of the AFX personality.
+The ONTAP AFX REST API is based on the REST API provided with the unified ONTAP personality. There are a number of changes which adapt it to the unique characteristics and capabilities of the AFX personality.
 
-*=> DP: This page will describe the AFX REST API and differences with the unified ONTAP. It will be modeled on the content I wrote for ASA r2. See emails June 23 from Sunil and Nathan.*
+*=> DP: This page will describe the AFX REST API and differences with the unified ONTAP. Trying to determine a way to get these details. The content will be modeled on what I wrote for ASA r2.*
 
 .Related information
 
 * https://docs.netapp.com/us-en/ontap-automation[ONTAP automation^]
+* https://docs.netapp.com/us-en/asa-r2/learn-more/rest-api-support.html[REST API support for ASA r2^
+]

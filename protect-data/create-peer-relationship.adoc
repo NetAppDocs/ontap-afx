@@ -4,7 +4,7 @@ permalink: protect-data/create-peer-relationship.html
 keywords: 
 summary: 
 ---
-= Create an intercluster storage VM peer relationship on ASA r2 storage systems
+= Create an intercluster SVM peer relationship on ONTAP AFX
 :icons: font
 :imagesdir: ../media/
 

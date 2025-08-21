@@ -40,8 +40,8 @@ An important first concept is based on decoupling the compute capability in the 
 
 The second related concept with disaggregated storage is that the aggregates and RAID management are removed as administrable entities. The AFX storage abstraction layer automatically configures and manages the aggregates, physical disks, and RAID groups. This allows the AFX administrator to focus on the higher level storage configuration based on volumes and buckets.
 
-.*** ADDITIONAL FAQ ENTRIES FOR THE AFX REVIEWERS TO CONSIDER ***
+.ADDITIONAL FAQ ENTRIES FOR THE AFX REVIEWERS TO CONSIDER
 
-* automated topology management (ATM), whcih is running as a background job
+* automated topology management (ATM), which runs as a background job
 * volume placement and the API
 * zero copy volume move

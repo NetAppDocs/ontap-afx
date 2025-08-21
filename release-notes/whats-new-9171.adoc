@@ -4,7 +4,7 @@ permalink: release-notes/whats-new-9171.html
 keywords: 
 summary: 
 ---
-= What's new in ONTAP 9.17.1 for ONTAP AFX systems
+= What's new in ONTAP 9.17.1 for ONTAP AFX storage systems
 :hardbreaks:
 :nofooter:
 :icons: font

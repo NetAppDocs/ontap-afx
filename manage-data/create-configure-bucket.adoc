@@ -5,7 +5,7 @@ keywords:
 summary: 
 ---
 
-= Create and configure an ONTAP AFX bucket for client access
+= Create and configure an ONTAP AFX bucket
 :icons: font
 :imagesdir: ../media/
 

@@ -4,11 +4,13 @@ permalink: administer/maintain-hardware.html
 keywords: ontap afx maintain, ontap afx maintain hardware
 summary: 
 ---
-= Maintain ONTAP AFX hardware
+= Maintain the ONTAP AFX hardware
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 You can maintain the controller nodes of your ONTAP AFX cluster.
+
+*=> DP: Equivalent AFX link below?*
 
 Review the https://docs.netapp.com/us-en/ontap-systems/asa-r2-landing-maintain/index.html[ONTAP AFX maintenance documentation^] to learn how to perform maintenance procedures on your AFX system components.

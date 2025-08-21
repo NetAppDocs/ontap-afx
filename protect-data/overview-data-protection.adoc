@@ -4,7 +4,7 @@ permalink: protect-data/overview-data-protection.html
 keywords: 
 summary: 
 ---
-= Overview of ONTAP AFX data protection configuration
+= Overview of ONTAP AFX data protection
 :icons: font
 :imagesdir: ../media/
 
