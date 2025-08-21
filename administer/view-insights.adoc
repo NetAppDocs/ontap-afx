@@ -4,7 +4,7 @@ permalink: administer/view-insights.html
 keywords: 
 summary: 
 ---
-= View Insights to optimize ONTAP AFX performance and security
+= View Insights to optimize your ONTAP AFX storage system
 :icons: font
 :imagesdir: ../media/
 

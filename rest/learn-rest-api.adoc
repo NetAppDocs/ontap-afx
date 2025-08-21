@@ -20,5 +20,4 @@ The ONTAP AFX REST API is based on the REST API provided with the unified ONTAP 
 .Related information
 
 * https://docs.netapp.com/us-en/ontap-automation[ONTAP automation^]
-* https://docs.netapp.com/us-en/asa-r2/learn-more/rest-api-support.html[REST API support for ASA r2^
-]
+* https://docs.netapp.com/us-en/asa-r2/learn-more/rest-api-support.html[REST API support for ASA r2^]

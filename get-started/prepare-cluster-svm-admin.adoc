@@ -14,8 +14,10 @@ You should prepare to administer your ONTAP AFX cluster before configuring and u
 
 == Understand storage virtual machines
 
-A storage virtual machine (SVM) is an isolated server or tenant environment within an ONTAP cluster. SVMs are configured to serve data to the connected clients. One data SVM is created by default with a new ONTAP AFX cluster and you can create additional SVMs if needed. You should be familiar with the capabilities and characteristics of the ONTAP AFX SVMs.
+A storage virtual machine (SVM) is an isolated server or tenant environment within an ONTAP cluster. You can configure an SVM to serve data to the connected clients. You should be familiar with the capabilities and characteristics of the ONTAP AFX SVMs.
 
+[NOTE]
+One data SVM is created when you set up and initially deploy an ONTAP AFX cluster. You can create additional SVMs if needed.
 
 .Administrative control
 
