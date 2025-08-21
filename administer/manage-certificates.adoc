@@ -9,6 +9,8 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
+Depending on your configuration, you'll need to create and manage digital certificates as part of administering ONTAP AFX. There are several related administrative tasks you can perform.
+
 A digital certificate is an electronic document used to prove ownership of a public key. The public key and associated private key can be used to in various ways, including to establish identity typically as part of a larger security framework such as TLS and IPsec. These keys, as well as the supporting protocols and formatting standards, form the basis for public key infrastructure (PKI).
 
 .Related information

@@ -10,7 +10,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-The ports used by ONTAP AFX provide the foundation for network connectivity and communication. There are several configuration options available.
+The ports used by ONTAP AFX provide the foundation for network connectivity and communication. There are several configuration options available to customize this layer two aspect of your AFX network.
 
 .Related information
 
@@ -26,18 +26,19 @@ The switches deployed in the network must either comply with IEEE 802.1Q standar
 
 .About this task
 
+Note the following:
+
 * A VLAN can’t be created on an interface group port that contains no member ports.
 * When you configure a VLAN over a port for the first time, the port might go down, resulting in a temporary disconnection of the network. Subsequent VLAN additions to the same port do not affect the port state.
 * You should not create a VLAN on a network interface with the same identifier as the native VLAN of the switch. For example, if the network interface e0b is on native VLAN 10, you should not create a VLAN e0b-10 on that interface.
 
 .Steps
 
-. In System Manager, select *Network > Ethernet ports*; then select image:icon_vlan.png[a blue plus sign followed by the word vlan].
-. Select the node and broadcast domain for the VLAN.
-. Select the port for the VLAN.
+. In System Manager, select *Network* and then *Ethernet ports*.
+. Select image:icon_vlan.png[a blue plus sign followed by the word vlan].
+. Provide the configuration details, including the id, broadcast domain, and ports across the desired nodes.
 +
-The VLAN can’t be attached to a port hosting a cluster LIF or to ports assigned to the cluster IPspace.  
-. Enter a VLAN ID.
+The VLAN can’t be attached to a port hosting a cluster LIF or to ports assigned to the cluster IPspace.
 . Select *Save*.
 
 .Result
@@ -54,7 +55,10 @@ A link aggregate group (LAG) is a technique that combines multiple physical netw
 
 .Steps
 
-xxx
+. In System Manager, select *Network* and then *Ethernet ports*.
+. Select image:icon_lag.png[a blue plus sign followed by the word lag].
+. Provide the configuration details, including the nodes, broadcast domain, ports, mode, and load distribution.
+. Select *Save*.
 
 .Related information
 
