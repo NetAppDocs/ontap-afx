@@ -12,10 +12,12 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-Learn about the new capabilities available with ONTAP 9.17.1 that are available with ONTAP AFX storage systems.
+Learn about the new capabilities included with ONTAP 9.17.1 that are available with ONTAP AFX storage systems.
 
 *=> DP: Will add content here for first release as appropriate.*
 
 .Related information
 
 * https://docs.netapp.com/us-en/ontap/release-notes/index.html[ONTAP 9 release highlights^]
+
+* https://docs.netapp.com/us-en/ontap-automation/whats-new.html[What's new with the ONTAP REST API^]

@@ -10,7 +10,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-The ports used by ONTAP AFX provide the foundation for network connectivity and communication. There are several configuration options available to customize this layer two aspect of your AFX network.
+The ports used by ONTAP AFX provide the foundation for network connectivity and communication. There are several configuration options available to customize the layer two aspect of your AFX network.
 
 .Related information
 

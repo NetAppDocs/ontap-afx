@@ -12,7 +12,7 @@ summary:
 You need to set up and administer the network configuration of your ONTAP AFX storage system. The networking environment supports several use cases including clients accessing data and intercluster communication. There is a robust set of options for managing your networking configuration.
 
 [NOTE]
-Defining a network resource such as a broadcast domain is an important first step. You can also perform additional administrative actions, such as editing or deleting the definitions, as needed.
+Creating a network resource is an important first step. You can also perform additional administrative actions, such as editing or deleting the definitions, as needed.
 
 .Related information
 

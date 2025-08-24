@@ -4,16 +4,13 @@ permalink: protect-data/overview-data-protection.html
 keywords: 
 summary: 
 ---
+
 = Overview of ONTAP AFX data protection
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-xxx
-
-You can sign in to System Manager to access the AFX dashboard and display the cluster status. This is a good first step before beginning your ONTAP AFX administrative tasks or if you suspect an operational issue.
-
-xxx
+You can display an overview of the data protection configuration for your cluster. This is a good step before creating additional storage protection definitions.
 
 .Before you begin
 

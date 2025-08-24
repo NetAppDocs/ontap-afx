@@ -40,9 +40,13 @@ NFS trunking is a technology that enables NFS v4.1 clients to open multiple conn
 
 == Storage limits
 
-There are several storage limits enforced by ONTAP AFX. These include:
+There are several storage limits, both minimums and maximums, enforced by ONTAP AFX. These are displayed by release.
 
-xxx
+=== ONTAP 9.17.1
+
+.Node controllers per cluster
+
+There is a minimum of four nodes and a maximum of eight.
 
 == Client authentication and authorization options
 

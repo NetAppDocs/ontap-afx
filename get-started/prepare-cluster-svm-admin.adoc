@@ -138,7 +138,7 @@ link:../manage-data/prepare-provision-storage.html[Prepare] to allocate and admi
 
 == References to additional documentation
 
-NetApp offers ONTAP in three distinct personalities. Where appropriate, this ONTAP AFX documentation includes links to topics at the unified ONTAP doc site. This additional information provides more depth and a different perspective that can be helpful as you begin administering your ONTAP AFX storage system.
+NetApp offers ONTAP in three distinct personalities. Where appropriate, this ONTAP AFX documentation includes links to topics at the unified ONTAP doc site. The additional information provides more depth and a different perspective that can be helpful as you begin administering your ONTAP AFX storage system.
 
 .Related information
 
