@@ -10,3 +10,5 @@ summary:
 
 [.lead]
 ONTAP AFX includes several options to monitor the storage each cluster manages.
+
+*FSA ? Link to prep section.*

@@ -21,48 +21,41 @@ xxx
 
 == Storage terminology and options
 
-xxx
-
-Data container::
-xxx volume or bucket
+There are several terms related to ONTAP AFX storage you should be familiar with.
 
 FlexVolume::
-xxx
+A FlexVol is a type of logical container used in ONTAP AFX storage systems. FlexVol volumes can be expanded, contracted, moved, and efficiently copied. They can also be partitioned into more manageable units using qtrees and resource usage can be limited using quotas.
 
 FlexGroup::
-xxx
+A FlexGroup volume is a scale-out NAS container that provides both high performance and automatic load distribution. Each consists of multiple volumes that share traffic transparently. FlexGroup volumes offer several benefits, including improved scalability and performance as well as simplified Management.
 
 S3 bucket::
-xxx
+An S3 bucket is a storage container that holds objects or data in the cloud. With ONTAP, an S3 NAS bucket is a mapping between an S3 bucket name and a NAS path, allowing S3 access to any part of an SVM namespace with existing volumes and directory structure.
 
-NFS trunking::
-NFS trunking is a technology that enables NFS v4.1 clients to open multiple connections to different LIFs on the NFS server. This increases the data transfer speed and provide resilience through multi-pathing. Trunking is beneficial for exporting FlexVol volumes to trunking-capable clients.
+Data container::
+In the context of ONTAP AFX, a data container is a generic term and can be either a volume or S3 bucket.
 
 == Storage limits
 
-There are several storage limits, both minimums and maximums, enforced by ONTAP AFX. These are displayed by release.
+There are several storage limits, both minimums and maximums, enforced by ONTAP AFX. These limits are organized by release.
 
 === ONTAP 9.17.1
 
 .Node controllers per cluster
 
-There is a minimum of four nodes and a maximum of eight.
+Each cluster must have a minimum of four nodes and a maximum of eight.
 
-== Client authentication and authorization options
+.Storage capacity
 
->> Move to secure data section in SB? Separate topic?
+There is a limit of 2PB that can be allocated for the entire cluster.
 
->> intro, overview
-
->> link to UOD if needed
-
->> Create users?
+//== Client authentication and authorization options
 
 == ONTAP AFX support for NFS trunking
 
-xxx
+NFS trunking is a technology that enables NFS v4.1 clients to open multiple connections to different LIFs on the NFS server. This increases the data transfer speed and provides resilience through multiple paths. Trunking is beneficial for exporting FlexVol volumes to trunking-capable clients.
 
->> To enable trunking, you need to have an SVM configured for NFS, and NFSv4.1 should be enabled. It requires remounting all NFSv4.x clients, which can be disruptive.
+To enable trunking, you need to have an SVM configured for NFS and NFSv4.1 should be enabled. It also requires remounting all the NFSv4.x clients which can be disruptive.
 
 .Related information
 
@@ -70,4 +63,4 @@ xxx
 
 == File system analytics
 
-xxx
+File System Analytics (FSA) is a feature in ONTAP that provides real-time visibility into file usage and storage capacity trends within FlexGroup or FlexVol volumes. It eliminates the need for external tools by offering insights into storage utilization and optimization opportunities. FSA provides detailed views at various levels of a volume's file system hierarchy, including the SVM, volume, directory, and file levels.
