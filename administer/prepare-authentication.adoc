@@ -9,7 +9,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You need to prepare the authentication and authorization services used by ONTAP AFX, including to define user accounts and roles.
+You need to prepare the authentication and authorization services used by ONTAP AFX to define user accounts and roles.
 
 .Related information
 
@@ -17,7 +17,7 @@ You need to prepare the authentication and authorization services used by ONTAP 
 
 == Configure LDAP
 
-Configure a Lightweight Directory Access Protocol (LDAP) server to maintain authentication information at a central location.
+You can configure a Lightweight Directory Access Protocol (LDAP) server to maintain authentication information at a central location.
 
 .Before you begin
 
@@ -43,7 +43,7 @@ Security Assertion Markup Language (SAML) authentication allows users to be auth
 .Steps
 
 . In System Manager, select *Cluster* and then *Settings*.
-. Under *Security* next to *SAML authentication*, select image:icon_gear_white_bg.png[blue outline of a mechanical gear].
+. Select image:icon_gear_white_bg.png[blue outline of a mechanical gear] under *Security* next to *SAML authentication*.
 . Select *Enable SAML authentication*.
 . Provide the *IdP URL* and the *Host system* IP address and select *Save*.
 +

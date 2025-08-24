@@ -22,7 +22,7 @@ indexpage:
           url: /administer/display-svms.html
         - title: Upgrade and maintain the cluster
           url: /administer/expand-cluster.html
-        - title: Advanced and additional administration
+        - title: Advanced administration
           url: /administer/advanced-cluster.html
     - title: Manage data and access
       links:

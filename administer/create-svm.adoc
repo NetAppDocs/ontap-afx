@@ -16,14 +16,14 @@ You can create a data SVM to provide configuration isolation and improve securit
 You'll need the following:
 
 * A minimum of four IP addresses
-* Name of an IPspace or 
+* Name of an IPspace
 
 Review link:../administer/manage-cluster-networking.html[Manage ONTAP AFX cluster networking] for more information.
 
 .Steps
 
 . In System Manager, select *Cluster* and then *Storage VMs* in the navigation pane.
-. Select *XXX* yyy
+. Select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
 
 .Related information
 

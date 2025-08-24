@@ -17,7 +17,7 @@ The event messages provide a valuable record of system activity. Each event incl
 
 . In System Manager, select *Events & jobs* and then *Events*.
 
-. Review and respond to the recommended actions at the top of the page, such as enabling automatic update and configuring notification servers.
+. Review and respond to the recommended actions at the top of the page, such as enabling automatic update.
 
 . Select the *Events log* tab to examine the messages in more detail.
 

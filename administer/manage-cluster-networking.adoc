@@ -9,7 +9,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You need to set up and administer the network configuration of your ONTAP AFX storage system. The networking environment supports several use cases including clients accessing data and intercluster communication. There is a robust set of options for managing your networking configuration.
+You need to set up and administer the network configuration of your ONTAP AFX storage system. The networking environment supports several use cases including clients accessing data and intercluster communication.
 
 [NOTE]
 Creating a network resource is an important first step. You can also perform additional administrative actions, such as editing or deleting the definitions, as needed.
@@ -35,7 +35,7 @@ You can create additional broadcast domains after your cluster has been initiali
 
 .About this task
 
-The maximum transmission unit (MTU) values of the ports defined for a broadcast domain are updated to the MTU value set in the broadcast domain.
+The maximum transmission unit (MTU) value of the ports defined for a broadcast domain are updated to the MTU value set in the broadcast domain.
 
 .Steps
 
@@ -46,7 +46,7 @@ The maximum transmission unit (MTU) values of the ports defined for a broadcast 
 All broadcast domain names must be unique within an IPspace.
 . Provide the maximum transmission unit (MTU).
 +
-MTU is the largest data packet that can be accepted in your broadcast domain.
+MTU is the largest data packet that can be accepted in the broadcast domain.
 . Select the desired ports and select *Save*.
 
 .Related information
@@ -79,7 +79,7 @@ You can use the IPspace to create a subnet.
 
 == Create a subnet
 
-A subnetwork enforces a logical division of the IP address space in your network. It enables you to allocate dedicated blocks of IP addresses for the creation of a network interface (LIF). Subnets simplify LIF creation by allowing you to use the subnet name instead of a specific IP address and network mask combination.
+A subnetwork enforces a logical division of the IP address space in your network. It enables you to allocate dedicated blocks of IP addresses for the creation of a network interface (LIF). Subnets simplify LIF creation by enabling you to use the subnet name instead of a specific IP address and network mask combination.
 
 .Before you begin
 
@@ -91,7 +91,7 @@ You must have a broadcast domain and IPspace where the subnet will be defined. A
 .Steps
 
 .  In System Manager, select *Network* and then *Overview*.
-. Scroll to the bottom of the page and select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters] under the *Subnets* tab.
+. Scroll to the bottom of the page under the *Subnets* tab and select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
 . Provide the configuration details, including the name, IP address details, and broadcast domain.
 . Select *Save*.
 
@@ -105,14 +105,13 @@ The new subnet will simplify the creation of your network interfaces.
 
 == Create a network interface
 
-A logical network interface (LIF) consists of an IP address and related network configuration. It can be associated with a physical or logical port and is typically used by the clients to access data provided by an SVM. LIFs provide resiliency in the event of a failure and can migrate among the node ports so communication is not interrupted.
+A logical network interface (LIF) consists of an IP address and related network configuration parameters. It can be associated with a physical or logical port and is typically used by the clients to access data provided by an SVM. LIFs provide resiliency in the event of a failure and can migrate among the node ports so communication is not interrupted.
 
 .Steps
 
 .  In System Manager, select *Network* and then *Overview*.
-. Scroll to the bottom of the page and select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters] under the *Network interfaces* tab.
-. Select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
-. Provide the configuration details, including the name, interface type, supported protocols, and IP address details.
+. Scroll to the bottom of the page under the *Network interfaces* tab and select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
+. Provide the configuration details, including the name, interface type, allowed protocols, and IP address details.
 . Select *Save*.
 
 .Related information

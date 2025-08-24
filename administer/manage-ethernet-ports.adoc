@@ -56,7 +56,7 @@ A link aggregate group (LAG) is a technique that combines multiple physical netw
 .Steps
 
 . In System Manager, select *Network* and then *Ethernet ports*.
-. Select image:icon_lag.png[a blue plus sign followed by the word lag].
+. Select image:icon_vlan.png[a blue plus sign followed by the word lag].
 . Provide the configuration details, including the nodes, broadcast domain, ports, mode, and load distribution.
 . Select *Save*.
 
