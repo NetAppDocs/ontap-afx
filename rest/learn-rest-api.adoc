@@ -17,6 +17,20 @@ The ONTAP AFX REST API is based on the REST API provided with the unified ONTAP 
 
 *=> DP: This page will describe the AFX REST API and differences with the unified ONTAP. Trying to determine a way to get these details. The content will be modeled on what I wrote for ASA r2.*
 
+== Additional features API calls
+
+xxx
+
+*Must review Swagger, search*
+
+== Removed API calls
+
+xxx
+
+*All SAN API calls*
+
+*All aggregate API calls*
+
 .Related information
 
 * https://docs.netapp.com/us-en/ontap-automation[ONTAP automation^]
