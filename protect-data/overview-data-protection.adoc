@@ -5,7 +5,7 @@ keywords:
 summary: 
 ---
 
-= Overview of ONTAP AFX data protection
+= Display an overview of ONTAP AFX data protection
 :icons: font
 :imagesdir: ../media/
 

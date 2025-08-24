@@ -19,7 +19,7 @@ entries:
         url: /manage-data/monitor-debug-storage.html
   - title: Protect data
     entries:
-      - title: Overview of data protection
+      - title: Display an overview of data protection
         url: /protect-data/overview-data-protection.html
       - title: Create a consistency group
         url: /protect-data/create-consistency-group.html
