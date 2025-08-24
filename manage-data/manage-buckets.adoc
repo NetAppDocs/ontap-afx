@@ -9,6 +9,4 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-xxx
-
-*---------- PLACEHOLDER MUST UPDATE ----------*
+There are several administrative tasks you can perform as part of administering the buckets defined at your ONTAP AFX cluster.

@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: administer/migrate-svm.html
+keywords: 
+summary: 
+---
+= Migrate an ONTAP AFX SVM
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Migrating a data SVM from one ONTAP cluster to another is an important administrative task. This can be used to relocate functionality or as part of a backup or disaster recovery strategy.
+
+.Related information
+
+* https://docs.netapp.com/us-en/ontap/svm-migrate/index.html[SVM data mobility^]

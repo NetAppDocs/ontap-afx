@@ -9,10 +9,10 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can define user accounts and roles with System Manager based on the supporting authentication and authorization services available to ONTAP AFX.
+You can define user accounts and roles using the supporting authentication and authorization services available to ONTAP AFX.
 
 [NOTE]
-Each ONTAP user needs to have one role assigned. The role includes privileges and determines what the user is allowed to access and do.
+Each ONTAP user needs to have one role assigned. A role includes privileges and determines what the user is allowed to access and do.
 
 .Related information
 
@@ -23,30 +23,27 @@ Each ONTAP user needs to have one role assigned. The role includes privileges an
 
 Roles for cluster administrators and storage VM administrators are automatically created when your ONTAP AFX cluster is set up and initialized. You can create additional user account roles to define specific functions that users assigned to the roles can perform on your cluster.
 
-*DP: Rewrite*
-
 .Steps
 
 . In System Manager, select *Cluster* and then *Settings*.
 . In the *Security* section, next to *Users and roles*, select image:icon_arrow.gif[blue arrow pointing to the right].
 . Under *Roles*, select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
 . Provide the name of the role and the attributes.
-+
-To add multiple attributes, select image:icon_add.gif[plus sign followed by the word add in blue letters].
 . Select *Save*.
 
-== Create an administrator account 
+== Create a cluster account
 
-Create an administrator user account to enable the account user to perform specific actions on your cluster based on the role assigned to the account. To enhance account security, set up multi-factor authentication (MFA) when you create the account.
+You can create a cluster-level account to use when performing cluster administration.
 
 .Steps
 
-. In System Manager, select *Cluster > Settings*.
-. In the *Security* section, next to *Users and roles*, select image:icon_arrow.gif[blue arrow pointing to the right].
+. In System Manager, select *Cluster* and then *Settings*.
+. In the *Security* section, select image:icon_arrow.gif[blue arrow pointing to the right] next to *Users and roles*.
 . Under *Users*, select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters]. 
-. Enter a username; then select a role to assign to the user.
+. Enter a username and then select the role for the user.
++
+This should be *admin* role to perform the full range of configuration tasks on your cluster.
 . Select the user login method and the authentication method.
-. To enable MFA, select image:icon_add.gif[plus sign followed by the word add in blue letters]; then select a secondary login method and authentication method 
 . Enter a password for the user.
 . Select *Save*.
 

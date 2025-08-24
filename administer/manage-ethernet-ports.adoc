@@ -10,49 +10,11 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-xxx
-
->> Lower level
+The ports used by ONTAP AFX provide the foundation for network connectivity and communication. There are several configuration options available to customize the layer two aspect of your AFX network.
 
 .Related information
 
 * link:../administer/manage-cluster-networking.html[Manage ONTAP AFX cluster networking]
-
-== Add a broadcast domain
-
-A broadcast domain simplifies management of your cluster network by grouping ports that are part of the same layer 2 network. The storage virtual machines (SVMs) can then be assigned ports in the group for data or management traffic.
-
-There are several broadcast domains created during cluster setup, including:
-
-Default::
-This broadcast domain contains ports in the “Default” IPspace. These ports are used primarily to serve data. Cluster management and node management ports are also in this broadcast domain.
-Cluster::
-This broadcast domain contains ports in the “Cluster” IPspace. These ports are used for cluster communication and include all cluster ports from all nodes in the cluster.
-
-You can create additional broadcast domains after your cluster has been initialized. When you create a broadcast domain, a failover group that contains the same ports is automatically created.
-
-.About this task
-
-The maximum transmission unit (MTU) values of the ports defined for a broadcast domain are updated to the MTU value set in the broadcast domain.
-
-.Steps
-
-.  In System Manager, select *Network* and then *Overview*.
-. Under *Broadcast domains*, select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
-. Provide the name of the broadcast domain or accept the default.
-+
-All broadcast domain names must be unique within an IPspace.
-. Select the IPspace for the broadcast domain.
-+
-If you don’t specify an IPspace name, the broadcast domain is created in the "Default" IPspace.
-. Provide the maximum transmission unit (MTU).
-+
-MTU is the largest data packet that can be accepted in your broadcast domain.
-. Select the desired ports and then select *Save*.
-
-.Related information
-
-* https://docs.netapp.com/us-en/ontap/networking/configure_broadcast_domains_cluster_administrators_only_overview.html[Learn about ONTAP broadcast domains^]
 
 == Create a VLAN
 
@@ -64,18 +26,19 @@ The switches deployed in the network must either comply with IEEE 802.1Q standar
 
 .About this task
 
+Note the following:
+
 * A VLAN can’t be created on an interface group port that contains no member ports.
 * When you configure a VLAN over a port for the first time, the port might go down, resulting in a temporary disconnection of the network. Subsequent VLAN additions to the same port do not affect the port state.
 * You should not create a VLAN on a network interface with the same identifier as the native VLAN of the switch. For example, if the network interface e0b is on native VLAN 10, you should not create a VLAN e0b-10 on that interface.
 
 .Steps
 
-. In System Manager, select *Network > Ethernet ports*; then select image:icon_vlan.png[a blue plus sign followed by the word vlan].
-. Select the node and broadcast domain for the VLAN.
-. Select the port for the VLAN.
+. In System Manager, select *Network* and then *Ethernet ports*.
+. Select image:icon_vlan.png[a blue plus sign followed by the word vlan].
+. Provide the configuration details, including the id, broadcast domain, and ports across the desired nodes.
 +
-The VLAN can’t be attached to a port hosting a cluster LIF or to ports assigned to the cluster IPspace.  
-. Enter a VLAN ID.
+The VLAN can’t be attached to a port hosting a cluster LIF or to ports assigned to the cluster IPspace.
 . Select *Save*.
 
 .Result
@@ -92,7 +55,10 @@ A link aggregate group (LAG) is a technique that combines multiple physical netw
 
 .Steps
 
-xxx
+. In System Manager, select *Network* and then *Ethernet ports*.
+. Select image:icon_vlan.png[a blue plus sign followed by the word lag].
+. Provide the configuration details, including the nodes, broadcast domain, ports, mode, and load distribution.
+. Select *Save*.
 
 .Related information
 

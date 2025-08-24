@@ -11,14 +11,10 @@ summary:
 [.lead]
 For enhanced protection against ransomware attacks, you can replicate snapshots to a remote cluster and then lock the destination snapshots to make them tamper-proof. You can use locked snapshots to recover data if your system is ever compromised by a ransomware attack.
 
-[NOTE]
+[TIP]
 Locked snapshots cannot be deleted including accidentally or maliciously.
 
-*---------- PLACEHOLDER MUST UPDATE ----------*
-
-Model after ASA r2: https://docs.netapp.com/us-en/asa-r2/secure-data/ransomware-protection.html[Protect against ransomware attacks on ASA r2 storage systems^]
-
-Add any restrictions with ONTAP AFX, such as ARP/AI not supported.
+Add any restrictions with ONTAP AFX, such as ARP/AI not supported. Model after ASA r2: https://docs.netapp.com/us-en/asa-r2/secure-data/ransomware-protection.html[Protect against ransomware attacks on ASA r2 storage systems^]
 
 .Related information
 

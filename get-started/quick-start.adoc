@@ -5,7 +5,7 @@ keywords:
 summary: 
 ---
 
-= Quick start for setting up an ONTAP AFX system
+= Quick start for setting up an ONTAP AFX storage system
 :icons: font
 :imagesdir: ../media/
 
@@ -20,7 +20,7 @@ link:../install-setup/workflow-install.html[Install] your ONTAP AFX storage syst
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Set up your cluster
 
 [role="quick-margin-para"]
-Follow the quick and easy process to link:../install-setup/workflow-setup.html[Set up] your ONTAP cluster using System Manager.
+Follow the quick and easy process to link:../install-setup/cluster-setup.html[Set up] your ONTAP cluster using System Manager.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Prepare to administer your cluster
 

@@ -4,7 +4,7 @@ permalink: administer/update-firmware.html
 keywords: 
 summary: 
 ---
-= Update firmware on ONTAP AFX storage systems
+= Update firmware on an ONTAP AFX storage system
 :icons: font
 :imagesdir: ../media/
 

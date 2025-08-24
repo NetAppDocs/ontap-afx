@@ -19,26 +19,36 @@ indexpage:
         - title: Prepare for cluster administration
           url: /get-started/prepare-cluster-svm-admin.html
         - title: Manage storage VMs
-          url: /administer/display-svm.html
+          url: /administer/display-svms.html
         - title: Upgrade and maintain the cluster
           url: /administer/expand-cluster.html
-        - title: Advanced and additional administration
+        - title: Advanced administration
           url: /administer/advanced-cluster.html
-    - title: Storage VM administration
-      links: 
-        - title: Prepare for SVM administration
-          url: /get-started/prepare-cluster-svm-admin.html
-        - title: Manage your data
-          url: /manage-data/prepare-provision-storage.html
-        - title: Advanced and additional administration
-          url: /administer/advanced-svm.html
     - title: Manage data and access
-      links: 
-        - title: Create and configure volumes
+      links:
+        - title: Prepare to provision storage
+          url: /manage-data/prepare-provision-storage.html
+        - title: Create and configure a volume
           url: /manage-data/create-configure-volume.html
-        - title: Create and configure buckets
+        - title: Create and configure a bucket
           url: /manage-data/create-configure-bucket.html
     - title: Protect and secure data
       links: 
-        - title: Create Snapshots
+        - title: Create a snapshot
           url: /protect-data/create-snapshot.html
+        - title: Encrypt data at rest
+          url: /secure-data/encrypt-data-at-rest.html
+    - title: REST API
+      links: 
+        - title: Learn about the API
+          url: /rest/learn-rest-api.html
+        - title: Your first API call
+          url: /rest/first-call.html
+        - title: REST API reference
+          url: /rest/api-reference.html
+    - title: Get more information
+      links: 
+        - title: Additional resources
+          url: /learn-more/additional-resources.html
+        - title: Frequently asked questions
+          url: /faq.html
