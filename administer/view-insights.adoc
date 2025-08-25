@@ -4,24 +4,24 @@ permalink: administer/view-insights.html
 keywords: 
 summary: 
 ---
-= Use Insights to optimize ONTAP AFX cluster performance and security
+= View Insights to optimize your ONTAP AFX storage system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can view _Insights_ in the ONTAP System Manager to identify suggested configuration updates which align with configuration best practices. These are changes you can implement to optimize the security and performance of your ONTAP AFX cluster.
+You can use the _Insights_ feature of ONTAP AFX System Manager to identify suggested configuration updates to align with NetApp best practices. These changes can optimize the security and performance of your ONTAP AFX cluster.
 
-For example, the Autonomous Ransomware Protection (ARP) feature is available with ONTAP and provides anti-ransomware protection. It uses workload analysis of the NAS environments to detect abnormal activity that might indicate an attack. Insights will notify you if ARP is not configured for one or more of the data SVMs.
+For example, the Autonomous Ransomware Protection (ARP) feature is available with ONTAP AFX and provides anti-ransomware protection. It uses workload analysis of the NAS environments to detect abnormal activity that might indicate an attack. Insights will inform you if ARP is not configured.
 
 .About this task
 
-Each of the insights is presented as a separate card or tile on the page which you can choose to configure or dismiss. You can also select the associated documentation link to learn more about the specific technology.
+Each of the insights is presented as a separate card or tile on the page which you can choose to implement or dismiss. You can also select the associated documentation link to learn more about a specific technology.
 
 .Steps
 
 . In System Manager, select *Analysis* and then *Insights*.
-. Review the available recommendations.
+. Review the displayed recommendations.
 
 .What's next
 
-Perform any recommended actions to implement AFX security and performance best practices.
+Perform any of the recommended actions to implement ONTAP FX security and performance best practices.

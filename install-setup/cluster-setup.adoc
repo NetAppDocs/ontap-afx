@@ -11,7 +11,8 @@ summary:
 [.lead]
 After your ONTAP AFX hardware has been installed, you can complete the cluster setup. The process involves two related configuration phases that you should perform sequentially.
 
-*=> DP: Is there anything we should include from the cluster setup for unified ONTAP? See https://docs.netapp.com/us-en/ontap/software_setup/workflow-summary.html[ONTAP cluster setup workflow summary^].*
+[CAUTION]
+*DP: Is there anything we should include from the cluster setup for unified ONTAP? See https://docs.netapp.com/us-en/ontap/software_setup/workflow-summary.html[ONTAP cluster setup workflow summary^].*
 
 == Perform initial cluster setup
 

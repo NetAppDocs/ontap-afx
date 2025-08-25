@@ -11,6 +11,4 @@ summary:
 [.lead]
 xxx
 
-*=> DP: Must carefully review the EAP plan. This might only be possible with the CLI. If so, then possibly move this content to the advanced admin tasks. Also see TOI topics.*
-
-*=> DP: EAP test 11*
+*=> DP: Must review the EAP plan (test 11). Expanding the cluster might only be possible with the CLI. Also see the TOI.*

@@ -4,15 +4,13 @@ permalink: protect-data/manage-snapshots.html
 keywords: 
 summary: 
 ---
-= Manage snapshots on ONTAP AFX
+= Manage snapshots on an ONTAP AFX storage system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 xxx
 
->> Include at least two sections. One to create and another on policy. For configuring policy, link to the following toplic:
+*=> DP: Include at least two sections. One to create and another on policy. For configuring policy, link to the toplic below.*
 
 https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html[Create an ONTAP snapshot policy^]
-
-*---------- PLACEHOLDER MUST UPDATE ----------*

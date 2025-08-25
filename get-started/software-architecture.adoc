@@ -9,7 +9,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-The ONTAP AFX architecture is composed of several hardware and software components. These system components are organized in different categories.
+The ONTAP AFX architecture is composed of several hardware and software components. These system components are organized in three different categories.
 
 == Physical components
 

@@ -1,0 +1,25 @@
+---
+sidebar: sidebar
+permalink: protect-data/overview-data-protection.html
+keywords: 
+summary: 
+---
+
+= Display an overview of ONTAP AFX data protection
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can display an overview of the data protection configuration for your cluster. This is a good step before creating additional storage protection definitions.
+
+.Before you begin
+
+You'll need the following:
+
+* IP address or domain name of the cluster management LIF
+* Administrator account credentials
+
+.Steps
+
+. In System Manager, select *Protection* and then *Overview*.
+. The overview page xxx

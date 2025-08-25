@@ -1,0 +1,22 @@
+---
+sidebar: sidebar
+permalink: protect-data/create-consistency-group.html
+keywords: 
+summary: 
+---
+= Create a consistency group on ONTAP AFX
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+A consistency group is a collection of volumes that can be managed as a single unit. You can create consistency groups to simplify storage management and data protection for application workloads. For example, you can snapshot several volumes in one operation by using the consistency group instead of the individual volumes.
+
+.Steps
+
+.  In System Manager, select *Network* and then *Overview*.
+. Under *Broadcast domains*, select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
+. XXX
+
+.Related information
+
+* link:../protect-data/manage-consistency-groups.html[Manage consistency groups]
