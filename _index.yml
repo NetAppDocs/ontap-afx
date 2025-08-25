@@ -32,12 +32,18 @@ indexpage:
           url: /manage-data/create-configure-volume.html
         - title: Create and configure a bucket
           url: /manage-data/create-configure-bucket.html
-    - title: Protect and secure data
-      links: 
+    - title: Protect data
+      links:
+        - title: Display an overview
+          url: /protect-data/overview-data-protection.html
         - title: Create a snapshot
           url: /protect-data/create-snapshot.html
+    - title: Secure data
+      links: 
         - title: Encrypt data at rest
           url: /secure-data/encrypt-data-at-rest.html
+        - title: Protect against ransomware attacks
+          url: /secure-data/ransomware-protection.html
     - title: REST API
       links: 
         - title: Learn about the API
