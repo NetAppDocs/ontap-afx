@@ -9,15 +9,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-xxx
-
-*Add section with overview on quotas and qtrees*
-
->> Exporting data and client access MOVES TO THE TWO CREATE/ACCESS TOPICS
-
->> Review volume create (more options) and edit to get a list of the configuration options to describe
-
->> For example, have two options (data protection and high throughput), describe what these mean
+Before provisioning your storage using ONTAP AFX, you should be familiar with the terminology and key concepts.
 
 == Storage terminology and options
 
@@ -34,6 +26,12 @@ An S3 bucket is a storage container that holds objects or data in the cloud. Wit
 
 Data container::
 In the context of ONTAP AFX, a data container is a generic term and can be either a volume or S3 bucket.
+
+Quotas::
+xxx
+
+Qtrees::
+xxx
 
 == Storage limits
 
