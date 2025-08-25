@@ -38,7 +38,7 @@ The term "disaggregated" can have different though related meanings with ONTAP A
 
 An important first concept is based on decoupling the compute capability in the controller nodes from the storage shelves. With ONTAP AFX, the cluster compute and storage components are no longer tightly coupled as they are with unified ONTAP. Instead they are connected through one or more cluster switches. Each controller has a complete view of the entire cluster storage pool.
 
-The second related concept with disaggregated storage is that the aggregates and RAID management are removed as administrable entities. The AFX storage abstraction layer automatically configures and manages the aggregates, physical disks, and RAID groups. This allows the AFX administrator to focus on the higher level storage configuration based on volumes and buckets.
+The second related concept with disaggregated storage is that the aggregates and RAID management are removed as administrable entities. A storage abstraction layer within ONTAP AFX automatically configures and manages the aggregates, physical disks, and RAID groups. This allows the administrator to focus on the higher level storage configuration based on volumes and buckets.
 
 .ADDITIONAL FAQ ENTRIES FOR THE AFX REVIEWERS TO CONSIDER
 
