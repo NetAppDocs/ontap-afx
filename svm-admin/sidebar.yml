@@ -23,6 +23,8 @@ entries:
         url: /protect-data/overview-data-protection.html
       - title: Create a consistency group
         url: /protect-data/create-consistency-group.html
+      - title: Manage consistency groups
+        url: /protect-data/manage-consistency-groups.html
       - title: Create a snapshot
         url: /protect-data/create-snapshot.html
       - title: Manage snapshots
@@ -33,8 +35,6 @@ entries:
         url: /protect-data/create-peer-relationship.html
       - title: Set up and manage snapshot replication
         url: /protect-data/snapshot-replication.html
-      - title: Manage consistency groups
-        url: /protect-data/manage-consistency-groups.html
       - title: Manage policies and schedules
         url: /protect-data/policies-schedules.html
       - title: Back up and restore

@@ -9,7 +9,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-Before provisioning your storage using ONTAP AFX, you should be familiar with the terminology and key concepts.
+Before provisioning your storage using ONTAP AFX, you should be familiar with the terminology and some of the key concepts.
 
 == Storage terminology and options
 
@@ -27,13 +27,13 @@ An S3 bucket is a storage container that holds objects or data in the cloud. Wit
 Data container::
 In the context of ONTAP AFX, a data container is a generic term and can be either a volume or S3 bucket.
 
-Quotas::
-xxx
-
 Qtrees::
-xxx
+A qtree is a logical subdivision within a volume that you can create to manage and organize data. It allows you to specify its properties and security style (NTFS or UNIX) and can inherit export policies from its parent volume or have its own. Qtrees can contain files and directories, and are often used to manage permissions and quotas more granularly within a volume.
 
-== Storage limits
+Quotas::
+A quota in ONTAP is a limit set on the amount of storage space or number of files that can be used by a user, group, or qtree. Quotas are used to manage and control resource usage within a storage system, ensuring that no single user or application can consume an excessive amount of resources.
+
+== Storage and deployment limits
 
 There are several storage limits, both minimums and maximums, enforced by ONTAP AFX. These limits are organized by release.
 

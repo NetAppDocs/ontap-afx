@@ -11,7 +11,7 @@ summary:
 [.lead]
 xxx
 
-*ASA r2 content copied in below. Must review.*
+*Must review content.*
 
 When you encrypt data at rest, it can’t be read if a storage medium is repurposed, returned, misplaced, or stolen.  You can use ONTAP System Manager to encrypt your data at the hardware and software level for dual-layer protection.
 
