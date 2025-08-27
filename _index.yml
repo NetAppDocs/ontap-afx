@@ -26,20 +26,22 @@ indexpage:
           url: /administer/advanced-cluster.html
     - title: Manage data and access
       links:
-        - title: Prepare to provision storage
-          url: /manage-data/prepare-provision-storage.html
+        - title: Prepare to manage data
+          url: /manage-data/prepare-manage-data.html
         - title: Create and configure a volume
           url: /manage-data/create-configure-volume.html
         - title: Create and configure a bucket
           url: /manage-data/create-configure-bucket.html
     - title: Protect data
       links:
-        - title: Display an overview
-          url: /protect-data/overview-data-protection.html
+        - title: Prepare protect data
+          url: /protect-data/prepare-protect-data.html
         - title: Create a snapshot
           url: /protect-data/create-snapshot.html
     - title: Secure data
-      links: 
+      links:
+        - title: Prepare to secure data
+          url: /protect-data/prepare-secure-data.html
         - title: Encrypt data at rest
           url: /secure-data/encrypt-data-at-rest.html
         - title: Protect against ransomware attacks

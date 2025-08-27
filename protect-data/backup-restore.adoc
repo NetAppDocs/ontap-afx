@@ -11,7 +11,7 @@ summary:
 [.lead]
 xxx
 
-*=DP: Not sure we need this topic.*
+*=DP: Not sure we need this topic. If not, redirect to prepare topic.*
 
 Model after ASA r2 topic:
 
