@@ -5,7 +5,7 @@ keywords:
 summary: 
 ---
 
-= Prepare to protect your data
+= Prepare to protect your ONTAP AFX data
 :icons: font
 :imagesdir: ../media/
 
