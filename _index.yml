@@ -34,7 +34,7 @@ indexpage:
           url: /manage-data/create-configure-bucket.html
     - title: Protect data
       links:
-        - title: Prepare protect data
+        - title: Prepare to protect data
           url: /protect-data/prepare-protect-data.html
         - title: Create a snapshot
           url: /protect-data/create-snapshot.html
