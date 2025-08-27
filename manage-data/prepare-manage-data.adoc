@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
-permalink: manage-data/prepare-provision-storage.html
+permalink: manage-data/prepare-manage-data.html
 keywords: 
 summary: 
 ---
-= Prepare to provision ONTAP AFX storage
+= Prepare to manage ONTAP AFX storage
 :icons: font
 :imagesdir: ../media/
 

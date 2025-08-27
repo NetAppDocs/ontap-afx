@@ -3,8 +3,8 @@ title: Administer your storage VMs and data
 entries:
   - title: Manage data
     entries:
-      - title: Prepare to provision your storage
-        url: /manage-data/prepare-provision-storage.html
+      - title: Prepare to manage your data
+        url: /manage-data/prepare-manage-data.html
       - title: Create and configure a volume
         url: /manage-data/create-configure-volume.html
       - title: Manage volumes
