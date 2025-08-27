@@ -1,29 +1,13 @@
 ---
 sidebar: sidebar
-permalink: protect-data/prepare-protect-data.html
+permalink: secure-data/prepare-secure-data.html
 keywords: 
 summary: 
 ---
 
-= Prepare to protect your data
+= Prepare to secure your data
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can display an overview of the data protection configuration for your cluster. This is a good step before creating additional storage protection definitions.
-
-* Mirror prepare to provision storage
-* Overview at top, with ways you can protect
-* Last H2 is display overview
-
-.Before you begin
-
-You'll need the following:
-
-* IP address or domain name of the cluster management LIF
-* Administrator account credentials
-
-.Steps
-
-. In System Manager, select *Protection* and then *Overview*.
-. The overview page xxx
+xxx

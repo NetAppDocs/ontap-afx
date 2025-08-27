@@ -42,7 +42,7 @@ entries:
   - title: Secure data
     entries:
       - title: Prepare to secure your data
-        url: /protect-data/prepare-secure-data.html
+        url: /secure-data/prepare-secure-data.html
       - title: Encrypt data at rest
         url: /secure-data/encrypt-data-at-rest.html
       - title: Protect against ransomware attacks
