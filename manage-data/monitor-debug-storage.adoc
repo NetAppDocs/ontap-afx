@@ -11,5 +11,11 @@ summary:
 [.lead]
 ONTAP AFX includes several options to monitor the storage each cluster manages.
 
+== Display NAS clients
+
+xxx
+
+*In pane, select Clients*
+
 .Related information
 * link:../manage-data/prepare-provision-storage.html[Prepare to provision ONTAP AFX storage]

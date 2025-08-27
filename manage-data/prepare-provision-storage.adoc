@@ -62,3 +62,9 @@ To enable trunking, you need to have an SVM configured for NFS and NFSv4.1 shoul
 == File system analytics
 
 File System Analytics (FSA) is a feature in ONTAP that provides real-time visibility into file usage and storage capacity trends within FlexGroup or FlexVol volumes. It eliminates the need for external tools by offering insights into storage utilization and optimization opportunities. FSA provides detailed views at various levels of a volume's file system hierarchy, including the SVM, volume, directory, and file levels.
+
+== Display an overview of your storage
+
+xxx
+
+>> Navigation pane: storage then overview
