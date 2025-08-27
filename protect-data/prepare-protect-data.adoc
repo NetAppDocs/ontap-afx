@@ -1,16 +1,20 @@
 ---
 sidebar: sidebar
-permalink: protect-data/overview-data-protection.html
+permalink: protect-data/prepare-protect-data.html
 keywords: 
 summary: 
 ---
 
-= Display an overview of ONTAP AFX data protection
+= Prepare to protect your ONTAP AFX data
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 You can display an overview of the data protection configuration for your cluster. This is a good step before creating additional storage protection definitions.
+
+* Mirror prepare to provision storage
+* Overview at top, with ways you can protect
+* Last H2 is display overview
 
 .Before you begin
 

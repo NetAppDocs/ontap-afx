@@ -20,8 +20,8 @@ Each of the insights is presented as a separate card or tile on the page which y
 .Steps
 
 . In System Manager, select *Analysis* and then *Insights*.
-. Review the displayed recommendations.
+. Review the available recommendations.
 
 .What's next
 
-Perform any of the recommended actions to implement ONTAP FX security and performance best practices.
+Perform any of the recommended actions to implement ONTAP AFX security and performance best practices.

@@ -39,7 +39,7 @@ Each SVM has its own dedicated set of network interfaces. For example, separate 
 
 The administrative tasks you perform with AFX generally fall into two different categories. Some tasks apply to the cluster as a whole, while other tasks apply to a specific SVM. This results in two-tier administrative model.
 
-It's important to note that these levels describe how the administrative tasks are organized and assigned, and not necessarily how the associated security is configured. For example, while a cluster administrator account is needed to perform cluster level administration, you can also use a cluster account for SVM administration (perhaps with different RBAC role).
+It's important to note that these levels describe how the administrative tasks are organized and assigned, and not necessarily how the associated security is configured. For example, while a cluster administrator account is needed to perform cluster level administration, it can also be used for SVM administration.
 
 .Cluster administrator
 
@@ -47,13 +47,13 @@ The cluster administrator has complete control of the AFX cluster including all 
 
 .SVM administrator
 
-An SVM administrator has control of a specific data SVM and so is more restricted compared to the cluster administrator. This administration involves performing tasks with objects and resources that have an SVM scope, such as creating a volume. See link:../manage-data/prepare-provision-storage.html[Administer your storage VMs] for more information.
+An SVM administrator has control of a specific data SVM and so is more restricted compared to the cluster administrator. SVM administration involves performing tasks with objects and resources that have an SVM scope, such as creating a volume. See link:../manage-data/prepare-provision-storage.html[Administer your storage VMs] for more information.
 
 //* Data administrator. This is a more restricted role within a specific tenant. It allows self-serve access to a subset of the administrative functions and API calls by storage users including data scientists and data engineers.
 
 == Three administrative interfaces
 
-As with unified ONTAP, AFX has three administrative interfaces. The LIF (IP address) you need to use varies based on the administrative interface and your environment.
+As with unified ONTAP, AFX has three administrative interfaces. The LIF (or IP address) you need to use varies based on the administrative interface and your environment.
 
 [NOTE]
 The System Manager user interface is preferred for most administrative tasks. You should use an administrator account unless otherwise indicated.
@@ -63,7 +63,7 @@ The System Manager user interface is preferred for most administrative tasks. Yo
 |Interface
 |Description
 |System Manager
-|This is a graphical user interface available through a web browser. It's easy to use and provides access to the capabilities most customers need. Accessing ONTAP AFX through System Manager is generally considered the preferred option.
+|This is a graphical user interface available through a web browser. It's easy to use and provides access to most of the capabilities customers need. Accessing ONTAP AFX through System Manager is generally considered the preferred option.
 |Command line interface
 |The ONTAP CLI is accessible using SSH. Depending on your account, you can access the cluster management LIF or SVM management LIF. The CLI is more difficult to use but is more robust. It's preferred, and sometimes required, for advanced administration tasks.
 |REST API
@@ -138,7 +138,7 @@ link:../manage-data/prepare-provision-storage.html[Prepare] to allocate and admi
 
 == References to additional documentation
 
-NetApp offers ONTAP in three distinct personalities. Where appropriate, this ONTAP AFX documentation includes links to topics at the unified ONTAP doc site. The additional information provides more depth and a different perspective that can be helpful as you begin administering your ONTAP AFX storage system.
+NetApp offers ONTAP in three distinct personalities. Where appropriate, this ONTAP AFX documentation includes links to topics at the unified ONTAP doc site. The additional information provides more depth and a different perspective that can be helpful as you administer your ONTAP AFX storage system.
 
 .Related information
 

@@ -20,6 +20,8 @@ The event messages provide a valuable record of system activity. Each event incl
 . Review and respond to the recommended actions at the top of the page, such as enabling automatic update.
 
 . Select the *Events log* tab to examine the messages in more detail.
++
+Select an event message to display the sequence number, description, event, and recommended action.
 
 . Optionally select the *Active IQ suggestions* tab and register with Active IQ to get detailed risk information for the cluster.
 
@@ -31,7 +33,7 @@ The audit log includes a record of system activity based on the access protocols
 
 . Select *Settings* to enable or disable the operations that are tracked.
 
-. Optionally select *Manage audit destinations*. Review <<Manage notifications>> for more information.
+. Optionally select *Manage audit destinations*; review <<Manage notifications>> for more information.
 
 == Manage notifications
 
@@ -47,6 +49,6 @@ There are several types of notifications supported by ONTAP AFX that you can for
 .. _Event destinations:_ select *View event destinations*
 .. _Audit log destinations:_ select *View audit destinations*
 
-. Select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters] as appropriate.
+. Select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters] as appropriate and provide the destination information.
 
-. Provide the destination information and select *Save*.
+. Select *Save*.

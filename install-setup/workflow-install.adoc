@@ -11,4 +11,4 @@ summary:
 [.lead]
 To install and configure your ONTAP AFX system, you need to review the hardware requirements, prepare your site, install and cable the hardware components, and power on the system.
 
-After the equipment is installed, you need to set up the AFX cluster. Refer to link:../install-setup/cluster-setup.html[Set up your ONTAP AFX cluster] for details.
+*This topic will be deleted after Don's content is merged. Must update landing page tile.*

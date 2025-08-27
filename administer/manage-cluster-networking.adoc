@@ -9,10 +9,10 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You need to set up and administer the network configuration of your ONTAP AFX storage system. The networking environment supports several use cases including clients accessing data and intercluster communication.
+You need to set up and administer the network configuration of your ONTAP AFX storage system. The networking environment supports several use cases including clients accessing data at SVMs and intercluster communication.
 
 [NOTE]
-Creating a network resource is an important first step. You can also perform additional administrative actions, such as editing or deleting the definitions, as needed.
+Creating a network resource is an important first step. You also need to perform additional administrative actions, such as editing or deleting the network definitions, as needed.
 
 .Related information
 

@@ -11,6 +11,18 @@ summary:
 [.lead]
 There are several administrative tasks you can perform as part of administering the volumes defined at your ONTAP AFX cluster.
 
+== Create a qtree
+
+xxx
+
 .Steps
 
-. In System Manager, select *Storage* and then *Volumes*.
+. In System Manager, select *Storage* and then *XXX*.
+
+== Create a quota
+
+xxx
+
+.Steps
+
+. In System Manager, select *Storage* and then *XXX*.

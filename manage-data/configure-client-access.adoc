@@ -11,6 +11,4 @@ summary:
 [.lead]
 xxx
 
-Anything needed beyond creating the volume or bucket needed at or for client to access data
-
->> Rows 262, 264, etc.
+*Anything not already in create volume and manage volume; create bucket and manage bucket*
