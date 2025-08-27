@@ -16,7 +16,7 @@ indexpage:
           url: /install-setup/cluster-setup.html
     - title: Cluster administration
       links: 
-        - title: Prepare for cluster administration
+        - title: Prepare to administer ONTAP AFX
           url: /get-started/prepare-cluster-svm-admin.html
         - title: Manage storage VMs
           url: /administer/display-svms.html
@@ -48,7 +48,7 @@ indexpage:
           url: /secure-data/ransomware-protection.html
     - title: REST API
       links: 
-        - title: Learn about the API
+        - title: Learn about the REST API
           url: /rest/learn-rest-api.html
         - title: Your first API call
           url: /rest/first-call.html
