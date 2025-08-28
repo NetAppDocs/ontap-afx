@@ -32,7 +32,7 @@ This is a disaggregated hardware and software solution engineered to meet the ri
 
 By offering these unique ONTAP personalities, NetApp enables organizations to select a storage solution aligned with their operational requirements and application workloads.
 
-.What does "disaggregated" mean with ONTAP AFX storage systems?
+.What does "disaggregated" mean in the context of ONTAP AFX storage systems?
 
 The term "disaggregated" can have different though related meanings with ONTAP AFX.
 
