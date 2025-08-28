@@ -21,7 +21,7 @@ There are several new and updated features available with ONTAP AFX. Review the 
 
 * link:../get-started/system-design.html[ONTAP AFX system design goals]
 * link:../get-started/software-architecture.html[Details of the ONTAP AFX architecture]
-* link:../administer/advanced-cluster.html[ONTAP AFX advanced cluster administration]
+* link:../administer/additional-ontap-cluster.html[Additional ONTAP AFX cluster features and configuration]
 * link:../faq.html[Frequently asked questions about ONTAP AFX storage systems]
 
 == Configuration differences with unified ONTAP

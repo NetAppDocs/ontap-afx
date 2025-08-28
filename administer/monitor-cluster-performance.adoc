@@ -13,7 +13,7 @@ You can display a high-level view of your ONTAP AFX cluster, including the stora
 
 .Related information
 
-* link:../administer/advanced-cluster.html[ONTAP AFX advanced cluster administration]
+* link:../administer/additional-ontap-cluster.html[Additional ONTAP AFX cluster features and configuration]
 
 == Storage capacity
 

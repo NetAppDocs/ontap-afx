@@ -22,8 +22,8 @@ indexpage:
           url: /administer/display-svms.html
         - title: Upgrade and maintain the cluster
           url: /administer/expand-cluster.html
-        - title: Advanced administration
-          url: /administer/advanced-cluster.html
+        - title: Additional administration
+          url: /administer/additional-ontap-cluster.html
     - title: Manage data and access
       links:
         - title: Prepare to manage data
