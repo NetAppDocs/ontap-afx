@@ -9,7 +9,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can display a high-level view of your ONTAP AFX cluster, including the storage usage and general performance.
+You can display a high-level overview of your ONTAP AFX cluster, including the storage usage and general performance.
 
 .Related information
 
@@ -29,7 +29,7 @@ The System Manager dashboard includes a high-level display of the storage utiliz
 
 == Cluster performance
 
-System Manager provides a detailed overview of the overall ONTAP AFX cluster performance.
+System Manager provides a detailed overview of the ONTAP AFX cluster performance.
 
 .Steps
 
@@ -37,6 +37,6 @@ System Manager provides a detailed overview of the overall ONTAP AFX cluster per
 
 . Review the cluster performance summary at top including latency and throughput.
 
-. Under the *Top actors* tab, select the desired SVM and then *Enable activity tracking*.
+. Under the *Top actors* tab, select the desired SVM and then *Enable activity tracking* as needed.
 
-. Under the *Volume performance* tab, view the performance details of a specific volume as needed.
+. Under the *Volume performance* tab, view the performance details of a specific volume.

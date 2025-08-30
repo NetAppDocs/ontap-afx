@@ -28,12 +28,12 @@ You must have generated a certificate signing request and added a CA-signed serv
 . In System Manager, select *Cluster* and then *Settings*.
 . Select image:icon_gear_white_bg.png[outline of a blue mechanical gear] next to *LDAP*.
 . Select image:icon_add.gif[blue add with white background] and provide the name or IP address of the LDAP server.
-. Provide the necessary configuration information, including the schema, port, and binding.
+. Provide the necessary configuration information, including the schema, base DN, port, and binding.
 . Select *Save*.
 
 == Configure SAML authentication
 
-Security Assertion Markup Language (SAML) authentication allows users to be authenticated by a secure identity provider (IdP) instead of providers using other protocols such as LDAP.
+Security Assertion Markup Language (SAML) authentication enables users to be authenticated by a secure identity provider (IdP) instead of providers using other protocols such as LDAP.
 
 .Before you begin
 

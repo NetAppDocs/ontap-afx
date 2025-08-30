@@ -9,13 +9,13 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can use the _Insights_ feature of ONTAP AFX System Manager to identify suggested configuration updates to align with NetApp best practices. These changes can optimize the security and performance of your ONTAP AFX cluster.
+You can use the _Insights_ feature of ONTAP AFX System Manager to identify suggested configuration updates that align with NetApp best practices. These changes can optimize the security and performance as well as other areas of your ONTAP AFX cluster.
 
-For example, the Autonomous Ransomware Protection (ARP) feature is available with ONTAP AFX and provides anti-ransomware protection. It uses workload analysis of the NAS environments to detect abnormal activity that might indicate an attack. Insights will inform you if ARP is not configured.
+For example, the Autonomous Ransomware Protection (ARP) feature is available with ONTAP AFX and provides anti-ransomware protection. Insights will inform you if ARP is not configured.
 
 .About this task
 
-Each of the insights is presented as a separate card or tile on the page which you can choose to implement or dismiss. You can also select the associated documentation link to learn more about a specific technology.
+Each of the insights is presented as a separate tile or card on the page which you can choose to implement or dismiss. You can also select the associated documentation link to learn more about a specific technology.
 
 .Steps
 
@@ -24,4 +24,4 @@ Each of the insights is presented as a separate card or tile on the page which y
 
 .What's next
 
-Perform any of the recommended actions to implement ONTAP AFX security and performance best practices.
+Perform any of the recommended actions to implement ONTAP AFX configuration best practices.

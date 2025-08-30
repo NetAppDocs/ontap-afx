@@ -19,19 +19,20 @@ A digital certificate is an electronic document used to prove ownership of a pub
 
 == Generate a certificate signing request
 
-Generate a certificate signing request (CSR) to create a private key which can be used to generate a public certificate.
+To get started using a digital certificate, you need to generate a certificate signing request (CSR). As part of this, ONTAP creates a public/private key pair and includes the public key contained in the CSR.
 
 .Steps
 
-. In System Manager, select *Cluster > Settings*.
-. Under *Security*, next to *Certificates*, select image:icon_arrow.gif[blue arrow pointing to the right]; then select image:icon_generate_csr.png[blue rectangle containing a plus sign followed by the words generate csr].
-. Enter the subject common name; then select the country.
-. If you want to change the GSR defaults, select extended key usage, or add subject alternative names, select image:icon_more_options.png[two arrows facing diagonally opposite directions followed by the words more options]; then make the desired updates.
+. In System Manager, select *Cluster* and then *Settings*.
+. Under *Security* and next to *Certificates*, select image:icon_arrow.gif[blue arrow pointing to the right]
+. Select image:icon_generate_csr.png[blue rectangle containing a plus sign followed by the words generate csr].
+. Enter the subject common name and then country; optionally provide the organization and organizational unit.
+. To change the CSR default values, select image:icon_more_options.png[two arrows facing diagonally opposite directions followed by the words more options] and make the desired updates.
 . Select *Generate*.
 
 .Result
 
-You have generated a CSR to which can be used to generate a public certificate.
+You have generated a CSR which can be used to request a public certificate.
 
 == Add a trusted certificate authority
 
@@ -39,14 +40,17 @@ ONTAP provides a default set of trusted root certificates for applications using
 
 .Steps
 
-. Select *Cluster > Settings*.
-. Under *Security*, next to *Certificates*, select image:icon_arrow.gif[blue arrow pointing to the right].
-. Select *Trusted certificate authorities*.
-. Enter or import the certificate details; then select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
+. In System Manager, select *Cluster* and then *Settings*.
+. Under *Security* and next to *Certificates*, select image:icon_arrow.gif[blue arrow pointing to the right].
+. Select the tab *Trusted certificate authorities* and then select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
+. Provide the configuration information, including the name, scope, common name, type, and certificate details.
++
+You can import the certificate instead by selecting *Import*.
+. Select *Add*.
 
 .Result
 
-You have added a new trusted certificate authority to your ONTAP AFX system.
+You have added a trusted certificate authority to your ONTAP AFX system.
 
 == Renew or delete a trusted certificate authority
 
