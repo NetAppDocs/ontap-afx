@@ -28,3 +28,11 @@ You need to have the credentials for a cluster administrator account and connect
 . Check the volume location of the current nodes; note the number of volumes per node:
 +
 `afx> vol show -fields node,size,constituent-count -is-constituent true -node *`
+
+. Collect the cluster interconnect IP addresses and save them for use in later steps:
++
+`afx> net int show -role Cluster'
+
+.What's next?
+
+xxx
