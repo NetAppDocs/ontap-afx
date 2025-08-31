@@ -13,6 +13,10 @@ Depending on your configuration, you'll need to create and manage digital certif
 
 A digital certificate is an electronic document used to prove ownership of a public key. The public key and associated private key can be used to in various ways, including to establish identity typically as part of a larger security framework such as TLS and IPsec. These keys, as well as the supporting protocols and formatting standards, form the basis for public key infrastructure (PKI).
 
+////
+A Certificate Signing Request (CSR) is a block of encoded text that is given to a Certificate Authority (CA) when applying for a digital certificate. In ONTAP, a CSR can be generated using the <code>security certificate generate-csr</code> command. This request is then sent to a trusted third-party CA for signing. Once the CA processes the request, it sends back a signed digital certificate. The signed certificate can be installed on ONTAP to authenticate the cluster or Storage Virtual Machine (SVM) as an SSL server, which is a best practice for production systems to comply with InfoSec policies.
+////
+
 .Related information
 
 * https://docs.netapp.com/us-en/ontap/authentication/manage-certificates-sm-task.html[Manage ONTAP certificates with System Manager^]
