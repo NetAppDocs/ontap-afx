@@ -31,10 +31,12 @@ xxx
 
 *All aggregate API calls*
 
-.JSON output example
+//[source,console]
+
+.List of unsupported endpoints
 [%collapsible%closed]
 ====
-[source,console]
+[source,text]
 ----
 /cluster/counter/tables
 /cluster/metrocluster
