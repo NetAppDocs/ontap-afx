@@ -11,6 +11,10 @@ summary:
 [.lead]
 You can create a data SVM to provide configuration isolation and improve security. You might do this for different groups or projects within your organization.
 
+.About this task
+
+xxx
+
 .Before you begin
 
 You'll need the following:
@@ -18,13 +22,14 @@ You'll need the following:
 * A minimum of four IP addresses
 * Name of an IPspace
 
-Review link:../administer/manage-cluster-networking.html[Manage ONTAP AFX cluster networking] for more information.
-
 .Steps
 
-. In System Manager, select *Cluster* and then *Storage VMs* in the navigation pane.
+. In System Manager, select *Cluster* and then *Storage VMs*.
 . Select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
+. xxx
+
 
 .Related information
 
 * link:../administer/display-svms.html[Display and monitor the ONTAP AFX SVMs]
+* link:../administer/manage-cluster-networking.html[Manage ONTAP AFX cluster networking]

@@ -11,6 +11,11 @@ summary:
 [.lead]
 Before provisioning your storage using ONTAP AFX, you should be familiar with the terminology and some of the key concepts.
 
+.Related information
+
+* link:../administer/additional-ontap-svm.html[Additional ONTAP AFX SVM administration and features]
+* link:../administer/additional-ontap-cluster.html[Additional ONTAP AFX cluster administration and features]
+
 == Storage terminology and options
 
 There are several terms related to ONTAP AFX storage you should be familiar with.
