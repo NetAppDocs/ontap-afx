@@ -12,6 +12,8 @@ summary:
 [.lead]
 You can display an overview of the data protection configuration for your cluster. This is a good step before creating additional storage protection definitions.
 
+*List options*
+
 * Mirror prepare to provision storage
 * Overview at top, with ways you can protect
 * Last H2 is display overview

@@ -13,7 +13,7 @@ You can expand the compute capability of an ONTAP AFX independent of the storage
 
 .About this task
 
-This procedure describes how to add two compute nodes to an existing cluster. You'll need to use both the ONTAP CLI as well as the System Manager interfaces.
+This procedure describes how to add two compute nodes to an existing cluster. You'll need to use both the ONTAP CLI and System Manager administrative interfaces.
 
 .Before you begin
 
@@ -31,7 +31,7 @@ You need to have the credentials for a cluster administrator account and connect
 
 . Collect the cluster interconnect IP addresses and save them for use in later steps:
 +
-`afx> net int show -role Cluster'
+`afx> net int show -role Cluster`
 
 .What's next?
 

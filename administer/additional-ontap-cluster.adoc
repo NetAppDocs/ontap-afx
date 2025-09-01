@@ -4,14 +4,12 @@ permalink: administer/additional-ontap-cluster.html
 keywords: 
 summary: 
 ---
-= Additional ONTAP AFX cluster administration and features
+= Additional ONTAP AFX cluster administration
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 In addition to the common ONTAP AFX cluster administration tasks, there are other tasks you may need to perform based on your environment. Most of these additional tasks can be performed using System Manager, although in some cases one of the other administrative interfaces may be needed.
-
-*=> DP: See EAP for ideas*
 
 .Related information
 
@@ -21,11 +19,17 @@ In addition to the common ONTAP AFX cluster administration tasks, there are othe
 
 xxx
 
+*There is nothing new regarding licensing.*
+
+.Related information
+
+* link:../system-admin/manage-licenses-concept.html[ONTAP licensing overview^]
+
 == Security
 
 xxx
 
->> Review clusters --> settings (security)
+*Review clusters --> settings (security)*
 
 === OAuth 2.0
 
