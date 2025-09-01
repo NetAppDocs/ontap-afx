@@ -18,6 +18,7 @@ xxx
 .Steps
 
 . In System Manager, select *Storage* and then *XXX*.
+. XXX
 
 == Create a quota
 
@@ -26,3 +27,4 @@ xxx
 .Steps
 
 . In System Manager, select *Storage* and then *XXX*.
+. XXX

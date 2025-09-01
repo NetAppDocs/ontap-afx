@@ -14,7 +14,7 @@ summary:
 [.lead]
 Learn about the new capabilities included with ONTAP 9.17.1 that are available with ONTAP AFX storage systems.
 
-*=> DP: Will add content here for first release as appropriate.*
+*=> DP: I will add content here for first release as appropriate. The format will align with the ASA r2 topic.*
 
 .Related information
 

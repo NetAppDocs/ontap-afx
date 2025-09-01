@@ -9,15 +9,15 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can define user accounts and roles using the supporting authentication and authorization services available to ONTAP AFX.
+You can define user accounts and roles based on the authentication and authorization services available with ONTAP AFX.
 
 [NOTE]
-Each ONTAP user needs to have one role assigned. A role includes privileges and determines what the user is allowed to access and do.
+Each ONTAP user needs to have one role assigned. A role includes privileges and determines what actions the user is able to perform.
 
 .Related information
 
 * link:../administer/prepare-authentication.html[Prepare authentication services]
-* link:../administer/additional-ontap-svm.html[Additional SVM features and configuration]
+* link:../administer/additional-ontap-svm.html[Additional ONTAP AFX SVM administration]
 
 == Create an account role
 
@@ -33,20 +33,20 @@ Roles for cluster administrators and storage VM administrators are automatically
 
 == Create a cluster account
 
-You can create a cluster-level account to use when performing cluster administration.
+You can create a cluster-level account to use when performing cluster or SVM administration.
 
 .Steps
 
 . In System Manager, select *Cluster* and then *Settings*.
 . In the *Security* section, select image:icon_arrow.gif[blue arrow pointing to the right] next to *Users and roles*.
-. Under *Users*, select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters]. 
+. Select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters]. under *Users*.
 . Enter a username and then select the role for the user.
 +
-This should be *admin* role to perform the full range of configuration tasks on your cluster.
-. Select the user login method and the authentication method.
+The role should be appropriate for the user. For example, the *admin* role is able to perform the full range of configuration tasks on your cluster.
+. Select the user login method and the authentication method; this will typically be *Password*.
 . Enter a password for the user.
 . Select *Save*.
 
 .Result
 
-A new administrator account is created and available for use with your ONTAP AFX cluster.
+A new account is created and available for use with your ONTAP AFX cluster.

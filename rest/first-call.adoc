@@ -40,7 +40,7 @@ curl --request GET \
 * If “disaggregated” is *true* and:
 ** If “san_optimized” is *false* the personality is ONTAP AFX
 ** If “san_optimized” is *true* the personality is ASA r2
-* If “disaggregated” is *false* the personality is unified ONTAP
+* If “disaggregated” is *false* the personality is Unified ONTAP
 
 .Related information
 

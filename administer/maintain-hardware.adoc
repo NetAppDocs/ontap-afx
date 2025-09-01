@@ -9,8 +9,6 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can maintain the controller nodes of your ONTAP AFX cluster.
+Go to the https://docs.netapp.com/us-en/ontap-systems/asa-r2-landing-maintain/index.html[ONTAP AFX maintenance documentation^] to learn how to perform maintenance procedures on your ONTAP AFX storage system.
 
-*=> DP: Equivalent AFX link below?*
-
-Review the https://docs.netapp.com/us-en/ontap-systems/asa-r2-landing-maintain/index.html[ONTAP AFX maintenance documentation^] to learn how to perform maintenance procedures on your AFX system components.
+*=> DP: Must get equivalent link for AFX.*

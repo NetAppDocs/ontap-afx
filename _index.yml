@@ -17,13 +17,13 @@ indexpage:
     - title: Cluster administration
       links: 
         - title: Prepare to administer ONTAP AFX
-          url: /get-started/prepare-cluster-svm-admin.html
+          url: /get-started/prepare-cluster-admin.html
         - title: Manage storage VMs
           url: /administer/display-svms.html
         - title: Upgrade and maintain the cluster
           url: /administer/expand-cluster.html
-        - title: Advanced administration
-          url: /administer/advanced-cluster.html
+        - title: Additional administration
+          url: /administer/additional-ontap-cluster.html
     - title: Manage data and access
       links:
         - title: Prepare to manage data
@@ -40,8 +40,6 @@ indexpage:
           url: /protect-data/create-snapshot.html
     - title: Secure data
       links:
-        - title: Prepare to secure data
-          url: /secure-data/prepare-secure-data.html
         - title: Encrypt data at rest
           url: /secure-data/encrypt-data-at-rest.html
         - title: Protect against ransomware attacks
@@ -55,8 +53,8 @@ indexpage:
         - title: REST API reference
           url: /rest/api-reference.html
     - title: Get more information
-      links: 
-        - title: Additional resources
-          url: /learn-more/additional-resources.html
+      links:
         - title: Frequently asked questions
           url: /faq.html
+        - title: Additional resources
+          url: /learn-more/additional-resources.html

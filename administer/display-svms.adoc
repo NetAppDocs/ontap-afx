@@ -9,14 +9,14 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can display and monitor the data storage VMs defined in your ONTAP AFX cluster. Each SVM provides an isolated environment when organizing your data and providing client access.
+You can display and monitor the data storage VMs defined in your ONTAP AFX cluster. Each SVM provides an isolated environment for organizing your data and providing client access.
 
 .Steps
 
-. In System Manager, select *Cluster* and then *Storage VMs* in the navigation pane.
-
-. Hover over the desired SVM and select image:icon_kabob.gif[three vertical blue dots] to view the administrative options.
+. In System Manager, select *Cluster* and then *Storage VMs*.
+. Hover over the desired SVM and select image:icon_kabob.gif[three vertical blue dots] to view the primary administrative options.
+. Optionally select a specific SVM to view the details including an overview, settings, replication, and file system.
 
 .Related information
 
-* link:../get-started/prepare-cluster-svm-admin.html[Understand storage virtual machines]
+* link:../get-started/prepare-cluster-admin.html[Understand storage virtual machines]

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: get-started/prepare-cluster-svm-admin.html
+permalink: get-started/prepare-cluster-admin.html
 keywords: 
 summary: 
 ---
@@ -25,7 +25,7 @@ Data SVMs can be used to establish and enforce isolation of your data and applic
 
 .Accounts and RBAC roles
 
-It's important to note there are two levels of authentication and authorization with ONTAP AFX: cluster level and SVM level. In addition to the cluster accounts, every SVM has its own distinct set of users and roles. In most situations, using the cluster level accounts is adequate. But depending on your environment, you might need to configure and use the more restrictive SVM accounts and roles as well. See link:../administer/additional-ontap-svm.html[Additional ONTAP AFX SVM features and configuration] for more information.
+It's important to note there are two levels of authentication and authorization with ONTAP AFX: cluster level and SVM level. In addition to the cluster accounts, every SVM has its own distinct set of users and roles. In most situations, using the cluster level accounts is adequate. But depending on your environment, you might need to configure and use the more restrictive SVM accounts and roles as well. See link:../administer/additional-ontap-svm.html[Additional ONTAP AFX SVM administration] for more information.
 
 .SVM-scoped resources
 
@@ -53,7 +53,7 @@ An SVM administrator has control of a specific data SVM and so is more restricte
 
 == Three administrative interfaces
 
-As with unified ONTAP, AFX has three administrative interfaces. The LIF (or IP address) you need to use varies based on the administrative interface and your environment.
+As with Unified ONTAP, AFX has three administrative interfaces. The LIF (or IP address) you need to use varies based on the administrative interface and your environment.
 
 [NOTE]
 The System Manager user interface is preferred for most administrative tasks. You should use an administrator account unless otherwise indicated.
@@ -67,12 +67,45 @@ The System Manager user interface is preferred for most administrative tasks. Yo
 |Command line interface
 |The ONTAP CLI is accessible using SSH. Depending on your account, you can access the cluster management LIF or SVM management LIF. The CLI is more difficult to use but is more robust. It's preferred, and sometimes required, for advanced administration tasks.
 |REST API
-|ONTAP AFX includes a REST API you can use to automate the administration of your AFX cluster. The API is based on the unified ONTAP REST API with modifications to support the unique AFX features and restrictions.
+|ONTAP AFX includes a REST API you can use to automate the administration of your AFX cluster. The API is based on the Unified ONTAP REST API with modifications to support the unique AFX features and restrictions.
 |===
 
 == Learn to search, filter, and sort information in System Manager
 
 The System Manager user interface includes a robust set of features enabling you to access and display the information you need. Learning to use these capabilities will help you to better administer the ONTAP AFX storage system. See https://docs.netapp.com/us-en/ontap/task_admin_search_filter_sort.html[Search, filter, sort information in System Manager^] for more information.
+
+== Access the ONTAP AFX CLI
+
+While you can use System Manager for most ONTAP AFX administration, there are some tasks you can only perform using the ONTAP CLI.
+
+.About this task
+
+You can access the ONTAP AFX CLI through the secure shell (SSH). The CLI has two privilege levels that determine the commands and command parameters available to you. The `admin` level has the least privilege and is the default when you sign in. You can elevate the privilege of your session to `advanced` if needed.
+
+.Before you begin
+
+You'll need the following:
+
+* IP address or domain name of the cluster or SVM management LIF
+* Account credentials
+* SSH client on your local workstation
+
+.Steps
+
+. Use SSH to connect to ONTAP AFX, for example:
++
+`ssh admin@10.69.117.24`
+
+. Provide the account password.
+
+. Display the command directories at the top of the hierarchy:
++
+`?`
+
+.Related information
+
+* link:../system-admin/index.html[Learn about cluster administration with the ONTAP CLI^]
+* link:../system-admin/set-privilege-level-task.html[Set the privilege level in the ONTAP CLI^]
 
 == Confirm AFX system health
 
@@ -138,7 +171,7 @@ link:../manage-data/prepare-provision-storage.html[Prepare] to allocate and admi
 
 == References to additional documentation
 
-NetApp offers ONTAP in three distinct personalities. Where appropriate, this ONTAP AFX documentation includes links to topics at the unified ONTAP doc site. The additional information provides more depth and a different perspective that can be helpful as you administer your ONTAP AFX storage system.
+NetApp offers ONTAP in three distinct personalities. Where appropriate, this ONTAP AFX documentation includes links to topics at the Unified ONTAP doc site. The additional information provides more depth and a different perspective that can be helpful as you administer your ONTAP AFX storage system.
 
 .Related information
 

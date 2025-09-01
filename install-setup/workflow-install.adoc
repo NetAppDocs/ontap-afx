@@ -11,4 +11,4 @@ summary:
 [.lead]
 To install and configure your ONTAP AFX system, you need to review the hardware requirements, prepare your site, install and cable the hardware components, and power on the system.
 
-*This topic will be deleted after Don's content is merged. Must update landing page tile.*
+*=> DP: This topic will be deleted after Don's content is merged. Must update landing page tile.*

@@ -9,7 +9,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can sign in to System Manager to access the AFX dashboard and display the cluster status. This is a good first step before beginning your ONTAP AFX administrative tasks or if you suspect an operational issue.
+You can sign in to System Manager to access the ONTAP AFX dashboard and display the cluster status. This is a good first step before beginning your ONTAP AFX administrative tasks or if you suspect an operational issue.
 
 .Before you begin
 
@@ -30,7 +30,7 @@ You'll need the following:
 
 . Provide the username and password for the administrator account and select *Sign in*.
 
-. Select *Dashboard* in the left navigation pane and review the cluster health.
+. Select *Dashboard* in the left navigation pane and review the tiles on the page including the cluster health.
 
 . In the navigation pane, select *Cluster* and then *Overview*.
 

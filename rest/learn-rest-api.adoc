@@ -13,23 +13,56 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-The ONTAP AFX REST API is based on the REST API provided with the unified ONTAP personality. There are a number of changes which adapt it to the unique characteristics and capabilities of the AFX personality.
+The ONTAP AFX REST API is based on the REST API provided with the Unified ONTAP personality. There are a number of changes which adapt it to the unique characteristics and capabilities of the AFX personality.
 
-*=> DP: This page will describe the AFX REST API and differences with the unified ONTAP. Trying to determine a way to get these details. The content will be modeled on what I wrote for ASA r2.*
+== Unsupported features
 
-== Additional features and API calls
+ONTAP AFX is a high-performance NAS storage system. It enables clients to access data using NFS, SMB/CIFS, and S3. There are several unsupported features, including:
 
-xxx
+* Metrocluster
+* Storage area networking (SAN)
+* Disk aggregates 
 
-*Must review Swagger, search*
+== Removed API endpoints
 
-== Removed features and API calls
+Several endpoints have been removed from the REST API corresponding to the unsupported features.
 
-xxx
-
-*All SAN API calls*
-
-*All aggregate API calls*
+.List of unsupported endpoints
+[%collapsible%closed]
+====
+[source,text]
+----
+/cluster/counter/tables
+/cluster/metrocluster
+/cluster/metrocluster/diagnostics
+/cluster/metrocluster/dr-groups
+/cluster/metrocluster/interconnects
+/cluster/metrocluster/nodes
+/cluster/metrocluster/operations
+/cluster/metrocluster/svms
+/network/fc/fabrics
+/network/fc/interfaces
+/network/fc/logins
+/network/fc/ports
+/network/fc/wwpn-aliases
+/protocols/nvme/interfaces
+/protocols/nvme/services
+/protocols/nvme/subsystem-controllers
+/protocols/nvme/subsystem-maps
+/protocols/nvme/subsystems
+/protocols/san/fcp/services
+/protocols/san/igroups
+/protocols/san/initiators
+/protocols/san/iscsi/credentials
+/protocols/san/iscsi/services
+/protocols/san/iscsi/sessions
+/protocols/san/lun-maps
+/protocols/san/portsets
+/protocols/san/vvol-bindings
+/storage/luns
+/storage/namespaces
+----
+====
 
 .Related information
 

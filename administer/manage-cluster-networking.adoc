@@ -9,10 +9,10 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You need to set up and administer the network configuration of your ONTAP AFX storage system. The networking environment supports several use cases including clients accessing data at SVMs and intercluster communication.
+You need to configure the network of your ONTAP AFX storage system. The networking environment supports several connection scenarios including clients accessing data at SVMs as well as intercluster communication.
 
 [NOTE]
-Creating a network resource is an important first step. You also need to perform additional administrative actions, such as editing or deleting the network definitions, as needed.
+Creating a network resource is an important first step. You also need to perform additional administrative actions, such as editing or deleting network definitions, as needed.
 
 .Related information
 
@@ -27,9 +27,10 @@ A broadcast domain simplifies management of your cluster network by grouping por
 There are several broadcast domains created during cluster setup, including:
 
 Default::
-This broadcast domain contains ports in the “Default” IPspace. These ports are used primarily to serve data. Cluster management and node management ports are also in this broadcast domain.
+This broadcast domain contains ports in the “Default” IPspace. These ports are used primarily to serve data. Cluster management and node management ports are also included.
+
 Cluster::
-This broadcast domain contains ports in the “Cluster” IPspace. These ports are used for cluster communication and include all cluster ports from all nodes in the cluster.
+This broadcast domain contains ports in the “Cluster” IPspace. These ports are used for cluster communication and include all the cluster ports from all nodes in the cluster.
 
 You can create additional broadcast domains after your cluster has been initialized. When you create a broadcast domain, a failover group that contains the same ports is automatically created.
 
@@ -47,7 +48,7 @@ All broadcast domain names must be unique within an IPspace.
 . Provide the maximum transmission unit (MTU).
 +
 MTU is the largest data packet that can be accepted in the broadcast domain.
-. Select the desired ports and select *Save*.
+. Choose the desired ports and select *Save*.
 
 .Related information
 
@@ -79,11 +80,11 @@ You can use the IPspace to create a subnet.
 
 == Create a subnet
 
-A subnetwork enforces a logical division of the IP address space in your network. It enables you to allocate dedicated blocks of IP addresses for the creation of a network interface (LIF). Subnets simplify LIF creation by enabling you to use the subnet name instead of a specific IP address and network mask combination.
+A subnetwork or subnet enforces a logical division of the IP address space in your network. It enables you to allocate dedicated blocks of IP addresses for the creation of a network interface (LIF). Subnets simplify LIF creation by enabling you to use the subnet name instead of a specific IP address and network mask combination.
 
 .Before you begin
 
-You must have a broadcast domain and IPspace where the subnet will be defined. Also note the following:
+You must have a broadcast domain and IPspace where the subnet will be defined. Also note:
 
 * All subnet names must be unique within a specific IPspace.
 * The IP address range used for a subnet cannot overlap with the IP addresses of other subnets.
@@ -91,8 +92,8 @@ You must have a broadcast domain and IPspace where the subnet will be defined. A
 .Steps
 
 .  In System Manager, select *Network* and then *Overview*.
-. Scroll to the bottom of the page under the *Subnets* tab and select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
-. Provide the configuration details, including the name, IP address details, and broadcast domain.
+. Under the *Subnets* tab, select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
+. Provide the configuration details, including the name of the subnet, IP address details, and broadcast domain.
 . Select *Save*.
 
 .What's next
@@ -110,8 +111,8 @@ A logical network interface (LIF) consists of an IP address and related network 
 .Steps
 
 .  In System Manager, select *Network* and then *Overview*.
-. Scroll to the bottom of the page under the *Network interfaces* tab and select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
-. Provide the configuration details, including the name, interface type, allowed protocols, and IP address details.
+. Under the *Network interfaces* tab, select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
+. Provide the configuration details, including the name of the interface, interface type, allowed protocols, and IP address details.
 . Select *Save*.
 
 .Related information

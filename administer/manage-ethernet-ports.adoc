@@ -10,7 +10,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-The ports used by ONTAP AFX provide the foundation for network connectivity and communication. There are several configuration options available to customize the layer two aspect of your AFX network.
+The ports used by ONTAP AFX provide the foundation for network connectivity and communication. There are several configuration options available to customize the layer two aspect of your network.
 
 .Related information
 
@@ -18,7 +18,7 @@ The ports used by ONTAP AFX provide the foundation for network connectivity and 
 
 == Create a VLAN
 
-A VLAN consists of switch ports grouped together into a broadcast domain.  VLANs enable you to increase security, isolate problems, and limit available paths within your IP network infrastructure.
+A VLAN consists of switch ports grouped together into a broadcast domain.  VLANs enable you to increase security, isolate potential problems, and limit available paths within your IP network infrastructure.
 
 .Before you begin
 
@@ -28,7 +28,8 @@ The switches deployed in the network must either comply with IEEE 802.1Q standar
 
 Note the following:
 
-* A VLAN can’t be created on an interface group port that contains no member ports.
+* You can't create a VLAN on an interface group port without any member ports.
+//* A VLAN can’t be created on an interface group port that contains no member ports.
 * When you configure a VLAN over a port for the first time, the port might go down, resulting in a temporary disconnection of the network. Subsequent VLAN additions to the same port do not affect the port state.
 * You should not create a VLAN on a network interface with the same identifier as the native VLAN of the switch. For example, if the network interface e0b is on native VLAN 10, you should not create a VLAN e0b-10 on that interface.
 
@@ -51,13 +52,13 @@ You have created a VLAN to increase security, isolate problems, and limit availa
 
 == Create a LAG
 
-A link aggregate group (LAG) is a technique that combines multiple physical network connections into a single logical connection. It can be used to increase the bandwidth and provide redundancy between nodes.
+A link aggregate group (LAG) is a technique that combines multiple physical network connections into a single logical connection. You can use it to increase the bandwidth and provide redundancy between nodes.
 
 .Steps
 
 . In System Manager, select *Network* and then *Ethernet ports*.
 . Select image:icon_vlan.png[a blue plus sign followed by the word lag].
-. Provide the configuration details, including the nodes, broadcast domain, ports, mode, and load distribution.
+. Provide the configuration details, including the node, broadcast domain, ports, mode, and load distribution.
 . Select *Save*.
 
 .Related information
