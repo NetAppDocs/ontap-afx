@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: get-started/prepare-cluster-svm-admin.html
+permalink: get-started/prepare-cluster-admin.html
 keywords: 
 summary: 
 ---
@@ -76,17 +76,21 @@ The System Manager user interface includes a robust set of features enabling you
 
 == Access the ONTAP AFX CLI
 
-While you can use System Manager for most ONTAP AFX administration tasks, there is some functionality you can only access through the ONTAP CLI.
+While you can use System Manager for most ONTAP AFX administration, there are some taks you can only perform using the ONTAP CLI.
 
-.Sign in to ONTAP AFX through the CLI
+.About this task
 
-You can sign in to the ONTAP CLI using secure shell (SSH). Before you begin, you'll need the following:
+Yuo can access the ONTAP AFX CLI through the secure shell (SSH). The CLI has two primary privilege levels which determine the commands and command parameters available to you. The `admin` level is the default and has the least privilege. You can elevate the privilege of your session to `advanced` if needed.
+
+.Before you begin
+
+You'll need the following:
 
 * IP address or domain name of the cluster or SVM management LIF
 * Account credentials
 * SSH client on your local workstation
 
-The basic steps include:
+.Steps
 
 . Use SSH to connect to ONTAP AFX, for example:
 +
@@ -95,13 +99,6 @@ The basic steps include:
 . Display the command directories at the top of the hierarchy:
 +
 `?`
-
-.Privilege levels
-
-The ONTAP AFX CLI includes two primary privilege levels which determine the commands and command parameters available to you. These include:
-
-* admin - The default and lowest privilege level
-* advanced - Provides a higher command authority
 
 .Related information
 

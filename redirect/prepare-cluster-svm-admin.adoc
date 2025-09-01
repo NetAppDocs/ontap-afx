@@ -1,0 +1,4 @@
+---
+permalink: get-started/prepare-cluster-svm-admin.html
+redirect: ontap-afx/get-started/prepare-cluster-admin.html
+---

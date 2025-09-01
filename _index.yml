@@ -17,7 +17,7 @@ indexpage:
     - title: Cluster administration
       links: 
         - title: Prepare to administer ONTAP AFX
-          url: /get-started/prepare-cluster-svm-admin.html
+          url: /get-started/prepare-cluster-admin.html
         - title: Manage storage VMs
           url: /administer/display-svms.html
         - title: Upgrade and maintain the cluster

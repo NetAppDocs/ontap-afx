@@ -20,4 +20,4 @@ entries:
     - title: Set up the cluster
       url: /install-setup/cluster-setup.html
   - title: Prepare to administer ONTAP AFX
-    url: /get-started/prepare-cluster-svm-admin.html
+    url: /get-started/prepare-cluster-admin.html

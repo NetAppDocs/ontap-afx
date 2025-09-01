@@ -66,7 +66,7 @@ The AFX administrative model consists of different levels, including:
 * Cluster administrator
 * SVM administrator.
 
-See link:../get-started/prepare-cluster-svm-admin.html[Prepare to administer ONTAP AFX] for more information.
+See link:../get-started/prepare-cluster-admin.html[Prepare to administer ONTAP AFX] for more information.
 
 .Data management
 

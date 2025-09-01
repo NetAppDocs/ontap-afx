@@ -19,4 +19,4 @@ You can display and monitor the data storage VMs defined in your ONTAP AFX clust
 
 .Related information
 
-* link:../get-started/prepare-cluster-svm-admin.html[Understand storage virtual machines]
+* link:../get-started/prepare-cluster-admin.html[Understand storage virtual machines]
