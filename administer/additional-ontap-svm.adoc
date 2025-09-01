@@ -23,7 +23,7 @@ xxx
 
 xxx
 
->> Provide an introduction and then a brief example; possibly link to the unified ONTAP doc; note that when creating an SVM there is an option to add an SVM level account.
+>> Provide an introduction and then a brief example; possibly link to the Unified ONTAP doc; note that when creating an SVM there is an option to add an SVM level account.
 
 === Cloud backup
 

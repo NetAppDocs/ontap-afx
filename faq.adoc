@@ -36,7 +36,7 @@ By offering these unique ONTAP personalities, NetApp enables organizations to se
 
 The term "disaggregated" can have different though related meanings with ONTAP AFX.
 
-An important concept to begin with is the decoupling the compute capability in the controller nodes from the storage shelves. With ONTAP AFX, the cluster compute and storage components are no longer tightly coupled as they are with unified ONTAP. Instead they are connected through one or more cluster switches. Each controller has a complete view of the entire cluster storage pool.
+An important concept to begin with is the decoupling the compute capability in the controller nodes from the storage shelves. With ONTAP AFX, the cluster compute and storage components are no longer tightly coupled as they are with Unified ONTAP. Instead they are connected through one or more cluster switches. Each controller has a complete view of the entire cluster storage pool.
 
 The second related concept with disaggregated storage is that the aggregates and RAID management are removed as administrable entities. A storage abstraction layer within ONTAP AFX automatically configures and manages the aggregates, physical disks, and RAID groups. This allows the administrator to focus on the higher level storage configuration based on volumes and buckets.
 

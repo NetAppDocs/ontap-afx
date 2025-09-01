@@ -13,7 +13,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-The ONTAP AFX REST API is based on the REST API provided with the unified ONTAP personality. There are a number of changes which adapt it to the unique characteristics and capabilities of the AFX personality.
+The ONTAP AFX REST API is based on the REST API provided with the Unified ONTAP personality. There are a number of changes which adapt it to the unique characteristics and capabilities of the AFX personality.
 
 *See email from Ed/Justin about API.*
 

@@ -53,7 +53,7 @@ An SVM administrator has control of a specific data SVM and so is more restricte
 
 == Three administrative interfaces
 
-As with unified ONTAP, AFX has three administrative interfaces. The LIF (or IP address) you need to use varies based on the administrative interface and your environment.
+As with Unified ONTAP, AFX has three administrative interfaces. The LIF (or IP address) you need to use varies based on the administrative interface and your environment.
 
 [NOTE]
 The System Manager user interface is preferred for most administrative tasks. You should use an administrator account unless otherwise indicated.
@@ -67,7 +67,7 @@ The System Manager user interface is preferred for most administrative tasks. Yo
 |Command line interface
 |The ONTAP CLI is accessible using SSH. Depending on your account, you can access the cluster management LIF or SVM management LIF. The CLI is more difficult to use but is more robust. It's preferred, and sometimes required, for advanced administration tasks.
 |REST API
-|ONTAP AFX includes a REST API you can use to automate the administration of your AFX cluster. The API is based on the unified ONTAP REST API with modifications to support the unique AFX features and restrictions.
+|ONTAP AFX includes a REST API you can use to automate the administration of your AFX cluster. The API is based on the Unified ONTAP REST API with modifications to support the unique AFX features and restrictions.
 |===
 
 == Learn to search, filter, and sort information in System Manager
@@ -80,7 +80,7 @@ While you can use System Manager for most ONTAP AFX administration, there are so
 
 .About this task
 
-Yuo can access the ONTAP AFX CLI through the secure shell (SSH). The CLI has two primary privilege levels which determine the commands and command parameters available to you. The `admin` level is the default and has the least privilege. You can elevate the privilege of your session to `advanced` if needed.
+You can access the ONTAP AFX CLI through the secure shell (SSH). The CLI has two privilege levels that determine the commands and command parameters available to you. The `admin` level has the least privilege and is the default when you sign in. You can elevate the privilege of your session to `advanced` if needed.
 
 .Before you begin
 
@@ -95,6 +95,8 @@ You'll need the following:
 . Use SSH to connect to ONTAP AFX, for example:
 +
 `ssh admin@10.69.117.24`
+
+. Provide the account password.
 
 . Display the command directories at the top of the hierarchy:
 +
@@ -169,7 +171,7 @@ link:../manage-data/prepare-provision-storage.html[Prepare] to allocate and admi
 
 == References to additional documentation
 
-NetApp offers ONTAP in three distinct personalities. Where appropriate, this ONTAP AFX documentation includes links to topics at the unified ONTAP doc site. The additional information provides more depth and a different perspective that can be helpful as you administer your ONTAP AFX storage system.
+NetApp offers ONTAP in three distinct personalities. Where appropriate, this ONTAP AFX documentation includes links to topics at the Unified ONTAP doc site. The additional information provides more depth and a different perspective that can be helpful as you administer your ONTAP AFX storage system.
 
 .Related information
 

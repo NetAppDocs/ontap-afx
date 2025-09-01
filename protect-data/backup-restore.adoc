@@ -19,4 +19,4 @@ https://docs.netapp.com/us-en/asa-r2/data-protection/restore-data.html[Restore d
 
 Should this be only "restore" to align with ASA r2?
 
-Link to unified ONTAP topic.
+Link to Unified ONTAP topic.
