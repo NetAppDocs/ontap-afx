@@ -98,7 +98,7 @@ The basic steps include:
 
 .Privilege levels
 
-The ONTAP AFX CLI includes two primary privilege levels which determine what commands and command parameters are available to you. These include:
+The ONTAP AFX CLI includes two primary privilege levels which determine the commands and command parameters available to you. These include:
 
 * admin - The default and lowest privilege level
 * advanced - Provides a higher command authority
