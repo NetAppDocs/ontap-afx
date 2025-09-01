@@ -15,23 +15,17 @@ summary:
 [.lead]
 The ONTAP AFX REST API is based on the REST API provided with the Unified ONTAP personality. There are a number of changes which adapt it to the unique characteristics and capabilities of the AFX personality.
 
-*See email from Ed/Justin about API.*
+== Unsupported features
 
-== Additional features and API calls
+ONTAP AFX is a high-performance NAS storage system. It enables clients to access data using NFS, SMB/CIFS, and S3. There are several unsupported features, including:
 
-xxx
+* Metrocluster
+* Storage area networking (SAN)
+* Disk aggregates 
 
-*Must review Swagger, search if needed.*
+== Removed API endpoints
 
-== Removed features and API endpoints
-
-xxx
-
-*All SAN API calls*
-
-*All aggregate API calls*
-
-//[source,console]
+Several endpoints have been removed from the REST API corresponding to the unsupported features.
 
 .List of unsupported endpoints
 [%collapsible%closed]
