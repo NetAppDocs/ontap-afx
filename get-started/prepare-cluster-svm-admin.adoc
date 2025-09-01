@@ -74,33 +74,21 @@ The System Manager user interface is preferred for most administrative tasks. Yo
 
 The System Manager user interface includes a robust set of features enabling you to access and display the information you need. Learning to use these capabilities will help you to better administer the ONTAP AFX storage system. See https://docs.netapp.com/us-en/ontap/task_admin_search_filter_sort.html[Search, filter, sort information in System Manager^] for more information.
 
-== Access and use the ONTAP AFX CLI
+== Access the ONTAP AFX CLI
 
 While you can use System Manager for most ONTAP AFX administration tasks, there is some functionality you can only access through the ONTAP CLI.
 
-.Related information
+.Sign in to ONTAP AFX through the CLI
 
-* link:../system-admin/index.html[Learn about cluster administration with the ONTAP CLI^]
-
-=== Sign in to ONTAP AFX through the CLI
-
-You can sign in to the ONTAP CLI using secure shell (SSH).
-
-.Before you begin
-
-You'll need the following:
+You can sign in to the ONTAP CLI using secure shell (SSH). Before you begin, you'll need the following:
 
 * IP address or domain name of the cluster or SVM management LIF
 * Account credentials
 * SSH client on your local workstation
 
-.Steps
+The basic steps include:
 
-. Use SSH to connect to ONTAP AFX:
-+
-`ssh $USER@$FQDN_IPADDR`
-+
-.Example
+. Use SSH to connect to ONTAP AFX, for example:
 +
 `ssh admin@10.69.117.24`
 
@@ -108,7 +96,7 @@ You'll need the following:
 +
 `?`
 
-=== Privilege levels
+.Privilege levels
 
 The ONTAP AFX CLI includes two primary privilege levels which determine what commands and command parameters are available to you. These include:
 
@@ -117,6 +105,7 @@ The ONTAP AFX CLI includes two primary privilege levels which determine what com
 
 .Related information
 
+* link:../system-admin/index.html[Learn about cluster administration with the ONTAP CLI^]
 * link:../system-admin/set-privilege-level-task.html[Set the privilege level in the ONTAP CLI^]
 
 == Confirm AFX system health
