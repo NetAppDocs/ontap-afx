@@ -14,8 +14,8 @@ You can display and monitor the data storage VMs defined in your ONTAP AFX clust
 .Steps
 
 . In System Manager, select *Cluster* and then *Storage VMs*.
-. Hover over the desired SVM and select image:icon_kabob.gif[three vertical blue dots] to view the administrative options.
-. Select a specific SVM to view details about the SVM including an overview, settings, replication, and file system.
+. Hover over the desired SVM and select image:icon_kabob.gif[three vertical blue dots] to view the primary administrative options.
+. Optionally select a specific SVM to view the details including an overview, settings, replication, and file system.
 
 .Related information
 

@@ -53,8 +53,8 @@ indexpage:
         - title: REST API reference
           url: /rest/api-reference.html
     - title: Get more information
-      links: 
-        - title: Additional resources
-          url: /learn-more/additional-resources.html
+      links:
         - title: Frequently asked questions
           url: /faq.html
+        - title: Additional resources
+          url: /learn-more/additional-resources.html
