@@ -17,7 +17,7 @@ Each ONTAP user needs to have one role assigned. A role includes privileges and 
 .Related information
 
 * link:../administer/prepare-authentication.html[Prepare authentication services]
-* link:../administer/additional-ontap-svm.html[Additional SVM features and configuration]
+* link:../administer/additional-ontap-svm.html[Additional ONTAP AFX SVM administration]
 
 == Create an account role
 

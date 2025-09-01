@@ -13,7 +13,7 @@ You can display a high-level overview of your ONTAP AFX cluster, including the s
 
 .Related information
 
-* link:../administer/additional-ontap-cluster.html[Additional ONTAP AFX cluster features and configuration]
+* link:../administer/additional-ontap-cluster.html[Additional ONTAP AFX cluster administration]
 
 == Storage capacity
 

@@ -25,7 +25,7 @@ Data SVMs can be used to establish and enforce isolation of your data and applic
 
 .Accounts and RBAC roles
 
-It's important to note there are two levels of authentication and authorization with ONTAP AFX: cluster level and SVM level. In addition to the cluster accounts, every SVM has its own distinct set of users and roles. In most situations, using the cluster level accounts is adequate. But depending on your environment, you might need to configure and use the more restrictive SVM accounts and roles as well. See link:../administer/additional-ontap-svm.html[Additional ONTAP AFX SVM features and configuration] for more information.
+It's important to note there are two levels of authentication and authorization with ONTAP AFX: cluster level and SVM level. In addition to the cluster accounts, every SVM has its own distinct set of users and roles. In most situations, using the cluster level accounts is adequate. But depending on your environment, you might need to configure and use the more restrictive SVM accounts and roles as well. See link:../administer/additional-ontap-svm.html[Additional ONTAP AFX SVM administration] for more information.
 
 .SVM-scoped resources
 
@@ -76,7 +76,7 @@ The System Manager user interface includes a robust set of features enabling you
 
 == Access the ONTAP AFX CLI
 
-While you can use System Manager for most ONTAP AFX administration, there are some taks you can only perform using the ONTAP CLI.
+While you can use System Manager for most ONTAP AFX administration, there are some tasks you can only perform using the ONTAP CLI.
 
 .About this task
 

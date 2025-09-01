@@ -13,8 +13,8 @@ Before provisioning your storage using ONTAP AFX, you should be familiar with th
 
 .Related information
 
-* link:../administer/additional-ontap-svm.html[Additional ONTAP AFX SVM administration and features]
-* link:../administer/additional-ontap-cluster.html[Additional ONTAP AFX cluster administration and features]
+* link:../administer/additional-ontap-svm.html[Additional ONTAP AFX SVM administration]
+* link:../administer/additional-ontap-cluster.html[Additional ONTAP AFX cluster administration]
 
 == Storage terminology and options
 
@@ -62,7 +62,7 @@ To enable trunking, you need to have an SVM configured for NFS and NFSv4.1 shoul
 
 .Related information
 
-* link:../administer/additional-ontap-svm.html[More details on NFS trunking]
+* link:../administer/additional-ontap-svm.html[Additional ONTAP AFX SVM administration]
 
 == File system analytics
 
