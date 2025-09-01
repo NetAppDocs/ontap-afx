@@ -9,7 +9,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-In addition to the common ONTAP AFX SVM administration tasks, there are other tasks you may need to perform based on your environment. Most of these additional tasks can be performed using System Manager, although in some cases one of the other administrative interfaces may be needed.
+In addition to the common ONTAP AFX SVM administration tasks, there may be other tasks you need to perform based on your environment. Most of these additional tasks can be performed using System Manager, although in some cases one of the other administrative interfaces may be needed.
 
 .Related information
 
