@@ -35,4 +35,4 @@ You need to have the credentials for a cluster administrator account and connect
 
 .What's next?
 
-You should monitor the updated cluster configuration and continue to adjust as needed.
+You should monitor the updated cluster and continue to adjust the configuration as needed.

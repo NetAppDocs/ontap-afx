@@ -35,10 +35,14 @@ xxx
 
 xxx
 
+.Related information
+
+* https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html[Overview of the ONTAP OAuth 2.0 implementation^]
+
 === IPsec
 
 xxx
 
-=== Multifactor authentication
+.Related information
 
-xxx
+* https://docs.netapp.com/us-en/ontap/networking/ipsec-prepare.html[Prepare to use IP security on the ONTAP network^]
