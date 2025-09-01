@@ -43,6 +43,6 @@ The second related concept with disaggregated storage is that the aggregates and
 .ADDITIONAL FAQ ENTRIES FOR THE AFX REVIEWERS TO CONSIDER
 
 * automated topology management (ATM)
-* volume placement and the API
+* volume placement API
 * zero copy volume move
 * storage availability zone
