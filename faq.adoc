@@ -40,10 +40,9 @@ An important concept to begin with is the decoupling the compute capability in t
 
 The second related concept with disaggregated storage is that the aggregates and RAID management are removed as administrable entities. A storage abstraction layer within ONTAP AFX automatically configures and manages the aggregates, physical disks, and RAID groups. This allows the administrator to focus on the higher level storage configuration based on volumes and buckets.
 
-.ADDITIONAL FAQ ENTRIES FOR THE AFX REVIEWERS TO CONSIDER ---
+.ADDITIONAL FAQ ENTRIES FOR THE AFX REVIEWERS TO CONSIDER
 
-[NOTE]
-On September 2, I have a master FAQ document from TME (Justin) that I will draw from for more entries. WIll also consider the following (which may overlap):
+On September 2, I reecived a master FAQ document from TME (Justin) that I'll draw from for more entries. Will also consider the following topics which may overlap:
 
 * automated topology management (ATM)
 * volume placement API
