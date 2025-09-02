@@ -51,13 +51,5 @@ entries:
       url: /administer/update-firmware.html
     - title: Maintain the hardware
       url: /administer/maintain-hardware.html
-    - title: Manage cluster nodes
-      entries:
-      - title: Reboot, takeover, giveback a node
-        url: /administer/node-reboot-take-over-give-back.html
-  - title: Advanced administration
-    entries:
-    - title: Advanced AFX administration
-      url: /administer/advanced-cluster.html
-    - title: Additional ONTAP configuration
-      url: /administer/additional-ontap-cluster.html
+  - title: Additional administration
+    url: /administer/additional-ontap-cluster.html

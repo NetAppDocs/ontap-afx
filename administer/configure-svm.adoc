@@ -4,12 +4,20 @@ permalink: administer/configure-svm.html
 keywords: 
 summary: 
 ---
-= Configure an ONTAP AFX SVM for data access
+= Configure an ONTAP AFX data SVM
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can configure an SVM to meet the needs of the clients.
+You can configure a data SVM for client access.
+
+== Overview of the SVM configuration options
+
+xxx
+
+== Configure an SVM
+
+xxx
 
 .Before you begin
 

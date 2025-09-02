@@ -4,16 +4,16 @@ permalink: get-started/compare-unified-ontap.html
 keywords: 
 summary: 
 ---
-= Compare ONTAP AFX to unified ONTAP
+= Compare ONTAP AFX to Unified ONTAP
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Comparing ONTAP AFX to unified ONTAP provides a valuable perspective and can be helpful when evaluating AFX for your environment.
+Comparing ONTAP AFX to Unified ONTAP provides a valuable perspective and can be helpful when evaluating AFX for your environment.
 
-== New platform built on unified ONTAP
+== New platform built on Unified ONTAP
 
-ONTAP AFX is derived from the unified ONTAP personality. Because of this, it includes a robust set of features and administrative options. If you're an experienced ONTAP user, you'll find it very easy to work with AFX. And if you're new to ONTAP, the simplified System Manager user interface and streamlined administration will help you get started quickly.
+ONTAP AFX is derived from the Unified ONTAP personality. Because of this, it includes a robust set of features and administrative options. If you're an experienced ONTAP user, you'll find it very easy to work with AFX. And if you're new to ONTAP, the simplified System Manager user interface and streamlined administration will help you get started quickly.
 
 There are several new and updated features available with ONTAP AFX. Review the related information for more details.
 
@@ -21,12 +21,12 @@ There are several new and updated features available with ONTAP AFX. Review the 
 
 * link:../get-started/system-design.html[ONTAP AFX system design goals]
 * link:../get-started/software-architecture.html[Details of the ONTAP AFX architecture]
-* link:../administer/advanced-cluster.html[ONTAP AFX advanced cluster administration]
+* link:../administer/additional-ontap-cluster.html[Additional ONTAP AFX cluster administration]
 * link:../faq.html[Frequently asked questions about ONTAP AFX storage systems]
 
-== Configuration differences with unified ONTAP
+== Configuration differences with Unified ONTAP
 
-There are a few areas where the default AFX configuration differs from unified ONTAP.
+There are a few areas where the default AFX configuration differs from Unified ONTAP.
 
 *=> DP: IE needs input from PM/TME to confirm GDD and add more content to this section.*
 
@@ -34,9 +34,9 @@ There are a few areas where the default AFX configuration differs from unified O
 
 The GDD option is enabled by for all FlexGroup volumes.
 
-== Unsupported or restricted unified ONTAP capabilities
+== Unsupported or restricted Unified ONTAP capabilities
 
-While ONTAP AFX is derived from unified ONTAP, there are several features that are not supported with AFX.
+While ONTAP AFX is derived from Unified ONTAP, there are several features that are not supported with AFX.
 
 [TIP]
 You should review the updates and changes for ONTAP AFX in the appropriate link:../release-notes/whats-new-9171.html[What's new] section based on your release.
@@ -66,5 +66,5 @@ The following aggregate-related features are not available with the initial rele
 
 .Data replication
 
-* No replication of volumes from unified ONTAP that contain a LUN
+* No replication of volumes from Unified ONTAP that contain a LUN
 * FlexGroup volumes using advanced capacity balancing can only be replicated to ONTAP 9.16.1 or later

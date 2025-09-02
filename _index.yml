@@ -16,39 +16,45 @@ indexpage:
           url: /install-setup/cluster-setup.html
     - title: Cluster administration
       links: 
-        - title: Prepare for cluster administration
-          url: /get-started/prepare-cluster-svm-admin.html
+        - title: Prepare to administer ONTAP AFX
+          url: /get-started/prepare-cluster-admin.html
         - title: Manage storage VMs
           url: /administer/display-svms.html
         - title: Upgrade and maintain the cluster
           url: /administer/expand-cluster.html
-        - title: Advanced administration
-          url: /administer/advanced-cluster.html
+        - title: Additional administration
+          url: /administer/additional-ontap-cluster.html
     - title: Manage data and access
       links:
-        - title: Prepare to provision storage
-          url: /manage-data/prepare-provision-storage.html
+        - title: Prepare to manage data
+          url: /manage-data/prepare-manage-data.html
         - title: Create and configure a volume
           url: /manage-data/create-configure-volume.html
         - title: Create and configure a bucket
           url: /manage-data/create-configure-bucket.html
-    - title: Protect and secure data
-      links: 
+    - title: Protect data
+      links:
+        - title: Prepare to protect data
+          url: /protect-data/prepare-protect-data.html
         - title: Create a snapshot
           url: /protect-data/create-snapshot.html
+    - title: Secure data
+      links:
         - title: Encrypt data at rest
           url: /secure-data/encrypt-data-at-rest.html
+        - title: Protect against ransomware attacks
+          url: /secure-data/ransomware-protection.html
     - title: REST API
       links: 
-        - title: Learn about the API
+        - title: Learn about the REST API
           url: /rest/learn-rest-api.html
         - title: Your first API call
           url: /rest/first-call.html
         - title: REST API reference
           url: /rest/api-reference.html
     - title: Get more information
-      links: 
-        - title: Additional resources
-          url: /learn-more/additional-resources.html
+      links:
         - title: Frequently asked questions
           url: /faq.html
+        - title: Additional resources
+          url: /learn-more/additional-resources.html

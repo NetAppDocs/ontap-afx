@@ -11,7 +11,7 @@ summary:
 [.lead]
 xxx
 
-*=DP: Not sure we need this topic.*
+*=DP: Not sure we need this topic. If not, redirect to prepare topic.*
 
 Model after ASA r2 topic:
 
@@ -19,4 +19,4 @@ https://docs.netapp.com/us-en/asa-r2/data-protection/restore-data.html[Restore d
 
 Should this be only "restore" to align with ASA r2?
 
-Link to unified ONTAP topic.
+Link to Unified ONTAP topic.

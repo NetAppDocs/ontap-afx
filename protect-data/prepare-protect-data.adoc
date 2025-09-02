@@ -1,16 +1,22 @@
 ---
 sidebar: sidebar
-permalink: protect-data/overview-data-protection.html
+permalink: protect-data/prepare-protect-data.html
 keywords: 
 summary: 
 ---
 
-= Display an overview of ONTAP AFX data protection
+= Prepare to protect your ONTAP AFX data
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 You can display an overview of the data protection configuration for your cluster. This is a good step before creating additional storage protection definitions.
+
+*List options*
+
+* Mirror prepare to provision storage
+* Overview at top, with ways you can protect
+* Last H2 is display overview
 
 .Before you begin
 
@@ -23,3 +29,10 @@ You'll need the following:
 
 . In System Manager, select *Protection* and then *Overview*.
 . The overview page xxx
+
+*MOVE THIS TO THE TOP WHEN READY.*
+
+.Related information
+
+* link:../administer/additional-ontap-svm.html[Additional ONTAP AFX SVM administration]
+* link:../administer/additional-ontap-cluster.html[Additional ONTAP AFX cluster administration]

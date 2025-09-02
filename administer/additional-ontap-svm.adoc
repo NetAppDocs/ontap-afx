@@ -4,15 +4,16 @@ permalink: administer/additional-ontap-svm.html
 keywords: 
 summary: 
 ---
-= Additional ONTAP AFX SVM features and configuration
+= Additional ONTAP AFX SVM administration
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Because AFX is an ONTAP personality closely related to unified ONTAP, it includes most of the same capabilities. But given the AI/ML workloads that ONTAP AFX is designed for, all the ONTAP features may not always be needed by AFX customers. And so for clarity and convenience, these supplemental cluster administrative options are collected and described in a single location.
+In addition to the common ONTAP AFX SVM administration tasks, there may be other tasks you need to perform based on your environment. Most of these additional tasks can be performed using System Manager, although in some cases one of the other administrative interfaces may be needed.
 
-[TIP]
-You should also review the link:../administer/advanced-svm.html[Advanced SVM administration] for optional tasks or procedures unique to ONTAP AFX.
+.Related information
+
+* link:../faq.html[Frequently asked questions about ONTAP AFX storage systems]
 
 == Security
 
@@ -22,19 +23,7 @@ xxx
 
 xxx
 
->> Provide an introduction and then a brief example; possibly link to the unified ONTAP doc
-
-== Exporting data and client access
-
-xxx
-
-=== NFS trunking
-
-xxx
-
-== Data protection
-
-xxx
+>> Provide an introduction and then a brief example; possibly link to the Unified ONTAP doc; note that when creating an SVM there is an option to add an SVM level account.
 
 === Cloud backup
 

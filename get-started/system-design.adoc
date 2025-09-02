@@ -9,23 +9,11 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-The ONTAP AFX storage system is a new series of products introduced with ONTAP 9.17.1. It joins the NetApp portfolio and complements the existing storage products including unified ONTAP available with FAS and AFF as well as ASA r2, E-Series, and StorageGRID.
+The ONTAP AFX storage system is a new series of products introduced with ONTAP 9.17.1. It joins the NetApp portfolio and complements the existing storage products including Unified ONTAP available with FAS and AFF as well as ASA r2, E-Series, and StorageGRID.
 
 == High-performance NAS storage
 
-ONTAP AFX is based on a next‑generation storage architecture that evolves the traditional unified ONTAP storage model into a disaggregated and scale‑out solution. It supports both file and object workloads with advanced technologies and processing techniques that provide extremely high performance. AFX is a advanced NAS storage platform suitable for many types of current and future workloads.
-
-== Typical application workloads
-
-ONTAP AFX is designed as a next generation data platform and is specifically targeted at the unique demands typical of AI/ML environments and other related data-centric applications. The AFX storage system is ideal for organizations managing several environments, including workloads such as:
-
-* Training and iterative model refinement associated with deep learning where continuous high bandwidth and access to massive datasets is required.
-* Processing diverse data types including text, images, and video.
-* Real‑time inference applications with low latency where strict response time windows are needed.
-* Data science and machine learning pipelines that can benefit from self‑service data management by data engineers and data scientists.
-* Workloads that require high concurrency and parallel I/O, such as multi‑GPU systems with RDMA or Infiniband transport.
-//* Workloads that require high concurrency and parallel I/O, such as multi‑GPU systems employing CUDA with RDMA or Infiniband transport.
-* Deployment scenarios where overall data center rack-to-power density is critical, allowing a reduced storage footprint.
+ONTAP AFX is based on a next‑generation storage architecture that evolves the traditional Unified ONTAP storage model into a disaggregated and scale‑out solution. It supports both file and object workloads with advanced technologies and processing techniques that provide extremely high performance. AFX is a advanced NAS storage platform suitable for many types of current and future workloads.
 
 == Design principles and goals
 
@@ -33,7 +21,7 @@ There are several principles and goals guiding the design and evolution of ONTAP
 
 .Decouple storage and compute capabilities
 
-Unlike unified ONTAP, the AFX storage and compute elements of the cluster are decoupled. The controllers are not restricted to accessing a limited set of local disks.
+Unlike Unified ONTAP, the AFX storage and compute elements of the cluster are decoupled. The controllers are not restricted to accessing a limited set of local disks.
 
 .Removal of aggregate and RAID management
 
@@ -57,8 +45,19 @@ The set of controller nodes and storage shelves in a cluster can be independentl
 
 .High availability
 
-With the traditional HA-pair architecture available with unified ONTAP, concurrent failure of two nodes can result in data loss. AFX provides a more robust and resilient architecture supporting flexible partner selection as well as full _N-way_ configuration. This design tolerates concurrent failures without disruption or data loss.
+With the traditional HA-pair architecture available with Unified ONTAP, concurrent failure of two nodes can result in data loss. AFX provides a more robust and resilient architecture supporting flexible partner selection as well as full _N-way_ configuration. This design tolerates concurrent failures without disruption or data loss.
 
 .Improved data mobility
 
 Volumes can be moved among the cluster controller nodes non-disruptively without actually copying data. Directory and index pointers are updated instead. This dramatically improves performance during typical administrative procedures as well as recovery in failure scenarios.
+
+== Typical application workloads
+
+ONTAP AFX is designed as a next generation data platform and is specifically targeted at the unique demands typical of AI/ML environments and other related data-centric applications. The AFX storage system is ideal for organizations managing several environments, including workloads such as:
+
+* Training and iterative model refinement associated with deep learning where continuous high bandwidth and access to massive datasets is required.
+* Processing diverse data types including text, images, and video.
+* Real‑time inference applications with low latency where strict response time windows are needed.
+* Data science and machine learning pipelines that can benefit from self‑service data management by data engineers and data scientists.
+* Workloads that require high concurrency and parallel I/O, such as multi‑GPU systems with RDMA or Infiniband transport.
+* Deployment scenarios where overall data center rack-to-power density is critical, allowing a reduced storage footprint.

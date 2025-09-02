@@ -9,9 +9,13 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-Depending on your configuration, you'll need to create and manage digital certificates as part of administering ONTAP AFX. There are several related administrative tasks you can perform.
+Depending on your configuration, you'll need to create and manage digital certificates as part of administering ONTAP AFX. There are several related tasks you can perform.
 
 A digital certificate is an electronic document used to prove ownership of a public key. The public key and associated private key can be used to in various ways, including to establish identity typically as part of a larger security framework such as TLS and IPsec. These keys, as well as the supporting protocols and formatting standards, form the basis for public key infrastructure (PKI).
+
+////
+A Certificate Signing Request (CSR) is a block of encoded text that is given to a Certificate Authority (CA) when applying for a digital certificate. In ONTAP, a CSR can be generated using the <code>security certificate generate-csr</code> command. This request is then sent to a trusted third-party CA for signing. Once the CA processes the request, it sends back a signed digital certificate. The signed certificate can be installed on ONTAP to authenticate the cluster or Storage Virtual Machine (SVM) as an SSL server, which is a best practice for production systems to comply with InfoSec policies.
+////
 
 .Related information
 
@@ -19,34 +23,36 @@ A digital certificate is an electronic document used to prove ownership of a pub
 
 == Generate a certificate signing request
 
-Generate a certificate signing request (CSR) to create a private key which can be used to generate a public certificate.
+To get started using a digital certificate, you need to generate a certificate signing request (CSR). As part of this, ONTAP creates a public/private key pair and includes the public key contained in the CSR. A CSR is ued to request a certificate.
 
 .Steps
 
-. In System Manager, select *Cluster > Settings*.
-. Under *Security*, next to *Certificates*, select image:icon_arrow.gif[blue arrow pointing to the right]; then select image:icon_generate_csr.png[blue rectangle containing a plus sign followed by the words generate csr].
-. Enter the subject common name; then select the country.
-. If you want to change the GSR defaults, select extended key usage, or add subject alternative names, select image:icon_more_options.png[two arrows facing diagonally opposite directions followed by the words more options]; then make the desired updates.
+. In System Manager, select *Cluster* and then *Settings*.
+. Under *Security* and next to *Certificates*, select image:icon_arrow.gif[blue arrow pointing to the right]
+. Select image:icon_generate_csr.png[blue rectangle containing a plus sign followed by the words generate csr].
+. Provide the subject common name and country; optionally provide the organization and organizational unit.
+. To change the default values which will define the certificate, select image:icon_more_options.png[two arrows facing diagonally opposite directions followed by the words more options] and make the desired updates.
 . Select *Generate*.
 
 .Result
 
-You have generated a CSR to which can be used to generate a public certificate.
+You have generated a CSR which can be used to request a public key certificate.
 
 == Add a trusted certificate authority
 
-ONTAP provides a default set of trusted root certificates for applications using Transport Layer Security (TLS).  You can add additional trusted certificate authorities as needed.
+ONTAP provides a default set of trusted root certificates for use with Transport Layer Security (TLS) and other protocols.  You can add additional trusted certificate authorities as needed.
 
 .Steps
 
-. Select *Cluster > Settings*.
-. Under *Security*, next to *Certificates*, select image:icon_arrow.gif[blue arrow pointing to the right].
-. Select *Trusted certificate authorities*.
-. Enter or import the certificate details; then select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
+. In System Manager, select *Cluster* and then *Settings*.
+. Under *Security* and next to *Certificates*, select image:icon_arrow.gif[blue arrow pointing to the right].
+. Select the tab *Trusted certificate authorities* and then select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
+. Provide the configuration information, including the name, scope, common name, type, and certificate details; you can import the certificate instead by selecting *Import*.
+. Select *Add*.
 
 .Result
 
-You have added a new trusted certificate authority to your ONTAP AFX system.
+You have added a trusted certificate authority to your ONTAP AFX system.
 
 == Renew or delete a trusted certificate authority
 
@@ -54,25 +60,25 @@ Trusted certificate authorities must be renewed annually.  If you do not want to
 
 .Steps
 
-. Select *Cluster > Settings*.
-. Under *Security*, next to *Certificates*, select image:icon_arrow.gif[blue arrow pointing to the right].
-. Select *Trusted certificate authorities*.
+. Select *Cluster* and then *Settings*.
+. Under *Security* and next to *Certificates*, select image:icon_arrow.gif[blue arrow pointing to the right].
+. Select the tab *Trusted certificate authorities*.
 . Select the trust certificate authority that you want to renew or delete.
 . Renew or delete the certificate authority.
 +
 [cols="2" options="header"]
 |===
 // header row
-| To renew the certificate authority, do this...
-| To delete the certificate authority, do this...
+| To renew the certificate authority, do this:
+| To delete the certificate authority, do this:
 
 a|
-.. Select image:icon_kabob.gif[three vertical blue dots]; then select *Renew*.
-.. Enter or import the certificate information; then select *Renew*.
+.. Select image:icon_kabob.gif[three vertical blue dots] and then select *Renew*.
+.. Enter or import the certificate information and select *Renew*.
 
 a|
-.. Select image:icon_kabob.gif[three vertical blue dots]; then select *Delete*.
-.. Confirm that you want to delete; then select *Delete*.
+.. Select image:icon_kabob.gif[three vertical blue dots] and then select *Delete*.
+.. Confirm that you want to delete and select *Delete*.
 
 // table end
 |===
@@ -81,16 +87,16 @@ a|
 
 You have renewed or deleted an existing trusted certificate authority on your ONTAP AFX system.
 
-== Add a client/server certificate or local certificate authorities
+== Add a client/server certificate or local certificate authority
 
-Add a client/server certificate or local certificate authorities to enable secure web services.
+You can add a client/server certificate or a local certificate authority as part of enabling secure web services.
 
 .Steps
 
-. In System Manager, select *Cluster > Settings*.
-. Under *Security*, next to *Certificates*, select image:icon_arrow.gif[blue arrow pointing to the right].
-. Select *Client/server certificates* or *Local certificate authorities*.
-. Add the certificate information; then select image:icon_add_blue_bg.png[blue rectangle containing blue plus sign followed by the word add].
+. In System Manager, select *Cluster* and then *Settings*.
+. Under *Security* and next to *Certificates*, select image:icon_arrow.gif[blue arrow pointing to the right].
+. Select either *Client/server certificates* or *Local certificate authorities* as needed.
+. Add the certificate information and select *Save*.
 
 .Result
 
@@ -102,24 +108,24 @@ Client/server certificates and local certificate authorities must be renewed ann
 
 .Steps
 
-. Select *Cluster > Settings*.
-. Under *Security*, next to Certificates, select image:icon_arrow.gif[blue arrow pointing to the right].
-. Select *Client/server certificates*, or *Local certificate authorities*.
+. Select *Cluster* and then *Settings*.
+. Under *Security* and next to Certificates, select image:icon_arrow.gif[blue arrow pointing to the right].
+. Select either *Client/server certificates* or *Local certificate authorities* as needed.
 . Select the certificate you want to renew or delete.
 . Renew or delete the certificate authority.
 +
 [cols="2" options="header"]
 |===
 // header row
-| To renew the certificate authority, do this...
-| To delete the certificate authority, do this...
+| To renew the certificate authority, do this:
+| To delete the certificate authority, do this:
 
 a|
-.. Select image:icon_kabob.gif[three vertical blue dots]; then select *Renew*.
-.. Enter or import the certificate information; then select *Renew*.
+.. Select image:icon_kabob.gif[three vertical blue dots] and then select *Renew*.
+.. Enter or import the certificate information and select *Renew*.
 
 a|
-Select image:icon_kabob.gif[three vertical blue dots]; then select *Delete*.
+Select image:icon_kabob.gif[three vertical blue dots] and then select *Delete*.
 |===
 
 .Result

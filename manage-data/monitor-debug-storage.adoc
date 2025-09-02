@@ -11,4 +11,16 @@ summary:
 [.lead]
 ONTAP AFX includes several options to monitor the storage each cluster manages.
 
-*FSA ? Link to prep section.*
+== Display NAS clients
+
+You can display a list of the NFS and SMB/CIFS clients currently connected to the ONTAP AFX cluster.
+
+.Steps
+
+. In System Manager, select *Clients* in the navigation pane.
+. Select the *NFS* or *SMB/CIFS* tab as desired.
+. Customize the display as well as search and download the client information as needed.
+
+.Related information
+
+* link:../manage-data/prepare-provision-storage.html[Prepare to provision ONTAP AFX storage]

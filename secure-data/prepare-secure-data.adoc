@@ -1,0 +1,22 @@
+---
+sidebar: sidebar
+permalink: secure-data/prepare-secure-data.html
+keywords: 
+summary: 
+---
+
+= Prepare to secure your ONTAP AFX data
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+xxx
+
+.Related information
+
+* link:../administer/additional-ontap-svm.html[Additional ONTAP AFX SVM administration]
+* link:../administer/additional-ontap-cluster.html[Additional ONTAP AFX cluster administration]
+
+== XXX
+
+xxx
