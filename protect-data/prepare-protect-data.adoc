@@ -17,7 +17,7 @@ Before protecting your ONTAP AFX data, you should be familiar with some of the k
 There are several terms related to ONTAP AFX storage protection you should be familiar with.
 
 Snapshot::
-xxx
+A snapshot is a read-only, point-in-time image of a volume. It is a foundational technology for ONTAP's replication and data protection services.
 
 Consistency group::
 A consistency group is a collection of volumes that can be managed as a single unit. You can create consistency groups to simplify storage management and data protection for application workloads. For example, you can snapshot several volumes in one operation by using the consistency group instead of the individual volumes.
@@ -25,8 +25,6 @@ A consistency group is a collection of volumes that can be managed as a single u
 == Display a storage overview
 
 You can display an overview of the data protection configuration for your cluster. This is a good step before creating additional storage protection definitions.
-
-*List options*
 
 * Mirror prepare to provision storage
 * Overview at top, with ways you can protect
@@ -42,9 +40,8 @@ You'll need the following:
 .Steps
 
 . In System Manager, select *Protection* and then *Overview*.
-. The overview page xxx
-
-*MOVE THIS TO THE TOP WHEN READY.*
+. Add a volume or bucket as needed.
+. Next to *Volumes* or *Buckets*, select image:icon_arrow.gif[blue arrow pointing to the right] to display the appropriate list as desired.
 
 .Related information
 

@@ -9,24 +9,26 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can create consistency groups to simplify storage management and data protection for application workloads.
+You can create consistency groups to simplify storage management and data protection for application workloads. A consistency group can be based on existing or new volumes.
+
+.Before you begin
+
+If you plan to create one more more new volumes, you should become with the configuration options when creating a ne volume.
 
 .Steps
 
 .  In System Manager, select *Protection* and then *Consistency groups*.
 
-//-------------
-. Under *Broadcast domains*, select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
-
-. Select
-
-. Choose either:
+. Select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters] and choose one of:
 +
 * Using existing volumes
 * Using new NAS volumes
 
-. XXX
+. Provide the configuration details, including name, volumes, application type, and protection.
+
+. Select *Add*.
 
 .Related information
 
 * link:../protect-data/manage-consistency-groups.html[Manage consistency groups]
+* link:../manage-data/create-configure-volume.html[Create and configure an ONTAP AFX volume]

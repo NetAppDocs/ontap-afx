@@ -37,6 +37,6 @@ You need to decide which SVM you are interested in displaying and updating.
 
 .Steps
 
-. In System Manager, select *Cluster* and then *Storage VMs* in the navigation pane.
-. Select the desired SVM and then the *Settings* tab
-. Select 
+. In System Manager, select *Cluster* and then *Storage VMs*.
+. Select the desired SVM and then the *Settings* tab.
+. Review the configuration options on the page; select and update the settings as desired.

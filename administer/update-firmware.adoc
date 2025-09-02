@@ -9,15 +9,15 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-ONTAP automatically downloads and updates firmware and system files on your ASA r2 system by default.  If you want the flexibility of viewing recommended updates before they are downloaded and installed, you can use ONTAP System Manager to disable automated updates or to edit update parameters to show you notifications of available updates before any action is performed.
+ONTAP automatically downloads and updates firmware and system files on your ONTAP AFX storage system by default.  If you want to view the recommended updates before they are downloaded and installed, you can disable automated updates. You can also edit update parameters to show you notifications of available updates before any action is performed.
 
 == Enable automatic updates
 
-Recommended updates for storage firmware, SP/BMC firmware and system files are automatically downloaded and installed on your ASA r2 system by default.  If automatic updates have been disabled, you can enable them to reinstate the default behavior.
+When you enable automatic updates for your ONTAP AFX cluster, recommended updates for storage firmware, SP/BMC firmware and system files are automatically downloaded and installed by default.
 
 .Steps
 
-. In System Manager, select *Cluster > Settings*.
+. In System Manager, select *Cluster* and then *Settings*.
 . Under *Software updates*, select *Enable*.
 . Read the EULA.
 . Accept the defaults to *Show notification* of recommended updates.  Optionally, select to *Automatically update* or to *Automatically dismiss* recommended updates.
@@ -26,7 +26,7 @@ Recommended updates for storage firmware, SP/BMC firmware and system files are a
 
 .Result
 
-Recommended updates are automatically downloaded and installed on your ASA r2 system based upon your update selections.
+Recommended updates are automatically downloaded and installed on your OTAP AFX system based upon your update selections.
 
 == Disable automatic updates
 
