@@ -70,6 +70,18 @@ File System Analytics (FSA) is a feature in ONTAP that provides real-time visibi
 
 == Display an overview of your storage
 
-xxx
+To get started managing your ONTAP AFX data, you should display an overview of the storage.
 
->> Navigation pane: storage then overview
+.About this task
+
+You can access all the volumes and buckets defined for the ONTAP AFX cluster. Each of these is considered to be a data container.
+
+.Steps
+
+. In System Manager, select *Storage* and then *Overview*
+
+. Next to *Volumes*, select image:icon_arrow.gif[blue arrow pointing to the right].
+
+. Next to *Buckets*, select image:icon_arrow.gif[blue arrow pointing to the right].
+
+. Update or create a data container as needed.

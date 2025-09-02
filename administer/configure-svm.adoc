@@ -9,21 +9,34 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can configure a data SVM for client access.
+After you create a data SVM, you can update the configuration based on your requirements and clients needs.
 
-== Overview of the SVM configuration options
+.About this task
 
-xxx
+There are four access paths to the SVM configuration as reflected in the tabs on the landing page for a specific data SVM. These include:
 
-== Configure an SVM
+* Overview
++
+This provides a quick dashboard overview of the current configuration details related to network interfaces and services, protocols, storage, and protection.
 
-xxx
+* Settings
++
+You can access and update the entire SVM configuration as organized in several areas, such as protocols, services, policies, and security.
+
+* Replication
++
+This page provides a list of the current replication relationships defined for the SVM.
+
+* File system
++
+You can track the activity and analytics for the SVM
 
 .Before you begin
 
->> Need SVM, might be default SVM
+You need to decide which SVM you are interested in displaying and updating.
 
 .Steps
 
 . In System Manager, select *Cluster* and then *Storage VMs* in the navigation pane.
-. Select the desired SVM to display its configuration.
+. Select the desired SVM and then the *Settings* tab
+. Select 
