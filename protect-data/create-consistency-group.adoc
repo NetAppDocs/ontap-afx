@@ -9,12 +9,22 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-A consistency group is a collection of volumes that can be managed as a single unit. You can create consistency groups to simplify storage management and data protection for application workloads. For example, you can snapshot several volumes in one operation by using the consistency group instead of the individual volumes.
+You can create consistency groups to simplify storage management and data protection for application workloads.
 
 .Steps
 
-.  In System Manager, select *Network* and then *Overview*.
+.  In System Manager, select *Protection* and then *Consistency groups*.
+
+//-------------
 . Under *Broadcast domains*, select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
+
+. Select
+
+. Choose either:
++
+* Using existing volumes
+* Using new NAS volumes
+
 . XXX
 
 .Related information

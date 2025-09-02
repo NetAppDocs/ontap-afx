@@ -10,6 +10,20 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
+Before protecting your ONTAP AFX data, you should be familiar with some of the key concepts and display an overview of the storage.
+
+== Terminology and options
+
+There are several terms related to ONTAP AFX storage protection you should be familiar with.
+
+Snapshot::
+xxx
+
+Consistency group::
+A consistency group is a collection of volumes that can be managed as a single unit. You can create consistency groups to simplify storage management and data protection for application workloads. For example, you can snapshot several volumes in one operation by using the consistency group instead of the individual volumes.
+
+== Display a storage overview
+
 You can display an overview of the data protection configuration for your cluster. This is a good step before creating additional storage protection definitions.
 
 *List options*

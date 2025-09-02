@@ -13,18 +13,27 @@ There are several administrative tasks you can perform as part of administering 
 
 == Create a qtree
 
-xxx
+A qtree is a logical subdivision within a volume that you can create to organize and administer data.
+
+// Optionally select *More options* for additional configuration related to data protection, SnapLock, and NFS access.
 
 .Steps
 
-. In System Manager, select *Storage* and then *XXX*.
-. XXX
+. In System Manager, select *Storage* and then *Qtrees*.
+
+. Select image:icon_add_blue_bg.png[Add with blue background] and provide the basic configuration including name, volume, and security style; optionally configure a quota.
+
+. Select *Save* to add the qtree.
 
 == Create a quota
 
-xxx
+A quota is a limit set on the amount of storage space or number of files that can be used by a user, group, or qtree. Quotas are used to manage and control resource usage within an ONTAP AFX storage system.
 
 .Steps
 
-. In System Manager, select *Storage* and then *XXX*.
-. XXX
+. In System Manager, select *Storage* and then *Quotas*.
+. Select the *Usage* tab to display a list of the active quotas across all volumes.
+. Select the *Volumes* tab to display a list of the volumes defined in the ONTAP AFX clust; select a specific volume to display additional information.
+. To define a quota, select the *Rules* tab.
+. Provide the configuration details, including the quota target, type and limits.
+. Select *Save to add the quota.
