@@ -42,7 +42,13 @@ NOTE: The jumper cords are not included with the pass-through kit and should be 
 +
 image::../media/cisco_9148_jumper_cords.gif[]
 +
+[cols="1,4"]
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
 _(1) Female connector of the jumper cord._
+|===
 
 . Install the rack-mount brackets on the switch chassis.
  .. Position a front rack-mount bracket on one side of the switch chassis so that the mounting ear is aligned with the chassis faceplate (on the PSU or fan side), and then use four M4 screws to attach the bracket to the chassis.
@@ -63,9 +69,17 @@ It is recommended that the two 9332D-GX2B switches be mounted in locations withi
 +
 image::../media/drw_3132q_v_slider_rails_ieops-2494.svg[]
 +
-_(1) As you gently slide the slider rail, align it to the screw holes in the rack._
-+
-_(2) Tighten the screws of the slider rails to the cabinet posts._
+[cols="1,4"]
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+As you gently slide the slider rail, align it to the screw holes in the rack.
+a|
+image::../media/icon_round_2.png[Callout number 2]
+a|
+Tighten the screws of the slider rails to the cabinet posts.
+|===
 
  .. Repeat step <<SUBSTEP_81651316D3F84964A76BC80A9DE48C0E,4a>> for the right-side rear post.
  .. Repeat steps <<SUBSTEP_81651316D3F84964A76BC80A9DE48C0E,4a>> and <<SUBSTEP_593967A423024594B9A41A04703DC458,4b>> at the desired locations on the cabinet.
@@ -77,15 +91,30 @@ NOTE: This step requires two people: one person to support the switch from the f
 +
 image::../media/drw_switch_cabinet_position_generic_ieops-2348.svg[3232C positioning at U39-40]
 +
-_(1) As the chassis is pushed toward the rear posts, align the two rear rack-mount guides with the slider rails._
-+
-_(2)  Gently slide the switch until the front rack-mount brackets are flush with the front posts._
+[cols="1,4"]
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+As the chassis is pushed toward the rear posts, align the two rear rack-mount guides with the slider rails
+a|
+image::../media/icon_round_2.png[Callout number 2]
+a|
+Gently slide the switch until the front rack-mount brackets are flush with the front posts.
+|===
 
  .. Attach the switch to the cabinet or rack.
 +
 image::../media/3132q_attaching.gif[]
 +
-_(1) With one person holding the front of the chassis level, the other person should fully tighten the four rear screws to the cabinet posts._
+[cols="1,4"]
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+With one person holding the front of the chassis level, the other person should fully tighten the four rear screws to the cabinet posts.
+|===
+
 
  .. With the chassis now supported without assistance, fully tighten the front screws to the posts.
  .. Repeat steps <<SUBSTEP_4F538C8C55E34C5FB5D348391088A0FE,5a>> through <<SUBSTEP_EB8FE2FED2CA4120B709CC753C0F50FC,5c>> for the second switch at the desired location on the cabinet.

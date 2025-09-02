@@ -102,7 +102,7 @@ Use the Cluster and HA interconnect cable to connect ports e1a and e7a to switch
 
 .Steps
 
-. Connect the following ports to cluster network any non-ISL port on switch A.
+. Connect the following controller ports to any non-ISL port on the cluster network switch A.
 * Controller A
 ** e1a
 ** e7a
@@ -116,7 +116,7 @@ image::../media/oie_cable_25Gb_Ethernet_SFP28_ieops-1069.png[Cluster HA cable]
 +
 image::../media/drw_afx_switched_cluster_cabling_a_ieops-2352.svg[Cable cluster connections to cluster network]
 
-. Connect the following ports to cluster network any non-ISL port on switch B.
+. Connect the following controller ports to any non-ISL port on the cluster network switch B.
 * Controller A
 ** e1b
 ** e7b

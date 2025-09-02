@@ -9,7 +9,7 @@ summary: Get started with the install and setup of the AFX 1K storage system and
 :imagesdir: ../media/
 
 [.lead]
-To install and configure your AFX 1K storage system, you review the hardware requirements, prepare your site, install the switches, install and cable the hardware components, power on the system, and set up your ONTAP cluster.
+To install and configure your AFX 1K storage system, you review the hardware requirements, prepare your site, install the switches, install and cable the hardware components, power on the system, and set up your ONTAP AFX cluster.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:install-setup-requirements.html[Review the hardware installation requirements]
 [role="quick-margin-para"]
@@ -25,7 +25,7 @@ Install your Cisco Nexus 9332D-GX2B or 9364D-GX2A switches in the cabinet or tel
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:deploy-hardware.html[Install the hardware for your AFX storage system]
 [role="quick-margin-para"]
-To install the hardware, install the rail kits for your storage system and shelves, and then install and secure your storage system in the cabinet or telco rack. Next, slide the shelves onto the rails. Finally, attach cable management devices to the rear of the storage system for organized cable routing.
+Install the rail kits for your storage system and shelves. Secure your storage system in the cabinet or telecommunications rack. Next, slide the shelves onto the installed rails. Finally, attach cable management devices to the rear of the storage system for organized cable routing.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:cable-hardware.html[Cable the controllers and shelves for your AFX 1K storage system]
 [role="quick-margin-para"]
