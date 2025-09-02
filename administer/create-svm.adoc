@@ -29,12 +29,12 @@ You'll need the following:
 . Provide a name for the SVM.
 . Select a protocol for client access and provide the configuration details as appropriate.
 . Add a network interfaces for the SVM including the IP addresses and subnet mask.
-. Under *Storage VM administration, optionally:
+. Under *Storage VM administration*, optionally:
 .. Enable a maximum capacity and select a value
 .. Configure an account for the SVM
 . Select *Save*.
 
 .Related information
 
-* link:../administer/configure-svm.html[Configure an ONTAP AFX SVM for data access]
+* link:../administer/configure-svm.html[Configure an ONTAP AFX SVM]
 * link:../administer/manage-cluster-networking.html[Manage ONTAP AFX cluster networking]
