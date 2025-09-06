@@ -55,28 +55,7 @@ The data layout and access is tuned for seamless access and efficient utilizatio
 
 ONTAP AFX provides a tenant model that builds on the SVM model available with Unified ONTAP. Most of the SVM concepts translate directly from unified ONTAP. The AFX tenant model has been streamlined for simplified administration.
 
-== Administrative components
-
-ONTAP AFX provides several administrative components and capabilities.
-
-.Administrative model
-
-The AFX administrative model consists of different levels, including:
-
-* Cluster administrator
-* SVM administrator.
-
-See link:../get-started/prepare-cluster-admin.html[Prepare to administer ONTAP AFX] for more information.
-
-.Data management
-
-ONTAP AFX builds on Unified ONTAP's features to provide a robust data management capability that is simple and flexible. It's designed to be intuitive and accessible to a wide range of users, including storage specialists and non-specialists.
-
-.Manageability
-
-There are several options available to manage and support your ONTAP AFX system. For most users, System Manager will be the preferred user interface.
-
-== High-level illustration
+== ONTAP AFX deployment
 
 The following figure illustrates an ONTAP AFX cluster. Notice the four controller nodes are decoupled from the two storage shelves with connectivity provided through a shared cluster storage network switch.
 
