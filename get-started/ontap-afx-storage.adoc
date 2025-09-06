@@ -24,7 +24,7 @@ ONTAP AFX is designed as a next generation data platform and is specifically tar
 * Workloads that require high concurrency and parallel I/O, such as multi‑GPU systems with RDMA or Infiniband transport.
 * Deployment scenarios where overall data center rack-to-power density is critical, allowing a reduced storage footprint.
 
-= Hardware models and configuration
+== Hardware models and configuration
 
 *Add hardware models as needed. Mirror the content in the following ASA r2 topic:*
 
