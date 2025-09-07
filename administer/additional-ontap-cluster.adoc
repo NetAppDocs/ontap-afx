@@ -9,7 +9,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-In addition to the common ONTAP AFX cluster administration tasks, there may be other tasks you need to perform based on your environment. Most of these additional tasks can be performed using System Manager, although in some cases one of the other administrative interfaces may be needed.
+In addition to the common ONTAP AFX cluster administration tasks, there may be other tasks you need to perform based on your environment. Most of the additional tasks can be performed using System Manager, although in some cases you may need to use the CLI or REST API.
 
 .Related information
 
@@ -17,9 +17,16 @@ In addition to the common ONTAP AFX cluster administration tasks, there may be o
 
 == Licensing
 
-xxx
+An ONTAP AFX cluster includes many features by default. You can install license files to activate additional features as needed.
 
-*There is nothing new regarding licensing.*
+.Steps
+
+. In System Manager, select *Cluster* and then *Settings*.
+. Next to *Licenses*, select image:icon_arrow.gif[blue arrow pointing to the right].
+. Select the *Features* tab to display the available ONTAP features.
+. To optionally install a licenses, select the *Installed licenses* tab.
+. Select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
+. Select a local license file and select *Add*.
 
 .Related information
 
@@ -27,22 +34,23 @@ xxx
 
 == Security
 
-xxx
-
-*Review clusters --> settings (security)*
+There are several optional security features you can configure and use with your ONTAP AFX deployment.
 
 === OAuth 2.0
 
-xxx
+OAuth 2.0 is the industry standard authorization framework used to restrict and control access to protected resources using signed access tokens.
+
+.Steps
+
+. In System Manager, select *Cluster* and then *Settings*.
+. In the *Security* section, next to *OAuth 2.0 authorization*, select image:icon_arrow.gif[blue arrow pointing to the right].
+. Enable OAuth 2.0
+. Select *Add configuration* and provide the configuration details.
+. Select *Save*.
 
 .Related information
 
 * https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html[Overview of the ONTAP OAuth 2.0 implementation^]
 
-=== IPsec
-
-xxx
-
-.Related information
-
-* https://docs.netapp.com/us-en/ontap/networking/ipsec-prepare.html[Prepare to use IP security on the ONTAP network^]
+//=== IPsec
+//* https://docs.netapp.com/us-en/ontap/networking/ipsec-prepare.html[Prepare to use IP security on the ONTAP network^]

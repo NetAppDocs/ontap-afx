@@ -3,7 +3,7 @@ title: Get started
 entries:
   - title: Learn about your AFX system
     entries:
-    - title: ONTAP AFX storage system
+    - title: ONTAP AFX storage systems
       url: /get-started/ontap-afx-storage.html
     - title: System design goals
       url: /get-started/system-design.html

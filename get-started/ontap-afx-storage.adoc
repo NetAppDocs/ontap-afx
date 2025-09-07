@@ -4,7 +4,7 @@ permalink: get-started/ontap-afx-storage.html
 keywords: 
 summary: 
 ---
-= ONTAP AFX storage system
+= ONTAP AFX storage systems
 :icons: font
 :imagesdir: ../media/
 
@@ -26,11 +26,11 @@ ONTAP AFX is designed as a next generation data platform and is specifically tar
 
 == Hardware infrastructure
 
-*Add hardware models as needed. Align with similar content in the following ASA r2 topic:*
+*Consult with SMEs (PM, TME) about what and how much content to add here (such as the hardware models). Align with similar content in the following ASA r2 topic:*
 
 https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html[Learn about ASA r2 storage systems^]
 
-Some of the hardware topics include the following (need guidance from PM/TME):
+Some of the hardware topics might include the following:
 
 * AFX 1K
 * NX224 (TongaPlus)
