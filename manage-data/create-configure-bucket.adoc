@@ -16,6 +16,10 @@ You can create a bucket and attach it to a data SVM. Each bucket can be exposed 
 
 When creating a bucket, you need to provide a minimum amount of configuration details. Additional details can be provided during creation or afterwards by editing the bucket. You need to select the SVM for the bucket if you've created additional data SVMs.
 
+.Before you begin
+
+You need to configure the S3 service for the SVM for clients to be able to access the bucket.
+
 .Steps
 
 . In System Manager, select *Storage* and then *Buckets*.

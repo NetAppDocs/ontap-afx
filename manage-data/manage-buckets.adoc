@@ -10,3 +10,11 @@ summary:
 
 [.lead]
 There are several administrative tasks you can perform as part of administering the buckets defined at your ONTAP AFX cluster.
+
+== Enable S3 access for a data SVM
+
+xxx
+
+== Configure access
+
+xxx
