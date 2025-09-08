@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: afx/install-switches.html
+permalink: install-setup/install-switches.html
 keywords: afx, afx 1k, install, setup, switches, cisco 9332, cisco 9336, switches,
 summary: Learn how to install the switches for the AFX 1K storage system and storage shelves. 
 ---

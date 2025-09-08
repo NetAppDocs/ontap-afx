@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: /afx/install-network-reqs.html
+permalink: install-setup/install-network-reqs.html
 keywords: shared storage cluster switch
 summary: From ONTAP 9.9.1, you can use Cisco Nexus 9364d-gx2a switches to combine storage and cluster functionality into a shared switch scenario.
 ---

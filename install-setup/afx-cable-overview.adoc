@@ -1,5 +1,5 @@
 ---
-permalink: afx/afx-cable-overview.html
+permalink: install-setup/afx-cable-overview.html
 sidebar: sidebar
 keywords: afx, afx 1k, cable, overview, cisco 9332, cisco 9364, cabling, hardware, switches, storage shelves, disk shelves, controller nodes
 summary: Learn how to cable your controller nodes to the network, switches, and storage shelves. 
