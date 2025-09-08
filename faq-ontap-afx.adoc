@@ -13,9 +13,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-This FAQ list provides answers to questions that customers typically have about their ONTAP AFX storage systems. It also contains concepts and terminology that can be valuable when exploring AFX in more detail or performing advanced administration tasks.
-
-//= Frequently asked questions about ONTAP AFX storage systems
+This FAQ list provides answers to questions that customers typically have about their ONTAP AFX storage systems. It also contains concepts and terminology that can be helpful when exploring AFX in more detail or performing advanced administration tasks.
 
 .What is an ONTAP personality?
 
