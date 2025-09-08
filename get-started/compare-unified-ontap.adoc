@@ -13,7 +13,7 @@ Comparing ONTAP AFX to Unified ONTAP provides a valuable perspective and can be 
 
 == New platform built on Unified ONTAP
 
-ONTAP AFX is derived from the Unified ONTAP personality. Because of this, it includes a robust set of features and administrative options. If you're an experienced ONTAP user, you'll find it very easy to work with AFX. And if you're new to ONTAP, the simplified System Manager user interface and streamlined administration will help you get started quickly.
+ONTAP AFX is derived from the Unified ONTAP personality. Because of this, it includes a robust set of features and administrative options. If you're an experienced ONTAP user, you'll find it very easy to work with AFX. If you're new to ONTAP, the simplified System Manager user interface and streamlined administration will help you get started quickly.
 
 There are several new and updated features available with ONTAP AFX. Review the related information for more details.
 
@@ -22,7 +22,7 @@ There are several new and updated features available with ONTAP AFX. Review the 
 * link:../get-started/system-design.html[ONTAP AFX system design goals]
 * link:../get-started/software-architecture.html[Details of the ONTAP AFX architecture]
 * link:../administer/additional-ontap-cluster.html[Additional ONTAP AFX cluster administration]
-* link:../faq.html[Frequently asked questions about ONTAP AFX storage systems]
+* link:../faq.html[FAQ for ONTAP AFX storage systems]
 
 == Configuration differences with Unified ONTAP
 
@@ -32,7 +32,7 @@ There are a few areas where the default AFX configuration differs from Unified O
 
 .GDD
 
-The GDD option is enabled by for all FlexGroup volumes.
+The GDD option is enabled by default for all FlexGroup volumes.
 
 == Unsupported or restricted Unified ONTAP capabilities
 
