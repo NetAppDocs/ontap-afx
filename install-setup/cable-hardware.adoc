@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: afx/cable-hardware.html
+permalink: install-setup/cable-hardware.html
 keywords: afx, afx 1k, cable controllers, Cisco Nexus 9332D-GX2B, Cisco Nexus 9364D-GX2A, switches, switch, cable hardware, cable storage shelves
 summary: Learn how to attach the AFX 1K controller cables to your network and cable the controllers to the shelves. 
 ---
