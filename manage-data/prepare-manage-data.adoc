@@ -9,7 +9,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-Before provisioning your storage using ONTAP AFX, you should be familiar with the terminology and some of the key concepts.
+Before managing your ONTAP AFX data, you should be familiar with the terminology and key concepts.
 
 .Related information
 
@@ -32,10 +32,10 @@ An S3 bucket is a storage container that holds objects or data in the cloud. Wit
 Data container::
 In the context of ONTAP AFX, a data container is a generic term and can be either a volume or S3 bucket.
 
-Qtrees::
+Qtree::
 A qtree is a logical subdivision within a volume that you can create to manage and organize data. It allows you to specify its properties and security style (NTFS or UNIX) and can inherit export policies from its parent volume or have its own. Qtrees can contain files and directories, and are often used to manage permissions and quotas more granularly within a volume.
 
-Quotas::
+Quota::
 A quota in ONTAP is a limit set on the amount of storage space or number of files that can be used by a user, group, or qtree. Quotas are used to manage and control resource usage within a storage system, ensuring that no single user or application can consume an excessive amount of resources.
 
 == Storage and deployment limits
@@ -52,17 +52,11 @@ Each cluster must have a minimum of four nodes and a maximum of eight.
 
 There is a limit of 2PB that can be allocated for the entire cluster.
 
-//== Client authentication and authorization options
-
 == ONTAP AFX support for NFS trunking
 
 NFS trunking is a technology that enables NFS v4.1 clients to open multiple connections to different LIFs on the NFS server. This increases the data transfer speed and provides resilience through multiple paths. Trunking is beneficial for exporting FlexVol volumes to trunking-capable clients.
 
 To enable trunking, you need to have an SVM configured for NFS and NFSv4.1 should be enabled. It also requires remounting all the NFSv4.x clients which can be disruptive.
-
-.Related information
-
-* link:../administer/additional-ontap-svm.html[Additional ONTAP AFX SVM administration]
 
 == File system analytics
 
@@ -70,6 +64,18 @@ File System Analytics (FSA) is a feature in ONTAP that provides real-time visibi
 
 == Display an overview of your storage
 
-xxx
+To get started managing your ONTAP AFX data, you should display an overview of the storage.
 
->> Navigation pane: storage then overview
+.About this task
+
+You can access all the volumes and buckets defined for the ONTAP AFX cluster. Each of these is considered to be a data container.
+
+.Steps
+
+. In System Manager, select *Storage* and then *Overview*
+
+. Next to *Volumes*, select image:icon_arrow.gif[blue arrow pointing to the right] to display a list of volumes.
+
+. Next to *Buckets*, select image:icon_arrow.gif[blue arrow pointing to the right] to display a list of buckets.
+
+. Update or create a data container as needed.

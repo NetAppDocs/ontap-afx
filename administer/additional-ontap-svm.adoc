@@ -13,18 +13,4 @@ In addition to the common ONTAP AFX SVM administration tasks, there may be other
 
 .Related information
 
-* link:../faq.html[Frequently asked questions about ONTAP AFX storage systems]
-
-== Security
-
-xxx
-
-=== Manage SVM user accounts and roles
-
-xxx
-
->> Provide an introduction and then a brief example; possibly link to the Unified ONTAP doc; note that when creating an SVM there is an option to add an SVM level account.
-
-=== Cloud backup
-
-xxx
+* link:../faq.html[FAQ for ONTAP AFX storage systems]

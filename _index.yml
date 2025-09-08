@@ -7,7 +7,7 @@ indexpage:
     - title: Get started
       links: 
         - title: Learn about ONTAP AFX
-          url: /get-started/system-design.html
+          url: /get-started/ontap-afx-storage.html
         - title: Quick start
           url: /get-started/quick-start.html
         - title: Install ONTAP AFX hardware
@@ -54,7 +54,7 @@ indexpage:
           url: /rest/api-reference.html
     - title: Get more information
       links:
-        - title: Frequently asked questions
+        - title: FAQ for ONTAP AFX
           url: /faq.html
         - title: Additional resources
           url: /learn-more/additional-resources.html

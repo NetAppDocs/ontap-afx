@@ -37,8 +37,8 @@ entries:
         url: /protect-data/snapshot-replication.html
       - title: Manage policies and schedules
         url: /protect-data/policies-schedules.html
-      - title: Back up and restore
-        url: /protect-data/backup-restore.html
+#     - title: Back up and restore
+#       url: /protect-data/backup-restore.html
   - title: Secure data
     entries:
       - title: Encrypt data at rest

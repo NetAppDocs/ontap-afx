@@ -9,7 +9,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You need to configure the network of your ONTAP AFX storage system. The networking environment supports several connection scenarios including clients accessing data at SVMs as well as intercluster communication.
+You need to configure the network of your ONTAP AFX storage system. The networking environment supports several connection scenarios including clients accessing data at the SVMs and intercluster communication.
 
 [NOTE]
 Creating a network resource is an important first step. You also need to perform additional administrative actions, such as editing or deleting network definitions, as needed.
@@ -47,7 +47,7 @@ The maximum transmission unit (MTU) value of the ports defined for a broadcast d
 All broadcast domain names must be unique within an IPspace.
 . Provide the maximum transmission unit (MTU).
 +
-MTU is the largest data packet that can be accepted in the broadcast domain.
+The MTU is the largest data packet that can be accepted in the broadcast domain.
 . Choose the desired ports and select *Save*.
 
 .Related information

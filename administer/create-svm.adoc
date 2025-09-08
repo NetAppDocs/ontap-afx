@@ -9,11 +9,11 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can create a data SVM to provide configuration isolation and improve security. You might do this for different groups or projects within your organization.
+You can create a data SVM to provide isolation and improve security. You might do this for different groups or projects within your organization.
 
 .About this task
 
-When you create a data SVM, you must provide a name and configure at least one protocol for client access. WHen you select a client protocol, you will also be prompted to provide networking configuration as well. You can change the SVM configuration after it has been created as needed.
+When you create a data SVM, you must provide a name and configure at least one protocol for client access. After selecting a client protocol, you will be prompted for the networking configuration as well. You can change the SVM configuration as needed after it has been created.
 
 .Before you begin
 
@@ -29,12 +29,12 @@ You'll need the following:
 . Provide a name for the SVM.
 . Select a protocol for client access and provide the configuration details as appropriate.
 . Add a network interfaces for the SVM including the IP addresses and subnet mask.
-. Under *Storage VM administration, optionally:
+. Under *Storage VM administration*, optionally:
 .. Enable a maximum capacity and select a value
-.. Configure an account for the SVM
+.. Manage an administrator account for the SVM
 . Select *Save*.
 
 .Related information
 
-* link:../administer/configure-svm.html[Configure an ONTAP AFX SVM for data access]
+* link:../administer/configure-svm.html[Configure an ONTAP AFX data SVM]
 * link:../administer/manage-cluster-networking.html[Manage ONTAP AFX cluster networking]

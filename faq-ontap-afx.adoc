@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: faq.html
+permalink: faq-ontap-afx.html
 keywords: 
 summary: 
 ---
 
-= Frequently asked questions about ONTAP AFX storage systems
+= FAQ for ONTAP AFX storage systems
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +13,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-This FAQ list provides answers to questions that customers typically have about their ONTAP AFX storage systems. It also contains concepts and terminology that can be valuable when exploring AFX in more detail or performing advanced administration tasks.
+This FAQ list provides answers to questions that customers typically have about their ONTAP AFX storage systems. It also contains concepts and terminology that can be helpful when exploring AFX in more detail or performing advanced administration tasks.
 
 .What is an ONTAP personality?
 
@@ -21,14 +21,14 @@ ONTAP is a robust and versatile storage platform, known for its comprehensive fe
 
 To address these specialized needs, NetApp offers distinct ONTAP personalities, each of which includes a feature set designed to support the unique customer requirements. An ONTAP personality is a combination of hardware and software capabilities and purpose-built to deliver an optimized experience for targeted use cases. NetApp provides three ONTAP personalities:
 
-Unified ONTAP::
-This is the NetApp flagship offering, available on AFF and FAS systems as well as virtualized deployments such as ONTAP Select. Unified ONTAP delivers a broad set of data management features, supporting NAS, SAN, and S3 protocols for maximum flexibility.
+ONTAP Unified::
+The ONTAP Unified personality delivers a broad set of data management features, supporting NAS, SAN, and S3 protocols for maximum flexibility. This is the NetApp flagship offering, available on AFF and FAS systems as well as virtualized deployments such as ONTAP Select. 
 
 ASA r2::
-This is a hardware and software solution designed specifically for SAN-only environments. ASA r2 streamlines the storage experience for block workloads, providing simplified management and performance optimized for SAN customers.
+The ONTAP ASA r2 personality provides a disaggregated solution designed specifically for SAN-only environments. ASA r2 systems streamline the storage experience for block workloads, providing simplified management and performance optimized for SAN customers.
 
-ONTAP AFX::
-This is a disaggregated hardware and software solution engineered to meet the rigorous requirements of high-performance NAS and S3 workloads, including AI/ML applications. ONTAP AFX delivers specialized capabilities for customers requiring scalable, high-throughput file and object storage.
+AFX::
+The ONTAP AFX personality provides a disaggregated solution engineered to meet the rigorous requirements of high-performance NAS and S3 workloads, including AI/ML applications. AFX systems deliver specialized capabilities for customers requiring scalable, high-throughput file and object storage.
 
 By offering these unique ONTAP personalities, NetApp enables organizations to select a storage solution aligned with their operational requirements and application workloads.
 
@@ -42,7 +42,9 @@ The second related concept with disaggregated storage is that the aggregates and
 
 .ADDITIONAL FAQ ENTRIES FOR THE AFX REVIEWERS TO CONSIDER
 
+On September 2, I received a master FAQ document from TME (Justin) that I'll draw from for more entries. Will also consider the following topics which may overlap:
+
 * automated topology management (ATM)
-* volume placement and the API
+* volume placement API
 * zero copy volume move
 * storage availability zone
