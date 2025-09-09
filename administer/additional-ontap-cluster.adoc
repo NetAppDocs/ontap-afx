@@ -13,7 +13,7 @@ In addition to the common ONTAP AFX cluster administration tasks, there may be o
 
 .Related information
 
-* link:../faq.html[FAQ for ONTAP AFX storage systems]
+* link:../faq-ontap-afx.html[FAQ for ONTAP AFX storage systems]
 
 == Licensing
 
