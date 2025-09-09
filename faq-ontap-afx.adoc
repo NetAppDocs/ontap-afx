@@ -32,6 +32,10 @@ The ONTAP AFX personality provides a disaggregated solution engineered to meet t
 
 By offering these unique ONTAP personalities, NetApp enables organizations to select a storage solution aligned with their operational requirements and application workloads.
 
+.After I acquire one of the ONTAP products, can I change the personality?
+
+No. The personality of your ONTAP storage system is immutable and cannot be changed.
+
 .What does "disaggregated" mean in the context of ONTAP AFX storage systems?
 
 The term "disaggregated" can have different though related meanings with ONTAP AFX.
