@@ -28,9 +28,9 @@ There are several new and updated features available with ONTAP AFX. Review the 
 
 There are a few areas where the default AFX configuration differs from Unified ONTAP.
 
-*=> DP: IE needs input from PM/TME to confirm GDD and add more content to this section.*
+*=> DP: IE needs input from PM/TME to confirm this content and add any more to this section.*
 
-.GDD
+.Advanced Capacity Balancing
 
 The GDD option is enabled by default for all FlexGroup volumes.
 
