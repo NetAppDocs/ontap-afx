@@ -9,9 +9,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-To back up data on your ASA r2 system, you need to create a snapshot. You can use ONTAP System Manager to create a manual snapshot of a single storage unit, or to create a consistency group and schedule automatic snapshots of multiple storage units at the same time. 
-
->> Include at least two sections. One to create and another on policy. For configuring policy, link to the following toplic:
+To back up data on your ONTAP AFX system, you need to create a snapshot. You can use ONTAP System Manager to create a manual snapshot of a volume or to create a consistency group and schedule automatic snapshots of multiple storage units at the same time. 
 
 https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html[Create an ONTAP snapshot policy^]
 

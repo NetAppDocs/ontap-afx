@@ -28,7 +28,7 @@ There are several new and updated features available with ONTAP AFX. Review the 
 
 There are a few areas where the default AFX configuration differs from Unified ONTAP.
 
-*=> DP: IE needs input from PM/TME to confirm this content and add any more to this section.*
+*=> DP: IE needs input from PM/TME to confirm the content in this section and and add any more.*
 
 .Advanced Capacity Balancing
 
@@ -41,7 +41,7 @@ While ONTAP AFX is derived from Unified ONTAP, there are several features that a
 [TIP]
 You should review the updates and changes for ONTAP AFX in the appropriate link:../release-notes/whats-new-9171.html[What's new] section based on your release.
 
-*=> DP: Need to carefully review the organization below. Should we go back to a single simple "flat" list rather than breaking this content into sections?*
+*=> DP: Need to review the organization below. Should we go to a single simple "flat" list rather than breaking up this content into sections?*
 
 The following features, organized in several categories, are not available or have changed with the initial release of ONTAP AFX.
 

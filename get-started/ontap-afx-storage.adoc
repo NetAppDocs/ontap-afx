@@ -25,7 +25,7 @@ ONTAP AFX is designed as a next generation data platform and is specifically tar
 
 == Hardware infrastructure
 
-*Consult with SMEs (PM, TME) about what and how much content to add here (such as the hardware models). Align with similar content in the following ASA r2 topic:*
+*Need to confirm with SMEs about what content to add here, including hardware models. Will align with similar content in the following ASA r2 topic:*
 
 https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html[Learn about ASA r2 storage systems^]
 
