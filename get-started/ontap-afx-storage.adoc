@@ -32,5 +32,5 @@ https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html[Learn about AS
 Some of the hardware topics might include the following:
 
 * AFX 1K
-* NX224 (TongaPlus)
-* Cisco Switches 9332D and 9364D for OAM AFX
+* NX224
+* Cisco Switches 9332D and 9364D for AFX
