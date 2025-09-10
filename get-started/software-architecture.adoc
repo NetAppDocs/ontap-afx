@@ -21,7 +21,7 @@ AFX controller nodes run a derivative (or personality) of the ONTAP software des
 
 .Storage shelves and disks
 
-AFX storage shelves use Non-volatile Memory Express over Fabrics (NVMe-oF) to connect the high-density SSDs. The disks communicate over an ultra-low latency fabric using RDMA over Converged Ethernet (RoCE). The storage shelves, including the I/O modules, NICs, fans, and power supplies, are fully redundant with no single point of failure. Self-managed technology is used to administer and control all aspects of RAID and disk layout.
+AFX storage shelves use Non-volatile Memory Express over Fabrics (NVMe-oF) to connect the high-density SSDs. The disks communicate over an ultra-low latency fabric using RDMA over Converged Ethernet (RoCE). The storage shelves, including the I/O modules, NICs, fans, and power supplies, are fully redundant with no single point of failure. Self-managed technology is used to administer and control all aspects of RAID configuration and disk layout.
 
 .Cluster storage switch network
 
