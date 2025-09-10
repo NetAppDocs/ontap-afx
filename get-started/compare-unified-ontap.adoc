@@ -66,5 +66,5 @@ The following aggregate-related features are not available with the initial rele
 
 .Data replication
 
-* No replication of volumes from Unified ONTAP that contain a LUN
-* FlexGroup volumes using advanced capacity balancing can only be replicated to ONTAP 9.16.1 or later
+* No replication of a volume from Unified ONTAP that contains a LUN
+* FlexGroup volumes can only be replicated to ONTAP 9.16.1 or later

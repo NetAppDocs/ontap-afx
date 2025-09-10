@@ -35,10 +35,6 @@ The single storage pool, along with other features including automatic storage m
 
 The set of controller nodes and storage shelves in a cluster can be independently expanded based on the application needs. There are limited administration requirements and disruptions when adding controllers or shelves.
 
-.High availability
-
-With the traditional HA-pair architecture available with Unified ONTAP, concurrent failure of two nodes can result in data loss. AFX provides a more robust and resilient architecture supporting flexible partner selection as well as full _N-way_ configuration. This design tolerates concurrent failures without disruption or data loss.
-
 .Improved data mobility
 
 Volumes can be moved among the cluster controller nodes non-disruptively without actually copying data. Directory and index pointers are updated instead. This dramatically improves performance during typical administrative procedures as well as recovery in failure scenarios.

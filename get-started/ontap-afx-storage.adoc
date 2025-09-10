@@ -21,8 +21,7 @@ ONTAP AFX is designed as a next generation data platform and is specifically tar
 * Processing diverse data types including text, images, and video.
 * Real‑time inference applications with low latency where strict response time windows are needed.
 * Data science and machine learning pipelines that can benefit from self‑service data management by data engineers and data scientists.
-* Workloads that require high concurrency and parallel I/O, such as multi‑GPU systems with RDMA or Infiniband transport.
-* Deployment scenarios where overall data center rack-to-power density is critical, allowing a reduced storage footprint.
+* Workloads that require high concurrency and parallel I/O, such as multi‑GPU systems with RDMA transport.
 
 == Hardware infrastructure
 
