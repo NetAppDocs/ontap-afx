@@ -55,6 +55,6 @@ indexpage:
     - title: Get more information
       links:
         - title: FAQ for ONTAP AFX
-          url: /faq-ontap-afx.html
+          url: /faq//faq-general-ontap-afx.html
         - title: Additional resources
           url: /learn-more/additional-resources.html

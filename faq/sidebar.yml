@@ -1,0 +1,5 @@
+section: faq
+title: FAQ
+entries:
+  - title: General concepts and terminology
+    url: /faq/faq-general-ontap-afx.html

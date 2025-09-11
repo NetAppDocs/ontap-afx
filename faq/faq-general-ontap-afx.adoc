@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: faq-ontap-afx.html
+permalink: faq/faq-general-ontap-afx.html
 keywords: 
 summary: 
 ---
 
-= FAQ for ONTAP AFX storage systems
+= General concepts and terminology FAQ for ONTAP AFX
 :hardbreaks:
 :nofooter:
 :icons: font

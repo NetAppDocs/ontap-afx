@@ -9,29 +9,53 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can expand the compute capability of an ONTAP AFX independent of the storage capacity. This can be a significant benefit as you adjust to the ongoing needs of your storage users.
+You can expand the compute capability of an ONTAP AFX cluster independent of the storage capacity. The expansion is performance without disruption. This is a significant benefit as you adjust to the ongoing needs of your storage users.
 
 .About this task
 
-This procedure describes how to add two compute nodes to an existing cluster. You'll need to use both the ONTAP CLI and System Manager administrative interfaces.
+This procedure describes how to add two compute nodes to an existing AFX cluster. You'll need to use both the ONTAP CLI and System Manager administrative interfaces.
 
 .Before you begin
 
-You need to have the credentials for a cluster administrator account and connect to the ONTAP CLI using SSH.
+You need the credentials for a cluster administrator account and be able to connect to the ONTAP CLI using SSH.
 
 .Steps
 
-. After connecting to the ONTAP CLI, set advanced privilege mode:
+. After connecting to the ONTAP CLI, set the advanced privilege level:
 +
 `afx> set advanced`
 
-. Check the volume location of the current nodes; note the number of volumes per node:
+. Check the volume locations of the current nodes; note the number of volumes per node:
 +
 `afx> vol show -fields node,size,constituent-count -is-constituent true -node *`
 
 . Collect the cluster interconnect IP addresses and save them for use in later steps:
 +
-`afx> net int show -role Cluster`
+`afx> net int show -role cluster`
+
+. Log into the service processor of the node or nodes you wish to add to the cluster.
+
+. From the prompt, type *system console* to access the node’s console.
+
+. Boot the node to get to the boot menu prompt; if the menu does not load, use the *Ctrl+C* technique to access the boot menu.
+
+. Select one of the boot options as appropriate; if prompted type *yes* to continue.
+
+. Use the cluster setup wizard to configure a node management LIF, subnet, and gateway.
++
+This will be used by System Manager to detect the node for addition into the cluster. Enter the configuration as prompted, including port, IP address, netmask, and default gateway.
+
+. Press *CTL+C* to access the CLI.
+
+. Modify the cluster interconnect addresses so they're routable in your network; use the configuration appropriate for your environment:
++
+`afx> net int show -role cluster`
++
+`afx> net int modify -vserver Cluster -lif clus1 -address 192.168.76.222`
++
+`afx> net int modify -vserver Cluster -lif clus2 -address 192.168.76.226`
+
+. Repeat the above steps on the other ONTAP AFX node controller.
 
 .What's next?
 
