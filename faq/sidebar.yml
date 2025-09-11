@@ -3,3 +3,11 @@ title: FAQ
 entries:
   - title: General concepts and terminology
     url: /faq/faq-general-ontap-afx.html
+  - title: Sales and product positioning
+    url: /faq/faq-sales-ontap-afx.html
+  - title: Interoperability
+    url: /faq/faq-interoperate-ontap-afx.html
+  - title: Advanced technical concepts
+    url: /faq/faq-technical-ontap-afx.html
+  - title: Cloud and partners
+    url: /faq/faq-cloud-ontap-afx.html

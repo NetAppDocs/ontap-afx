@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: faq/faq-sales-ontap-afx.html
+keywords: 
+summary: 
+---
+
+= Sales and product positioning FAQ for ONTAP AFX
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+xxx

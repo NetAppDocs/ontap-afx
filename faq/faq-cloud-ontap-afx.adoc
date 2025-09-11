@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: faq/faq-cloud-ontap-afx.html
+keywords: 
+summary: 
+---
+
+= Cloud and partner FAQ for ONTAP AFX
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+xxx
