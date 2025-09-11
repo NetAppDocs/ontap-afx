@@ -175,4 +175,4 @@ NetApp offers ONTAP in three distinct personalities. Where appropriate, this ONT
 
 .Related information
 
-* link:../faq-ontap-afx.html[FAQ for ONTAP AFX storage systems]
+* link:../faq/faq-general-ontap-afx.html[FAQ for ONTAP AFX storage systems]

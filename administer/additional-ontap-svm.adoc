@@ -13,4 +13,4 @@ In addition to the common ONTAP AFX SVM administration tasks, there may be other
 
 .Related information
 
-* link:../faq-ontap-afx.html[FAQ for ONTAP AFX storage systems]
+* link:../faq/faq-general-ontap-afx.html[FAQ for ONTAP AFX storage systems]
