@@ -5,7 +5,7 @@ keywords:
 summary: 
 ---
 
-= Technical FAQ for ONTAP AFX
+= Advanced technical FAQ for ONTAP AFX
 :hardbreaks:
 :nofooter:
 :icons: font
