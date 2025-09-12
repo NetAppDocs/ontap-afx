@@ -1,11 +1,11 @@
 section: get-started
 title: Get started
 entries:
-  - title: Learn about your AFX system
+  - title: Learn about your ONTAP AFX system
     entries:
-    - title: ONTAP AFX storage systems
+    - title: Learn about NetApp AFX
       url: /get-started/ontap-afx-storage.html
-    - title: System design goals
+    - title: System characteristics
       url: /get-started/system-design.html
     - title: Architecture details
       url: /get-started/software-architecture.html

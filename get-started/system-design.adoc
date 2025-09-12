@@ -9,7 +9,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-The ONTAP AFX storage system has several characteristics which contribute to its success as a high-performance NAS platform.
+The ONTAP AFX storage system has several characteristics which contribute to its use and success as a high-performance NAS platform.
 
 .Decouple storage and compute capabilities
 

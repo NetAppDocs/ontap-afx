@@ -10,7 +10,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You should prepare to administer your ONTAP AFX cluster before configuring and using it in a production environment.
+Before deploying ONTAP AFX in a production environment, it’s essential to understand the administrative structure and options. This will ensure secure, efficient, and effective management of your AFX cluster.
 
 == Understand storage virtual machines
 
