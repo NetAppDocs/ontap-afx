@@ -13,7 +13,7 @@ summary:
 To initially get up and running with your ONTAP AFX system, you need to install the hardware components, set up your cluster, and prepare to administer your cluster and SVMs.
 
 // Comment to reviewers:
-[big red]*DP: Should this list be expanded? If so, can we add entries at the bottom that would cover most customer deployments?*
+[big red]*DP: Should the list of steps be expanded?*
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Install and set up your hardware
 

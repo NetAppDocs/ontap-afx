@@ -45,7 +45,7 @@ While the ONTAP AFX and Unified ONTAP personalities are very similar, there are 
 You should review the updates and changes for ONTAP AFX in the appropriate link:../release-notes/whats-new-9171.html[What's new] section based on your release.
 
 // Comment to reviewers:
-[big red]*DP: Is the organization of the content below OK? Would one large "flat" list be better?*
+[big red]*DP: Is the organization of the content below OK? Would one large "flat" list, without categories, be better?*
 
 The following features, organized in several categories, are not available or have changed with the initial release of ONTAP AFX.
 

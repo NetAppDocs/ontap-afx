@@ -11,6 +11,9 @@ summary:
 [.lead]
 You can expand the compute capability of an ONTAP AFX cluster independent of the storage capacity. The expansion is performance without disruption. This is a significant benefit as you adjust to the ongoing needs of your storage users.
 
+// Comment to reviewers:
+[big red]*This content was taken from the EAP plan.*
+
 .About this task
 
 This procedure describes how to add two compute nodes to an existing AFX cluster. You'll need to use both the ONTAP CLI and System Manager administrative interfaces.
