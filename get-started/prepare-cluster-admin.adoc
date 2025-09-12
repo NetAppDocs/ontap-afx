@@ -12,6 +12,8 @@ summary:
 [.lead]
 Before deploying ONTAP AFX in a production environment, it’s essential to understand the administrative structure and options. This will ensure secure, efficient, and effective management of your AFX cluster.
 
+[big red]*DP: This page includes content that will be helpful for customers new to ONTAP.*
+
 == Understand storage virtual machines
 
 A storage virtual machine (SVM) is an isolated server or tenant environment within an ONTAP cluster. You can configure an SVM to serve data to the connected clients. You should be familiar with the capabilities and characteristics of the ONTAP AFX SVMs.

@@ -15,6 +15,8 @@ summary:
 [.lead]
 This FAQ list provides answers to questions that customers typically have about their ONTAP AFX storage systems. It also contains concepts and terminology that can be helpful when exploring AFX in more detail or performing advanced administration tasks.
 
+[big red]*DP: I started this FAQ as a single page. Justin provided a much large FAQ document and so I've expanded to multiple pages. I have not yet completed adding all the entries. Maybe this content can be reviewed again after the initial IDR and before product launch.*
+
 .What is an ONTAP personality?
 
 ONTAP is a robust and versatile storage platform, known for its comprehensive feature set and adaptability to a wide range of storage requirements. While this flexibility makes it an excellent choice for organizations with diverse workloads, some customers can benefit from a more tailored storage solution optimized for the needs of their specific environment.
