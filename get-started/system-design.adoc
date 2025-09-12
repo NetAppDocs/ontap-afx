@@ -4,12 +4,12 @@ permalink: get-started/system-design.html
 keywords: 
 summary: 
 ---
-= ONTAP AFX system design goals
+= ONTAP AFX system characteristics
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-There are several principles and goals guiding the design and evolution of ONTAP AFX storage systems.
+The ONTAP AFX storage system has several characteristics which contribute to its success as a high-performance NAS platform.
 
 .Decouple storage and compute capabilities
 
