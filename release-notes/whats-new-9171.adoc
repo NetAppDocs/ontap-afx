@@ -14,7 +14,8 @@ summary:
 [.lead]
 Learn about the new capabilities included with ONTAP 9.17.1 that are available with ONTAP AFX storage systems.
 
-[big red]*DP: I will add content to this page sometime between 9/22 - 10/13 for the first release. The format will be based on the equivalent ASA r2 topic: https://docs.netapp.com/us-en/asa-r2/release-notes/whats-new-9171.html[What's new in ONTAP 9.17.1 for ASA r2 systems^].*
+// Comment to reviewers:
+[big red]*DP: I will add content to this page sometime between 9/22 - 10/13 for the first release. The format will be based on the equivalent ASA r2 topic which is here: https://docs.netapp.com/us-en/asa-r2/release-notes/whats-new-9171.html[What's new in ONTAP 9.17.1 for ASA r2 systems^].*
 
 .Related information
 

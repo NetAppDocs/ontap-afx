@@ -31,4 +31,5 @@ The following hardware platforms are used with and support ONTAP AFX:
 * NX224
 * Cisco Switches 9332D and 9364D for AFX
 
-[big red]*DP: Please confirm the above list. Are we missing anything?*
+// Comment to reviewers:
+[big red]*DP: Please confirm the above list. Are we missing anything? Should we add a link?*
