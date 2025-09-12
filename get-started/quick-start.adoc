@@ -25,4 +25,4 @@ Follow the quick and easy process to link:../install-setup/cluster-setup.html[se
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Prepare to administer your cluster
 
 [role="quick-margin-para"]
-Before deploying ONTAP AFX in a production environment, it’s essential to link:../get-started/prepare-cluster-admin.html[prepare] by understanding its administrative structure-including storage virtual machines (SVMs), user roles, and management interfaces—to ensure secure, efficient, and effective cluster management.
+Before deploying ONTAP AFX in a production environment, it’s essential to link:../get-started/prepare-cluster-admin.html[prepare] by understanding the administrative structure-including storage virtual machines (SVMs), users, roles, and management interfaces—to ensure secure, efficient, and effective cluster management.

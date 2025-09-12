@@ -38,4 +38,4 @@ You'll need the following:
 
 .Related information
 
-* https://docs.netapp.com/us-en/ontap-restapi/index.html[ONTAP 9.17.1 REST API reference^]
+* https://docs.netapp.com/us-en/ontap-restapi/index.html[ONTAP REST API reference^]

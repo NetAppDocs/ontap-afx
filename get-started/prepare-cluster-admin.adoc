@@ -49,11 +49,9 @@ The cluster administrator has complete control of the AFX cluster including all 
 
 An SVM administrator has control of a specific data SVM and so is more restricted compared to the cluster administrator. SVM administration involves performing tasks with objects and resources that have an SVM scope, such as creating a volume. See link:../manage-data/prepare-provision-storage.html[Administer your storage VMs] for more information.
 
-//* Data administrator. This is a more restricted role within a specific tenant. It allows self-serve access to a subset of the administrative functions and API calls by storage users including data scientists and data engineers.
-
 == Three administrative interfaces
 
-As with the other ONTAP personalities (Unified, ASA r2), AFX has three administrative interfaces. The LIF (or IP address) you need to use varies based on the administrative interface and your environment.
+As with the other ONTAP personalities (Unified, ASA r2), ONTAP AFX has three administrative interfaces. The LIF (or IP address) you need to use varies based on the administrative interface and your environment.
 
 [NOTE]
 The System Manager user interface is preferred for most administrative tasks. You should use an administrator account unless otherwise indicated.
