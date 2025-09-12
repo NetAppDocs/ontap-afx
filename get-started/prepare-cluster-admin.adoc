@@ -53,7 +53,7 @@ An SVM administrator has control of a specific data SVM and so is more restricte
 
 == Three administrative interfaces
 
-As with Unified ONTAP, AFX has three administrative interfaces. The LIF (or IP address) you need to use varies based on the administrative interface and your environment.
+As with the other ONTAP personalities (Unified, ASA r2), AFX has three administrative interfaces. The LIF (or IP address) you need to use varies based on the administrative interface and your environment.
 
 [NOTE]
 The System Manager user interface is preferred for most administrative tasks. You should use an administrator account unless otherwise indicated.
@@ -69,6 +69,10 @@ The System Manager user interface is preferred for most administrative tasks. Yo
 |REST API
 |ONTAP AFX includes a REST API you can use to automate the administration of your AFX cluster. The API is based on the Unified ONTAP REST API with modifications to support the unique AFX features and restrictions.
 |===
+
+.Related information
+
+* https://docs.netapp.com/us-en/ontap/concepts/introducing-ontap-interfaces-concept.html[ONTAP user interfaces^]
 
 == Learn to search, filter, and sort information in System Manager
 

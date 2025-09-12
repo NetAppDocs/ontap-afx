@@ -56,5 +56,7 @@ indexpage:
       links:
         - title: FAQ for ONTAP AFX
           url: /faq//faq-general-ontap-afx.html
+        - title: Documentation for other ONTAP systems
+          url: https://docs.netapp.com/us-en/ontap-family/
         - title: Additional resources
           url: /learn-more/additional-resources.html
