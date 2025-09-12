@@ -13,4 +13,8 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-xxx
+This FAQ list provides answers to questions that customers typically have about their ONTAP AFX storage systems. It focuses on sales-related issues.
+
+.What are the intended targeted workloads for disaggregated ONTAP?
+
+This architecture has been designed with artificial intelligence (AI), machine learning (ML), and large language model (LLM) workloads in mind. These are specifically those applications with high throughput requirements, such as AI training and inference. As a secondary market, disaggregated ONTAP can also be effective with EDA and Media/Entertainment workloads. However, due to the ONTAP AFX requirements (minimum cluster size, hardware type), Unified ONTAP may be the more appropriate choice in this case.

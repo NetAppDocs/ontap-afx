@@ -13,4 +13,13 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-XXX
+This FAQ list provides answers to questions that customers typically have about their ONTAP AFX storage systems. It includes more advanced technical issues that you may need based on your environment.
+
+.What are the supported data protocols in disaggregated ONTAP?
+
+The data protocols supported in disaggregated ONTAP include the following:
+
+* NFSv3, NFSv4.0, NFSv4.1, NFSv4.2 
+* SMB2.x, SMB3.x
+* S3
+* NDMP

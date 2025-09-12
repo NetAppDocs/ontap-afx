@@ -5,7 +5,7 @@ keywords:
 summary: 
 ---
 
-= Cloud and partner FAQ for ONTAP AFX
+= Cloud and 1P partner FAQ for ONTAP AFX
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,4 +13,8 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-xxx
+This FAQ list provides answers to questions that customers typically have about their ONTAP AFX storage systems. It discusses issues related to the public cloud or encountered by NetApp partners.
+
+.How do the current 1P offerings (Azure NetApp Files, Google NetApp Cloud Volumes, Amazon Cloud Volume Services) interact with disaggregated ONTAP?
+
+The 1P clouds do not currently offer disaggregated ONTAP options in their services and likely will not in the immediate future. The closest interaction you can achieve will be the potential ability to replicate to/from a 1P cloud offering or to attach a FlexCache volume to a 1P cloud offering.
