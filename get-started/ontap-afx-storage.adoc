@@ -23,12 +23,12 @@ ONTAP AFX is designed as a next generation data platform and is specifically tar
 
 == Hardware infrastructure
 
-*Need to confirm with SMEs about what content to add here, including hardware models. Will align with similar content in the following ASA r2 topic:*
+The NetApp ONTAP AFX storage system delivers a unified hardware and software solution that creates a simplified experience specific to the needs of high-performance NAS customers.
 
-https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html[Learn about ASA r2 storage systems^]
-
-Some of the hardware topics might include the following:
+The following hardware platforms are used with and support ONTAP AFX:
 
 * AFX 1K
 * NX224
 * Cisco Switches 9332D and 9364D for AFX
+
+[big red]*DP: Please confirm the above list. Are we missing anything?*
