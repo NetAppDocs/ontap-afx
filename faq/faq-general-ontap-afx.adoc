@@ -16,7 +16,7 @@ summary:
 This FAQ list provides answers to questions that customers typically have about their ONTAP AFX storage systems. It focuses on general AFX concepts and terminology.
 
 // Comment to reviewers:
-[big red]*DP: I started this FAQ list as a single page. But Justin provided a much large FAQ document and so I've expanded it to multiple pages. I have not yet added all the entries.*
+[big red]*DP: I started this FAQ list as a single page. But Justin provided a much large FAQ document (Sept 2) and so I've expanded it to multiple pages. I haven't added all the entries yet.*
 
 .What is an ONTAP personality?
 
@@ -47,11 +47,11 @@ An important concept to begin with is the decoupling the compute capability in t
 
 The second related concept with disaggregated storage is that the aggregates and RAID management are removed as administrable entities. A storage abstraction layer within ONTAP AFX automatically configures and manages the aggregates, physical disks, and RAID groups. This allows the administrator to focus on the higher level storage configuration based on volumes and buckets.
 
-.ADDITIONAL FAQ ENTRIES FOR THE AFX REVIEWERS TO CONSIDER
-
-On September 2, I received a master FAQ document from TME (Justin) that I'll draw from for more entries. Will also consider the following topics which may overlap:
-
-* automated topology management (ATM)
-* volume placement API
-* zero copy volume move
-* storage availability zone
+// --- On technical page if included:
+// Additional entries to consider:
+//
+// automated topology management (ATM)
+// volume placement API
+// zero copy volume move
+// storage availability zone
+// ---

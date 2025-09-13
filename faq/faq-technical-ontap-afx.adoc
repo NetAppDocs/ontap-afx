@@ -15,6 +15,12 @@ summary:
 [.lead]
 This FAQ list provides answers to questions that customers typically have about their ONTAP AFX storage systems. It includes more advanced technical issues that you may need based on your environment.
 
+[big red]*DP: Are the following acceptable to include in the FAQ on this page or something we don't want to expose?*
+[big red]*- automated topology management (ATM)*
+[big red]*- volume placement API*
+[big red]*- zero copy volume move*
+[big red]*- storage availability zone*
+
 .What are the supported data protocols in disaggregated ONTAP?
 
 The data protocols supported in disaggregated ONTAP include the following:
