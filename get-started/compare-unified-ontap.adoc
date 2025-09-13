@@ -11,6 +11,9 @@ summary:
 [.lead]
 Comparing ONTAP AFX to Unified ONTAP provides a valuable perspective and can be helpful when evaluating AFX for your environment.
 
+// Comment to reviewers:
+[big red]*DP: Do we want to add a list of unsupported CLI commands? For example, commands that might have been moved to diag level?*
+
 == New platform built on Unified ONTAP
 
 ONTAP AFX is derived from the Unified ONTAP personality. Because of this, it includes a robust set of features and administrative options. If you're an experienced ONTAP user, you'll find it very easy to work with AFX. If you're new to ONTAP, the simplified System Manager user interface and streamlined administration will help you get started quickly.
@@ -19,29 +22,30 @@ There are several new and updated features available with ONTAP AFX. Review the 
 
 .Related information
 
-* link:../get-started/system-design.html[ONTAP AFX system design goals]
+* link:../get-started/system-design.html[ONTAP AFX system characteristics]
 * link:../get-started/software-architecture.html[Details of the ONTAP AFX architecture]
-* link:../administer/additional-ontap-cluster.html[Additional ONTAP AFX cluster administration]
-* link:../faq.html[FAQ for ONTAP AFX storage systems]
+* link:../faq-ontap-afx.html[FAQ for ONTAP AFX storage systems]
 
 == Configuration differences with Unified ONTAP
 
 There are a few areas where the default AFX configuration differs from Unified ONTAP.
 
-*=> DP: IE needs input from PM/TME to confirm GDD and add more content to this section.*
+// Comment to reviewers:
+[big red]*DP: IE needs help in confirming the following content and providing any other configuration differences.*
 
-.GDD
+.Advanced Capacity Balancing
 
 The GDD option is enabled by default for all FlexGroup volumes.
 
 == Unsupported or restricted Unified ONTAP capabilities
 
-While ONTAP AFX is derived from Unified ONTAP, there are several features that are not supported with AFX.
+While the ONTAP AFX and Unified ONTAP personalities are very similar, there are several features that are not supported with AFX.
 
 [TIP]
 You should review the updates and changes for ONTAP AFX in the appropriate link:../release-notes/whats-new-9171.html[What's new] section based on your release.
 
-*=> DP: Need to carefully review the organization below. Should we go back to a single simple "flat" list rather than breaking this content into sections?*
+// Comment to reviewers:
+[big red]*DP: Is the organization of the content below OK? Would one large "flat" list, without categories, be better?*
 
 The following features, organized in several categories, are not available or have changed with the initial release of ONTAP AFX.
 
@@ -66,5 +70,5 @@ The following aggregate-related features are not available with the initial rele
 
 .Data replication
 
-* No replication of volumes from Unified ONTAP that contain a LUN
-* FlexGroup volumes using advanced capacity balancing can only be replicated to ONTAP 9.16.1 or later
+* No replication of a volume from Unified ONTAP that contains a LUN
+* FlexGroup volumes can only be replicated to ONTAP 9.16.1 or later

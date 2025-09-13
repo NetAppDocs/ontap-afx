@@ -13,7 +13,17 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-This FAQ list provides answers to questions that customers typically have about their ONTAP AFX storage systems. It also contains concepts and terminology that can be helpful when exploring AFX in more detail or performing advanced administration tasks.
+This FAQ list provides answers to common questions customers typically have about their ONTAP AFX storage systems. It describes concepts and terminology that can be helpful when exploring AFX in more detail or performing advanced administration tasks. For convenience, the list is organized in several major sections by category.
+
+// Comment to reviewers:
+[big red]*DP: Justin provided a very large FAQ document (Sept 2). I haven't added all the entries yet and so this list will grow before product launch. Also, are the following entries acceptable to include in the advanced technical section of this FAQ page?*
+ 
+[big red]*- automated topology management (ATM)*
+[big red]*- volume placement API*
+[big red]*- zero copy volume move*
+[big red]*- storage availability zone*
+
+== General concepts and terminology
 
 .What is an ONTAP personality?
 
@@ -32,6 +42,10 @@ The ONTAP AFX personality provides a disaggregated solution engineered to meet t
 
 By offering these unique ONTAP personalities, NetApp enables organizations to select a storage solution aligned with their operational requirements and application workloads.
 
+.After I acquire one of the ONTAP products, can I change the personality?
+
+No. The personality of your ONTAP storage system is immutable and cannot be changed.
+
 .What does "disaggregated" mean in the context of ONTAP AFX storage systems?
 
 The term "disaggregated" can have different though related meanings with ONTAP AFX.
@@ -40,11 +54,35 @@ An important concept to begin with is the decoupling the compute capability in t
 
 The second related concept with disaggregated storage is that the aggregates and RAID management are removed as administrable entities. A storage abstraction layer within ONTAP AFX automatically configures and manages the aggregates, physical disks, and RAID groups. This allows the administrator to focus on the higher level storage configuration based on volumes and buckets.
 
-.ADDITIONAL FAQ ENTRIES FOR THE AFX REVIEWERS TO CONSIDER
+== Sales and product positioning
 
-On September 2, I received a master FAQ document from TME (Justin) that I'll draw from for more entries. Will also consider the following topics which may overlap:
+.What are the intended targeted workloads for disaggregated ONTAP?
 
-* automated topology management (ATM)
-* volume placement API
-* zero copy volume move
-* storage availability zone
+This architecture has been designed with artificial intelligence (AI), machine learning (ML), and large language model (LLM) workloads in mind. These are specifically those applications with high throughput requirements, such as AI training and inference. As a secondary market, disaggregated ONTAP can also be effective with EDA and Media/Entertainment workloads. However, due to the ONTAP AFX requirements (minimum cluster size, hardware type), Unified ONTAP may be the more appropriate choice in this case.
+
+== Interoperability
+
+.Can I use disaggregated ONTAP in the same cluster as Unified ONTAP? 
+
+No. Disaggregated ONTAP and Unified ONTAP cannon co-exist within the same cluster. 
+
+.If I want to use Unified ONTAP with disaggregated ONTAP for SnapMirror or FlexCache, what ONTAP version will I need?
+
+SnapMirror version rules for Unified ONTAP are identical for disaggregated ONTAP. This means that to replicate from Unified ONTAP, the source system must be within the supported version range. To replicate from disaggregated ONTAP, the Unified ONTAP system must be at ONTAP 9.16.1 or later (that is, the earliest release Advanced Capacity Balancing is supported). For FlexCache, the same rules apply for source and destination systems as provided in https://www.netapp.com/pdf.html?item=/media/7336-tr4743.pdf[TR-4743^].
+
+== Advanced technical concepts
+ 
+.What are the supported data protocols in disaggregated ONTAP?
+
+The data protocols supported in disaggregated ONTAP include the following:
+
+* NFSv3, NFSv4.0, NFSv4.1, NFSv4.2 
+* SMB2.x, SMB3.x
+* S3
+* NDMP
+
+== Cloud and 1P partners
+
+.How do the current 1P offerings (Azure NetApp Files, Google NetApp Cloud Volumes, Amazon Cloud Volume Services) interact with disaggregated ONTAP?
+
+The 1P clouds do not currently offer disaggregated ONTAP options in their services and likely will not in the immediate future. The closest interaction you can achieve will be the potential ability to replicate to/from a 1P cloud offering or to attach a FlexCache volume to a 1P cloud offering.

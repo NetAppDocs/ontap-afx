@@ -21,11 +21,11 @@ AFX controller nodes run a derivative (or personality) of the ONTAP software des
 
 .Storage shelves and disks
 
-AFX storage shelves use Non-volatile Memory Express over Fabrics (NVMe-oF) to connect the high-density SSDs. The disks communicate over an ultra-low latency fabric using RDMA over Converged Ethernet (RoCE). The storage shelves, including the I/O modules, NICs, fans, and power supplies, are fully redundant with no single point of failure. Self-managed RAID technology is used with the SSDs, including RAID/DP and RAID-TEC.
+AFX storage shelves use Non-volatile Memory Express over Fabrics (NVMe-oF) to connect the high-density SSDs. The disks communicate over an ultra-low latency fabric using RDMA over Converged Ethernet (RoCE). The storage shelves, including the I/O modules, NICs, fans, and power supplies, are fully redundant with no single point of failure. Self-managed technology is used to administer and control all aspects of RAID configuration and disk layout.
 
 .Cluster storage switch network
 
-Redundant and high‑performance switches connect the AFX controller nodes with the storage shelves. Advanced protocols are used to optimize performance, including RDMA and Infiniband. The design is based on VLAN tagging with multiple network paths, as well as tech‑refresh configurations, to ensure continuous operation and ease of upgrade.
+Redundant and high‑performance switches connect the AFX controller nodes with the storage shelves. Advanced protocols are used to optimize performance. The design is based on VLAN tagging with multiple network paths, as well as tech‑refresh configurations, to ensure continuous operation and ease of upgrade.
 
 .Client training environment
 
@@ -43,9 +43,9 @@ There are several logical components included with ONTAP AFX. They are implement
 
 The common storage pool (or _storage availability zone_) is a collection of disks in the storage shelves that provides a single unified namespace to all the controller nodes. It offers a provisioning model with no fixed restrictions regarding which storage shelves are used by the nodes. Customers can view free space and storage usage as properties of the entire ONTAP AFX cluster.
 
-.FlexTrees and buckets
+.FlexVolumes, FlexGroups, and buckets
 
-FlexTrees and buckets are the _data containers_ exposed to the customer based on the client access protocols. These scalable containers are designed to abstract away many of the complex internal storage details.
+FlexVolumes, FlexGroups, and buckets are the _data containers_ exposed to the customer based on the client access protocols. These scalable containers are designed to abstract away many of the complex internal storage details.
 
 .Data layout and access
 
@@ -58,5 +58,8 @@ ONTAP AFX provides a tenant model that builds on the SVM model available with Un
 == ONTAP AFX deployment
 
 The following illustrates a typical deployment of an ONTAP AFX cluster. Notice the four controller nodes are decoupled from the two storage shelves with connectivity provided through a shared cluster storage network switch.
+
+// Comment to reviewers:
+[big red]*DP: I will update and enhance this figure based on recent feedback from Chris.*
 
 image:oam-architecture.png[OAM architecture]
