@@ -40,12 +40,12 @@ A quota in ONTAP is a limit set on the amount of storage space or number of file
 
 == ONTAP AFX deployment limitations
 
-There are several limits, including minimums and maximums, enforced by ONTAP AFX when configuring and using your cluster. These limits fall into several different categories, including:
+There are several limitations, including minimums and maximums, enforced by ONTAP AFX when configuring and using your cluster. These limits fall into several different categories, including:
 
 * Nodes per cluster
 * Storage capacity
 
-NetApp expects to expand the AFX capabilities and so these limitations will change, possibly frequentlky and within ONTAP releases. You should review the information available at the Interoperability Matrix Tool (IMT) to determine the capabilities of your cluster.
+NetApp expects to expand the AFX capabilities and so these limitations will change, possibly frequently and within ONTAP releases. You should review the information available at the Interoperability Matrix Tool (IMT) to determine the capabilities of your cluster.
 
 // Each cluster must have a minimum of four nodes and a maximum of eight.
 // There is a limit of 2PB that can be allocated for the entire cluster.
