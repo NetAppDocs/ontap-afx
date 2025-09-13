@@ -13,10 +13,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-This FAQ list provides answers to common questions customers typically have about their ONTAP AFX storage systems. It describes concepts and terminology that can be helpful when exploring AFX in more detail or performing advanced administration tasks.
-
-[NOTE]
-This FAQ list is organized in several major sections by category.
+This FAQ list provides answers to common questions customers typically have about their ONTAP AFX storage systems. It describes concepts and terminology that can be helpful when exploring AFX in more detail or performing advanced administration tasks. For convenience, the list is organized in several major sections by category.
 
 // Comment to reviewers:
 [big red]*DP: Justin provided a very large FAQ document (Sept 2). I haven't added all the entries yet and so this list will grow before product launch. Also, are the following entries acceptable to include in the advanced technical section of this FAQ page?*

@@ -13,7 +13,7 @@ summary:
 Before deploying ONTAP AFX in a production environment, it’s essential to understand the administrative structure and options. This will ensure secure, efficient, and effective management of your AFX cluster.
 
 // Comment to reviewers:
-[big red]*DP: In addition to AFX, this page also includes content that will be helpful for customers who are new to ONTAP.*
+[big red]*DP: In addition to information specific to AFX, this page also includes general content that will be helpful for customers who are new to ONTAP.*
 
 == Understand storage virtual machines
 
