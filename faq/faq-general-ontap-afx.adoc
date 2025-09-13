@@ -16,7 +16,7 @@ summary:
 This FAQ list provides answers to questions that customers typically have about their ONTAP AFX storage systems. It focuses on general AFX concepts and terminology.
 
 // Comment to reviewers:
-[big red]*DP: I started this FAQ list as a single page. But Justin provided a much large FAQ document (Sept 2) and so I've expanded it to multiple pages. I haven't added all the entries yet.*
+[big red]*DP: Justin provided a much large FAQ document (Sept 2) and so I've expanded it to multiple pages. I haven't added all the entries yet. We may move this content based on the IE standards.*
 
 .What is an ONTAP personality?
 

@@ -16,12 +16,13 @@ summary:
 This FAQ list provides answers to questions that customers typically have about their ONTAP AFX storage systems. It includes more advanced technical issues that you may need based on your environment.
 
 // Comments for reviewers:
-[big red]*DP: Are the following acceptable entries to include in the FAQ on this page?*
+[big red]*DP: Are the following entries acceptable to include on this FAQ page?*
  
 [big red]*- automated topology management (ATM)*
 [big red]*- volume placement API*
 [big red]*- zero copy volume move*
 [big red]*- storage availability zone*
+ 
 
 .What are the supported data protocols in disaggregated ONTAP?
 

@@ -9,14 +9,14 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can expand the compute capability of an ONTAP AFX cluster independent of the storage capacity. The expansion is performance without disruption. This is a significant benefit as you adjust to the ongoing needs of your storage users.
+You can expand the compute capability of an ONTAP AFX cluster independent of the storage capacity. The expansion is performed without disruption. This is a significant benefit as you adjust to the ongoing needs of your storage users.
 
 // Comment to reviewers:
 [big red]*DP: The content on this page was taken from the EAP plan.*
 
 .About this task
 
-This procedure describes how to add two compute nodes to an existing AFX cluster. You'll need to use both the ONTAP CLI and System Manager administrative interfaces.
+You must add an even number of compute nodes to an ONTAP AFX cluster. This procedure describes how to add two nodes to an existing cluster. You'll need to use both the ONTAP CLI and System Manager administrative interfaces.
 
 .Before you begin
 
@@ -24,7 +24,7 @@ You need the credentials for a cluster administrator account and be able to conn
 
 .Steps
 
-. After connecting to the ONTAP CLI, set the advanced privilege level:
+. Connect to the ONTAP CLI and set the advanced privilege level:
 +
 `afx> set advanced`
 
@@ -32,7 +32,7 @@ You need the credentials for a cluster administrator account and be able to conn
 +
 `afx> vol show -fields node,size,constituent-count -is-constituent true -node *`
 
-. Collect the cluster interconnect IP addresses and save them for use in later steps:
+. Display and record the cluster interconnect IP addresses and save them for use in later steps:
 +
 `afx> net int show -role cluster`
 
@@ -40,13 +40,17 @@ You need the credentials for a cluster administrator account and be able to conn
 
 . From the prompt, type *system console* to access the node’s console.
 
-. Boot the node to get to the boot menu prompt; if the menu does not load, use the *Ctrl+C* technique to access the boot menu.
+. Boot the node to get to the boot menu prompt:
++
+`LOADER> boot_ontap menu`
++
+If the menu does not load, use the *Ctrl+C* technique to access the boot menu.
 
-. Select one of the boot options as appropriate; if prompted type *yes* to continue.
+. Select one of the boot options from the menu as appropriate; if prompted type *yes* to continue.
 
 . Use the cluster setup wizard to configure a node management LIF, subnet, and gateway.
 +
-This will be used by System Manager to detect the node for addition into the cluster. Enter the configuration as prompted, including port, IP address, netmask, and default gateway.
+This will be used by System Manager to detect the node to be added to the cluster. Enter the configuration as prompted, including port, IP address, netmask, and default gateway.
 
 . Press *CTL+C* to access the CLI.
 
@@ -59,6 +63,27 @@ This will be used by System Manager to detect the node for addition into the clu
 `afx> net int modify -vserver Cluster -lif clus2 -address 192.168.76.226`
 
 . Repeat the above steps on the other ONTAP AFX node controller.
+
+. Access the System Manager using the cluster management IP address
+
+. In System Manager, select *Cluster* and then *Overview*; select the *Nodes* tab.
+
+. Locate the section *Not part of this cluster*; select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
++
+* If the nodes were discovered before the cluster interconnect IP addresses are changed, you'll need to re-discover the nodes by exiting the window and navigating back.
+* You can optionally use the CLI to add the nodes instead of System Manager; see the command `cluster add-node`.
+
+. Provide the configuration details in the *Add nodes* menu; management IP addresses can be added manually or using a subnet.
+
+. Connect to the ONTAP CLI to monitor the status of the node add operation:
++
+`afx> add-node-status`
+
+. Confirm the volume placement across all nodes after the operations have completed; issue the command once for each node using the appropriate name:
++
+`afx> set advanced`
++
+`afx> vol show -fields node,size,constituent-count -is-constituent true -node NODE_NAME`
 
 .What's next?
 
