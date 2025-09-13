@@ -109,8 +109,8 @@ You'll need the following:
 
 .Related information
 
-* link:../system-admin/index.html[Learn about cluster administration with the ONTAP CLI^]
-* link:../system-admin/set-privilege-level-task.html[Set the privilege level in the ONTAP CLI^]
+* https://docs.netapp.com/us-en/ontap/system-admin/set-privilege-level-task.html[Set the privilege level in the ONTAP CLI^]
+* https://docs.netapp.com/us-en/ontap/system-admin/index.html[Learn about cluster administration with the ONTAP CLI^]
 
 == Confirm AFX system health
 
