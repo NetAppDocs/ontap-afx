@@ -19,10 +19,7 @@ This FAQ list provides answers to common questions customers typically have abou
 This FAQ list is organized in several major sections by category.
 
 // Comment to reviewers:
-[big red]*DP: Justin provided a very large FAQ document (Sept 2). I haven't added all the entries yet and so this list will grow before product launch.*
-
-// Comments for reviewers:
-[big red]*DP: Are the following entries acceptable to include in the advanced technical section of this FAQ page?*
+[big red]*DP: Justin provided a very large FAQ document (Sept 2). I haven't added all the entries yet and so this list will grow before product launch. Also, are the following entries acceptable to include in the advanced technical section of this FAQ page?*
  
 [big red]*- automated topology management (ATM)*
 [big red]*- volume placement API*
