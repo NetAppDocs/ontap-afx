@@ -12,7 +12,7 @@ summary:
 You can expand the compute capability of an ONTAP AFX cluster independent of the storage capacity. The expansion is performance without disruption. This is a significant benefit as you adjust to the ongoing needs of your storage users.
 
 // Comment to reviewers:
-[big red]*This content was taken from the EAP plan.*
+[big red]*DP: The content on this page was taken from the EAP plan.*
 
 .About this task
 
