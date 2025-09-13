@@ -4,12 +4,12 @@ permalink: administer/display-svms.html
 keywords: 
 summary: 
 ---
-= Display and monitor the ONTAP AFX SVMs
+= Display the ONTAP AFX SVMs
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can display and monitor the data storage VMs defined in your ONTAP AFX cluster. Each SVM provides an isolated environment for organizing your data and providing client access.
+You can display the data storage VMs defined in your ONTAP AFX cluster. Each SVM provides an isolated environment for organizing your data and providing client access.
 
 .Steps
 
