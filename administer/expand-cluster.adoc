@@ -9,48 +9,50 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can expand the compute capability of an ONTAP AFX cluster independent of the storage capacity. The expansion is performed without disruption. This is a significant benefit as you adjust to the ongoing needs of your storage users.
+You can expand the compute capability of an ONTAP AFX cluster independent of the storage capacity. The expansion is performed without disruption and increases performance scaling linearly as volumes are rebalanced across the nodes. This feature is a significant benefit as you adjust to the ongoing needs of your AFX storage users.
 
 // Comment to reviewers:
 [big red]*DP: The content on this page was taken from the EAP plan.*
 
 .About this task
 
-You must add an even number of compute nodes to an ONTAP AFX cluster. This procedure describes how to add two nodes to an existing cluster. You'll need to use both the ONTAP CLI and System Manager administrative interfaces.
+This procedure describes how to add two nodes to an existing cluster but can be adapted to any deployment environment. You'll need to use both the ONTAP CLI and System Manager administrative interfaces.
 
 .Before you begin
 
-You need the credentials for a cluster administrator account and be able to connect to the ONTAP CLI using SSH.
+You need the credentials for a cluster administrator account and be able to connect to the ONTAP CLI using SSH. When expanding a cluster, you must add an even number of compute nodes and adhere to the size limitations of your ONTAP AFX system.
 
 .Steps
 
-. Connect to the ONTAP CLI and set the advanced privilege level:
+. Connect to the ONTAP CLI and set advanced privilege level:
 +
 `afx> set advanced`
 
-. Check the volume locations of the current nodes; note the number of volumes per node:
+. Display the volume locations of the current nodes; note the number of volumes per node:
 +
 `afx> vol show -fields node,size,constituent-count -is-constituent true -node *`
 
-. Display and record the cluster interconnect IP addresses and save them for use in later steps:
+. Display the cluster interconnect IP addresses and save for use in later steps:
 +
 `afx> net int show -role cluster`
 
-. Log into the service processor of the node or nodes you wish to add to the cluster.
+. Log into the service processor of each node you wish to add to the cluster.
 
 . From the prompt, type *system console* to access the node’s console.
 
-. Boot the node to get to the boot menu prompt:
+. Boot the node to display the boot menu prompt:
 +
 `LOADER> boot_ontap menu`
 +
 If the menu does not load, use the *Ctrl+C* technique to access the boot menu.
 
 . Select one of the boot options from the menu as appropriate; if prompted type *yes* to continue.
++
+If you get sent back to LOADER from here, type *boot_ontap* at the LOADER prompt.
 
 . Use the cluster setup wizard to configure a node management LIF, subnet, and gateway.
 +
-This will be used by System Manager to detect the node to be added to the cluster. Enter the configuration as prompted, including port, IP address, netmask, and default gateway.
+This configuration will be used by System Manager to detect the node to be added to the cluster. Enter the values as prompted, including port, IP address, netmask, and default gateway.
 
 . Press *CTL+C* to access the CLI.
 
@@ -58,13 +60,15 @@ This will be used by System Manager to detect the node to be added to the cluste
 +
 `afx> net int show -role cluster`
 +
-`afx> net int modify -vserver Cluster -lif clus1 -address 192.168.76.222`
+`afx> net int modify -vserver Cluster -lif clus1 -address 192.168.100.201`
 +
-`afx> net int modify -vserver Cluster -lif clus2 -address 192.168.76.226`
+`afx> net int modify -vserver Cluster -lif clus2 -address 192.168.100.202`
++
+This step is only needed if the other interfaces do not use the 169.254.x.x addresses that ONTAP auto creates.
 
 . Repeat the above steps on the other ONTAP AFX node controller.
 
-. Access the System Manager using the cluster management IP address
+. Access the System Manager using the cluster management IP address.
 
 . In System Manager, select *Cluster* and then *Overview*; select the *Nodes* tab.
 
@@ -73,18 +77,20 @@ This will be used by System Manager to detect the node to be added to the cluste
 * If the nodes were discovered before the cluster interconnect IP addresses are changed, you'll need to re-discover the nodes by exiting the window and navigating back.
 * You can optionally use the CLI to add the nodes instead of System Manager; see the command `cluster add-node`.
 
-. Provide the configuration details in the *Add nodes* menu; management IP addresses can be added manually or using a subnet.
+. Provide the configuration details in the *Add nodes* menu; you can add management IP addresses manually or using a subnet.
 
 . Connect to the ONTAP CLI to monitor the status of the node add operation:
 +
 `afx> add-node-status`
 
-. Confirm the volume placement across all nodes after the operations have completed; issue the command once for each node using the appropriate name:
+. After the operations have completed, confirm the volume placement across all nodes; issue the command once for each node using the appropriate node name:
 +
 `afx> set advanced`
 +
 `afx> vol show -fields node,size,constituent-count -is-constituent true -node NODE_NAME`
 
-.What's next?
+.Result
 
-You should monitor the updated cluster and continue to adjust the configuration as needed.
+* Adding new nodes to the cluster should be nondisruptive.
+* Volume moves should happen automatically.
+* Performance should scale linearly.
