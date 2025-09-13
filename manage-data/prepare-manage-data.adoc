@@ -38,14 +38,14 @@ A qtree is a logical subdivision within a volume that you can create to manage a
 Quota::
 A quota in ONTAP is a limit set on the amount of storage space or number of files that can be used by a user, group, or qtree. Quotas are used to manage and control resource usage within a storage system, ensuring that no single user or application can consume an excessive amount of resources.
 
-== Storage and deployment limitations
+== ONTAP AFX deployment limitations
 
-There are several limits, including minimums and maximums, enforced by ONTAP AFX. These limits fall into several different categories, including:
+There are several limits, including minimums and maximums, enforced by ONTAP AFX when configuring and using your cluster. These limits fall into several different categories, including:
 
 * Nodes per cluster
 * Storage capacity
 
-NetApp expects to rapidly expand the AFX capabilities and so these values will change, including within a single ONTAP release. You should review the information at the Interoperability Matrix Tool (IMT) to determine the capabilities of your cluster.
+NetApp expects to expand the AFX capabilities and so these limitations will change, possibly frequentlky and within ONTAP releases. You should review the information available at the Interoperability Matrix Tool (IMT) to determine the capabilities of your cluster.
 
 // Each cluster must have a minimum of four nodes and a maximum of eight.
 // There is a limit of 2PB that can be allocated for the entire cluster.

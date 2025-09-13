@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: faq/faq-ontap-afx.html
+permalink: faq-ontap-afx.html
 keywords: 
 summary: 
 ---
