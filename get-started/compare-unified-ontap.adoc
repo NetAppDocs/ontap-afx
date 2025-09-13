@@ -24,7 +24,7 @@ There are several new and updated features available with ONTAP AFX. Review the 
 
 * link:../get-started/system-design.html[ONTAP AFX system characteristics]
 * link:../get-started/software-architecture.html[Details of the ONTAP AFX architecture]
-* link:../faq/faq-general-ontap-afx.html[FAQ for ONTAP AFX storage systems]
+* link:../faq-ontap-afx.html[FAQ for ONTAP AFX storage systems]
 
 == Configuration differences with Unified ONTAP
 

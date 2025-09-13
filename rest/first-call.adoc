@@ -44,4 +44,4 @@ curl --request GET \
 
 .Related information
 
-* link:../faq/faq-general-ontap-afx.html[FAQ for ONTAP AFX storage systems]
+* link:../faq-ontap-afx.html[FAQ for ONTAP AFX storage systems]
