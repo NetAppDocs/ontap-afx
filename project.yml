@@ -16,7 +16,8 @@ sidebar:
   - section: svm-admin
   - section: rest
   - section: learn-more
-  - section: faq
+  - title: FAQ
+    url: /faq-ontap-afx.html
   - title: Legal notices
     url: /legal-notices.html
 
