@@ -10,3 +10,5 @@ summary:
 
 [.lead]
 Go to the https://docs.netapp.com/us-en/ontap-systems/asa-r2-landing-maintain/index.html[ONTAP AFX maintenance documentation^] to learn how to perform maintenance procedures on your ONTAP AFX storage system.
+
+[big red]*DP: I modeled this after the equivalent page in the ASA r2 documentation. I will need to update the link included above.*
