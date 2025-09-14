@@ -12,7 +12,7 @@ summary:
 Comparing ONTAP AFX to Unified ONTAP provides a valuable perspective and can be helpful when evaluating AFX for your environment.
 
 // Comment to reviewers:
-[big red]*DP: Do we want to add a list of unsupported CLI commands? For example, commands that might have been moved to diag level?*
+[big red]*DP: Do we need to add a list of unsupported CLI commands? For example, commands that might have been moved to diag level?*
 
 == New platform built on Unified ONTAP
 

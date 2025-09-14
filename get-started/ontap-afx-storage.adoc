@@ -26,7 +26,7 @@ ONTAP AFX is designed as a next generation data platform and is specifically tar
 The NetApp ONTAP AFX storage system delivers a unified hardware and software solution that creates a simplified experience specific to the needs of high-performance NAS customers.
 
 // Comment to reviewers:
-[big red]*DP: Please confirm the following information. Are we missing anything?*
+[big red]*DP: Please confirm the following information. Are we missing anything in this list?*
 
 The following hardware platforms are used with and support ONTAP AFX:
 

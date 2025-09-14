@@ -9,7 +9,11 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-Snapshot replication is a process in which consistency groups on your ASA r2 system are copied to a geographically remote location. After the initial replication, changes to consistency groups are copied to the remote location based upon a replication policy. Replicated consistency groups can be used for disaster recovery or data migration.
+Snapshot replication is a process in which consistency groups on your ONTAP AFX system are copied to a geographically remote location. After the initial replication, changes to consistency groups are copied to the remote location based upon a replication policy. Replicated consistency groups can be used for disaster recovery or data migration.
+
+== Before you begin
+
+xxx ???
 
 //[NOTE]
 //Snapshot replication for an ASA r2 storage system is only supported to and from another ASA r2 storage system.  You cannot replicate snapshots from an ASA r2 system to a current ASA, AFF or FAS system or from a current ASA, AFF or FAS system to an ASA r2 system.  
@@ -80,7 +84,7 @@ You have created a replication policy and are now ready to create a replication 
 
 == Step 3: Create a replication relationship
 
-A snapshot replication relationship establishes a connection between your ASA r2 system and a remote location so that you can replicate consistency groups to a remote cluster. Replicated consistency groups can be used for disaster recovery or for data migration. 
+A snapshot replication relationship establishes a connection between your ONTAP AFX system and a remote location so that you can replicate consistency groups to a remote cluster. Replicated consistency groups can be used for disaster recovery or for data migration. 
 
 For protection against ransomware attacks, when you set up your replication relationship, you can select to lock the destination snapshots. Locked snapshots cannot be deleted accidentally or maliciously.  You can use locked snapshots to recover data if a storage unit is compromised by a ransomware attack.
 
@@ -164,7 +168,7 @@ Your transfer schedule must be a minimum of 30 minutes to be supported.
 
 .What's next?
 
-Now that you have created a replication policy and relationship, your initial data transfer begins as defined in your replication policy.  You can optionally test your replication failover to verify that successful failover can occur if your ASA r2 system goes offline.
+Now that you have created a replication policy and relationship, your initial data transfer begins as defined in your replication policy.  You can optionally test your replication failover to verify that successful failover can occur if your ONTAP AFX system goes offline.
 
 == Step 4: Test replication failover
 
