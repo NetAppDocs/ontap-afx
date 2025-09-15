@@ -20,7 +20,6 @@ This FAQ list provides answers to common questions customers typically have abou
  
 [big red]*- automated topology management (ATM)*
 [big red]*- volume placement API*
-[big red]*- zero copy volume move*
 
 == General concepts and terminology
 
@@ -53,18 +52,14 @@ An important concept to begin with is the decoupling the compute capability in t
 
 The second related concept with disaggregated storage is that the aggregates and RAID management are removed as administrable entities. A storage abstraction layer within ONTAP AFX automatically configures and manages the aggregates, physical disks, and RAID groups. This allows the administrator to focus on the higher level storage configuration based on volumes and buckets.
 
-.Storage Availability Zone
+.Where is Unified ONTAP more appropriate than ONTAP AFX?
 
-A Storage Availability Zone (SAZ) is the formal name for the collection of disks and storage shelves attached to a single ONTAP AFX cluster. Every disk and shelf in the SAZ can participate in read and write operations. Only one SAZ per AFX cluster is supported and a SAZ cannot be shared across clusters (except for SnapMirror replication). When shelves are added to the cluster, ONTAP automatically adds the disks to the SAZ. The SAZ can also be referred to as a capacity pool, storage pool, or storage pod.
-
-.Where is Unified ONTAP still more appropriate?
-
-Unified ONTAP is the premier enterprise storage solution for a wide variety of workloads. Some main of the benefits of remaining on Unified ONTAP include:
+Unified ONTAP is the premier enterprise storage solution for a wide variety of workloads. Some main of the benefits of continuing to use Unified ONTAP include:
 
 * Familiar architecture 
 * Benefits of disaggregated ONTAP do not outweigh the downsides of data migration 
 * Wider range of supported platforms and disk shelves
-* Earlier supported ONTAP versions
+* Earlier supported ONTAP versions (priot to ONTAP 9.17.1)
 * No requirement for extremely high performance or independent scaling
 * No need for a larger number of nodes
 * SAN support is required 
@@ -86,6 +81,10 @@ No. ONTAP AFX and Unified ONTAP cannot co-exist within the same cluster.
 SnapMirror version rules for Unified ONTAP are identical for disaggregated ONTAP. This means that to replicate from Unified ONTAP, the source system must be within the supported version range. To replicate from disaggregated ONTAP, the Unified ONTAP system must be at ONTAP 9.16.1 or later (that is, the earliest release Advanced Capacity Balancing is supported). For FlexCache, the same rules apply for source and destination systems as provided in https://www.netapp.com/pdf.html?item=/media/7336-tr4743.pdf[TR-4743^].
 
 == Advanced technical concepts
+
+.Storage Availability Zone
+
+A Storage Availability Zone (SAZ) is the formal name for the collection of disks and storage shelves attached to a single ONTAP AFX cluster. Every disk and shelf in the SAZ can participate in read and write operations. Only one SAZ per AFX cluster is supported and a SAZ cannot be shared across clusters (except for SnapMirror replication). When shelves are added to the cluster, ONTAP automatically adds the disks to the SAZ. The SAZ can also be referred to as a capacity pool, storage pool, or storage pod.
  
 .What are the supported data protocols in disaggregated ONTAP?
 
@@ -106,7 +105,7 @@ Yes.
 
 .Is Advanced Disk Partitioning (ADP) used in ONTAP AFX?
 
- No. ADP is not used with ONTAP AFX. Because there are no root aggregates, ADP is not needed to maximize disk space efficiency.
+No. ADP is not used with ONTAP AFX. Because there are no root aggregates, ADP is not needed to maximize disk space efficiency.
 
 .How does a volume move work in Unified ONTAP versus ONTAP AFX?
 
@@ -118,7 +117,7 @@ Note that in the initial release, volumes will move only in storage failover sce
 
 .Can I use different switch types for the backend network? 
 
-No, only the switches specifically approved and provided with the ONTAP AFX platform are supported for use for the backend network.
+No. Only the switches specifically approved for and provided with the ONTAP AFX platform are supported for the backend network.
 
 == Cloud and 1P partners
 
