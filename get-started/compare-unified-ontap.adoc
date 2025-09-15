@@ -12,7 +12,7 @@ summary:
 Comparing ONTAP AFX to Unified ONTAP provides a valuable perspective and can be helpful when evaluating AFX for your environment.
 
 // Comment to reviewers:
-[big red]*DP: Do we need to add a list of unsupported CLI commands? For example, commands that might have been moved to diag level?*
+[big red]*DP: Do we need to add a list of unsupported CLI commands? See the last section on this page as a start.*
 
 == New platform built on Unified ONTAP
 
@@ -49,6 +49,13 @@ You should review the updates and changes for ONTAP AFX in the appropriate link:
 
 The following features, organized in several categories, are not available or have changed with the initial release of ONTAP AFX.
 
+.General features
+
+* FabricPool
+* AI based anti-ransomware protection
+* ONTAPI API (ZAPI)
+* Active IQ Unified Manager
+
 .SAN-related features
 
 * SAN administration and client access
@@ -59,16 +66,27 @@ The following features, organized in several categories, are not available or ha
 
 The following aggregate-related features are not available with the initial release of ONTAP AFX:
 
-* Direct disk aggregate and RAID management
-* SyncMirror (aggregate mirroring)
+* Direct access to disk aggregates
 * Aggregate encryption and placement
-
-.General features
-
-* FabricPool
-* AI based anti-ransomware protection
+* Aggregate-level deduplication
+* SyncMirror (aggregate mirroring)
+* RAID management
 
 .Data replication
 
 * No replication of a volume from Unified ONTAP that contains a LUN
 * FlexGroup volumes can only be replicated to ONTAP 9.16.1 or later
+
+== Changes to the command line interface
+
+The CLI available with ONTAP AFX generally mirrors Unified ONTAP. But there are several differences, including:
+
+* New commands related to:
+** Displaying the storage availability zone capacity 
+** Boot media
+
+* No SAN-related commands 
+
+* Aggregate management commands are no longer required
+
+* FlexAggr commands can only show the FlexAggrs

@@ -20,7 +20,7 @@ In addition to the common ONTAP AFX cluster administration tasks, there may be o
 
 == Licensing
 
-An ONTAP AFX cluster includes many features by default. You can install license files to activate additional features as needed.
+ONTAP AFX is licensed in a similar way to existing ONTAP AFF systems. An ONTAP AFX cluster includes many features by default as appropirate for the protocols supported. You can install license files to activate additional features as needed.
 
 .Steps
 

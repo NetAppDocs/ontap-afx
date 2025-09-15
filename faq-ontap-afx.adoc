@@ -21,7 +21,6 @@ This FAQ list provides answers to common questions customers typically have abou
 [big red]*- automated topology management (ATM)*
 [big red]*- volume placement API*
 [big red]*- zero copy volume move*
-[big red]*- storage availability zone*
 
 == General concepts and terminology
 
@@ -54,19 +53,35 @@ An important concept to begin with is the decoupling the compute capability in t
 
 The second related concept with disaggregated storage is that the aggregates and RAID management are removed as administrable entities. A storage abstraction layer within ONTAP AFX automatically configures and manages the aggregates, physical disks, and RAID groups. This allows the administrator to focus on the higher level storage configuration based on volumes and buckets.
 
+.Storage Availability Zone
+
+A Storage Availability Zone (SAZ) is the formal name for the collection of disks and storage shelves attached to a single ONTAP AFX cluster. Every disk and shelf in the SAZ can participate in read and write operations. Only one SAZ per AFX cluster is supported and a SAZ cannot be shared across clusters (except for SnapMirror replication). When shelves are added to the cluster, ONTAP automatically adds the disks to the SAZ. The SAZ can also be referred to as a capacity pool, storage pool, or storage pod.
+
+.Where is Unified ONTAP still more appropriate?
+
+Unified ONTAP is the premier enterprise storage solution for a wide variety of workloads. Some main of the benefits of remaining on Unified ONTAP include:
+
+* Familiar architecture 
+* Benefits of disaggregated ONTAP do not outweigh the downsides of data migration 
+* Wider range of supported platforms and disk shelves
+* Earlier supported ONTAP versions
+* No requirement for extremely high performance or independent scaling
+* No need for a larger number of nodes
+* SAN support is required 
+
 == Sales and product positioning
 
-.What are the intended targeted workloads for disaggregated ONTAP?
+.What are the intended targeted workloads for ONTAP AFX?
 
 This architecture has been designed with artificial intelligence (AI), machine learning (ML), and large language model (LLM) workloads in mind. These are specifically those applications with high throughput requirements, such as AI training and inference. As a secondary market, disaggregated ONTAP can also be effective with EDA and Media/Entertainment workloads. However, due to the ONTAP AFX requirements (minimum cluster size, hardware type), Unified ONTAP may be the more appropriate choice in this case.
 
 == Interoperability
 
-.Can I use disaggregated ONTAP in the same cluster as Unified ONTAP? 
+.Can I use ONTAP AFX in the same cluster as Unified ONTAP? 
 
-No. Disaggregated ONTAP and Unified ONTAP cannon co-exist within the same cluster. 
+No. ONTAP AFX and Unified ONTAP cannot co-exist within the same cluster. 
 
-.If I want to use Unified ONTAP with disaggregated ONTAP for SnapMirror or FlexCache, what ONTAP version will I need?
+.If I want to use Unified ONTAP with ONTAP AFX for SnapMirror or FlexCache, what ONTAP version will I need?
 
 SnapMirror version rules for Unified ONTAP are identical for disaggregated ONTAP. This means that to replicate from Unified ONTAP, the source system must be within the supported version range. To replicate from disaggregated ONTAP, the Unified ONTAP system must be at ONTAP 9.16.1 or later (that is, the earliest release Advanced Capacity Balancing is supported). For FlexCache, the same rules apply for source and destination systems as provided in https://www.netapp.com/pdf.html?item=/media/7336-tr4743.pdf[TR-4743^].
 
@@ -80,6 +95,30 @@ The data protocols supported in disaggregated ONTAP include the following:
 * SMB2.x, SMB3.x
 * S3
 * NDMP
+
+.Do data protocols operate differently in ONTAP AFX?
+
+No. The data protocols in ONTAP AFX operate identically compared to Unified ONTAP. 
+
+.Does ONTAP AFX support 400Gbe networking? 
+
+Yes.
+
+.Is Advanced Disk Partitioning (ADP) used in ONTAP AFX?
+
+ No. ADP is not used with ONTAP AFX. Because there are no root aggregates, ADP is not needed to maximize disk space efficiency.
+
+.How does a volume move work in Unified ONTAP versus ONTAP AFX?
+
+With Unified ONTAP, it is possible to relocate a volume nondisrutptively from one node or aggregate to another in the cluster. This is performed using background copy operation with SnapMirror technology, where a new destination volume is created at the new location. Depending on the size of the volume and the utilization of cluster resources, the time it takes for a a volume move to complete can vary in Unified ONTAP.
+
+With ONTAP AFX, there are no aggregates. All storage capacity is contained within a single Storage Availability Zone which every cluster node has visibility to. As a result, volume moves never need to actually copy the. Instead, all volume moves happen based on pointer updates between nodes. This happens instantaneously because no data is copied or moved.
+
+Note that in the initial release, volumes will move only in storage failover scenarios and when nodes are added or removed from the cluster and are controlled only via ONTAP.
+
+.Can I use different switch types for the backend network? 
+
+No, only the switches specifically approved and provided with the ONTAP AFX platform are supported for use for the backend network.
 
 == Cloud and 1P partners
 
