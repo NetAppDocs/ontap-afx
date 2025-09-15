@@ -12,7 +12,7 @@ summary:
 In addition to the common ONTAP AFX cluster administration tasks, there may be other tasks you need to perform based on your environment. Most of the additional tasks can be performed using System Manager, although in some cases you may need to use the CLI or REST API.
 
 // Comment to reviewers:
-[big red]*DP: This page is a catch all "bucket" for cluster administration topics that we'll only briefly describe and link to at the Unified ONTAP doc. We expect this page to grow.*
+[big red]*DP: This page is a catch all "bucket" for cluster administration topics that don't justify a dedicated page. We'll briefly describe and link to at the Unified ONTAP doc. We expect this page to grow.*
 
 .Related information
 

@@ -40,7 +40,7 @@ A quota in ONTAP is a limit set on the amount of storage space or number of file
 
 == ONTAP AFX deployment limitations
 
-[big red]*DP: Have link to IMT below. Should this also or instead include HWU?*
+[big red]*DP: I have included a link to the IMT below. Should this also (or instead) include HWU?*
 
 There are several limitations, including minimums and maximums, enforced by ONTAP AFX when configuring and using your cluster. These limits fall into several different categories, including:
 
