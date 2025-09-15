@@ -11,11 +11,6 @@ summary:
 [.lead]
 Before managing your ONTAP AFX data, you should be familiar with the terminology and key concepts.
 
-.Related information
-
-* link:../administer/additional-ontap-svm.html[Additional ONTAP AFX SVM administration]
-* link:../administer/additional-ontap-cluster.html[Additional ONTAP AFX cluster administration]
-
 == Storage terminology and options
 
 There are several terms related to ONTAP AFX storage you should be familiar with.
@@ -40,7 +35,7 @@ A quota in ONTAP is a limit set on the amount of storage space or number of file
 
 == ONTAP AFX deployment limitations
 
-[big red]*DP: I have included a link to the IMT below. Should this also (or instead) include HWU?*
+[big red]*DP: I have included a link to the IMT below. Should this also (or instead) include a link to HWU?*
 
 There are several limitations, including minimums and maximums, enforced by ONTAP AFX when configuring and using your cluster. These limits fall into several different categories, including:
 
@@ -78,7 +73,7 @@ Note that SnapLock is supported in the first release of the ONTAP AFX. In additi
 
 Data migration from non-ONTAP systems can be performed using file-level copy operations. Fast copy utilities such as XCP or CloudSync can be used as well as standard copy utilities like RoboCopy (for SMB) and rsync (for NFS) as well as third-party tools such as DataDobi.
 
-== Limitations
+=== Migration limitations
 
 Existing Unified ONTAP systems can replicate to ONTAP AFX if the data volume does not contain LUNs or NVMe namespaces. When replicating to a Unified ONTAP system, the minimum supported version for the Unified ONTAP system is 9.16.1. This is the first Unified ONTAP release that supports Advanced Capacity Balancing.
 

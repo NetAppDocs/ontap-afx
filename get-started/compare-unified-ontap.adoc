@@ -89,4 +89,4 @@ The CLI available with ONTAP AFX generally mirrors Unified ONTAP. But there are 
 
 * Aggregate management commands are no longer required
 
-* FlexAggr commands can only show the FlexAggrs
+* FlexAggr commands can only display or show the FlexAggrs
