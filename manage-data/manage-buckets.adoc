@@ -9,7 +9,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-There are several administrative tasks you can perform as part of managing the ONTAP AFX S3 buckets and client access. The S3 configuration and support in ONTAP AFX is the same as provided with Unified ONTAP. Refer to the Unified ONTAP documentation beginning with learning more about S3 configuration.
+There are several administrative tasks you can perform as part of managing ONTAP AFX S3 buckets and client access. S3 configuration and support in ONTAP AFX is the same as provided with Unified ONTAP. Refer to the Unified ONTAP documentation for details.
 
 .Related information
 

@@ -9,7 +9,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-Migrating a data SVM from one ONTAP cluster to another is an important administrative task. This can be used to relocate functionality or as part of a backup or disaster recovery strategy.
+You can migrate a data SVM from one ONTAP AFX cluster to another. This can be used to relocate the SVM as well as part of a backup or disaster recovery strategy. SVM migration with ONTAP AFX is the same as provided with Unified ONTAP; refer to the Unified ONTAP documentation for details.
 
 .Related information
 
