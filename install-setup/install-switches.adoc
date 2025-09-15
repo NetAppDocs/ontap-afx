@@ -40,14 +40,14 @@ NOTE: The jumper cords are not included with the pass-through kit and should be 
  .. Center the panel vertically to prevent intrusion into adjacent rack space, and then tighten the screws.
  .. Insert the female connectors of both jumper cords from the rear of the panel and through the brush assembly.
 +
-image::../media/cisco_9148_jumper_cords.gif[]
+image::../media/cisco_9148_jumper_cords.gif[Female connectors of jumper cord]
 +
 [cols="1,4"]
 |===
 a|
 image::../media/icon_round_1.png[Callout number 1]
 a|
-_(1) Female connector of the jumper cord._
+Female connector of the jumper cord.
 |===
 
 . Install the rack-mount brackets on the switch chassis.
