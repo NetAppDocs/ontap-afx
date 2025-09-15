@@ -112,6 +112,10 @@ You'll need the following:
 * https://docs.netapp.com/us-en/ontap/system-admin/set-privilege-level-task.html[Set the privilege level in the ONTAP CLI^]
 * https://docs.netapp.com/us-en/ontap/system-admin/index.html[Learn about cluster administration with the ONTAP CLI^]
 
+== Working with high-availability pairs
+
+As with Unified ONTAP, AFX cluster nodes are configured in high-availability (HA) pairs for fault tolerance and nondisruptive operations. HA pairing provides the ability for storage operations to stay online in the event of a node failure, such as a storage failover. With Unified ONTAP, each node is partnered with another node to form a single pair. This is generally done using a dedicated connection between the two node’s NVRAM modules. With disaggregated ONTAP, a new HA VLAN is added to the backend cluster switches to enable NVRAM modules to stay connected between the HA partner nodes. In the initial AFX release, HA is still handled using HA pairs, but there is no longer a need for the partner nodes to be directly connected to one another.
+
 == Confirm AFX system health
 
 Before performing any ONTAP AFX administration tasks, you should check the health of the cluster.
