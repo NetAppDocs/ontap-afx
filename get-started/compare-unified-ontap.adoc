@@ -81,8 +81,8 @@ The following aggregate-related features are not available with the initial rele
 
 The CLI available with ONTAP AFX generally mirrors Unified ONTAP. But there are several differences, including:
 
-* New commands related to:
-** Displaying the storage availability zone capacity 
+* New AFX commands related to:
+** Displaying the capacity of the storage availability zone
 ** Boot media
 
 * No SAN-related commands 

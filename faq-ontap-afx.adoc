@@ -95,7 +95,7 @@ The data protocols supported in disaggregated ONTAP include the following:
 * S3
 * NDMP
 
-.Do data protocols operate differently in ONTAP AFX?
+.Do the data protocols operate differently in ONTAP AFX?
 
 No. The data protocols in ONTAP AFX operate identically compared to Unified ONTAP. 
 
