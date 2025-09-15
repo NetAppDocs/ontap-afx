@@ -40,6 +40,8 @@ A quota in ONTAP is a limit set on the amount of storage space or number of file
 
 == ONTAP AFX deployment limitations
 
+[big red]*DP: Have link to IMT below. Should this also or instead include HWU?*
+
 There are several limitations, including minimums and maximums, enforced by ONTAP AFX when configuring and using your cluster. These limits fall into several different categories, including:
 
 * Nodes per cluster
@@ -66,7 +68,7 @@ A fully integrated migration path from unified ONTAP to disaggregated ONTAP is a
 * SVM Migrate
 * SVM DR
 
-Note that SnapLock is supported in the first release of the ONTAP AFX. In addition, FlexCache volumes can be attached to or from Unified ONTAP to or ONTAP AFX.
+Note that SnapLock is supported in the first release of the ONTAP AFX. In addition, FlexCache volumes can be attached between ONTAP AFX and Unified ONTAP in either direction.
 
 .Related information
 
@@ -74,14 +76,11 @@ Note that SnapLock is supported in the first release of the ONTAP AFX. In additi
 
 === Migrating data from a non-ONTAP source
 
-Data migration from non-ONTAP systems involves file-level copy operations. Fast copy utilities such as XCP or CloudSync can be used as well as standard copy utilities like RoboCopy (for SMB), rsync (for NFS), or third-party tools such as DataDobi.
+Data migration from non-ONTAP systems can be performed using file-level copy operations. Fast copy utilities such as XCP or CloudSync can be used as well as standard copy utilities like RoboCopy (for SMB) and rsync (for NFS) as well as third-party tools such as DataDobi.
 
 == Limitations
 
-Existing Unified ONTAP systems can replicate to ONTAP AFX if the data volume: 
-
-* Does not contain LUNs or NVMe namespaces
-* If replicating to a Unified ONTAP system the minimum supported ONTAP version for the Unified ONTAP system is 9.16.1. This is the first ONTAP release supporting Advanced Capacity Balancing.
+Existing Unified ONTAP systems can replicate to ONTAP AFX if the data volume does not contain LUNs or NVMe namespaces. When replicating to a Unified ONTAP system, the minimum supported version for the Unified ONTAP system is 9.16.1. This is the first Unified ONTAP release that supports Advanced Capacity Balancing.
 
 == ONTAP AFX support for NFS trunking
 
