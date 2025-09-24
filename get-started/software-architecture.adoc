@@ -62,4 +62,5 @@ The following illustrates a typical deployment of an ONTAP AFX cluster. Notice t
 // Comment to reviewers:
 [big red]*DP: Sometime after 9/22, I will update and enhance this figure based on recent feedback from Chris.*
 
-image:oam-architecture.png[OAM architecture]
+image:afx-arch.png[AFX architecture]
+//image:oam-architecture.png[OAM architecture]
