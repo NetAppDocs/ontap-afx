@@ -12,9 +12,6 @@ summary:
 [.lead]
 Before deploying ONTAP AFX in a production environment, it’s essential to understand the administrative structure and options. This will ensure secure, efficient, and effective management of your AFX cluster.
 
-// Comment to reviewers:
-[big red]*DP: In addition to information specific to AFX, this page also includes general content that will be helpful for customers new to ONTAP.*
-
 == Understand storage virtual machines
 
 A storage virtual machine (SVM) is an isolated server or tenant environment within an ONTAP cluster. You can configure an SVM to serve data to the connected clients. You should be familiar with the capabilities and characteristics of the ONTAP AFX SVMs.
@@ -71,10 +68,6 @@ The System Manager user interface is preferred for most administrative tasks. Yo
 |ONTAP AFX includes a REST API you can use to automate the administration of your AFX cluster. The API is based on the Unified ONTAP REST API with modifications to support the unique AFX features and restrictions.
 |===
 
-.Related information
-
-* https://docs.netapp.com/us-en/ontap/concepts/introducing-ontap-interfaces-concept.html[ONTAP user interfaces^]
-
 == Learn to search, filter, and sort information in System Manager
 
 The System Manager user interface includes a robust set of features enabling you to access and display the information you need. Learning to use these capabilities will help you to better administer the ONTAP AFX storage system. See https://docs.netapp.com/us-en/ontap/task_admin_search_filter_sort.html[Search, filter, sort information in System Manager^] for more information.
@@ -106,11 +99,6 @@ You'll need the following:
 . Display the command directories at the top of the hierarchy:
 +
 `?`
-
-.Related information
-
-* https://docs.netapp.com/us-en/ontap/system-admin/set-privilege-level-task.html[Set the privilege level in the ONTAP CLI^]
-* https://docs.netapp.com/us-en/ontap/system-admin/index.html[Learn about cluster administration with the ONTAP CLI^]
 
 == Working with high-availability pairs
 
@@ -182,6 +170,12 @@ link:../manage-data/prepare-manage-data.html[Prepare] to allocate and manage a d
 
 NetApp offers ONTAP in three distinct personalities. Where appropriate, this ONTAP AFX documentation includes links to topics at the Unified ONTAP doc site. The additional information provides more depth and a different perspective that can be helpful as you administer your ONTAP AFX storage system.
 
-.Related information
+== Related information
+
+* https://docs.netapp.com/us-en/ontap/concepts/introducing-ontap-interfaces-concept.html[ONTAP user interfaces^]
+
+* https://docs.netapp.com/us-en/ontap/system-admin/set-privilege-level-task.html[Set the privilege level in the ONTAP CLI^]
+
+* https://docs.netapp.com/us-en/ontap/system-admin/index.html[Learn about cluster administration with the ONTAP CLI^]
 
 * link:../faq-ontap-afx.html[FAQ for ONTAP AFX storage systems]

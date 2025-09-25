@@ -12,19 +12,13 @@ summary:
 Comparing ONTAP AFX to Unified ONTAP provides a valuable perspective and can be helpful when evaluating AFX for your environment.
 
 // Comment to reviewers:
-[big red]*DP: Do we need to add a list of unsupported CLI commands? See the last section on this page.*
+[big red]*DP: I will add a link to the AFX CLI command reference documentation in the last section when it is ready.*
 
 == New platform built on Unified ONTAP
 
 ONTAP AFX is derived from the Unified ONTAP personality. Because of this, it includes a robust set of features and administrative options. If you're an experienced ONTAP user, you'll find it very easy to work with AFX. If you're new to ONTAP, the simplified System Manager user interface and streamlined administration will help you get started quickly.
 
 There are several new and updated features available with ONTAP AFX. Review the related information for more details.
-
-.Related information
-
-* link:../get-started/system-design.html[ONTAP AFX system characteristics]
-* link:../get-started/software-architecture.html[Details of the ONTAP AFX architecture]
-* link:../faq-ontap-afx.html[FAQ for ONTAP AFX storage systems]
 
 == Configuration differences with Unified ONTAP
 
@@ -90,3 +84,9 @@ The CLI available with ONTAP AFX generally mirrors Unified ONTAP. But there are 
 * Aggregate management commands are no longer required
 
 * FlexAggr commands can only display or show the FlexAggrs
+
+== Related information
+
+* link:../get-started/system-design.html[ONTAP AFX system characteristics]
+* link:../get-started/software-architecture.html[Details of the ONTAP AFX architecture]
+* link:../faq-ontap-afx.html[FAQ for ONTAP AFX storage systems]
