@@ -9,29 +9,33 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-To back up data on your ASA r2 system, you need to create a snapshot. You can use ONTAP System Manager to create a manual snapshot of a single storage unit, or to create a consistency group and schedule automatic snapshots of multiple storage units at the same time. 
+To back up data on your ONTAP AFX system, you need to create a snapshot. You can create a snapshot manually or schedule to be created automatically using a consistency group.
 
->> Include at least two sections. One to create and another on policy. For configuring policy, link to the following toplic:
+== Before you begin
 
-https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html[Create an ONTAP snapshot policy^]
+A snapshot is a local, read-only copy of your data that you can use to restore volumes to specific points in time. Snapshots can be created manually on demand or automatically at regular intervals based on a link:policies-schedules.html[snapshot policy and schedule].
 
-A snapshot is a local, read-only copy of your data that you can use to restore storage units to specific points in time.  
-
-Snapshots can be created on demand, or they can be created automatically in regular intervals based on a link:policies-schedules.html[snapshot policy and schedule]. The snapshot policy and schedule specifies when to create the snapshots, how many copies to retain, how to name them, and how to label them for replication. For example, a system might create one snapshot every day at 12:10 a.m., retain the two most recent copies, name them “daily” (appended with a timestamp), and label them “daily” for replication.
+The snapshot policy and schedule specifies the details, including when to create the snapshots, how many copies to retain, how to name them, and how to label them for replication. For example, a system might create one snapshot every day at 12:10 a.m., retain the two most recent copies, name them “daily” (appended with a timestamp), and label them “daily” for replication.
 
 .Types of snapshots
 
-You can create an on-demand snapshot of a single storage unit or of a consistency group.  You can create automated snapshots of a consistency group containing multiple storage units.  You cannot create automated snapshots of a single storage unit.
+You can create an on-demand snapshot of a single volume or a consistency group.  You can also create automated snapshots of a consistency group containing multiple volumes. However you cannot create automated snapshots of a single volume.
 
 * On-demand snapshots
 +
-An on-demand snapshot of a storage unit can be created at any time. The storage unit does not need to be a member of a consistency group to be protected by an on-demand snapshot.  If you create an on-demand snapshot of a storage unit that is a member of a consistency group, the other storage units in the consistency group are not included in the on-demand snapshot.    If you create an on-demand snapshot of a consistency group, all the storage units in the consistency group are included in the snapshot.
+You can create an on-demand snapshot of a volume at any time. The volume does not need to be a member of a consistency group to be protected by an on-demand snapshot.  If you create a snapshot of a volume that is a member of a consistency group, the other volumes in the consistency group are not included in the snapshot. When you create an on-demand snapshot of a consistency group, all the volumes in the consistency group are included.
 
 * Automated snapshots
 +
-Automated snapshots are created using snapshot policies.  To apply a snapshot policy to a storage unit for automated snapshot creation, the storage unit must be a member of a consistency group.  If you apply a snapshot policy to a consistency group, all the storage units in the consistency group are protected with automated snapshots.
+Automated snapshots are created based on the snapshot policy definitions. To apply a snapshot policy to a volume for automated snapshot creation, the volumes needs to be a member of the same consistency group. If you apply a snapshot policy to a consistency group, all the volumes in the consistency group are protected.
 
-Create a snapshot of a consistency group or a storage unit.
+.Related information
+
+* https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html[Create an ONTAP snapshot policy^]
+
+== Create a snapshot
+
+Create a snapshot of a volume or consistency group.
 
 // start tabbed area
 
@@ -42,13 +46,13 @@ Create a snapshot of a consistency group or a storage unit.
 --
 .Steps
 
-. In System Manager, select *Protection > Consistency groups*.
+. In System Manager, select *Protection* and then *Consistency groups*.
 . Hover over the name of the consistency group you want to protect.
 . Select image:icon_kabob.gif[three vertical blue dots] ; then select *Protect*.
 
 . If you want to create an immediate snapshot on-demand, under *Local protection*, select *Add a snapshot now*.
 +
-Local protection creates the snapshot on the same cluster containing the storage unit. 
+Local protection creates the snapshot on the same cluster containing the volume.
 +
 .. Enter a name for the snapshot or accept the default name; then optionally, enter a SnapMirror label.
 +
@@ -84,16 +88,16 @@ The initial data transfer for replication starts immediately by default.
 
 --
 
-.Snapshot of storage unit
+.Snapshot of a volume
 --
 .Steps
 
-. In System Manager, select *Storage*.
-. Hover over the name of the storage unit you want to protect.
+. In System Manager, select *Storage* and then *Volumes*.
+. Hover over the name of the volume you want to protect.
 . Select image:icon_kabob.gif[three vertical blue dots] ; then select *Protect*.
  If you want to create an immediate snapshot on-demand, under *Local protection*, select *Add a snapshot now*.
 +
-Local protection creates the snapshot on the same cluster containing the storage unit. 
+Local protection creates the snapshot on the same cluster containing the volume.
 +
 . Enter a name for the snapshot or accept the default name; then optionally, enter a SnapMirror label.
 +
@@ -130,7 +134,3 @@ The initial data transfer for replication starts immediately by default.
 ====
 
 // end tabbed area
-
-.What's next?
-
-Now that your data is protected with snapshots, you should link:../secure-data/encrypt-data-at-rest.html[set up snapshot replication] to copy your consistency groups to a geographically remote location for backup and disaster recovery.

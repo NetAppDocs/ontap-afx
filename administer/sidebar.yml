@@ -27,7 +27,7 @@ entries:
       url: /administer/manage-certificates.html
   - title: Manage storage VMs
     entries:
-    - title: Display and monitor
+    - title: Display your SVMs
       url: /administer/display-svms.html
     - title: Create a data SVM
       url: /administer/create-svm.html

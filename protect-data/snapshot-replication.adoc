@@ -9,12 +9,9 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-Snapshot replication is a process in which consistency groups on your ASA r2 system are copied to a geographically remote location. After the initial replication, changes to consistency groups are copied to the remote location based upon a replication policy. Replicated consistency groups can be used for disaster recovery or data migration.
+Snapshot replication is a process in which consistency groups on your ONTAP AFX system are copied to a geographically remote location. After the initial replication, changes to consistency groups are copied to the remote location based upon a replication policy. Replicated consistency groups can be used for disaster recovery or data migration.
 
-[NOTE]
-Snapshot replication for an ASA r2 storage system is only supported to and from another ASA r2 storage system.  You cannot replicate snapshots from an ASA r2 system to a current ASA, AFF or FAS system or from a current ASA, AFF or FAS system to an ASA r2 system.  
-
-To set up Snapshot replication, you need to establish a replication relationship between your ASA r2 system and the remote location. The replication relationship is governed by a replication policy.  A default policy to replicate all snapshots is created during cluster set up.  You can use the default policy or optionally, create a new policy.
+To set up Snapshot replication, you need to establish a replication relationship between your ONTAP AFX storage system and the remote location. The replication relationship is governed by a replication policy.  A default policy to replicate all snapshots is created during cluster set up.  You can use the default policy or optionally, create a new policy.
 
 == Step 1: Create a cluster peer relationship
 
@@ -22,7 +19,7 @@ Before you can protect your data by replicating it to a remote cluster, you need
 
 .Before you begin
 
-The prerequisites for cluster peering are the same for ASA r2 systems as for other ONTAP systems.  link:https://docs.netapp.com/us-en/ontap/peering/prerequisites-cluster-peering-reference.html[Review the prerequisites for cluster peering^].
+The prerequisites for cluster peering are the same for ONTAP AFX systems as for other ONTAP systems.  link:https://docs.netapp.com/us-en/ontap/peering/prerequisites-cluster-peering-reference.html[Review the prerequisites for cluster peering^].
 
 .Steps
 
@@ -35,11 +32,11 @@ The prerequisites for cluster peering are the same for ASA r2 systems as for oth
 
 .What's next?
 
-You have peered for local ASA r2 cluster with a remote cluster.  You can now create a replication relationship.
+You have peered for local ONTAP AFX cluster with a remote cluster.  You can now create a replication relationship.
 
 == Step 2: Optionally, create a replication policy
 
-The snapshot replication policy defines when updates performed on the ASA r2 cluster are replicated to the remote site.  
+The snapshot replication policy defines when updates performed on the ONTAP AFX cluster are replicated to the remote site.  
 
 .Steps
 
@@ -48,7 +45,7 @@ The snapshot replication policy defines when updates performed on the ASA r2 clu
 . Enter a name for the replication policy or accept the default name; then enter a description.
 . Select the *Policy scope*.
 +
-If you want to apply the replication policy to the entire cluster, select *Cluster*.   If you want the replication policy applied only to the storage units in a specific storage VM, select *Storage VM*.
+If you want to apply the replication policy to the entire cluster, select *Cluster*.   If you want the replication policy applied only to the volume in a specific storage VM, select *Storage VM*.
 . Select the *Policy type*.
 +
 [cols="2,6a" options="header"]
@@ -76,15 +73,11 @@ a|
 
 .What's next?
 
-You have created a replication policy and are now ready to create a replication relationship between your ASA r2 system and your remote location.
-
-
-.For more information
-Learn more about link:../administer/manage-client-vm-access.html[storage VMs for client access].
+You have created a replication policy and are now ready to create a replication relationship between your ONTAP AFX system and your remote location.
 
 == Step 3: Create a replication relationship
 
-A snapshot replication relationship establishes a connection between your ASA r2 system and a remote location so that you can replicate consistency groups to a remote cluster. Replicated consistency groups can be used for disaster recovery or for data migration. 
+A snapshot replication relationship establishes a connection between your ONTAP AFX system and a remote location so that you can replicate consistency groups to a remote cluster. Replicated consistency groups can be used for disaster recovery or for data migration. 
 
 For protection against ransomware attacks, when you set up your replication relationship, you can select to lock the destination snapshots. Locked snapshots cannot be deleted accidentally or maliciously.  You can use locked snapshots to recover data if a storage unit is compromised by a ransomware attack.
 
@@ -168,11 +161,11 @@ Your transfer schedule must be a minimum of 30 minutes to be supported.
 
 .What's next?
 
-Now that you have created a replication policy and relationship, your initial data transfer begins as defined in your replication policy.  You can optionally test your replication failover to verify that successful failover can occur if your ASA r2 system goes offline.
+Now that you have created a replication policy and relationship, your initial data transfer begins as defined in your replication policy.  You can optionally test your replication failover to verify that successful failover can occur if your ONTAP AFX system goes offline.
 
 == Step 4: Test replication failover
 
-Optionally, validate that you can successfully serve data from replicated storage units on a remote cluster if the source cluster is offline.  
+Optionally, validate that you can successfully serve data from replicated volumes on a remote cluster if the source cluster is offline.  
 
 .Steps
 
@@ -183,4 +176,4 @@ Optionally, validate that you can successfully serve data from replicated storag
 
 .What's next?
 
-Now that your data is protected with snapshot replication for disaster recovery, you should link:../secure-data/encrypt-data-at-rest.html[encrypt your data at rest] so that it can't be read if a disk in your ASA r2 system is repurposed, returned, misplaced or stolen.
+Now that your data is protected with snapshot replication for disaster recovery, you should link:../secure-data/encrypt-data-at-rest.html[encrypt your data at rest] so that it can't be read if a disk in your ONTAP AFX system is repurposed, returned, misplaced or stolen.

@@ -11,7 +11,7 @@ indexpage:
         - title: Quick start
           url: /get-started/quick-start.html
         - title: Install ONTAP AFX hardware
-          url: /install-setup/workflow-install.html
+          url: /install-setup/install-setup-workflow.html
         - title: Set up ONTAP AFX cluster
           url: /install-setup/cluster-setup.html
     - title: Cluster administration
@@ -55,6 +55,8 @@ indexpage:
     - title: Get more information
       links:
         - title: FAQ for ONTAP AFX
-          url: /faq.html
+          url: /faq-ontap-afx.html
+        - title: Documentation for other ONTAP systems
+          url: https://docs.netapp.com/us-en/ontap-family/
         - title: Additional resources
           url: /learn-more/additional-resources.html

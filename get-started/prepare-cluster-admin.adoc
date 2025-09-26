@@ -10,7 +10,10 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You should prepare to administer your ONTAP AFX cluster before configuring and using it in a production environment.
+Before deploying ONTAP AFX in a production environment, it’s essential to understand the administrative structure and options. This will ensure secure, efficient, and effective management of your AFX cluster.
+
+// Comment to reviewers:
+[big red]*DP: In addition to information specific to AFX, this page also includes general content that will be helpful for customers who are new to ONTAP.*
 
 == Understand storage virtual machines
 
@@ -49,11 +52,9 @@ The cluster administrator has complete control of the AFX cluster including all 
 
 An SVM administrator has control of a specific data SVM and so is more restricted compared to the cluster administrator. SVM administration involves performing tasks with objects and resources that have an SVM scope, such as creating a volume. See link:../manage-data/prepare-provision-storage.html[Administer your storage VMs] for more information.
 
-//* Data administrator. This is a more restricted role within a specific tenant. It allows self-serve access to a subset of the administrative functions and API calls by storage users including data scientists and data engineers.
-
 == Three administrative interfaces
 
-As with Unified ONTAP, AFX has three administrative interfaces. The LIF (or IP address) you need to use varies based on the administrative interface and your environment.
+As with the other ONTAP personalities (Unified, ASA r2), ONTAP AFX has three administrative interfaces. The LIF (or IP address) you need to use varies based on the administrative interface and your environment.
 
 [NOTE]
 The System Manager user interface is preferred for most administrative tasks. You should use an administrator account unless otherwise indicated.
@@ -69,6 +70,10 @@ The System Manager user interface is preferred for most administrative tasks. Yo
 |REST API
 |ONTAP AFX includes a REST API you can use to automate the administration of your AFX cluster. The API is based on the Unified ONTAP REST API with modifications to support the unique AFX features and restrictions.
 |===
+
+.Related information
+
+* https://docs.netapp.com/us-en/ontap/concepts/introducing-ontap-interfaces-concept.html[ONTAP user interfaces^]
 
 == Learn to search, filter, and sort information in System Manager
 
@@ -104,8 +109,12 @@ You'll need the following:
 
 .Related information
 
-* link:../system-admin/index.html[Learn about cluster administration with the ONTAP CLI^]
-* link:../system-admin/set-privilege-level-task.html[Set the privilege level in the ONTAP CLI^]
+* https://docs.netapp.com/us-en/ontap/system-admin/set-privilege-level-task.html[Set the privilege level in the ONTAP CLI^]
+* https://docs.netapp.com/us-en/ontap/system-admin/index.html[Learn about cluster administration with the ONTAP CLI^]
+
+== Working with high-availability pairs
+
+As with Unified ONTAP, AFX cluster nodes are configured in high-availability (HA) pairs for fault tolerance and nondisruptive operations. HA pairing provides the ability for storage operations to stay online in the event of a node failure, such as a storage failover. With Unified ONTAP, each node is partnered with another node to form a single pair. This is generally done using a dedicated connection between the two node’s NVRAM modules. With disaggregated ONTAP, a new HA VLAN is added to the backend cluster switches to enable NVRAM modules to stay connected between the HA partner nodes. In the initial AFX release, HA is still handled using HA pairs, but there is no longer a need for the partner nodes to be directly connected to one another.
 
 == Confirm AFX system health
 
@@ -167,7 +176,7 @@ link:../administer/configure-svm.html[Configure] your SVM and prepare for client
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Prepare to provision storage
 
 [role="quick-margin-para"]
-link:../manage-data/prepare-provision-storage.html[Prepare] to allocate and administer a data container
+link:../manage-data/prepare-manage-data.html[Prepare] to allocate and manage a data container
 
 == References to additional documentation
 
@@ -175,4 +184,4 @@ NetApp offers ONTAP in three distinct personalities. Where appropriate, this ONT
 
 .Related information
 
-* link:../faq.html[FAQ for ONTAP AFX storage systems]
+* link:../faq-ontap-afx.html[FAQ for ONTAP AFX storage systems]
