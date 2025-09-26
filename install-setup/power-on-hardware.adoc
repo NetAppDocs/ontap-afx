@@ -51,10 +51,10 @@ Shelf ID button
 |===
 +
 . Change the first number of the shelf ID:
-.. Insert the straightened end of a paperclip or narrow tipped ball point pen into the small hole to press the shelf ID button.
+.. Insert the straightened end of a paperclip or narrow tipped ball point pen into the small hole to gently press the shelf ID button.
 +
 
-.. Press and hold the shelf ID button until the first number on the digital display blinks, and then release the button.
+.. Gently press and hold the shelf ID button until the first number on the digital display blinks, and then release the button.
 +
 It can take up to 15 seconds for the number to blink. This activates the shelf ID programming mode.
 +
