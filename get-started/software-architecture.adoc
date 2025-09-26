@@ -59,5 +59,13 @@ ONTAP AFX provides a tenant model that builds on the SVM model available with Un
 
 The following illustrates a typical deployment of an ONTAP AFX cluster. Notice the four controller nodes are decoupled from the two storage shelves with connectivity provided through a shared cluster storage network switch.
 
+[big red]*DP: Image #1*
+
 image:afx-arch.png[AFX architecture]
 //image:oam-architecture.png[OAM architecture]
+
+== ONTAP AFX deployment - image 2
+
+[big red]*DP: Image #2*
+
+image:oam-architecture.png[OAM architecture]
