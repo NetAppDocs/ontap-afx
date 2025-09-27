@@ -11,9 +11,6 @@ summary:
 [.lead]
 Comparing ONTAP AFX to Unified ONTAP provides a valuable perspective and can be helpful when evaluating AFX for your environment.
 
-// Comment to reviewers:
-[big red]*DP: I will add a link to the AFX CLI command reference documentation in the last section when it is ready.*
-
 == New platform built on Unified ONTAP
 
 ONTAP AFX is derived from the Unified ONTAP personality. Because of this, it includes a robust set of features and administrative options. If you're an experienced ONTAP user, you'll find it very easy to work with AFX. If you're new to ONTAP, the simplified System Manager user interface and streamlined administration will help you get started quickly.
@@ -27,8 +24,7 @@ There are a few areas where the default AFX configuration differs from Unified O
 // Comment to reviewers:
 [big red]*DP: IE needs help in confirming the following content and providing any other configuration differences.*
 
-.Advanced Capacity Balancing
-
+Advanced Capacity Balancing::
 The GDD option is enabled by default for all FlexGroup volumes.
 
 == Unsupported or restricted Unified ONTAP capabilities
@@ -43,20 +39,20 @@ You should review the updates and changes for ONTAP AFX in the appropriate link:
 
 The following features, organized in several categories, are not available or have changed with the initial release of ONTAP AFX.
 
-.General features
+=== General features
 
 * FabricPool
 * AI based anti-ransomware protection
 * ONTAPI API (ZAPI)
 * Active IQ Unified Manager
 
-.SAN-related features
+=== SAN-related features
 
 * SAN administration and client access
 * MetroCluster
 * Thick provisioned volumes
 
-.Aggregate-related features
+=== Aggregate-related features
 
 The following aggregate-related features are not available with the initial release of ONTAP AFX:
 
@@ -66,7 +62,7 @@ The following aggregate-related features are not available with the initial rele
 * SyncMirror (aggregate mirroring)
 * RAID management
 
-.Data replication
+=== Data replication
 
 * No replication of a volume from Unified ONTAP that contains a LUN
 * FlexGroup volumes can only be replicated to ONTAP 9.16.1 or later

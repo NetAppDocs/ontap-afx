@@ -15,23 +15,23 @@ The ONTAP AFX architecture is composed of several hardware and software componen
 
 When first getting started with ONTAP AFX, it's helpful to begin with a high-level view of the physical components as they're installed in your datacenter.
 
-.Controller nodes
+=== Controller nodes
 
 AFX controller nodes run a derivative (or personality) of the ONTAP software designed to support the requirements of the AFX environment. Clients access the nodes through multiple protocols, including NFS, SMB, and S3. Each node has a complete view of the storage, which it can access based on the client requests. The nodes are stateful with non‑volatile memory to persist critical state information and include additional enhancements specific to the target workloads.
 
-.Storage shelves and disks
+=== Storage shelves and disks
 
 AFX storage shelves use Non-volatile Memory Express over Fabrics (NVMe-oF) to connect the high-density SSDs. The disks communicate over an ultra-low latency fabric using RDMA over Converged Ethernet (RoCE). The storage shelves, including the I/O modules, NICs, fans, and power supplies, are fully redundant with no single point of failure. Self-managed technology is used to administer and control all aspects of RAID configuration and disk layout.
 
-.Cluster storage switch network
+=== Cluster storage switch network
 
 Redundant and high‑performance switches connect the AFX controller nodes with the storage shelves. Advanced protocols are used to optimize performance. The design is based on VLAN tagging with multiple network paths, as well as tech‑refresh configurations, to ensure continuous operation and ease of upgrade.
 
-.Client training environment
+=== Client training environment
 
 The client training environment is a lab environment with customer-provided hardware, such as GPU clusters and AI workstations. It's designed to support model training, inference, and other AI/ML related work. Clients access ONTAP AFX using industry standard protocols such as NFS, SMB, and S3.
 
-.Client network
+=== Client network
 
 This internal network connects the client training environment to the ONTAP AFX storage cluster. The network is provided and managed by the customer although NetApp expects to offer field recommendations for requirements and design.
 
@@ -39,23 +39,23 @@ This internal network connects the client training environment to the ONTAP AFX 
 
 There are several logical components included with ONTAP AFX. They are implemented in software along with a combination of the physical components of the cluster. The logical components enforce a structure that determines the use and configuration of the AFX systems.
 
-.Common storage pool
+=== Common storage pool
 
 The common storage pool (or _storage availability zone_) is a collection of disks in the storage shelves that provides a single unified namespace to all the controller nodes. It offers a provisioning model with no fixed restrictions regarding which storage shelves are used by the nodes. Customers can view free space and storage usage as properties of the entire ONTAP AFX cluster.
 
-.FlexVolumes, FlexGroups, and buckets
+=== FlexVolumes, FlexGroups, and buckets
 
 FlexVolumes, FlexGroups, and buckets are the _data containers_ exposed to the customer based on the client access protocols. These scalable containers are designed to abstract away many of the complex internal storage details.
 
-.Data layout and access
+=== Data layout and access
 
 The data layout and access is tuned for seamless access and efficient utilization of GPUs. This plays a critical role in eliminating bottlenecks and maintaining consistent performance.
 
-.SVMs and multi-tenancy
+=== SVMs and multi-tenancy
 
 ONTAP AFX provides a tenant model that builds on the SVM model available with Unified ONTAP. Most of the SVM concepts translate directly from unified ONTAP. The AFX tenant model has been streamlined for simplified administration.
 
-== ONTAP AFX deployment
+== ONTAP AFX deployment - image 1
 
 The following illustrates a typical deployment of an ONTAP AFX cluster. Notice the four controller nodes are decoupled from the two storage shelves with connectivity provided through a shared cluster storage network switch.
 

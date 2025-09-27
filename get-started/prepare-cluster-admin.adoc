@@ -19,20 +19,16 @@ A storage virtual machine (SVM) is an isolated server or tenant environment with
 [NOTE]
 One data SVM is created when you set up and initially deploy an ONTAP AFX cluster. You can create additional SVMs if needed.
 
-.Administrative control
-
+Administrative control::
 Data SVMs can be used to establish and enforce isolation of your data and applications. This can be useful when there are many different groups with a larger organization. Administrative control can be delegated to the SVMs to establish policies related to data access, security, and protection.
 
-.Accounts and RBAC roles
-
+Accounts and RBAC roles::
 It's important to note there are two levels of authentication and authorization with ONTAP AFX: cluster level and SVM level. In addition to the cluster accounts, every SVM has its own distinct set of users and roles. In most situations, using the cluster level accounts is adequate. But depending on your environment, you might need to configure and use the more restrictive SVM accounts and roles as well. See link:../administer/additional-ontap-svm.html[Additional ONTAP AFX SVM administration] for more information.
 
-.SVM-scoped resources
-
+SVM-scoped resources::
 ONTAP AFX resources and configurable entities are associated either with the cluster or a specific SVM. There are many resources with an SVM scope, including volumes and buckets as well as the SVM user accounts and RBAC roles.
 
-.Dedicated network interfaces
-
+Dedicated network interfaces::
 Each SVM has its own dedicated set of network interfaces. For example, separate LIFs are allocated to an SVM for management and client data access.
 
 == Two AFX administrative levels
@@ -41,11 +37,11 @@ The administrative tasks you perform with AFX generally fall into two different 
 
 It's important to note that these levels describe how the administrative tasks are organized and assigned, and not necessarily how the associated security is configured. For example, while a cluster administrator account is needed to perform cluster level administration, it can also be used for SVM administration.
 
-.Cluster administrator
+Cluster administrator::
 
 The cluster administrator has complete control of the AFX cluster including all the data SVMs. However, for clarity this AFX administrative level includes only the tasks that a cluster admin can perform and not any of the SVM-specific administration tasks. See link:../administer/view-dashboard.html[Administer your cluster] for more information.
 
-.SVM administrator
+SVM administrator::
 
 An SVM administrator has control of a specific data SVM and so is more restricted compared to the cluster administrator. SVM administration involves performing tasks with objects and resources that have an SVM scope, such as creating a volume. See link:../manage-data/prepare-provision-storage.html[Administer your storage VMs] for more information.
 
