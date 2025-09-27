@@ -19,7 +19,6 @@ This FAQ list provides answers to common questions customers typically have abou
 [big red]*DP: Justin provided a very large FAQ document (Sept 2). I haven't added all the entries yet and so this list will grow before product launch. Also, are the following entries acceptable to include in the advanced technical section of this FAQ page?*
  
 [big red]*- automated topology management (ATM)*
-[big red]*- volume placement API*
 
 == General concepts
 
@@ -52,15 +51,23 @@ An important concept to begin with is the decoupling the compute capability in t
 
 The second related concept with disaggregated storage is that the aggregates and RAID management are removed as administrable entities. A storage abstraction layer within ONTAP AFX automatically configures and manages the aggregates, physical disks, and RAID groups. This allows the administrator to focus on the higher level storage configuration based on volumes and buckets.
 
+.Will Unified ONTAP be discontinued? Will I be required to moved to ONTAP AFX?
+
+No. Unified ONTAP is the predominant architecture and will remain so for the foreseeable future. There is no plan to require or force migration to ONTAP AFX. You can choose one or more of the ONTAP personalities (Unified ONTAP, ONTAP AFX, ASA r2) based on your needs.
+
 == Interoperability
 
-.Can I use ONTAP AFX in the same cluster as Unified ONTAP? 
+.Can I mix ONTAP AFX nodes with Unified ONTAP nodes in the same cluster?
 
 No. ONTAP AFX and Unified ONTAP cannot co-exist within the same cluster. 
 
 .If I want to use Unified ONTAP with ONTAP AFX for SnapMirror or FlexCache, what ONTAP version will I need?
 
 SnapMirror version rules for Unified ONTAP are identical for disaggregated ONTAP. This means that to replicate from Unified ONTAP, the source system must be within the supported version range. To replicate from disaggregated ONTAP, the Unified ONTAP system must be at ONTAP 9.16.1 or later (that is, the earliest release Advanced Capacity Balancing is supported). For FlexCache, the same rules apply for source and destination systems as provided in https://www.netapp.com/pdf.html?item=/media/7336-tr4743.pdf[TR-4743^].
+
+.Can I issue ONTAPI (ZAPI) API calls to an ONTAP AFX cluster?
+
+No. Only the REST API is supported with ONTAP API. Any automation code using ZAPI needs to be converted to REST API.
 
 == Advanced technical concepts
 
@@ -99,4 +106,4 @@ Note that in the initial release, volumes will move only in storage failover sce
 
 .Can I use different switch types for the backend network? 
 
-No. Only the switches specifically approved for and provided with the ONTAP AFX platform are supported for the backend network.
+No. Only the switches specifically approved for and provided with the ONTAP AFX storage platform are supported for the backend network.
