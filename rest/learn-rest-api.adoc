@@ -64,7 +64,7 @@ Several endpoints have been removed from the REST API corresponding to the unsup
 ----
 ====
 
-.Related information
+== Related information
 
 * https://docs.netapp.com/us-en/ontap-automation[ONTAP automation^]
 * https://docs.netapp.com/us-en/asa-r2/learn-more/rest-api-support.html[REST API support for ASA r2^]

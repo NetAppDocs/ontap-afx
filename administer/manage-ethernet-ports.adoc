@@ -12,10 +12,6 @@ summary:
 [.lead]
 The ports used by ONTAP AFX provide the foundation for network connectivity and communication. There are several configuration options available to customize the layer two aspect of your network.
 
-.Related information
-
-* link:../administer/manage-cluster-networking.html[Manage ONTAP AFX cluster networking]
-
 == Create a VLAN
 
 A VLAN consists of switch ports grouped together into a broadcast domain.  VLANs enable you to increase security, isolate potential problems, and limit available paths within your IP network infrastructure.
@@ -46,10 +42,6 @@ The VLAN can’t be attached to a port hosting a cluster LIF or to ports assigne
 
 You have created a VLAN to increase security, isolate problems, and limit available paths within your IP network infrastructure.
 
-.Related information
-
-* https://docs.netapp.com/us-en/ontap/networking/configure_network_ports_cluster_administrators_only_overview.html[Learn about ONTAP network port configuration^]
-
 == Create a LAG
 
 A link aggregate group (LAG) is a technique that combines multiple physical network connections into a single logical connection. You can use it to increase the bandwidth and provide redundancy between nodes.
@@ -61,7 +53,10 @@ A link aggregate group (LAG) is a technique that combines multiple physical netw
 . Provide the configuration details, including the node, broadcast domain, ports, mode, and load distribution.
 . Select *Save*.
 
-.Related information
+== Related information
+
+* link:../administer/manage-cluster-networking.html[Manage ONTAP AFX cluster networking]
+
+* https://docs.netapp.com/us-en/ontap/networking/configure_network_ports_cluster_administrators_only_overview.html[Learn about ONTAP network port configuration^]
 
 * https://docs.netapp.com/us-en/ontap/networking/combine_physical_ports_to_create_interface_groups.html[Combine physical ports to create ONTAP interface groups^]
-

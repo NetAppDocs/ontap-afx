@@ -17,10 +17,6 @@ A digital certificate is an electronic document used to prove ownership of a pub
 A Certificate Signing Request (CSR) is a block of encoded text that is given to a Certificate Authority (CA) when applying for a digital certificate. In ONTAP, a CSR can be generated using the <code>security certificate generate-csr</code> command. This request is then sent to a trusted third-party CA for signing. Once the CA processes the request, it sends back a signed digital certificate. The signed certificate can be installed on ONTAP to authenticate the cluster or Storage Virtual Machine (SVM) as an SSL server, which is a best practice for production systems to comply with InfoSec policies.
 ////
 
-.Related information
-
-* https://docs.netapp.com/us-en/ontap/authentication/manage-certificates-sm-task.html[Manage ONTAP certificates with System Manager^]
-
 == Generate a certificate signing request
 
 To get started using a digital certificate, you need to generate a certificate signing request (CSR). As part of this, ONTAP creates a public/private key pair and includes the public key contained in the CSR. A CSR is ued to request a certificate.
@@ -131,3 +127,7 @@ Select image:icon_kabob.gif[three vertical blue dots] and then select *Delete*.
 .Result
 
 You have renewed or deleted an existing client/server certificate or local certificate authority on your ONTAP AFX system.
+
+== Related information
+
+* https://docs.netapp.com/us-en/ontap/authentication/manage-certificates-sm-task.html[Manage ONTAP certificates with System Manager^]
