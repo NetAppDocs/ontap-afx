@@ -41,7 +41,7 @@ By offering these unique ONTAP personalities, NetApp enables organizations to se
 
 .After I acquire one of the ONTAP products, can I change the personality?
 
-No. The personality of your ONTAP storage system is immutable and cannot be changed.
+No. The personality of your ONTAP storage system is immutable and cannot be changed. For example, you cannot convert or upgrade a Unified ONTAP cluster to an ONTAP AFX cluster.
 
 .What does "disaggregated" mean in the context of ONTAP AFX storage systems?
 
@@ -53,7 +53,7 @@ The second related concept with disaggregated storage is that the aggregates and
 
 .Will Unified ONTAP be discontinued? Will I be required to moved to ONTAP AFX?
 
-No. Unified ONTAP is the predominant architecture and will remain so for the foreseeable future. There is no plan to require or force migration to ONTAP AFX. You can choose one or more of the ONTAP personalities (Unified ONTAP, ONTAP AFX, ASA r2) based on your needs.
+No. Unified ONTAP is the dominant architecture and flagship storage product and is expected to remain so for the foreseeable future. There is no plan to require or force customers to migrate to ONTAP AFX. You can choose the ONTAP personality based on your needs.
 
 == Interoperability
 
@@ -65,15 +65,15 @@ No. ONTAP AFX and Unified ONTAP cannot co-exist within the same cluster.
 
 SnapMirror version rules for Unified ONTAP are identical for disaggregated ONTAP. This means that to replicate from Unified ONTAP, the source system must be within the supported version range. To replicate from disaggregated ONTAP, the Unified ONTAP system must be at ONTAP 9.16.1 or later (that is, the earliest release Advanced Capacity Balancing is supported). For FlexCache, the same rules apply for source and destination systems as provided in https://www.netapp.com/pdf.html?item=/media/7336-tr4743.pdf[TR-4743^].
 
-.Can I issue ONTAPI (ZAPI) API calls to an ONTAP AFX cluster?
+.Can I make ONTAPI (ZAPI) API calls to an ONTAP AFX cluster?
 
-No. Only the REST API is supported with ONTAP API. Any automation code using ZAPI needs to be converted to REST API.
+No. Only the REST API is supported with ONTAP AFX. Any automation code that uses ZAPI needs to be converted to REST API for use with ONTAP AFX.
 
 == Advanced technical concepts
 
 .Storage Availability Zone
 
-A Storage Availability Zone (SAZ) is the formal name for the collection of disks and storage shelves attached to a single ONTAP AFX cluster. Every disk and shelf in the SAZ can participate in read and write operations. Only one SAZ per AFX cluster is supported and a SAZ cannot be shared across clusters (except for SnapMirror replication). When shelves are added to the cluster, ONTAP automatically adds the disks to the SAZ. The SAZ can also be referred to as a capacity pool, storage pool, or storage pod.
+A Storage Availability Zone (SAZ) is the collection of disks and storage shelves attached to a single ONTAP AFX cluster. Every disk and shelf in the SAZ can participate in read and write operations. Only one SAZ per AFX cluster is supported and a SAZ cannot be shared across AFX clusters (except for SnapMirror replication). When storage shelves are added to a cluster, ONTAP automatically adds the disks to the SAZ. The Storage Availability Zone can also be referred to as a capacity pool, storage pool, or storage pod.
  
 .What are the supported data protocols in disaggregated ONTAP?
 
@@ -86,7 +86,7 @@ The data protocols supported in disaggregated ONTAP include the following:
 
 .Do the data protocols operate differently in ONTAP AFX?
 
-No. The data protocols in ONTAP AFX operate identically compared to Unified ONTAP. 
+No. The data protocols in ONTAP AFX operate the same as Unified ONTAP. 
 
 .Does ONTAP AFX support 400Gbe networking? 
 
