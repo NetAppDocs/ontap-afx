@@ -21,7 +21,7 @@ This FAQ list provides answers to common questions customers typically have abou
 [big red]*- automated topology management (ATM)*
 [big red]*- volume placement API*
 
-== General concepts and terminology
+== General concepts
 
 .What is an ONTAP personality?
 
