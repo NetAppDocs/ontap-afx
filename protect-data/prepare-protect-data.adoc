@@ -43,7 +43,7 @@ You'll need the following:
 . Add a volume or bucket as needed.
 . Next to *Volumes* or *Buckets*, select image:icon_arrow.gif[blue arrow pointing to the right] to display the appropriate list as desired.
 
-.Related information
+== Related information
 
 * link:../administer/additional-ontap-svm.html[Additional ONTAP AFX SVM administration]
 * link:../administer/additional-ontap-cluster.html[Additional ONTAP AFX cluster administration]

@@ -44,13 +44,6 @@ There are several limitations, including minimums and maximums, enforced by ONTA
 
 NetApp expects to expand the AFX capabilities and so these limitations will change, possibly frequently and within ONTAP releases. You should review the information available at the Interoperability Matrix Tool (IMT) to determine the capabilities of your cluster.
 
-// Each cluster must have a minimum of four nodes and a maximum of eight.
-// There is a limit of 2PB that can be allocated for the entire cluster.
-
-.Related information
-
-* https://mysupport.netapp.com/matrix/[NetApp Interoperability Matrix Tool^]
-
 == Data migration options
 
 There are several data migration options. The focus is on migrating external data into an ONTAP AFX cluster.
@@ -64,10 +57,6 @@ A fully integrated migration path from unified ONTAP to disaggregated ONTAP is a
 * SVM DR
 
 Note that SnapLock is supported in the first release of the ONTAP AFX. In addition, FlexCache volumes can be attached between ONTAP AFX and Unified ONTAP in either direction.
-
-.Related information
-
-* link:../administer/migrate-svm.html[Migrate an ONTAP AFX SVM]
 
 === Migrating data from a non-ONTAP source
 
@@ -104,3 +93,9 @@ You can access all the volumes and buckets defined for the ONTAP AFX cluster. Ea
 . Next to *Buckets*, select image:icon_arrow.gif[blue arrow pointing to the right] to display a list of buckets.
 
 . Update or create a data container as needed.
+
+== Related information
+
+* link:../administer/migrate-svm.html[Migrate an ONTAP AFX SVM]
+
+* https://mysupport.netapp.com/matrix/[NetApp Interoperability Matrix Tool^]
