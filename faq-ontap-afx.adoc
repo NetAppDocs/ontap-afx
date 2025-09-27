@@ -52,24 +52,6 @@ An important concept to begin with is the decoupling the compute capability in t
 
 The second related concept with disaggregated storage is that the aggregates and RAID management are removed as administrable entities. A storage abstraction layer within ONTAP AFX automatically configures and manages the aggregates, physical disks, and RAID groups. This allows the administrator to focus on the higher level storage configuration based on volumes and buckets.
 
-.Where is Unified ONTAP more appropriate than ONTAP AFX?
-
-Unified ONTAP is the premier enterprise storage solution for a wide variety of workloads. Some main of the benefits of continuing to use Unified ONTAP include:
-
-* Familiar architecture 
-* Benefits of disaggregated ONTAP do not outweigh the downsides of data migration 
-* Wider range of supported platforms and disk shelves
-* Earlier supported ONTAP versions (priot to ONTAP 9.17.1)
-* No requirement for extremely high performance or independent scaling
-* No need for a larger number of nodes
-* SAN support is required 
-
-== Sales and product positioning
-
-.What are the intended targeted workloads for ONTAP AFX?
-
-This architecture has been designed with artificial intelligence (AI), machine learning (ML), and large language model (LLM) workloads in mind. These are specifically those applications with high throughput requirements, such as AI training and inference. As a secondary market, disaggregated ONTAP can also be effective with EDA and Media/Entertainment workloads. However, due to the ONTAP AFX requirements (minimum cluster size, hardware type), Unified ONTAP may be the more appropriate choice in this case.
-
 == Interoperability
 
 .Can I use ONTAP AFX in the same cluster as Unified ONTAP? 
@@ -118,9 +100,3 @@ Note that in the initial release, volumes will move only in storage failover sce
 .Can I use different switch types for the backend network? 
 
 No. Only the switches specifically approved for and provided with the ONTAP AFX platform are supported for the backend network.
-
-== Cloud and 1P partners
-
-.How do the current 1P offerings (Azure NetApp Files, Google NetApp Cloud Volumes, Amazon Cloud Volume Services) interact with disaggregated ONTAP?
-
-The 1P clouds do not currently offer disaggregated ONTAP options in their services and likely will not in the immediate future. The closest interaction you can achieve will be the potential ability to replicate to/from a 1P cloud offering or to attach a FlexCache volume to a 1P cloud offering.
