@@ -97,6 +97,6 @@ You can access all the volumes and buckets defined for the ONTAP AFX cluster. Ea
 
 == Related information
 
-* link:../administer/migrate-svm.html[Migrate an ONTAP AFX SVM]
 * https://docs.netapp.com/us-en/ontap/nas-management/index.html[NAS storage management^]
 * https://mysupport.netapp.com/matrix/[NetApp Interoperability Matrix Tool^]
+* link:../administer/migrate-svm.html[Migrate an ONTAP AFX SVM]
