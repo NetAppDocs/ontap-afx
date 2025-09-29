@@ -9,7 +9,10 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-Before managing your ONTAP AFX data, you should be familiar with the terminology and key concepts.
+Before managing your ONTAP AFX data, you should be familiar with the major concepts and capabilities.
+
+[NOTE]
+Most of the concepts and administrative procedures used with ONTAP AFX are the same with Unified ONTAP. Refer to <<Related information>> for more information.
 
 == Storage terminology and options
 
@@ -34,8 +37,6 @@ Quota::
 A quota in ONTAP is a limit set on the amount of storage space or number of files that can be used by a user, group, or qtree. Quotas are used to manage and control resource usage within a storage system, ensuring that no single user or application can consume an excessive amount of resources.
 
 == ONTAP AFX deployment limitations
-
-[big red]*DP: I have included a link to the IMT below. Should this also (or instead) include a link to HWU?*
 
 There are several limitations, including minimums and maximums, enforced by ONTAP AFX when configuring and using your cluster. These limits fall into several different categories, including:
 
@@ -97,5 +98,5 @@ You can access all the volumes and buckets defined for the ONTAP AFX cluster. Ea
 == Related information
 
 * link:../administer/migrate-svm.html[Migrate an ONTAP AFX SVM]
-
+* https://docs.netapp.com/us-en/ontap/nas-management/index.html[NAS storage management^]
 * https://mysupport.netapp.com/matrix/[NetApp Interoperability Matrix Tool^]
