@@ -10,7 +10,10 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-Before protecting your ONTAP AFX data, you should be familiar with some of the key concepts and display an overview of the storage.
+Before protecting your ONTAP AFX data, you should be familiar with some of the key concepts and current status of your storage.
+
+[NOTE]
+Most of the concepts and procedures used for data protection with ONTAP AFX are the same as Unified ONTAP. Refer to <<Related information>> for more information including links to the applicable Unified ONTAP documentation.
 
 == Terminology and options
 

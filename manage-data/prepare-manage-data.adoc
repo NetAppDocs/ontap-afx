@@ -12,7 +12,7 @@ summary:
 Before managing your ONTAP AFX data, you should be familiar with the major concepts and capabilities.
 
 [NOTE]
-Most of the concepts and administrative procedures used with ONTAP AFX are the same with Unified ONTAP. Refer to <<Related information>> for more information.
+Most of the concepts and procedures used for storage administrative with ONTAP AFX are the same as Unified ONTAP. Refer to <<Related information>> for more information including links to the applicable Unified ONTAP documentation.
 
 == Storage terminology and options
 
