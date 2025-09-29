@@ -26,5 +26,6 @@ XXX
 
 == Related information
 
+* https://docs.netapp.com/us-en/ontap/authentication-access-control/index.html[Unified ONTAP Authentication and access control^]
+* https://docs.netapp.com/us-en/ontap/security-encryption/index.html[Unified ONTAP Security and data encryption6]
 * link:../administer/additional-ontap-svm.html[Additional ONTAP AFX SVM administration]
-* link:../administer/additional-ontap-cluster.html[Additional ONTAP AFX cluster administration]
