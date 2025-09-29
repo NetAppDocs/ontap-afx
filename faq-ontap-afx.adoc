@@ -13,12 +13,10 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-This FAQ list provides answers to common questions customers typically have about their ONTAP AFX storage systems. It describes concepts and terminology that can be helpful when exploring AFX in more detail or performing advanced administration tasks. For convenience, the list is organized in several major sections by category.
+This FAQ list answers common questions that customers typically have about their ONTAP AFX storage systems. It includes concepts and terminology that can be helpful when exploring AFX in more detail or performing advanced administration tasks.
 
 // Comment to reviewers:
-[big red]*DP: Justin provided a very large FAQ document (Sept 2). I haven't added all the entries yet and so this list will grow before product launch. Also, are the following entries acceptable to include in the advanced technical section of this FAQ page?*
- 
-[big red]*- automated topology management (ATM)*
+[big red]*DP: I will do some light editing on this page before product launch. We expect this list to continue growing after product launch.*
 
 == General concepts
 
@@ -53,21 +51,21 @@ The second related concept with disaggregated storage is that the aggregates and
 
 .Will Unified ONTAP be discontinued? Will I be required to moved to ONTAP AFX?
 
-No. Unified ONTAP is the dominant architecture and flagship storage product and is expected to remain so for the foreseeable future. There is no plan to require or force customers to migrate to ONTAP AFX. You can choose the ONTAP personality based on your needs.
+No. Unified ONTAP is the dominant architecture and flagship NetApp storage product and is expected to remain so for the foreseeable future. There is no plan to require or force customers to migrate to ONTAP AFX.
 
 == Interoperability
 
 .Can I mix ONTAP AFX nodes with Unified ONTAP nodes in the same cluster?
 
-No. ONTAP AFX and Unified ONTAP cannot co-exist within the same cluster. 
+No. ONTAP AFX and Unified ONTAP nodes cannot co-exist within the same cluster.
 
 .If I want to use Unified ONTAP with ONTAP AFX for SnapMirror or FlexCache, what ONTAP version will I need?
 
-SnapMirror version rules for Unified ONTAP are identical for disaggregated ONTAP. This means that to replicate from Unified ONTAP, the source system must be within the supported version range. To replicate from disaggregated ONTAP, the Unified ONTAP system must be at ONTAP 9.16.1 or later (that is, the earliest release Advanced Capacity Balancing is supported). For FlexCache, the same rules apply for source and destination systems as provided in https://www.netapp.com/pdf.html?item=/media/7336-tr4743.pdf[TR-4743^].
+The SnapMirror version rules for ONTAP AFX are identical to Unified ONTAP. This means that to replicate from Unified ONTAP, the source system must be within the supported version range. To replicate from disaggregated ONTAP, the Unified ONTAP system must be at ONTAP 9.16.1 or later (that is, the earliest release the Advanced Capacity Balancing features is supported). For FlexCache, the same rules apply for source and destination systems as provided in https://www.netapp.com/pdf.html?item=/media/7336-tr4743.pdf[TR-4743^].
 
 .Can I make ONTAPI (ZAPI) API calls to an ONTAP AFX cluster?
 
-No. Only the REST API is supported with ONTAP AFX. Any automation code that uses ZAPI needs to be converted to REST API for use with ONTAP AFX.
+No. Only the REST API is supported with ONTAP AFX. Any automation code that uses ZAPI needs to be converted to the REST API for use with ONTAP AFX.
 
 == Advanced technical concepts
 
@@ -107,3 +105,7 @@ Note that in the initial release, volumes will move only in storage failover sce
 .Can I use different switch types for the backend network? 
 
 No. Only the switches specifically approved for and provided with the ONTAP AFX storage platform are supported for the backend network.
+
+.Automated Topology Management
+
+Automated Topology Management (ATM) is an ONTAP AFX feature. It's responsible for responding to system and user object imbalances across an AFX cluster. When an imbalance is detected, a internal job is triggered to evenly distribute the data objects across the active nodes in the cluster. The data is reallocated using Zero Copy Volume Move (ZCVM). This feature copies and updates somme of the object metadata, no actual data is sent over the wire and so the operation is completely copy free.
