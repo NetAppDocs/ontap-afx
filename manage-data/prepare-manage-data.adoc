@@ -36,15 +36,6 @@ A qtree is a logical subdivision within a volume that you can create to manage a
 Quota::
 A quota in ONTAP is a limit set on the amount of storage space or number of files that can be used by a user, group, or qtree. Quotas are used to manage and control resource usage within a storage system, ensuring that no single user or application can consume an excessive amount of resources.
 
-== ONTAP AFX deployment limitations
-
-There are several limitations, including minimums and maximums, enforced by ONTAP AFX when configuring and using your cluster. These limits fall into several different categories, including:
-
-* Nodes per cluster
-* Storage capacity
-
-NetApp expects to expand the AFX capabilities and so these limitations will change, possibly frequently and within ONTAP releases. You should review the information available at the Interoperability Matrix Tool (IMT) to determine the capabilities of your cluster.
-
 == Data migration options
 
 There are several data migration options. The focus is on migrating external data into an ONTAP AFX cluster.
@@ -97,6 +88,7 @@ You can access all the volumes and buckets defined for the ONTAP AFX cluster. Ea
 
 == Related information
 
+* link:../get-started/prepare-cluster-admin.html[Prepare to administer ONTAP AFX]
+* link:../administer/migrate-svm.html[Migrate an ONTAP AFX SVM]
 * https://docs.netapp.com/us-en/ontap/nas-management/index.html[Unified ONTAP NAS storage management^]
 * https://mysupport.netapp.com/matrix/[NetApp Interoperability Matrix Tool^]
-* link:../administer/migrate-svm.html[Migrate an ONTAP AFX SVM]

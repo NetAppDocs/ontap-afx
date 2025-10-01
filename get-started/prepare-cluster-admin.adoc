@@ -100,6 +100,18 @@ You'll need the following:
 
 As with Unified ONTAP, AFX cluster nodes are configured in high-availability (HA) pairs for fault tolerance and nondisruptive operations. HA pairing provides the ability for storage operations to stay online in the event of a node failure, such as a storage failover. With Unified ONTAP, each node is partnered with another node to form a single pair. This is generally done using a dedicated connection between the two node’s NVRAM modules. With disaggregated ONTAP, a new HA VLAN is added to the backend cluster switches to enable NVRAM modules to stay connected between the HA partner nodes. In the initial AFX release, HA is still handled using HA pairs, but there is no longer a need for the partner nodes to be directly connected to one another.
 
+== ONTAP AFX deployment limitations
+
+There are several limitations, including minimums and maximums, enforced by ONTAP AFX when configuring and using your cluster. These limits fall into several different categories, including:
+
+Controller nodes per cluster::
+Each AFX cluster must have at least four nodes. The maximum number of nodes varies based on the release.
+
+Storage capacity::
+This is the total capacity in the collection of SSD disks in the cluster storage pool. The maximum number of nodes varies based on the release.
+
+NetApp expects to expand the AFX capabilities and so these limitations will change, possibly frequently and even within an ONTAP release. You should review the information available at the Interoperability Matrix Tool (IMT) to determine the capabilities of your cluster.
+
 == Confirm AFX system health
 
 Before performing any ONTAP AFX administration tasks, you should check the health of the cluster.
