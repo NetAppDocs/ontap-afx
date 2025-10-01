@@ -102,15 +102,15 @@ As with Unified ONTAP, AFX cluster nodes are configured in high-availability (HA
 
 == ONTAP AFX deployment limitations
 
-There are several limitations, including minimums and maximums, enforced by ONTAP AFX when configuring and using your cluster. These limits fall into several different categories, including:
+There are several limitations, including minimums and maximums, enforced by ONTAP AFX when configuring and using your cluster. These limits fall into several different categories.
 
 Controller nodes per cluster::
 Each AFX cluster must have at least four nodes. The maximum number of nodes varies based on the release.
 
 Storage capacity::
-This is the total capacity in the collection of SSD disks in the cluster storage pool. The maximum number of nodes varies based on the release.
+This is the total capacity in all the SSD disks in the cluster storage pool. The maximum storage capacity varies based on the release.
 
-NetApp expects to expand the AFX capabilities and so these limitations will change, possibly frequently and even within an ONTAP release. You should review the information available at the Interoperability Matrix Tool (IMT) to determine the capabilities of your cluster.
+NetApp expects to expand the AFX capabilities and so these limitations will change, possibly frequently and within an ONTAP release. You should review the information available at the Interoperability Matrix Tool (IMT) to determine the capabilities of your cluster.
 
 == Confirm AFX system health
 

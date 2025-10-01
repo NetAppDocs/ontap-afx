@@ -65,12 +65,8 @@ The SnapMirror version rules for ONTAP AFX are identical to Unified ONTAP. This 
 No. Only the REST API is supported with ONTAP AFX. Any automation code that uses ZAPI needs to be converted to the REST API for use with ONTAP AFX.
 
 == Advanced concepts
-
-.Storage Availability Zone
-
-A Storage Availability Zone (SAZ) is the collection of disks and storage shelves attached to a single ONTAP AFX cluster. Every disk and shelf in the SAZ can participate in read and write operations for all nodes in the cluster. Each AFX cluster supports only one SAZ which cannot be shared across AFX clusters (except for SnapMirror replication). When storage shelves are added to a cluster, ONTAP automatically adds the disks to the SAZ. The Storage Availability Zone can also be referred to as a capacity pool, storage pool, or storage pod.
  
-.What are the supported data protocols in disaggregated ONTAP?
+.What are the data protocols supported with ONTAP AFX?
 
 The data protocols supported with ONTAP AFX include the following:
 
@@ -91,18 +87,22 @@ Yes.
 
 No. ADP is not used with ONTAP AFX. Because there are no root aggregates with AfX, the ADP feature is not needed to maximize disk space efficiency.
 
-.How does a volume move operation work in Unified ONTAP and ONTAP AFX?
-
-With Unified ONTAP, it is possible to relocate a volume nondisrutptively from one node or aggregate to another in the cluster. This is performed using background copy operation with SnapMirror technology, where a new destination volume is created at the new location. Depending on the size of the volume and the utilization of cluster resources, the time it takes for a a volume move to complete can vary significantly.
-
-With ONTAP AFX, there are no aggregates. All storage is contained within a single Storage Availability Zone which every node in the cluster has visibility to. As a result, volume moves never need to actually copy the data. Instead, all volume moves are performed with pointer updates between nodes. This happens instantaneously because no data is copied or moved.
-
-Note that in the initial release, volumes will move only in storage failover scenarios and when nodes are added or removed from the cluster. These moves are controlled only through ONTAP.
-
 .Can I use different types of switches for the backend network?
 
 No. Only switches specifically approved for and provided with the ONTAP AFX storage platform are supported for the backend network.
 
-.Automated Topology Management
+.How is the storage in an ONTAP AFX cluster organized?
 
-Automated Topology Management (ATM) is an ONTAP AFX feature that responding to system and user object imbalances across an AFX cluster. When an imbalance is detected, an internal job is triggered to evenly distribute the data objects across the active nodes in the cluster. The data is reallocated using Zero Copy Volume Move. This feature copies and updates the object metadata as needed. Because no actual data is sent over the wire, the operation is completely copy free.
+All the disks and storage shelves attached to an ONTAP AFX cluster are part of a Storage Availability Zone (SAZ). Each AFX cluster supports only one SAZ which cannot be shared across AFX clusters (except for SnapMirror replication). Every node has visibility to all the storage in the SAZ. When storage shelves are added to a cluster, ONTAP automatically adds the disks. The Storage Availability Zone can also be referred to as a capacity pool, storage pool, or storage pod.
+
+.How does a volume move operation work in Unified ONTAP compared to ONTAP AFX?
+
+With Unified ONTAP, it is possible to relocate a volume nondisrutptively from one node or aggregate to another in the cluster. This is performed using background copy operation with SnapMirror technology, where a new destination volume is created at the new location. Depending on the size of the volume and the utilization of cluster resources, the time it takes for a volume move to complete can vary.
+
+With ONTAP AFX, there are no aggregates. All storage is contained within a single Storage Availability Zone which every node in the cluster has visibility to. As a result, volume moves never need to actually copy the data. Instead, all volume moves are performed with pointer updates between nodes. This is referred to as a Zero Copy Volume Move (ZCVM) and happens instantaneously because no data is actually copied or moved.
+
+Note that in the initial release, volumes will move only in storage failover scenarios and when nodes are added or removed from the cluster. These moves are controlled only through ONTAP.
+
+.How does ONTAP AFX determine where to place data across the SAZ?
+
+ONTAP AFX includes a feature known as Automated Topology Management (ATM) which responds to system and user object imbalances. The primary objective of ATM is to balance data objects across the AFX cluster. When an imbalance is detected, an internal job is triggered to evenly distribute the data across the active nodes. The data is reallocated using ZCVM which only needs to copy and update the object metadata.
