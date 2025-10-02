@@ -68,4 +68,10 @@ image:afx-arch.png[AFX architecture]
 
 [big red]*DP: Image #2*
 
-image:oam-architecture.png[OAM architecture]
+image:oam-architecture.png[AFX architecture]
+
+== ONTAP AFX deployment - image 3
+
+[big red]*DP: Image #3*
+
+image:image001.png[AFX architecture]
