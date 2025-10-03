@@ -11,7 +11,7 @@ summary: Learn how to install the switches for the AFX 1K storage system and sto
 [.lead]
 After you complete your preparation for the AFX 1K storage system installation, you should install the switches in the cabinet or telco rack.
 
-Depending on your configuration, you might need to install the Cisco Nexus 9332D-GX2B switch and pass-through panel in a NetApp cabinet. Standard brackets are included with the switch.
+Install Cisco Nexus 9332D-GX2B or 9364D-GX2A switches in the cabinet or rack. Install a pass-through panel kit if using the Cisco Nexus 9364D-GX2A switch.
 
 .Before you begin
 Make sure you have the following components available: 
