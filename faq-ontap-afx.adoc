@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: faq-ontap-afx.html
-keywords: 
-summary: 
+keywords: ontap afx, afx, faq, frequently asked questions
+summary: "This FAQ list answers questions that customers typically have about their ONTAP AFX storage system. It includes concepts and terminology that can be helpful when exploring AFX in more detail or performing advanced administration tasks."
 ---
 
 = FAQ for ONTAP AFX storage systems
@@ -13,7 +13,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-This FAQ list answers common questions that customers typically have about their ONTAP AFX storage system. It includes concepts and terminology that can be helpful when exploring AFX in more detail or performing advanced administration tasks.
+This FAQ list answers questions that customers typically have about their ONTAP AFX storage system. It includes concepts and terminology that can be helpful when exploring AFX in more detail or performing advanced administration tasks.
 
 == General
 
@@ -60,6 +60,8 @@ No. ONTAP AFX and Unified ONTAP nodes cannot co-exist within the same cluster.
 
 The SnapMirror version rules for ONTAP AFX are identical to Unified ONTAP. This means that to replicate from Unified ONTAP, the source system must be within the supported version range. To replicate from AFX, the Unified ONTAP system must be at ONTAP 9.16.1 or later (the earliest release the Advanced Capacity Balancing features is supported). For FlexCache, the same rules apply for source and destination systems as described in https://www.netapp.com/pdf.html?item=/media/7336-tr4743.pdf[TR-4743^].
 
+Also be aware that a FlexGroup volume on ONTAP AFX cannot be an origin volume for a FlexCache volume using the Writeback mode.
+
 .Can I make ONTAPI (ZAPI) API calls to an ONTAP AFX cluster?
 
 No. Only the REST API is supported with ONTAP AFX. Any automation code that uses ZAPI needs to be converted to the REST API for use with ONTAP AFX.
@@ -79,9 +81,8 @@ The data protocols supported with ONTAP AFX include the following:
 
 No. The data protocols in ONTAP AFX operate the same as with Unified ONTAP.
 
-.Does ONTAP AFX support 400Gbe networking? 
-
-Yes.
+// 9.18.1
+//.Does ONTAP AFX support 400Gbe networking? 
 
 .Is Advanced Disk Partitioning (ADP) used in ONTAP AFX?
 

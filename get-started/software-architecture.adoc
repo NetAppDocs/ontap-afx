@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar
 permalink: get-started/software-architecture.html
-keywords: 
-summary: 
+keywords: ontap afx, afx, cluster, architecture, physical, logical
+summary: "The ONTAP AFX architecture is composed of several hardware and software components. These system components are organized in two different categories."
 ---
 = Details of the ONTAP AFX architecture
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The ONTAP AFX architecture is composed of several hardware and software components. These system components are organized in three different categories.
+The ONTAP AFX architecture is composed of several hardware and software components. These system components are organized in two different categories.
 
 == Physical components
 
@@ -55,23 +55,8 @@ The data layout and access is tuned for seamless access and efficient utilizatio
 
 ONTAP AFX provides a tenant model that builds on the SVM model available with Unified ONTAP. Most of the SVM concepts translate directly from unified ONTAP. The AFX tenant model has been streamlined for simplified administration.
 
-== ONTAP AFX deployment - image 1
+== ONTAP AFX deployment
 
-The following illustrates a typical deployment of an ONTAP AFX cluster. Notice the four controller nodes are decoupled from the two storage shelves with connectivity provided through a shared cluster storage network switch.
+The following illustrates a typical deployment of an ONTAP AFX cluster. Notice the controller nodes are decoupled from the storage shelves and connected through a shared network.
 
-[big red]*DP: Image #1*
-
-image:afx-arch.png[AFX architecture]
-//image:oam-architecture.png[OAM architecture]
-
-== ONTAP AFX deployment - image 2
-
-[big red]*DP: Image #2*
-
-image:oam-architecture.png[AFX architecture]
-
-== ONTAP AFX deployment - image 3
-
-[big red]*DP: Image #3*
-
-image:image001.png[AFX architecture]
+image:afx-cluster.png[AFX cluster architecture]
