@@ -18,7 +18,7 @@ To install your AFX storage system, you need the following equipment and tools.
 ** Electrostatic discharge (ESD) strap 
 ** Flashlight
 ** Laptop or console with a USB/serial connection
-** Paperclip or narrow tipped ball point pen for setting storage shelf IDs
+** Paperclip or narrow-tipped ballpoint pen for setting storage shelf IDs
 ** Phillips #2 screwdriver 
 
 == Lifting precautions 

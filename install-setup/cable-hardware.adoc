@@ -21,7 +21,7 @@ Contact your network administrator for information about connecting the storage 
 +
 image::../media/drw_a1K_back_slots_labeled_ieops-2162.svg[Slot numbering on an AFX controller]
 
-* The cabling graphics have arrow icons showing the proper orientation (up or down) of the cable connector pull-tab when inserting a connector into a port.
+* The cabling graphics show arrow icons indicating the proper orientation (up or down) of the cable connector pull-tab when inserting a connector into a port.
 +
 As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
 +
@@ -131,7 +131,7 @@ image::../media/oie_cable_25Gb_Ethernet_SFP28_ieops-1069.png[Cluster HA cable]
 image::../media/drw_afx_switched_cluster_cabling_b_ieops-2353.svg[Cable cluster connections to cluster network]
 
 == Step 4: Cable the controller-to-switch storage connections
-Connect the controller storage ports to the switches.  Make sure you have the appropriate number and type of cables and cable connectors for your switches. See https://hwu.netapp.com[Hardware Universe^] for more information.
+Connect the controller storage ports to the switches.  Ensure you have the correct cables and connectors for your switches. See https://hwu.netapp.com[Hardware Universe^] for more information.
 
 . Connect the following storage ports to any non-ISL port on switch A.
 * Controller A
@@ -204,4 +204,4 @@ image::../media/drw_afx_shelf_cabling_b_ieops-2357.svg[Cable shelf to switch A a
 
 .What's next?
 
-After you’ve cabled the hardware, you link:power-on-configure-switch.html[power on and configure the switches for your AFX 1K system].
+After cabling the hardware, link:power-on-configure-switch.html[power on and configure the switches].

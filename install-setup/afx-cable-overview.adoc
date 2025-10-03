@@ -14,7 +14,7 @@ Learn about the supported hardware components and cabling options for the AFX 1K
 == Supported AFX 1K cabling configuration
 The initial configuration of the AFX 1K storage system supports a minimum of four controller nodes connected through dual switches to the storage disk shelves. 
 
-Additional controller nodes and disk shelves can be used to expand on the initial AFX 1K storage system configuration. Expanded AFX 1K configurations follow the same switch-based cabling methodology as the schema depicted below. 
+Additional controller nodes and disk shelves expand the initial AFX 1K storage system configuration. Expanded AFX 1K configurations follow the same switch-based cabling methodology as the schema depicted below. 
 
 image:../media/drw_afx_cable_overview_half_node_ieops-2358.svg[AFK 1K storage system example cabling]
 
@@ -32,12 +32,12 @@ a|
 * Cisco Nexus 9332D-GX2B (400GbE)
 * Cisco Nexus 9364D-GX2A (400GbE)
 a|
-* 4 x 100GbE QSFP breakout cable cables
-
+* 400GbE QSFP-DD breakout to 4x100GbE QSFP breakout cable cables
++
 NOTE: Breakout cables are used for 100GbE connections between the switches, controllers, and disk shelves. 
-
-* 100GbE cables to controller cluster and HA ports
-* 100GbE cables to disk shelves
++
+** 100GbE cables to controller cluster and HA ports
+** 100GbE cables to disk shelves
 * 2 x 400GbE cables for ISL connections between switch A and switch B 
 * RJ-45 cables for management connections
 |===
