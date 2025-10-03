@@ -4,7 +4,7 @@ permalink: administer/create-svm.html
 keywords: 
 summary: 
 ---
-= Create and set up an ONTAP AFX SVM
+= Create an ONTAP AFX data SVM
 :icons: font
 :imagesdir: ../media/
 

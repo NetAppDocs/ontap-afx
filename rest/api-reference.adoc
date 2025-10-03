@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: rest/api-reference.html
-keywords: 
-summary: 
+keywords: ontap afx, afx, rest api, rest api reference, swagger
+summary: "The ONTAP AFX REST API reference contains details about all the API calls. This documentation is helpful when developing automation applications."
 ---
 
 = ONTAP AFX REST API reference documentation

@@ -12,7 +12,7 @@ summary:
 ONTAP AFX is a storage product that complements the existing NetApp offerings including Unified ONTAP available with FAS and AFF as well as ASA r2, E-Series, and StorageGRID. It's based on a next‑generation storage architecture that evolves the ONTAP storage model into a disaggregated high-performance NAS solution. ONTAP AFX supports both file and object workloads with advanced technologies and processing techniques that provide extremely high performance.
 
 // Comment to reviewers:
-[big red]*DP: Please confirm the hardware infrastructure list at bottom. Are we missing anything in the list below?*
+[big red]*DP: Please confirm the hardware infrastructure list at bottom. Are we missing anything?*
 
 == Typical application workloads
 

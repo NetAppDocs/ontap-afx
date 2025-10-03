@@ -13,7 +13,7 @@ You can expand the compute capacity of an ONTAP AFX cluster independent of the s
 
 == Prepare to expand a cluster
 
-Before expanding an ONTAP AFX cluster, you should be familiar with the basic requirements and troubleshooting procedures.
+Before expanding an ONTAP AFX cluster, you should be familiar with the basic requirements and approach to troubleshooting.
 
 === Requirements
 
@@ -38,23 +38,25 @@ Confusion about how ATM should be active::
 It may appear that volumes aren't distributed as quickly as expected. ATM attempts to detect and respond to a hardware event every five minutes. In the worst case, a rebalance operation is always launched 40 minutes after the last one completed.
 
 Need to prevent movement of a specific volume::
-xxx DIAG ??
+[big red]*DP: Is this possible outside of diag?*
 
 Need to determine how a volume move was triggered::
-xxx DIAG ??
+[big red]*DP: Is this possible outside of diag?*
 
 ==== CLI commands
 
 There are several commands you can use to monitor a cluster expansion operation.
 
-[NOTE]
-You may need to elevate your privilege level in the CLI session to access a specific command.
+* `volume move show`
+* `volume move show -instance`
 
-* (8.1.2): `aggregate show -fields volcount`
-* `volume show -aggregate <name> -fields atm-state`
-* `volume modify -volume <>  -atm-state disabled`
-* `volume move show -vserver <> -volume <> -fields is-ATM-triggered-copyfree-move`
-* (WAFL TOI): `volume move show -instance`
+[TIP]
+Contact NetApp support for additional assistance as needed.
+
+// `aggregate show -fields volcount`
+// `volume show -aggregate <name> -fields atm-state`
+// `volume modify -volume <>  -atm-state disabled`
+// `volume move show -vserver <> -volume <> -fields is-ATM-triggered-copyfree-move`
 
 == Add nodes to the cluster
 

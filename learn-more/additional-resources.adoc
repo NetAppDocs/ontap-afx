@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar
 permalink: learn-more/additional-resources.html
-keywords: 
-summary: 
+keywords: ontap afx, afx, learn more, additional resources
+summary: "There are additional resources you can access to get help with ONTAP AFX and find more information about ONTAP as well as related NetApp products and services."
 ---
 = Additional resources for ONTAP AFX
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-There are additional resources you can access to get help with AFX and find more information about ONTAP as well as related NetApp products and services.
+There are additional resources you can access to get help with ONTAP AFX and find more information about ONTAP as well as related NetApp products and services.
 
 == ONTAP documentation
 

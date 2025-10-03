@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: rest/learn-rest-api.html
-keywords: 
-summary: 
+keywords: ontap afx, afx, rest api, rest, automation
+summary: "The ONTAP AFX REST API is based on the REST API provided with the Unified ONTAP personality. There are a number of changes which adapt it to the unique characteristics and capabilities of the AFX personality."
 ---
 
 = Learn about the ONTAP AFX REST API
@@ -17,7 +17,7 @@ The ONTAP AFX REST API is based on the REST API provided with the Unified ONTAP 
 
 == Unsupported features
 
-ONTAP AFX is a high-performance NAS storage system. It enables clients to access data using NFS, SMB/CIFS, and S3. There are several unsupported features, including:
+ONTAP AFX is a high-performance NAS storage system. It enables clients to access data using NFS, SMB/CIFS, and S3. Because of this specialization, there are several unsupported features including:
 
 * Metrocluster
 * Storage area networking (SAN)

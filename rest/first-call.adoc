@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: rest/first-call.html
-keywords: 
-summary: 
+keywords: ontap afx, afx, rest api, first call, curl
+summary: "You can issue a simple curl command to get started using the ONTAP AFX REST API and confirm its availability."
 ---
 
 = Your first ONTAP AFX REST API call

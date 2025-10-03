@@ -172,11 +172,17 @@ link:../administer/configure-svm.html[Configure] your SVM and prepare for client
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Prepare to provision storage
 
 [role="quick-margin-para"]
-link:../manage-data/prepare-manage-data.html[Prepare] to allocate and manage a data container
+link:../manage-data/prepare-manage-data.html[Prepare] to allocate and manage your data.
 
 == References to additional documentation
 
-NetApp offers ONTAP in three distinct personalities. Where appropriate, this ONTAP AFX documentation includes links to topics at the Unified ONTAP doc site. The additional information provides more depth and a different perspective that can be helpful as you administer your ONTAP AFX storage system.
+NetApp offers ONTAP in three distinct personalities:
+
+* Unified ONTAP
+* ONTAP AFX
+* AsA r2
+
+Where appropriate, this ONTAP AFX documentation includes links to topics at the Unified ONTAP doc site. This additional information provides more depth and a different perspective that can be helpful as you administer your ONTAP AFX storage system.
 
 == Related information
 
