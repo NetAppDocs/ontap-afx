@@ -81,7 +81,7 @@ The data protocols supported with ONTAP AFX include the following:
 
 No. The data protocols in ONTAP AFX operate the same as with Unified ONTAP.
 
-// 9.18.1
+// -----------------------------------------------------------------------------
 //.Does ONTAP AFX support 400Gbe networking? 
 
 .Is Advanced Disk Partitioning (ADP) used in ONTAP AFX?
