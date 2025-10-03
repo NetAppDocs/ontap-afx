@@ -16,7 +16,7 @@ After you install the switches, you should install the hardware for your AFX 1K 
 
 * Make sure you have the instructions packaged with the rail kit.
 
-* Be aware of the safety concerns associated with the weight of the storage system and storage shelf.
+* Understand the safety concerns related to the weight of the storage system and storage shelf.
 
 * Understand that the airflow through the storage system enters from the front where the bezel or end caps are installed and exhausts out the rear where the ports are located.
 

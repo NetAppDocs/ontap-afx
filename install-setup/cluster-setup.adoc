@@ -77,11 +77,11 @@ You will be redirected to the System Manager sign-in page. Perform the steps des
 
 == Complete cluster setup
 
-After the initial configuration has been completed, you can complete the cluster setup using System Manager.
+After the initial configuration, complete the cluster setup using System Manager.
 
 .About this task
 
-There are three areas of the AFX cluster that are configured to complete the setup process. Normally you should complete all three, however only the first is required. The last two can be deferred if needed.
+Three areas of the AFX cluster are configured for setup. Complete all three if possible; only the first is required, and the last two are optional.
 
 .Before you begin
 
