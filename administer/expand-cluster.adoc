@@ -9,18 +9,15 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can expand the compute capability of an ONTAP AFX cluster independent of the storage capacity. The expansion is performed without disruption and increases performance scaling linearly as volumes are rebalanced across the nodes. This feature is a significant benefit as you adjust to the ongoing needs of your AFX storage users.
+You can expand the compute capacity of an ONTAP AFX cluster independent of the storage capacity. The expansion is performed without disruption and increases performance linearly as volumes are rebalanced across the nodes. This feature is a significant benefit as you adjust to the ongoing needs of your AFX storage users.
 
-// Comment to reviewers:
-[big red]*DP: The content on this page was taken from the EAP plan. It needs to be thoroughly reviewed because, as with the initial cluster setup, I have not had access to AFX to tested it.*
-
-.About this task
-
-This procedure describes how to add two nodes to an existing cluster but can be adapted to any deployment environment. You'll need to use both the ONTAP CLI and System Manager administrative interfaces.
-
-.Before you begin
+== Prepare to expand the cluster
 
 You need the credentials for a cluster administrator account and be able to connect to the ONTAP CLI using SSH. When expanding a cluster, you must add an even number of compute nodes and adhere to the size limitations of your ONTAP AFX system.
+
+== Add nodes to the cluster
+
+This procedure describes how to add two nodes to an existing cluster but can be adapted to any deployment environment. You'll need to use both the ONTAP CLI and System Manager administrative interfaces.
 
 .Steps
 
@@ -94,3 +91,7 @@ This step is only needed if the other interfaces do not use the 169.254.x.x addr
 * Adding new nodes to the cluster should be nondisruptive.
 * Volume moves should happen automatically.
 * Performance should scale linearly.
+
+== Related information
+
+* link:../faq-ontap-afx.html[FAQ for ONTAP AFX storage systems]

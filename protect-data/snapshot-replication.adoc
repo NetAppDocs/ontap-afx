@@ -79,7 +79,7 @@ You have created a replication policy and are now ready to create a replication 
 
 A snapshot replication relationship establishes a connection between your ONTAP AFX system and a remote location so that you can replicate consistency groups to a remote cluster. Replicated consistency groups can be used for disaster recovery or for data migration. 
 
-For protection against ransomware attacks, when you set up your replication relationship, you can select to lock the destination snapshots. Locked snapshots cannot be deleted accidentally or maliciously.  You can use locked snapshots to recover data if a storage unit is compromised by a ransomware attack.
+For protection against ransomware attacks, when you set up your replication relationship, you can select to lock the destination snapshots. Locked snapshots cannot be deleted accidentally or maliciously.  You can use locked snapshots to recover data if a volume is compromised by a ransomware attack.
 
 .Before you begin
 

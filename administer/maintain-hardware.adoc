@@ -2,13 +2,11 @@
 sidebar: sidebar
 permalink: administer/maintain-hardware.html
 keywords: ontap afx maintain, ontap afx maintain hardware
-summary: 
+summary: Navigate to the ONTAP AFX maintenance documentation to learn how to perform maintenance procedures on your ONTAP AFX storage system.
 ---
 = Maintain the ONTAP AFX hardware
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Go to the https://docs.netapp.com/us-en/ontap-systems/asa-r2-landing-maintain/index.html[ONTAP AFX maintenance documentation^] to learn how to perform maintenance procedures on your ONTAP AFX storage system.
-
-[big red]*DP: I modeled this page based on the equivalent page in the ASA r2 documentation. But will need an updated the link above.*
+Navigate to the https://docs.netapp.com/us-en/ontap-systems/afx-landing-maintain/index.html[ONTAP AFX maintenance documentation^] to learn how to perform maintenance procedures on your ONTAP AFX storage system.

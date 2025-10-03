@@ -11,20 +11,11 @@ summary:
 [.lead]
 Comparing ONTAP AFX to Unified ONTAP provides a valuable perspective and can be helpful when evaluating AFX for your environment.
 
-// Comment to reviewers:
-[big red]*DP: Do we need to add a list of unsupported CLI commands? See the last section on this page as a start.*
-
 == New platform built on Unified ONTAP
 
 ONTAP AFX is derived from the Unified ONTAP personality. Because of this, it includes a robust set of features and administrative options. If you're an experienced ONTAP user, you'll find it very easy to work with AFX. If you're new to ONTAP, the simplified System Manager user interface and streamlined administration will help you get started quickly.
 
 There are several new and updated features available with ONTAP AFX. Review the related information for more details.
-
-.Related information
-
-* link:../get-started/system-design.html[ONTAP AFX system characteristics]
-* link:../get-started/software-architecture.html[Details of the ONTAP AFX architecture]
-* link:../faq-ontap-afx.html[FAQ for ONTAP AFX storage systems]
 
 == Configuration differences with Unified ONTAP
 
@@ -33,8 +24,7 @@ There are a few areas where the default AFX configuration differs from Unified O
 // Comment to reviewers:
 [big red]*DP: IE needs help in confirming the following content and providing any other configuration differences.*
 
-.Advanced Capacity Balancing
-
+Advanced Capacity Balancing::
 The GDD option is enabled by default for all FlexGroup volumes.
 
 == Unsupported or restricted Unified ONTAP capabilities
@@ -49,20 +39,20 @@ You should review the updates and changes for ONTAP AFX in the appropriate link:
 
 The following features, organized in several categories, are not available or have changed with the initial release of ONTAP AFX.
 
-.General features
+=== General features
 
 * FabricPool
 * AI based anti-ransomware protection
 * ONTAPI API (ZAPI)
 * Active IQ Unified Manager
 
-.SAN-related features
+=== SAN-related features
 
 * SAN administration and client access
 * MetroCluster
 * Thick provisioned volumes
 
-.Aggregate-related features
+=== Aggregate-related features
 
 The following aggregate-related features are not available with the initial release of ONTAP AFX:
 
@@ -72,7 +62,7 @@ The following aggregate-related features are not available with the initial rele
 * SyncMirror (aggregate mirroring)
 * RAID management
 
-.Data replication
+=== Data replication
 
 * No replication of a volume from Unified ONTAP that contains a LUN
 * FlexGroup volumes can only be replicated to ONTAP 9.16.1 or later
@@ -81,12 +71,18 @@ The following aggregate-related features are not available with the initial rele
 
 The CLI available with ONTAP AFX generally mirrors Unified ONTAP. But there are several differences, including:
 
-* New commands related to:
-** Displaying the storage availability zone capacity 
+* New AFX commands related to:
+** Displaying the capacity of the storage availability zone
 ** Boot media
 
 * No SAN-related commands 
 
 * Aggregate management commands are no longer required
 
-* FlexAggr commands can only show the FlexAggrs
+* FlexAggr commands can only display or show the FlexAggrs
+
+== Related information
+
+* link:../get-started/system-design.html[ONTAP AFX system characteristics]
+* link:../get-started/software-architecture.html[Details of the ONTAP AFX architecture]
+* link:../faq-ontap-afx.html[FAQ for ONTAP AFX storage systems]
