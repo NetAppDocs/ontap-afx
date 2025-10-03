@@ -12,7 +12,7 @@ summary:
 In addition to the common ONTAP AFX SVM administration tasks, there may be other tasks you need to perform based on your environment. Most of these additional tasks can be performed using System Manager, although in some cases one of the other administrative interfaces may be needed.
 
 // Comment to reviewers:
-[big red]*DP: This page is a catch all "bucket" for cluster administration topics that don't justify a dedicated page. We'll briefly describe and link to at the Unified ONTAP doc. We expect this page to grow.*
+[big red]*DP: This page is a catch all "bucket" for SVM and data administration topics that don't justify a dedicated page. I'll briefly describe the feature and link to at the Unified ONTAP doc. We expect this page to grow.*
 
 .Related information
 

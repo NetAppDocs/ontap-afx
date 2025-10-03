@@ -29,10 +29,6 @@ You can create an on-demand snapshot of a volume at any time. The volume does no
 +
 Automated snapshots are created based on the snapshot policy definitions. To apply a snapshot policy to a volume for automated snapshot creation, the volumes needs to be a member of the same consistency group. If you apply a snapshot policy to a consistency group, all the volumes in the consistency group are protected.
 
-.Related information
-
-* https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html[Create an ONTAP snapshot policy^]
-
 == Create a snapshot
 
 Create a snapshot of a volume or consistency group.
@@ -134,3 +130,7 @@ The initial data transfer for replication starts immediately by default.
 ====
 
 // end tabbed area
+
+== Related information
+
+* https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html[Create an ONTAP snapshot policy^]

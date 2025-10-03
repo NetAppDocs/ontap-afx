@@ -13,24 +13,18 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-This FAQ list provides answers to common questions customers typically have about their ONTAP AFX storage systems. It describes concepts and terminology that can be helpful when exploring AFX in more detail or performing advanced administration tasks. For convenience, the list is organized in several major sections by category.
+This FAQ list answers common questions that customers typically have about their ONTAP AFX storage system. It includes concepts and terminology that can be helpful when exploring AFX in more detail or performing advanced administration tasks.
 
-// Comment to reviewers:
-[big red]*DP: Justin provided a very large FAQ document (Sept 2). I haven't added all the entries yet and so this list will grow before product launch. Also, are the following entries acceptable to include in the advanced technical section of this FAQ page?*
- 
-[big red]*- automated topology management (ATM)*
-[big red]*- volume placement API*
-
-== General concepts and terminology
+== General
 
 .What is an ONTAP personality?
 
 ONTAP is a robust and versatile storage platform, known for its comprehensive feature set and adaptability to a wide range of storage requirements. While this flexibility makes it an excellent choice for organizations with diverse workloads, some customers can benefit from a more tailored storage solution optimized for the needs of their specific environment.
 
-To address these specialized needs, NetApp offers distinct ONTAP personalities, each of which includes a feature set designed to support the unique customer requirements. An ONTAP personality is a combination of hardware and software capabilities and purpose-built to deliver an optimized experience for targeted use cases. NetApp provides three ONTAP personalities:
+To address these specialized needs, NetApp offers distinct ONTAP personalities, each of which includes a feature set designed to support the unique customer requirements. An ONTAP personality is typically a combination of hardware and software capabilities and purpose-built to deliver an optimized experience for targeted use cases. NetApp provides three ONTAP personalities:
 
-ONTAP Unified::
-The ONTAP Unified personality delivers a broad set of data management features, supporting NAS, SAN, and S3 protocols for maximum flexibility. This is the NetApp flagship offering, available on AFF and FAS systems as well as virtualized deployments such as ONTAP Select. 
+Unified ONTAP::
+The Unified ONTAP personality delivers a broad set of data management features, supporting NAS, SAN, and S3 protocols for maximum flexibility. This is the NetApp flagship offering, available on AFF and FAS systems as well as virtualized deployments such as ONTAP Select. 
 
 ASA r2::
 The ONTAP ASA r2 personality provides a disaggregated solution designed specifically for SAN-only environments. ASA r2 systems streamline the storage experience for block workloads, providing simplified management and performance optimized for SAN customers.
@@ -38,66 +32,52 @@ The ONTAP ASA r2 personality provides a disaggregated solution designed specific
 AFX::
 The ONTAP AFX personality provides a disaggregated solution engineered to meet the rigorous requirements of high-performance NAS and S3 workloads, including AI/ML applications. AFX systems deliver specialized capabilities for customers requiring scalable, high-throughput file and object storage.
 
-By offering these unique ONTAP personalities, NetApp enables organizations to select a storage solution aligned with their operational requirements and application workloads.
+By offering these distinct ONTAP personalities, NetApp enables organizations to select a storage solution aligned with their operational requirements and application workloads.
 
 .After I acquire one of the ONTAP products, can I change the personality?
 
-No. The personality of your ONTAP storage system is immutable and cannot be changed.
+No. The personality of your ONTAP storage system is immutable and cannot be changed. For example, you cannot convert or upgrade a Unified ONTAP cluster to an ONTAP AFX cluster.
 
 .What does "disaggregated" mean in the context of ONTAP AFX storage systems?
 
-The term "disaggregated" can have different though related meanings with ONTAP AFX.
+The term "disaggregated" can have two different though related meanings with ONTAP AFX depending on the context.
 
-An important concept to begin with is the decoupling the compute capability in the controller nodes from the storage shelves. With ONTAP AFX, the cluster compute and storage components are no longer tightly coupled as they are with Unified ONTAP. Instead they are connected through one or more cluster switches. Each controller has a complete view of the entire cluster storage pool.
+An important concept to begin with is the decoupling of the compute capability in the controller nodes from the storage shelves. With ONTAP AFX, the cluster compute and storage components are no longer tightly coupled as they are with Unified ONTAP. Instead they are connected through cluster switches. Each controller has a complete view of the entire cluster storage pool.
 
 The second related concept with disaggregated storage is that the aggregates and RAID management are removed as administrable entities. A storage abstraction layer within ONTAP AFX automatically configures and manages the aggregates, physical disks, and RAID groups. This allows the administrator to focus on the higher level storage configuration based on volumes and buckets.
 
-.Where is Unified ONTAP more appropriate than ONTAP AFX?
+.Will Unified ONTAP be discontinued? Will I be required to moved to ONTAP AFX?
 
-Unified ONTAP is the premier enterprise storage solution for a wide variety of workloads. Some main of the benefits of continuing to use Unified ONTAP include:
-
-* Familiar architecture 
-* Benefits of disaggregated ONTAP do not outweigh the downsides of data migration 
-* Wider range of supported platforms and disk shelves
-* Earlier supported ONTAP versions (priot to ONTAP 9.17.1)
-* No requirement for extremely high performance or independent scaling
-* No need for a larger number of nodes
-* SAN support is required 
-
-== Sales and product positioning
-
-.What are the intended targeted workloads for ONTAP AFX?
-
-This architecture has been designed with artificial intelligence (AI), machine learning (ML), and large language model (LLM) workloads in mind. These are specifically those applications with high throughput requirements, such as AI training and inference. As a secondary market, disaggregated ONTAP can also be effective with EDA and Media/Entertainment workloads. However, due to the ONTAP AFX requirements (minimum cluster size, hardware type), Unified ONTAP may be the more appropriate choice in this case.
+No. Unified ONTAP is the dominant architecture and flagship NetApp storage product and is expected to remain so for the foreseeable future. There is no plan to require or force customers to migrate to ONTAP AFX.
 
 == Interoperability
 
-.Can I use ONTAP AFX in the same cluster as Unified ONTAP? 
+.Can I mix ONTAP AFX nodes with Unified ONTAP nodes in the same cluster?
 
-No. ONTAP AFX and Unified ONTAP cannot co-exist within the same cluster. 
+No. ONTAP AFX and Unified ONTAP nodes cannot co-exist within the same cluster.
 
 .If I want to use Unified ONTAP with ONTAP AFX for SnapMirror or FlexCache, what ONTAP version will I need?
 
-SnapMirror version rules for Unified ONTAP are identical for disaggregated ONTAP. This means that to replicate from Unified ONTAP, the source system must be within the supported version range. To replicate from disaggregated ONTAP, the Unified ONTAP system must be at ONTAP 9.16.1 or later (that is, the earliest release Advanced Capacity Balancing is supported). For FlexCache, the same rules apply for source and destination systems as provided in https://www.netapp.com/pdf.html?item=/media/7336-tr4743.pdf[TR-4743^].
+The SnapMirror version rules for ONTAP AFX are identical to Unified ONTAP. This means that to replicate from Unified ONTAP, the source system must be within the supported version range. To replicate from AFX, the Unified ONTAP system must be at ONTAP 9.16.1 or later (the earliest release the Advanced Capacity Balancing features is supported). For FlexCache, the same rules apply for source and destination systems as described in https://www.netapp.com/pdf.html?item=/media/7336-tr4743.pdf[TR-4743^].
 
-== Advanced technical concepts
+.Can I make ONTAPI (ZAPI) API calls to an ONTAP AFX cluster?
 
-.Storage Availability Zone
+No. Only the REST API is supported with ONTAP AFX. Any automation code that uses ZAPI needs to be converted to the REST API for use with ONTAP AFX.
 
-A Storage Availability Zone (SAZ) is the formal name for the collection of disks and storage shelves attached to a single ONTAP AFX cluster. Every disk and shelf in the SAZ can participate in read and write operations. Only one SAZ per AFX cluster is supported and a SAZ cannot be shared across clusters (except for SnapMirror replication). When shelves are added to the cluster, ONTAP automatically adds the disks to the SAZ. The SAZ can also be referred to as a capacity pool, storage pool, or storage pod.
+== Advanced concepts
  
-.What are the supported data protocols in disaggregated ONTAP?
+.What are the data protocols supported with ONTAP AFX?
 
-The data protocols supported in disaggregated ONTAP include the following:
+The data protocols supported with ONTAP AFX include the following:
 
 * NFSv3, NFSv4.0, NFSv4.1, NFSv4.2 
 * SMB2.x, SMB3.x
 * S3
 * NDMP
 
-.Do data protocols operate differently in ONTAP AFX?
+.Do the data protocols operate differently in ONTAP AFX?
 
-No. The data protocols in ONTAP AFX operate identically compared to Unified ONTAP. 
+No. The data protocols in ONTAP AFX operate the same as with Unified ONTAP.
 
 .Does ONTAP AFX support 400Gbe networking? 
 
@@ -105,22 +85,24 @@ Yes.
 
 .Is Advanced Disk Partitioning (ADP) used in ONTAP AFX?
 
-No. ADP is not used with ONTAP AFX. Because there are no root aggregates, ADP is not needed to maximize disk space efficiency.
+No. ADP is not used with ONTAP AFX. Because there are no root aggregates with AfX, the ADP feature is not needed to maximize disk space efficiency.
 
-.How does a volume move work in Unified ONTAP versus ONTAP AFX?
+.Can I use different types of switches for the backend network?
 
-With Unified ONTAP, it is possible to relocate a volume nondisrutptively from one node or aggregate to another in the cluster. This is performed using background copy operation with SnapMirror technology, where a new destination volume is created at the new location. Depending on the size of the volume and the utilization of cluster resources, the time it takes for a a volume move to complete can vary in Unified ONTAP.
+No. Only switches specifically approved for and provided with the ONTAP AFX storage platform are supported for the backend network.
 
-With ONTAP AFX, there are no aggregates. All storage capacity is contained within a single Storage Availability Zone which every cluster node has visibility to. As a result, volume moves never need to actually copy the. Instead, all volume moves happen based on pointer updates between nodes. This happens instantaneously because no data is copied or moved.
+.How is the storage in an ONTAP AFX cluster organized?
 
-Note that in the initial release, volumes will move only in storage failover scenarios and when nodes are added or removed from the cluster and are controlled only via ONTAP.
+All the disks and storage shelves attached to an ONTAP AFX cluster are part of a Storage Availability Zone (SAZ). Each AFX cluster supports only one SAZ which cannot be shared across AFX clusters (except for SnapMirror replication). Every node has visibility to all the storage in the SAZ. When storage shelves are added to a cluster, ONTAP automatically adds the disks. The Storage Availability Zone can also be referred to as a capacity pool, storage pool, or storage pod.
 
-.Can I use different switch types for the backend network? 
+.How does a volume move operation work in Unified ONTAP compared to ONTAP AFX?
 
-No. Only the switches specifically approved for and provided with the ONTAP AFX platform are supported for the backend network.
+With Unified ONTAP, it is possible to relocate a volume nondisrutptively from one node or aggregate to another in the cluster. This is performed using background copy operation with SnapMirror technology, where a new destination volume is created at the new location. Depending on the size of the volume and the utilization of cluster resources, the time it takes for a volume move to complete can vary.
 
-== Cloud and 1P partners
+With ONTAP AFX, there are no aggregates. All storage is contained within a single Storage Availability Zone which every node in the cluster has visibility to. As a result, volume moves never need to actually copy the data. Instead, all volume moves are performed with pointer updates between nodes. This is referred to as a Zero Copy Volume Move (ZCVM) and happens instantaneously because no data is actually copied or moved.
 
-.How do the current 1P offerings (Azure NetApp Files, Google NetApp Cloud Volumes, Amazon Cloud Volume Services) interact with disaggregated ONTAP?
+Note that in the initial release, volumes will move only in storage failover scenarios and when nodes are added or removed from the cluster. These moves are controlled only through ONTAP.
 
-The 1P clouds do not currently offer disaggregated ONTAP options in their services and likely will not in the immediate future. The closest interaction you can achieve will be the potential ability to replicate to/from a 1P cloud offering or to attach a FlexCache volume to a 1P cloud offering.
+.How does ONTAP AFX determine where to place data across the SAZ?
+
+ONTAP AFX includes a feature known as Automated Topology Management (ATM) which responds to system and user object imbalances. The primary objective of ATM is to balance data objects across the AFX cluster. When an imbalance is detected, an internal job is triggered to evenly distribute the data across the active nodes. The data is reallocated using ZCVM which only needs to copy and update the object metadata.

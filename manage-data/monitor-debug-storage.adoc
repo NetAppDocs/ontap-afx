@@ -21,6 +21,6 @@ You can display a list of the NFS and SMB/CIFS clients currently connected to th
 . Select the tab *NFS* or *SMB/CIFS* as desired.
 . Customize the display as well as search and download the client information as needed.
 
-.Related information
+== Related information
 
 * link:../manage-data/prepare-manage-data.html[Prepare to manage your ONTAP AFX data]

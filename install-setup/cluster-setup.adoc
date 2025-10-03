@@ -13,7 +13,6 @@ After your ONTAP AFX hardware has been installed, you can complete the cluster s
 
 // Comment to reviewers:
 [big red]*DP: This page needs to be thoroughly reviewed. I did not have access to an actual AFX cluster to test. Also, is there anything we should include from the Unified ONTAP cluster setup? See:*
- 
 [big red]*https://docs.netapp.com/us-en/ontap/software_setup/workflow-summary.html[ONTAP cluster setup workflow summary^].*
 
 == Perform initial cluster setup
@@ -36,7 +35,7 @@ The cluster management IP address is a unique IPv4 address for the cluster manag
 +
 During cluster setup, ONTAP recommends a set of network interfaces appropriate for your configuration.  You can adjust the recommendation if necessary.
 
-*DP: Need confirmation of the parameters below.*
+[big red]*DP: Need confirmation of the parameters below.*
 
 * Network gateway IP address
 * Partner node IP address

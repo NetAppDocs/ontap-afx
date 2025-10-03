@@ -12,11 +12,7 @@ summary:
 In addition to the common ONTAP AFX cluster administration tasks, there may be other tasks you need to perform based on your environment. Most of the additional tasks can be performed using System Manager, although in some cases you may need to use the CLI or REST API.
 
 // Comment to reviewers:
-[big red]*DP: This page is a catch all "bucket" for cluster administration topics that don't justify a dedicated page. We'll briefly describe and link to at the Unified ONTAP doc. We expect this page to grow.*
-
-.Related information
-
-* link:../faq-ontap-afx.html[FAQ for ONTAP AFX storage systems]
+[big red]*DP: This page is a catch all "bucket" for cluster administration topics that don't justify a dedicated page. I'll briefly describe the feature and link to at the Unified ONTAP doc. We expect this page to grow.*
 
 == Licensing
 
@@ -30,10 +26,6 @@ ONTAP AFX is licensed in a similar way to Unified ONTAP AFF systems. An ONTAP AF
 . To optionally install a licenses, select the *Installed licenses* tab.
 . Select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
 . Select a local license file and select *Add*.
-
-.Related information
-
-* link:../system-admin/manage-licenses-concept.html[ONTAP licensing overview^]
 
 == Security
 
@@ -51,9 +43,12 @@ OAuth 2.0 is the industry standard authorization framework used to restrict and 
 . Select *Add configuration* and provide the configuration details.
 . Select *Save*.
 
-.Related information
+== Related information
+
+* link:../faq-ontap-afx.html[FAQ for ONTAP AFX storage systems]
+
+* link:../system-admin/manage-licenses-concept.html[ONTAP licensing overview^]
 
 * https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html[Overview of the ONTAP OAuth 2.0 implementation^]
-
 //=== IPsec
 //* https://docs.netapp.com/us-en/ontap/networking/ipsec-prepare.html[Prepare to use IP security on the ONTAP network^]

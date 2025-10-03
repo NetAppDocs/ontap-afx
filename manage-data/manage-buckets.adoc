@@ -9,12 +9,8 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-There are several administrative tasks you can perform as part of administering the buckets defined at your ONTAP AFX cluster.
+There are several administrative tasks you can perform as part of managing ONTAP AFX S3 buckets and client access. S3 configuration and support in ONTAP AFX is the same as provided with Unified ONTAP. Refer to the Unified ONTAP documentation for details.
 
-== Enable S3 access for a data SVM
+.Related information
 
-xxx
-
-== Configure access
-
-xxx
+https://docs.netapp.com/us-en/ontap/s3-config/index.html[Learn about ONTAP S3 configuration^]

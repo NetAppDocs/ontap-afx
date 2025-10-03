@@ -9,8 +9,9 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-xxx
+You can manage snapshots on your ONTAP AFX system. Refer to the Unified ONTAP documentation for details.
 
-*=> DP: Include at least two sections. One to create and another on policy. For configuring policy, link to the toplic below.*
+.Related information
 
-https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html[Create an ONTAP snapshot policy^]
+* https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html[Create an ONTAP snapshot policy^]
+* https://docs.netapp.com/us-en/ontap/flexgroup/protect-snapshot-copies-task.html[Protect ONTAP FlexGroup volumes using snapshots6]

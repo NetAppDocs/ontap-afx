@@ -29,8 +29,8 @@ entries:
         url: /protect-data/create-snapshot.html
       - title: Manage snapshots
         url: /protect-data/manage-snapshots.html
-      - title: Use SnapMirror
-        url: /protect-data/use-snapmirror.html
+#     - title: Use SnapMirror
+#       url: /protect-data/use-snapmirror.html
       - title: Create an SVM peer relationship
         url: /protect-data/create-peer-relationship.html
       - title: Set up and manage snapshot replication
@@ -41,6 +41,8 @@ entries:
 #       url: /protect-data/backup-restore.html
   - title: Secure data
     entries:
+      - title: Prepare to secure your data
+        url: /secure-data/prepare-secure-data.html
       - title: Encrypt data at rest
         url: /secure-data/encrypt-data-at-rest.html
       - title: Protect against ransomware attacks

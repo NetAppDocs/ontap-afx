@@ -14,12 +14,6 @@ You need to configure the network of your ONTAP AFX storage system. The networki
 [NOTE]
 Creating a network resource is an important first step. You also need to perform additional administrative actions, such as editing or deleting network definitions, as needed.
 
-.Related information
-
-* link:../administer/manage-ethernet-ports.html[Manage ONTAP AFX Ethernet ports]
-
-//https://docs.netapp.com/us-en/ontap/networking/view_network_information_overview.html[View ONTAP network information^]  ???
-
 == Create a broadcast domain
 
 A broadcast domain simplifies management of your cluster network by grouping ports that are part of the same layer two network. The storage virtual machines (SVMs) can then be assigned ports in the group for data or management traffic.
@@ -50,10 +44,6 @@ All broadcast domain names must be unique within an IPspace.
 The MTU is the largest data packet that can be accepted in the broadcast domain.
 . Choose the desired ports and select *Save*.
 
-.Related information
-
-* https://docs.netapp.com/us-en/ontap/networking/configure_broadcast_domains_cluster_administrators_only_overview.html[Learn about ONTAP broadcast domains^]
-
 == Create an IPspace
 
 An IPspace is an administrative domain for IP addresses and related network configuration. These spaces can be used to support your SVMs through isolated administration and routing. For example, they are useful when clients have overlapping IP addresses from the same IP address and subnet range.
@@ -73,10 +63,6 @@ All IPspace names must be unique within a cluster.
 .What's next
 
 You can use the IPspace to create a subnet.
-
-.Related information
-
-* https://docs.netapp.com/us-en/ontap/networking/configure_ipspaces_cluster_administrators_only_overview.html[Learn about ONTAP IPspace configuration^]
 
 == Create a subnet
 
@@ -100,10 +86,6 @@ You must have a broadcast domain and IPspace where the subnet will be defined. A
 
 The new subnet will simplify the creation of your network interfaces.
 
-.Related information
-
-* https://docs.netapp.com/us-en/ontap/networking/configure_subnets_cluster_administrators_only_overview.html[Learn about subnets for the ONTAP network^]
-
 == Create a network interface
 
 A logical network interface (LIF) consists of an IP address and related network configuration parameters. It can be associated with a physical or logical port and is typically used by the clients to access data provided by an SVM. LIFs provide resiliency in the event of a failure and can migrate among the node ports so communication is not interrupted.
@@ -115,6 +97,15 @@ A logical network interface (LIF) consists of an IP address and related network 
 . Provide the configuration details, including the name of the interface, interface type, allowed protocols, and IP address details.
 . Select *Save*.
 
-.Related information
+== Related information
+
+* link:../administer/manage-ethernet-ports.html[Manage ONTAP AFX Ethernet ports]
+//https://docs.netapp.com/us-en/ontap/networking/view_network_information_overview.html[View ONTAP network information^]  ???
+
+* https://docs.netapp.com/us-en/ontap/networking/configure_broadcast_domains_cluster_administrators_only_overview.html[Learn about ONTAP broadcast domains^]
+
+* https://docs.netapp.com/us-en/ontap/networking/configure_ipspaces_cluster_administrators_only_overview.html[Learn about ONTAP IPspace configuration^]
+
+* https://docs.netapp.com/us-en/ontap/networking/configure_subnets_cluster_administrators_only_overview.html[Learn about subnets for the ONTAP network^]
 
 * https://docs.netapp.com/us-en/ontap/concepts/network-connectivity-concept.html[Network architecture overview^]

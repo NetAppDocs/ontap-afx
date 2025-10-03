@@ -11,12 +11,6 @@ summary:
 [.lead]
 You need to prepare the authentication and authorization services used by ONTAP AFX to define user accounts and roles.
 
-.Related information
-
-* link:../administer/manage-users-roles.html[Manage ONTAP AFX cluster users and roles]
-
-* https://docs.netapp.com/us-en/ontap/system-admin/configure-saml-authentication-task.html[Configure SAML authentication for remote ONTAP users^]
-
 == Configure LDAP
 
 You can configure a Lightweight Directory Access Protocol (LDAP) server to maintain authentication information at a central location.
@@ -55,3 +49,9 @@ A confirmation window displays the metadata information, which has been automati
 . Select *Logout* to enable SAML-based authentication.
 +
 The IdP system will display an authentication screen.
+
+== Related information
+
+* link:../administer/manage-users-roles.html[Manage ONTAP AFX cluster users and roles]
+
+* https://docs.netapp.com/us-en/ontap/system-admin/configure-saml-authentication-task.html[Configure SAML authentication for remote ONTAP users^]

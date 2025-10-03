@@ -11,10 +11,6 @@ summary:
 [.lead]
 You can display a high-level overview of the performance of your ONTAP AFX cluster.
 
-.Related information
-
-* link:../administer/additional-ontap-cluster.html[Additional ONTAP AFX cluster administration]
-
 == Storage capacity
 
 The System Manager dashboard includes a high-level display of the storage utilization for the cluster.
@@ -40,3 +36,7 @@ System Manager provides a detailed overview of the ONTAP AFX cluster performance
 . Under the *Top actors* tab, select the desired SVM and then *Enable activity tracking* as needed.
 
 . Under the *Volume performance* tab, view the performance details of a specific volume.
+
+== Related information
+
+* link:../administer/additional-ontap-cluster.html[Additional ONTAP AFX cluster administration]
