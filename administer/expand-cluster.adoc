@@ -11,13 +11,15 @@ summary: "You can expand the compute capacity of an ONTAP AFX cluster independen
 [.lead]
 You can expand the compute capacity of an ONTAP AFX cluster independent of the storage capacity. The expansion is performed without disruption and increases performance linearly as volumes are rebalanced across the nodes. This feature is a significant benefit as you adjust to the ongoing needs of your AFX users.
 
+[big red]*DP: Please review the troubleshooting section. Not sure everything is possible, including the commands, when operating in either `admin` or 'advanced' privilege level.*
+
 == Prepare to expand a cluster
 
-Before expanding an ONTAP AFX cluster, you should be familiar with the basic requirements and approach to troubleshooting.
+Before expanding an ONTAP AFX cluster, you should be familiar with the basic requirements and general approach to troubleshooting.
 
 === Requirements
 
-You need the credentials for a cluster administrator account and be able to connect to the ONTAP CLI using SSH. When expanding a cluster, you must add an even number of nodes and adhere to the size limitations of your ONTAP AFX system.
+You need the credentials for a cluster administrator account and be able to connect to the ONTAP CLI using SSH. When expanding a cluster, you must add an even number of nodes and adhere to the size limitations of your ONTAP AFX system based on the release.
 
 === Troubleshooting
 
@@ -25,23 +27,23 @@ There are a few scenarios you should be aware of as you perform the cluster expa
 
 ==== Automatic volume rebalancing
 
-Automated Topology Management (ATM) is in internal ONTAP AFX component that detects allocation imbalances and rebalances volumes across the cluster nodes. It relies on the Zero Copy Volume Move (ZCVM) feature to relocate volumes using metadata updates and not by copying data. ZCVM is the default and only volume move technology available with ONTAP ATM.
+Automated Topology Management (ATM) is in internal ONTAP AFX component that detects allocation imbalances and rebalances volumes across the cluster nodes. It relies on the Zero Copy Volume Move (ZCVM) feature to relocate volumes using metadata updates instead of copying data. ZCVM is the default volume move technology available with ONTAP AFX.
 
 ==== Possible troubleshooting scenarios
 
-There are several scenarios you might need to investigate during the volume moves triggered with the expansion of an AFX cluster.
+There are several scenarios you might need to investigate during the volume moves associated with the expansion of an ONTAP AFX cluster.
 
 Volumes are not being moved by ATM::
 This can occur when the cluster is already in balance or when there are no eligible volumes to move.
 
-Confusion about how ATM should be active::
-It may appear that volumes aren't distributed as quickly as expected. ATM attempts to detect and respond to a hardware event every five minutes. In the worst case, a rebalance operation is always launched 40 minutes after the last one completed.
+Confusion about how or when ATM should be active::
+It may appear that volumes aren't distributed as quickly as expected. ATM attempts to detect and respond to hardware events every five minutes. In the worst case, a rebalance operation is always launched 40 minutes after the last one completed.
 
 Need to prevent movement of a specific volume::
-[big red]*DP: Is this possible outside of diag?*
+[big red]*DP: Is this possible outside of CLI diag?*
 
 Need to determine how a volume move was triggered::
-[big red]*DP: Is this possible outside of diag?*
+[big red]*DP: Is this possible outside of CLI diag?*
 
 ==== CLI commands
 
@@ -50,17 +52,16 @@ There are several commands you can use to monitor a cluster expansion operation.
 * `volume move show`
 * `volume move show -instance`
 
-[TIP]
-Contact NetApp support for additional assistance as needed.
+You should contact NetApp support for additional assistance as needed.
 
 // `aggregate show -fields volcount`
 // `volume show -aggregate <name> -fields atm-state`
 // `volume modify -volume <>  -atm-state disabled`
 // `volume move show -vserver <> -volume <> -fields is-ATM-triggered-copyfree-move`
 
-== Add nodes to the cluster
+== Add nodes to expand a cluster
 
-This procedure describes how to add two nodes to an existing cluster but can be adapted to any deployment environment. You'll need to use both the ONTAP CLI and System Manager administrative interfaces.
+This procedure describes how to add a pair of nodes to an existing cluster and can be adapted to any deployment environment. You'll need to use both the ONTAP CLI and System Manager administrative interfaces.
 
 .Steps
 
@@ -139,3 +140,4 @@ This step is only needed if the other interfaces do not use the 169.254.x.x addr
 
 * link:../get-started/prepare-cluster-admin.html[Prepare to administer ONTAP AFX]
 * link:../faq-ontap-afx.html[FAQ for ONTAP AFX storage systems]
+* https://mysupport.netapp.com/[NetApp Support Site]
