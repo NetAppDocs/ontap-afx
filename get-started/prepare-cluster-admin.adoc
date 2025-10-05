@@ -74,7 +74,7 @@ While you can use System Manager for most ONTAP AFX administration, there are so
 
 .About this task
 
-You can access the ONTAP AFX CLI through the secure shell (SSH). The CLI has two privilege levels that determine the commands and command parameters available to you. The `admin` level has the least privilege and is the default when you sign in. You can elevate the privilege of your session to `advanced` if needed using the `set` command.
+You can access the ONTAP AFX CLI through the secure shell (SSH). The CLI has multiple privilege levels that determine the commands and command parameters available to you. The `admin` level is the least privileged and default when you sign in. You can elevate the privilege of your session to `advanced` if needed using the `set` command.
 
 .Before you begin
 
@@ -96,7 +96,7 @@ You'll need the following:
 +
 `?`
 
-. Elevate the privilege level of your session:
+. Elevate the privilege level of your session from `admin` to `advanced`:
 +
 `set -privilege advanced`
 
