@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: faq-ontap-afx.html
 keywords: ontap afx, afx, faq, frequently asked questions
-summary: "This FAQ list answers questions that customers typically have about their ONTAP AFX storage system. It includes concepts and terminology that can be helpful when exploring AFX in more detail or performing advanced administration tasks."
+summary: "This FAQ list provides answers to questions that customers typically have about their ONTAP AFX storage system. It includes concepts and terminology that can be helpful when exploring AFX in more detail or performing advanced administration tasks."
 ---
 
 = FAQ for ONTAP AFX storage systems
@@ -13,7 +13,7 @@ summary: "This FAQ list answers questions that customers typically have about th
 :imagesdir: ../media/
 
 [.lead]
-This FAQ list answers questions that customers typically have about their ONTAP AFX storage system. It includes concepts and terminology that can be helpful when exploring AFX in more detail or performing advanced administration tasks.
+This FAQ list provides answers to questions that customers typically have about their ONTAP AFX storage system. It includes concepts and terminology that can be helpful when exploring AFX in more detail or performing advanced administration tasks.
 
 == General
 

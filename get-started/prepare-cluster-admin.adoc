@@ -100,11 +100,11 @@ You'll need the following:
 +
 `set -privilege advanced`
 
-== Working with high-availability pairs
+== Working with ONTAP HA pairs
 
 As with Unified ONTAP, AFX cluster nodes are configured in high-availability (HA) pairs for fault tolerance and nondisruptive operations. HA pairing provides the ability for storage operations to stay online in the event of a node failure, such as a storage failover.
 
-With Unified ONTAP, each node is partnered with another node to form a single pair. This is generally done using a dedicated connection between the two node’s NVRAM modules.
+With Unified ONTAP, each node is partnered with another node to form a single pair. This is generally done using a direct connection between the two node’s NVRAM modules.
 
 With disaggregated ONTAP, a new HA VLAN is added to the backend cluster switches to enable NVRAM modules to stay connected between the HA partner nodes. In the initial AFX release, HA is still handled using HA pairs, but there is no longer a need for the partner nodes to be directly connected to one another.
 
@@ -190,7 +190,7 @@ NetApp offers ONTAP in three distinct personalities:
 * ONTAP AFX
 * AsA r2
 
-Where appropriate, this ONTAP AFX documentation includes links to topics at the Unified ONTAP doc site for additional information. This provides more depth and a different perspective that can be helpful as you administer your ONTAP AFX storage system.
+Where appropriate, this ONTAP AFX documentation includes links to topics at the Unified ONTAP doc site for additional information. The content provides more depth and a different perspective that can be helpful as you administer your ONTAP AFX storage system.
 
 == Related information
 
