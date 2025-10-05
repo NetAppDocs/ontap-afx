@@ -10,7 +10,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-Before deploying ONTAP AFX in a production environment, it’s essential to understand the administrative structure and options. This will ensure secure, efficient, and effective management of your AFX cluster.
+Before deploying ONTAP AFX in a production environment, it’s essential to understand the administrative structure and configuration options. This ensures secure, efficient, and effective management of your AFX cluster.
 
 == Understand storage virtual machines
 
@@ -74,7 +74,7 @@ While you can use System Manager for most ONTAP AFX administration, there are so
 
 .About this task
 
-You can access the ONTAP AFX CLI through the secure shell (SSH). The CLI has two privilege levels that determine the commands and command parameters available to you. The `admin` level has the least privilege and is the default when you sign in. You can elevate the privilege of your session to `advanced` if needed.
+You can access the ONTAP AFX CLI through the secure shell (SSH). The CLI has two privilege levels that determine the commands and command parameters available to you. The `admin` level has the least privilege and is the default when you sign in. You can elevate the privilege of your session to `advanced` if needed using the `set` command.
 
 .Before you begin
 
@@ -96,16 +96,24 @@ You'll need the following:
 +
 `?`
 
+. Elevate the privilege level of your session:
++
+`set -privilege advanced`
+
 == Working with high-availability pairs
 
-As with Unified ONTAP, AFX cluster nodes are configured in high-availability (HA) pairs for fault tolerance and nondisruptive operations. HA pairing provides the ability for storage operations to stay online in the event of a node failure, such as a storage failover. With Unified ONTAP, each node is partnered with another node to form a single pair. This is generally done using a dedicated connection between the two node’s NVRAM modules. With disaggregated ONTAP, a new HA VLAN is added to the backend cluster switches to enable NVRAM modules to stay connected between the HA partner nodes. In the initial AFX release, HA is still handled using HA pairs, but there is no longer a need for the partner nodes to be directly connected to one another.
+As with Unified ONTAP, AFX cluster nodes are configured in high-availability (HA) pairs for fault tolerance and nondisruptive operations. HA pairing provides the ability for storage operations to stay online in the event of a node failure, such as a storage failover.
+
+With Unified ONTAP, each node is partnered with another node to form a single pair. This is generally done using a dedicated connection between the two node’s NVRAM modules.
+
+With disaggregated ONTAP, a new HA VLAN is added to the backend cluster switches to enable NVRAM modules to stay connected between the HA partner nodes. In the initial AFX release, HA is still handled using HA pairs, but there is no longer a need for the partner nodes to be directly connected to one another.
 
 == ONTAP AFX deployment limitations
 
 There are several limitations, including minimums and maximums, enforced by ONTAP AFX when configuring and using your cluster. These limits fall into several different categories.
 
 Controller nodes per cluster::
-Each AFX cluster must have at least four nodes. The maximum number of nodes varies based on the release.
+Each AFX cluster must have at least four nodes. The maximum number of nodes varies based on the ONTAP release.
 
 Storage capacity::
 This is the total capacity in all the SSD disks in the cluster storage pool. The maximum storage capacity varies based on the release.
@@ -182,7 +190,7 @@ NetApp offers ONTAP in three distinct personalities:
 * ONTAP AFX
 * AsA r2
 
-Where appropriate, this ONTAP AFX documentation includes links to topics at the Unified ONTAP doc site. This additional information provides more depth and a different perspective that can be helpful as you administer your ONTAP AFX storage system.
+Where appropriate, this ONTAP AFX documentation includes links to topics at the Unified ONTAP doc site for additional information. This provides more depth and a different perspective that can be helpful as you administer your ONTAP AFX storage system.
 
 == Related information
 

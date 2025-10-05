@@ -9,13 +9,11 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-Comparing ONTAP AFX to Unified ONTAP provides a valuable perspective and can be helpful when evaluating AFX for your environment.
+You should be aware of how ONTAP AFX is similar to and different from Unified ONTAP. This provides a valuable perspective and can be helpful when deploying AFX in your environment.
 
 == New platform built on Unified ONTAP
 
-ONTAP AFX is derived from the Unified ONTAP personality. Because of this, it includes a robust set of features and administrative options. If you're an experienced ONTAP user, you'll find it very easy to work with AFX. If you're new to ONTAP, the simplified System Manager user interface and streamlined administration will help you get started quickly.
-
-There are several new and updated features available with ONTAP AFX. Review the related information for more details.
+ONTAP AFX is initially based on the Unified ONTAP personality. Because of this, it includes a robust set of features and administrative options. If you're an experienced ONTAP user, you'll find it very easy to work with AFX. If you're new to ONTAP, the simplified System Manager user interface and streamlined administration will help you get started quickly.
 
 == Configuration differences with Unified ONTAP
 
@@ -33,9 +31,6 @@ While the ONTAP AFX and Unified ONTAP personalities are very similar, there are 
 
 [TIP]
 You should review the updates and changes for ONTAP AFX in the appropriate link:../release-notes/whats-new-9171.html[What's new] section based on your release.
-
-// Comment to reviewers:
-[big red]*DP: Is the organization of the content below OK? Would one large "flat" list, without categories, be better?*
 
 The following features, organized in several categories, are not available or have changed with the initial release of ONTAP AFX.
 

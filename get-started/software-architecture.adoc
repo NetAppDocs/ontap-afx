@@ -9,19 +9,19 @@ summary: "The ONTAP AFX architecture is composed of several hardware and softwar
 :imagesdir: ../media/
 
 [.lead]
-The ONTAP AFX architecture is composed of several hardware and software components. These system components are organized in two different categories.
+The ONTAP AFX architecture is composed of several hardware and software components. These system components are organized in different categories.
 
 == Physical components
 
-When first getting started with ONTAP AFX, it's helpful to begin with a high-level view of the physical components as they're installed in your datacenter.
+When first getting started with ONTAP AFX, it's helpful to begin with a high-level view of the physical components as they're installed in your data center.
 
 === Controller nodes
 
-AFX controller nodes run a derivative (or personality) of the ONTAP software designed to support the requirements of the AFX environment. Clients access the nodes through multiple protocols, including NFS, SMB, and S3. Each node has a complete view of the storage, which it can access based on the client requests. The nodes are stateful with non‑volatile memory to persist critical state information and include additional enhancements specific to the target workloads.
+AFX controller nodes run a specialized personality of the ONTAP software designed to support the requirements of the AFX environment. Clients access the nodes through multiple protocols, including NFS, SMB, and S3. Each node has a complete view of the storage, which it can access based on the client requests. The nodes are stateful with non‑volatile memory to persist critical state information and include additional enhancements specific to the target workloads.
 
 === Storage shelves and disks
 
-AFX storage shelves use Non-volatile Memory Express over Fabrics (NVMe-oF) to connect the high-density SSDs. The disks communicate over an ultra-low latency fabric using RDMA over Converged Ethernet (RoCE). The storage shelves, including the I/O modules, NICs, fans, and power supplies, are fully redundant with no single point of failure. Self-managed technology is used to administer and control all aspects of RAID configuration and disk layout.
+AFX storage shelves use Non-volatile Memory Express over Fabrics (NVMe-oF) to connect the high-density SSDs. The disks communicate over an ultra-low latency fabric using RDMA over Converged Ethernet (RoCE). The storage shelves, including the I/O modules, NICs, fans, and power supplies, are fully redundant with no single point of failure. Self-managed technology is used to administer and control all aspects of the RAID configuration and disk layout.
 
 === Cluster storage switch network
 
@@ -29,7 +29,7 @@ Redundant and high‑performance switches connect the AFX controller nodes with 
 
 === Client training environment
 
-The client training environment is a lab environment with customer-provided hardware, such as GPU clusters and AI workstations. It's designed to support model training, inference, and other AI/ML related work. Clients access ONTAP AFX using industry standard protocols such as NFS, SMB, and S3.
+The client training environment is a lab environment with customer-provided hardware, such as GPU clusters and AI workstations. It's typically designed to support model training, inference, and other AI/ML related work. Clients access ONTAP AFX using industry standard protocols such as NFS, SMB, and S3.
 
 === Client network
 
@@ -37,11 +37,11 @@ This internal network connects the client training environment to the ONTAP AFX 
 
 == Logical components
 
-There are several logical components included with ONTAP AFX. They are implemented in software along with a combination of the physical components of the cluster. The logical components enforce a structure that determines the use and configuration of the AFX systems.
+There are several logical components included with ONTAP AFX. They are implemented in software along with the physical components of the cluster. The logical components enforce a structure that determines the use and configuration of the AFX systems.
 
 === Common storage pool
 
-The common storage pool (or _storage availability zone_) is a collection of disks in the storage shelves that provides a single unified namespace to all the controller nodes. It offers a provisioning model with no fixed restrictions regarding which storage shelves are used by the nodes. Customers can view free space and storage usage as properties of the entire ONTAP AFX cluster.
+The common storage pool (or _Storage Availability Zone_) is a collection of disks in the storage shelves that provides a single unified namespace to all the controller nodes. It offers a provisioning model with no fixed restrictions regarding which storage shelves are used by the nodes. Customers can view free space and storage usage as properties of the entire ONTAP AFX cluster.
 
 === FlexVolumes, FlexGroups, and buckets
 
@@ -49,14 +49,14 @@ FlexVolumes, FlexGroups, and buckets are the _data containers_ exposed to the cu
 
 === Data layout and access
 
-The data layout and access is tuned for seamless access and efficient utilization of GPUs. This plays a critical role in eliminating bottlenecks and maintaining consistent performance.
+The data layout and access is tuned for seamless access and efficient utilization of the GPUs. This plays a critical role in eliminating bottlenecks and maintaining consistent performance.
 
 === SVMs and multi-tenancy
 
-ONTAP AFX provides a tenant model that builds on the SVM model available with Unified ONTAP. Most of the SVM concepts translate directly from unified ONTAP. The AFX tenant model has been streamlined for simplified administration.
+ONTAP AFX provides a tenant model that builds on the SVM model available with Unified ONTAP. Most of the SVM concepts translate directly from Unified ONTAP. The AFX tenant model has been streamlined for simplified administration.
 
 == ONTAP AFX deployment
 
-The following figure illustrates a typical deployment of an ONTAP AFX cluster. Notice the controller nodes are decoupled from the storage shelves and connected through a shared network.
+The following figure illustrates a typical ONTAP AFX cluster deployment. Notice the controller nodes are decoupled from the storage shelves and connected through a shared network.
 
 image:afx-cluster.png[AFX cluster architecture]
