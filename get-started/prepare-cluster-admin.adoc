@@ -200,4 +200,6 @@ Where appropriate, this ONTAP AFX documentation includes links to topics at the 
 
 * https://docs.netapp.com/us-en/ontap/system-admin/index.html[Learn about cluster administration with the ONTAP CLI^]
 
+* https://docs.netapp.com/us-en/ontap/event-performance-monitoring/index.html[Event, performance, and health monitoring^]
+
 * link:../faq-ontap-afx.html[FAQ for ONTAP AFX storage systems]

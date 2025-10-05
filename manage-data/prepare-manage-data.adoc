@@ -12,7 +12,7 @@ summary:
 Before managing your ONTAP AFX data, you should be familiar with the basic concepts and capabilities.
 
 [TIP]
-Most of the concepts and procedures used for ONTAP AFX storage administration are the same as Unified ONTAP. Refer to <<Related information>> for more information including links to the applicable Unified ONTAP documentation.
+Most of the concepts and procedures used for ONTAP AFX storage administration are the same as Unified ONTAP. Review the resources available in <<Related information>> for more information including the applicable Unified ONTAP documentation.
 
 == Terminology and options
 
@@ -22,7 +22,7 @@ FlexVolume::
 A FlexVol is a type of logical container used in ONTAP AFX storage systems. FlexVol volumes can be expanded, contracted, moved, and efficiently copied. They can also be partitioned into more manageable units using qtrees and resource usage can be limited using quotas.
 
 FlexGroup::
-A FlexGroup volume is a scale-out NAS container that provides both high performance and automatic load distribution. Each consists of multiple volumes that share traffic transparently. FlexGroup volumes offer several benefits, including improved scalability and performance as well as simplified Management.
+A FlexGroup volume is a scale-out NAS container that provides both high performance and automatic load distribution. Each consists of multiple volumes that share traffic transparently. FlexGroup volumes offer several benefits, including improved scalability and performance as well as simplified management.
 
 S3 bucket::
 An S3 bucket is a storage container that holds objects or data in the cloud. With ONTAP, an S3 NAS bucket is a mapping between an S3 bucket name and a NAS path, allowing S3 access to any part of an SVM namespace with existing volumes and directory structure.
@@ -90,7 +90,7 @@ You can access all the volumes and buckets defined for the ONTAP AFX cluster. Ea
 
 == Related information
 
-* https://docs.netapp.com/us-en/ontap/nas-management/index.html[Unified ONTAP NAS storage management^]
+* https://docs.netapp.com/us-en/ontap/nas-management/index.html[ONTAP NAS storage management^]
 * https://mysupport.netapp.com/matrix/[NetApp Interoperability Matrix Tool^]
 * link:../get-started/prepare-cluster-admin.html[Prepare to administer ONTAP AFX]
 * link:../administer/migrate-svm.html[Migrate an ONTAP AFX SVM]

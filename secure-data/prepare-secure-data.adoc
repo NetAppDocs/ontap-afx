@@ -13,11 +13,11 @@ summary:
 Before managing your ONTAP AFX data, you should be familiar with the major concepts and capabilities.
 
 [TIP]
-Most of the concepts and procedures used for ONTAP AFX data security are the same as Unified ONTAP. Refer to <<Related information>> for more information including links to the applicable Unified ONTAP documentation.
+Most of the concepts and procedures used for ONTAP AFX data security are the same as Unified ONTAP. Review the resources available in <<Related information>> for more information including the applicable Unified ONTAP documentation.
 
 == Terminology and options
 
-There are several terms related to ONTAP AFX storage protection you should be familiar with.
+There are several terms related to ONTAP AFX data security you should be familiar with.
 
 Ransomware::
 Ransomware is malicious software that encrypts files, making them inaccessible to the user, and which typically demands some type of payment for decryption of the data. NetApp ONTAP provides solutions to protect against ransomware through features like Autonomous Ransomware Protection (ARP) and FPolicy.
