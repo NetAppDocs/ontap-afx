@@ -11,7 +11,7 @@ summary: "You can expand the compute capacity of an ONTAP AFX cluster independen
 [.lead]
 You can expand the compute capacity of an ONTAP AFX cluster independent of the storage capacity. The expansion is performed without disruption and increases performance linearly as volumes are rebalanced across the nodes. This feature is a significant benefit as you adjust to the ongoing needs of your AFX users.
 
-[big red]*DP: Please review the troubleshooting section. Not sure everything is possible, including the commands, when operating in either `admin` or 'advanced' privilege level.*
+[big red]*DP: Please review the troubleshooting section. Not sure everything is possible, including the commands, when operating in the `admin` or `advanced` privilege level.*
 
 == Prepare to expand a cluster
 
