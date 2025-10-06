@@ -17,7 +17,7 @@ Before deploying ONTAP AFX in a production environment, it’s essential to unde
 A storage virtual machine (SVM) is an isolated server or tenant environment within an ONTAP cluster. You can configure an SVM to serve data to the connected clients. You should be familiar with the capabilities and characteristics of the ONTAP AFX SVMs.
 
 [NOTE]
-One data SVM is created when you set up and initially deploy an ONTAP AFX cluster. You can create additional SVMs if needed.
+One data SVM is created when you set up and initially deploy an ONTAP AFX cluster. You can create additional data SVMs if needed.
 
 Administrative control::
 Data SVMs can be used to establish and enforce isolation of your data and applications. This can be useful when there are many different groups with a larger organization. Administrative control can be delegated to the SVMs to establish policies related to data access, security, and protection.
@@ -70,7 +70,7 @@ The System Manager user interface includes a robust set of features enabling you
 
 == Access the ONTAP AFX CLI
 
-While you can use System Manager for most ONTAP AFX administration, there are some tasks you can only perform using the ONTAP CLI.
+While you can use System Manager for most ONTAP AFX administration, there are some tasks you can only perform using the ONTAP command line interface.
 
 .About this task
 
@@ -102,9 +102,7 @@ You'll need the following:
 
 == Working with ONTAP HA pairs
 
-As with Unified ONTAP, AFX cluster nodes are configured in high-availability (HA) pairs for fault tolerance and nondisruptive operations. HA pairing provides the ability for storage operations to stay online in the event of a node failure, such as a storage failover.
-
-With Unified ONTAP, each node is partnered with another node to form a single pair. This is generally done using a direct connection between the two node’s NVRAM modules.
+As with Unified ONTAP, AFX cluster nodes are configured in high-availability (HA) pairs for fault tolerance and nondisruptive operations. HA pairing provides the ability for storage operations to stay online in the event of a node failure, such as a storage failover. Each node is partnered with another node to form a single pair. This is generally done using a direct connection between the two node’s NVRAM modules.
 
 With disaggregated ONTAP, a new HA VLAN is added to the backend cluster switches to enable NVRAM modules to stay connected between the HA partner nodes. In the initial AFX release, HA is still handled using HA pairs, but there is no longer a need for the partner nodes to be directly connected to one another.
 
@@ -199,6 +197,8 @@ Where appropriate, this ONTAP AFX documentation includes links to topics at the 
 * https://docs.netapp.com/us-en/ontap/system-admin/set-privilege-level-task.html[Set the privilege level in the ONTAP CLI^]
 
 * https://docs.netapp.com/us-en/ontap/system-admin/index.html[Learn about cluster administration with the ONTAP CLI^]
+
+* https://docs.netapp.com/us-en/ontap/task_admin_search_filter_sort.html[Search, filter, and sort information in ONTAP System Manager^]
 
 * https://docs.netapp.com/us-en/ontap/event-performance-monitoring/index.html[Event, performance, and health monitoring^]
 
