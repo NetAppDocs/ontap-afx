@@ -55,3 +55,5 @@ The IdP system will display an authentication screen.
 * link:../administer/manage-users-roles.html[Manage ONTAP AFX cluster users and roles]
 
 * https://docs.netapp.com/us-en/ontap/system-admin/configure-saml-authentication-task.html[Configure SAML authentication for remote ONTAP users^]
+
+* https://docs.netapp.com/us-en/ontap/authentication-access-control/index.html[Authentication and access control^]

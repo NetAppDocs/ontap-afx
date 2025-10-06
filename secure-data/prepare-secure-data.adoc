@@ -27,6 +27,6 @@ Encryption is process of converting data into a secure format that cannot be eas
 
 == Related information
 
-* https://docs.netapp.com/us-en/ontap/authentication-access-control/index.html[Unified ONTAP Authentication and access control^]
-* https://docs.netapp.com/us-en/ontap/security-encryption/index.html[Unified ONTAP Security and data encryption]
+* https://docs.netapp.com/us-en/ontap/authentication-access-control/index.html[ONTAP Authentication and access control^]
+* https://docs.netapp.com/us-en/ontap/security-encryption/index.html[ONTAP Security and data encryption]
 * link:../administer/additional-ontap-svm.html[Additional ONTAP AFX SVM administration]

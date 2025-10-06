@@ -42,5 +42,4 @@ You'll need the following:
 
 .Related information
 
-* https://docs.netapp.com/us-en/ontap/event-performance-monitoring/index.html[Event, performance, and health monitoring^
-]
+* https://docs.netapp.com/us-en/ontap/event-performance-monitoring/index.html[Event, performance, and health monitoring^]
