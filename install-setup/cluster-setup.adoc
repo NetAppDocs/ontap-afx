@@ -73,7 +73,7 @@ You'll be redirected to the System Manager sign-in page. Perform the steps descr
 
 == Complete cluster setup
 
-After the initial configuration has been performed you cab complete the cluster setup using System Manager.
+After the initial configuration has been performed you can complete the cluster setup using System Manager.
 
 .About this task
 

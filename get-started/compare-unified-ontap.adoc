@@ -37,6 +37,8 @@ The following features, organized in several categories, are not available or ha
 === General features
 
 * FabricPool
+* SnapLock
+* MetroCluster
 * AI based anti-ransomware protection
 * ONTAPI API (ZAPI)
 * Active IQ Unified Manager
@@ -44,7 +46,6 @@ The following features, organized in several categories, are not available or ha
 === SAN-related features
 
 * SAN administration and client access
-* MetroCluster
 * Thick provisioned volumes
 
 === Aggregate-related features
@@ -52,10 +53,11 @@ The following features, organized in several categories, are not available or ha
 The following aggregate-related features are not available with the initial release of ONTAP AFX:
 
 * Direct access to disk aggregates
-* Aggregate encryption and placement
+* NetApp Aggregate Encryption (NAE)
 * Aggregate-level deduplication
 * SyncMirror (aggregate mirroring)
 * RAID management
+// NetApp Volume Encryption (NVE) and self-encrypting volumes ARE supported
 
 === Data replication
 
