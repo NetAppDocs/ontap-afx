@@ -4,12 +4,12 @@ permalink: administer/migrate-svm.html
 keywords: 
 summary: 
 ---
-= Migrate an ONTAP AFX SVM
+= Migrate an AFX data SVM
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can migrate a data SVM from one ONTAP AFX cluster to another. This can be done to relocate the SVM as well as part of a backup or disaster recovery strategy. SVM migration with ONTAP AFX is the same as provided with Unified ONTAP; refer to the Unified ONTAP documentation for details.
+You can migrate a data SVM from one cluster to another. This includes from Unified ONTAP to an AFX cluster as well as among AFX clusters. You might do this to relocate an SVM as well as part of a backup or disaster recovery strategy. SVM migration with AFX is the same as Unified ONTAP; refer to the Unified ONTAP documentation for the details about SVM migration.
 
 .Related information
 
