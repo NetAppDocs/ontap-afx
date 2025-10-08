@@ -18,7 +18,7 @@ Removal of aggregate and RAID management::
 The storage administrator no longer needs to manage the aggregates and RAID groups. ONTAP AFX handles these tasks which simplifies administration and provides an opportunity for nonspecialists to manage their data.
 
 Single storage pool for the cluster::
-Decoupling the AFX compute and storage, along with simplified storage management, results in a single pool of storage. The entire storage pool is available to all the controller nodes in an AFX cluster.
+Decoupling the AFX compute and storage, along with simplified storage management, results in a single pool of storage. This Storage Availability Zone (SAZ) is available to all the controller nodes in an AFX cluster. See link:../faq-ontap-afx.html[FAQ for AFX storage systems] for more details.
 
 High performance::
 ONTAP AFX is built for the high performance needed by specialized AI/ML applications. It can make more efficient use of modern hardware to provide high and sustained bandwidth with ultra‑low latency.
