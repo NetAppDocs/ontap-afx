@@ -48,7 +48,7 @@ The second related concept with disaggregated storage is that the aggregates and
 
 .Will Unified ONTAP be discontinued? Will I be required to moved to ONTAP AFX?
 
-No. Unified ONTAP is the dominant architecture and flagship NetApp storage product and is expected to remain so for the foreseeable future. There is no plan to require or force customers to migrate to ONTAP AFX.
+No. Unified ONTAP is the dominant architecture and flagship NetApp storage product and is expected to remain so for the foreseeable future. There is no plan to require or force customers to migrate to AFX.
 
 == Interoperability
 
@@ -94,7 +94,9 @@ No. Only switches specifically approved for and provided with the AFX storage pl
 
 .How is the storage in an AFX cluster organized?
 
-All the disks and storage shelves attached to an AFX cluster are part of a Storage Availability Zone (SAZ). Each AFX cluster supports only one SAZ which cannot be shared across AFX clusters (except for SnapMirror replication and FlexCache). Every node has visibility to all the storage in the SAZ. When storage shelves are added to a cluster, ONTAP automatically adds the disks. The Storage Availability Zone can also be referred to as a capacity pool, storage pool, or storage pod.
+All the disks and storage shelves attached to an AFX cluster are part of a Storage Availability Zone (SAZ). Each AFX cluster supports only one SAZ which cannot be shared across AFX clusters (except for SnapMirror replication and FlexCache).
+
+Every node has visibility to all the storage in the SAZ. When storage shelves are added to a cluster, ONTAP automatically adds the disks. Note that a Storage Availability Zone can also be referred to as a storage pool, capacity pool, or storage pod.
 
 .How does a volume move operation work in Unified ONTAP compared to AFX?
 
