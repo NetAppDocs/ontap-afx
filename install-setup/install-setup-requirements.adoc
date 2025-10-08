@@ -12,7 +12,7 @@ summary: Review the equipment needed and the lifting precautions for your AFX 1K
 Review the equipment needed and the lifting precautions for your AFX 1K storage controller and storage shelves. 
 
 == Equipment needed for install
-To install your AFX storage system, you need the following equipment and tools. 
+To install your AFX 1K storage system, you need the following equipment and tools. 
 
 ** Access to a Web browser to configure your storage system
 ** Electrostatic discharge (ESD) strap 
@@ -47,6 +47,6 @@ image::../media/drw_nx224_lifting_weight_ieops-2437.svg[NX224 NSM100 lifting cau
 *  https://library.netapp.com/ecm/ecm_download_file/ECMP12475945[Safety information and regulatory notices^]
 
 .What's next?
-After you've reviewed the hardware requirements, you link:prepare-hardware.html[prepare to install your AFX storage system].
+After you've reviewed the hardware requirements, you link:prepare-hardware.html[prepare to install your AFX 1K storage system].
 
 // 2024 Sept 23, ONTAPDOC 1922

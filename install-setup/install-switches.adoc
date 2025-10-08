@@ -29,9 +29,11 @@ The NetApp pass-through panel kit contains the following hardware:
 
 NOTE: Jumper cords are not included with the pass-through kit. Contact NetApp to order the right jumper cables if they are not shipped with your switches.
 
+NOTE: The Cisco 9332D-GX2B and 9364D-GX2A are port-side intake switches. The network ports for the switches must be installed facing the front of the cabinet, and the exhaust fans must face the rear of the cabinet. With this configuration, you must ensure that you use cables long enough to run from the network ports in the front of the cabinet to the storage ports in the rear of the cabinet. + 
+For more detailed information about these switches, please visit the Cisco website: https://www.cisco.com/c/en/us/td/docs/dcn/hw/nx-os/nexus9000/9332d-gx2b/cisco-nexus-9332d-gx2b-nx-os-mode-switch-hardware-installation-guide.html[Cisco Nexus 9332D-GX2B NX-OS Mode Switch Hardware Installation Guide^] and https://www.cisco.com/c/en/us/td/docs/dcn/hw/nx-os/nexus9000/9364d-gx2a/cisco-nexus-9364d-gx2a-nx-os-mode-switch-hardware-installation-guide.html[Cisco Nexus 9364D-GX2A NX-OS Mode Switch Hardware Installation Guide^].
+
 .Steps
 . Install the pass-through blanking panel.
-//Does this apply only if you are installing in a cabinet?
 
  .. Determine the vertical location of the switches and blanking panel in the cabinet or rack.
 +
