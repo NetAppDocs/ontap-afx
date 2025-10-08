@@ -41,7 +41,7 @@ There are several logical components included with ONTAP AFX. They are implement
 
 === Common storage pool
 
-The common storage pool (or _Storage Availability Zone_) is a collection of disks in the storage shelves that provides a single unified namespace to all the controller nodes. It offers a provisioning model with no fixed restrictions regarding which storage shelves are used by the nodes. Customers can view free space and storage usage as properties of the entire ONTAP AFX cluster.
+The Storage Availability Zone (SAZ) is a common pool of storage for the entire cluster. It is a collection of disks in the storage shelves that provides a single unified namespace to all the controller nodes. The SAZ offers a provisioning model with no fixed restrictions regarding which storage shelves are used by the nodes. Customers can view free space and storage usage as properties of the entire AFX cluster.
 
 === FlexVolumes, FlexGroups, and buckets
 
