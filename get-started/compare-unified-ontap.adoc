@@ -19,11 +19,8 @@ ONTAP AFX is initially based on the Unified ONTAP personality. Because of this, 
 
 There are a few areas where the default AFX configuration differs from Unified ONTAP.
 
-// Comment to reviewers:
-[big red]*DP: IE needs help in confirming the following content and providing any other configuration differences.*
-
 Advanced Capacity Balancing::
-The GDD option is enabled by default for all FlexGroup volumes.
+The advanced capacity balancing feature, as controlled using the `-gdd` CLI parameter, is enabled by default for all FlexGroup volumes.
 
 == Unsupported or restricted Unified ONTAP capabilities
 
@@ -50,7 +47,7 @@ The following features, organized in several categories, are not available or ha
 
 === Aggregate-related features
 
-The following aggregate-related features are not available with the initial release of ONTAP AFX:
+The following aggregate-related features are not available with AFX:
 
 * Direct access to disk aggregates
 * NetApp Aggregate Encryption (NAE)

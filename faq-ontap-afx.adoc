@@ -58,7 +58,7 @@ No. ONTAP AFX and Unified ONTAP nodes cannot co-exist within the same cluster.
 
 .If I want to use Unified ONTAP with ONTAP AFX for SnapMirror or FlexCache, what ONTAP version will I need?
 
-The SnapMirror version rules for ONTAP AFX are identical to Unified ONTAP. This means that to replicate from Unified ONTAP, the source system must be within the supported version range. To replicate from AFX, the Unified ONTAP system must be at ONTAP 9.16.1 or later (the earliest release the Advanced Capacity Balancing features is supported). For FlexCache, the same rules apply for source and destination systems as described in https://www.netapp.com/pdf.html?item=/media/7336-tr4743.pdf[TR-4743^].
+The SnapMirror version rules for ONTAP AFX are identical to Unified ONTAP. This means that to replicate from Unified ONTAP, the source system must be within the supported version range. To replicate from AFX, the Unified ONTAP system must be at ONTAP 9.16.1 or later (the earliest release the Advanced Capacity Balancing feature is supported). For FlexCache, the same rules apply for source and destination systems as described in https://www.netapp.com/pdf.html?item=/media/7336-tr4743.pdf[TR-4743^].
 
 Also be aware that a FlexGroup volume on ONTAP AFX cannot be an origin volume for a FlexCache volume using the Writeback mode.
 
@@ -86,7 +86,7 @@ No. The data protocols in ONTAP AFX operate the same as with Unified ONTAP.
 
 .Is Advanced Disk Partitioning (ADP) used in ONTAP AFX?
 
-No. ADP is not used with ONTAP AFX. Because there are no root aggregates with AfX, the ADP feature is not needed to maximize disk space efficiency.
+No. ADP is not used with ONTAP AFX. Because there are no root aggregates with AFX, the ADP feature is not needed to maximize disk space efficiency.
 
 .Can I use different types of switches for the backend network?
 
@@ -98,7 +98,7 @@ All the disks and storage shelves attached to an ONTAP AFX cluster are part of a
 
 .How does a volume move operation work in Unified ONTAP compared to ONTAP AFX?
 
-With Unified ONTAP, it is possible to relocate a volume nondisrutptively from one node or aggregate to another in the cluster. This is performed using background copy operation with SnapMirror technology, where a new destination volume is created at the new location. Depending on the size of the volume and the utilization of cluster resources, the time it takes for a volume move to complete can vary.
+With Unified ONTAP, it is possible to relocate a volume nondisruptively from one node or aggregate to another in the cluster. This is performed using a background copy operation with SnapMirror technology, where a new destination volume is created at the new location. Depending on the size of the volume and the utilization of cluster resources, the time it takes for a volume move to complete can vary.
 
 With ONTAP AFX, there are no aggregates. All storage is contained within a single Storage Availability Zone which every node in the cluster has visibility to. As a result, volume moves never need to actually copy the data. Instead, all volume moves are performed with pointer updates between nodes. This is referred to as a Zero Copy Volume Move (ZCVM) and happens instantaneously because no data is actually copied or moved. This is essentially the same volume move process used with Unified ONTAP without the SnapMirror copy.
 

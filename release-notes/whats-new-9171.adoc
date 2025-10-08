@@ -27,7 +27,9 @@ Learn about the new capabilities included with ONTAP 9.17.1 that are available w
 | Platforms
 a| The following NetApp ONTAP AFX storage systems are available. These platforms deliver a unified hardware and software solution that creates a simplified experience specific to the needs of high-performance NAS and S3 customers.
 
-* AFX 1K
+* AFX 1K controllers
+* NX224 shelves
+* Cisco Nexus 9332D-GX2B and Nexus 9364D-GX2A switches
 
 // table end
 |===
