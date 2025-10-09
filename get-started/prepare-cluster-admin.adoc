@@ -104,7 +104,7 @@ You'll need the following:
 
 As with Unified ONTAP, AFX cluster nodes are configured in high-availability (HA) pairs for fault tolerance and nondisruptive operations. HA pairing provides the ability for storage operations to stay online in the event of a node failure, such as a storage failover. Each node is partnered with another node to form a single pair. This is generally done using a direct connection between the two node’s NVRAM modules.
 
-With disaggregated ONTAP, a new HA VLAN is added to the backend cluster switches to enable NVRAM modules to stay connected between the HA partner nodes. In the initial AFX release, HA is still handled using HA pairs, but there is no longer a need for the partner nodes to be directly connected to one another.
+With AFX, a new HA VLAN is added to the backend cluster switches to enable NVRAM modules to stay connected between the HA partner nodes. High availability HA is still handled using HA pairs but there is no longer a need for the partner nodes to be directly connected to one another.
 
 == ONTAP AFX deployment limitations
 
@@ -180,15 +180,15 @@ link:../administer/configure-svm.html[Configure] your SVM and prepare for client
 [role="quick-margin-para"]
 link:../manage-data/prepare-manage-data.html[Prepare] to allocate and manage your data.
 
-== References to additional documentation
+== Similarities to Unified ONTAP and additional documentation
 
 NetApp offers ONTAP in three distinct personalities:
 
 * Unified ONTAP
-* ONTAP AFX
+* AFX
 * AsA r2
 
-Where appropriate, this ONTAP AFX documentation includes links to topics at the Unified ONTAP doc site for additional information. The content provides more depth and a different perspective that can be helpful as you administer your ONTAP AFX storage system.
+To a large extent, all three share a common set of features and configuration options. To leverage this appropriately, this AFX documentation includes links to topics at the Unified ONTAP doc site. This additional content provides more depth and a different perspective that can be helpful as you administer your AFX storage system.
 
 == Related information
 

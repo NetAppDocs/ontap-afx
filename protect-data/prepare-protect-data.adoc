@@ -13,7 +13,7 @@ summary:
 Before protecting your ONTAP AFX data, you should be familiar with some of the key concepts and current status of your storage.
 
 [TIP]
-Most of the concepts and procedures used for ONTAP AFX data protection are the same as Unified ONTAP. Review the resources available in <<Related information>> for more information including applicable Unified ONTAP documentation.
+Most of the concepts and administration procedures available with AFX are the same as Unified ONTAP. And so reviewing the Unified ONTAP documentation can be helpful. Review <<Related information>> for more information including links to the Unified ONTAP doc site.
 
 == Terminology and options
 

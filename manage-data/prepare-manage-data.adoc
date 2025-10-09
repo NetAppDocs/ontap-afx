@@ -12,7 +12,7 @@ summary:
 Before managing your ONTAP AFX data, you should be familiar with the basic concepts and capabilities.
 
 [TIP]
-Most of the concepts and procedures used with ONTAP AFX data management are the same as Unified ONTAP. Review the resources available in <<Related information>> for more information including applicable Unified ONTAP documentation.
+Most of the concepts and administration procedures available with AFX are the same as Unified ONTAP. And so reviewing the Unified ONTAP documentation can be helpful. Review <<Related information>> for more information including links to the Unified ONTAP doc site.
 
 == Terminology and options
 
@@ -38,17 +38,17 @@ A quota in ONTAP is a limit set on the amount of storage space or number of file
 
 == Data migration options
 
-There are several data migration options. The focus is on migrating external data into an ONTAP AFX cluster.
+There are several data migration options. The focus is on migrating external data into an AFX cluster.
 
 === Migrating data from Unified ONTAP
 
-A fully integrated migration path from unified ONTAP to disaggregated ONTAP is available using the following technologies:
+A fully integrated migration path from unified ONTAP to AFX is available using the following technologies:
 
 * SnapMirror
 * SVM Migrate
 * SVM DR
 
-SnapLock is supported in the first release of the ONTAP AFX. In addition, FlexCache volumes can be attached between ONTAP AFX and Unified ONTAP in either direction.
+In addition, FlexCache volumes can be attached between ONTAP AFX and Unified ONTAP in either direction.
 
 === Migrating data from a non-ONTAP source
 
