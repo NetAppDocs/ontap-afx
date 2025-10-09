@@ -1,23 +1,23 @@
 ---
 sidebar: sidebar
 permalink: protect-data/prepare-protect-data.html
-keywords: 
-summary: 
+keywords: afx, afx system, prepare, prepare protect, prepare protect data
+summary: "Before protecting your AFX data, you should be familiar with some of the key concepts and current status of your storage."
 ---
 
-= Prepare to protect your ONTAP AFX data
+= Prepare to protect your AFX data
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before protecting your ONTAP AFX data, you should be familiar with some of the key concepts and current status of your storage.
+Before protecting your AFX data, you should be familiar with some of the key concepts and current status of your storage.
 
 [TIP]
 Because many of the concepts and administration procedures available with Unified ONTAP are the same as AFX, reviewing the Unified ONTAP documentation can be helpful. Refer to <<Related information>> for more information including links to the Unified ONTAP doc site.
 
 == Terminology and options
 
-There are several terms related to ONTAP AFX data protection you should be familiar with.
+There are several terms related to AFX data protection you should be familiar with.
 
 Snapshot::
 A snapshot is a read-only, point-in-time image of a volume. It is a foundational technology for ONTAP's replication and data protection services.
@@ -27,4 +27,4 @@ A consistency group is a collection of volumes that can be managed as a single u
 
 == Related information
 
-* link:../administer/additional-ontap-svm.html[Additional ONTAP AFX SVM administration]
+* link:../administer/additional-ontap-svm.html[Additional AFX SVM administration]

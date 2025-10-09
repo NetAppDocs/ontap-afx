@@ -1,23 +1,23 @@
 ---
 sidebar: sidebar
 permalink: secure-data/prepare-secure-data.html
-keywords: 
-summary: 
+keywords: afx, afx system, prepare, prepare secure, prepare secure data
+summary: "Before managing your AFX data, you should be familiar with the major concepts and capabilities."
 ---
 
-= Prepare to secure your ONTAP AFX data
+= Prepare to secure your AFX data
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before managing your ONTAP AFX data, you should be familiar with the major concepts and capabilities.
+Before managing your AFX data, you should be familiar with the major concepts and capabilities.
 
 [TIP]
 Because many of the concepts and administration procedures available with Unified ONTAP are the same as AFX, reviewing the Unified ONTAP documentation can be helpful. Refer to <<Related information>> for more information including links to the Unified ONTAP doc site.
 
 == Terminology and options
 
-There are several terms related to ONTAP AFX data security you should be familiar with.
+There are several terms related to AFX data security you should be familiar with.
 
 Ransomware::
 Ransomware is malicious software that encrypts files, making them inaccessible to the user, and which typically demands some type of payment for decryption of the data. NetApp ONTAP provides solutions to protect against ransomware through features like Autonomous Ransomware Protection (ARP) and FPolicy.
@@ -29,4 +29,4 @@ Encryption is process of converting data into a secure format that cannot be eas
 
 * https://docs.netapp.com/us-en/ontap/authentication-access-control/index.html[ONTAP Authentication and access control^]
 * https://docs.netapp.com/us-en/ontap/security-encryption/index.html[ONTAP Security and data encryption]
-* link:../administer/additional-ontap-svm.html[Additional ONTAP AFX SVM administration]
+* link:../administer/additional-ontap-svm.html[Additional AFX SVM administration]

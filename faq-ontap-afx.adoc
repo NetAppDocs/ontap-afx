@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: faq-ontap-afx.html
-keywords: afx, faq, frequently asked questions
+keywords: afx, afx system, faq, frequently asked questions
 summary: "This FAQ list provides answers to questions that customers typically have about their AFX storage system. It includes concepts and terminology that can be helpful when exploring AFX in more detail or performing advanced administration tasks."
 ---
 

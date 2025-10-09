@@ -1,25 +1,25 @@
 ---
 sidebar: sidebar
 permalink: manage-data/prepare-manage-data.html
-keywords: 
-summary: 
+keywords: afx, afx system, prepare, prepare manage, prepare manage data
+summary: "Before managing your AFX data, you should be familiar with the basic concepts and capabilities."
 ---
-= Prepare to manage your ONTAP AFX data
+= Prepare to manage your AFX data
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before managing your ONTAP AFX data, you should be familiar with the basic concepts and capabilities.
+Before managing your AFX data, you should be familiar with the basic concepts and capabilities.
 
 [TIP]
 Because many of the concepts and administration procedures available with Unified ONTAP are the same as AFX, reviewing the Unified ONTAP documentation can be helpful. Refer to <<Related information>> for more information including links to the Unified ONTAP doc site.
 
 == Terminology and options
 
-There are several terms related to ONTAP AFX storage you should be familiar with.
+There are several terms related to AFX storage you should be familiar with.
 
 FlexVolume::
-A FlexVol is a type of logical container used in ONTAP AFX storage systems. FlexVol volumes can be expanded, contracted, moved, and efficiently copied. They can also be partitioned into more manageable units using qtrees and resource usage can be limited using quotas.
+A FlexVol is a type of logical container used in AFX storage systems. FlexVol volumes can be expanded, contracted, moved, and efficiently copied. They can also be partitioned into more manageable units using qtrees and resource usage can be limited using quotas.
 
 FlexGroup::
 A FlexGroup volume is a scale-out NAS container that provides both high performance and automatic load distribution. Each consists of multiple volumes that share traffic transparently. FlexGroup volumes offer several benefits, including improved scalability and performance as well as simplified management.
@@ -28,7 +28,7 @@ S3 bucket::
 An S3 bucket is a storage container that holds objects or data in the cloud. With ONTAP, an S3 NAS bucket is a mapping between an S3 bucket name and a NAS path, allowing S3 access to any part of an SVM namespace with existing volumes and directory structure.
 
 Data container::
-In the context of ONTAP AFX, a data container is a generic term and can be either a volume or S3 bucket.
+In the context of an AFX system, a data container is a generic term and can be either a volume or S3 bucket.
 
 Qtree::
 A qtree is a logical subdivision within a volume that you can create to manage and organize data. It allows you to specify its properties and security style (NTFS or UNIX) and can inherit export policies from its parent volume or have its own. Qtrees can contain files and directories, and are often used to manage permissions and quotas more granularly within a volume.
@@ -42,13 +42,13 @@ There are several data migration options. The focus is on migrating external dat
 
 === Migrating data from Unified ONTAP
 
-A fully integrated migration path from unified ONTAP to AFX is available using the following technologies:
+A fully integrated migration path from Unified ONTAP to AFX is available using the following technologies:
 
 * SnapMirror
 * SVM Migrate
 * SVM DR
 
-In addition, FlexCache volumes can be attached between ONTAP AFX and Unified ONTAP in either direction.
+In addition, FlexCache volumes can be attached between AFX and Unified ONTAP in either direction.
 
 === Migrating data from a non-ONTAP source
 
@@ -56,9 +56,9 @@ Data migration from non-ONTAP systems can be performed using file-level copy ope
 
 === Migration limitations
 
-Existing Unified ONTAP systems can replicate to ONTAP AFX if the data volume does not contain LUNs or NVMe namespaces. When replicating to a Unified ONTAP system, the minimum supported version for the Unified ONTAP system is 9.16.1. This is the first Unified ONTAP release that supports Advanced Capacity Balancing.
+Existing Unified ONTAP systems can replicate to AFX if the data volume does not contain LUNs or NVMe namespaces. When replicating to a Unified ONTAP system, the minimum supported version for the Unified ONTAP system is 9.16.1. This is the first Unified ONTAP release that supports Advanced Capacity Balancing.
 
-== ONTAP AFX support for NFS trunking
+== AFX support for NFS trunking
 
 NFS trunking is a technology that enables NFS v4.1 clients to open multiple connections to different LIFs on the NFS server. This increases the data transfer speed and provides resilience through multiple paths. Trunking is beneficial for exporting FlexVol volumes to trunking-capable clients.
 
@@ -72,11 +72,11 @@ FSA eliminates the need for external tools by offering insights into storage uti
 
 == Display an overview of your storage
 
-To get started managing your ONTAP AFX data, you should display an overview of the storage.
+To get started managing your AFX data, you should display an overview of the storage.
 
 .About this task
 
-You can access all the volumes and buckets defined for the ONTAP AFX cluster. Each of these is considered to be a data container.
+You can access all the volumes and buckets defined for the AFX cluster. Each of these is considered to be a data container.
 
 .Steps
 
@@ -92,5 +92,5 @@ You can access all the volumes and buckets defined for the ONTAP AFX cluster. Ea
 
 * https://docs.netapp.com/us-en/ontap/nas-management/index.html[ONTAP NAS storage management^]
 * https://mysupport.netapp.com/matrix/[NetApp Interoperability Matrix Tool^]
-* link:../get-started/prepare-cluster-admin.html[Prepare to administer ONTAP AFX]
-* link:../administer/migrate-svm.html[Migrate an ONTAP AFX SVM]
+* link:../get-started/prepare-cluster-admin.html[Prepare to administer AFX]
+* link:../administer/migrate-svm.html[Migrate an AFX SVM]
