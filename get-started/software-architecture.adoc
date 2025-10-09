@@ -1,19 +1,19 @@
 ---
 sidebar: sidebar
 permalink: get-started/software-architecture.html
-keywords: ontap afx, afx, cluster, architecture, physical, logical
-summary: "The ONTAP AFX architecture is composed of several hardware and software components. These system components are organized in two different categories."
+keywords: afx, afx system, cluster, architecture, components, physical, logical
+summary: "The AFX architecture is composed of several hardware and software components. These system components are organized in different categories."
 ---
-= Details of the ONTAP AFX architecture
+= Details of the AFX architecture
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The ONTAP AFX architecture is composed of several hardware and software components. These system components are organized in different categories.
+The AFX architecture is composed of several hardware and software components. These system components are organized in different categories.
 
 == Physical components
 
-When first getting started with ONTAP AFX, it's helpful to begin with a high-level view of the physical components as they're installed in your data center.
+When first getting started with AFX, it's helpful to begin with a high-level view of the physical components as they're installed in your data center.
 
 === Controller nodes
 
@@ -29,15 +29,15 @@ Redundant and high‑performance switches connect the AFX controller nodes with 
 
 === Client training environment
 
-The client training environment is a lab environment with customer-provided hardware, such as GPU clusters and AI workstations. It's typically designed to support model training, inference, and other AI/ML related work. Clients access ONTAP AFX using industry standard protocols such as NFS, SMB, and S3.
+The client training environment is a lab environment with customer-provided hardware, such as GPU clusters and AI workstations. It's typically designed to support model training, inference, and other AI/ML related work. Clients access AFX using industry standard protocols such as NFS, SMB, and S3.
 
 === Client network
 
-This internal network connects the client training environment to the ONTAP AFX storage cluster. The network is provided and managed by the customer although NetApp expects to offer field recommendations for requirements and design.
+This internal network connects the client training environment to the AFX storage cluster. The network is provided and managed by the customer although NetApp expects to offer field recommendations for requirements and design.
 
 == Logical components
 
-There are several logical components included with ONTAP AFX. They are implemented in software along with the physical components of the cluster. The logical components enforce a structure that determines the use and configuration of the AFX systems.
+There are several logical components included with AFX. They are implemented in software along with the physical components of the cluster. The logical components enforce a structure that determines the use and configuration of the AFX systems.
 
 === Common storage pool
 
@@ -53,10 +53,10 @@ The data layout and access is tuned for seamless access and efficient utilizatio
 
 === SVMs and multi-tenancy
 
-ONTAP AFX provides a tenant model that builds on the SVM model available with Unified ONTAP. Most of the SVM concepts translate directly from Unified ONTAP. The AFX tenant model has been streamlined for simplified administration.
+AFX provides a tenant model that builds on the SVM model available with Unified ONTAP. Most of the SVM concepts translate directly from Unified ONTAP. The AFX tenant model has been streamlined for simplified administration.
 
-== ONTAP AFX deployment
+== AFX cluster deployment
 
-The following figure illustrates a typical ONTAP AFX cluster deployment. Notice the controller nodes are decoupled from the storage shelves and connected through a shared network.
+The following figure illustrates a typical AFX cluster deployment. Notice the controller nodes are decoupled from the storage shelves and connected through a shared network.
 
 image:afx-cluster.png[AFX cluster architecture]

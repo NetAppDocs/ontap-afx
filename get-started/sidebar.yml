@@ -40,8 +40,6 @@ entries:
     - title: Power on system
       url: /install-setup/power-on-hardware.html    
   - title: Set up your AFX system
-    entries:
-    - title: Set up the cluster
-      url: /install-setup/cluster-setup.html
+    url: /install-setup/cluster-setup.html
   - title: Prepare to administer ONTAP AFX
     url: /get-started/prepare-cluster-admin.html

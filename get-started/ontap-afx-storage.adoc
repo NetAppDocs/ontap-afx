@@ -1,19 +1,19 @@
 ---
 sidebar: sidebar
 permalink: get-started/ontap-afx-storage.html
-keywords: 
-summary: 
+keywords: afx, afx system, learn, workloads, hardware, afx 1k, nx224, cisco
+summary: "AFX is a storage product that complements the existing NetApp offerings including Unified ONTAP available with FAS and AFF as well as ASA r2, E-Series, and StorageGRID. It's based on a next‑generation storage architecture that evolves the ONTAP storage model into a disaggregated high-performance NAS solution. AFX supports both file and object workloads with advanced technologies and processing techniques that provide extremely high performance."
 ---
-= Learn about ONTAP AFX storage systems
+= Learn about AFX storage systems
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-ONTAP AFX is a storage product that complements the existing NetApp offerings including Unified ONTAP available with FAS and AFF as well as ASA r2, E-Series, and StorageGRID. It's based on a next‑generation storage architecture that evolves the ONTAP storage model into a disaggregated high-performance NAS solution. ONTAP AFX supports both file and object workloads with advanced technologies and processing techniques that provide extremely high performance.
+AFX is a storage product that complements the existing NetApp offerings including Unified ONTAP available with FAS and AFF as well as ASA r2, E-Series, and StorageGRID. It's based on a next‑generation storage architecture that evolves the ONTAP storage model into a disaggregated high-performance NAS solution. AFX supports both file and object workloads with advanced technologies and processing techniques that provide extremely high performance.
 
 == Typical application workloads
 
-ONTAP AFX is designed as a next generation data platform and is specifically targeted at the unique demands typical of AI/ML environments and other related data-centric applications. The AFX storage system is ideal for organizations managing several differnet workloads including:
+AFX is designed as a next generation data platform and is specifically targeted at the unique demands typical of AI/ML environments and other related data-centric applications. The AFX storage system is ideal for organizations managing several differnet workloads including:
 
 * Training and iterative model refinement associated with deep learning where continuous high bandwidth and access to massive datasets is required.
 * Processing diverse data types including text, images, and video.
@@ -23,7 +23,7 @@ ONTAP AFX is designed as a next generation data platform and is specifically tar
 
 == Hardware infrastructure
 
-The NetApp ONTAP AFX storage system delivers a unified hardware and software solution that creates a simplified experience specific to the needs of high-performance NAS customers.
+The NetApp AFX storage system delivers a unified hardware and software solution that creates a simplified experience specific to the needs of high-performance NAS customers.
 
 The following hardware components are used with AFX clusters:
 

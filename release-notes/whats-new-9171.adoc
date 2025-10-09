@@ -25,7 +25,7 @@ Learn about the new capabilities included with ONTAP 9.17.1 that are available w
 
 // first body row
 | Platforms
-a| The following NetApp AFX storage systems are available along with the related supporting technology. These platform components deliver a unified hardware and software solution that creates a simplified experience specific to the needs of high-performance NAS and S3 customers.
+a| The following NetApp AFX storage system components are available along with the related supporting technology. Together this platform delivers a unified hardware and software solution that creates a simplified experience specific to the needs of high-performance NAS and S3 customers.
 
 * AFX 1K controllers
 * NX224 shelves

@@ -1,21 +1,21 @@
 ---
 sidebar: sidebar
 permalink: install-setup/cluster-setup.html
-keywords: 
-summary: 
+keywords: afx, afx system, cluster setup, setup
+summary: "After your AFX hardware has been installed, you can complete the cluster setup. This process involves two related configuration phases that you need to perform sequentially."
 ---
-= Set up your ONTAP AFX cluster
+= Set up your AFX cluster
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After your ONTAP AFX hardware has been installed, you can complete the cluster setup. This process involves two related configuration phases that you need to perform sequentially.
+After your AFX hardware has been installed, you can complete the cluster setup. This process involves two related configuration phases that you need to perform sequentially.
 
 // Review: https://docs.netapp.com/us-en/ontap/software_setup/workflow-summary.html
 
 == Perform initial cluster setup
 
-You can connect your laptop device to the ONTAP AFX cluster and set several global configuration values.
+You can connect your laptop device to the AFX cluster and set several global configuration values.
 
 .About this task
 
@@ -31,7 +31,7 @@ The cluster management IP address is a unique IPv4 address for the cluster manag
 
 * Network subnet mask
 +
-During cluster setup, ONTAP recommends a set of network interfaces appropriate for your configuration.  You can adjust the recommendation if necessary.
+During cluster setup, ONTAP requires a set of network interfaces appropriate for your configuration.  You can adjust the recommendation if necessary.
 
 You'll also need the following:
 
@@ -98,9 +98,9 @@ You need to have the following information:
 
 .What's next
 
-You should link:../get-started/prepare-cluster-admin.html[Prepare to administer ONTAP AFX] before using your AFX cluster in a production environment.
+You should link:../get-started/prepare-cluster-admin.html[Prepare to administer AFX] before using your AFX cluster in a production environment.
 
 .Related information
 
-* link:../administer/configure-svm.html[Configure an ONTAP AFX data SVM]
-* link:../get-started/prepare-cluster-admin.html[Prepare to administer ONTAP AFX]
+* link:../administer/configure-svm.html[Configure an AFX data SVM]
+* link:../get-started/prepare-cluster-admin.html[Prepare to administer AFX]
