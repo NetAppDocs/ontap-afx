@@ -46,17 +46,13 @@ An important concept to begin with is the decoupling of the compute capability i
 
 The second related concept with disaggregated storage is that the aggregates and RAID management are removed as administrable entities. A storage abstraction layer within AFX automatically configures and manages the low-level aspects of storage, including the physical disks and RAID groups. This allows the administrator to focus on the high-level storage configuration based on volumes and buckets.
 
-.Will Unified ONTAP be discontinued? Will I be required to moved to ONTAP AFX?
-
-No. Unified ONTAP is the dominant architecture and flagship NetApp storage product and is expected to remain so for the foreseeable future. There is no plan to require or force customers to migrate to AFX.
-
 == Interoperability
 
-.Can I mix AFX nodes with Unified ONTAP nodes in the same cluster?
+.Can I mix AFX system nodes with AFF, ASA, or FAS system nodes in the same ONTAP cluster?
 
-No. AFX and Unified ONTAP nodes cannot co-exist within the same cluster.
+No. Each ONTAP personality is different. For example, you cannot mix AFX and Unified ONTAP nodes in the same cluster.
 
-.If I want to use Unified ONTAP with AFX for SnapMirror or FlexCache, what ONTAP version will I need?
+.If I want to use systems that run Unified ONTAP (FAS, AFF, ASA) with AFX systems for SnapMirror or FlexCache, what ONTAP version will I need?
 
 The SnapMirror version rules for AFX are identical to Unified ONTAP. This means that to replicate from Unified ONTAP, the source system must be within the supported version range. To replicate from AFX, the Unified ONTAP system must be at ONTAP 9.16.1 or later (the earliest release the Advanced Capacity Balancing feature is supported). For FlexCache, the same rules apply for source and destination systems as described in https://www.netapp.com/pdf.html?item=/media/7336-tr4743.pdf[TR-4743^].
 
