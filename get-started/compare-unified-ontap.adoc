@@ -33,12 +33,14 @@ The following features, organized in several categories, are not available or ha
 
 === General features
 
+[big red]*DP: Chris will confirm whether to remove SnapLock from the list.*
+
 * FabricPool
 * SnapLock
 * MetroCluster
 * AI based anti-ransomware protection
 * ONTAPI API (ZAPI)
-* Active IQ Unified Manager
+//* Active IQ Unified Manager
 
 === SAN-related features
 
