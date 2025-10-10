@@ -4,7 +4,7 @@ permalink: install-setup/prepare-hardware.html
 keywords: prepare, hardware installation, afx, afx 1k
 summary: Prepare to install the AFX 1K storage system in your ONTAP environment and register the hardware to access support benefits. 
 ---
-= Prepare to install your AFX storage system
+= Prepare to install your AFX 1K storage system
 :icons: font
 :imagesdir: ../media/
 
