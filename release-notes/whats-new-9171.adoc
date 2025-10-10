@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
 permalink: release-notes/whats-new-9171.html
-keywords: 
-summary: 
+keywords: afx, release notes, what's new, 9.17.1
+summary: "Learn about the new capabilities included with ONTAP 9.17.1 that are available with your AFX storage system."
 ---
-= What's new in ONTAP 9.17.1 for ONTAP AFX storage systems
+= What's new in ONTAP 9.17.1 for AFX storage systems
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,11 +12,27 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-Learn about the new capabilities included with ONTAP 9.17.1 that are available with ONTAP AFX storage systems.
+Learn about the new capabilities included with ONTAP 9.17.1 that are available with your AFX storage system.
 
-// Comment to reviewers:
-[big red]*DP: I will add content to this page sometime between 9/22 - 10/13 for the first release. The format will be based on the equivalent ASA r2 topic which you can find here:* 
-[big red]*https://docs.netapp.com/us-en/asa-r2/release-notes/whats-new-9171.html[What's new in ONTAP 9.17.1 for ASA r2 systems^].*
+== Platforms
+
+[cols="2,4" options="header"]
+|===
+// header row
+| Update
+| Description
+
+
+// first body row
+| Platforms
+a| The following NetApp AFX storage system components are available along with the related supporting technology. Together this platform delivers a unified hardware and software solution that creates a simplified experience specific to the needs of high-performance NAS and S3 customers.
+
+* AFX 1K controllers
+* NX224 shelves
+* Cisco Nexus 9332D-GX2B and Nexus 9364D-GX2A switches
+
+// table end
+|===
 
 .Related information
 

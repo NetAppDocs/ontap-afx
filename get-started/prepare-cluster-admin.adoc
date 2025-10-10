@@ -1,32 +1,32 @@
 ---
 sidebar: sidebar
 permalink: get-started/prepare-cluster-admin.html
-keywords: 
-summary: 
+keywords: afx, afx system, prepare, administration
+summary: "Before deploying AFX in a production environment, it’s essential to understand the administrative structure and configuration options. This ensures secure, efficient, and effective management of your AFX cluster."
 ---
 
-= Prepare to administer ONTAP AFX
+= Prepare to administer AFX
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before deploying ONTAP AFX in a production environment, it’s essential to understand the administrative structure and options. This will ensure secure, efficient, and effective management of your AFX cluster.
+Before deploying AFX in a production environment, it’s essential to understand the administrative structure and configuration options. This ensures secure, efficient, and effective management of your AFX cluster.
 
 == Understand storage virtual machines
 
-A storage virtual machine (SVM) is an isolated server or tenant environment within an ONTAP cluster. You can configure an SVM to serve data to the connected clients. You should be familiar with the capabilities and characteristics of the ONTAP AFX SVMs.
+A storage virtual machine (SVM) is an isolated server or tenant environment within an ONTAP cluster. You can configure an SVM to serve data to the connected clients. You should be familiar with the capabilities and characteristics of the AFX SVMs.
 
 [NOTE]
-One data SVM is created when you set up and initially deploy an ONTAP AFX cluster. You can create additional SVMs if needed.
+One data SVM is created when you set up and initially deploy an AFX cluster. You can create additional data SVMs if needed.
 
 Administrative control::
 Data SVMs can be used to establish and enforce isolation of your data and applications. This can be useful when there are many different groups with a larger organization. Administrative control can be delegated to the SVMs to establish policies related to data access, security, and protection.
 
 Accounts and RBAC roles::
-It's important to note there are two levels of authentication and authorization with ONTAP AFX: cluster level and SVM level. In addition to the cluster accounts, every SVM has its own distinct set of users and roles. In most situations, using the cluster level accounts is adequate. But depending on your environment, you might need to configure and use the more restrictive SVM accounts and roles as well. See link:../administer/additional-ontap-svm.html[Additional ONTAP AFX SVM administration] for more information.
+It's important to note there are two levels of authentication and authorization with AFX: cluster level and SVM level. In addition to the cluster accounts, every SVM has its own distinct set of users and roles. In most situations, using the cluster level accounts is adequate. But depending on your environment, you might need to configure and use the more restrictive SVM accounts and roles as well. See link:../administer/additional-ontap-svm.html[Additional AFX SVM administration] for more information.
 
 SVM-scoped resources::
-ONTAP AFX resources and configurable entities are associated either with the cluster or a specific SVM. There are many resources with an SVM scope, including volumes and buckets as well as the SVM user accounts and RBAC roles.
+AFX resources and configurable entities are associated either with the cluster or a specific SVM. There are many resources with an SVM scope, including volumes and buckets as well as the SVM user accounts and RBAC roles.
 
 Dedicated network interfaces::
 Each SVM has its own dedicated set of network interfaces. For example, separate LIFs are allocated to an SVM for management and client data access.
@@ -47,7 +47,7 @@ An SVM administrator has control of a specific data SVM and so is more restricte
 
 == Three administrative interfaces
 
-As with the other ONTAP personalities (Unified, ASA r2), ONTAP AFX has three administrative interfaces. The LIF (or IP address) you need to use varies based on the administrative interface and your environment.
+As with the other ONTAP personalities (Unified, ASA r2), AFX has three administrative interfaces. The LIF (or IP address) you need to use varies based on the administrative interface and your environment.
 
 [NOTE]
 The System Manager user interface is preferred for most administrative tasks. You should use an administrator account unless otherwise indicated.
@@ -57,24 +57,24 @@ The System Manager user interface is preferred for most administrative tasks. Yo
 |Interface
 |Description
 |System Manager
-|This is a graphical user interface available through a web browser. It's easy to use and provides access to most of the capabilities customers need. Accessing ONTAP AFX through System Manager is generally considered the preferred option.
+|This is a graphical user interface available through a web browser. It's easy to use and provides access to most of the capabilities customers need. Accessing AFX through System Manager is generally considered the preferred option.
 |Command line interface
 |The ONTAP CLI is accessible using SSH. Depending on your account, you can access the cluster management LIF or SVM management LIF. The CLI is more difficult to use but is more robust. It's preferred, and sometimes required, for advanced administration tasks.
 |REST API
-|ONTAP AFX includes a REST API you can use to automate the administration of your AFX cluster. The API is based on the Unified ONTAP REST API with modifications to support the unique AFX features and restrictions.
+|AFX includes a REST API you can use to automate the administration of your AFX cluster. The API is based on the Unified ONTAP REST API with modifications to support the unique AFX features and restrictions.
 |===
 
 == Learn to search, filter, and sort information in System Manager
 
-The System Manager user interface includes a robust set of features enabling you to access and display the information you need. Learning to use these capabilities will help you to better administer the ONTAP AFX storage system. See https://docs.netapp.com/us-en/ontap/task_admin_search_filter_sort.html[Search, filter, sort information in System Manager^] for more information.
+The System Manager user interface includes a robust set of features enabling you to access and display the information you need. Learning to use these capabilities will help you to better administer the AFX storage system. See https://docs.netapp.com/us-en/ontap/task_admin_search_filter_sort.html[Search, filter, sort information in System Manager^] for more information.
 
-== Access the ONTAP AFX CLI
+== Access the ONTAP CLI
 
-While you can use System Manager for most ONTAP AFX administration, there are some tasks you can only perform using the ONTAP CLI.
+While you can use System Manager for most AFX administration, there are some tasks you can only perform using the ONTAP command line interface.
 
 .About this task
 
-You can access the ONTAP AFX CLI through the secure shell (SSH). The CLI has two privilege levels that determine the commands and command parameters available to you. The `admin` level has the least privilege and is the default when you sign in. You can elevate the privilege of your session to `advanced` if needed.
+You can access the ONTAP CLI through the secure shell (SSH). The CLI has multiple privilege levels that determine the commands and command parameters available to you. The `admin` level is the least privileged and default when you sign in. You can elevate the privilege of your session to `advanced` if needed using the `set` command.
 
 .Before you begin
 
@@ -86,7 +86,7 @@ You'll need the following:
 
 .Steps
 
-. Use SSH to connect to ONTAP AFX, for example:
+. Use SSH to connect to your AFX cluster, for example:
 +
 `ssh admin@10.69.117.24`
 
@@ -96,16 +96,22 @@ You'll need the following:
 +
 `?`
 
-== Working with high-availability pairs
+. Elevate the privilege level of your session from `admin` to `advanced`:
++
+`set -privilege advanced`
 
-As with Unified ONTAP, AFX cluster nodes are configured in high-availability (HA) pairs for fault tolerance and nondisruptive operations. HA pairing provides the ability for storage operations to stay online in the event of a node failure, such as a storage failover. With Unified ONTAP, each node is partnered with another node to form a single pair. This is generally done using a dedicated connection between the two node’s NVRAM modules. With disaggregated ONTAP, a new HA VLAN is added to the backend cluster switches to enable NVRAM modules to stay connected between the HA partner nodes. In the initial AFX release, HA is still handled using HA pairs, but there is no longer a need for the partner nodes to be directly connected to one another.
+== Working with ONTAP HA pairs
 
-== ONTAP AFX deployment limitations
+As with Unified ONTAP, AFX cluster nodes are configured in high-availability (HA) pairs for fault tolerance and nondisruptive operations. HA pairing provides the ability for storage operations to stay online in the event of a node failure, such as a storage failover. Each node is partnered with another node to form a single pair. This is generally done using a direct connection between the two node’s NVRAM modules.
 
-There are several limitations, including minimums and maximums, enforced by ONTAP AFX when configuring and using your cluster. These limits fall into several different categories.
+With AFX, a new HA VLAN is added to the backend cluster switches to enable NVRAM modules to stay connected between the HA partner nodes. High availability HA is still handled using HA pairs but there is no longer a need for the partner nodes to be directly connected to one another.
+
+== AFX system deployment limitations
+
+There are several limitations, including minimums and maximums, enforced by AFX when configuring and using your cluster. These limits fall into several different categories.
 
 Controller nodes per cluster::
-Each AFX cluster must have at least four nodes. The maximum number of nodes varies based on the release.
+Each AFX cluster must have at least four nodes. The maximum number of nodes varies based on the ONTAP release.
 
 Storage capacity::
 This is the total capacity in all the SSD disks in the cluster storage pool. The maximum storage capacity varies based on the release.
@@ -114,10 +120,10 @@ NetApp expects to expand the AFX capabilities and so these limitations will chan
 
 == Confirm AFX system health
 
-Before performing any ONTAP AFX administration tasks, you should check the health of the cluster.
+Before performing any AFX administration tasks, you should check the health of the cluster.
 
 [TIP]
-You can check the health of your ONTAP AFX cluster at any time, including when you suspect an operational or performance issue.
+You can check the health of your AFX cluster at any time, including when you suspect an operational or performance issue.
 
 .Before you begin
 
@@ -144,15 +150,15 @@ link:../administer/view-dashboard.html[View dashboard and cluster status]
 
 . Display the system events and audit log messages.
 +
-link:../administer/view-events-log.html[View ONTAP AFX events and audit log]
+link:../administer/view-events-log.html[View AFX events and audit log]
 
 . Display and note any *Insight* recommendations.
 +
-link:../administer/view-insights.html[Use Insights to optimize ONTAP AFX cluster performance and security]
+link:../administer/view-insights.html[Use Insights to optimize AFX cluster performance and security]
 
 == Quick start for creating and using a data SVM
 
-After installing and setting up the ONTAP AFX cluster, you can begin performing the administration tasks typical of most AFX deployments. Here are the high-level steps needed to begin sharing data with clients.
+After installing and setting up the AFX cluster, you can begin performing the administration tasks typical of most AFX deployments. Here are the high-level steps needed to begin sharing data with clients.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Display the available data SVMs
 
@@ -172,11 +178,17 @@ link:../administer/configure-svm.html[Configure] your SVM and prepare for client
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Prepare to provision storage
 
 [role="quick-margin-para"]
-link:../manage-data/prepare-manage-data.html[Prepare] to allocate and manage a data container
+link:../manage-data/prepare-manage-data.html[Prepare] to allocate and manage your data.
 
-== References to additional documentation
+== Similarities to Unified ONTAP and additional documentation
 
-NetApp offers ONTAP in three distinct personalities. Where appropriate, this ONTAP AFX documentation includes links to topics at the Unified ONTAP doc site. The additional information provides more depth and a different perspective that can be helpful as you administer your ONTAP AFX storage system.
+NetApp offers ONTAP in three distinct personalities:
+
+* Unified ONTAP
+* AFX
+* ASA r2
+
+All three share a large common set of features and configuration options. This AFX documentation includes links to various topics at the Unified ONTAP doc site. The additional content provides more depth and a different perspective that can be helpful as you administer your AFX storage system.
 
 == Related information
 
@@ -186,4 +198,8 @@ NetApp offers ONTAP in three distinct personalities. Where appropriate, this ONT
 
 * https://docs.netapp.com/us-en/ontap/system-admin/index.html[Learn about cluster administration with the ONTAP CLI^]
 
-* link:../faq-ontap-afx.html[FAQ for ONTAP AFX storage systems]
+* https://docs.netapp.com/us-en/ontap/task_admin_search_filter_sort.html[Search, filter, and sort information in ONTAP System Manager^]
+
+* https://docs.netapp.com/us-en/ontap/event-performance-monitoring/index.html[Event, performance, and health monitoring^]
+
+* link:../faq-ontap-afx.html[FAQ for AFX storage systems]

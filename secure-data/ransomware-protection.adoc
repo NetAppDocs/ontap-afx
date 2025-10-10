@@ -15,8 +15,6 @@ For enhanced protection against ransomware attacks, you can replicate snapshots 
 [NOTE]
 Locked snapshots cannot be deleted including accidentally or maliciously.
 
-Add any restrictions with ONTAP AFX, such as ARP/AI not supported. Model after ASA r2: https://docs.netapp.com/us-en/asa-r2/secure-data/ransomware-protection.html[Protect against ransomware attacks on ASA r2 storage systems^]
-
 .Related information
 
 * https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Learn about ONTAP Autonomous Ransomware Protection^]

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: # no keywords
 summary: # no summary
 ---
-= Legal notices for ONTAP AFX
+= Legal notices for AFX storage systems
 :icons: font
 :imagesdir: ./media/
 

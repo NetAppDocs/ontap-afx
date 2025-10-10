@@ -39,3 +39,7 @@ You'll need the following:
 . At the top of the overview page, select *Cabling* for a visual display of the cluster hardware and connections.
 
 . In the navigation pane, select *Events & Jobs* and then *System alerts* to display and review the system alerts.
+
+.Related information
+
+* https://docs.netapp.com/us-en/ontap/event-performance-monitoring/index.html[Event, performance, and health monitoring^]

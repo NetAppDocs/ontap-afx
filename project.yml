@@ -1,6 +1,6 @@
 ---
 settings:
-  name: ONTAP AFX
+  name: AFX
   internal:
     pdf_enabled: true
   prod:
@@ -8,7 +8,7 @@ settings:
 
 sidebar:
   entries:
-  - title: ONTAP AFX docs
+  - title: AFX docs
     url: /index.html
   - section: release-notes
   - section: get-started

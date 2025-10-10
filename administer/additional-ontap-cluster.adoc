@@ -1,22 +1,22 @@
 ---
 sidebar: sidebar
 permalink: administer/additional-ontap-cluster.html
-keywords: 
-summary: 
+keywords: afx, afx system, additional administration, advanced administration
+summary: "In addition to the common AFX cluster administration tasks, there may be other tasks you need to perform based on your environment. Most of the additional tasks can be performed using System Manager, although in some cases you may need to use the CLI or REST API."
 ---
-= Additional ONTAP AFX cluster administration
+= Additional AFX cluster administration
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-In addition to the common ONTAP AFX cluster administration tasks, there may be other tasks you need to perform based on your environment. Most of the additional tasks can be performed using System Manager, although in some cases you may need to use the CLI or REST API.
+In addition to the common AFX cluster administration tasks, there may be other tasks you need to perform based on your environment. Most of the additional tasks can be performed using System Manager, although in some cases you may need to use the CLI or REST API.
 
 // Comment to reviewers:
 [big red]*DP: This page is a catch all "bucket" for cluster administration topics that don't justify a dedicated page. I'll briefly describe the feature and link to at the Unified ONTAP doc. We expect this page to grow.*
 
 == Licensing
 
-ONTAP AFX is licensed in a similar way to Unified ONTAP AFF systems. An ONTAP AFX cluster includes many features by default as appropriate for the protocols that are supported. You can install license files to activate additional features as needed.
+AFX systems are licensed in a similar way to Unified ONTAP AFF systems. An AFX cluster includes many features by default as appropriate for the protocols that are supported. You can install license files to activate additional features as needed.
 
 .Steps
 
@@ -29,7 +29,7 @@ ONTAP AFX is licensed in a similar way to Unified ONTAP AFF systems. An ONTAP AF
 
 == Security
 
-There are several optional security features you can configure and use with your ONTAP AFX deployment.
+There are several optional security features you can configure and use with your AFX deployment.
 
 === OAuth 2.0
 
@@ -45,7 +45,7 @@ OAuth 2.0 is the industry standard authorization framework used to restrict and 
 
 == Related information
 
-* link:../faq-ontap-afx.html[FAQ for ONTAP AFX storage systems]
+* link:../faq-ontap-afx.html[FAQ for AFX storage systems]
 
 * link:../system-admin/manage-licenses-concept.html[ONTAP licensing overview^]
 

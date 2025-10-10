@@ -1,7 +1,7 @@
 section: get-started
 title: Get started
 entries:
-  - title: Learn about your ONTAP AFX system
+  - title: Learn about your AFX system
     entries:
     - title: Learn about NetApp AFX
       url: /get-started/ontap-afx-storage.html
@@ -40,8 +40,6 @@ entries:
     - title: Power on system
       url: /install-setup/power-on-hardware.html    
   - title: Set up your AFX system
-    entries:
-    - title: Set up the cluster
-      url: /install-setup/cluster-setup.html
-  - title: Prepare to administer ONTAP AFX
+    url: /install-setup/cluster-setup.html
+  - title: Prepare to administer AFX
     url: /get-started/prepare-cluster-admin.html
