@@ -1,16 +1,16 @@
 ---
 sidebar: sidebar
 permalink: administer/manage-ethernet-ports.html
-keywords: 
-summary: 
+keywords: afx, afx system, ethernet, ethernet ports
+summary: "The ports used by the AFX system provide a foundation for network connectivity and communication. There are several configuration options available to customize the layer two aspect of your network."
 ---
 
-= Manage ONTAP AFX Ethernet ports
+= Manage AFX Ethernet ports
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The ports used by ONTAP AFX provide the foundation for network connectivity and communication. There are several configuration options available to customize the layer two aspect of your network.
+The ports used by the AFX system provide a foundation for network connectivity and communication. There are several configuration options available to customize the layer two aspect of your network.
 
 == Create a VLAN
 
@@ -56,7 +56,7 @@ A link aggregate group (LAG) is a technique that combines multiple physical netw
 
 == Related information
 
-* link:../administer/manage-cluster-networking.html[Manage ONTAP AFX cluster networking]
+* link:../administer/manage-cluster-networking.html[Manage AFX cluster networking]
 
 * https://docs.netapp.com/us-en/ontap/networking/configure_network_ports_cluster_administrators_only_overview.html[Learn about ONTAP network port configuration^]
 
