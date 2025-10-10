@@ -29,8 +29,6 @@ The following features, organized in several categories, are not available or ha
 
 === General features
 
-[big red]*DP: Chris will confirm whether to remove SnapLock from the list.*
-
 * FabricPool
 * SnapLock
 * MetroCluster
