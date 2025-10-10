@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
 permalink: rest/api-reference.html
-keywords: 
-summary: 
+keywords: afx, afx system, rest api, rest api reference, swagger
+summary: "The AFX REST API reference contains details about all the API calls. This documentation is helpful when developing automation applications."
 ---
 
-= ONTAP AFX REST API reference documentation
+= AFX REST API reference documentation
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,13 +13,13 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-The ONTAP AFX REST API reference contains details about all the API calls. This documentation is helpful when developing automation applications.
+The AFX REST API reference contains details about all the API calls. This documentation is helpful when developing automation applications.
 
 .Before you begin
 
 You'll need the following:
 
-* IP address or FQDN of the ONTAP AFX cluster management LIF
+* IP address or FQDN of the AFX cluster management LIF
 * Credentials for a cluster administrator account
 
 .Steps

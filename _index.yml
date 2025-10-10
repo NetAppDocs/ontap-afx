@@ -1,22 +1,22 @@
 indexpage:
-  title: ONTAP AFX documentation
-  lead: The NetApp ONTAP AFX storage system is a disaggregated hardware and software solution focused on the unique needs of high-performance NAS and S3 customers. The performance and scalability are specifically designed to meet the requirements of AI and ML workloads. AFX provides a simplified user experience enabling it to be administered by both storage specialists and non-specialists.
+  title: AFX documentation
+  lead: The NetApp AFX storage system is a disaggregated hardware and software solution focused on the unique needs of high-performance NAS and S3 customers. The performance and scalability are specifically designed to meet the requirements of AI and ML workloads. AFX provides a simplified user experience enabling it to be administered by both storage specialists and non-specialists.
   summary: The NetApp ONTAP AFX storage system is a disaggregated hardware and software solution focused on the unique needs of high-performance NAS and S3 customers. The performance and scalability are specifically designed to meet the requirements of AI and ML workloads. AFX provides a simplified user experience enabling it to be administered by both storage specialists and non-specialists.
   keywords: ontap afx, afx
   tiles:  
     - title: Get started
       links: 
-        - title: Learn about ONTAP AFX
+        - title: Learn about AFX
           url: /get-started/ontap-afx-storage.html
         - title: Quick start
           url: /get-started/quick-start.html
-        - title: Install ONTAP AFX hardware
+        - title: Install AFX hardware
           url: /install-setup/install-setup-workflow.html
-        - title: Set up ONTAP AFX cluster
+        - title: Set up AFX cluster
           url: /install-setup/cluster-setup.html
     - title: Cluster administration
       links: 
-        - title: Prepare to administer ONTAP AFX
+        - title: Prepare to administer AFX
           url: /get-started/prepare-cluster-admin.html
         - title: Manage storage VMs
           url: /administer/display-svms.html
@@ -54,7 +54,7 @@ indexpage:
           url: /rest/api-reference.html
     - title: Get more information
       links:
-        - title: FAQ for ONTAP AFX
+        - title: FAQ for AFX systems
           url: /faq-ontap-afx.html
         - title: Documentation for other ONTAP systems
           url: https://docs.netapp.com/us-en/ontap-family/
