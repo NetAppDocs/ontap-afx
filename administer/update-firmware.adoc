@@ -1,19 +1,19 @@
 ---
 sidebar: sidebar
 permalink: administer/update-firmware.html
-keywords: 
-summary: 
+keywords: afx, afx system, upgrade firmware, firmware
+summary: "ONTAP automatically downloads and updates firmware and system files on your AFX storage system by default.  If you want to view the recommended updates before they are downloaded and installed, you can disable automated updates. You can also edit update parameters to show you notifications of available updates before any action is performed."
 ---
-= Update firmware on an ONTAP AFX storage system
+= Update firmware on an AFX storage system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-ONTAP automatically downloads and updates firmware and system files on your ONTAP AFX storage system by default.  If you want to view the recommended updates before they are downloaded and installed, you can disable automated updates. You can also edit update parameters to show you notifications of available updates before any action is performed.
+ONTAP automatically downloads and updates firmware and system files on your AFX storage system by default.  If you want to view the recommended updates before they are downloaded and installed, you can disable automated updates. You can also edit update parameters to show you notifications of available updates before any action is performed.
 
 == Enable automatic updates
 
-When you enable automatic updates for your ONTAP AFX cluster, recommended updates for storage firmware, SP/BMC firmware and system files are automatically downloaded and installed by default.
+When you enable automatic updates for your AFX cluster, recommended updates for storage firmware, SP/BMC firmware and system files are automatically downloaded and installed by default.
 
 .Steps
 

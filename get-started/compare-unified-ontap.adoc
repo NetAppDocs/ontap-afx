@@ -30,11 +30,9 @@ The following features, organized in several categories, are not available or ha
 === General features
 
 * FabricPool
-* SnapLock
 * MetroCluster
 * AI based anti-ransomware protection
 * ONTAPI API (ZAPI)
-//* Active IQ Unified Manager
 
 === SAN-related features
 
