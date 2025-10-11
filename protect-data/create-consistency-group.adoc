@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
 permalink: protect-data/create-consistency-group.html
-keywords: 
-summary: 
+keywords: afx, afx system, consistency group, create consistency group
+summary: "You can create consistency groups to simplify storage management and data protection for application workloads. A consistency group can be based on existing or new volumes."
 ---
-= Create a consistency group on ONTAP AFX
+= Create a consistency group on AFX
 :icons: font
 :imagesdir: ../media/
 
@@ -31,4 +31,4 @@ If you plan to create one more more new volumes, you should become with the conf
 .Related information
 
 * link:../protect-data/manage-consistency-groups.html[Manage consistency groups]
-* link:../manage-data/create-configure-volume.html[Create and configure an ONTAP AFX volume]
+* link:../manage-data/create-configure-volume.html[Create and configure an AFX volume]
