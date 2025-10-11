@@ -4,11 +4,9 @@ permalink: manage-data/configure-client-access.html
 keywords: 
 summary: 
 ---
-= Configure and manage ONTAP AFX client access
+= Configure and manage AFX client access
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-xxx
-
-*Anything not already in create volume and manage volume; create bucket and manage bucket*
+Placeholder
