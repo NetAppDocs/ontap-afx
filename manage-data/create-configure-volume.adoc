@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar
 permalink: manage-data/create-configure-volume.html
-keywords: 
-summary: 
+keywords: afx, afx system, create volume, volume
+summary: "You can create a volume and attach it to a data SVM. Each volume can be exposed to clients using one of the access protocols supported by AFX."
 ---
-= Create and configure an ONTAP AFX volume
+= Create and configure a volume on AFX
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can create a volume and attach it to a data SVM. Each volume can be exposed to clients using one of the access protocols supported by ONTAP AFX.
+You can create a volume and attach it to a data SVM. Each volume can be exposed to clients using one of the access protocols supported by AFX.
 
 .About this task
 

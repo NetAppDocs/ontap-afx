@@ -1,19 +1,19 @@
 ---
 sidebar: sidebar
 permalink: manage-data/monitor-debug-storage.html
-keywords: 
-summary: 
+keywords: afx, afx system, monitor, troubleshoot, debug
+summary: ""
 ---
-= Monitor and troubleshoot ONTAP AFX storage
+= Monitor and troubleshoot AFX storage allocation
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-ONTAP AFX includes several options to monitor the storage each cluster manages.
+The AFX system includes several options to monitor the storage each cluster manages.
 
 == Display NAS clients
 
-You can display a list of the NFS and SMB/CIFS clients currently connected to the ONTAP AFX cluster.
+You can display a list of the NFS and SMB/CIFS clients currently connected to the AFX cluster.
 
 .Steps
 
@@ -23,4 +23,4 @@ You can display a list of the NFS and SMB/CIFS clients currently connected to th
 
 == Related information
 
-* link:../manage-data/prepare-manage-data.html[Prepare to manage your ONTAP AFX data]
+* link:../manage-data/prepare-manage-data.html[Prepare to manage your AFX data]
