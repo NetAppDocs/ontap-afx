@@ -5,7 +5,7 @@ keywords: afx, afx system, rest api, first call, curl
 summary: "You can issue a simple curl command to get started using the AFX REST API and confirm its availability."
 ---
 
-= Your first AFX REST API call
+= Your first AFX system REST API call
 :hardbreaks:
 :nofooter:
 :icons: font

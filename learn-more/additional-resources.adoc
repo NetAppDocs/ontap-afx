@@ -4,7 +4,7 @@ permalink: learn-more/additional-resources.html
 keywords: afx, afx system, learn more, additional resources
 summary: "There are additional resources you can access to help administer and support AFX as well as learn more about ONTAP and the related NetApp products and services."
 ---
-= Additional resources for AFX
+= Additional resources for AFX systems
 :icons: font
 :imagesdir: ../media/
 

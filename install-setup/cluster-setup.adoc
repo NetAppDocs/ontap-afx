@@ -4,7 +4,7 @@ permalink: install-setup/cluster-setup.html
 keywords: afx, afx system, cluster setup, setup
 summary: "After your AFX hardware has been installed, you can complete the cluster setup. This process involves two related configuration phases that you need to perform sequentially."
 ---
-= Set up your AFX cluster
+= Set up your AFX system cluster
 :icons: font
 :imagesdir: ../media/
 

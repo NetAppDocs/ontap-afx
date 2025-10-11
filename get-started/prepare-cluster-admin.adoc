@@ -5,7 +5,7 @@ keywords: afx, afx system, prepare, administration
 summary: "Before deploying AFX in a production environment, it’s essential to understand the administrative structure and configuration options. This ensures secure, efficient, and effective management of your AFX cluster."
 ---
 
-= Prepare to administer AFX
+= Prepare to administer your AFX system
 :icons: font
 :imagesdir: ../media/
 
@@ -108,13 +108,13 @@ With AFX, a new HA VLAN is added to the backend cluster switches to enable NVRAM
 
 == AFX system deployment limitations
 
-There are several limitations, including minimums and maximums, enforced by AFX when configuring and using your cluster. These limits fall into several different categories.
+There are several limitations, including minimums and maximums, enforced by AFX when configuring and using your cluster. These limits fall into several different categories including the following.
 
 Controller nodes per cluster::
 Each AFX cluster must have at least four nodes. The maximum number of nodes varies based on the ONTAP release.
 
 Storage capacity::
-This is the total capacity in all the SSD disks in the cluster storage pool. The maximum storage capacity varies based on the release.
+This is the total capacity in all the SSD disks in the cluster Storage Availability Zone (SAZ). The maximum storage capacity varies based on the ONTAP release.
 
 NetApp expects to expand the AFX capabilities and so these limitations will change, possibly frequently and within an ONTAP release. You should review the information available at the Interoperability Matrix Tool (IMT) to determine the capabilities of your cluster.
 

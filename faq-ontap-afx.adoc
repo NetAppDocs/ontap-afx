@@ -40,7 +40,7 @@ No. The personality of your ONTAP storage system is immutable and cannot be chan
 
 .The System Manager interfaces for the different ONTAP personalities all look very similar. How can I determine the personality of a specific system?
 
-In System Manager, select *Cluster* in the left navigation pane and then *Overview*. You'll see the personality displayed on the page. As an alternative, you can issue the command `node show` at the CLI. You can also determine the personality of an ONTAP cluster using the REST API; see link:./rest/first-call.html[Your first AFX REST API call] for details.
+In System Manager, select *Cluster* in the left navigation pane and then *Overview*. You'll see the personality displayed on the page. As an alternative, you can issue the command `node show` at the CLI. You can also determine the personality of an ONTAP cluster using the REST API; see link:./rest/first-call.html[Your first AFX system REST API call] for details.
 
 .What does "disaggregated" mean in the context of AFX storage systems?
 
