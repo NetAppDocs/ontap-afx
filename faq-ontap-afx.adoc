@@ -38,6 +38,10 @@ By offering these distinct ONTAP personalities, NetApp enables organizations to 
 
 No. The personality of your ONTAP storage system is immutable and cannot be changed. For example, you cannot convert or upgrade a FAS or AFF storage system (which run the Unified ONTAP personality) to an AFX storage system.
 
+.I'm using several ONTAP products with different personalities but the System Manager interfaces all look very similar. How can I determine the personality of a specific system?
+
+In System Manager, select *Cluster* in the left navigation pane and then *Overview*. You'll see the personality displayed on the page. As an alternative, you can issue the command `node show` at the CLI. You can also determine the personality of an ONTAP cluster using the REST API; see link:/rest/first-call.html[Your first AFX REST API call] for details.
+
 .What does "disaggregated" mean in the context of AFX storage systems?
 
 The term "disaggregated" can have two different though related meanings with AFX depending on the context.
@@ -76,9 +80,6 @@ The data protocols supported with AFX include the following:
 .Do the data protocols operate differently in AFX?
 
 No. The data protocols in AFX operate the same way as with AFF and FAS systems.
-
-// -----------------------------------------------------------------------------
-//.Does ONTAP AFX support 400Gbe networking? 
 
 .Is Advanced Disk Partitioning (ADP) used in AFX?
 
