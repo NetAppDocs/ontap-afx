@@ -4,23 +4,9 @@ permalink: protect-data/use-snapmirror.html
 keywords: 
 summary: 
 ---
-= Use SnapMirror with ONTAP AFX
+= Use SnapMirror with an AFX system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-xxx
-
-*Introduce SnapMirror options. Describe SnapMirror async. Link to large section covering SnapMirror Synchronous.*
-
-SnapMirror has more robust support in ONTAP AFX than ASA r2. According to Akshatha, SnapMirror can be configured in AFX with a:
-
-* Volume
-* Consistency group
-* SVM
-
-ASA r2 can only be configured with a CG.
-
-This topic will explain use of the technology in AFX.
-
-*---------- PLACEHOLDER MUST UPDATE ----------*
+Placeholder

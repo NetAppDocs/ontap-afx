@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar
 permalink: manage-data/manage-volumes.html
-keywords: 
-summary: 
+keywords: afx, afx system, manage volumes
+summary: "There are several administrative tasks you can perform as part of administering the volumes defined at your AFX cluster."
 ---
-= Manage ONTAP AFX volumes
+= Manage the AFX volumes
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-There are several administrative tasks you can perform as part of administering the volumes defined at your ONTAP AFX cluster.
+There are several administrative tasks you can perform as part of administering the volumes defined at your AFX cluster.
 
 == Create a qtree
 
@@ -27,13 +27,13 @@ A qtree is a logical subdivision within a volume that you can create to organize
 
 == Create a quota
 
-A quota is a limit set on the amount of storage space or number of files that can be used by a user, group, or qtree. Quotas are used to manage and control resource usage within an ONTAP AFX storage system.
+A quota is a limit set on the amount of storage space or number of files that can be used by a user, group, or qtree. Quotas are used to manage and control resource usage within an AFX system.
 
 .Steps
 
 . In System Manager, select *Storage* and then *Quotas*.
 . Select the *Usage* tab to display a list of the active quotas across all volumes.
-. Select the *Volumes* tab to display a list of the volumes defined in the ONTAP AFX clust; select a specific volume to display additional information.
+. Select the *Volumes* tab to display a list of the volumes defined in the AFX cluster; select a specific volume to display additional information.
 . To define a quota, select the *Rules* tab.
 . Provide the configuration details, including the quota target, type and limits.
 . Select *Save* to add the quota.

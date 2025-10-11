@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar
 permalink: administer/prepare-authentication.html
-keywords: 
-summary:
+keywords: afx, afx cluster, authentication
+summary: "You need to prepare the authentication and authorization services used by the AFX system to define user accounts and roles."
 ---
-= Prepare authentication services for ONTAP AFX
+= Prepare AFX authentication services
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You need to prepare the authentication and authorization services used by ONTAP AFX to define user accounts and roles.
+You need to prepare the authentication and authorization services used by the AFX system to define user accounts and roles.
 
 == Configure LDAP
 
@@ -52,7 +52,7 @@ The IdP system will display an authentication screen.
 
 == Related information
 
-* link:../administer/manage-users-roles.html[Manage ONTAP AFX cluster users and roles]
+* link:../administer/manage-users-roles.html[Manage AFX cluster users and roles]
 
 * https://docs.netapp.com/us-en/ontap/system-admin/configure-saml-authentication-task.html[Configure SAML authentication for remote ONTAP users^]
 

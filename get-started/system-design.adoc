@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: get-started/system-design.html
-keywords: afx, afxsystem, characteristics, design
+keywords: afx, afx system, characteristics, design
 summary: "The NetApp AFX storage system has several characteristics that enable it to operate as a high-performance NAS platform."
 ---
 = AFX system characteristics

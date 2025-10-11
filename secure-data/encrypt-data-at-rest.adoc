@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
 permalink: secure-data/encrypt-data-at-rest.html
-keywords: 
-summary: 
+keywords: afx, afx system, encryption, encrypt data
+summary: "You can encrypt your data at the hardware and software level for dual-layer protection. When you encrypt data at rest, it can’t be read if the storage medium is repurposed, returned, misplaced, or stolen."
 ---
-= Encrypt data at rest on ONTAP AFX storage systems
+= Encrypt data at rest on AFX storage systems
 :icons: font
 :imagesdir: ../media/
 
@@ -15,7 +15,7 @@ NetApp Storage Encryption (NSE) supports hardware encryption using self-encrypti
 
 .Before you begin
 
-Use the ONTAP AFX onboard key manager or an external key manager to serve authentication keys to your nodes. In addition to NSE, you can also enable software encryption to add another layer of security to your data.
+Use the AFX onboard key manager or an external key manager to serve authentication keys to your nodes. In addition to NSE, you can also enable software encryption to add another layer of security to your data.
 
 .Steps
 

@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar
 permalink: administer/display-svms.html
-keywords: 
-summary: 
+keywords: afx, afx system, svm, display svm
+summary: "You can display the data storage VMs defined in your AFX cluster. Each SVM provides an isolated environment for organizing your data and providing client access."
 ---
-= Display the ONTAP AFX SVMs
+= Display the AFX SVMs
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can display the data storage VMs defined in your ONTAP AFX cluster. Each SVM provides an isolated environment for organizing your data and providing client access.
+You can display the data storage VMs defined in your AFX cluster. Each SVM provides an isolated environment for organizing your data and providing client access.
 
 .Steps
 
@@ -19,5 +19,5 @@ You can display the data storage VMs defined in your ONTAP AFX cluster. Each SVM
 
 .Related information
 
-* link:../administer/configure-svm.html[Configure an ONTAP AFX data SVM]
+* link:../administer/configure-svm.html[Configure an AFX SVM]
 * link:../get-started/prepare-cluster-admin.html[Understand storage virtual machines]

@@ -1,17 +1,15 @@
 ---
 sidebar: sidebar
 permalink: protect-data/create-peer-relationship.html
-keywords: 
-summary: 
+keywords: afx, afx system, peering, peer relationship
+summary: "A peer relationship defines network connections that enable clusters and storage virtual machine (VM) to exchange data securely. You can create a peer relationship between storage VMs on different clusters to enable data protection and disaster recovery using SnapMirror."
 ---
-= Create an intercluster SVM peer relationship on ONTAP AFX
+= Create an intercluster SVM peer relationship on AFX
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 A peer relationship defines network connections that enable clusters and storage virtual machine (VM) to exchange data securely. You can create a peer relationship between storage VMs on different clusters to enable data protection and disaster recovery using SnapMirror.
-
-[big red]*DP: Please confirm this is complete. It ia aligned with what the ASA r2 doc has.*
 
 .Before you begin
 

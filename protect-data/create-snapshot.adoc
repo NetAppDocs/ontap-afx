@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar
 permalink: protect-data/create-snapshot.html
-keywords: 
-summary: 
+keywords: afx, afx system, snapshots, create snapshot
+summary: "To back up data on your AFX system, you need to create a snapshot. You can create a snapshot manually or schedule to be created automatically using a consistency group."
 ---
-= Create a snapshot on ONTAP AFX
+= Create a snapshot on an AFX system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To back up data on your ONTAP AFX system, you need to create a snapshot. You can create a snapshot manually or schedule to be created automatically using a consistency group.
+To back up data on your AFX system, you need to create a snapshot. You can create a snapshot manually or schedule to be created automatically using a consistency group.
 
 == Before you begin
 

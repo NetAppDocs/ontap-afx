@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar
 permalink: administer/manage-cluster-networking.html
-keywords: 
-summary: 
+keywords: afx, afx system, networking, cluster networking, broadcast domain, ipsace, subnet, network interface
+summary: "You need to configure the network of your AFX storage system. The networking environment supports several connection scenarios including clients accessing data at the SVMs and intercluster communication."
 ---
-= Manage ONTAP AFX cluster networking
+= Manage AFX cluster networking
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You need to configure the network of your ONTAP AFX storage system. The networking environment supports several connection scenarios including clients accessing data at the SVMs and intercluster communication.
+You need to configure the network of your AFX storage system. The networking environment supports several connection scenarios including clients accessing data at the SVMs and intercluster communication.
 
 [NOTE]
 Creating a network resource is an important first step. You also need to perform additional administrative actions, such as editing or deleting network definitions, as needed.
@@ -99,7 +99,7 @@ A logical network interface (LIF) consists of an IP address and related network 
 
 == Related information
 
-* link:../administer/manage-ethernet-ports.html[Manage ONTAP AFX Ethernet ports]
+* link:../administer/manage-ethernet-ports.html[Manage AFX Ethernet ports]
 //https://docs.netapp.com/us-en/ontap/networking/view_network_information_overview.html[View ONTAP network information^]  ???
 
 * https://docs.netapp.com/us-en/ontap/networking/configure_broadcast_domains_cluster_administrators_only_overview.html[Learn about ONTAP broadcast domains^]

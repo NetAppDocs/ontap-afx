@@ -1,30 +1,26 @@
 ---
 sidebar: sidebar
 permalink: get-started/compare-unified-ontap.html
-keywords: 
-summary: 
+keywords: afx, afx system, compare afx, compare unified ontap
+summary: "You should be aware of how AFX systems are similar to and different than FAS and AFF systems running Unified ONTAP. This provides a valuable perspective and can be helpful when deploying AFX in your environment."
 ---
 = Compare AFX to Unified ONTAP
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You should be aware of how AFX is similar to and different from Unified ONTAP. This provides a valuable perspective and can be helpful when deploying AFX in your environment.
-
-== New platform built on Unified ONTAP
-
-AFX is initially based on the Unified ONTAP personality. Because of this, it includes a robust set of features and administrative options. If you're an experienced ONTAP user, you'll find it very easy to work with AFX. If you're new to ONTAP, the simplified System Manager user interface and streamlined administration will help you get started quickly.
+You should be aware of how AFX systems are similar to and different than FAS and AFF systems running Unified ONTAP. This provides a valuable perspective and can be helpful when deploying AFX in your environment.
 
 == Configuration differences with Unified ONTAP
 
-There are a few areas where the default AFX configuration differs from Unified ONTAP.
+There are a few areas where the AFX configuration differs from AFF and FAS systems. This is a result of the storage systems running two different ONTAP personalities.
 
 Advanced Capacity Balancing::
 The advanced capacity balancing feature, as controlled using the `-gdd` CLI parameter, is enabled by default for all FlexGroup volumes.
 
 == Unsupported or restricted Unified ONTAP capabilities
 
-While the AFX and Unified ONTAP personalities are very similar, there are several features that are not supported with AFX.
+While the AFX, AFF, and FAS storage systems are very similar, there are several features that are not supported with AFX.
 
 [TIP]
 You should review the updates and changes for AFX in the appropriate link:../release-notes/whats-new-9171.html[What's new] section based on your release.
@@ -33,14 +29,10 @@ The following features, organized in several categories, are not available or ha
 
 === General features
 
-[big red]*DP: Chris will confirm whether to remove SnapLock from the list.*
-
 * FabricPool
-* SnapLock
 * MetroCluster
 * AI based anti-ransomware protection
 * ONTAPI API (ZAPI)
-//* Active IQ Unified Manager
 
 === SAN-related features
 

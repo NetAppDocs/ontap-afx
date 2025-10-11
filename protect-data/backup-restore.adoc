@@ -4,19 +4,11 @@ permalink: protect-data/backup-restore.html
 keywords: 
 summary: 
 ---
-= Restore data on an ONTAP AFX storage system
+= Restore data on an AFX system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-xxx
+Placeholder
 
-*=DP: Not sure we need this topic. If not, redirect to prepare topic.*
-
-Model after ASA r2 topic:
-
-https://docs.netapp.com/us-en/asa-r2/data-protection/restore-data.html[Restore data on ASA r2 storage systems^]
-
-Should this be only "restore" to align with ASA r2?
-
-Link to Unified ONTAP topic.
+//https://docs.netapp.com/us-en/asa-r2/data-protection/restore-data.html[Restore data on ASA r2 storage systems^]

@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar
 permalink: administer/create-svm.html
-keywords: 
-summary: 
+keywords: afx, afx system, svm, create svm
+summary: "You can create an SVM to provide isolation and improve security. You might do this for different groups or projects within your organization."
 ---
-= Create an ONTAP AFX data SVM
+= Create an AFX SVM
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can create a data SVM to provide isolation and improve security. You might do this for different groups or projects within your organization.
+You can create an SVM to provide isolation and improve security. You might do this for different groups or projects within your organization.
 
 .About this task
 
@@ -36,5 +36,5 @@ You'll need the following:
 
 .Related information
 
-* link:../administer/configure-svm.html[Configure an ONTAP AFX data SVM]
+* link:../administer/configure-svm.html[Configure an AFX SVM]
 * link:../administer/manage-cluster-networking.html[Manage ONTAP AFX cluster networking]
