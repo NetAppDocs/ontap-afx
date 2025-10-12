@@ -5,15 +5,12 @@ keywords: afx, afx system, quick start
 summary: "To initially get up and running with your AFX system, you need to install the hardware components, set up your cluster, and prepare to administer your cluster and SVMs."
 ---
 
-= Quick start for setting up an AFX storage system
+= Quick start for setting up an AFX system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 To initially get up and running with your AFX system, you need to install the hardware components, set up your cluster, and prepare to administer your cluster and SVMs.
-
-// Comment to reviewers:
-[big red]*DP: Should the following list of steps be expanded?*
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Install and set up your hardware
 
