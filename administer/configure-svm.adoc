@@ -4,7 +4,7 @@ permalink: administer/configure-svm.html
 keywords: afx, afx system, configure svm
 summary: "After you create a data SVM, you can update the configuration based on your requirements and clients needs."
 ---
-= Configure an AFX SVM
+= Configure an AFX storage system SVM
 :icons: font
 :imagesdir: ../media/
 

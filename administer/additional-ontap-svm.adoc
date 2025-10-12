@@ -4,7 +4,7 @@ permalink: administer/additional-ontap-svm.html
 keywords: afx, afx system, additional administration, advanced administration
 summary: "In addition to the common AFX SVM administration tasks, there may be other tasks you need to perform based on your environment. Most of these additional tasks can be performed using System Manager, although in some cases one of the other administrative interfaces may be needed."
 ---
-= Additional AFX SVM administration
+= Additional administration for an AFX storage system SVM
 :icons: font
 :imagesdir: ../media/
 

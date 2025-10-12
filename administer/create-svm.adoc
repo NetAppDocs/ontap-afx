@@ -4,7 +4,7 @@ permalink: administer/create-svm.html
 keywords: afx, afx system, svm, create svm
 summary: "You can create an SVM to provide isolation and improve security. You might do this for different groups or projects within your organization."
 ---
-= Create an AFX SVM
+= Create an AFX storage system SVM
 :icons: font
 :imagesdir: ../media/
 

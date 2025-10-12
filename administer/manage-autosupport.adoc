@@ -4,7 +4,7 @@ permalink: administer/manage-autosupport.html
 keywords: afx, afx system, autosupport
 summary: "AutoSupport is a NetApp technology you can use to proactively monitor the health of your AFX storage systems. It can automatically send messages to NetApp technical support, your internal support organization, or a support partner."
 ---
-= Manage AutoSupport for an AFX cluster
+= Manage AutoSupport for an AFX storage system cluster
 :icons: font
 :imagesdir: ../media/
 

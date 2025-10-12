@@ -4,7 +4,7 @@ permalink: administer/view-dashboard.html
 keywords: afx, afx system, dashboard, view dashboard, cluster status
 summary: "You can sign in to System Manager to access the AFX dashboard and display the cluster status. This is a good first step before beginning your AFX administrative tasks or if you suspect an operational issue."
 ---
-= View the AFX system dashboard and cluster status
+= View the AFX storage system dashboard
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ permalink: administer/expand-cluster.html
 keywords: afx, afx system, expansion, cluster expansion, expand cluster, add nodes
 summary: "You can expand the compute capacity of an AFX cluster independent of the storage capacity. The expansion is performed without disruption and increases performance linearly as volumes are rebalanced across the nodes. This feature is a significant benefit as you adjust to the ongoing needs of your AFX users."
 ---
-= Expand an AFX cluster
+= Expand an AFX storage system cluster
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ permalink: administer/additional-ontap-cluster.html
 keywords: afx, afx system, additional administration, advanced administration
 summary: "In addition to the common AFX cluster administration tasks, there may be other tasks you need to perform based on your environment. Most of the additional tasks can be performed using System Manager, although in some cases you may need to use the CLI or REST API."
 ---
-= Additional AFX cluster administration
+= Additional administration for an AFX storage system cluster
 :icons: font
 :imagesdir: ../media/
 
