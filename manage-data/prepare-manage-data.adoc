@@ -24,6 +24,9 @@ A FlexVol is a type of logical container used in AFX storage systems. FlexVol vo
 FlexGroup::
 A FlexGroup volume is a scale-out NAS container that provides both high performance and automatic load distribution. Each consists of multiple volumes that share traffic transparently. FlexGroup volumes offer several benefits, including improved scalability and performance as well as simplified management.
 
+FlexCache::
+FlexCache is an ONTAP caching technology that creates sparse, writable replicas of volumes on the same or different ONTAP clusters. It is designed to improve data access performance by bringing data closer to users, which can result in faster throughput with a smaller footprint. FlexCache is particularly useful for read-intensive workflows and helps to offload traffic from heavily accessed volumes.
+
 S3 bucket::
 An S3 bucket is a storage container that holds objects or data in the cloud. With ONTAP, an S3 NAS bucket is a mapping between an S3 bucket name and a NAS path, allowing S3 access to any part of an SVM namespace with existing volumes and directory structure.
 

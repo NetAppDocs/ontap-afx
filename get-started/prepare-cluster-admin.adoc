@@ -43,7 +43,7 @@ The cluster administrator has complete control of the AFX cluster including all 
 
 SVM administrator::
 
-An SVM administrator has control of a specific data SVM and so is more restricted compared to the cluster administrator. SVM administration involves performing tasks with objects and resources that have an SVM scope, such as creating a volume. See link:../manage-data/prepare-provision-storage.html[Administer your storage VMs] for more information.
+An SVM administrator has control of a specific data SVM and so is more restricted compared to the cluster administrator. SVM administration involves performing tasks with objects and resources that have an SVM scope, such as creating a volume. See link:../manage-data/prepare-manage-data.html[Administer your storage VMs and data] for more information.
 
 == Three administrative interfaces
 
