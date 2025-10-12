@@ -4,7 +4,7 @@ permalink: get-started/compare-unified-ontap.html
 keywords: afx, afx system, compare afx, compare unified ontap
 summary: "You should be aware of how AFX systems are similar to and different than FAS and AFF systems running Unified ONTAP. This provides a valuable perspective and can be helpful when deploying AFX in your environment."
 ---
-= Compare AFX to Unified ONTAP
+= Compare AFX storage system to Unified ONTAP
 :icons: font
 :imagesdir: ../media/
 

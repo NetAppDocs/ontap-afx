@@ -5,7 +5,7 @@ keywords: afx, afx system, prepare, administration
 summary: "Before deploying AFX in a production environment, it’s essential to understand the administrative structure and configuration options. This ensures secure, efficient, and effective management of your AFX cluster."
 ---
 
-= Prepare to administer your AFX system
+= Prepare to administer your AFX storage system
 :icons: font
 :imagesdir: ../media/
 
