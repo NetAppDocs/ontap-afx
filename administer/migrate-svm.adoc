@@ -2,15 +2,60 @@
 sidebar: sidebar
 permalink: administer/migrate-svm.html
 keywords: afx, afx system, svm, migrate svm
-summary: "You can migrate a data SVM from one ONTAP cluster to another. This includes from a Unified ONTAP cluster to an AFX cluster as well as among AFX clusters. You might do this to relocate an SVM as part of rebalancing your applications or as part of a backup strategy. SVM migration with AFX is the same as Unified ONTAP; refer to the Unified ONTAP documentation for the details about SVM migration."
+summary: ""
 ---
 = Migrate an AFX data SVM
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can migrate a data SVM from one ONTAP cluster to another. This includes from a Unified ONTAP cluster to an AFX cluster as well as among AFX clusters. You might do this to relocate an SVM as part of rebalancing your applications or as part of a backup strategy. SVM migration with AFX is the same as Unified ONTAP; refer to the Unified ONTAP documentation for the details about SVM migration.
+You can migrate a data SVM from one ONTAP cluster to another. You might do this to move and rebalance your applications or as part of a backup strategy. SVM migration with AFX operates the same as with Unified ONTAP, although there are several interoperability considerations. Refer to the Unified ONTAP documentation for the details about performing an SVM migration.
 
-.Related information
+== Interoperability considerations
+
+Before planning and performing an SVM migration, you should be aware of the capabilities and limitations.
+
+=== AFX storage system
+
+xxx
+
+=== Version interoperability
+
+xxx
+
+
+[cols="40,30,30"*,options="header"]
+|===
+|Direction
+|Source version
+|Destination version
+
+|Unified to AFX
+|9.15.1 - 9.17.1
+|9.17.1
+
+|AFX to Unified
+|9.17.1
+|9.17.1
+
+|AFX to AFX
+|9.17.1
+|9.17.1
+
+|===
+
+=== Prechecks
+
+Unified ONTAP includes several prechecks that are also implemented with AFX. In addition, several new prechecks are added to flag a features that isn't supported with AFX. The unsupported features included:
+
+* FabricPool (volumes residing on composite aggregates)
+* Thick provisioned volumes
+
+=== Volume provisioning
+
+xxx
+
+== Related information
 
 * https://docs.netapp.com/us-en/ontap/svm-migrate/index.html[SVM data mobility^]
+* link:../faq-ontap-afx.html[FAQ for AFX storage systems]
