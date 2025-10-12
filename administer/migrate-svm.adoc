@@ -23,21 +23,16 @@ xxx
 
 xxx
 
-
 [cols="40,30,30"*,options="header"]
 |===
-|Direction
-|Source version
-|Destination version
+|Direction |Source version |Destination version
 
 |Unified to AFX
 |9.15.1 - 9.17.1
 |9.17.1
-
 |AFX to Unified
 |9.17.1
 |9.17.1
-
 |AFX to AFX
 |9.17.1
 |9.17.1
@@ -53,6 +48,15 @@ Unified ONTAP includes several prechecks that are also implemented with AFX. In 
 
 === Volume provisioning
 
+xxx; API
+
+Space guarantee::
+xxx
+
+Encryption::
+xxx
+
+Balanced placement::
 xxx
 
 == Related information
