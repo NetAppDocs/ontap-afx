@@ -41,14 +41,13 @@ The following features, organized in several categories, are not available or ha
 
 === Aggregate-related features
 
-The following aggregate-related features are not available with AFX:
+The following aggregate-related features are not available with AFX systems:
 
 * Direct access to disk aggregates
 * NetApp Aggregate Encryption (NAE)
 * Aggregate-level deduplication
 * SyncMirror (aggregate mirroring)
 * RAID management
-// NetApp Volume Encryption (NVE) and self-encrypting volumes ARE supported
 
 === Data replication
 

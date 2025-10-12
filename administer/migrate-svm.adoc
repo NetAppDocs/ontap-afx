@@ -2,14 +2,14 @@
 sidebar: sidebar
 permalink: administer/migrate-svm.html
 keywords: afx, afx system, svm, migrate svm
-summary: "You can migrate a data SVM from one ONTAP cluster to another. SVM migration with AFX operates the same as with Unified ONTAP, although there are several interoperability considerations. Refer to the Unified ONTAP documentation for the details about performing an SVM migration."
+summary: "You can migrate a data SVM from one ONTAP cluster to another. SVM migration with AFX operates the same as with Unified ONTAP, although there are several interoperability considerations. Refer to the Unified ONTAP documentation for details about performing an SVM migration."
 ---
 = Migrate an AFX data SVM
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can migrate a data SVM from one ONTAP cluster to another. SVM migration with AFX operates the same as with Unified ONTAP, although there are several interoperability considerations. Refer to the Unified ONTAP documentation for the details about performing an SVM migration.
+You can migrate a data SVM from one ONTAP cluster to another. SVM migration with AFX operates the same as with Unified ONTAP, although there are several interoperability considerations. Refer to the Unified ONTAP documentation for details about performing an SVM migration.
 
 == Interoperability considerations
 
@@ -43,17 +43,17 @@ The following table describes the allowable SVM migrations based on the ONTAP pe
 
 === Prechecks
 
-Unified ONTAP includes several prechecks that are also implemented with AFX. In addition, several new prechecks are added to flag a features that isn't supported with AFX. The unsupported features included:
+Unified ONTAP includes several prechecks that are also implemented with AFX. In addition, several new prechecks are added to flag features that aren't supported with AFX, including:
 
 * FabricPool (volumes residing on composite aggregates)
 * Thick provisioned volumes
 
 === Volume provisioning
 
-The AFX volumes are provisioned so as to balance their placement across the Storage Availability Zone (SAZ) of the cluster.
+The AFX volumes are provisioned in order to balance their placement across the Storage Availability Zone (SAZ) of the cluster.
 
 Space guarantee::
-AFX does not support thick provisioning. A precheck is used to fail a migration if any of the volumes in the SVM being migrated is thick provisioned.
+AFX does not support thick provisioning. A precheck is used to fail a migration if any volume in the SVM being migrated is thick provisioned.
 
 Encryption::
 An AFX system supports NetApp volume encryption (NVE) but not NetApp aggregate encryption (NAE). Because of this, any NAE volumes at a Unified ONTAP cluster are converted to NVE volumes when migrated to AFX. The following table summarizes the compatibility and conversion.

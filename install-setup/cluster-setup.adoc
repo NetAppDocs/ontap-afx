@@ -94,7 +94,7 @@ You need to have the following information:
 
 . Select *Network Services* and configure the client access protocols for the default data SVM.
 
-. Select *Data container Network Services* and create a volume or S3 bucket.
+. Select *Data container* and create a volume or S3 bucket.
 
 .What's next
 
