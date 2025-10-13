@@ -4,7 +4,7 @@ permalink: protect-data/policies-schedules.html
 keywords: afx, afx system, data protection, protection policies, protection schedules
 summary: "You can use snapshot policies to protect data in your consistency groups based on an automated schedule. The policy schedules within snapshot policies determine how often snapshots are taken."
 ---
-= Manage ONTAP AFX data protection policies and schedules
+= Manage AFX storage system data protection policies and schedules
 :icons: font
 :imagesdir: ../media/
 

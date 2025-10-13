@@ -4,7 +4,7 @@ permalink: manage-data/create-configure-volume.html
 keywords: afx, afx system, create volume, volume
 summary: "You can create a volume and attach it to a data SVM. Each volume can be exposed to clients using one of the access protocols supported by AFX."
 ---
-= Create and configure a volume on AFX
+= Create and configure a volume on an AFX storage system
 :icons: font
 :imagesdir: ../media/
 

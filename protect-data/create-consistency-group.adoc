@@ -4,7 +4,7 @@ permalink: protect-data/create-consistency-group.html
 keywords: afx, afx system, consistency group, create consistency group
 summary: "You can create consistency groups to simplify storage management and data protection for application workloads. A consistency group can be based on existing or new volumes."
 ---
-= Create a consistency group on AFX
+= Create a consistency group on an AFX storage system
 :icons: font
 :imagesdir: ../media/
 

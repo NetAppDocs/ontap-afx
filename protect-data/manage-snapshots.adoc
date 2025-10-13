@@ -4,7 +4,7 @@ permalink: protect-data/manage-snapshots.html
 keywords: afx, afx system, snapshots, manage snapshots
 summary: "You can manage snapshots on your AFX system. Refer to the Unified ONTAP documentation for details."
 ---
-= Manage snapshots on an AFX system
+= Manage snapshots on an AFX storage system
 :icons: font
 :imagesdir: ../media/
 

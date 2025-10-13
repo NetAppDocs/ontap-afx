@@ -5,7 +5,7 @@ keywords: afx, afx system, prepare, prepare secure, prepare secure data
 summary: "Before managing your AFX data, you should be familiar with the major concepts and capabilities."
 ---
 
-= Prepare to secure your AFX data
+= Prepare to secure your AFX storage system data
 :icons: font
 :imagesdir: ../media/
 

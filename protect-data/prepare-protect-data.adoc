@@ -5,7 +5,7 @@ keywords: afx, afx system, prepare, prepare protect, prepare protect data
 summary: "Before protecting your AFX data, you should be familiar with some of the key concepts and current status of your storage."
 ---
 
-= Prepare to protect your AFX data
+= Prepare to protect your AFX storage system data
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ permalink: administer/manage-certificates.html
 keywords: afx, afx system, certificates, pki
 summary: "Depending on your environment, you'll need to create and manage digital certificates as part of administering AFX. There are several related tasks you can perform."
 ---
-= Manage certificates on AFX storage systems
+= Manage certificates on an AFX storage system
 :icons: font
 :imagesdir: ../media/
 

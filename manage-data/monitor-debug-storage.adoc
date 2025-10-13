@@ -4,7 +4,7 @@ permalink: manage-data/monitor-debug-storage.html
 keywords: afx, afx system, monitor, troubleshoot, debug
 summary: ""
 ---
-= Monitor and troubleshoot AFX storage allocation
+= Monitor and troubleshoot an AFX storage system
 :icons: font
 :imagesdir: ../media/
 
