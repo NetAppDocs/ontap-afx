@@ -9,7 +9,7 @@ summary: "You need to configure the network of your AFX storage system. The netw
 :imagesdir: ../media/
 
 [.lead]
-You need to configure the network of your AFX storage system. The networking environment supports several connection scenarios including clients accessing data at the SVMs and intercluster communication.
+You need to configure the network of your AFX storage system. The networking environment supports several scenarios including clients accessing data at the SVMs and intercluster communication.
 
 [NOTE]
 Creating a network resource is an important first step. You also need to perform additional administrative actions, such as editing or deleting network definitions, as needed.

@@ -9,7 +9,7 @@ summary: "AFX includes an internal platform to run background jobs based on your
 :imagesdir: ../media/
 
 [.lead]
-AFX includes an internal platform to run background jobs based on your configuration and administrative actions. These jobs can be long-running AFX components or short-lived processes executed in response to administrative taskw or REST API request. You can display and monitor the jobs as needed.
+AFX includes an internal platform to run background jobs based on your configuration and administrative actions. These jobs can be long-running AFX components or short-lived processes executed in response to administrative tasks or REST API requests. You can display and monitor the jobs as needed.
 
 .Steps
 

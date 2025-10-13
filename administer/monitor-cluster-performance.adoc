@@ -19,9 +19,9 @@ The System Manager dashboard includes a high-level display of the storage utiliz
 
 . In System Manager, select *Dashboard* in the navigation pane.
 
-. Locate the *Capacity* tile and note the physical storage available and used.
+. Locate the *Capacity* tile and view the physical storage available and used.
 
-. Select *History* to access Active IQ and view the historical data.
+. Select *History* to access Active IQ to view the historical data.
 
 == Cluster performance
 

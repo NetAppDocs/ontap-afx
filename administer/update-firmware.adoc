@@ -18,7 +18,7 @@ When you enable automatic updates for your AFX cluster, recommended updates for 
 .Steps
 
 . In System Manager, select *Cluster* and then *Settings*.
-. Under *Software updates*, select *Enable*.
+. Under *Software updates* select *Enable*.
 . Read the EULA.
 . Accept the defaults to *Show notification* of recommended updates.  Optionally, select to *Automatically update* or to *Automatically dismiss* recommended updates.
 . Select to acknowledge that your update modifications will be applied to all current and future updates.
@@ -57,7 +57,7 @@ You can select to have recommended updates for your storage firmware, SP/BMC fir
 .Steps
 
 . In System Manager, select *Cluster > Settings*.
-. Next to *Software updates* select image:icon_arrow.gif[blue arrow pointing to the right], then select *All other updates*.
+. Next to *Software updates* select image:icon_arrow.gif[blue arrow pointing to the right] and then select *All other updates*.
 . Update the selections for automatic updates.
 . Select *Save*.
 
