@@ -37,11 +37,8 @@ This can occur when the cluster is already in balance or when there are no eligi
 Confusion about how or when ATM should be active::
 It may appear that volumes aren't distributed as quickly as expected. ATM attempts to detect and respond to hardware events every five minutes. In the worst case, a rebalance operation is always launched 40 minutes after the last one completed.
 
-Need to prevent movement of a specific volume::
-XXX
-
-Need to determine how a volume move was triggered::
-XXX
+//Need to prevent movement of a specific volume::
+//Need to determine how a volume move was triggered::
 
 ==== CLI commands
 

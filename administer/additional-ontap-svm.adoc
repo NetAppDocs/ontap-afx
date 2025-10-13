@@ -9,7 +9,10 @@ summary: "In addition to the common AFX SVM administration tasks, there may be o
 :imagesdir: ../media/
 
 [.lead]
-In addition to the common AFX SVM administration tasks, there may be other tasks you need to perform based on your environment. Most of these additional tasks can be performed using System Manager, although in some cases one of the other administrative interfaces may be needed.
+In addition to the typical AFX SVM administration tasks, there may be other tasks you need to perform based on your environment. Most of these additional tasks can be performed using System Manager, although in some cases one of the other administrative interfaces may be needed. Links to the relevant Unified ONTAP documentation are included.
+
+[NOTE]
+The features and administration topics described here are common to AFX storage systems and AFF or FAS systems running Unified ONTAP.
 
 .Related information
 

@@ -9,7 +9,10 @@ summary: "In addition to the common AFX cluster administration tasks, there may 
 :imagesdir: ../media/
 
 [.lead]
-In addition to the common AFX cluster administration tasks, there may be other tasks you need to perform based on your environment. Most of the additional tasks can be performed using System Manager, although in some cases you may need to use the CLI or REST API.
+In addition to the typical AFX cluster administration tasks, there may be other tasks you need to perform based on your environment. Most of the additional tasks can be performed using System Manager, although in some cases you may need to use the CLI or REST API. Links to the relevant Unified ONTAP documentation are included.
+
+[NOTE]
+The features and administration topics described here are common to AFX storage systems and AFF or FAS systems running Unified ONTAP.
 
 == Licensing
 
