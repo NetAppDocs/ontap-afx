@@ -9,7 +9,7 @@ entries:
       url: /get-started/system-design.html
     - title: Architecture details
       url: /get-started/software-architecture.html
-    - title: Compare AFX to Unified ONTAP
+    - title: Compare AFX to AFF and FAS
       url: /get-started/compare-unified-ontap.html
   - title: Quick start
     url: /get-started/quick-start.html

@@ -4,12 +4,12 @@ permalink: install-setup/cluster-setup.html
 keywords: afx, afx system, cluster setup, setup
 summary: "After your AFX hardware has been installed, you can complete the cluster setup. This process involves two related configuration phases that you need to perform sequentially."
 ---
-= Set up your AFX storage system cluster
+= Set up your AFX system ONTAP cluster
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After your AFX hardware has been installed, you can complete the cluster setup. This process involves two related configuration phases that you need to perform sequentially.
+After your AFX hardware has been installed, you can complete the ONTAP cluster setup. This process involves two related configuration phases that you need to perform sequentially.
 
 // Review: https://docs.netapp.com/us-en/ontap/software_setup/workflow-summary.html
 
@@ -19,7 +19,7 @@ You can connect your laptop device to the AFX cluster and set several global con
 
 .About this task
 
-There are four areas of the AFX cluster that must be initially configured. The first three are required while the last one is optional as indicated.
+There are four areas of the AFX cluster that must be initially configured. The first three are required while the last one is optional.
 
 .Before you begin
 
@@ -73,11 +73,11 @@ You'll be redirected to the System Manager sign-in page. Perform the steps descr
 
 == Complete cluster setup
 
-After the initial configuration has been performed you can complete the cluster setup using System Manager.
+After the initial configuration has been performed you can complete the ONTAP cluster setup using System Manager.
 
 .About this task
 
-There are three areas of the AFX cluster configured during setup. Complete all three if possible but only the first is required.
+There are three areas of the AFX system ONTAP cluster configured during setup. Complete all three if possible but only the first is required.
 
 .Before you begin
 

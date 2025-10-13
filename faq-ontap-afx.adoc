@@ -13,7 +13,7 @@ summary: "This FAQ list provides answers to questions that customers typically h
 :imagesdir: ../media/
 
 [.lead]
-This FAQ list provides answers to questions that customers typically have about their AFX storage system. It includes concepts and terminology that can be helpful when exploring AFX in more detail or performing advanced administration tasks.
+This FAQ list provides answers to questions you might have about your AFX storage system. It includes concepts and terminology that can be helpful when exploring AFX in more detail or performing advanced administration tasks.
 
 == General
 
@@ -24,13 +24,13 @@ ONTAP is a robust and versatile storage platform, known for its comprehensive fe
 To address these specialized needs, some NetApp storage systems offer distinct ONTAP personalities, each of which includes a feature set designed to support the unique customer requirements. An ONTAP personality is typically a combination of hardware and software capabilities and purpose-built to deliver an optimized experience for targeted use cases. NetApp provides three ONTAP personalities:
 
 Unified ONTAP::
-The Unified ONTAP personality delivers a broad set of data management features, supporting NAS, SAN, and S3 protocols for maximum flexibility. This is the NetApp flagship offering, available on AFF and FAS systems as well as virtualized deployments such as ONTAP Select. 
-
-ASA r2::
-The ASA r2 ONTAP personality provides a disaggregated solution designed specifically for SAN-only environments. https://docs.netapp.com/us-en/asa-r2/[ASA r2 systems^] streamline the storage experience for block workloads, providing simplified management and performance optimized for SAN customers.
+The Unified ONTAP personality delivers a broad set of data management features, supporting NAS, SAN, and S3 protocols for maximum flexibility. This is the NetApp flagship offering, available on AFF and FAS systems as well as virtualized deployments such as ONTAP Select and Cloud Volumes ONTAP.
 
 AFX::
 The AFX ONTAP personality provides a disaggregated solution engineered to meet the rigorous requirements of high-performance NAS and S3 workloads, including AI/ML applications. AFX systems deliver specialized capabilities for customers requiring scalable, high-throughput file and object storage.
+
+ASA r2::
+The ASA r2 ONTAP personality provides a disaggregated solution designed specifically for SAN-only environments. https://docs.netapp.com/us-en/asa-r2/[ASA r2 systems^]  streamline the storage experience for block workloads, providing simplified management and performance optimized for SAN customers.
 
 By offering these distinct ONTAP personalities, NetApp enables organizations to select a storage solution aligned with their operational requirements and application workloads.
 
@@ -60,7 +60,7 @@ No. Each ONTAP personality is different. For example, you cannot mix AFX and Uni
 
 The SnapMirror version rules for AFX are identical to Unified ONTAP. This means that to replicate from Unified ONTAP, the source system must be within the supported version range. To replicate from AFX, the Unified ONTAP system must be at ONTAP 9.16.1 or later (the earliest release the Advanced Capacity Balancing feature is supported). For FlexCache, the same rules apply for source and destination systems as described in https://www.netapp.com/pdf.html?item=/media/7336-tr4743.pdf[TR-4743^].
 
-Also be aware that a FlexGroup volume on AFX cannot be an origin volume for a FlexCache volume using the Writeback mode.
+There are some differences in the support for FlexGroup volumes. A FlexGroup volume on AFX cannot be an origin volume for a FlexCache volume using the Writeback mode.
 
 .Can I make ONTAPI (ZAPI) API calls to an AFX cluster?
 
@@ -85,7 +85,7 @@ No. The data protocols in AFX operate the same way as with AFF and FAS systems.
 
 No. ADP is not used with AFX. Because there are no root aggregates with AFX, the ADP feature is not needed to maximize disk space efficiency.
 
-.Can I use different types of switches for the backend network?
+.Can I use different types of switches for the backend network for my AFX storage system?
 
 No. Only switches specifically approved for and provided with the AFX storage platform are supported for the backend network.
 
