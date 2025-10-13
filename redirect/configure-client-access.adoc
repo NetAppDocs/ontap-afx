@@ -1,0 +1,4 @@
+---
+permalink: manage-data/configure-client-access.html
+redirect: ontap-afx/manage-data/prepare-manage-data.html
+---
