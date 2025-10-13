@@ -22,9 +22,13 @@ There are several optional storage management and performance features you can c
 
 Network Attached Storage (NAS) provides dedicated file storage which can be accessed by multiple clients in the network. ONTAP supports several NAS protocols. See https://docs.netapp.com/us-en/ontap/nas-management/index.html[NAS storage management^] for more information.
 
-=== ONTAP FlexCache
+=== ONTAP FlexCache Volumes
 
-FlexCache is an ONTAP remote caching feature. It brings data closer to clients which improves access performance and reduces costs. It simplifies file distribution and reduces WAN traffic by creating a FlexCache volume, which initially copies only the metadata from the origin file system. See https://docs.netapp.com/us-en/ontap/flexcache/index.html[Learn about ONTAP FlexCache volumes^] for more information.
+FlexCache is an ONTAP remote caching feature. It brings data closer to clients which improves access performance and reduces costs. Creating a FlexCache volume, which initially copies only the metadata from the origin file system, simplifies file distribution and reduces WAN traffic See https://docs.netapp.com/us-en/ontap/flexcache/index.html[Learn about ONTAP FlexCache volumes^] for more information.
+
+=== ONTAP FlexGroup volumes
+
+A FlexGroup volume consists of several member volumes that share the traffic automatically and transparently. FlexGroup volumes offer several benefits, including high performance and simplified management. See https://docs.netapp.com/us-en/ontap/flexgroup/creation-workflow-task.html[FlexGroup volume setup^] for more information.
 
 == ONTAP event and performance monitoring
 
