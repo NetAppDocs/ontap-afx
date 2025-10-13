@@ -4,7 +4,7 @@ permalink: get-started/system-design.html
 keywords: afx, afx system, characteristics, design
 summary: "The NetApp AFX storage system has several characteristics that enable it to operate as a high-performance NAS platform."
 ---
-= AFX system characteristics
+= AFX storage system characteristics
 :icons: font
 :imagesdir: ../media/
 
@@ -12,7 +12,7 @@ summary: "The NetApp AFX storage system has several characteristics that enable 
 The NetApp AFX storage system has several characteristics that enable it to operate as a high-performance NAS platform.
 
 Decouple storage and compute capabilities::
-Unlike Unified ONTAP, the AFX storage and compute elements of the cluster are decoupled. The controllers are not restricted to accessing a limited set of local disks.
+Unlike AFF and FAS storage systems, the AFX storage and compute elements of the cluster are decoupled. AFX controllers are not restricted to accessing a limited set of local disks.
 
 Removal of aggregate and RAID management::
 The storage administrator no longer needs to manage the aggregates and RAID groups. AFX handles these tasks which simplifies administration and provides an opportunity for nonspecialists to manage their data.

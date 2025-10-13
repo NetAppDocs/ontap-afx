@@ -4,7 +4,7 @@ permalink: administer/display-svms.html
 keywords: afx, afx system, svm, display svm
 summary: "You can display the data storage VMs defined in your AFX cluster. Each SVM provides an isolated environment for organizing your data and providing client access."
 ---
-= Display the AFX SVMs
+= Display the AFX storage system SVMs
 :icons: font
 :imagesdir: ../media/
 

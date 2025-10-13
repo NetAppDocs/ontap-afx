@@ -4,7 +4,7 @@ permalink: administer/expand-cluster.html
 keywords: afx, afx system, expansion, cluster expansion, expand cluster, add nodes
 summary: "You can expand the compute capacity of an AFX cluster independent of the storage capacity. The expansion is performed without disruption and increases performance linearly as volumes are rebalanced across the nodes. This feature is a significant benefit as you adjust to the ongoing needs of your AFX users."
 ---
-= Expand the AFX cluster
+= Expand an AFX storage system cluster
 :icons: font
 :imagesdir: ../media/
 
@@ -38,10 +38,10 @@ Confusion about how or when ATM should be active::
 It may appear that volumes aren't distributed as quickly as expected. ATM attempts to detect and respond to hardware events every five minutes. In the worst case, a rebalance operation is always launched 40 minutes after the last one completed.
 
 Need to prevent movement of a specific volume::
-[big red]*DP: Is this possible outside of CLI diag?*
+XXX
 
 Need to determine how a volume move was triggered::
-[big red]*DP: Is this possible outside of CLI diag?*
+XXX
 
 ==== CLI commands
 
@@ -136,6 +136,6 @@ This step is only needed if the other interfaces do not use the 169.254.x.x addr
 
 == Related information
 
-* link:../get-started/prepare-cluster-admin.html[Prepare to administer AFX]
+* link:../get-started/prepare-cluster-admin.html[Prepare to administer your AFX system]
 * link:../faq-ontap-afx.html[FAQ for ONTAP AFX storage systems]
 * https://mysupport.netapp.com/[NetApp Support Site]

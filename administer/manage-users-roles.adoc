@@ -4,7 +4,7 @@ permalink: administer/manage-users-roles.html
 keywords: afx, afx system, users, roles
 summary: "You can define user accounts and roles based on the authentication and authorization services available with AFX."
 ---
-= Manage AFX cluster users and roles
+= Manage AFX storage system cluster users and roles
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ permalink: administer/manage-cluster-networking.html
 keywords: afx, afx system, networking, cluster networking, broadcast domain, ipsace, subnet, network interface
 summary: "You need to configure the network of your AFX storage system. The networking environment supports several connection scenarios including clients accessing data at the SVMs and intercluster communication."
 ---
-= Manage AFX cluster networking
+= Manage AFX storage system cluster networking
 :icons: font
 :imagesdir: ../media/
 

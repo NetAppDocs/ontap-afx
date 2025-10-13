@@ -4,7 +4,7 @@ permalink: administer/manage-certificates.html
 keywords: afx, afx system, certificates, pki
 summary: "Depending on your environment, you'll need to create and manage digital certificates as part of administering AFX. There are several related tasks you can perform."
 ---
-= Manage certificates on the AFX storage systems
+= Manage certificates on an AFX storage system
 :icons: font
 :imagesdir: ../media/
 
@@ -13,15 +13,9 @@ Depending on your environment, you'll need to create and manage digital certific
 
 A digital certificate is an electronic document used to prove ownership of a public key. The public key and associated private key can be used to in various ways, including to establish identity typically as part of a larger security framework such as TLS and IPsec. These keys, as well as the supporting protocols and formatting standards, form the basis for public key infrastructure (PKI).
 
-[big red]*DP: Review and remove comment.*
-
-////
-A Certificate Signing Request (CSR) is a block of encoded text that is given to a Certificate Authority (CA) when applying for a digital certificate. In ONTAP, a CSR can be generated using the <code>security certificate generate-csr</code> command. This request is then sent to a trusted third-party CA for signing. Once the CA processes the request, it sends back a signed digital certificate. The signed certificate can be installed on ONTAP to authenticate the cluster or Storage Virtual Machine (SVM) as an SSL server, which is a best practice for production systems to comply with InfoSec policies.
-////
-
 == Generate a certificate signing request
 
-To get started using a digital certificate, you need to generate a certificate signing request (CSR). As part of this, ONTAP creates a public/private key pair and includes the public key contained in the CSR. A CSR is ued to request a certificate.
+To get started using a digital certificate, you need to generate a certificate signing request (CSR). A CSR is used to request a signed certificate from a certificate authority (CA).As part of this, ONTAP creates a public/private key pair and includes the public key in the CSR.
 
 .Steps
 

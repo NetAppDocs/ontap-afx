@@ -5,7 +5,7 @@ keywords: afx, afx system, ethernet, ethernet ports
 summary: "The ports used by the AFX system provide a foundation for network connectivity and communication. There are several configuration options available to customize the layer two aspect of your network."
 ---
 
-= Manage AFX Ethernet ports
+= Manage AFX storage system Ethernet ports
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ permalink: get-started/software-architecture.html
 keywords: afx, afx system, cluster, architecture, components, physical, logical
 summary: "The AFX architecture is composed of several hardware and software components. These system components are organized in different categories."
 ---
-= Details of the AFX architecture
+= Details of the AFX storage system architecture
 :icons: font
 :imagesdir: ../media/
 
@@ -21,7 +21,7 @@ AFX controller nodes run a specialized personality of the ONTAP software designe
 
 === Storage shelves and disks
 
-AFX storage shelves use Non-volatile Memory Express over Fabrics (NVMe-oF) to connect the high-density SSDs. The disks communicate over an ultra-low latency fabric using RDMA over Converged Ethernet (RoCE). The storage shelves, including the I/O modules, NICs, fans, and power supplies, are fully redundant with no single point of failure. Self-managed technology is used to administer and control all aspects of the RAID configuration and disk layout.
+AFX storage shelves use Non-volatile Memory Express over Fabrics (NVMe-oF) to connect high-density SSDs. The disks communicate over an ultra-low latency fabric using RDMA over Converged Ethernet (RoCE). The storage shelves, including the I/O modules, NICs, fans, and power supplies, are fully redundant with no single point of failure. Self-managed technology is used to administer and control all aspects of the RAID configuration and disk layout.
 
 === Cluster storage switch network
 
@@ -45,7 +45,7 @@ The Storage Availability Zone (SAZ) is a common pool of storage for the entire c
 
 === FlexVolumes, FlexGroups, and buckets
 
-FlexVolumes, FlexGroups, and buckets are the _data containers_ exposed to the customer based on the client access protocols. These scalable containers are designed to abstract away many of the complex internal storage details.
+FlexVolumes, FlexGroups, and S3 buckets are the _data containers_ exposed to the AFX administrators based on the client access protocols. These scalable containers are designed to abstract away many of the complex internal storage details.
 
 === Data layout and access
 
@@ -53,10 +53,10 @@ The data layout and access is tuned for seamless access and efficient utilizatio
 
 === SVMs and multi-tenancy
 
-AFX provides a tenant model that builds on the SVM model available with Unified ONTAP. Most of the SVM concepts translate directly from Unified ONTAP. The AFX tenant model has been streamlined for simplified administration.
+AFX provides a tenant model that builds on the SVM model available with AFF and FAS systems. The AFX tenant model has been streamlined for simplified administration.
 
 == AFX cluster deployment
 
-The following figure illustrates a typical AFX cluster deployment. Notice the controller nodes are decoupled from the storage shelves and connected through a shared network.
+The following figure illustrates a typical AFX cluster deployment. Controller nodes are decoupled from the storage shelves and connected through a shared network.
 
 image:afx-cluster.png[AFX cluster architecture]

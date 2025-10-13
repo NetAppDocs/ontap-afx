@@ -4,7 +4,7 @@ permalink: administer/submit-view-case.html
 keywords: afx, afx system, support, support case
 summary: "If you have an issue that requires assistance, you can use ONTAP System Manager to submit a case to technical support.  You can also use ONTAP System Manager to view cases that are in progress or closed."
 ---
-= Submit and view support cases for AFX
+= Submit and view support cases for an AFX storage system
 :icons: font
 :imagesdir: ../media/
 

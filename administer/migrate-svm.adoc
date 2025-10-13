@@ -2,15 +2,76 @@
 sidebar: sidebar
 permalink: administer/migrate-svm.html
 keywords: afx, afx system, svm, migrate svm
-summary: "You can migrate a data SVM from one ONTAP cluster to another. This includes from a Unified ONTAP cluster to an AFX cluster as well as among AFX clusters. You might do this to relocate an SVM as part of rebalancing your applications or as part of a backup strategy. SVM migration with AFX is the same as Unified ONTAP; refer to the Unified ONTAP documentation for the details about SVM migration."
+summary: "You can migrate a data SVM from one ONTAP cluster to another. SVM migration with AFX operates the same as with Unified ONTAP, although there are several interoperability considerations. Refer to the Unified ONTAP documentation for details about performing an SVM migration."
 ---
-= Migrate an AFX data SVM
+= Migrate an AFX storage system SVM
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can migrate a data SVM from one ONTAP cluster to another. This includes from a Unified ONTAP cluster to an AFX cluster as well as among AFX clusters. You might do this to relocate an SVM as part of rebalancing your applications or as part of a backup strategy. SVM migration with AFX is the same as Unified ONTAP; refer to the Unified ONTAP documentation for the details about SVM migration.
+You can migrate a data SVM from one ONTAP cluster to another. SVM migration with AFX operates the same as with Unified ONTAP, although there are several interoperability considerations. Refer to the Unified ONTAP documentation for details about performing an SVM migration.
 
-.Related information
+== Interoperability considerations
+
+Before planning and performing an SVM migration, you should be aware of the interoperability considerations including capabilities and limitations.
+
+=== Use cases
+
+Cluster administrators can relocate an SVM from a source cluster to a destination cluster. You might do this as part of capacity management and load balancing, or to allow for equipment upgrades or data center consolidations.
+
+And because the AFX storage system does not support in-place upgrades from Unified ONTAP, SVM migration is an important use case. You can move your application workloads from Unified ONTAP9 clusters to AFX clusters without disruption. In addition, SVMs can be migrated in other ways including from an AFX cluster to a Unified ONTAP cluster as well as between AFX clusters.
+
+=== Version interoperability
+
+The following table describes the allowable SVM migrations based on the ONTAP personality and release of the source and destination cluster.
+
+[cols="40,30,30"*,options="header"]
+|===
+|Direction |Source version |Destination version
+
+|Unified to AFX
+|9.15.1 - 9.17.1
+|9.17.1
+|AFX to Unified
+|9.17.1
+|9.17.1
+|AFX to AFX
+|9.17.1
+|9.17.1
+
+|===
+
+=== Prechecks
+
+Unified ONTAP includes several prechecks that are also implemented with AFX. In addition, several new prechecks are added to flag features that aren't supported with AFX, including:
+
+* FabricPool (volumes residing on composite aggregates)
+* Thick provisioned volumes
+
+=== Volume provisioning
+
+The AFX volumes are provisioned in order to balance their placement across the Storage Availability Zone (SAZ) of the cluster.
+
+Space guarantee::
+AFX does not support thick provisioning. A precheck is used to fail a migration if any volume in the SVM being migrated is thick provisioned.
+
+Encryption::
+An AFX system supports NetApp volume encryption (NVE) but not NetApp aggregate encryption (NAE). Because of this, any NAE volumes at a Unified ONTAP cluster are converted to NVE volumes when migrated to AFX. The following table summarizes the compatibility and conversion.
+
+[cols="50,50"*,options="header"]
+|===
+|Source volume |Destination volume
+
+|Plain text
+|Plain text
+|NVE
+|NVE
+|NAE
+|NVE
+
+|===
+
+== Related information
 
 * https://docs.netapp.com/us-en/ontap/svm-migrate/index.html[SVM data mobility^]
+* link:../faq-ontap-afx.html[FAQ for AFX storage systems]

@@ -5,7 +5,7 @@ keywords: afx, afx system, prepare, administration
 summary: "Before deploying AFX in a production environment, it’s essential to understand the administrative structure and configuration options. This ensures secure, efficient, and effective management of your AFX cluster."
 ---
 
-= Prepare to administer AFX
+= Prepare to administer your AFX storage system
 :icons: font
 :imagesdir: ../media/
 
@@ -23,7 +23,7 @@ Administrative control::
 Data SVMs can be used to establish and enforce isolation of your data and applications. This can be useful when there are many different groups with a larger organization. Administrative control can be delegated to the SVMs to establish policies related to data access, security, and protection.
 
 Accounts and RBAC roles::
-It's important to note there are two levels of authentication and authorization with AFX: cluster level and SVM level. In addition to the cluster accounts, every SVM has its own distinct set of users and roles. In most situations, using the cluster level accounts is adequate. But depending on your environment, you might need to configure and use the more restrictive SVM accounts and roles as well. See link:../administer/additional-ontap-svm.html[Additional AFX SVM administration] for more information.
+There are two levels of authentication and authorization with AFX: cluster level and SVM level. In addition to the cluster accounts, every SVM has its own distinct set of users and roles. In most situations, using the cluster level accounts is adequate. But depending on your environment, you might need to configure and use the more restrictive SVM accounts and roles as well. See link:../administer/additional-ontap-svm.html[Additional AFX SVM administration] for more information.
 
 SVM-scoped resources::
 AFX resources and configurable entities are associated either with the cluster or a specific SVM. There are many resources with an SVM scope, including volumes and buckets as well as the SVM user accounts and RBAC roles.
@@ -33,21 +33,21 @@ Each SVM has its own dedicated set of network interfaces. For example, separate 
 
 == Two AFX administrative levels
 
-The administrative tasks you perform with AFX generally fall into two different categories. Some tasks apply to the cluster as a whole, while other tasks apply to a specific SVM. This results in two-tier administrative model.
+The administrative ONTAP tasks you perform with AFX generally fall into two different categories. Some tasks apply to the ONTAP cluster as a whole, while other tasks apply to a specific SVM. This results in two-tier administrative model.
 
 It's important to note that these levels describe how the administrative tasks are organized and assigned, and not necessarily how the associated security is configured. For example, while a cluster administrator account is needed to perform cluster level administration, it can also be used for SVM administration.
 
 Cluster administrator::
 
-The cluster administrator has complete control of the AFX cluster including all the data SVMs. However, for clarity this AFX administrative level includes only the tasks that a cluster admin can perform and not any of the SVM-specific administration tasks. See link:../administer/view-dashboard.html[Administer your cluster] for more information.
+The cluster administrator has complete control of the AFX cluster including all the data SVMs. The AFX cluster administrative level includes only the tasks that a cluster admin can perform and not any of the SVM-specific administration tasks. See link:../administer/view-dashboard.html[Administer your cluster] for more information.
 
 SVM administrator::
 
-An SVM administrator has control of a specific data SVM and so is more restricted compared to the cluster administrator. SVM administration involves performing tasks with objects and resources that have an SVM scope, such as creating a volume. See link:../manage-data/prepare-provision-storage.html[Administer your storage VMs] for more information.
+An SVM administrator role has control of a specific data SVM and so is more restricted compared to the cluster administrator. SVM administration involves performing tasks with objects and resources that have an SVM scope, such as creating a volume. See link:../manage-data/prepare-manage-data.html[Administer your storage VMs and data] for more information.
 
 == Three administrative interfaces
 
-As with the other ONTAP personalities (Unified, ASA r2), AFX has three administrative interfaces. The LIF (or IP address) you need to use varies based on the administrative interface and your environment.
+Like AFF and FAS systems, AFX has three administrative interfaces. The LIF (or IP address) you need to use varies based on the administrative interface and your environment.
 
 [NOTE]
 The System Manager user interface is preferred for most administrative tasks. You should use an administrator account unless otherwise indicated.
@@ -57,11 +57,11 @@ The System Manager user interface is preferred for most administrative tasks. Yo
 |Interface
 |Description
 |System Manager
-|This is a graphical user interface available through a web browser. It's easy to use and provides access to most of the capabilities customers need. Accessing AFX through System Manager is generally considered the preferred option.
+|This is a graphical user interface available through a web browser. It's easy to use and provides access to most of the capabilities customers need. Accessing AFX through System Manager provides the simplest experience for the majority of ONTAP cluster and SVM administration needs.
 |Command line interface
 |The ONTAP CLI is accessible using SSH. Depending on your account, you can access the cluster management LIF or SVM management LIF. The CLI is more difficult to use but is more robust. It's preferred, and sometimes required, for advanced administration tasks.
 |REST API
-|AFX includes a REST API you can use to automate the administration of your AFX cluster. The API is based on the Unified ONTAP REST API with modifications to support the unique AFX features and restrictions.
+|AFX includes a REST API you can use to automate the administration of your AFX cluster. The API shares many of the same calls available with the Unified ONTAP personality REST API with modifications to support the unique AFX features.
 |===
 
 == Learn to search, filter, and sort information in System Manager
@@ -74,7 +74,7 @@ While you can use System Manager for most AFX administration, there are some tas
 
 .About this task
 
-You can access the ONTAP CLI through the secure shell (SSH). The CLI has multiple privilege levels that determine the commands and command parameters available to you. The `admin` level is the least privileged and default when you sign in. You can elevate the privilege of your session to `advanced` if needed using the `set` command.
+You can access the ONTAP CLI through the secure shell (SSH). The CLI has multiple privilege levels that determine the commands and command parameters available to you. The `admin` level is the least privileged and the default when you sign in. You can elevate the privilege of your session to `advanced` if needed using the `set` command.
 
 .Before you begin
 
@@ -104,19 +104,17 @@ You'll need the following:
 
 As with Unified ONTAP, AFX cluster nodes are configured in high-availability (HA) pairs for fault tolerance and nondisruptive operations. HA pairing provides the ability for storage operations to stay online in the event of a node failure, such as a storage failover. Each node is partnered with another node to form a single pair. This is generally done using a direct connection between the two node’s NVRAM modules.
 
-With AFX, a new HA VLAN is added to the backend cluster switches to enable NVRAM modules to stay connected between the HA partner nodes. High availability HA is still handled using HA pairs but there is no longer a need for the partner nodes to be directly connected to one another.
+With AFX, a new HA VLAN is added to the backend cluster switches to enable NVRAM modules to stay connected between the HA partner nodes. HA pairs are still used with the AFX system, but there is no longer a need for the partner nodes to be directly connected.
 
 == AFX system deployment limitations
 
-There are several limitations, including minimums and maximums, enforced by AFX when configuring and using your cluster. These limits fall into several different categories.
+There are several limitations, including minimums and maximums, enforced by AFX when configuring and using your cluster. These limits fall into several different categories including the following.
 
 Controller nodes per cluster::
 Each AFX cluster must have at least four nodes. The maximum number of nodes varies based on the ONTAP release.
 
 Storage capacity::
-This is the total capacity in all the SSD disks in the cluster storage pool. The maximum storage capacity varies based on the release.
-
-NetApp expects to expand the AFX capabilities and so these limitations will change, possibly frequently and within an ONTAP release. You should review the information available at the Interoperability Matrix Tool (IMT) to determine the capabilities of your cluster.
+This is the total capacity across all the SSD disks in the cluster Storage Availability Zone (SAZ). The maximum storage capacity varies based on the ONTAP release. You should review the information available at the Interoperability Matrix Tool (IMT) to determine the capabilities of your cluster.
 
 == Confirm AFX system health
 
@@ -179,16 +177,6 @@ link:../administer/configure-svm.html[Configure] your SVM and prepare for client
 
 [role="quick-margin-para"]
 link:../manage-data/prepare-manage-data.html[Prepare] to allocate and manage your data.
-
-== Similarities to Unified ONTAP and additional documentation
-
-NetApp offers ONTAP in three distinct personalities:
-
-* Unified ONTAP
-* AFX
-* ASA r2
-
-All three share a large common set of features and configuration options. This AFX documentation includes links to various topics at the Unified ONTAP doc site. The additional content provides more depth and a different perspective that can be helpful as you administer your AFX storage system.
 
 == Related information
 

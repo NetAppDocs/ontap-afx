@@ -5,7 +5,7 @@ keywords: afx, afx system, rest api, rest, automation
 summary: "The REST API provided with AFX is based on the Unified ONTAP REST API. There are a number of changes which adapt it to the unique characteristics and capabilities of the AFX personality."
 ---
 
-= Learn about the AFX REST API
+= Learn about the AFX storage system REST API
 :hardbreaks:
 :nofooter:
 :icons: font

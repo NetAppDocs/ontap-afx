@@ -4,7 +4,7 @@ permalink: protect-data/manage-consistency-groups.html
 keywords: afx, afx system, consistency group, manage consistency group
 summary: "You can manage the consistency groups on an AFX system. This can streamline your storage administration."
 ---
-= Manage consistency groups on ONTAP AFX
+= Manage consistency groups on an AFX storage system
 :icons: font
 :imagesdir: ../media/
 

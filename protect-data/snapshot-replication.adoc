@@ -4,7 +4,7 @@ permalink: protect-data/snapshot-replication.html
 keywords: afx, afx system, manage replication, manage snapshot replication
 summary: "Snapshot replication is a process in which consistency groups on your AFX system are copied to a geographically remote location. After the initial replication, changes to consistency groups are copied to the remote location based upon a replication policy. Replicated consistency groups can be used for disaster recovery or data migration."
 ---
-= Set up and manage snapshot replication on AFX
+= Manage snapshot replication on an AFX storage system
 :icons: font
 :imagesdir: ../media/
 

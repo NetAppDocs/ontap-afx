@@ -40,6 +40,8 @@ indexpage:
           url: /protect-data/create-snapshot.html
     - title: Secure data
       links:
+        - title: Prepare to secure data
+          url: /secure-data/prepare-secure-data.html
         - title: Encrypt data at rest
           url: /secure-data/encrypt-data-at-rest.html
         - title: Protect against ransomware attacks

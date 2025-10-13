@@ -4,7 +4,7 @@ permalink: manage-data/manage-volumes.html
 keywords: afx, afx system, manage volumes
 summary: "There are several administrative tasks you can perform as part of administering the volumes defined at your AFX cluster."
 ---
-= Manage the AFX volumes
+= Manage the AFX storage system volumes
 :icons: font
 :imagesdir: ../media/
 

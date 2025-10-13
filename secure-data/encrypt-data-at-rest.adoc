@@ -4,7 +4,7 @@ permalink: secure-data/encrypt-data-at-rest.html
 keywords: afx, afx system, encryption, encrypt data
 summary: "You can encrypt your data at the hardware and software level for dual-layer protection. When you encrypt data at rest, it can’t be read if the storage medium is repurposed, returned, misplaced, or stolen."
 ---
-= Encrypt data at rest on AFX storage systems
+= Encrypt data at rest on an AFX storage system
 :icons: font
 :imagesdir: ../media/
 

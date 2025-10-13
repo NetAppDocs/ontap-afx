@@ -5,7 +5,7 @@ keywords: afx, afx system, rest api, rest api reference, swagger
 summary: "The AFX REST API reference contains details about all the API calls. This documentation is helpful when developing automation applications."
 ---
 
-= AFX REST API reference documentation
+= AFX storage system REST API reference documentation
 :hardbreaks:
 :nofooter:
 :icons: font
