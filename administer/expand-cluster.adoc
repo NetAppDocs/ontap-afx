@@ -9,7 +9,7 @@ summary: "You can expand the compute capacity of an AFX cluster independent of t
 :imagesdir: ../media/
 
 [.lead]
-You can expand the compute capacity of an AFX cluster independent of the storage capacity. The expansion is performed without disruption and increases performance linearly as volumes are rebalanced across the nodes. This feature is a significant benefit as you adjust to the ongoing needs of your AFX users.
+You can expand the compute capacity of an AFX cluster independent of the storage capacity. The expansion is performed without disruption and increases performance linearly as volumes are rebalanced across the nodes. This feature is a significant benefit as you adjust to the ongoing needs of your AFX system users.
 
 == Prepare to expand a cluster
 
@@ -21,11 +21,11 @@ You need the credentials for a cluster administrator account and be able to conn
 
 === Troubleshooting
 
-There are a few scenarios you should be aware of as you perform the cluster expansion.
+There are a few concepts and troubleshooting scenarios you should be aware of as you perform the cluster expansion.
 
 ==== Automatic volume rebalancing
 
-Automated Topology Management (ATM) is in internal AFX component that detects allocation imbalances and rebalances volumes across the cluster nodes. It relies on the Zero Copy Volume Move (ZCVM) feature to relocate volumes using metadata updates instead of copying data. ZCVM is the default volume move technology available with AFX.
+Automated Topology Management (ATM) is in internal AFX system component that detects allocation imbalances and rebalances volumes across the cluster nodes. It relies on the Zero Copy Volume Move (ZCVM) technology to relocate volumes using metadata updates instead of copying the data. ZCVM is the default volume move technology available with AFX storage systems.
 
 ==== Possible troubleshooting scenarios
 
@@ -35,13 +35,7 @@ Volumes are not being moved by ATM::
 This can occur when the cluster is already in balance or when there are no eligible volumes to move.
 
 Confusion about how or when ATM should be active::
-It may appear that volumes aren't distributed as quickly as expected. ATM attempts to detect and respond to hardware events every five minutes. In the worst case, a rebalance operation is always launched 40 minutes after the last one completed.
-
-Need to prevent movement of a specific volume::
-XXX
-
-Need to determine how a volume move was triggered::
-XXX
+It may appear that volumes aren't distributed as quickly as expected. ATM attempts to detect and respond to hardware events every five minutes. In the worst case, a rebalance operation is launched 40 minutes after the last one completed.
 
 ==== CLI commands
 
@@ -52,14 +46,9 @@ There are several commands you can use to monitor a cluster expansion operation.
 
 You should contact NetApp support for additional assistance as needed.
 
-// `aggregate show -fields volcount`
-// `volume show -aggregate <name> -fields atm-state`
-// `volume modify -volume <>  -atm-state disabled`
-// `volume move show -vserver <> -volume <> -fields is-ATM-triggered-copyfree-move`
-
 == Add nodes to expand a cluster
 
-This procedure describes how to add a pair of nodes to an existing cluster and can be adapted to any deployment environment. You'll need to use both the ONTAP CLI and System Manager administrative interfaces.
+This procedure describes how to add a pair of nodes to an existing cluster and can be adapted to other deployment environments. You'll need to use both the ONTAP CLI and System Manager administrative interfaces.
 
 .Steps
 
@@ -130,12 +119,12 @@ This step is only needed if the other interfaces do not use the 169.254.x.x addr
 
 .Result
 
-* Adding new nodes to the cluster should be nondisruptive.
+* Adding new nodes to the cluster is nondisruptive.
 * Volume moves should happen automatically.
-* Performance should scale linearly.
+* Performance will scale linearly.
 
 == Related information
 
 * link:../get-started/prepare-cluster-admin.html[Prepare to administer your AFX system]
 * link:../faq-ontap-afx.html[FAQ for ONTAP AFX storage systems]
-* https://mysupport.netapp.com/[NetApp Support Site]
+* https://mysupport.netapp.com/[NetApp Support Site^]

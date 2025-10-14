@@ -10,7 +10,7 @@ summary: "The ports used by the AFX system provide a foundation for network conn
 :imagesdir: ../media/
 
 [.lead]
-The ports used by the AFX system provide a foundation for network connectivity and communication. There are several configuration options available to customize the layer two aspect of your network.
+The ports used by the AFX system provide a foundation for network connectivity and communication. There are several options available to customize the layer two configuration of your network.
 
 == Create a VLAN
 

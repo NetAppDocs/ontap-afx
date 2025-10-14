@@ -108,7 +108,7 @@ With AFX, a new HA VLAN is added to the backend cluster switches to enable NVRAM
 
 == AFX system deployment limitations
 
-There are several limitations, including minimums and maximums, enforced by AFX when configuring and using your cluster. These limits fall into several different categories including the following.
+There are several limitations, including minimums and maximums, enforced by AFX when configuring and using your cluster. These limits fall into several different categories including:
 
 Controller nodes per cluster::
 Each AFX cluster must have at least four nodes. The maximum number of nodes varies based on the ONTAP release.
@@ -185,9 +185,5 @@ link:../manage-data/prepare-manage-data.html[Prepare] to allocate and manage you
 * https://docs.netapp.com/us-en/ontap/system-admin/set-privilege-level-task.html[Set the privilege level in the ONTAP CLI^]
 
 * https://docs.netapp.com/us-en/ontap/system-admin/index.html[Learn about cluster administration with the ONTAP CLI^]
-
-* https://docs.netapp.com/us-en/ontap/task_admin_search_filter_sort.html[Search, filter, and sort information in ONTAP System Manager^]
-
-* https://docs.netapp.com/us-en/ontap/event-performance-monitoring/index.html[Event, performance, and health monitoring^]
 
 * link:../faq-ontap-afx.html[FAQ for AFX storage systems]

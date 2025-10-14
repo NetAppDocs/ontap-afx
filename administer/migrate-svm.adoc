@@ -9,7 +9,7 @@ summary: "You can migrate a data SVM from one ONTAP cluster to another. SVM migr
 :imagesdir: ../media/
 
 [.lead]
-You can migrate a data SVM from one ONTAP cluster to another. SVM migration with AFX operates the same as with Unified ONTAP, although there are several interoperability considerations. Refer to the Unified ONTAP documentation for details about performing an SVM migration.
+You can migrate a data SVM from one ONTAP cluster to another. SVM migration with AFX operates the same as with Unified ONTAP, although there are several interoperability considerations. Refer to the provided Unified ONTAP documentation for details about performing an SVM migration.
 
 == Interoperability considerations
 
@@ -73,5 +73,5 @@ An AFX system supports NetApp volume encryption (NVE) but not NetApp aggregate e
 
 == Related information
 
-* https://docs.netapp.com/us-en/ontap/svm-migrate/index.html[SVM data mobility^]
+* https://docs.netapp.com/us-en/ontap/svm-migrate/index.html[ONTAP SVM data mobility^]
 * link:../faq-ontap-afx.html[FAQ for AFX storage systems]

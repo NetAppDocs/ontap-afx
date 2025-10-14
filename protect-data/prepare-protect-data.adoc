@@ -10,10 +10,10 @@ summary: "Before protecting your AFX data, you should be familiar with some of t
 :imagesdir: ../media/
 
 [.lead]
-Before protecting your AFX data, you should be familiar with some of the key concepts and current status of your storage.
+Before protecting your AFX data, you should be familiar with some of the key concepts and capabilities.
 
 [TIP]
-Because many of the concepts and administration procedures available with Unified ONTAP are the same as AFX, reviewing the Unified ONTAP documentation can be helpful. Refer to <<Related information>> for more information including links to the Unified ONTAP doc site.
+Because many of the concepts and administration procedures available on AFF and FAS systems are the same with AFX storage systems, reviewing the Unified ONTAP documentation can be helpful.
 
 == Terminology and options
 
@@ -23,8 +23,15 @@ Snapshot::
 A snapshot is a read-only, point-in-time image of a volume. It is a foundational technology for ONTAP's replication and data protection services.
 
 Consistency group::
-A consistency group is a collection of volumes that can be managed as a single unit. You can create consistency groups to simplify storage management and data protection for application workloads. For example, you can snapshot several volumes in one operation by using the consistency group instead of the individual volumes.
+A consistency group is a collection of volumes that are managed as a single unit. You can create consistency groups to simplify storage management and data protection for application workloads. For example, you can snapshot several volumes in one operation by using the consistency group instead of the individual volumes.
+
+Hierarchical consistency group::
+Hierarchical consistency groups were introduced with ONTAP 9.16.1 and are available with AFX. With a hierarchical structure, one or more consistency groups can be configured as children under a parent. These hierarchical groups allow you to apply individual snapshot policies to child consistency groups and replicate the snapshots of all the children to a remote cluster as a single unit by replicating the parent.
+
+SnapLock::
+SnapLock is an ONTAP feature that allows you to protect your files by moving them to a write once read many (WORM) state. This prevents modification or deletion for a specified retention period. SnapLock volumes are created cannot be converted from non-SnapLock volumes after creation based on the retention.
 
 == Related information
 
 * link:../administer/additional-ontap-svm.html[Additional AFX SVM administration]
+* link:../get-started/prepare-cluster-admin.html[Prepare to your administer AFX system]

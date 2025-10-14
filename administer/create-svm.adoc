@@ -13,7 +13,7 @@ You can create an SVM to provide isolation and improve security. You might do th
 
 .About this task
 
-When you create a data SVM, you must provide a name and configure at least one protocol for client access. After selecting a client protocol, you will be prompted for the networking configuration as well. You can change the SVM configuration as needed after it has been created.
+When you create an SVM, you must provide a name and configure at least one protocol for client access. After selecting a client protocol, you will be prompted for the networking configuration as well. You can change the SVM configuration as needed after it has been created.
 
 .Before you begin
 
@@ -36,5 +36,5 @@ You'll need the following:
 
 .Related information
 
-* link:../administer/configure-svm.html[Configure an AFX SVM]
-* link:../administer/manage-cluster-networking.html[Manage ONTAP AFX cluster networking]
+* link:../administer/configure-svm.html[Configure an AFX system SVM]
+* link:../administer/manage-cluster-networking.html[Manage AFX system cluster networking]

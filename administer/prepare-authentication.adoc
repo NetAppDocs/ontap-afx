@@ -9,7 +9,7 @@ summary: "You need to prepare the authentication and authorization services used
 :imagesdir: ../media/
 
 [.lead]
-You need to prepare the authentication and authorization services used by the AFX system to define user accounts and roles.
+You need to prepare the authentication and authorization services used by the AFX system to the user account and role definitions.
 
 == Configure LDAP
 

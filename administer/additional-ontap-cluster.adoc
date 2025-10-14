@@ -2,18 +2,29 @@
 sidebar: sidebar
 permalink: administer/additional-ontap-cluster.html
 keywords: afx, afx system, additional administration, advanced administration
-summary: "In addition to the common AFX cluster administration tasks, there may be other tasks you need to perform based on your environment. Most of the additional tasks can be performed using System Manager, although in some cases you may need to use the CLI or REST API."
+summary: "In addition to the typical AFX cluster administration, there may be other tasks you need to perform based on your environment. Most of the additional tasks can be performed using System Manager, although in some cases you may need to use the CLI."
 ---
 = Additional administration for an AFX storage system cluster
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-In addition to the common AFX cluster administration tasks, there may be other tasks you need to perform based on your environment. Most of the additional tasks can be performed using System Manager, although in some cases you may need to use the CLI or REST API.
+In addition to the typical AFX cluster administration, there may be other tasks you need to perform based on your environment. Most of the additional tasks can be performed using System Manager, although in some cases you may need to use the CLI.
+
+[NOTE]
+The ONTAP features and administration described are common to AFX storage systems and AFF or FAS systems running Unified ONTAP. Links to the relevant Unified ONTAP documentation are included as appropriate.
 
 == Licensing
 
-AFX systems are licensed in a similar way to Unified ONTAP AFF systems. An AFX cluster includes many features by default as appropriate for the protocols that are supported. You can install license files to activate additional features as needed.
+AFX systems are licensed in a similar way as Unified ONTAP AFF and FAS systems. An AFX cluster includes most features by default for the protocols supported. 
+
+=== ONTAP license management
+
+An ONTAP license is a record of one or more software entitlements. All licenses are defined and provided using a NetApp license file (NLF). Refer to https://docs.netapp.com/us-en/ontap/system-admin/manage-licenses-concept.html[ONTAP licensing overview^] for more information.
+
+=== Install a license on an AFX system
+
+You can install license files to activate additional features as needed for your AFX storage system.
 
 .Steps
 
@@ -28,7 +39,15 @@ AFX systems are licensed in a similar way to Unified ONTAP AFF systems. An AFX c
 
 There are several optional security features you can configure and use with your AFX deployment.
 
-=== OAuth 2.0
+=== ONTAP security and data encryption
+
+It's important to protect the security and priacy of your AFX storage system. Refer to https://docs.netapp.com/us-en/ontap/security-encryption/index.html[Security and data encryption^]
+
+=== ONTAP authentication and access control
+
+The AFX storage system provides several options for configuring authentication and access control services. Refer to https://docs.netapp.com/us-en/ontap/authentication-access-control/index.html[Authentication and access control^] for more information.
+
+=== Administer OAuth 2.0 on an AFX system
 
 OAuth 2.0 is the industry standard authorization framework used to restrict and control access to protected resources using signed access tokens.
 
@@ -43,9 +62,5 @@ OAuth 2.0 is the industry standard authorization framework used to restrict and 
 == Related information
 
 * link:../faq-ontap-afx.html[FAQ for AFX storage systems]
-
-* link:../system-admin/manage-licenses-concept.html[ONTAP licensing overview^]
-
 * https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html[Overview of the ONTAP OAuth 2.0 implementation^]
-//=== IPsec
-//* https://docs.netapp.com/us-en/ontap/networking/ipsec-prepare.html[Prepare to use IP security on the ONTAP network^]
+* link:../administer/additional-ontap-svm.html[Additional administration for AFX SVMs]

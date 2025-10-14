@@ -19,5 +19,5 @@ You can display the data storage VMs defined in your AFX cluster. Each SVM provi
 
 .Related information
 
-* link:../administer/configure-svm.html[Configure an AFX SVM]
+* link:../administer/configure-svm.html[Configure an AFX system SVM]
 * link:../get-started/prepare-cluster-admin.html[Understand storage virtual machines]

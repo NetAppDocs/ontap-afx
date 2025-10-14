@@ -1,0 +1,4 @@
+---
+permalink: protect-data/backup-restore.html
+redirect: ontap-afx/protect-data/prepare-protect-data.html
+---

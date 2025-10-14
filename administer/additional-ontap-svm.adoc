@@ -2,15 +2,51 @@
 sidebar: sidebar
 permalink: administer/additional-ontap-svm.html
 keywords: afx, afx system, additional administration, advanced administration
-summary: "In addition to the common AFX SVM administration tasks, there may be other tasks you need to perform based on your environment. Most of these additional tasks can be performed using System Manager, although in some cases one of the other administrative interfaces may be needed."
+summary: "In addition to the typical AFX SVM administration, there may be other tasks you need to perform based on your environment. Most of the additional tasks can be performed using System Manager, although in some cases you may need to use the CLI."
 ---
 = Additional administration for an AFX storage system SVM
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-In addition to the common AFX SVM administration tasks, there may be other tasks you need to perform based on your environment. Most of these additional tasks can be performed using System Manager, although in some cases one of the other administrative interfaces may be needed.
+In addition to the typical AFX SVM administration, there may be other tasks you need to perform based on your environment. Most of the additional tasks can be performed using System Manager, although in some cases you may need to use the CLI.
 
-.Related information
+[NOTE]
+The ONTAP features and administration described are common to AFX storage systems and AFF or FAS systems running Unified ONTAP. Links to the relevant Unified ONTAP documentation are included as appropriate.
+
+== Storage management and performance
+
+There are several optional storage management and performance features you can configure and use with your AFX deployment.
+
+=== ONTAP NAS storage management
+
+Network Attached Storage (NAS) provides dedicated file storage which can be accessed by multiple clients in the network. ONTAP supports several NAS protocols. Refer to https://docs.netapp.com/us-en/ontap/nas-management/index.html[NAS storage management^] for more information.
+
+=== ONTAP FlexCache Volumes
+
+FlexCache is an ONTAP remote caching feature. It brings data closer to clients which improves access performance and reduces costs. Creating a FlexCache volume, which initially copies only the metadata from the origin file system, simplifies file distribution and reduces WAN traffic. Refer to https://docs.netapp.com/us-en/ontap/flexcache/index.html[Learn about ONTAP FlexCache volumes^] for more information.
+
+=== ONTAP FlexGroup volumes
+
+A FlexGroup volume consists of several member volumes that share the traffic automatically and transparently. FlexGroup volumes offer several benefits, including high performance and simplified management. Refer to https://docs.netapp.com/us-en/ontap/flexgroup/creation-workflow-task.html[FlexGroup volume setup^] for more information.
+
+== Data protection
+
+There are several optional data protection features you can configure and use with your AFX deployment.
+
+=== Consistency groups
+
+A consistency group is a collection of volumes that are managed as a single unit. Refer to https://docs.netapp.com/us-en/ontap/consistency-groups/index.html[Learn about ONTAP consistency groups^] for more information.
+
+=== SnapLock
+
+You can protect your files by converting them to a write once read many (WORM) state at a volume level. SnapLock supports two modes. Compliance mode ensures the files cannot be deleted until their retention period expires which addresses government or industry-specific mandates. Enterprise mode allows privileged users to delete files before their retention period expires. Refer to https://docs.netapp.com/us-en/ontap/snaplock/index.html[Learn about ONTAP SnapLock^] for more information.
+
+== ONTAP event and performance monitoring
+
+You can monitor the health and performance of a cluster. This includes setting up alerts for events and managing notifications for system health alerts. Refer to https://docs.netapp.com/us-en/ontap/event-performance-monitoring/index.html[Event, performance, and health monitoring^] for more information
+
+== Related information
 
 * link:../faq-ontap-afx.html[FAQ for AFX storage systems]
+* link:../administer/additional-ontap-cluster.html[Additional administration for AFX clusters]
