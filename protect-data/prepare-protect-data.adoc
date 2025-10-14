@@ -10,10 +10,10 @@ summary: "Before protecting your AFX data, you should be familiar with some of t
 :imagesdir: ../media/
 
 [.lead]
-Before protecting your AFX data, you should be familiar with some of the key concepts and current status of your storage.
+Before protecting your AFX data, you should be familiar with some of the key concepts and capabilities.
 
 [TIP]
-Because many of the concepts and administration procedures available with Unified ONTAP are the same as AFX, reviewing the Unified ONTAP documentation can be helpful. Refer to <<Related information>> for more information including links to the Unified ONTAP doc site.
+Because many of the concepts and administration procedures available on AFF and FAS systems are the same with AFX storage systems, reviewing the Unified ONTAP documentation can be helpful.
 
 == Terminology and options
 
@@ -34,3 +34,4 @@ SnapLock is an ONTAP feature that allows you to protect your files by moving the
 == Related information
 
 * link:../administer/additional-ontap-svm.html[Additional AFX SVM administration]
+* link:../get-started/prepare-cluster-admin.html[Prepare to your administer AFX system]

@@ -13,23 +13,22 @@ summary: "Before managing your AFX data, you should be familiar with the major c
 Before managing your AFX data, you should be familiar with the major concepts and capabilities.
 
 [TIP]
-Because many of the concepts and administration procedures available with Unified ONTAP are the same as AFX, reviewing the Unified ONTAP documentation can be helpful. Refer to <<Related information>> for more information including links to the Unified ONTAP doc site.
+Because many of the concepts and administration procedures available on AFF and FAS systems are the same with AFX storage systems, reviewing the Unified ONTAP documentation can be helpful.
 
 == Terminology and options
 
 There are several terms related to AFX data security you should be familiar with.
 
 Ransomware::
-Ransomware is malicious software that encrypts files, making them inaccessible to the user, and which typically demands some type of payment for decryption of the data. NetApp ONTAP provides solutions to protect against ransomware through features like Autonomous Ransomware Protection (ARP) and FPolicy.
+Ransomware is malicious software that encrypts files making them inaccessible to the user. There is typically some type of payment demaned to decrypt the data. NetApp ONTAP provides solutions to protect against ransomware through features like Autonomous Ransomware Protection (ARP).
 
 Encryption::
-Encryption is process of converting data into a secure format that cannot be easily read without proper authorization. ONTAP offers both software-based and hardware-based encryption technologies to protect data at rest. This ensures it cannot be read if the storage medium is repurposed, returned, misplaced, or stolen. These encryption solutions can be managed using either an external key management server or the Onboard Key Manager provided by ONTAP.
+Encryption is the process of converting data into a secure format that cannot be easily read without proper authorization. ONTAP offers both software-based and hardware-based encryption technologies to protect data at rest. This ensures it cannot be read if the storage medium is repurposed, returned, misplaced, or stolen. These encryption solutions can be managed using either an external key management server or the Onboard Key Manager provided by ONTAP.
 
 Digital certificates and PKI::
-A digital certificate is an electronic document used to prove ownership of a public key. The public key and associated private key can be used to in various ways, including to establish identity typically as part of a larger security framework such as TLS and IPsec. These keys, as well as the supporting protocols and formatting standards, form the basis for public key infrastructure (PKI).
+A digital certificate is an electronic document used to prove ownership of a public key. The public key and associated private key can be used in various ways, including to establish identity typically as part of a larger security framework such as TLS and IPsec. These keys, as well as the supporting protocols and formatting standards, form the basis for public key infrastructure (PKI).
 
 == Related information
 
-* https://docs.netapp.com/us-en/ontap/security-encryption/index.html[ONTAP Security and data encryption]
-* https://docs.netapp.com/us-en/ontap/authentication-access-control/index.html[ONTAP Authentication and access control^]
 * link:../administer/additional-ontap-svm.html[Additional AFX SVM administration]
+* link:../get-started/prepare-cluster-admin.html[Prepare to your administer AFX system]
