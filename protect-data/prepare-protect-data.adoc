@@ -23,7 +23,10 @@ Snapshot::
 A snapshot is a read-only, point-in-time image of a volume. It is a foundational technology for ONTAP's replication and data protection services.
 
 Consistency group::
-A consistency group is a collection of volumes that can be managed as a single unit. You can create consistency groups to simplify storage management and data protection for application workloads. For example, you can snapshot several volumes in one operation by using the consistency group instead of the individual volumes.
+A consistency group is a collection of volumes that are managed as a single unit. You can create consistency groups to simplify storage management and data protection for application workloads. For example, you can snapshot several volumes in one operation by using the consistency group instead of the individual volumes.
+
+Hierarchical consistency group::
+Hierarchical consistency groups were introduced with ONTAP 9.16.1 and are available with AFX. With a hierarchical structure, one or more consistency groups can be configured as children under a parent. These hierarchical groups allow you to apply individual snapshot policies to child consistency groups and replicate the snapshots of all the children to a remote cluster as a single unit by replicating the parent.
 
 == Related information
 

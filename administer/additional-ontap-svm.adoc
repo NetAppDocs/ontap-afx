@@ -30,6 +30,14 @@ FlexCache is an ONTAP remote caching feature. It brings data closer to clients w
 
 A FlexGroup volume consists of several member volumes that share the traffic automatically and transparently. FlexGroup volumes offer several benefits, including high performance and simplified management. See https://docs.netapp.com/us-en/ontap/flexgroup/creation-workflow-task.html[FlexGroup volume setup^] for more information.
 
+== Data protection
+
+There are several optional data protection features you can configure and use with your AFX deployment.
+
+=== Consistency groups
+
+A consistency group is a collection of volumes that are managed as a single unit. See https://docs.netapp.com/us-en/ontap/consistency-groups/index.html[Learn about ONTAP consistency groups^] for more information.
+
 == ONTAP event and performance monitoring
 
 You can monitor the health and performance of a cluster. This includes setting up alerts for events and managing notifications for system health alerts. See https://docs.netapp.com/us-en/ontap/event-performance-monitoring/index.html[Event, performance, and health monitoring^] for more information
