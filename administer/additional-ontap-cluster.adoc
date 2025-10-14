@@ -20,7 +20,7 @@ AFX systems are licensed in a similar way as Unified ONTAP AFF and FAS systems. 
 
 === ONTAP license management
 
-An ONTAP license is a record of one or more software entitlements. All licenses are defined and provided using a NetApp license file (NLF). See https://docs.netapp.com/us-en/ontap/system-admin/manage-licenses-concept.html[ONTAP licensing overview^] for more information.
+An ONTAP license is a record of one or more software entitlements. All licenses are defined and provided using a NetApp license file (NLF). Refer to https://docs.netapp.com/us-en/ontap/system-admin/manage-licenses-concept.html[ONTAP licensing overview^] for more information.
 
 === Install a license on an AFX system
 
@@ -41,11 +41,11 @@ There are several optional security features you can configure and use with your
 
 === ONTAP security and data encryption
 
-It's important to protect the security and priacy of your AFX storage system. See https://docs.netapp.com/us-en/ontap/security-encryption/index.html[Security and data encryption^]
+It's important to protect the security and priacy of your AFX storage system. Refer to https://docs.netapp.com/us-en/ontap/security-encryption/index.html[Security and data encryption^]
 
 === ONTAP authentication and access control
 
-The AFX storage system provides several options for configuring authentication and access control services. See https://docs.netapp.com/us-en/ontap/authentication-access-control/index.html[Authentication and access control^] for more information.
+The AFX storage system provides several options for configuring authentication and access control services. Refer to https://docs.netapp.com/us-en/ontap/authentication-access-control/index.html[Authentication and access control^] for more information.
 
 === Administer OAuth 2.0 on an AFX system
 

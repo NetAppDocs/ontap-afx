@@ -39,7 +39,5 @@ entries:
         url: /secure-data/prepare-secure-data.html
       - title: Encrypt data at rest
         url: /secure-data/encrypt-data-at-rest.html
-      - title: Protect against ransomware attacks
-        url: /secure-data/ransomware-protection.html
   - title: Additional administration
     url: /administer/additional-ontap-svm.html
