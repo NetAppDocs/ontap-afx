@@ -44,8 +44,8 @@ indexpage:
           url: /secure-data/prepare-secure-data.html
         - title: Encrypt data at rest
           url: /secure-data/encrypt-data-at-rest.html
-        - title: Protect against ransomware attacks
-          url: /secure-data/ransomware-protection.html
+#       - title: Protect against ransomware attacks
+#         url: /secure-data/ransomware-protection.html
     - title: REST API
       links: 
         - title: Learn about the REST API
