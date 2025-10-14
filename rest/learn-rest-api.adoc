@@ -1,0 +1,70 @@
+---
+sidebar: sidebar
+permalink: rest/learn-rest-api.html
+keywords: afx, afx system, rest api, rest, automation
+summary: "The REST API provided with AFX is based on the Unified ONTAP REST API. There are a number of changes which adapt it to the unique characteristics and capabilities of the AFX personality."
+---
+
+= Learn about the AFX storage system REST API
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+The REST API provided with AFX is based on the Unified ONTAP REST API. There are a number of changes which adapt it to the unique characteristics and capabilities of the AFX personality.
+
+== Unsupported features
+
+AFX is a high-performance NAS and S3 storage system. It enables clients to access data using NFS, SMB/CIFS, and S3. Because of this specialization, there are several unsupported features including:
+
+* Metrocluster
+* Storage area networking (SAN)
+* Disk aggregates 
+
+== Removed API endpoints
+
+Several endpoints have been removed from the REST API corresponding to the unsupported features.
+
+.List of unsupported endpoints
+[%collapsible%closed]
+====
+[source,text]
+----
+/cluster/counter/tables
+/cluster/metrocluster
+/cluster/metrocluster/diagnostics
+/cluster/metrocluster/dr-groups
+/cluster/metrocluster/interconnects
+/cluster/metrocluster/nodes
+/cluster/metrocluster/operations
+/cluster/metrocluster/svms
+/network/fc/fabrics
+/network/fc/interfaces
+/network/fc/logins
+/network/fc/ports
+/network/fc/wwpn-aliases
+/protocols/nvme/interfaces
+/protocols/nvme/services
+/protocols/nvme/subsystem-controllers
+/protocols/nvme/subsystem-maps
+/protocols/nvme/subsystems
+/protocols/san/fcp/services
+/protocols/san/igroups
+/protocols/san/initiators
+/protocols/san/iscsi/credentials
+/protocols/san/iscsi/services
+/protocols/san/iscsi/sessions
+/protocols/san/lun-maps
+/protocols/san/portsets
+/protocols/san/vvol-bindings
+/storage/luns
+/storage/namespaces
+----
+====
+
+== Related information
+
+* https://docs.netapp.com/us-en/ontap-automation[ONTAP automation^]
+* https://docs.netapp.com/us-en/asa-r2/learn-more/rest-api-support.html[REST API support for ASA r2^]

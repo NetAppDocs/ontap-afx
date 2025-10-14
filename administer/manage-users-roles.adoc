@@ -1,0 +1,52 @@
+---
+sidebar: sidebar
+permalink: administer/manage-users-roles.html
+keywords: afx, afx system, users, roles
+summary: "You can define user accounts and roles based on the authentication and authorization services available with AFX."
+---
+= Manage AFX storage system cluster users and roles
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can define user accounts and roles based on the authentication and authorization services available with AFX.
+
+[NOTE]
+Each ONTAP user needs to have one role assigned. A role includes privileges and determines what actions the user is able to perform.
+
+== Create an account role
+
+Roles for cluster administrators and storage VM administrators are automatically created when your AFX cluster is set up and initialized. You can create additional user account roles to define specific functions that users assigned to the roles can perform on your cluster.
+
+.Steps
+
+. In System Manager, select *Cluster* and then *Settings*.
+. In the *Security* section, next to *Users and roles*, select image:icon_arrow.gif[blue arrow pointing to the right].
+. Under *Roles*, select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
+. Provide the name of the role and the attributes.
+. Select *Save*.
+
+== Create a cluster account
+
+You can create a cluster-level account to use when performing cluster or SVM administration.
+
+.Steps
+
+. In System Manager, select *Cluster* and then *Settings*.
+. In the *Security* section, select image:icon_arrow.gif[blue arrow pointing to the right] next to *Users and roles*.
+. Select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters]. under *Users*.
+. Enter a username and then select the role for the user.
++
+The role should be appropriate for the user. For example, the *admin* role is able to perform the full range of configuration tasks on your cluster.
+. Select the user login method and the authentication method; this will typically be *Password*.
+. Enter a password for the user.
+. Select *Save*.
+
+.Result
+
+A new account is created and available for use with your AFX cluster.
+
+== Related information
+
+* link:../administer/prepare-authentication.html[Prepare authentication services]
+* link:../administer/additional-ontap-svm.html[Additional AFX SVM administration]

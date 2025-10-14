@@ -1,0 +1,28 @@
+---
+sidebar: sidebar
+permalink: get-started/quick-start.html
+keywords: afx, afx system, quick start
+summary: "To initially get up and running with your AFX system, you need to install the hardware components, set up your cluster, and prepare to administer your cluster and SVMs."
+---
+
+= Quick start for setting up an AFX storage system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To initially get up and running with your AFX system, you need to install the hardware components, set up your cluster, and prepare to administer your cluster and SVMs.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Install and set up your hardware
+
+[role="quick-margin-para"]
+link:../install-setup/install-setup-workflow.html[Install] your AFX storage system and prepare to set up the cluster.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Set up your cluster
+
+[role="quick-margin-para"]
+Follow the quick and easy process to link:../install-setup/cluster-setup.html[set up] your ONTAP cluster using System Manager.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Prepare to administer your cluster
+
+[role="quick-margin-para"]
+Before deploying AFX in a production environment, it’s essential to link:../get-started/prepare-cluster-admin.html[prepare] by understanding the administrative structure-including storage virtual machines (SVMs), users, roles, and management interfaces—to ensure secure, efficient, and effective cluster management.

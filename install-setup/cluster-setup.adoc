@@ -1,0 +1,106 @@
+---
+sidebar: sidebar
+permalink: install-setup/cluster-setup.html
+keywords: afx, afx system, cluster setup, setup
+summary: "After your AFX hardware has been installed, you can complete the cluster setup. This process involves two related configuration phases that you need to perform sequentially."
+---
+= Set up your AFX storage system ONTAP cluster
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After your AFX hardware has been installed, you can complete the ONTAP cluster setup. This process involves two related configuration phases that you need to perform sequentially.
+
+// Review: https://docs.netapp.com/us-en/ontap/software_setup/workflow-summary.html
+
+== Perform initial cluster setup
+
+You can connect your laptop device to the AFX cluster and set several global configuration values.
+
+.About this task
+
+There are four areas of the AFX cluster that must be initially configured. The first three are required while the last one is optional.
+
+.Before you begin
+
+You need to have the following information:
+
+* Cluster management IP address
++
+The cluster management IP address is a unique IPv4 address for the cluster management interface used by the cluster administrator to access the admin SVM and manage the cluster. You can obtain this IP address from the administrator responsible for assigning IP addresses in your organization.
+
+* Network subnet mask
++
+During cluster setup, ONTAP requires a set of network interfaces appropriate for your configuration.  You can adjust the recommendation if necessary.
+
+You'll also need the following:
+
+* Network gateway IP address
+* DNS domain names
+* DNS name server IP addresses
+* NTP server IP addresses
+* Data subnet mask
+
+.Steps
+
+. Discover your cluster network.
+.. Connect your laptop to the management switch and access the network computers and devices.
+.. Open File Explorer.
+.. Select *Network*; then right-click and select *Refresh*.
+.. Select either ONTAP icon; then accept any certificates displayed on your screen.
++
+The System Manager user interface is displayed.
+
+. Set the administrator password.
++
+Provide and verify the password for the `admin` account. Select *Continue*.
+
+. Configure the IP addresses for the cluster and controller nodes.
++
+Provide IP addresses and the subnet masks.
+
+. Configure the network services. Select *Continue*.
++
+Define the details for your DNS and NTP servers.
+
+. Optionally set up encryption.
++
+You can define the details for cluster encryption. Select *Continue*.
+
+.What's next
+
+You'll be redirected to the System Manager sign-in page. Perform the steps described in <<Complete cluster setup>>.
+
+== Complete cluster setup
+
+After the initial configuration has been performed you can complete the ONTAP cluster setup using System Manager.
+
+.About this task
+
+There are three areas of the AFX system ONTAP cluster configured during setup. Complete all three if possible but only the first is required.
+
+.Before you begin
+
+You need to have the following information:
+
+* VLAN configuration details.
+* NAS and/or S3 configuration details.
+
+.Steps
+
+. Sign in to System Manager using the administrator account you provided during initial cluster setup. Notice the popup window at the top right with three configuration options.
+
+. Select *VLAN and tagging* and select the network options appropriate for your environment.
+
+. Select *Network Services* and configure the client access protocols for the default data SVM.
+
+. Select *Data container* and create a volume or S3 bucket.
+
+.What's next
+
+You should link:../get-started/prepare-cluster-admin.html[Prepare to administer AFX] before using your AFX cluster in a production environment.
+
+.Related information
+
+* link:../administer/configure-svm.html[Configure an AFX data SVM]
+* link:../get-started/prepare-cluster-admin.html[Prepare to administer AFX]

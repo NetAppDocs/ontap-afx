@@ -1,0 +1,42 @@
+---
+sidebar: sidebar
+permalink: administer/monitor-cluster-performance.html
+keywords: afx, afx system, cluster performance
+summary: "You can display a high-level overview of the performance of your AFX cluster."
+---
+= Monitor AFX storage system cluster performance
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can display a high-level overview of the performance of your AFX cluster.
+
+== Storage capacity
+
+The System Manager dashboard includes a high-level display of the storage utilization for the cluster.
+
+.Steps
+
+. In System Manager, select *Dashboard* in the navigation pane.
+
+. Locate the *Capacity* tile and view the physical storage available and used.
+
+. Select *History* to access Active IQ to view the historical data.
+
+== Cluster performance
+
+System Manager provides a detailed overview of the AFX cluster performance.
+
+.Steps
+
+. In System Manager, select *Analysis* and then *Performance*.
+
+. Review the cluster performance summary at top including latency and throughput.
+
+. Under the *Top actors* tab, select the desired SVM and then *Enable activity tracking* as needed.
+
+. Under the *Volume performance* tab, view the performance details of a specific volume.
+
+== Related information
+
+* link:../administer/additional-ontap-cluster.html[Additional AFX cluster administration]

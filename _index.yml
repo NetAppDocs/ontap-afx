@@ -1,14 +1,64 @@
 indexpage:
-  title: # Unquoted string 
-  lead: # Quoted string
-  summary: # Quoted string 
-  keywords: # Unquoted comma-delimited list of keywords 
-  tiles: 
-    # Tile definition 
-    - title: # Quoted or unquoted string
+  title: AFX documentation
+  lead: The NetApp AFX storage system is a disaggregated hardware and software solution focused on the unique needs of high-performance NAS and S3 customers. The performance and scalability are specifically designed to meet the requirements of AI and ML workloads. AFX provides a simplified user experience enabling it to be administered by both storage specialists and non-specialists.
+  summary: The NetApp ONTAP AFX storage system is a disaggregated hardware and software solution focused on the unique needs of high-performance NAS and S3 customers. The performance and scalability are specifically designed to meet the requirements of AI and ML workloads. AFX provides a simplified user experience enabling it to be administered by both storage specialists and non-specialists.
+  keywords: afx, afx system, afx docs
+  tiles:  
+    - title: Get started
       links: 
-        # Link definition
-        - title: # Quoted or unquoted string
-          url: # Path to target
-        # Next link on this tile (title/url pair)
-    # Next tile on this page (title/links)
+        - title: Learn about AFX
+          url: /get-started/ontap-afx-storage.html
+        - title: Quick start
+          url: /get-started/quick-start.html
+        - title: Install AFX hardware
+          url: /install-setup/install-setup-workflow.html
+        - title: Set up AFX cluster
+          url: /install-setup/cluster-setup.html
+    - title: Cluster administration
+      links: 
+        - title: Prepare to administer AFX
+          url: /get-started/prepare-cluster-admin.html
+        - title: Manage storage VMs
+          url: /administer/display-svms.html
+        - title: Upgrade and maintain the cluster
+          url: /administer/expand-cluster.html
+        - title: Additional administration
+          url: /administer/additional-ontap-cluster.html
+    - title: Manage data and access
+      links:
+        - title: Prepare to manage data
+          url: /manage-data/prepare-manage-data.html
+        - title: Create and configure a volume
+          url: /manage-data/create-configure-volume.html
+        - title: Create and configure a bucket
+          url: /manage-data/create-configure-bucket.html
+    - title: Protect data
+      links:
+        - title: Prepare to protect data
+          url: /protect-data/prepare-protect-data.html
+        - title: Create a snapshot
+          url: /protect-data/create-snapshot.html
+    - title: Secure data
+      links:
+        - title: Prepare to secure data
+          url: /secure-data/prepare-secure-data.html
+        - title: Encrypt data at rest
+          url: /secure-data/encrypt-data-at-rest.html
+#       - title: Protect against ransomware attacks
+#         url: /secure-data/ransomware-protection.html
+    - title: REST API
+      links: 
+        - title: Learn about the REST API
+          url: /rest/learn-rest-api.html
+        - title: Your first API call
+          url: /rest/first-call.html
+        - title: REST API reference
+          url: /rest/api-reference.html
+    - title: Get more information
+      links:
+        - title: FAQ for AFX systems
+          url: /faq-ontap-afx.html
+        - title: Documentation for other ONTAP systems
+          url: https://docs.netapp.com/us-en/ontap-family/
+        - title: Additional resources
+          url: /learn-more/additional-resources.html

@@ -1,0 +1,4 @@
+---
+permalink: administer/advanced-svm.html
+redirect: ontap-afx/administer/additional-ontap-svm.html
+---

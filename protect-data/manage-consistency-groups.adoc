@@ -1,0 +1,57 @@
+---
+sidebar: sidebar
+permalink: protect-data/manage-consistency-groups.html
+keywords: afx, afx system, consistency group, manage consistency group
+summary: "You can manage the consistency groups on an AFX system. This can streamline your storage administration."
+---
+= Manage consistency groups on an AFX storage system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can manage the consistency groups on an AFX system. This can streamline your storage administration.
+
+== Add snapshot data protection to a consistency group
+
+When you add snapshot data protection to a consistency group, local snapshots of the consistency group can be taken at regular intervals based on a pre-defined schedule. 
+
+.Steps
+
+. In System Manager, select *Protection* and then *Consistency groups*.
+. Hover over the consistency group you want to protect.
+. Select image:icon_kabob.gif[three vertical blue dots]; then select *Edit*.
+. Under *Local protection*, select *Schedule snapshots*.
+. Select a snapshot policy.
++
+Accept the default snapshot policy, select an existing policy, or create a new policy.
++
+[cols="2,6a" options="header"]
+|===
+// header row
+| Option
+| Steps
+
+| Select an existing snapshot policy
+a| Select image:icon_dropdown_arrow.gif[downward pointing blue arrow] next to the default policy; then select the existing policy that you want to use.
+
+| Create a new snapshot policy
+a|
+.. Select image:icon_add.gif[blue plus sign followed by the word add]; then enter the new policy name.
+.. Select the policy scope.
+.. Under *Schedules* select image:icon_add.gif[blue plus sign followed by the word add].
+.. Select the name that appears under *Schedule name*; 
++
+then select image:icon_dropdown_arrow.gif[blue arrow pointing in downward direction].
+.. Select the policy schedule.
+.. Under *Maximum snapshots*, enter the maximum number of snapshots that you want to retain of the consistency group.
+.. Optionally, under *SnapMirror label* enter a SnapMirror label.
+.. Select *Save*.
+
+// table end
+|===
+
+. Select *Edit*.
+
+== Related information
+
+* https://docs.netapp.com/us-en/ontap/consistency-groups/index.html[Learn about ONTAP consistency groups^]

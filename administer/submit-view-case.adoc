@@ -1,0 +1,29 @@
+---
+sidebar: sidebar
+permalink: administer/submit-view-case.html
+keywords: afx, afx system, support, support case
+summary: "If you have an issue that requires assistance, you can use ONTAP System Manager to submit a case to technical support.  You can also use ONTAP System Manager to view cases that are in progress or closed."
+---
+= Submit and view support cases for an AFX storage system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If you have an issue that requires assistance, you can use ONTAP System Manager to submit a case to technical support.  You can also use ONTAP System Manager to view cases that are in progress or closed.
+
+.Before you begin
+
+You need to be link:https://activeiq-link.netapp.com/[registered with Active IQ] to view support cases for your AFX storage system.
+
+.Steps
+
+. To create and submit a new support case, in System Manager select:
+.. *Cluster* and then *Support*
+.. *Go to NetApp Support*
+. To view a previously submitted case, in System Manager select:
+.. *Cluster* and then *Support*
+.. *View my cases*
+
+.Related information
+
+* https://docs.netapp.com/us-en/ontap/task_admin_view_submit_support_cases.html[View and submit support cases with ONTAP System Manager^]

@@ -1,0 +1,43 @@
+section: svm-admin
+title: Administer your storage VMs and data
+entries:
+  - title: Manage data
+    entries:
+      - title: Prepare to manage your data
+        url: /manage-data/prepare-manage-data.html
+      - title: Create and configure a volume
+        url: /manage-data/create-configure-volume.html
+      - title: Manage volumes
+        url: /manage-data/manage-volumes.html
+      - title: Create and configure a bucket
+        url: /manage-data/create-configure-bucket.html
+      - title: Manage buckets
+        url: /manage-data/manage-buckets.html
+      - title: Monitor and troubleshoot storage
+        url: /manage-data/monitor-debug-storage.html
+  - title: Protect data
+    entries:
+      - title: Prepare to protect your data
+        url: /protect-data/prepare-protect-data.html
+      - title: Create a consistency group
+        url: /protect-data/create-consistency-group.html
+      - title: Manage consistency groups
+        url: /protect-data/manage-consistency-groups.html
+      - title: Create a snapshot
+        url: /protect-data/create-snapshot.html
+      - title: Manage snapshots
+        url: /protect-data/manage-snapshots.html
+      - title: Create an SVM peer relationship
+        url: /protect-data/create-peer-relationship.html
+      - title: Set up and manage snapshot replication
+        url: /protect-data/snapshot-replication.html
+      - title: Manage policies and schedules
+        url: /protect-data/policies-schedules.html
+  - title: Secure data
+    entries:
+      - title: Prepare to secure your data
+        url: /secure-data/prepare-secure-data.html
+      - title: Encrypt data at rest
+        url: /secure-data/encrypt-data-at-rest.html
+  - title: Additional administration
+    url: /administer/additional-ontap-svm.html

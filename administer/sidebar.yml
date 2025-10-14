@@ -1,0 +1,55 @@
+section: administer
+title: Administer your cluster
+entries:
+  - title: Monitor cluster processes
+    entries:
+    - title: View dashboard and cluster status
+      url: /administer/view-dashboard.html
+    - title: View Insights
+      url: /administer/view-insights.html
+    - title: Monitor performance
+      url: /administer/monitor-cluster-performance.html
+    - title: View events and log
+      url: /administer/view-events-log.html
+    - title: View jobs
+      url: /administer/view-jobs.html
+  - title: Manage networking and security
+    entries:
+    - title: Manage cluster networking
+      url: /administer/manage-cluster-networking.html
+    - title: Manage Ethernet ports
+      url: /administer/manage-ethernet-ports.html
+    - title: Prepare authentication services
+      url: /administer/prepare-authentication.html
+    - title: Manage users and roles
+      url: /administer/manage-users-roles.html
+    - title: Manage certificates
+      url: /administer/manage-certificates.html
+  - title: Manage storage VMs
+    entries:
+    - title: Display your SVMs
+      url: /administer/display-svms.html
+    - title: Create a data SVM
+      url: /administer/create-svm.html
+    - title: Configure a data SVM
+      url: /administer/configure-svm.html
+    - title: Migrate an SVM
+      url: /administer/migrate-svm.html
+  - title: Support the cluster
+    entries:
+    - title: Manage AutoSupport
+      url: /administer/manage-autosupport.html
+    - title: View and submit support cases
+      url: /administer/submit-view-case.html
+  - title: Upgrade and maintain the cluster
+    entries:
+    - title: Expand cluster
+      url: /administer/expand-cluster.html
+    - title: Upgrade ONTAP
+      url: /administer/upgrade-ontap.html
+    - title: Update firmware
+      url: /administer/update-firmware.html
+    - title: Maintain the hardware
+      url: /administer/maintain-hardware.html
+  - title: Additional administration
+    url: /administer/additional-ontap-cluster.html

@@ -1,0 +1,47 @@
+---
+sidebar: sidebar
+permalink: rest/first-call.html
+keywords: afx, afx system, rest api, first call, curl
+summary: "You can issue a simple curl command to get started using the AFX REST API and confirm its availability."
+---
+
+= Your first AFX storage system REST API call
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+You can issue a simple curl command to get started using the AFX REST API and confirm its availability.
+
+.About this task
+
+AFX is one of three distinct ONTAP personalities. You can use a call to the REST API to determine the ONTAP personality of your cluster based on two fields included in the response.
+
+.Before you begin
+
+In addition to having the curl utility available on your local workstation, you'll need the following:
+
+* IP address or FQDN of the AFX system cluster management LIF
+* ONTAP credentials for an account with authority to access the ONTAP REST API
+
+.Steps
+
+. Issue the following command at the CLI of your local workstation:
++
+[source,curl]
+curl --request GET \
+"https://$FQDN_IP/api/cluster?fields=disaggregated,san_optimized" \
+--user username:password
+
+. Based on the response, determine the ONTAP personality as follows:
++
+* If “disaggregated” is *true* and:
+** If “san_optimized” is *false* the personality is AFX
+** If “san_optimized” is *true* the personality is ASA r2
+* If “disaggregated” is *false* the personality is Unified ONTAP
+
+.Related information
+
+* link:../faq-ontap-afx.html[FAQ for AFX storage systems]

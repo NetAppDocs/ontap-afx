@@ -1,0 +1,136 @@
+---
+sidebar: sidebar
+permalink: protect-data/create-snapshot.html
+keywords: afx, afx system, snapshots, create snapshot
+summary: "To back up data on your AFX system, you need to create a snapshot. You can create a snapshot manually or schedule to be created automatically using a consistency group."
+---
+= Create a snapshot on an AFX storage system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To back up data on your AFX system, you need to create a snapshot. You can create a snapshot manually or schedule to be created automatically using a consistency group.
+
+== Before you begin
+
+A snapshot is a local, read-only copy of your data that you can use to restore volumes to specific points in time. Snapshots can be created manually on demand or automatically at regular intervals based on a link:policies-schedules.html[snapshot policy and schedule].
+
+The snapshot policy and schedule specifies the details, including when to create the snapshots, how many copies to retain, how to name them, and how to label them for replication. For example, a system might create one snapshot every day at 12:10 a.m., retain the two most recent copies, name them “daily” (appended with a timestamp), and label them “daily” for replication.
+
+.Types of snapshots
+
+You can create an on-demand snapshot of a single volume or a consistency group.  You can also create automated snapshots of a consistency group containing multiple volumes. However you cannot create automated snapshots of a single volume.
+
+* On-demand snapshots
++
+You can create an on-demand snapshot of a volume at any time. The volume does not need to be a member of a consistency group to be protected by an on-demand snapshot.  If you create a snapshot of a volume that is a member of a consistency group, the other volumes in the consistency group are not included in the snapshot. When you create an on-demand snapshot of a consistency group, all the volumes in the consistency group are included.
+
+* Automated snapshots
++
+Automated snapshots are created based on the snapshot policy definitions. To apply a snapshot policy to a volume for automated snapshot creation, the volumes needs to be a member of the same consistency group. If you apply a snapshot policy to a consistency group, all the volumes in the consistency group are protected.
+
+== Create a snapshot
+
+Create a snapshot of a volume or consistency group.
+
+// start tabbed area
+
+[role="tabbed-block"]
+====
+
+.Snapshot of a consistency group
+--
+.Steps
+
+. In System Manager, select *Protection* and then *Consistency groups*.
+. Hover over the name of the consistency group you want to protect.
+. Select image:icon_kabob.gif[three vertical blue dots] ; then select *Protect*.
+
+. If you want to create an immediate snapshot on-demand, under *Local protection*, select *Add a snapshot now*.
++
+Local protection creates the snapshot on the same cluster containing the volume.
++
+.. Enter a name for the snapshot or accept the default name; then optionally, enter a SnapMirror label.
++
+The SnapMirror label is used by the remote destination.
+
+. If you want to create automated snapshots using a snapshot policy, select *Schedule snapshots*.
+.. Select a snapshot policy.
++
+Accept the default snapshot policy, select an existing policy, or create a new policy.
++
+[cols="2,6a" options="header"]
+|===
+// header row
+| Option
+| Steps
+
+| Select an existing snapshot policy
+a| Select image:icon_dropdown_arrow.gif[downward pointing blue arrow] next to the default policy; then select the existing policy that you want to use.
+
+| Create a new snapshot policy
+a|
+.. Select image:icon_add.gif[blue plus sign followed by the word add] ; then enter the snapshot policy parameters.
+.. Select *Add policy*.
+
+// table end
+|===
+
+. If you want to replicate your snapshots to a remote cluster, under *Remote protection*, select *Replicate to a remote cluster*.
+.. Select the source cluster and storage VM; then select the replication policy. 
++
+The initial data transfer for replication starts immediately by default.  
+. Select *Save*.
+
+--
+
+.Snapshot of a volume
+--
+.Steps
+
+. In System Manager, select *Storage* and then *Volumes*.
+. Hover over the name of the volume you want to protect.
+. Select image:icon_kabob.gif[three vertical blue dots] ; then select *Protect*.
+ If you want to create an immediate snapshot on-demand, under *Local protection*, select *Add a snapshot now*.
++
+Local protection creates the snapshot on the same cluster containing the volume.
++
+. Enter a name for the snapshot or accept the default name; then optionally, enter a SnapMirror label.
++
+The SnapMirror label is used by the remote destination.
+. If you want to create automated snapshots using a snapshot policy, select *Schedule snapshots*.
+.. Select a snapshot policy.
++
+Accept the default snapshot policy, select an existing policy, or create a new policy.
++
+[cols="2,6a" options="header"]
+|===
+// header row
+| Option
+| Steps
+
+| Select an existing snapshot policy
+a| Select image:icon_dropdown_arrow.gif[downward pointing blue arrow] next to the default policy; then select the existing policy that you want to use.
+
+| Create a new snapshot policy
+a|
+.. Select image:icon_add.gif[blue plus sign followed by the word add] ; then enter the snapshot policy parameters.
+.. Select *Add policy*.
+
+// table end
+|===
+
+. If you want to replicate your snapshots to a remote cluster, under *Remote protection*, select *Replicate to a remote cluster*.
+.. Select the source cluster and storage VM; then select the replication policy. 
++
+The initial data transfer for replication starts immediately by default.  
+. Select *Save*.
+--
+
+====
+
+// end tabbed area
+
+== Related information
+
+* https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html[Create an ONTAP snapshot policy^]

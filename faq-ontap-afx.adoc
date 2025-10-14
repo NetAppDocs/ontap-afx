@@ -1,0 +1,109 @@
+---
+sidebar: sidebar
+permalink: faq-ontap-afx.html
+keywords: afx, afx system, faq, frequently asked questions
+summary: "This FAQ list provides answers to questions that customers typically have about their AFX storage system. It includes concepts and terminology that can be helpful when exploring AFX in more detail or performing advanced administration tasks."
+---
+
+= FAQ for AFX storage systems
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+This FAQ list provides answers to questions you might have about your AFX storage system. It includes concepts and terminology that can be helpful when exploring AFX in more detail or performing advanced administration tasks.
+
+== General
+
+.What is an ONTAP personality?
+
+ONTAP is a robust and versatile storage platform, known for its comprehensive feature set and adaptability to a wide range of storage requirements. While this flexibility makes it an excellent choice for organizations with diverse workloads, some customers can benefit from a more tailored storage solution optimized for the needs of their specific environment.
+
+To address these specialized needs, some NetApp storage systems offer distinct ONTAP personalities, each of which includes a feature set designed to support the unique customer requirements. An ONTAP personality is typically a combination of hardware and software capabilities and purpose-built to deliver an optimized experience for targeted use cases. NetApp provides three ONTAP personalities:
+
+Unified ONTAP::
+The Unified ONTAP personality delivers a broad set of data management features, supporting NAS, SAN, and S3 protocols for maximum flexibility. This is the NetApp flagship offering, available on AFF and FAS systems as well as virtualized deployments such as ONTAP Select and Cloud Volumes ONTAP.
+
+AFX::
+The AFX ONTAP personality provides a disaggregated solution engineered to meet the rigorous requirements of high-performance NAS and S3 workloads, including AI/ML applications. AFX systems deliver specialized capabilities for customers requiring scalable, high-throughput file and object storage.
+
+ASA r2::
+The ASA r2 ONTAP personality provides a disaggregated solution designed specifically for SAN-only environments. https://docs.netapp.com/us-en/asa-r2/[ASA r2 systems^]  streamline the storage experience for block workloads, providing simplified management and performance optimized for SAN customers.
+
+By offering these distinct ONTAP personalities, NetApp enables organizations to select a storage solution aligned with their operational requirements and application workloads.
+
+.Can I change the ONTAP personality of my NetApp storage system?
+
+No. The personality of your ONTAP storage system is immutable and cannot be changed. For example, you cannot convert or upgrade a FAS or AFF storage system (which run the Unified ONTAP personality) to an AFX storage system.
+
+.The System Manager interfaces for the different ONTAP personalities all look very similar. How can I determine the personality of a specific system?
+
+In System Manager, select *Cluster* in the left navigation pane and then *Overview*. You'll see the personality displayed on the page. As an alternative, you can issue the command "system node show" at the CLI. You can also determine the personality of an ONTAP cluster using the REST API; see link:./rest/first-call.html[Your first AFX system REST API call] for details.
+
+.What does "disaggregated" mean in the context of AFX storage systems?
+
+The term "disaggregated" can have two different though related meanings with AFX depending on the context.
+
+An important concept to begin with is the decoupling of the compute capability in the controller nodes from the storage shelves. With AFX, the cluster compute and storage components are no longer tightly coupled as they are with FAS and AFF systems, which run the Unified ONTAP personality. Instead they are connected through cluster switches. Each AFX node controller has a complete view of the entire cluster storage pool.
+
+The second related concept with disaggregated storage is that the aggregates and RAID management are removed as administrable entities. A storage abstraction layer within AFX automatically configures and manages the low-level aspects of storage, including the physical disks and RAID groups. This allows the AFX administrator to focus on the high-level storage configuration based on volumes and buckets.
+
+== Interoperability
+
+.Can I mix AFX system nodes with AFF, ASA, or FAS system nodes in the same ONTAP cluster?
+
+No. Each ONTAP personality is different. For example, you cannot mix AFX and Unified ONTAP nodes in the same cluster.
+
+.If I want to use systems that run Unified ONTAP (FAS, AFF, ASA) with AFX systems for SnapMirror or FlexCache, what ONTAP version will I need?
+
+The SnapMirror version rules for AFX are identical to Unified ONTAP. This means that to replicate from Unified ONTAP, the source system must be within the supported version range. To replicate from AFX, the Unified ONTAP system must be at ONTAP 9.16.1 or later (the earliest release the Advanced Capacity Balancing feature is supported). For FlexCache, the same rules apply for source and destination systems as described in https://www.netapp.com/pdf.html?item=/media/7336-tr4743.pdf[TR-4743^].
+
+There are some differences in the support for FlexGroup volumes. A FlexGroup volume on AFX cannot be an origin volume for a FlexCache volume using the Writeback mode.
+
+.Can I make ONTAPI (ZAPI) API calls to an AFX cluster?
+
+No. Only the ONTAP REST API is supported with AFX. Any automation code that uses ZAPI needs to be converted to the REST API for use with AFX.
+
+== Advanced concepts
+ 
+.What are the data protocols supported with an AFX storage system?
+
+The data protocols supported with AFX include the following:
+
+* NFSv3, NFSv4.0, NFSv4.1, NFSv4.2 
+* SMB2.x, SMB3.x
+* S3
+* NDMP
+
+.Do the data protocols operate differently in AFX?
+
+No. The data protocols in AFX operate the same way as with AFF and FAS systems.
+
+.Is Advanced Disk Partitioning (ADP) used in AFX?
+
+No. ADP is not used with AFX. Because there are no root aggregates with AFX, the ADP feature is not needed to maximize disk space efficiency.
+
+.Can I use different types of switches for the backend network for my AFX storage system?
+
+No. Only switches specifically approved for and provided with the AFX storage platform are supported for the backend network.
+
+.How is the storage in an AFX cluster organized?
+
+All the disks and storage shelves attached to an AFX cluster are part of a Storage Availability Zone (SAZ). Each AFX cluster supports only one SAZ which cannot be shared across AFX clusters (except for SnapMirror replication and FlexCache operations).
+
+Every node has visibility to all the storage in the SAZ. When storage shelves are added to a cluster, ONTAP automatically adds the disks.
+
+.How does a volume move operation work in Unified ONTAP compared to AFX?
+
+With Unified ONTAP, it is possible to relocate a volume nondisruptively from one node or aggregate to another in the cluster. This is performed using a background copy operation with SnapMirror technology, where a new destination volume is created at the new location. Depending on the size of the volume and the utilization of cluster resources, the time it takes for a volume move to complete can vary.
+
+With AFX, there are no aggregates. All storage is contained within a single Storage Availability Zone that's accessible by every node in the cluster. As a result, volume moves never need to actually copy the data. Instead, all volume moves are performed with pointer updates between nodes. This is referred to as a Zero Copy Volume Move (ZCVM) and happens instantaneously because no data is actually copied or moved. This is essentially the same volume move process used with Unified ONTAP without the SnapMirror copy.
+
+Note that in the initial release, volumes will move only in storage failover scenarios and when nodes are added or removed from the cluster. These moves are controlled only through ONTAP.
+// Changes with 9.18.1 and related to performance utilization
+
+.How does AFX determine where to place data across the SAZ?
+
+AFX includes a feature known as Automated Topology Management (ATM) which responds to system and user object imbalances. The primary objective of ATM is to balance volumes across the AFX cluster. When an imbalance is detected, an internal job is triggered to evenly distribute the data across the active nodes. The data is reallocated using ZCVM which only needs to copy and update the object metadata.
