@@ -94,6 +94,6 @@ You can access all the volumes and buckets defined for the AFX cluster. Each of 
 == Related information
 
 * https://docs.netapp.com/us-en/ontap/nas-management/index.html[ONTAP NAS storage management^]
+* link:../get-started/prepare-cluster-admin.html[Prepare to your administer AFX system]
+* link:../administer/migrate-svm.html[Migrate an AFX system SVM]
 * https://mysupport.netapp.com/matrix/[NetApp Interoperability Matrix Tool^]
-* link:../get-started/prepare-cluster-admin.html[Prepare to administer AFX]
-* link:../administer/migrate-svm.html[Migrate an AFX SVM]

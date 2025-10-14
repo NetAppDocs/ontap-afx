@@ -52,3 +52,7 @@ There are several types of notifications supported by AFX that you can forward.
 . Select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters] as appropriate and provide the destination information.
 
 . Select *Save*.
+
+.Related information
+
+* https://docs.netapp.com/us-en/ontap/event-performance-monitoring/index.html[ONTAP Event, performance, and health monitoring^]

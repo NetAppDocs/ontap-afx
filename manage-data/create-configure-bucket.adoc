@@ -5,7 +5,7 @@ keywords: afx, afx system, create bucket
 summary: "You can create a bucket and attach it to a data SVM. Each bucket can be exposed to clients using the S3 access protocol supported by AFX."
 ---
 
-= Create and configure a bucket on an AFX storage system
+= Create and configure an S3 bucket on an AFX storage system
 :icons: font
 :imagesdir: ../media/
 

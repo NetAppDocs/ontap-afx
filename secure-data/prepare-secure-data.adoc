@@ -30,6 +30,6 @@ A digital certificate is an electronic document used to prove ownership of a pub
 
 == Related information
 
-* https://docs.netapp.com/us-en/ontap/authentication-access-control/index.html[ONTAP Authentication and access control^]
 * https://docs.netapp.com/us-en/ontap/security-encryption/index.html[ONTAP Security and data encryption]
+* https://docs.netapp.com/us-en/ontap/authentication-access-control/index.html[ONTAP Authentication and access control^]
 * link:../administer/additional-ontap-svm.html[Additional AFX SVM administration]

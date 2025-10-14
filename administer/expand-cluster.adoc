@@ -127,4 +127,4 @@ This step is only needed if the other interfaces do not use the 169.254.x.x addr
 
 * link:../get-started/prepare-cluster-admin.html[Prepare to administer your AFX system]
 * link:../faq-ontap-afx.html[FAQ for ONTAP AFX storage systems]
-* https://mysupport.netapp.com/[NetApp Support Site]
+* https://mysupport.netapp.com/[NetApp Support Site^]
