@@ -63,7 +63,7 @@ In addition, FlexCache volumes can be attached between AFX and AFF or FAS system
 
 === Migrating data from a non-ONTAP source
 
-Data migration from non-ONTAP systems can be performed using file-level copy operations. Fast copy utilities such as https://docs.netapp.com/us-en/xcp/[XCP^] or Cloud Sync can be used as well as standard utilities such as RoboCopy (for SMB) and rsync (for NFS) as well as third-party tools such as DataDobi.
+Data migration from non-ONTAP systems can be performed using file-level copy operations. Fast copy utilities such as https://docs.netapp.com/us-en/xcp/[XCP^] can be used as well as standard utilities such as RoboCopy (for SMB) and rsync (for NFS) as well as third-party tools such as DataDobi.
 
 === Migration limitations
 
