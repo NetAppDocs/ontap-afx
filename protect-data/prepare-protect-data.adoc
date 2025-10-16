@@ -13,7 +13,7 @@ summary: "Before protecting your AFX data, you should be familiar with some of t
 Before protecting your AFX data, you should be familiar with some of the key concepts and capabilities.
 
 [TIP]
-Because many of the concepts and administration procedures available on AFF and FAS systems are the same with AFX storage systems, reviewing the Unified ONTAP documentation can be helpful.
+Because many of the concepts and administration procedures available on AFF and FAS systems are the same with AFX storage systems, reviewing the Unified ONTAP documentation for https://docs.netapp.com/us-en/ontap/data-protection-disaster-recovery/index.html[Data protection and disaster recovery^] can be helpful.
 
 == Terminology and options
 
@@ -31,7 +31,16 @@ Hierarchical consistency groups were introduced with ONTAP 9.16.1 and are availa
 SnapLock::
 SnapLock is an ONTAP feature that allows you to protect your files by moving them to a write once read many (WORM) state. This prevents modification or deletion for a specified retention period. SnapLock volumes are created cannot be converted from non-SnapLock volumes after creation based on the retention.
 
+== AFX data protection limitations
+
+There are several ONTAP data protection limits and restrictions enforced by the AFX storage system.
+
+.SnapMirror Synchronous (SM-S)
+There is a scale limitation when using SMS-S. You can have a maximum of 400 relationships across a single AFX system cluster.
+
 == Related information
 
 * link:../administer/additional-ontap-svm.html[Additional AFX SVM administration]
 * link:../get-started/prepare-cluster-admin.html[Prepare to your administer AFX system]
+
+// ONTAPDOC-3409 - DMP - Oct 14 2025
