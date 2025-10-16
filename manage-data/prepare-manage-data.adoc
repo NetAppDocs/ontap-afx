@@ -39,39 +39,35 @@ A qtree is a logical subdivision within a volume that you can create to manage a
 Quota::
 A quota in ONTAP is a limit set on the amount of storage space or number of files that can be used by a user, group, or qtree. Quotas are used to manage and control resource usage within a storage system, ensuring that no single user or application can consume an excessive amount of resources.
 
+NFS trunking::
+NFS trunking is a technology that enables NFS v4.1 clients to open multiple connections to different LIFs on the NFS server. This increases the data transfer speed and provides resilience through multiple paths when exporting FlexVol volumes to trunking-capable clients.
++
+To enable trunking, you need to have an SVM configured for NFS and NFSv4.1 should be enabled. It also requires remounting all the NFSv4.x clients after a configuration change which can be disruptive. Support and configuration procedures for NFS trunking are the same for all ONTAP systems. Learn more about https://docs.netapp.com/us-en/ontap/nfs-trunking/index.html[NFS trunking^] 
+
+File system analytics::
+File System Analytics (FSA) is an ONTAP feature that provides real-time visibility into file usage and storage capacity trends within FlexGroup or FlexVol volumes. It eliminates the need for external tools by offering insights into storage utilization and optimization opportunities. FSA provides detailed views at various levels of a volume's file system hierarchy, including the SVM, volume, directory, and file levels.
+
 == Data migration options
 
 There are several data migration options. The focus is on migrating external data into an AFX cluster.
 
-=== Migrating data from Unified ONTAP
+=== Migrating data from AFF or FAS systems
 
-A fully integrated migration path from Unified ONTAP to AFX is available using the following technologies:
+A fully integrated migration path from AFF or FAS systems (which run the Unified ONTAP personality) to AFX is available using the following technologies:
 
 * SnapMirror
 * SVM Migrate
 * SVM DR
 
-In addition, FlexCache volumes can be attached between AFX and Unified ONTAP in either direction.
+In addition, FlexCache volumes can be attached between AFX and AFF or FAS systems in either direction.
 
 === Migrating data from a non-ONTAP source
 
-Data migration from non-ONTAP systems can be performed using file-level copy operations. Fast copy utilities such as XCP or CloudSync can be used as well as standard utilities such as RoboCopy (for SMB) and rsync (for NFS) as well as third-party tools such as DataDobi.
+Data migration from non-ONTAP systems can be performed using file-level copy operations. Fast copy utilities such as https://docs.netapp.com/us-en/xcp/[XCP^] can be used as well as standard utilities such as RoboCopy (for SMB) and rsync (for NFS) as well as third-party tools such as DataDobi.
 
 === Migration limitations
 
-Existing Unified ONTAP systems can replicate to AFX if the data volume does not contain LUNs or NVMe namespaces. When replicating to a Unified ONTAP system, the minimum supported version for the Unified ONTAP system is 9.16.1. This is the first Unified ONTAP release that supports Advanced Capacity Balancing.
-
-== AFX support for NFS trunking
-
-NFS trunking is a technology that enables NFS v4.1 clients to open multiple connections to different LIFs on the NFS server. This increases the data transfer speed and provides resilience through multiple paths. Trunking is beneficial for exporting FlexVol volumes to trunking-capable clients.
-
-To enable trunking, you need to have an SVM configured for NFS and NFSv4.1 should be enabled. It also requires remounting all the NFSv4.x clients after a configuration change which can be disruptive.
-
-== File system analytics
-
-File System Analytics (FSA) is a feature in ONTAP that provides real-time visibility into file usage and storage capacity trends within FlexGroup or FlexVol volumes.
-
-FSA eliminates the need for external tools by offering insights into storage utilization and optimization opportunities. FSA provides detailed views at various levels of a volume's file system hierarchy, including the SVM, volume, directory, and file levels.
+You can replicate data from AFF or FAS systems to AFX if the source data volume does not contain LUNs or NVMe namespaces. When replicating from AFX to AFF or FAS systems, the minimum supported ONTAP version for the AFF or FAS system is 9.16.1. This is the first ONTAP release that supports Advanced Capacity Balancing.
 
 == Display an overview of your storage
 
@@ -94,6 +90,6 @@ You can access all the volumes and buckets defined for the AFX cluster. Each of 
 == Related information
 
 * link:../administer/additional-ontap-svm.html[Additional AFX SVM administration]
-* link:../get-started/prepare-cluster-admin.html[Prepare to your administer AFX system]
+* link:../get-started/prepare-cluster-admin.html[Prepare to administer your AFX system]
 * link:../administer/migrate-svm.html[Migrate an AFX system SVM]
 * https://mysupport.netapp.com/matrix/[NetApp Interoperability Matrix Tool^]

@@ -16,9 +16,8 @@ There are additional resources you can access to help administer and support AFX
 * https://docs.netapp.com/us-en/ontap/[Unified ONTAP^]
 * https://docs.netapp.com/us-en/asa-r2/[ASA r2^]
 * https://docs.netapp.com/us-en/ontap-automation/[ONTAP automation^]
-* https://docs.netapp.com/us-en/ontap-family[ONTAP Family^]
 
 == NetApp Support
 
 * https://mysupport.netapp.com/[NetApp Support Site^]
-* https://kb.netapp.com/[NetApp Knowledge Base]
+* https://kb.netapp.com/[NetApp Knowledge Base^]
