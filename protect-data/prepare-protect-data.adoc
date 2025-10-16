@@ -33,9 +33,9 @@ SnapLock is an ONTAP feature that allows you to protect your files by moving the
 
 == AFX data protection limitations
 
-There are several ONTAP data protection limits and restrictions enforced by the AFX storage system.
+You should be aware of the ONTAP data protection limits and restrictions enforced by the AFX storage system.
 
-.SnapMirror Synchronous (SM-S)
+.SnapMirror synchronous (SM-S)
 There is a scale limitation when using SM-S. You can have a maximum of 400 relationships across a single AFX system cluster.
 
 == Related information

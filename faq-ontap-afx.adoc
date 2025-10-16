@@ -87,7 +87,7 @@ No. ADP is not used with AFX. Because there are no root aggregates with AFX, the
 
 .Can I use any type of switches in the backend cluster network for my AFX system cluster?
 
-No. Only switches specifically approved for and provided with the AFX storage platform are supported for the cluster network. Also, these backend switches are dedicated for AFX cluster operations. The client data operations (using NFS, SMB, and S3) should only be performed over your data network.
+No. Only switches specifically approved for and provided with the AFX storage platform are supported for the cluster network. Also, these backend switches are dedicated for AFX cluster operations. The client access operations (using NFS, SMB, and S3) should only be performed over the frontend client data network.
 
 .How are the cluster switches configured?
 
