@@ -186,4 +186,10 @@ link:../manage-data/prepare-manage-data.html[Prepare] to allocate and manage you
 
 * https://docs.netapp.com/us-en/ontap/system-admin/index.html[Learn about cluster administration with the ONTAP CLI^]
 
+* https://hwu.netapp.com/[NetApp Hardware Universe^]
+
+* https://imt.netapp.com/[NetApp Interoperability Matrix Tool^]
+
+* https://docs.netapp.com/us-en/interoperability-matrix-tool/[Interoperability Matrix Tool overview^]
+
 * link:../faq-ontap-afx.html[FAQ for AFX storage systems]
