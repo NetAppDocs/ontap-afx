@@ -39,6 +39,10 @@ No. The personality of your ONTAP storage system is immutable and cannot be chan
 
 In System Manager, select *Cluster* in the left navigation pane and then *Overview*. You'll see the personality displayed on the page. As an alternative, you can issue the command "system node show" at the CLI. You can also determine the personality of an ONTAP cluster using the REST API; see link:./rest/first-call.html[Your first AFX system REST API call] for details.
 
+.When did the AFX storage systems become available? What's the earliest ONTAP version supported with AFX?
+
+The AFX storage system was announced at the NetApp Insight conference in October, 2025. The AFX systems support ONTAP 9.17.1 and later releases. You should contact your NetApp sales representative for more specific details.
+
 .What does "disaggregated" mean in the context of AFX storage systems?
 
 The term "disaggregated" can have two different though related meanings with AFX depending on the context.
@@ -52,6 +56,10 @@ The second related concept with disaggregated storage is that the aggregates and
 .Can I mix AFX system nodes with AFF, ASA, or FAS system nodes in the same ONTAP cluster?
 
 No. You cannot mix system nodes that run different ONTAP personalities in the same cluster. For example, you cannot mix AFX nodes (which run the AFX ONTAP personality) with AFF or FAS nodes (which run the Unified ONTAP personality) in the same cluster.
+
+.Can I use FlexCache to or from an AFX system cluster?
+
+Yes. AFX storage systems support FlexCache both to and from an AFF or FAS system running the Unified ONTAP personality. The only restriction is FlexCache with write-back mode is not supported.
 
 .If I want to use systems that run Unified ONTAP (FAS, AFF, ASA) with AFX systems for SnapMirror or FlexCache, what ONTAP version will I need?
 
