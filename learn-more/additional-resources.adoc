@@ -21,4 +21,6 @@ There are additional resources you can access to help administer and support AFX
 
 * https://www.netapp.com/afx/[NetApp AFX^]
 * https://mysupport.netapp.com/[NetApp Support Site^]
+* https://hwu.netapp.com/[NetApp Hardware Universe^]
+* https://imt.netapp.com/[NetApp Interoperability Matrix Tool^]
 * https://kb.netapp.com/[NetApp Knowledge Base^]
