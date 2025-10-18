@@ -41,7 +41,7 @@ In System Manager, select *Cluster* in the left navigation pane and then *Overvi
 
 .When did the AFX storage systems become available? What's the earliest ONTAP version supported with AFX?
 
-The AFX storage system was announced at the NetApp Insight conference in October, 2025. The AFX systems support ONTAP 9.17.1 and later releases. You should contact your NetApp sales representative for more specific details.
+The AFX storage system was announced at the NetApp Insight conference in October, 2025. AFX supports ONTAP 9.17.1 and later releases. Contact your NetApp sales representative for more details.
 
 .What does "disaggregated" mean in the context of AFX storage systems?
 
