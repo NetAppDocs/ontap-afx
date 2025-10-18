@@ -23,14 +23,11 @@ ONTAP is a robust and versatile storage platform, known for its comprehensive fe
 
 To address these specialized needs, some NetApp storage systems offer distinct ONTAP personalities, each of which includes a feature set designed to support the unique customer requirements. An ONTAP personality is typically a combination of hardware and software capabilities and purpose-built to deliver an optimized experience for targeted use cases. NetApp provides three ONTAP personalities:
 
-Unified ONTAP::
-The Unified ONTAP personality delivers a broad set of data management features, supporting NAS, SAN, and S3 protocols for maximum flexibility. This is the NetApp flagship offering, available on AFF and FAS systems as well as virtualized deployments such as ONTAP Select and Cloud Volumes ONTAP.
+* *Unified ONTAP* - The Unified ONTAP personality delivers a broad set of data management features, supporting NAS, SAN, and S3 protocols for maximum flexibility. This is the NetApp flagship offering, available on AFF and FAS systems as well as virtualized deployments such as ONTAP Select and Cloud Volumes ONTAP.
 
-AFX::
-The AFX ONTAP personality provides a disaggregated solution engineered to meet the rigorous requirements of high-performance NAS and S3 workloads, including AI/ML applications. AFX systems deliver specialized capabilities for customers requiring scalable, high-throughput file and object storage.
+*AFX* - The AFX ONTAP personality provides a disaggregated solution engineered to meet the rigorous requirements of high-performance NAS and S3 workloads, including AI/ML applications. AFX systems deliver specialized capabilities for customers requiring scalable, high-throughput file and object storage.
 
-ASA r2::
-The ASA r2 ONTAP personality provides a disaggregated solution designed specifically for SAN-only environments. https://docs.netapp.com/us-en/asa-r2/[ASA r2 systems^]  streamline the storage experience for block workloads, providing simplified management and performance optimized for SAN customers.
+*ASA r2* - The ASA r2 ONTAP personality provides a disaggregated solution designed specifically for SAN-only environments. https://docs.netapp.com/us-en/asa-r2/[ASA r2 systems^]  streamline the storage experience for block workloads, providing simplified management and performance optimized for SAN customers.
 
 By offering these distinct ONTAP personalities, NetApp enables organizations to select a storage solution aligned with their operational requirements and application workloads.
 
