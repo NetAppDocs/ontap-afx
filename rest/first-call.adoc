@@ -17,7 +17,7 @@ You can issue a simple curl command to get started using the AFX REST API and co
 
 .About this task
 
-AFX is one of three distinct ONTAP personalities. You can use a call to the REST API to determine the ONTAP personality of your cluster based on two fields included in the response.
+AFX is one of three ONTAP personalities available from NetApp. You can issue a REST API call to determine the personality of your ONTAP cluster. You can also use System Manager or the CLI to determine the ONTAP personality; see the FAQ page for details.
 
 .Before you begin
 
