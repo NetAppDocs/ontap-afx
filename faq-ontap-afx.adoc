@@ -57,9 +57,9 @@ The second related concept with disaggregated storage is that the aggregates and
 
 No. You cannot mix system nodes that run different ONTAP personalities in the same cluster. For example, you cannot mix AFX nodes (which run the AFX ONTAP personality) with AFF or FAS nodes (which run the Unified ONTAP personality) in the same cluster.
 
-.Can I use FlexCache to or from an AFX system cluster?
+.Can I use FlexCache with an AFX system cluster?
 
-Yes. AFX storage systems support FlexCache both to and from an AFF or FAS system running the Unified ONTAP personality. The only restriction is FlexCache with write-back mode is not supported.
+Yes. AFX storage systems support FlexCache both to and from an AFF or FAS system running the Unified ONTAP personality. The only restriction is that FlexCache with write-back mode is not supported with AFX.
 
 .If I want to use systems that run Unified ONTAP (FAS, AFF, ASA) with AFX systems for SnapMirror or FlexCache, what ONTAP version will I need?
 
