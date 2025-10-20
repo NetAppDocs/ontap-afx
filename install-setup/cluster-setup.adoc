@@ -39,7 +39,7 @@ You'll also need the following:
 * DNS domain names
 * DNS name server IP addresses
 * NTP server IP addresses
-* Data subnet mask
+* Subnet mask
 
 .Steps
 
@@ -102,5 +102,5 @@ You should link:../get-started/prepare-cluster-admin.html[Prepare to administer 
 
 .Related information
 
-* link:../administer/configure-svm.html[Configure an AFX data SVM]
+* link:../administer/configure-svm.html[Configure an AFX SVM]
 * link:../get-started/prepare-cluster-admin.html[Prepare to administer AFX]
