@@ -116,7 +116,7 @@ Each AFX cluster must have at least four nodes. The maximum number of nodes vari
 Storage capacity::
 This is the total capacity across all the SSD disks in the cluster Storage Availability Zone (SAZ). The maximum storage capacity varies based on the ONTAP release.
 
-You should review the information available at the NetApp Hardware Universe and Interoperability Matrix Tool to determine the capabilities of your cluster.
+You should review the information available at the NetApp Hardware Universe and Interoperability Matrix Tool to determine the capabilities of your AFX cluster.
 
 == Confirm AFX system health
 

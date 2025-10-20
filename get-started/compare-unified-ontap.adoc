@@ -12,14 +12,14 @@ summary: "NetApp AFX systems run a customized personality of ONTAP that differs 
 NetApp AFX systems run a customized personality of ONTAP that differs from the ONTAP personality (referred to as Unified ONTAP) that runs on AFF and FAS storage. You should be aware of how AFX systems are similar to and different than FAS and AFF systems. This provides a valuable perspective and can be helpful when deploying AFX in your environment.
 
 [TIP]
-This AFX documentation includes links to various topics at the Unified ONTAP doc site. The additional content provides more depth and a different perspective that can be helpful as you administer your AFX storage system.
+The AFX documentation includes links to various topics at the Unified ONTAP doc site for details about features that behave in the same way regardless of the ONTAP personality. The additional content provides more depth that can be helpful as you administer your AFX storage system.
 
 == Configuration differences
 
 There are a few areas where the AFX configuration differs from AFF and FAS systems.
 
 Advanced Capacity Balancing::
-The advanced capacity balancing feature, as controlled using the `-gdd` CLI parameter, is enabled by default for all FlexGroup volumes.
+The advanced capacity balancing feature, controlled using the `-gdd` CLI parameter, is enabled by default for all FlexGroup volumes.
 
 == Unsupported or restricted Unified ONTAP capabilities
 
@@ -52,7 +52,7 @@ The following aggregate-related features are not available with AFX systems:
 === Data replication
 
 * No replication of a volume from an AFF or FAS system that contains a LUN
-* AFX FlexGroup volumes can only be replicated to Unified ONTAP 9.16.1 or later
+* FlexGroup volumes can only be replicated to Unified ONTAP 9.16.1 or later
 
 == Changes to the command line interface
 
