@@ -29,9 +29,9 @@ entries:
     entries:
     - title: Display your SVMs
       url: /administer/display-svms.html
-    - title: Create a data SVM
+    - title: Create an SVM
       url: /administer/create-svm.html
-    - title: Configure a data SVM
+    - title: Configure an SVM
       url: /administer/configure-svm.html
     - title: Migrate an SVM
       url: /administer/migrate-svm.html
