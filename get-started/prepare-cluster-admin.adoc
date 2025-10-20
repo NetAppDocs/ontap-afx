@@ -17,7 +17,7 @@ Before deploying AFX in a production environment, it’s essential to understand
 A storage virtual machine (SVM) is an isolated server or tenant environment within an ONTAP cluster. You can configure an SVM to serve data to the connected clients. You should be familiar with the capabilities and characteristics of the AFX SVMs.
 
 Types of SVMs::
-An AFX system cluster hosts several different types of SVMs. A *data SVM* is used to serve data to the AFX clients and is the one type an AFX administrator can create and configure. There is one data SVM created when you set up and initially deploy an AFX cluster, but you can create additional data SVMs if needed. When referring to an SVM in this documentation, a data SVM is implied unless otherwise noted.
+An AFX system cluster hosts several different types of SVMs. A *data SVM* is used to serve data to the AFX clients and is the one type an AFX administrator can directly configure. There is one data SVM created when you set up and initially deploy an AFX cluster, but you can create additional data SVMs if needed. When referring to an SVM in this documentation, a data SVM is implied unless otherwise noted.
 
 Administrative control::
 SVMs can be used to establish and enforce isolation of your data and applications. This can be useful when there are many different groups with a larger organization. Administrative control can be delegated to the SVMs to establish policies related to data access, security, and protection.
