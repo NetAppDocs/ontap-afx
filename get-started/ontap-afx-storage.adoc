@@ -23,7 +23,7 @@ The NetApp AFX storage system meets the unique demands typical of AI/ML environm
 
 == System design characteristics
 
-The AFX system has several characteristics that enable it to operate as a high-performance NAS platform.
+The AFX system has several design characteristics that enable it to operate as a high-performance NAS platform.
 
 Decouple storage and compute capabilities::
 Unlike AFF and FAS storage systems, the AFX storage and compute elements of the cluster are decoupled. AFX controllers are not restricted to accessing a limited set of local disks.

@@ -1,0 +1,4 @@
+---
+permalink: get-started/system-design.html
+redirect: ontap-afx/get-started/ontap-afx-storage.html
+---
