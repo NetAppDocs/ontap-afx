@@ -16,11 +16,11 @@ Before deploying AFX in a production environment, it’s essential to understand
 
 A storage virtual machine (SVM) is an isolated server or tenant environment within an ONTAP cluster. You can configure an SVM to serve data to the connected clients. You should be familiar with the capabilities and characteristics of the AFX SVMs.
 
-[NOTE]
-One data SVM is created when you set up and initially deploy an AFX cluster. You can create additional data SVMs if needed.
+Types of SVMs::
+An AFX system cluster hosts several different types of SVMs. A *data SVM* is used to serve data to the clients and is the one type an AFX administrator can directly access and configure. There is one data SVM created by default when you set up and initially deploy an AFX cluster, but you can create additional data SVMs if needed. When referring to an SVM in this documentation, a data SVM is implied unless otherwise noted.
 
 Administrative control::
-Data SVMs can be used to establish and enforce isolation of your data and applications. This can be useful when there are many different groups with a larger organization. Administrative control can be delegated to the SVMs to establish policies related to data access, security, and protection.
+SVMs can be used to establish and enforce isolation of your data and applications. This can be useful when there are many different groups with a larger organization. Administrative control can be delegated to the SVMs to establish policies related to data access, security, and protection.
 
 Accounts and RBAC roles::
 There are two levels of authentication and authorization with AFX: cluster level and SVM level. In addition to the cluster accounts, every SVM has its own distinct set of users and roles. In most situations, using the cluster level accounts is adequate. But depending on your environment, you might need to configure and use the more restrictive SVM accounts and roles as well. See link:../administer/additional-ontap-svm.html[Additional AFX SVM administration] for more information.
@@ -29,7 +29,7 @@ SVM-scoped resources::
 AFX resources and configurable entities are associated either with the cluster or a specific SVM. There are many resources with an SVM scope, including volumes and buckets as well as the SVM user accounts and RBAC roles.
 
 Dedicated network interfaces::
-Each SVM has its own dedicated set of network interfaces. For example, separate LIFs are allocated to an SVM for management and client data access.
+Each SVM has its own dedicated set of network interfaces. For example, separate LIFs are allocated to an SVM for management and client access.
 
 == Two AFX administrative levels
 
@@ -39,11 +39,11 @@ It's important to note that these levels describe how the administrative tasks a
 
 Cluster administrator::
 
-The cluster administrator has complete control of the AFX cluster including all the data SVMs. The AFX cluster administrative level includes only the tasks that a cluster admin can perform and not any of the SVM-specific administration tasks. See link:../administer/view-dashboard.html[Administer your cluster] for more information.
+The cluster administrator has complete control of the AFX cluster including all the SVMs. The AFX cluster administrative level includes only the tasks that a cluster admin can perform and not any of the SVM-specific administration tasks. See link:../administer/view-dashboard.html[Administer your cluster] for more information.
 
 SVM administrator::
 
-An SVM administrator role has control of a specific data SVM and so is more restricted compared to the cluster administrator. SVM administration involves performing tasks with objects and resources that have an SVM scope, such as creating a volume. See link:../manage-data/prepare-manage-data.html[Administer your storage VMs and data] for more information.
+An SVM administrator role has control of a specific SVM and so is more restricted compared to the cluster administrator. SVM administration involves performing tasks with objects and resources that have an SVM scope, such as creating a volume. See link:../manage-data/prepare-manage-data.html[Administer your storage VMs and data] for more information.
 
 == Three administrative interfaces
 
@@ -116,7 +116,7 @@ Each AFX cluster must have at least four nodes. The maximum number of nodes vari
 Storage capacity::
 This is the total capacity across all the SSD disks in the cluster Storage Availability Zone (SAZ). The maximum storage capacity varies based on the ONTAP release.
 
-You should review the information available at the NetApp Hardware Universe and Interoperability Matrix Tool to determine the capabilities of your cluster.
+You should review the information available at the NetApp Hardware Universe and Interoperability Matrix Tool to determine the capabilities of your AFX cluster.
 
 == Confirm AFX system health
 
@@ -156,16 +156,16 @@ link:../administer/view-events-log.html[View AFX events and audit log]
 +
 link:../administer/view-insights.html[Use Insights to optimize AFX cluster performance and security]
 
-== Quick start for creating and using a data SVM
+== Quick start for creating and using an SVM
 
 After installing and setting up the AFX cluster, you can begin performing the administration tasks typical of most AFX deployments. Here are the high-level steps needed to begin sharing data with clients.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Display the available data SVMs
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Display the available SVMs
 
 [role="quick-margin-para"]
-link:../administer/display-svms.html[Display] the list of data SVMs and determine if there's one you can use.
+link:../administer/display-svms.html[Display] the list of SVMs and determine if there's one you can use.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Optionally create a data SVM
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Optionally create an SVM
 
 [role="quick-margin-para"]
 link:../administer/create-svm.html[Create] an SVM to isolate and protect your application workloads and data if an existing SVM is not available.
@@ -187,6 +187,8 @@ link:../manage-data/prepare-manage-data.html[Prepare] to allocate and manage you
 * https://docs.netapp.com/us-en/ontap/system-admin/set-privilege-level-task.html[Set the privilege level in the ONTAP CLI^]
 
 * https://docs.netapp.com/us-en/ontap/system-admin/index.html[Learn about cluster administration with the ONTAP CLI^]
+
+* https://docs.netapp.com/us-en/ontap/system-admin/types-svms-concept.html[Types of SVMs in an ONTAP cluster^]
 
 * https://hwu.netapp.com/[NetApp Hardware Universe^]
 
