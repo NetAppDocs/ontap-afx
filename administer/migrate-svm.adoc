@@ -76,7 +76,7 @@ An AFX system supports NetApp volume encryption (NVE) but not NetApp aggregate e
 There are additional restrictions you should consider.
 
 MetroCluster::
-The AFX storage system does not support NetApp MetroCluster. This creates a limitation when migrating an SVM. You cannot migrate an AFX SVM to or from a Unified ONTAP cluster that is configured to use MetroCluster. While these migration scenarios are not supported, they are not explicitly blocked by the AFX prechecks and so you should be careful not attempt them.
+The AFX storage system does not support NetApp MetroCluster. This creates a limitation when migrating an SVM. You cannot migrate an AFX SVM to or from a Unified ONTAP cluster that is configured to use MetroCluster. While these migration scenarios are not supported, they are not explicitly blocked by the AFX prechecks and so you should be careful not to attempt them.
 
 == Related information
 
