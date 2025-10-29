@@ -1,0 +1,4 @@
+---
+permalink: administer/maintain-hardware.html
+redirect: ontap-afx/maintain-hardware.html
+---
