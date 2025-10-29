@@ -16,6 +16,8 @@ sidebar:
   - section: administer
   - section: svm-admin
   - section: rest
+  - title: Maintain the hardware
+    url: /maintain-hardware.html
   - section: learn-more
   - title: FAQ
     url: /faq-ontap-afx.html
