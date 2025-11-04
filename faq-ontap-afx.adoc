@@ -113,10 +113,14 @@ With AFX, there are no aggregates. All storage is contained within a single Stor
 In the initial 9.17.1 AFX release, volumes will move only in storage failover scenarios and when nodes are added or removed from the cluster. These moves are controlled only through ONTAP.
 // Changes with 9.18.1 and related to performance utilization
 
-.How does AFX place data across the SAZ?
+.How is data allocated in an AFX cluster?
+
+When data is allocated, it can be placed on any disk in the SAZ. Once the data is placed, there is no need for it to move. A volume is created based on the underlying data and assigned to a specific node. The volumes can be moved by AFX, typically as part of a balancing process. This affects which node's NVRAM commits the write operations to disk. A volume move changes which node owns the volume but the data itself can remain in place.
+
+.How does AFX manage the volumes across the SAZ?
 
 AFX includes a feature known as Automated Topology Management (ATM) which responds to system and user object imbalances. The primary objective of ATM is to balance volumes across the AFX cluster. When an imbalance is detected, an internal job is triggered to evenly distribute the data across the active nodes. The data is reallocated using ZCVM which only needs to copy and update the object metadata.
 
-.How assign or place volumes in the AFX cluster?
+.How are are volumes placed at the nodes in an AFX cluster?
 
-XXX
+NetApp AFX automatically balances the placement of volumes across all the nodes in a cluster. Beginning with ONTAP 9.18.1, the placement algorithm has been enhanced to consider the performance of the nodes when placing or moving volumes. This results in improved performance balancing across the nodes in the AFX cluster and makes it much less likely that any single node becomes overloaded. Previous AFX releases base the placement on the total number of volumes in the cluster. Every node is assigned the same number of volumes regardless of activity. 
