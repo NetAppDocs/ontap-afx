@@ -39,8 +39,8 @@ A qtree is a logical subdivision within a volume that you can create to manage a
 Quota::
 A quota in ONTAP is a limit set on the amount of storage space or number of files that can be used by a user, group, or qtree. Quotas are used to manage and control resource usage within a storage system, ensuring that no single user or application can consume an excessive amount of resources.
 
-NFS trunking::
-NFS trunking is a technology that enables NFS v4.1 clients to open multiple connections to different LIFs on the NFS server. This increases the data transfer speed and provides resilience through multiple paths when exporting FlexVol volumes to trunking-capable clients.
+NFS session trunking::
+NFS trunking is a technology that enables NFS v4.1 clients to open multiple connections to different LIFs on the NFS server. This increases the data transfer speed and provides resilience through multiple paths when exporting volumes to trunking-capable clients. The LIFs must be on the same node to participate in the trunk.
 +
 To enable trunking, you need to have an SVM configured for NFS and NFSv4.1 should be enabled. It also requires remounting all the NFSv4.x clients after a configuration change which can be disruptive. Support and configuration procedures for NFS trunking are the same for all ONTAP systems. Learn more about https://docs.netapp.com/us-en/ontap/nfs-trunking/index.html[NFS trunking^] 
 
@@ -63,7 +63,7 @@ In addition, FlexCache volumes can be attached between AFX and AFF or FAS system
 
 === Migrating data from a non-ONTAP source
 
-Data migration from non-ONTAP systems can be performed using file-level copy operations. Fast copy utilities such as https://docs.netapp.com/us-en/xcp/[XCP^] can be used as well as standard utilities such as RoboCopy (for SMB) and rsync (for NFS) as well as third-party tools such as DataDobi.
+Data migration from non-ONTAP systems can be performed using file-level copy operations. Fast copy utilities such as https://docs.netapp.com/us-en/xcp/[XCP^] or https://docs.netapp.com/us-en/data-services-copy-sync/[Copy and Sync^] can be used as well as standard utilities such as RoboCopy (for SMB) and rsync (for NFS) as well as third-party tools such as DataDobi.
 
 === Migration limitations
 
