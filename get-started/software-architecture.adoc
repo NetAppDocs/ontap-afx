@@ -41,11 +41,11 @@ There are several logical components included with AFX. They are implemented in 
 
 === Common storage pool
 
-The Storage Availability Zone (SAZ) is a common pool of storage for the entire cluster. It is a collection of disks in the storage shelves that provides a single unified namespace to all the controller nodes. The SAZ offers a provisioning model with no fixed restrictions regarding which storage shelves are used by the nodes. Customers can view free space and storage usage as properties of the entire AFX cluster.
+The Storage Availability Zone (SAZ) is a common pool of storage for the entire cluster. It's a collection of disks in the storage shelves that all the controller nodes have read and write access to. The SAZ offers a provisioning model with no fixed restrictions regarding which storage shelves are used by the nodes; volume placement across the nodes is automatically handled by ONTAP. Customers can view free space and storage usage as properties of the entire AFX cluster.
 
 === FlexVolumes, FlexGroups, and buckets
 
-FlexVolumes, FlexGroups, and S3 buckets are the _data containers_ exposed to the AFX administrators based on the client access protocols. These scalable containers are designed to abstract away many of the complex internal storage details.
+FlexVolumes, FlexGroups, and S3 buckets are the _data containers_ exposed to the AFX administrators based on the client access protocols. They perate identically to Unified ONTAP. These scalable containers are designed to abstract away many of the complex internal storage details, such as data placement and capacity balancing.
 
 === Data layout and access
 
@@ -53,10 +53,10 @@ The data layout and access is tuned for seamless access and efficient utilizatio
 
 === SVMs and multi-tenancy
 
-AFX provides a tenant model that builds on the SVM model available with AFF and FAS systems. The AFX tenant model has been streamlined for simplified administration.
+AFX provides a tenant model that builds on the SVM model available with AFF and FAS systems. The AFX tenant model has been streamlined for simplified administration in a NAS and S3 object environment. For example, configuration options for SAN as well as aggregates and RAID groups has been removed.
 
 == AFX cluster deployment
 
-The following figure illustrates a typical AFX cluster deployment. Controller nodes are decoupled from the storage shelves and connected through a shared network.
+The following figure illustrates a typical AFX cluster deployment. The AFX cluster includes controller nodes which are decoupled from the storage shelves and connected through a shared internal network. Outside the AFX cluster boundary, clients access the cluster through a separate client network.
 
 image:afx-cluster.png[AFX cluster architecture]
