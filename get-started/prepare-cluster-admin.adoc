@@ -116,7 +116,10 @@ Each AFX cluster must have at least four nodes. The maximum number of nodes vari
 Storage capacity::
 This is the total capacity across all the SSD disks in the cluster Storage Availability Zone (SAZ). The maximum storage capacity varies based on the ONTAP release.
 
-You should review the information available at the NetApp Hardware Universe and Interoperability Matrix Tool to determine the capabilities of your AFX cluster.
+Cluster switches::
+You need at least two switches in your cluster storage network. The maximum allowed is determined based on the total number of controller nodes in the cluster.
+
+You should review the details available at the NetApp Hardware Universe and Interoperability Matrix Tool to determine the capabilities of your AFX cluster.
 
 == Confirm AFX system health
 
@@ -182,6 +185,12 @@ link:../manage-data/prepare-manage-data.html[Prepare] to allocate and manage you
 
 == Related information
 
+* https://hwu.netapp.com/[NetApp Hardware Universe^]
+
+* https://imt.netapp.com/[NetApp Interoperability Matrix Tool^]
+
+* https://docs.netapp.com/us-en/interoperability-matrix-tool/[Interoperability Matrix Tool overview^]
+
 * https://docs.netapp.com/us-en/ontap/concepts/introducing-ontap-interfaces-concept.html[ONTAP user interfaces^]
 
 * https://docs.netapp.com/us-en/ontap/system-admin/set-privilege-level-task.html[Set the privilege level in the ONTAP CLI^]
@@ -189,11 +198,5 @@ link:../manage-data/prepare-manage-data.html[Prepare] to allocate and manage you
 * https://docs.netapp.com/us-en/ontap/system-admin/index.html[Learn about cluster administration with the ONTAP CLI^]
 
 * https://docs.netapp.com/us-en/ontap/system-admin/types-svms-concept.html[Types of SVMs in an ONTAP cluster^]
-
-* https://hwu.netapp.com/[NetApp Hardware Universe^]
-
-* https://imt.netapp.com/[NetApp Interoperability Matrix Tool^]
-
-* https://docs.netapp.com/us-en/interoperability-matrix-tool/[Interoperability Matrix Tool overview^]
 
 * link:../faq-ontap-afx.html[FAQ for AFX storage systems]
