@@ -104,15 +104,22 @@ All the disks and storage shelves attached to an AFX cluster are part of a Stora
 
 Every node has visibility to all the storage in the SAZ. When storage shelves are added to a cluster, ONTAP automatically adds the disks.
 
-.How do volume move operations work differently with AFX compared to AFF or FAS systems?
+.How is data allocated in an AFX cluster?
 
-With AFF and FAS systems, which run the Unified ONTAP personality, it's possible to relocate a volume nondisruptively from one node or aggregate to another in the cluster. This is performed using a background copy operation with SnapMirror technology, where a new destination volume is created at the new location. Depending on the size of the volume and the utilization of cluster resources, the time it takes for a volume move to complete can vary.
+When data is allocated, it can be placed on any disk in the SAZ. Once the data is placed, there is no need for it to move. A volume is created based on the underlying data and assigned to a specific node. The volumes can be moved by AFX, typically as part of a balancing process. This affects which node's NVRAM commits the write operations to disk. A volume move changes which node owns the volume but the data itself can remain in place.
 
-With AFX, there are no aggregates. All storage is contained within a single Storage Availability Zone that's accessible by every node in the cluster. As a result, volume moves never need to actually copy the data. Instead, all volume moves are performed with pointer updates between nodes. This is referred to as a Zero Copy Volume Move (ZCVM) and happens instantaneously because no data is actually copied or moved. This is essentially the same volume move process used with Unified ONTAP without the SnapMirror copy.
-
-In the initial AFX release, volumes will move only in storage failover scenarios and when nodes are added or removed from the cluster. These moves are controlled only through ONTAP.
-// Changes with 9.18.1 and related to performance utilization
-
-.How does AFX determine where to place data across the SAZ?
+.How does AFX manage the volumes across the SAZ?
 
 AFX includes a feature known as Automated Topology Management (ATM) which responds to system and user object imbalances. The primary objective of ATM is to balance volumes across the AFX cluster. When an imbalance is detected, an internal job is triggered to evenly distribute the data across the active nodes. The data is reallocated using ZCVM which only needs to copy and update the object metadata.
+
+.How are are volumes placed at the nodes in an AFX cluster?
+
+NetApp AFX automatically balances the placement of volumes across all the nodes in a cluster. Beginning with ONTAP 9.18.1, the placement algorithm has been enhanced to consider the performance of the nodes when placing or moving volumes. This results in improved performance balancing across the nodes in the AFX cluster and makes it much less likely that any single node becomes overloaded. Previous AFX releases base the placement on the total number of volumes in the cluster. Every node is assigned the same number of volumes regardless of activity. 
+
+.How do volume move operations work differently with AFX compared to AFF or FAS systems?
+
+With AFF and FAS systems, which run the Unified ONTAP personality, it's possible to relocate a volume nondisruptively from one node or aggregate to another in the cluster. This is performed using a background copy operation with SnapMirror technology. A new destination volume is created at the target destination. Depending on the size of the volume and the utilization of cluster resources, the time it takes for a volume move operation to complete can vary.
+
+With AFX, there are no aggregates. All storage is contained within a single Storage Availability Zone (SAZ) which is accessible by every node in the cluster. As a result, volume moves never need to actually copy the data. Instead, all volume moves are performed with pointer updates among the nodes. This is referred to as a Zero Copy Volume Move (ZCVM) and happens instantaneously because no data is actually copied or moved. This is essentially the same volume move process used with Unified ONTAP without the SnapMirror copy.
+
+In the initial 9.17.1 AFX release, volumes will move only in storage failover recovery scenarios and when nodes are added or removed from the cluster. These moves are controlled only through ONTAP.

@@ -13,42 +13,44 @@ The NetApp AFX storage system is based on a next‑generation storage architectu
 
 == Typical application workloads
 
-The NetApp AFX storage system meets the unique demands typical of AI/ML environments and other related data-centric applications. The AFX storage system is ideal for organizations managing several different workloads including:
+The NetApp AFX storage system meets the unique demands of NAS and S3 object workloads that require high performance and independent scale. These applications benefit from an advanced design built on high concurrency and parallel I/O. AFX is ideal for organizations deploying and managing several different types of application workloads including:
 
 * Training and iterative model refinement associated with deep learning where continuous high bandwidth and access to massive datasets is required.
 * Processing diverse data types including text, images, and video.
 * Real‑time inference applications with low latency where strict response time windows are needed.
 * Data science and machine learning pipelines that can benefit from self‑service data management by data engineers and data scientists.
-* Workloads that require high concurrency and parallel I/O, such as multi‑GPU systems with RDMA transport.
 
 == System design characteristics
 
 The AFX system has several design characteristics that enable it to operate as a high-performance NAS platform.
 
 Decouple storage and compute capabilities::
-Unlike AFF and FAS storage systems, the AFX storage and compute elements of the cluster are decoupled. AFX controllers are not restricted to accessing a limited set of local disks.
+Unlike other NetApp ONTAP storage systems, the compute and storage elements of an AFX cluster are decoupled and joined through a switched network. Disk ownership is no longer tied to specific nodes which provides several benefits. For example, the compute and storage components of an AFX cluster can be expanded independently.
 
-Removal of aggregate and RAID management::
-The storage administrator no longer needs to manage the aggregates and RAID groups. AFX handles these tasks which simplifies administration and provides an opportunity for nonspecialists to manage their data.
+Automated storage management::
+The physical aggregates are no longer available to the AFX storage administrator. Instead, AFX automatically manages the virtual capacity allocations for the nodes, as well as the RAID group configuration, when new storage shelves are added to the cluster. This design simplifies administration and provides an opportunity for nonspecialists to manage their data.
 
 Single storage pool for the cluster::
-Decoupling the AFX compute and storage, along with simplified storage management, results in a single pool of storage. This Storage Availability Zone (SAZ) is available to all the controller nodes in an AFX cluster. See link:../faq-ontap-afx.html[FAQ for AFX storage systems] for more details.
+Because the storage nodes and shelves are decoupled with NetApp AFX, all storage capacity for the cluster is collected in a single pool known as a Storage Availability Zone (SAZ). The disks and shelves in a SAZ are available to all the storage nodes in an AFX cluster for read and write operations. In addition, all the cluster nodes can participate in disk rebuilds in the event of a failure. Refer to link:../faq-ontap-afx.html[FAQ for AFX storage systems] for more details.
 
 High performance::
-AFX is built for the high performance needed by specialized AI/ML applications. It can make more efficient use of modern hardware to provide high and sustained bandwidth with ultra‑low latency.
+NetApp AFX provides high and sustained bandwidth with ultra-low latency and so is designed for high performance NAS and object workloads. AFX uses the latest modern hardware as well as storage shelves capable of handling a high ratio of nodes to disks through its unique architecture. Scaling storage nodes beyond the typical 1:1 (node:shelf) ratio maximizes the possible performance profile of the disks to their edge limits. This design provides efficiency and storage density for your most critical applications.
 
-Operational simplicity::
-The single storage pool, along with other features including automatic storage management, provides a much simpler administrative and operational model.
+Independent and massive scale::
+Based on the decoupled storage nodes and shelves, an AFX cluster can be independently and nondisruptively expanded based on your application needs. You can add storage nodes to get more CPU and throughput or add shelves to get more storage capacity and disk performance. The NetApp AFX architecture brings new possibilities for the maximum size of your cluster. For the latest limits for the AFX cluster based on your ONTAP release, refer to the NetApp Hardware Universe.
 
-Scalability::
-The set of controller nodes and storage shelves in a cluster can be independently expanded based on the application needs. There are limited administration requirements and disruptions when adding controllers or shelves.
+Zero copy data mobility::
+NAS and object clients access volumes at the ONTAP cluster. You can relocate volumes across the nodes nondisruptively to achieve your capacity and performance balancing goals. With Unified ONTAP, a volume move is performed using SnapMirror technology which can take time and additional temporary capacity. But with AFX, a data copy operation is no longer needed within the shared Storage Availability Zone (SAZ). Instead, only the volume metadata is moved which dramatically improves performance. Refer to link:../faq-ontap-afx.html[FAQ for AFX storage systems] for more details.
 
-Improved data mobility::
-Volumes can be moved among the cluster controller nodes non-disruptively without actually copying data. Metadata directory and index pointers are updated instead. This dramatically improves performance during typical administrative procedures as well as recovery in failure scenarios.
+Enhanced HA functionality::
+NetApp AFX offers a number of enhancements for high availability (HA) configuration and processing. AFX removes the need to directly connect HA partner nodes and instead allows HA pairs to communicate over the internal cluster network. This design gives administrators the option of deploying HA pairs in separate racks or rows in a datacenter for added fault tolerance. In addition, the AFX zero copy mobility extends to HA failover scenarios. When a node fails, its volumes will failover to the HA partner to commit any remaining writes to disk. Then ONTAP balances the volumes evenly across all surviving nodes in the cluster. This means you no longer need to consider storage failover performance in the initial design of your data placement.
 
 == Hardware infrastructure
 
 The NetApp AFX storage system delivers a unified hardware and software solution that creates a simplified experience specific to the needs of high-performance NAS customers.
+
+[TIP]
+You should review the link:../faq-ontap-afx.html[FAQ for AFX storage systems] for more information about hardware interoperability and upgrade options.
 
 The following hardware components are used with AFX clusters:
 
@@ -58,4 +60,5 @@ The following hardware components are used with AFX clusters:
 
 == Related information
 
+* https://hwu.netapp.com/[NetApp Hardware Universe^]
 * https://www.netapp.com/afx/[NetApp AFX^]
