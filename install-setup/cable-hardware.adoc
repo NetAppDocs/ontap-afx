@@ -40,9 +40,9 @@ For a given 4x100GbE breakout cable connection to the specific switch port, you 
 
 ** 1 x HA port (slot 1)
 ** 1 x cluster port (slot 7)
-** 2 X storage ports (slots 10, 11) 
+** 2 x storage ports (slots 10, 11) 
 +
-All 'a' ports connect to switch A, and all 'b' ports connect to switch B.
+All "a" ports connect to switch A, and all "b" ports connect to switch B.
 
 NOTE: Cisco Nexus 9332D-GX2B and 9364D-GX2A switch configurations to the AFX 1K storage system require 4x100GbE breakout cable connections.
 
