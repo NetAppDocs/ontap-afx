@@ -36,7 +36,7 @@ The connector components are delicate and care should be taken when clicking int
 
 * The AFX 1K storage system utilizes 4x100GbE breakout cables on the cluster and storage network. The 400GbE connections are made to the switch ports, and the 100GbE connections are made to the controller and drive shelf ports. Storage and HA/Cluster connections can be made to any non-ISL port on the switch.
 +
-For a given 4x100GbE breakout cable connection to the specific switch port, you connect all 4 ports going to the switch over this single breakout cable.
+For a given 4x100GbE breakout cable connection to the specific switch port, you connect all 4 ports from a given controller to the switch over this single breakout cable.
 
 ** 1 x HA port (slot 1)
 ** 1 x cluster port (slot 7)
