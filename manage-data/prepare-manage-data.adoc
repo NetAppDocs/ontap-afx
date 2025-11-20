@@ -12,7 +12,7 @@ summary: "Before managing your AFX data, you should be familiar with the basic c
 Before managing your AFX data, you should be familiar with the basic concepts and capabilities.
 
 [TIP]
-Because many of the concepts and administration procedures available on AFF and FAS systems are the same with AFX storage systems, reviewing the Unified ONTAP documentation can be helpful. Review the links in <<Related information>> for more information.
+Because many of the concepts and administration procedures available on AFF and FAS systems are the same with AFX storage systems, reviewing the Unified ONTAP documentation can be helpful. Refer to the links in <<Related information>> for more information.
 
 == Terminology and options
 
