@@ -28,6 +28,9 @@ Encryption is the process of converting data into a secure format that cannot be
 Digital certificates and PKI::
 A digital certificate is an electronic document used to prove ownership of a public key. The public key and associated private key can be used in various ways, including to establish identity typically as part of a larger security framework such as TLS and IPsec. These keys, as well as the supporting protocols and formatting standards, form the basis for public key infrastructure (PKI).
 
+Internet Protocol Security::
+IPsec is an Internet standard that provides data encryption, integrity, and authentication for traffic flowing among network endpoints at the IP level. It secures all IP traffic between ONTAP and clients including the higher level protocols such as NFS and SMB. It provides data-in-flight encryption, authentication for the traffic flowing between the network endpoints at an IP level, and protection against replay and malicious man-in-the-middle attacks on your data.
+
 == Related information
 
 * link:../administer/additional-ontap-svm.html[Additional AFX SVM administration]

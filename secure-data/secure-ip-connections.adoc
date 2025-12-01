@@ -1,0 +1,36 @@
+---
+sidebar: sidebar
+permalink: secure-data/secure-ip-connections.html
+keywords: netapp afx, afx, ip security, ipsec, secure data, data security, encryption, data-in-flight, secure connections, hardware offload
+summary: 
+---
+= Secure IP connections on your AFX storage systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+IP Security (IPsec) is an Internet protocol standard that provides data encryption, integrity, and authentication for traffic flowing among network endpoints at the IP level. You can use IPsec to enhance the security of the front-end network between an AFX cluster and the client endpoints.
+
+== Configuring IPsec on an AFX system
+
+Many of the ONTAP features and administration tasks are common among AFX storage systems and the AFF or FAS systems running Unified ONTAP. This includes IPsec, which is configured the same on your AFX system as it is with Unified ONTAP. Refer to https://docs.netapp.com/us-en/ontap/networking/ipsec-prepare.html[Prepare to configure IP security for the ONTAP network^] for more information.
+
+== Hardware offload feature
+
+On certain AFX storage systems, several of the cryptographic operations, such as encryption and integrity checks, can be offloaded to a supported network interface controller (NIC) card. This can significantly improve the performance and throughput of the network traffic protected by IPsec.
+
+[NOTE]
+Beginning with ONTAP 9.18.1, the IPsec hardware offload feature supported is extended to IPv6 traffic.
+
+You need to install and use only supported Ethernet cards. The following Ethernet cards are supported with NetApp AFX A1K systems beginning with ONTAP 9.17.1:
+
+* X50135A (2p, 40G/100G Ethernet Controller)
+* X50131A (2p, 40G/100G/200G/400G Ethernet Controller)
+
+Refer to the https://hwu.netapp.com/[NetApp Hardware Universe^] for more information about the supported systems and cards for your AFX release.
+
+== Related information
+
+* https://docs.netapp.com/us-en/ontap/networking/ipsec-prepare.html[Prepare to configure IP security for the ONTAP network^]
+
+* https://hwu.netapp.com/[NetApp Hardware Universe^]
