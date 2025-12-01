@@ -9,11 +9,11 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-IP Security (IPsec) is an Internet protocol standard that provides data encryption, integrity, and authentication for traffic flowing among network endpoints at the IP level. You can use IPsec to enhance the security of the front-end network between an AFX cluster and the client endpoints.
+IP Security (IPsec) is an Internet protocol standard that provides data encryption, integrity, and authentication for traffic flowing among network endpoints at the IP level. You can use IPsec to enhance the security of the front-end network between an AFX cluster and the clients.
 
 == Configuring IPsec on an AFX system
 
-Many of the ONTAP features and administration tasks are common among AFX storage systems and the AFF or FAS systems running Unified ONTAP. This includes IPsec, which is configured the same on your AFX system as it is with Unified ONTAP. Refer to https://docs.netapp.com/us-en/ontap/networking/ipsec-prepare.html[Prepare to configure IP security for the ONTAP network^] for more information.
+Many of the ONTAP features and administration tasks are common among AFX storage systems and the AFF or FAS systems running the Unified ONTAP personality. This includes IPsec, which is configured the same on your AFX system as it is with Unified ONTAP. Refer to https://docs.netapp.com/us-en/ontap/networking/ipsec-prepare.html[Prepare to configure IP security for the ONTAP network^] for more information.
 
 == Hardware offload feature
 
