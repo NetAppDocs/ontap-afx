@@ -42,9 +42,17 @@ A consistency group is a collection of volumes that are managed as a single unit
 
 You can protect your files by converting them to a write once read many (WORM) state at a volume level. SnapLock supports two modes. Compliance mode ensures the files cannot be deleted until their retention period expires which addresses government or industry-specific mandates. Enterprise mode allows privileged users to delete files before their retention period expires. Refer to https://docs.netapp.com/us-en/ontap/snaplock/index.html[Learn about ONTAP SnapLock^] for more information.
 
+== Security
+
+There are several optional security features you can configure and use with your AFX deployment.
+
+=== FPolicy
+
+FPolicy is a file access notification framework that is used to monitor and manage file access events on storage virtual machines (SVMs). You can use FPolicy to create policies that specify which file operations to monitor and optionally block based on criteria you define. FPolicy is commonly used for security auditing, compliance, and data governance. Refer to https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[Learn about ONTAP FPolicy solutions^] for more information.
+
 == ONTAP event and performance monitoring
 
-You can monitor the health and performance of a cluster. This includes setting up alerts for events and managing notifications for system health alerts. Refer to https://docs.netapp.com/us-en/ontap/event-performance-monitoring/index.html[Event, performance, and health monitoring^] for more information
+You can monitor the health and performance of a cluster. This includes setting up alerts for events and managing notifications for system health alerts. Refer to https://docs.netapp.com/us-en/ontap/event-performance-monitoring/index.html[Event, performance, and health monitoring^] for more information.
 
 == Related information
 
