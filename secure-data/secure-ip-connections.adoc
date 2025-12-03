@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: secure-data/secure-ip-connections.html
 keywords: netapp afx, afx, ip security, ipsec, secure data, data security, encryption, data-in-flight, secure connections, hardware offload
-summary: 
+summary: ""
 ---
 = Secure IP connections on your AFX storage systems
 :icons: font
@@ -22,10 +22,10 @@ On certain AFX storage systems, several of the cryptographic operations, such as
 [NOTE]
 Beginning with ONTAP 9.18.1, the IPsec hardware offload feature supported is extended to IPv6 traffic.
 
-You need to install and use only supported Ethernet cards. The following Ethernet cards are supported with NetApp AFX A1K systems beginning with ONTAP 9.17.1:
+The following NIC cards are supported for the IPsec hardware offload feature on an AFX storage system:
 
-* X50135A (2p, 40G/100G Ethernet Controller)
-* X50131A (2p, 40G/100G/200G/400G Ethernet Controller)
+* X50135B (2p, 40G/100G Ethernet Controller)
+* X50131B (2p, 40G/100G/200G/400G Ethernet Controller)
 
 Refer to the https://hwu.netapp.com/[NetApp Hardware Universe^] for more information about the supported systems and cards for your AFX release.
 
