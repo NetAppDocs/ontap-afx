@@ -22,7 +22,7 @@ On certain AFX storage systems, several of the cryptographic operations, such as
 [NOTE]
 Beginning with ONTAP 9.18.1, the IPsec hardware offload feature supported is extended to IPv6 traffic.
 
-The following NIC cards are supported for the IPsec hardware offload feature on an AFX storage system:
+The following NIC cards are supported for the IPsec hardware offload feature on AFX storage systems beginning with ONTAP 9.17.1:
 
 * X50135B (2p, 40G/100G Ethernet Controller)
 * X50131B (2p, 40G/100G/200G/400G Ethernet Controller)
