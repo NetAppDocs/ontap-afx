@@ -24,10 +24,10 @@ Beginning with ONTAP 9.18.1, the IPsec hardware offload feature is extended to s
 
 The following NIC cards are supported for the IPsec hardware offload feature on AFX storage systems beginning with ONTAP 9.17.1:
 
-* X50135B (2p, 40G/100G Ethernet controller)
+* X50130B (2p, 40G/100G Ethernet controller)
 * X50131B (2p, 40G/100G/200G/400G Ethernet controller)
 
-Refer to the https://hwu.netapp.com/[NetApp Hardware Universe^] for more information about the supported cards available for the ONTAP release running on your AFX system.
+Refer to the https://hwu.netapp.com/[NetApp Hardware Universe^] for more information about the supported cards for the ONTAP release running on your AFX system.
 
 == Related information
 
