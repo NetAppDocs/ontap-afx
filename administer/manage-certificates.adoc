@@ -124,4 +124,5 @@ You have renewed or deleted an existing client/server certificate or local certi
 
 == Related information
 
+* https://docs.netapp.com/us-en/ontap/authentication/install-server-certificate-cluster-svm-ssl-server-task.html[Generate and install a CA-signed server certificate in ONTAP^]
 * https://docs.netapp.com/us-en/ontap/authentication/manage-certificates-sm-task.html[Manage ONTAP certificates with System Manager^]
