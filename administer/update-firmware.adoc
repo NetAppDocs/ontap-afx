@@ -26,7 +26,7 @@ When you enable automatic updates for your AFX cluster, recommended updates for 
 
 .Result
 
-Recommended updates are automatically downloaded and installed on your OTAP AFX system based upon your update selections.
+Recommended updates are automatically downloaded and installed on your ONTAP AFX system based upon your update selections.
 
 == Disable automatic updates
 
