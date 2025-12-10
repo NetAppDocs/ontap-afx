@@ -10,7 +10,7 @@ summary: "This FAQ list provides answers to questions that customers typically h
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 This FAQ list provides answers to questions you might have about your AFX storage system. It includes concepts and terminology that can be helpful when exploring AFX in more detail or performing advanced administration tasks.
