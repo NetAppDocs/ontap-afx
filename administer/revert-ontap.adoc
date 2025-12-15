@@ -1,0 +1,15 @@
+---
+sidebar: sidebar
+permalink: administer/revert-ontap.html
+keywords: afx, afx system, revert, revert ontap, revert limitation
+summary: "Reverting an ONTAP cluster is the process of moving all the nodes to the previous major ONTAP release."
+---
+
+= ONTAP revert unsupported with AFX storage systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Reverting an ONTAP cluster is the process of moving all the nodes to the previous major ONTAP release.
+
+NetApp AFX storage systems do not support ONTAP revert. Attempting a revert operation with AFX can result in cluster instability and data loss. You should not attempt a revert operation on an AFX system. 

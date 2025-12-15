@@ -45,3 +45,7 @@ a|
 |===
 . Select *Dual-layer encryption* to enable software encryption.
 . Select *Save*.
+
+.Related information
+
+* https://docs.netapp.com/us-en/ontap/concepts/encryption-concept.html[Encryption^]

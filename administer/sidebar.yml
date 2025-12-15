@@ -49,5 +49,7 @@ entries:
       url: /administer/upgrade-ontap.html
     - title: Update firmware
       url: /administer/update-firmware.html
+    - title: Revert limitation
+      url: /administer/revert-ontap.html
   - title: Additional administration
     url: /administer/additional-ontap-cluster.html

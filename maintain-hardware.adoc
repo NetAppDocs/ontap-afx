@@ -6,7 +6,7 @@ summary: "Navigate to the AFX maintenance documentation to learn how to perform 
 ---
 = Maintain the AFX storage system hardware
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 Navigate to the https://docs.netapp.com/us-en/ontap-systems/afx-landing-maintain/index.html[AFX maintenance documentation^] to learn how to perform maintenance procedures on your AFX storage system.

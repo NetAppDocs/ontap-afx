@@ -12,23 +12,24 @@ summary: "Before managing your AFX data, you should be familiar with the major c
 [.lead]
 Before managing your AFX data, you should be familiar with the major concepts and capabilities.
 
-[TIP]
-Because many of the concepts and administration procedures available on AFF and FAS systems are the same with AFX storage systems, reviewing the Unified ONTAP documentation can be helpful.
-
 == Terminology and options
 
 There are several terms related to AFX data security you should be familiar with.
 
 Ransomware::
-Ransomware is malicious software that encrypts files making them inaccessible to the user. There is typically some type of payment demaned to decrypt the data. NetApp ONTAP provides solutions to protect against ransomware through features like Autonomous Ransomware Protection (ARP).
+Ransomware is malicious software that encrypts files making them inaccessible to the user. There is typically some type of payment demanded to decrypt the data. ONTAP provides solutions to protect against ransomware through features like Autonomous Ransomware Protection (ARP).
 
 Encryption::
-Encryption is the process of converting data into a secure format that cannot be easily read without proper authorization. ONTAP offers both software-based and hardware-based encryption technologies to protect data at rest. This ensures it cannot be read if the storage medium is repurposed, returned, misplaced, or stolen. These encryption solutions can be managed using either an external key management server or the Onboard Key Manager provided by ONTAP.
+Encryption is the process of converting data into a secure format that cannot be easily read without proper authorization. ONTAP offers both software-based and hardware-based encryption technologies to protect data at rest. This ensures it cannot be read if the storage medium is repurposed, returned, misplaced, or stolen. These encryption solutions can be managed using either an external key management server or the Onboard Key Manager provided by ONTAP. Refer to link:../secure-data/encrypt-data-at-rest.html[Encrypt data at rest on an AFX storage system] for more information.
 
 Digital certificates and PKI::
-A digital certificate is an electronic document used to prove ownership of a public key. The public key and associated private key can be used in various ways, including to establish identity typically as part of a larger security framework such as TLS and IPsec. These keys, as well as the supporting protocols and formatting standards, form the basis for public key infrastructure (PKI).
+A digital certificate is an electronic document used to prove ownership of a public key. The public key and associated private key can be used in various ways, including to establish identity typically as part of a larger security framework such as TLS and IPsec. These keys, as well as the supporting protocols and formatting standards, form the basis for public key infrastructure (PKI). Refer to link:../administer/manage-certificates.html#generate-a-certificate-signing-request[Manage certificates on an AFX storage system] for more information.
+
+Internet Protocol Security::
+IPsec is an Internet standard that provides in-flight data encryption, integrity, and authentication for traffic flowing among network endpoints at the IP level. It secures all IP traffic between ONTAP and clients including higher level protocols such as NFS and SMB. IPsec provides protection against malicious replay and man-in-the-middle attacks on your data. Refer to link:../secure-data/secure-ip-connections.html[Secure IP connections on your AFX storage systems]
+for more information.
 
 == Related information
 
 * link:../administer/additional-ontap-svm.html[Additional AFX SVM administration]
-* link:../get-started/prepare-cluster-admin.html[Prepare to your administer AFX system]
+* link:../get-started/prepare-cluster-admin.html[Prepare to administer your AFX system]
