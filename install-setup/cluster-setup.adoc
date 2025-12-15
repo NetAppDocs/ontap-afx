@@ -66,6 +66,8 @@ Define the details for your DNS and NTP servers.
 . Optionally set up encryption.
 +
 You can define the details for cluster encryption. Select *Continue*.
++ 
+NOTE: For information on how to create a cluster for a non-Windows environment, see link:https://docs.netapp.com/us-en/ontap/software_setup/setup-cluster.html[Create an ONTAP cluster and join nodes^].
 
 .What's next
 
