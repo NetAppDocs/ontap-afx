@@ -109,7 +109,7 @@ See your laptop's online help for instructions on how to configure the serial co
  
 .. Connect the laptop to the switch on the management subnet.
 +
-image::../media/drw_a1k_70-90_console_connection_ieops-1702.svg[Console connections]
+image::../media/drw_afx_1k_console_connection_ieops-2708.svg[Console connections]
 
 [start=2]
 
