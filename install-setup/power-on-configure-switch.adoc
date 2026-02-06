@@ -13,7 +13,7 @@ After you cable your AFX 1K storage system, you need to power on and configure t
 
 .Steps
 . Plug the power cords for the switches into the power sources.
-. Connect the ISL connections between the two switches.
+. Connect the ISL cables between the two switches.
  * For Cisco Nexus 9332D-GX2B switches, use ports 31/32 for the ISL connections. See the link:https://www.cisco.com/c/en/us/td/docs/dcn/hw/nx-os/nexus9000/9332d-gx2b/cisco-nexus-9332d-gx2b-nx-os-mode-switch-hardware-installation-guide/m_overview1.html[Cisco Nexus 9332D-GX2B NX-OS Mode Switch Hardware Installation Guide^] for more information.
 * For Cisco Nexus 9364D-GX2A switches, use ports 63/64 for the ISL connections. See the link:https://www.cisco.com/c/en/us/td/docs/dcn/hw/nx-os/nexus9000/9364d-gx2a/cisco-nexus-9364d-gx2a-nx-os-mode-switch-hardware-installation-guide/m_overview1.html[Cisco Nexus 9364D-GX2A NX-OS Mode Switch Hardware Installation Guide^] for more information.
 . Power on each switch. 
