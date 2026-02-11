@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: get-started/learn-about-aide.html
+keywords: 
+summary: 
+---
+= Learn about AFX storage systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+xxx
