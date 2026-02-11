@@ -23,7 +23,7 @@ The advanced capacity balancing feature, controlled using the `-gdd` CLI paramet
 
 == Unsupported or restricted Unified ONTAP capabilities
 
-NetApp AFX is optimized for high-performance NAS and object workloads. Because of this, there are differences with AFF and FAS as well as the other Unified ONTAP storage systems. The following features are not available with the NetApp AFX; the list is organized by major feature or functional area. You should also review the updates and changes for AFX in link:../release-notes/whats-new-9171.html[What's new] based on your release.
+NetApp AFX is optimized for high-performance NAS and object workloads. Because of this, there are differences with AFF and FAS storage systems. The following features are not available with the NetApp AFX; the list is organized by major feature or functional area. You should also review the updates and changes for AFX in link:../release-notes/whats-new-9171.html[What's new] based on your ONTAP release.
 
 === Block and SAN
 
@@ -40,6 +40,7 @@ NetApp AFX is optimized for high-performance NAS and object workloads. Because o
 * Aggregate-level deduplication
 * SyncMirror (aggregate mirroring)
 * FabricPool tiering
+* Load-sharing mirrors
 
 === Data replication (SnapMirror)
 
