@@ -18,6 +18,16 @@ After your AFX hardware has been installed, you can complete the ONTAP cluster s
 xxx
 
 >> Move content below from before you begin; add a section on AIDE prep
+>> Include HW is set up
+>> Add links to related information
+
+=== Core AFX requirements
+
+xxx
+
+=== Additional AIDE considerations
+
+xxx
 
 == Perform initial cluster setup
 
