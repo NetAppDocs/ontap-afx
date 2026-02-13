@@ -14,37 +14,25 @@ NetApp AI Data Engine (AIDE) is an advanced computing system you can optionally 
 
 == AIDE overview
 
-AIDE is a system designed to accelerate and simplify the preparation and management of your data for AI and ML workloads. It is installed separately and integrates closely with the NetApp AFX storage system. AIDE leverages the high-performance and scalable AFX storage foundation while adding specialized services for AI data processing, governance, and workflow automation.
+AIDE is a system designed to accelerate and simplify the preparation and management of your data for AI and ML workloads. It is installed separately and integrates closely with an AFX storage system cluster. AIDE leverages the high-performance and scalable AFX storage foundation while adding specialized services for AI data processing, governance, and workflow automation.
 
-A core strength of AIDE is its ability to centralize and automate the management of metadata across large, distributed datasets. It can continuously catalog and update its metadata store based on the data in your ONTAP volumes, enabling users to search, classify, and apply governance policies efficiently. The internal processing pipeline creates AI-ready datasets, including the requisite generation of vector embeddings for semantic search and retrieval tasks.
+A core strength of AIDE is its ability to centralize and automate the management of metadata across large, distributed datasets. It can be configured to continuously catalog and update the metadata store based on the data in your ONTAP volumes, enabling users to search, classify, and apply governance policies efficiently. The internal processing pipeline generates AI-ready datasets, including the requisite creation of vector embeddings for semantic search and retrieval tasks.
 
-Security and governance are also central to its design. AIDE provides advanced authentication, robust access controls, continuous data classification, and policy-driven enforcement for the protection of sensitive information. Features such as automated redaction, masking, and audit logging help organizations meet the applicable regulatory requirements and protect critical data throughout the entire AI lifecycle.
+Security and governance are also central to its design. AIDE provides advanced authentication, robust access controls with new RBAC roles, data classification, and policy-driven enforcement for the protection of sensitive information. Features such as automated redaction, masking, and audit logging help organizations meet the applicable regulatory requirements and protect critical data throughout the entire AI lifecycle.
 
-AIDE empowers data engineers and scientists by providing tools for rapid data discovery, curation, and workflow management. By using the dedicated AIDE console and enhanced AFX REST API, users can create curated data collections, perform vector searches, and integrate with external AI and GenAI applications. AIDE reduces the manual effort needed and enables teams to focus on extracting insights from their data.
+AIDE empowers data engineers and scientists by providing tools for rapid data discovery, curation, and workflow management. With the dedicated AIDE console and enhanced AFX REST API, users can create curated data collections, perform vector searches, and integrate with external AI and GenAI applications. AIDE reduces the required manual effort and enables teams to focus on extracting insights from their data.
 
 == Installation options
 
-There are two primary options for installing and integrating AIDE with your AIDE cluster.
+There are two primary options for installing and integrating AIDE with your AFX storage cluster.
 
 === Set up AFX and AIDE together
 
-Deploying AFX storage and AIDE simultaneously provides a unified, streamlined installation process, ensuring immediate integration and optimal configuration of both storage and AI data services. This turnkey approach simplifies onboarding, guarantees compatibility, and enables organizations to quickly leverage a fully operational AI data platform—ideal for new deployments seeking rapid time-to-value.
-
-////
-If you're creating a new AI data infrastructure, installing AIDE together with the AFX storage system at the same time provides a streamlined and unified deployment experience. AIDE and AFX are installed and configured as part of a single setup workflow. This ensures all the components are optimally integrated from the beginning, with the AFX storage and AI data services aligned and available for immediate use.
-
-Deploying AIDE and AFX together offers administrators several benefits, including automated configuration steps, pre-validated compatibility, and a simplified onboarding process. The entire system is immediately available for AI workloads as soon as installation is completed. This option is ideal for greenfield environments or organizations seeking to accelerate time-to-value with a turnkey AI data platform.
-////
+Deploying the AFX storage system and AIDE simultaneously provides a unified and streamlined installation process, ensuring immediate integration and optimal configuration. This turnkey approach simplifies onboarding, guarantees compatibility, and enables organizations to quickly leverage a fully operational AI data platform which is ideal for new deployments seeking rapid time-to-value.
 
 === Integrate AIDE with an existing AFX cluster
 
-Organizations with an established AFX storage cluster can flexibly add AIDE at any time, seamlessly connecting it to their current environment without disruption. This integration automatically discovers ONTAP volumes and synchronizes metadata, allowing companies to enhance their data workflows with advanced AI automation, governance, and curation tools while preserving their existing storage foundation.
-
-////
-For organizations that have already installed and are using an AFX storage cluster, AIDE can be added at any time to enhance the access and value of your data. In this case, AIDE is deployed as an add-on to the existing AFX storage environment, connecting to the established cluster storage network without disrupting operations. The integration process automatically discovers available ONTAP volumes and synchronizes metadata.
-
-Adding AIDE to an existing AFX cluster is a flexible approach which allows organizations to adopt AI data services at their own pace. The AIDE automation, governance, and data curation tools are layered onto the AFX storage infrastructure. It’s an excellent choice for companies looking to upgrade and modernize their data workflows by expanding into new and cutting edge AI capabilities without needing to alter their existing storage foundation.
-////
+If you already have an AFX storage cluster installed and operational, you can add AIDE at any time to enhance the access and value of your data. AIDE is deployed as an add-on to the existing AFX storage environment, connecting to the established cluster storage network without disrupting operations. The integration process automatically discovers available ONTAP volumes and synchronizes metadata. Your data processing workflows are enhanced through advanced AI automation, governance, and curation tools while preserving their existing storage foundation.
 
 == Related information
 

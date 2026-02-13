@@ -2,14 +2,14 @@
 sidebar: sidebar
 permalink: install-setup/cluster-setup.html
 keywords: afx, afx system, cluster setup, setup
-summary: "After your AFX hardware has been installed, you can complete the cluster setup. This process involves related configuration phases that you need to perform sequentially."
+summary: ""
 ---
 = Set up your AFX storage system ONTAP cluster
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After your AFX hardware has been installed, you can complete the ONTAP cluster setup. This process involves related configuration phases that you should perform sequentially.
+After your AFX hardware has been installed, you can complete the AFX cluster setup. This process involves related configuration phases that you should perform sequentially. As part of this, you can optionally set up an AIDE cluster.
 
 // https://docs.netapp.com/us-en/ontap/software_setup/workflow-summary.html
 
@@ -17,15 +17,15 @@ After your AFX hardware has been installed, you can complete the ONTAP cluster s
 
 Before setting up your AFX cluster, you should review the core AFX requirements and additional AIDE considerations to ensure you have all the necessary information and resources to complete the setup process successfully.
 
-[.big .red]#During the AIDE review, this section should carefully examined for errors.#
+[.big .red]*During the AIDE review, this section should carefully examined for errors.*
 
 === Core AFX requirements
 
-There are several core requirements when setting up your AFX cluster.
+There are several core requirements to consider when setting up your AFX cluster.
 
 .Hardware installation
 
-Make sure you've completed the hardware installation of your AFX system. For more information, see link:../install-setup/install-setup-hardware.html[Install your AFX hardware].
+Make sure you've completed the hardware installation of your AFX system. For more information, see link:../install-setup/install-setup-workflow.html[Install your AFX system].
 
 .Basic IP addressing
 
@@ -80,11 +80,13 @@ The System Manager user interface is displayed.
 +
 Provide and verify the password for the `admin` account. Select *Continue*.
 
-. Configure the IP addresses for the cluster and controller nodes.
+. Configure the IP addresses for the AFX cluster and controller nodes.
 +
 Provide IP addresses and the subnet masks.
 
-. Configure the network services. Select *Continue*.
+. Optionally provide the IP addresses for the AIDE DCN nodes.
+
+. Configure the network services including DNS and NIS. Select *Continue*.
 +
 Define the details for your DNS and NTP servers.
 
