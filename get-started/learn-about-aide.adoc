@@ -28,15 +28,23 @@ There are two primary options for installing and integrating AIDE with your AIDE
 
 === Set up AFX and AIDE together
 
+Deploying AFX storage and AIDE simultaneously provides a unified, streamlined installation process, ensuring immediate integration and optimal configuration of both storage and AI data services. This turnkey approach simplifies onboarding, guarantees compatibility, and enables organizations to quickly leverage a fully operational AI data platform—ideal for new deployments seeking rapid time-to-value.
+
+////
 If you're creating a new AI data infrastructure, installing AIDE together with the AFX storage system at the same time provides a streamlined and unified deployment experience. AIDE and AFX are installed and configured as part of a single setup workflow. This ensures all the components are optimally integrated from the beginning, with the AFX storage and AI data services aligned and available for immediate use.
 
 Deploying AIDE and AFX together offers administrators several benefits, including automated configuration steps, pre-validated compatibility, and a simplified onboarding process. The entire system is immediately available for AI workloads as soon as installation is completed. This option is ideal for greenfield environments or organizations seeking to accelerate time-to-value with a turnkey AI data platform.
+////
 
 === Integrate AIDE with an existing AFX cluster
 
+Organizations with an established AFX storage cluster can flexibly add AIDE at any time, seamlessly connecting it to their current environment without disruption. This integration automatically discovers ONTAP volumes and synchronizes metadata, allowing companies to enhance their data workflows with advanced AI automation, governance, and curation tools while preserving their existing storage foundation.
+
+////
 For organizations that have already installed and are using an AFX storage cluster, AIDE can be added at any time to enhance the access and value of your data. In this case, AIDE is deployed as an add-on to the existing AFX storage environment, connecting to the established cluster storage network without disrupting operations. The integration process automatically discovers available ONTAP volumes and synchronizes metadata.
 
 Adding AIDE to an existing AFX cluster is a flexible approach which allows organizations to adopt AI data services at their own pace. The AIDE automation, governance, and data curation tools are layered onto the AFX storage infrastructure. It’s an excellent choice for companies looking to upgrade and modernize their data workflows by expanding into new and cutting edge AI capabilities without needing to alter their existing storage foundation.
+////
 
 == Related information
 
