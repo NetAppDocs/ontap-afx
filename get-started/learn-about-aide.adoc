@@ -14,7 +14,7 @@ NetApp AI Data Engine (AIDE) is an advanced computing system you can optionally 
 
 == AIDE overview
 
-AIDE is a system designed to accelerate and simplify the preparation and management of your data for AI and ML workloads. It integrates tightly with the NetApp AFX storage system, leveraging the high-performance and scalable AFX storage foundation while adding specialized services for AI data processing, governance, and workflow automation.
+AIDE is a system designed to accelerate and simplify the preparation and management of your data for AI and ML workloads. It is installed separately and integrates closely with the NetApp AFX storage system. AIDE leverages the high-performance and scalable AFX storage foundation while adding specialized services for AI data processing, governance, and workflow automation.
 
 A core strength of AIDE is its ability to centralize and automate the management of metadata across large, distributed datasets. It can continuously catalog and update its metadata store based on the data in your ONTAP volumes, enabling users to search, classify, and apply governance policies efficiently. The internal processing pipeline creates AI-ready datasets, including the requisite generation of vector embeddings for semantic search and retrieval tasks.
 
