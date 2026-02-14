@@ -51,7 +51,7 @@ You'll also need the following related networking information:
 
 === Additional AIDE considerations
 
-When installing and setting up AIDE for the first time, you can optionally include NetApp AI Data Engine (AIDE). If you plan to set up AIDE, you'll need to first do the following:
+When installing and setting up AFX for the first time, you can optionally include NetApp AI Data Engine (AIDE). If you plan to set up AIDE, you'll need to first do the following:
 
 * Ensure the AIDE hardware has been properly installed and attached to the AFX storage network.
 * Obtain the addresses and related configuration for the AIDE DCN nodes.
@@ -132,5 +132,6 @@ You should link:../get-started/prepare-cluster-admin.html[Prepare to administer 
 == Related information
 
 * link:../get-started/learn-about-aide.html[Learn about the NetApp AI Data Engine]
+* https://docs.netapp.com/us-en/ai-data-engine/install-setup/install-setup-workflow.html[Install your AIDE system^]
 * link:../administer/configure-svm.html[Configure an AFX SVM]
 * link:../get-started/prepare-cluster-admin.html[Prepare to administer AFX]
