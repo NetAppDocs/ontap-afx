@@ -9,15 +9,11 @@ summary: ""
 :imagesdir: ../media/
 
 [.lead]
-After your AFX hardware has been installed, you can complete the AFX cluster setup. This process involves related configuration phases that you should perform sequentially. As part of this, you can optionally set up an AIDE cluster.
-
-// https://docs.netapp.com/us-en/ontap/software_setup/workflow-summary.html
+After your AFX hardware has been installed, you can complete the ONTAP cluster setup. This process involves related configuration phases that you should perform sequentially. As part of this, you can optionally add DX50 data compute nodes (DCNs) running the AI Data Engine (ADIE), so that the AFX storage cluster and DCN cluster operate as a single system managed through the same ONTAP control place.
 
 == Prepare to set up an AFX storage system
 
-Before setting up your AFX cluster, you should review the core AFX requirements and additional AIDE considerations to ensure you have all the necessary information and resources to complete the setup process successfully.
-
-[.big .red]*During the AIDE review, this section should carefully examined for errors.*
+Before setting up your ONTAP cluster, you should review the core AFX requirements and additional AIDE considerations to ensure you have all the necessary information and resources to complete the setup process successfully.
 
 === Core AFX requirements
 
@@ -53,7 +49,13 @@ You'll also need the following related networking information:
 
 When installing and setting up AFX for the first time, you can optionally include NetApp AI Data Engine (AIDE). If you plan to set up AIDE, you'll need to first do the following:
 
-* Ensure the AIDE hardware has been properly installed and attached to the AFX storage network.
+* Ensure the DX50 data compute nodes have been properly
+
+
+ installed and attached to the AFX storage network.
+
+
+
 * Obtain the addresses and related configuration for the AIDE DCN nodes.
 
 == Perform initial cluster setup

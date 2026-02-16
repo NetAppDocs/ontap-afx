@@ -15,17 +15,17 @@ To initially get up and running with your AFX system, you need to install the ha
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Will AI Data Engine (AIDE) also be installed with AFX?
 
 [role="quick-margin-para"]
-You'll need to decide whether you plan to install AFX only or AFX along with AI Data Engine. Review the https://docs.netapp.com/us-en/ontap-afx/get-started/learn-about-aide.html#installation-options[AIDE installation options] to determine the best fit for your needs.
+You need to decide whether to install AFX only or AFX along with AI Data Engine. Review the https://docs.netapp.com/us-en/ontap-afx/get-started/learn-about-aide.html#installation-options[AIDE installation options] to help determine the best fit for your needs.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Install and set up your hardware
 
 [role="quick-margin-para"]
-link:../install-setup/install-setup-workflow.html[Install your AFX storage system] and optionally https://docs.netapp.com/us-en/ai-data-engine/install-setup/install-setup-workflow.html[install the AIDE data compute nodes].
+link:../install-setup/install-setup-workflow.html[Install your AFX storage system] and optionally https://docs.netapp.com/us-en/ai-data-engine/install-setup/install-setup-workflow.html[install the AIDE data compute nodes] if you're including AIDE as part of the initial configuration.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Set up your cluster
 
 [role="quick-margin-para"]
-Follow the quick and easy process to link:../install-setup/cluster-setup.html[set up] your ONTAP cluster using System Manager. If you're also installing AIDE along with AFX, review https://docs.netapp.com/us-en/ai-data-engine/install-setup/cluster-setup.html[Set up AIDE with a new AFX cluster^] for additional configuration steps such as licensing and authentication.
+Follow the quick and easy process to link:../install-setup/cluster-setup.html[set up] your ONTAP cluster using System Manager. If you're also installing AIDE along with AFX, review https://docs.netapp.com/us-en/ai-data-engine/install-setup/cluster-setup.html[Set up AIDE with a new AFX cluster^] for additional configuration steps.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Prepare to administer your cluster
 
