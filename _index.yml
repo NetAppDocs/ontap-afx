@@ -6,7 +6,7 @@ indexpage:
   tiles:  
     - title: Get started
       links: 
-        - title: Learn about AFX and AIDE
+        - title: Learn about AFX
           url: /get-started/ontap-afx-storage.html
         - title: Quick start
           url: /get-started/quick-start.html
