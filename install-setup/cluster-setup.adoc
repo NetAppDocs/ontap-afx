@@ -123,7 +123,7 @@ You need to have the following information:
 
 .What's next
 
-* If you have included AIDE as part of the AFX cluster setup, you'll need to perform additional configuration steps including licensing and authentication. See https://docs.netapp.com/us-en/ai-data-engine/install-setup/cluster-setup.html[Set up AIDE with a new AFX cluster^] for more information.
+* If you have included AIDE as part of the AFX cluster setup, you'll need to perform additional configuration steps including licensing and authentication. See https://docs.netapp.com/us-en/ai-data-engine/install-setup/cluster-setup-afx.html[Set up AIDE with a new AFX cluster^] for more information.
 
 * You should link:../get-started/prepare-cluster-admin.html[Prepare to administer AFX] before using your AFX cluster in a production environment.
 
