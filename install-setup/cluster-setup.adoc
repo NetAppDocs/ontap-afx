@@ -50,9 +50,6 @@ You'll also need the following related networking information:
 When installing and setting up AFX for the first time, you can optionally include NetApp AI Data Engine (AIDE). If you plan to set up AIDE, you'll need to first do the following:
 
 * Make sure to https://docs.netapp.com/us-en/ai-data-engine/install-setup/aide-hardware-requirements.html[install AIDE^] and attach the compute nodes to the AFX storage network.
-
-https://review.docs.netapp.com/us-en/ai-data-engine_aide-initial-release/install-setup/aide-hardware-requirements.html
-
 * Obtain the addresses and any related network configuration for the DX50 data compute nodes.
 
 == Perform initial cluster setup
