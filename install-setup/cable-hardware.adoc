@@ -114,7 +114,7 @@ Ensure you have the correct cables and connectors for your switches. See https:/
 +
 *100GbE cables*
 +
-image::../media/oie_cable_25Gb_Ethernet_SFP28_ieops-1069.png[Cluster HA cable]
+image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 
 . Connect the following storage ports to any non-ISL port on switch A.
 * Controller A
@@ -159,7 +159,7 @@ image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 +
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 +
-image::../media/drw_afx_ha_cluster_storage_b_ieops-2780.svg[Cable controller cluster, HA, and storage to switch A]
+image::../media/drw_afx_ha_cluster_storage_b_ieops-2780.svg[Cable controller cluster, HA, and storage to switch B]
 
 == Step 5: Cable the shelf-to-switch connections
 Connect the NX224 storage shelves to the switches.   
