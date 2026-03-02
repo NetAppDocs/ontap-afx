@@ -98,13 +98,13 @@ image::../media/oie_cable100_gbe_qsfp28.png[100 Gb Ethernet cable]
 image::../media/drw_afx_network_cabling_b_ieops-2351.svg[Cable to Ethernet network]
 
 == Step 3: Cable the cluster, HA, and storage connections to Switch A
-Use the 4x100GbE breakout cable to connect the cluster, HA, and storage ports on the controllers to the cluster network switch A. Cluster and HA interconnect cable to connect ports e1a and e7a to switch A. The e1a ports are used for the HA connections, and the e7a ports are used for the cluster connections. For the storage connections, connect ports e10a and e11a to switch A.
+Use the 4x100GbE breakout cable to connect the cluster, HA, and storage ports on the controllers to network switch A. Cluster and HA interconnect cable to connect ports e1a and e7a to switch A. The e1a ports are used for the HA connections, and the e7a ports are used for the cluster connections. For the storage connections, connect ports e10a and e11a to switch A.
 
 Ensure you have the correct cables and connectors for your switches. See https://hwu.netapp.com[Hardware Universe^] for more information.
 
 .Steps
 
-. Connect the following controller ports to any non-ISL port on the cluster network switch A.
+. Connect the following controller ports to any non-ISL port on the network switch A.
 * Controller A
 ** e1a (HA)
 ** e7a (Cluster)
@@ -131,11 +131,11 @@ image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 image::../media/drw_afx_ha_cluster_storage_a_ieops-2779.svg[Cable controller cluster, HA, and storage to switch A]
 
 == Step 4: Cable the cluster, HA, and storage connections to Switch B
-Use the 4x100GbE breakout cable to connect the cluster, HA, and storage ports on the controllers to the cluster network switch B. Cluster and HA interconnect cable to connect ports e1b and e7b to switch B. The e1b ports are used for the HA connections, and the e7b ports are used for the cluster connections. For the storage connections, connect ports e10b and e11b to switch B.
+Use the 4x100GbE breakout cable to connect the cluster, HA, and storage ports on the controllers to network switch B. Cluster and HA interconnect cable to connect ports e1b and e7b to switch B. The e1b ports are used for the HA connections, and the e7b ports are used for the cluster connections. For the storage connections, connect ports e10b and e11b to switch B.
 
 Ensure you have the correct cables and connectors for your switches. See https://hwu.netapp.com[Hardware Universe^] for more information.
 
-. Connect the following controller ports to any non-ISL port on the cluster network switch B.
+. Connect the following controller ports to any non-ISL port on the network switch B.
 * Controller A
 ** e1b (HA)
 ** e7b (Cluster)
