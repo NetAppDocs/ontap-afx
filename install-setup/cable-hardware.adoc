@@ -135,13 +135,13 @@ Use the 4x100GbE breakout cable to connect the cluster, HA, and storage ports on
 
 Ensure you have the correct cables and connectors for your switches. See https://hwu.netapp.com[Hardware Universe^] for more information.
 
-. Connect the following controller ports to any non-ISL port on switch B.
+. Connect the following controller ports to any non-ISL port on the cluster network switch B.
 * Controller A
-** e10b
-** e11b
+** e1b (HA)
+** e7b (Cluster)
 * Controller B
-** e10b
-** e11b 
+** e1b (HA)
+** e7b (Cluster)
 +
 *100GbE cables*
 +
