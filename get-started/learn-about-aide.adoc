@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: get-started/learn-about-aide.html
 keywords: ai, ai data engine, aide, learn about aide, aide pipeline data management, data governance
-summary: "NetApp AI Data Engine (AIDE) is a storage‑integrated AI data service that runs on NetApp data compute nodes (DX50) attached to an AFX cluster. You can optionally install and integrate AIDE with your AFX cluster, extending AFX by providing dedicated, GPU‑accelerated data processing for AI and ML workloads, while retaining all the benefits of ONTAP."
+summary: "NetApp AI Data Engine (AIDE) is a storage‑integrated AI data service that runs on data compute nodes attached to an AFX cluster. You can optionally install and integrate AIDE with your AFX cluster, extending AFX by providing dedicated, GPU‑accelerated data processing for AI and ML workloads, while retaining all the benefits of ONTAP."
 ---
 
 = Learn about the NetApp AI Data Engine
@@ -10,7 +10,7 @@ summary: "NetApp AI Data Engine (AIDE) is a storage‑integrated AI data service
 :imagesdir: ../media/
 
 [.lead]
-NetApp AI Data Engine (AIDE) is a storage‑integrated AI data service that runs on NetApp data compute nodes (DX50) attached to an AFX cluster. You can optionally install and integrate AIDE with your AFX cluster, extending AFX by providing dedicated, GPU‑accelerated data processing for AI and ML workloads, while retaining all the benefits of ONTAP.
+NetApp AI Data Engine (AIDE) is a storage‑integrated AI data service that runs on data compute nodes attached to an AFX cluster. You can optionally install and integrate AIDE with your AFX cluster, extending AFX by providing dedicated, GPU‑accelerated data processing for AI and ML workloads, while retaining all the benefits of ONTAP.
 
 == AIDE overview
 
