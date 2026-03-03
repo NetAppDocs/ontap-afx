@@ -62,5 +62,6 @@ OAuth 2.0 is the industry standard authorization framework used to restrict and 
 == Related information
 
 * link:../faq-ontap-afx.html[FAQ for AFX storage systems]
+* https://kb.netapp.com/nss/Licensing/How_to_download_NLF_licenses_from_the_NetApp_Support_Site[How to download NLF licenses from the NetApp Support Site^]
 * https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html[Overview of the ONTAP OAuth 2.0 implementation^]
 * link:../administer/additional-ontap-svm.html[Additional administration for AFX SVMs]
