@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: get-started/quick-start.html
 keywords: afx, afx system, quick start
-summary: "To initially get up and running with your AFX system, you need to install the hardware components, set up your cluster, and prepare to administer your cluster and SVMs."
+summary: "To initially get up and running with your AFX system, you need to install the hardware components, set up your cluster, and prepare to administer ther cluster and SVMs."
 ---
 
 = Quick start for setting up an AFX storage system
@@ -10,19 +10,24 @@ summary: "To initially get up and running with your AFX system, you need to inst
 :imagesdir: ../media/
 
 [.lead]
-To initially get up and running with your AFX system, you need to install the hardware components, set up your cluster, and prepare to administer your cluster and SVMs.
+To initially get up and running with your AFX system, you need to install the hardware components, set up your cluster, and prepare to administer the cluster and SVMs.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Install and set up your hardware
-
-[role="quick-margin-para"]
-link:../install-setup/install-setup-workflow.html[Install] your AFX storage system and prepare to set up the cluster.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Set up your cluster
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Will AI Data Engine (AIDE) also be installed with AFX?
 
 [role="quick-margin-para"]
-Follow the quick and easy process to link:../install-setup/cluster-setup.html[set up] your ONTAP cluster using System Manager.
+You need to decide whether to install AFX only or AFX along with AI Data Engine. Review the https://docs.netapp.com/us-en/ontap-afx/get-started/learn-about-aide.html#installation-options[AIDE installation options] to help determine the best fit for your needs.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Prepare to administer your cluster
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Install and set up your hardware
+
+[role="quick-margin-para"]
+link:../install-setup/install-setup-workflow.html[Install your AFX storage system] and optionally https://docs.netapp.com/us-en/ai-data-engine/install-setup/install-setup-workflow.html[install the AIDE data compute nodes] if you're also including AIDE as part of the initial configuration.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Set up your cluster
+
+[role="quick-margin-para"]
+Follow the quick and easy process to link:../install-setup/cluster-setup.html[set up] your ONTAP cluster using System Manager. If you're also installing AIDE with the data compute nodes along with AFX, review https://docs.netapp.com/us-en/ai-data-engine/install-setup/cluster-setup-afx.html[Set up AIDE with a new AFX cluster^] for additional required configuration.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Prepare to administer your cluster
 
 [role="quick-margin-para"]
 Before deploying AFX in a production environment, it’s essential to link:../get-started/prepare-cluster-admin.html[prepare] by understanding the administrative structure-including storage virtual machines (SVMs), users, roles, and management interfaces—to ensure secure, efficient, and effective cluster management.

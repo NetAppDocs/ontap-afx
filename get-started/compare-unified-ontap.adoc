@@ -56,8 +56,7 @@ All data replication is supported in both directions between Unified ONTAP and A
 * REST APIs for unsupported features (such as MetroCluster)
 * Some initial limitations on REST APIs for performance statistics
 * AIQ Unified Manager support
-* Grafana Harvest version 25.08.1 and later
-* NetApp Trident version 25.10 and later
+* Grafana Harvest versions prior to 25.08.1
 
 == Changes to the command line interface
 
