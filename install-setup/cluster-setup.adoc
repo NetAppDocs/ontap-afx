@@ -2,16 +2,55 @@
 sidebar: sidebar
 permalink: install-setup/cluster-setup.html
 keywords: afx, afx system, cluster setup, setup
-summary: "After your AFX hardware has been installed, you can complete the cluster setup. This process involves two related configuration phases that you need to perform sequentially."
+summary: "After your AFX hardware has been installed, you can complete the ONTAP cluster setup. This process involves related configuration phases that you should perform sequentially. As part of this, you can optionally add the data compute nodes (DCNs) running the AI Data Engine (AIDE), enabling the AFX storage cluster and DCN cluster to operate as a single system that's managed through the same ONTAP control plane."
 ---
 = Set up your AFX storage system ONTAP cluster
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After your AFX hardware has been installed, you can complete the ONTAP cluster setup. This process involves two related configuration phases that you need to perform sequentially.
+After your AFX hardware has been installed, you can complete the ONTAP cluster setup. This process involves related configuration phases that you should perform sequentially. As part of this, you can optionally add the data compute nodes (DCNs) running the AI Data Engine (AIDE), enabling the AFX storage cluster and DCN cluster to operate as a single system that's managed through the same ONTAP control plane.
 
-// Review: https://docs.netapp.com/us-en/ontap/software_setup/workflow-summary.html
+== Prepare to set up an AFX storage system
+
+Before setting up your ONTAP cluster, you should review the core AFX requirements and additional AIDE considerations to ensure you have all the necessary information and resources to complete the setup process successfully.
+
+=== Core AFX requirements
+
+There are several core requirements to consider when setting up your AFX cluster.
+
+.Hardware installation
+
+Make sure you've completed the hardware installation of your AFX system. For more information, see link:../install-setup/install-setup-workflow.html[Install your AFX system].
+
+.Basic IP addressing
+
+You need the following IP addressing configuration:
+
+* Cluster management IP address
++
+The cluster management IP address is a unique IPv4 address for the cluster management interface used by the cluster administrator to access the admin SVM and manage the cluster. You can obtain this IP address from the administrator responsible for assigning IP addresses in your organization.
+
+* Network subnet mask
++
+During cluster setup, ONTAP requires a set of network interfaces appropriate for your configuration.  You can adjust the recommendation if necessary.
+
+.Additional network configuration
+
+You'll also need the following related networking information:
+
+* Network gateway IP address
+* DNS domain names
+* DNS name server IP addresses
+* NTP server IP addresses
+* Subnet mask
+
+=== Additional AIDE considerations
+
+When installing and setting up AFX for the first time, you can optionally include NetApp AI Data Engine (AIDE). If you plan to set up AIDE, you'll need to first do the following:
+
+* Make sure to https://docs.netapp.com/us-en/ai-data-engine/install-setup/aide-hardware-requirements.html[install AIDE^] and attach the compute nodes to the AFX storage network.
+* Obtain the addresses and any related network configuration for the data compute nodes.
 
 == Perform initial cluster setup
 
@@ -22,24 +61,6 @@ You can connect your laptop device to the AFX cluster and set several global con
 There are four areas of the AFX cluster that must be initially configured. The first three are required while the last one is optional.
 
 .Before you begin
-
-You need to have the following information:
-
-* Cluster management IP address
-+
-The cluster management IP address is a unique IPv4 address for the cluster management interface used by the cluster administrator to access the admin SVM and manage the cluster. You can obtain this IP address from the administrator responsible for assigning IP addresses in your organization.
-
-* Network subnet mask
-+
-During cluster setup, ONTAP requires a set of network interfaces appropriate for your configuration.  You can adjust the recommendation if necessary.
-
-You'll also need the following:
-
-* Network gateway IP address
-* DNS domain names
-* DNS name server IP addresses
-* NTP server IP addresses
-* Subnet mask
 
 .Steps
 
@@ -55,11 +76,13 @@ The System Manager user interface is displayed.
 +
 Provide and verify the password for the `admin` account. Select *Continue*.
 
-. Configure the IP addresses for the cluster and controller nodes.
+. Configure the IP addresses for the AFX cluster and controller nodes.
 +
 Provide IP addresses and the subnet masks.
 
-. Configure the network services. Select *Continue*.
+. If you’re installing AI Data Engine with your AFX storage system, provide the IP addresses for the three AIDE DCN nodes.
+
+. Configure the network services including DNS and NIS. Select *Continue*.
 +
 Define the details for your DNS and NTP servers.
 
@@ -100,9 +123,14 @@ You need to have the following information:
 
 .What's next
 
-You should link:../get-started/prepare-cluster-admin.html[Prepare to administer AFX] before using your AFX cluster in a production environment.
+* If you have included AIDE as part of the AFX cluster setup, you'll need to perform additional configuration steps including licensing and authentication. See https://docs.netapp.com/us-en/ai-data-engine/install-setup/cluster-setup-afx.html[Set up AI Data Engine^] for more information.
 
-.Related information
+* You should link:../get-started/prepare-cluster-admin.html[Prepare to administer AFX] before using your AFX cluster in a production environment.
 
+== Related information
+
+* link:../get-started/learn-about-aide.html[Learn about the NetApp AI Data Engine]
 * link:../administer/configure-svm.html[Configure an AFX SVM]
 * link:../get-started/prepare-cluster-admin.html[Prepare to administer AFX]
+
+// AIDEDOC-7 - March 12, 2026
