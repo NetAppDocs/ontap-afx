@@ -24,7 +24,7 @@ AIDE empowers data engineers and data scientists by providing tools for rapid da
 
 == Installation options
 
-There are two primary options for installing and integrating AIDE with your AFX storage cluster.
+There are two options for installing and integrating AIDE with your AFX storage cluster.
 
 === Set up AFX and AIDE together
 
