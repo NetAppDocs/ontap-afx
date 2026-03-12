@@ -2,14 +2,14 @@
 sidebar: sidebar
 permalink: install-setup/cluster-setup.html
 keywords: afx, afx system, cluster setup, setup
-summary: ""
+summary: "After your AFX hardware has been installed, you can complete the ONTAP cluster setup. This process involves related configuration phases that you should perform sequentially. As part of this, you can optionally add the data compute nodes (DCNs) running the AI Data Engine (AIDE), enabling the AFX storage cluster and DCN cluster to operate as a single system that's managed through the same ONTAP control plane."
 ---
 = Set up your AFX storage system ONTAP cluster
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After your AFX hardware has been installed, you can complete the ONTAP cluster setup. This process involves related configuration phases that you should perform sequentially. As part of this, you can optionally add DX50 data compute nodes (DCNs) running the AI Data Engine (AIDE), enabling the AFX storage cluster and DCN cluster to operate as a single system that's managed through the same ONTAP control plane.
+After your AFX hardware has been installed, you can complete the ONTAP cluster setup. This process involves related configuration phases that you should perform sequentially. As part of this, you can optionally add the data compute nodes (DCNs) running the AI Data Engine (AIDE), enabling the AFX storage cluster and DCN cluster to operate as a single system that's managed through the same ONTAP control plane.
 
 == Prepare to set up an AFX storage system
 
@@ -50,7 +50,7 @@ You'll also need the following related networking information:
 When installing and setting up AFX for the first time, you can optionally include NetApp AI Data Engine (AIDE). If you plan to set up AIDE, you'll need to first do the following:
 
 * Make sure to https://docs.netapp.com/us-en/ai-data-engine/install-setup/aide-hardware-requirements.html[install AIDE^] and attach the compute nodes to the AFX storage network.
-* Obtain the addresses and any related network configuration for the DX50 data compute nodes.
+* Obtain the addresses and any related network configuration for the data compute nodes.
 
 == Perform initial cluster setup
 
@@ -132,3 +132,5 @@ You need to have the following information:
 * link:../get-started/learn-about-aide.html[Learn about the NetApp AI Data Engine]
 * link:../administer/configure-svm.html[Configure an AFX SVM]
 * link:../get-started/prepare-cluster-admin.html[Prepare to administer AFX]
+
+// AIDEDOC-7 - March 12, 2026

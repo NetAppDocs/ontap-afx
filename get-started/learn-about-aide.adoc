@@ -37,6 +37,8 @@ If you already have an AFX storage cluster installed and operational, you can ad
 == Related information
 
 * https://docs.netapp.com/us-en/ai-data-engine/get-started/learn-about.html[Learn about AI Data Engine^]
-* https://docs.netapp.com/us-en/ai-data-engin/faq-aide.html[FAQ for NetApp AI Data Engine^]
+* https://docs.netapp.com/us-en/ai-data-engine/faq-aide.html[FAQ for NetApp AI Data Engine^]
 * https://docs.netapp.com/us-en/ai-data-engine/install-setup/cluster-setup-afx.html[Set up your ONTAP AIDE cluster^]
 * https://www.netapp.com/data-services/ai-data-engine/[NetApp AI Data Engine^]
+
+// AIDEDOC-7 - March 12, 2026
