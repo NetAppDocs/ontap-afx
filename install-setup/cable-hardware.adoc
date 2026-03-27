@@ -108,21 +108,13 @@ Ensure you have the correct cables and connectors for your switches. See https:/
 * Controller A
 ** e1a (HA)
 ** e7a (Cluster)
+** e10a (Storage)
+** e11a (Storage)
 * Controller B
 ** e1a (HA)
 ** e7a (Cluster)
-+
-*100GbE cables*
-+
-image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
-
-. Connect the following storage ports to any non-ISL port on switch A.
-* Controller A
-** e10a
-** e11a
-* Controller B
-** e10a
-** e11a 
+** e10a (Storage)
+** e11a (Storage)
 +
 *100GbE cables*
 +
@@ -139,21 +131,13 @@ Ensure you have the correct cables and connectors for your switches. See https:/
 * Controller A
 ** e1b (HA)
 ** e7b (Cluster)
+** e10b (Storage)
+** e11b (Storage)
 * Controller B
 ** e1b (HA)
 ** e7b (Cluster)
-+
-*100GbE cables*
-+
-image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
-
-. Connect the following storage ports to any non-ISL port on switch B.
-* Controller A
-** e10b
-** e11b
-* Controller B
-** e10b
-** e11b 
+** e10b (Storage)
+** e11b (Storage)
 +
 *100GbE cables*
 +
