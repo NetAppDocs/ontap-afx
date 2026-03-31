@@ -23,7 +23,7 @@ Learn about the new capabilities included with ONTAP 9.19.1 that are available w
 | Description
 
 | ARP/AI support for eligible SnapMirror primary volumes
-a| Beginning in ONTAP 9.19.1 RC, ARP/AI supports eligible primary volumes in SnapMirror Synchronous relationships on supported AFX configurations. ARP/AI runs on the active read-write primary volume, creates primary-only ARP snapshots, and provides machine-learning-based ransomware detection.
+a| Beginning in ONTAP 9.19.1 RC, ARP/AI supports eligible primary volumes in SnapMirror synchronous relationships with AFX systems. ARP/AI runs on the active read-write primary volume, creates primary-only ARP snapshots, and provides machine-learning-based ransomware detection.
 
 // table end
 |===
