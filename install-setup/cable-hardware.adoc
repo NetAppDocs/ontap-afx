@@ -47,16 +47,14 @@ All "a" ports connect to switch A, and all "b" ports connect to switch B.
 NOTE: Cisco Nexus 9332D-GX2B and 9364D-GX2A switch configurations to the AFX 1K storage system require 4x100GbE breakout cable connections.
 
 == Step 1: Connect the controllers to the management network
-Connect the management port on each switch to either of the management switches (if ordered) or connect them directly to your management network.
-
-The management port is the upper-right port located on the PSU side of the switch. The CAT6 cable for each switch needs to be routed through the pass-through panel after the switches are installed to connect to the management switches or management network.
+Connect the management (wrench) port on each controlller to either of the management switches or connect them directly to your management network.
 
 Use the 1000BASE-T RJ-45 cables to connect the management (wrench) ports on each controller to the management network switches.
 
 image::../media/oie_cable_rj45.png[RJ-45 cables,width=100px]
 *1000BASE-T RJ-45 cables*
 
-image::../media/drw_afx_management_connection_ieops-2349.svg[Connect to your management network]
+image::../media/drw_afx_management_connection_ieops-2815.svg[Connect to your management network]
 
 IMPORTANT: Do not plug in the power cords yet. 
 
@@ -70,10 +68,7 @@ This procedure may differ depending on your I/O module configuration. The follow
 .Steps
 
 . Connect the following ports to your Ethernet data network switch A.
-* Controller A (Example)
-** e2a
-** e3a
-* Controller B (Example)
+* Controller (Example)
 ** e2a
 ** e3a
 +
@@ -81,13 +76,10 @@ This procedure may differ depending on your I/O module configuration. The follow
 +
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb Ethernet cable]
 +
-image::../media/drw_afx_network_cabling_a_ieops-2350.svg[Cable to Ethernet network]
+image::../media/drw_afx_network_cabling_a_ieops-2813.svg[Cable to Ethernet network]
 
 . Connect the following ports to your Ethernet data network switch B.
-* Controller A (Example)
-** e2b
-** e3b
-* Controller B (Example)
+* Controller (Example)
 ** e2b
 ** e3b
 +
@@ -95,7 +87,7 @@ image::../media/drw_afx_network_cabling_a_ieops-2350.svg[Cable to Ethernet netwo
 +
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb Ethernet cable]
 +
-image::../media/drw_afx_network_cabling_b_ieops-2351.svg[Cable to Ethernet network]
+image::../media/drw_afx_network_cabling_b_ieops-2814.svg[Cable to Ethernet network]
 
 == Step 3: Cable the cluster, HA, and storage connections to Switch A
 Use the 4x100GbE breakout cable to connect the cluster, HA, and storage ports on the controllers to network switch A. Cluster and HA interconnect cable to connect ports e1a and e7a to switch A. The e1a ports are used for the HA connections, and the e7a ports are used for the cluster connections. For the storage connections, connect ports e10a and e11a to switch A.
@@ -105,12 +97,7 @@ Ensure you have the correct cables and connectors for your switches. See https:/
 .Steps
 
 . Connect the following controller ports to any non-ISL port on the network switch A.
-* Controller A
-** e1a (HA)
-** e7a (Cluster)
-** e10a (Storage)
-** e11a (Storage)
-* Controller B
+* Controller
 ** e1a (HA)
 ** e7a (Cluster)
 ** e10a (Storage)
@@ -128,12 +115,7 @@ Use the 4x100GbE breakout cable to connect the cluster, HA, and storage ports on
 Ensure you have the correct cables and connectors for your switches. See https://hwu.netapp.com[Hardware Universe^] for more information.
 
 . Connect the following controller ports to any non-ISL port on the network switch B.
-* Controller A
-** e1b (HA)
-** e7b (Cluster)
-** e10b (Storage)
-** e11b (Storage)
-* Controller B
+* Controller
 ** e1b (HA)
 ** e7b (Cluster)
 ** e10b (Storage)
