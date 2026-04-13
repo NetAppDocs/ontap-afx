@@ -16,6 +16,20 @@ Learn about the new capabilities included with ONTAP 9.19.1 that are available w
 
 * Learn about https://docs.netapp.com/us-en/ai-data-engine/release-notes/whats-new.html[new and enhanced support for AI Data Engine^].
 
+== Security
+
+[cols="2,4" options="header"]
+|===
+// header row
+| Update
+| Description
+
+| link:../administer/additional-ontap-cluster.html[Support for TLS hardware offload]
+a| You can offload Transport Layer Security (TLS) encryption and decryption for your entire cluster to supported Ethernet cards.  This reduces CPU overhead and improves performance for systems using TLS.
+
+// table end
+|===
+
 == Upgrade
 
 [cols="2,4" options="header"]
@@ -34,4 +48,4 @@ a| When executing automated pre-upgrade checks, errors and warning are displayed
 
 * https://docs.netapp.com/us-en/ontap/release-notes/index.html[ONTAP 9 release highlights^]
 
-// 2026 May 07, ONTAPDOC-3603
+// 2026 May 07, ONTAPDOC-3603, ONTAPDOC-3501
