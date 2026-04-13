@@ -30,6 +30,21 @@ a| You can offload Transport Layer Security (TLS) encryption and decryption for 
 // table end
 |===
 
+== Storage management
+
+[cols="2,4" options="header"]
+|===
+// header row
+| Update
+| Description
+
+| link:../administer/additional-ontap-cluster.html[System Manager support for storage availability zone capacity details.]
+a| You can view your storage availability zone capacity details including space thresholds, space consumed by snapshots, and data reduction in System Manager. You can also set space usage thresholds to the percentage at which you want ONTAP to generate warning and critical alerts.
+
+// table end
+|===
+
+
 == Upgrade
 
 [cols="2,4" options="header"]
@@ -48,4 +63,4 @@ a| When executing automated pre-upgrade checks, errors and warning are displayed
 
 * https://docs.netapp.com/us-en/ontap/release-notes/index.html[ONTAP 9 release highlights^]
 
-// 2026 May 07, ONTAPDOC-3603, ONTAPDOC-3501
+// 2026 May 07, ONTAPDOC-3603, ONTAPDOC-3501, ONTAPDOC-3614
