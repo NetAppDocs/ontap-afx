@@ -38,7 +38,7 @@ a| You can offload Transport Layer Security (TLS) encryption and decryption for 
 | Update
 | Description
 
-| link:../administer/additional-ontap-cluster.html[System Manager support for storage availability zone capacity details.]
+| link:../administer/monitor-cluster-performance.html[System Manager support for storage availability zone capacity details.]
 a| You can view your storage availability zone capacity details including space thresholds, space consumed by snapshots, and data reduction in System Manager. You can also set space usage thresholds to the percentage at which you want ONTAP to generate warning and critical alerts.
 
 // table end
