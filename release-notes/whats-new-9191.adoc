@@ -30,7 +30,7 @@ a| You can offload Transport Layer Security (TLS) encryption and decryption for 
 // table end
 |===
 
-== Storage management
+== Storage resource management
 
 [cols="2,4" options="header"]
 |===
@@ -41,9 +41,10 @@ a| You can offload Transport Layer Security (TLS) encryption and decryption for 
 | link:../administer/monitor-cluster-performance.html[System Manager support for storage availability zone capacity details.]
 a| You can view your storage availability zone capacity details including space thresholds, space consumed by snapshots, and data reduction in System Manager. You can also set space usage thresholds to the percentage at which you want ONTAP to generate warning and critical alerts.
 
+| link:../administer/additional-ontap-cluster.html[Support for modifying default settings that control automatic QoS throughput ceiling increases]
+a| You can modify the default settings that control how QoS policy groups automatically increase the QoS throughput ceiling in response to short-term needs for higher performance. These settings cannot be modified in ONTAP 9.18.1 and earlier.
 // table end
 |===
-
 
 == Upgrade
 
@@ -63,4 +64,4 @@ a| When executing automated pre-upgrade checks, errors and warning are displayed
 
 * https://docs.netapp.com/us-en/ontap/release-notes/index.html[ONTAP 9 release highlights^]
 
-// 2026 May 07, ONTAPDOC-3603, ONTAPDOC-3501, ONTAPDOC-3614
+// 2026 May 07, ONTAPDOC-3603, ONTAPDOC-3501, ONTAPDOC-3614, ONTAPDOC-3680
