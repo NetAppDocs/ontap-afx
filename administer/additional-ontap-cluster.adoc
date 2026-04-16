@@ -35,6 +35,19 @@ You can install license files to activate additional features as needed for your
 . Select image:icon_add_blue_bg.png[blue rectangle containing a plus sign followed by the word add in white letters].
 . Select a local license file and select *Add*.
 
+== Performance
+
+Use common ONTAP features to optimize the performance of your AFX storage system cluster.
+
+=== Modify default settings that control automatic QoS throughput ceiling increases
+
+A QoS maximum or throughput ceiling limits throughput for a workload to a maximum number of IOPS or MBs per second, or IOPS and MBs per second. Set a throughput ceiling on a workload to limit its impact on system resources and prevent it from negatively affecting more critical workloads. 
+
+You can modify the default settings that control how QoS policy groups automatically increase the QoS throughput ceiling in response to short-term needs for higher performance. These settings cannot be modified in ONTAP 9.18.1 and earlier. Adaptive and non-adaptive QoS policy groups are automatically enabled to temporarily increase a workload’s throughput ceiling by 50% for a duration of 1 second to respond to short-term demands for higher performance by default. Beginning with ONTAP 9.19.1, you can modify these default settings.  In ONTAP 9.18.1 and earlier these settings cannot be changed.
+
+Learn more about link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html[QoS throughput ceilings^].
+
+
 == Security
 
 There are several optional security features you can configure and use with your AFX deployment.
@@ -46,6 +59,9 @@ It's important to protect the security and priacy of your AFX storage system. Re
 === ONTAP authentication and access control
 
 The AFX storage system provides several options for configuring authentication and access control services. Refer to https://docs.netapp.com/us-en/ontap/authentication-access-control/index.html[Authentication and access control^] for more information.
+
+=== ONTAP TLS hardware offload
+You can offload Transport Layer Security (TLS) encryption and decryption for your entire cluster to supported Ethernet cards.  This reduces CPU overhead and improves performance for systems using TLS. Refer to https://docs.netapp.com/us-en/ontap/networking/configure-tls-offload.html[Configure ONTAP TLS hardware offload^] for more information.
 
 === Administer OAuth 2.0 on an AFX system
 
@@ -65,3 +81,5 @@ OAuth 2.0 is the industry standard authorization framework used to restrict and 
 * https://kb.netapp.com/nss/Licensing/How_to_download_NLF_licenses_from_the_NetApp_Support_Site[How to download NLF licenses from the NetApp Support Site^]
 * https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html[Overview of the ONTAP OAuth 2.0 implementation^]
 * link:../administer/additional-ontap-svm.html[Additional administration for AFX SVMs]
+
+// 2026 May 07, ONTAPDOC-3500, ONTAPDOC-3679
