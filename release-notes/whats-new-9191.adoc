@@ -15,6 +15,12 @@ summary: "Learn about the new capabilities included with ONTAP 9.19.1 that are a
 Learn about the new capabilities included with ONTAP 9.19.1 that are available with your AFX storage system.
 
 [TIP]
-Learn about https://docs.netapp.com/us-en/ai-data-engine/release-notes/whats-new.html[new and enhanced support for AI Data Engine^].
+Learn about the new and enhanced support for https://docs.netapp.com/us-en/ai-data-engine/release-notes/whats-new.html[AI Data Engine^].
 
 == xxx
+
+xxx
+
+>> Performance and scale
+
+xxx
