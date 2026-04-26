@@ -17,10 +17,40 @@ Learn about the new capabilities included with ONTAP 9.19.1 that are available w
 [TIP]
 Learn about the new and enhanced support for https://docs.netapp.com/us-en/ai-data-engine/release-notes/whats-new.html[AI Data Engine^].
 
-== xxx
+== Performance and scale
 
-xxx
+[cols="2,4" options="header"]
+|===
+// header row
+| Update
+| Description
 
->> Performance and scale
+| Expanded AFX cluster size
+a| You can now increase the maximum number of nodes in an AFX cluster from 24 to 32 for the 9.19.1 RC release. This allows you to scale your AFX storage system to meet the growing demands of your workloads and applications.
 
-xxx
+| Increased FlexGroup size
+a| XXX
+
+| Cross File Sequential Read (CFSR)
+a| Cross File Sequential Read provides a significant performance enhancement for certain media and entertainment workloads. The feature prefetches sequential video frames to dramatically improve throughput and reduce latency for video editing applications.
+
+// table end
+|===
+
+== REST API
+
+[cols="2,4" options="header"]
+|===
+// header row
+| Update
+| Description
+
+| Balanced Placement Trident API
+a| The Balanced Placement Trident API integration feature adds fields currently available in the `/storage/volumes` REST API endpoint to the '/applications/containers` endpoint. This enhancement enables customers using NetApp Trident for Kubernetes storage orchestration to create volumes with ONTAP's native Balanced Placement capabilities.
+
+// table end
+|===
+
+.Related information
+
+* https://docs.netapp.com/us-en/ontap/release-notes/index.html[ONTAP 9 release highlights^]
