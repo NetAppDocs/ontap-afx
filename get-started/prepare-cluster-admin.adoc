@@ -108,10 +108,10 @@ With AFX, a new HA VLAN is added to the backend cluster switches to enable NVRAM
 
 == AFX cluster deployment limitations
 
-There are several limitations, including minimums and maximums, enforced by AFX when configuring and using your cluster. These limits fall into several categories including:
+There are several limitations, including minimums and maximums, enforced by AFX when configuring and using your cluster. These limits fall into several categories.
 
 Controller nodes per cluster::
-Each AFX cluster must have at least four nodes. The maximum number of nodes varies based on the ONTAP release; for example the 9.19.1 RC release allows up to 32 nodes in an AFX cluster.
+Each AFX cluster must have at least four nodes. The maximum number of nodes varies based on the ONTAP release; for example the 9.19.1 RC release allows up to 32 nodes per AFX cluster.
 
 Storage capacity::
 This is the total capacity across all the SSD disks in the cluster Storage Availability Zone (SAZ). The maximum storage capacity varies based on the ONTAP release.

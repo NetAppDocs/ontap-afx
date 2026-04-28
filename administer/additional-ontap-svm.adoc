@@ -42,6 +42,18 @@ A consistency group is a collection of volumes that are managed as a single unit
 
 You can protect your files by converting them to a write once read many (WORM) state at a volume level. SnapLock supports two modes. Compliance mode ensures the files cannot be deleted until their retention period expires which addresses government or industry-specific mandates. Enterprise mode allows privileged users to delete files before their retention period expires. Refer to https://docs.netapp.com/us-en/ontap/snaplock/index.html[Learn about ONTAP SnapLock^] for more information.
 
+== Storage efficiency
+
+ONTAP provides several storage efficiency features that can help you optimize your storage usage and reduce costs.
+
+=== Global deduplication
+
+https://docs.netapp.com/us-en/ontap/concepts/deduplication-concept.html[Deduplication^] is an https://docs.netapp.com/us-en/ontap/volumes/deduplication-data-compression-efficiency-concept.html[ONTAP storage efficiency^] feature that reduces physical storage requirements by identifying and sharing duplicate data blocks. Traditional deduplication operates at either a volume or aggregate level. This existing capability provides significant storage efficiency for customers across all ONTAP platforms.
+
+With ONTAP 9.19.1, AFX introduces a new operational scope by extending deduplication to the entire Storage Availability Zone (SAZ). Global dedupe builds on volume-level deduplication by automatically identifying and eliminating duplicate blocks across the volumes throughout the SAZ. Global deduplication sessions are triggered when cross-volume change logs accumulate to 1% of the FlexAggregate nominal size which ensures optimal savings without manual intervention.
+
+The global deduplication feature is enabled by default on AFX A1K systems and operates transparently in the background with minimal performance impact. No feature license is required and the feature integrates seamlessly with existing storage efficiency technologies including compression and compaction. The savings achieved through global deduplication are reported as part of the total storage efficiency metrics. This enhancement is particularly beneficial for certain types of workloads where data is frequently shared or replicated across multiple volumes.
+
 == Security
 
 There are several optional security features you can configure and use with your AFX deployment.

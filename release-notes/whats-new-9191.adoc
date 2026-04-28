@@ -35,9 +35,7 @@ a| You can now increase the maximum size of a FlexGroup volume, allowing you to 
 a| Cross File Sequential Read can significantly improve read performance for certain media and entertainment workloads. The feature intelligently prefetches sequential video frames to dramatically improve throughput and reduce latency for video editing applications. Review link:../administer/additional-ontap-svm.html[Additional administration for an AFX storage system SVM^] for more information.
 
 | Global deduplication
-a| xxx
-
-Review link:../administer/additional-ontap-svm.html[Additional administration for an AFX storage system SVM^] for more information.
+a| Global deduplication extends the existing ONTAP aggregate-level deduplication to the entire Storage Availability Zone (SAZ). It enables the identification and elimination of duplicate data blocks across all volumes within the SAZ, significantly improving storage efficiency and reducing total cost of ownership. Global dedupe is enabled by default on AFX systems and operates transparently without requiring configuration changes or administrative intervention. Review link:../administer/additional-ontap-svm.html[Additional administration for an AFX storage system SVM^] for more information.
 
 // table end
 |===
