@@ -52,7 +52,7 @@ https://docs.netapp.com/us-en/ontap/concepts/deduplication-concept.html[Deduplic
 
 With ONTAP 9.19.1, AFX introduces a new operational scope by extending deduplication to the entire Storage Availability Zone (SAZ). Global dedupe builds on volume-level deduplication by automatically identifying and eliminating duplicate blocks across the volumes throughout the SAZ. Global deduplication sessions are triggered when cross-volume change logs accumulate to 1% of the FlexAggregate nominal size which ensures optimal savings without manual intervention.
 
-The global deduplication feature is enabled by default on AFX A1K systems and operates transparently in the background with minimal performance impact. No feature license is required and the feature integrates seamlessly with existing storage efficiency technologies including compression and compaction. The savings achieved through global deduplication are reported as part of the total storage efficiency metrics. This enhancement is particularly beneficial for certain types of workloads where data is frequently shared or replicated across multiple volumes.
+Global dedupe is enabled by default on AFX A1K systems and operates transparently in the background with minimal performance impact. No feature license is required and the feature integrates seamlessly with existing storage efficiency technologies including compression and compaction. The savings achieved through global deduplication are reported through the storage efficiency metrics. This feature can be particularly beneficial for application workloads where data is frequently shared or replicated across multiple volumes.
 
 == Security
 
