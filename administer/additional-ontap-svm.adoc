@@ -38,13 +38,13 @@ CFSR is enabled by default on AFX systems running ONTAP 9.19.1 or later, but mus
 
 The CFSR feature is supported exclusively on AFX (AFF-A1K) hardware. It's not available or supported in the following environments:
 
-++ Other ONTAP platforms (Unified or ASA r2)
-++ Cloud deployments (such as CVO, FSx, ANF, GCNV)
-++ FabricPool-enabled volumes
-++ FlexCache endpoint volumes
-++ SnapMirror destination volumes
+* Other ONTAP platforms (Unified or ASA r2)
+* Cloud deployments (such as CVO, FSx, ANF, GCNV)
+* FabricPool-enabled volumes
+* FlexCache endpoint volumes
+* SnapMirror destination volumes
 
-CFSR can operate using FlexGroup volumes with GDD enabled or disabled. However, because video frame files are typically 50-250MB (maximum 800MB for higher resolution) and GDD's minimum segment size is 1GB, GDD does not stripe these files effectively across FlexGroup constituents. This means GDD has minimal direct impact on CFSR's file prefetching behavior.
+CFSR can operate using FlexGroup volumes with GDD enabled or disabled. However because video frame files are typically much smaller than GDD's minimum segment size, GDD does not stripe these files effectively across FlexGroup constituents. This means GDD has minimal direct impact on CFSR's file prefetching behavior.
 
 == Data protection
 
