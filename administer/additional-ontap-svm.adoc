@@ -30,6 +30,22 @@ FlexCache is an ONTAP remote caching feature. It brings data closer to clients w
 
 A FlexGroup volume consists of several member volumes that share the traffic automatically and transparently. FlexGroup volumes offer several benefits, including high performance and simplified management. Refer to https://docs.netapp.com/us-en/ontap/flexgroup/creation-workflow-task.html[FlexGroup volume setup^] for more information.
 
+=== Cross File Sequential Read
+
+Cross File Sequential Read (CFSR) is a feature available beginning with ONTAP 9.19.1 that improves the performance of video editing and related applications. With workflows that store video frames as individual sequential files, typically 50-250MB each, CFSR intelligently predicts and prefetches the next files based on sequential filename patterns. Up to 10 files or 500MB of data can be prefetched, significantly reducing read latency and ensuring smooth playback of 4K/8K raw video at 30 frames per second.
+
+CFSR is enabled by default on AFX systems running ONTAP 9.19.1 or later, but must be explicitly configured on the individual volumes. Storage administrators can enable the feature using the CLI `volume modify` command or equivalent REST API call. It's compatible with both FlexVol and FlexGroup volumes and is file-extension agnostic, supporting decimal and hexadecimal filename numbering schemes. For NFSv4.x protocols, CFSR integrates with Multi-Protocol I/O (MPIO) read capabilities to further enhance performance by serving subsequent reads directly from memory.
+
+The CFSR feature is supported exclusively on AFX (AFF-A1K) hardware. It's not available or supported in the following environments:
+
+++ Other ONTAP platforms (Unified or ASA r2)
+++ Cloud deployments (such as CVO, FSx, ANF, GCNV)
+++ FabricPool-enabled volumes
+++ FlexCache endpoint volumes
+++ SnapMirror destination volumes
+
+CFSR can operate using FlexGroup volumes with GDD enabled or disabled. However, because video frame files are typically 50-250MB (maximum 800MB for higher resolution) and GDD's minimum segment size is 1GB, GDD does not stripe these files effectively across FlexGroup constituents. This means GDD has minimal direct impact on CFSR's file prefetching behavior.
+
 == Data protection
 
 There are several optional data protection features you can configure and use with your AFX deployment.
