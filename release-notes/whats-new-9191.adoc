@@ -29,10 +29,15 @@ Learn about the new and enhanced support for https://docs.netapp.com/us-en/ai-da
 a| You can now increase the maximum number of nodes in an AFX cluster from 24 to 32 for the 9.19.1 RC release. This allows you to scale your AFX storage system to meet the growing demands of your workloads and applications.
 
 | Increased FlexGroup size
-a| XXX
+a| You can now increase the maximum size of a FlexGroup volume, allowing you to store and manage larger datasets more efficiently.
 
 | Cross File Sequential Read (CFSR)
-a| Cross File Sequential Read provides a significant performance enhancement for certain media and entertainment workloads. The feature prefetches sequential video frames to dramatically improve throughput and reduce latency for video editing applications.
+a| Cross File Sequential Read can significantly improve read performance for certain media and entertainment workloads. The feature intelligently prefetches sequential video frames to dramatically improve throughput and reduce latency for video editing applications. Review link:../administer/additional-ontap-svm.html[Additional administration for an AFX storage system SVM^] for more information.
+
+| Global deduplication
+a| xxx
+
+Review link:../administer/additional-ontap-svm.html[Additional administration for an AFX storage system SVM^] for more information.
 
 // table end
 |===
@@ -46,7 +51,7 @@ a| Cross File Sequential Read provides a significant performance enhancement for
 | Description
 
 | Balanced Placement Trident API
-a| The Balanced Placement Trident API integration feature adds fields currently available in the `/storage/volumes` REST API endpoint to the '/applications/containers` endpoint. This enhancement enables customers using NetApp Trident for Kubernetes storage orchestration to create volumes with ONTAP's native Balanced Placement capabilities.
+a| The Balanced Placement Trident API integration feature adds parameters currently available in the `/storage/volumes` REST API endpoint to the '/applications/containers` endpoint. This enhancement enables customers using NetApp Trident for Kubernetes storage orchestration to create volumes with ONTAP's native Balanced Placement capability.
 
 // table end
 |===
