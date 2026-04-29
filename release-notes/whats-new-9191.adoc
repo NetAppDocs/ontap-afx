@@ -35,7 +35,7 @@ a| You can now increase the maximum size of a FlexGroup volume, allowing you to 
 a| Cross File Sequential Read can significantly improve read performance for certain media and entertainment workloads. The feature intelligently prefetches sequential video frames to dramatically improve throughput and reduce latency for video editing applications. Review link:../administer/additional-ontap-svm.html[Additional administration for an AFX storage system SVM] for more information.
 
 | Global deduplication
-a| Global deduplication extends the existing ONTAP deduplication space savings to the entire Storage Availability Zone (SAZ). By eliminating duplicate data blocks across all the volumes in the SAZ, it can significantly improve storage efficiency and reduce total cost of ownership. The feature is enabled by default on AFX systems and operates transparently without the need for administrative configuration. Refer to link:../administer/additional-ontap-svm.html[Additional administration for an AFX storage system SVM] for more information.
+a| Global deduplication extends ONTAP deduplication space savings to the entire Storage Availability Zone (SAZ). By eliminating duplicate data blocks across all the volumes in the SAZ, it can significantly improve storage efficiency and reduce total cost of ownership. The feature is enabled by default on AFX systems and operates transparently without the need for administrative configuration. Refer to link:../administer/additional-ontap-svm.html[Additional administration for an AFX storage system SVM] for more information.
 
 // table end
 |===
@@ -48,7 +48,7 @@ a| Global deduplication extends the existing ONTAP deduplication space savings t
 | Update
 | Description
 
-| Balanced placement enhancements for Kubernetes storage orchestration
+| Balanced placement enhancement for Kubernetes storage orchestration
 a| ONTAP 9.19.1 adds parameters currently available in the `/storage/volumes` REST API endpoint to the `/applications/containers` endpoint. This enhancement enables customers using NetApp Trident for Kubernetes storage orchestration to create volumes with https://docs.netapp.com/us-en/ontap/flexgroup/provision-automatically-task.html[ONTAP's native placement capability^].
 
 // table end

@@ -24,7 +24,7 @@ Network Attached Storage (NAS) provides dedicated file storage which can be acce
 
 === ONTAP FlexCache volumes
 
-FlexCache is an ONTAP remote caching feature. It brings data closer to clients which improves access performance and reduces costs. Creating a FlexCache volume, which initially copies only the metadata from the origin file system, simplifies file distribution and reduces WAN traffic. Learn more about https://docs.netapp.com/us-en/ontap/flexcache/index.html[Learn about ONTAP FlexCache volumes^].
+FlexCache is an ONTAP remote caching feature. It brings data closer to clients which improves access performance and reduces costs. Creating a FlexCache volume, which initially copies only the metadata from the origin file system, simplifies file distribution and reduces WAN traffic. Learn more about https://docs.netapp.com/us-en/ontap/flexcache/index.html[ONTAP FlexCache volumes^].
 
 === ONTAP FlexGroup volumes
 
@@ -36,7 +36,7 @@ Cross File Sequential Read (CFSR) is a feature available on AFX systems beginnin
 
 CFSR is enabled by default on AFX systems running ONTAP 9.19.1 or later, but must be explicitly configured on the individual volumes. Storage administrators can enable the feature using the CLI or equivalent REST API call. It's compatible with both FlexVol and FlexGroup volumes and is file-extension agnostic, supporting decimal and hexadecimal filename numbering schemes. For NFSv4.x protocols, CFSR integrates with Multi-Protocol I/O (MPIO) read capabilities to further enhance performance by serving subsequent reads directly from memory.
 
-The CFSR feature is available exclusively on AFX. It's not supported for the following volume configurations:
+The CFSR feature is available exclusively on AFX systems, with limitations on the volumes supported. It's not supported with the following volume types:
 
 * FabricPool-enabled volumes
 * FlexCache endpoint volumes
@@ -52,11 +52,11 @@ There are several optional data protection features you can configure and use wi
 
 === Consistency groups
 
-A consistency group is a collection of volumes that are managed as a single unit. Learn more about https://docs.netapp.com/us-en/ontap/consistency-groups/index.html[Learn about ONTAP consistency groups^].
+A consistency group is a collection of volumes that are managed as a single unit. Learn more about https://docs.netapp.com/us-en/ontap/consistency-groups/index.html[ONTAP consistency groups^].
 
 === SnapLock
 
-You can protect your files by converting them to a write once read many (WORM) state at a volume level. SnapLock supports two modes. Compliance mode ensures the files cannot be deleted until their retention period expires which addresses government or industry-specific mandates. Enterprise mode allows privileged users to delete files before their retention period expires. Learn more about https://docs.netapp.com/us-en/ontap/snaplock/index.html[Learn about ONTAP SnapLock^].
+You can protect your files by converting them to a write once read many (WORM) state at a volume level. SnapLock supports two modes. Compliance mode ensures the files cannot be deleted until their retention period expires which addresses government or industry-specific mandates. Enterprise mode allows privileged users to delete files before their retention period expires. Learn more about https://docs.netapp.com/us-en/ontap/snaplock/index.html[ONTAP SnapLock^].
 
 == Storage efficiency
 
@@ -76,7 +76,7 @@ There are several optional security features you can configure and use with your
 
 === FPolicy
 
-FPolicy is a file access notification framework used to monitor and manage file access events on storage virtual machines (SVMs). You can use FPolicy to create policies that define which file operations to monitor, and optionally block, based on criteria you define. FPolicy is commonly used for security auditing, compliance, and data governance. Learn more about https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[Learn about ONTAP FPolicy solutions^].
+FPolicy is a file access notification framework used to monitor and manage file access events on storage virtual machines (SVMs). You can use FPolicy to create policies that define which file operations to monitor, and optionally block, based on criteria you define. FPolicy is commonly used for security auditing, compliance, and data governance. Learn more about https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[ONTAP FPolicy solutions^].
 
 == ONTAP event and performance monitoring
 
