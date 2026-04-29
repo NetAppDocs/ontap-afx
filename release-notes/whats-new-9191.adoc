@@ -49,7 +49,7 @@ a| Global deduplication extends ONTAP deduplication space savings to the entire 
 | Description
 
 | Balanced placement enhancement for Kubernetes storage orchestration
-a| ONTAP 9.19.1 adds parameters currently available in the `/storage/volumes` REST API endpoint to the `/applications/containers` endpoint. This enhancement enables customers using NetApp Trident for Kubernetes storage orchestration to create volumes with https://docs.netapp.com/us-en/ontap/flexgroup/provision-automatically-task.html[ONTAP's native placement capability^].
+a| ONTAP 9.19.1 adds six parameters currently available in the `/storage/volumes` REST API endpoint to the `/applications/containers` endpoint. This enhancement enables customers using NetApp Trident for Kubernetes storage orchestration to create volumes with https://docs.netapp.com/us-en/ontap/flexgroup/provision-automatically-task.html[ONTAP's native placement capability^].
 
 // table end
 |===

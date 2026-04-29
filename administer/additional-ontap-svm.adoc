@@ -32,19 +32,28 @@ A FlexGroup volume consists of several member volumes that share the traffic aut
 
 === Cross File Sequential Read
 
-Cross File Sequential Read (CFSR) is a feature available on AFX systems beginning with ONTAP 9.19.1 that improves the performance of video editing and related applications. With workflows that store video frames as individual sequential files, typically 50 to 250 MB each, CFSR intelligently predicts and prefetches the next files based on sequential filename patterns. Up to 10 files or 500 MB of data can be prefetched, significantly reducing read latency and ensuring smooth playback of 4K/8K raw video at 30 frames per second.
+Cross File Sequential Read (CFSR) is a feature available on AFX systems beginning with ONTAP 9.19.1 that improves the performance of video editing and related applications. For workflows that store video frames as individual sequential files, typically 50 to 250 MB each, CFSR intelligently predicts and prefetches the next files based on sequential filename patterns. Up to 10 files or 500 MB of data can be prefetched, significantly reducing read latency and ensuring smooth playback of 4K/8K raw video at 30 frames per second.
 
-CFSR is enabled by default on AFX systems running ONTAP 9.19.1 or later, but must be explicitly configured on the individual volumes. Storage administrators can enable the feature using the CLI or equivalent REST API call. It's compatible with both FlexVol and FlexGroup volumes and is file-extension agnostic, supporting decimal and hexadecimal filename numbering schemes. For NFSv4.x protocols, CFSR integrates with Multi-Protocol I/O (MPIO) read capabilities to further enhance performance by serving subsequent reads directly from memory.
+CFSR is enabled by default on AFX systems running ONTAP 9.19.1 or later, but you need to explicitly enable it on the individual volumes. Storage administrators can configure the feature using the CLI or equivalent REST API call. With the CLI, you can update an existing volume with the following command:
++
+`volume modify -volume <volume_name> -aggressive-readahead-mode [cross_file_sequential_read|none]`
 
-The CFSR feature is available exclusively on AFX systems, with limitations on the volumes supported. It's not supported with the following volume types:
+Here's an example that enables the feature for a specific volume (myvolume) and displays the status:
++
+[source,bash]
+----
+volume modify -volume myvolume -aggressive-readahead-mode cross_file_sequential_read
+
+volume show -volume myvolume -fields aggressive-readahead-mode
+----
+
+The CFSR feature is compatible with both FlexVol and FlexGroup volumes and is file-extension agnostic, supporting decimal and hexadecimal filename numbering schemes. For NFSv4.x protocols, CFSR integrates with Multi-Protocol I/O (MPIO) read capabilities to further enhance performance by serving subsequent reads directly from memory. CFSR is available exclusively on AFX systems, with limitations on the volumes supported. It's not supported with the following volume types:
 
 * FabricPool-enabled volumes
 * FlexCache endpoint volumes
 * SnapMirror destination volumes
 
-CFSR is not supported on any other ONTAP platforms (FAS, AFF, or ASA) or in cloud deployments. such as Cloud Volumes ONTAP.
-
-CFSR can operate using FlexGroup volumes with GDD enabled or disabled. However, because video frame files are typically much smaller than GDD's minimum segment size, GDD does not stripe these files effectively across FlexGroup constituents. This means GDD has minimal direct impact on CFSR's file prefetching behavior.
+CFSR is not supported on any other ONTAP platforms (FAS, AFF, or ASA) or in cloud deployments. such as Cloud Volumes ONTAP. It can operate using FlexGroup volumes with GDD enabled or disabled. However, because video frame files are typically much smaller than GDD's minimum segment size, GDD does not stripe these files effectively across FlexGroup constituents. This means GDD has minimal direct impact on CFSR's file prefetching behavior.
 
 == Data protection
 
