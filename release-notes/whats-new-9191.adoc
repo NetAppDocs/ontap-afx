@@ -26,7 +26,7 @@ Learn about the new and enhanced support for https://docs.netapp.com/us-en/ai-da
 | Description
 
 | Expanded AFX cluster size
-a| You can now increase the maximum number of nodes in an AFX cluster from 24 to 32 for the 9.19.1 RC release. This allows you to scale your AFX storage system to meet the growing demands of your workloads and applications.
+a| ONTAP 9.19.1 supports the expansion of an AFX cluster to a maximum of 32 nodes. This allows you to scale your AFX storage system to meet the growing demands of your workloads and applications.
 
 | Increased FlexGroup size
 a| You can now increase the maximum size of a FlexGroup volume, allowing you to store and manage larger datasets more efficiently.
@@ -35,7 +35,7 @@ a| You can now increase the maximum size of a FlexGroup volume, allowing you to 
 a| Cross File Sequential Read can significantly improve read performance for certain media and entertainment workloads. The feature intelligently prefetches sequential video frames to dramatically improve throughput and reduce latency for video editing applications. Review link:../administer/additional-ontap-svm.html[Additional administration for an AFX storage system SVM] for more information.
 
 | Global deduplication
-a| Global deduplication extends the existing ONTAP deduplication to the entire Storage Availability Zone (SAZ). By eliminating duplicate data blocks across all the volumes in the SAZ, it can significantly improve storage efficiency and reduce total cost of ownership. The feature is enabled by default on AFX systems and operates transparently without the need for administrative configuration. Refer to link:../administer/additional-ontap-svm.html[Additional administration for an AFX storage system SVM] for more information.
+a| Global deduplication extends the existing ONTAP deduplication space savings to the entire Storage Availability Zone (SAZ). By eliminating duplicate data blocks across all the volumes in the SAZ, it can significantly improve storage efficiency and reduce total cost of ownership. The feature is enabled by default on AFX systems and operates transparently without the need for administrative configuration. Refer to link:../administer/additional-ontap-svm.html[Additional administration for an AFX storage system SVM] for more information.
 
 // table end
 |===
@@ -48,8 +48,8 @@ a| Global deduplication extends the existing ONTAP deduplication to the entire S
 | Update
 | Description
 
-| Balanced Placement Trident API
-a| The Balanced Placement Trident API integration feature adds parameters currently available in the `/storage/volumes` REST API endpoint to the '/applications/containers` endpoint. This enhancement enables customers using NetApp Trident for Kubernetes storage orchestration to create volumes with ONTAP's native Balanced Placement capability.
+| Balanced placement enhancements for Kubernetes storage orchestration
+a| ONTAP 9.19.1 adds parameters currently available in the `/storage/volumes` REST API endpoint to the `/applications/containers` endpoint. This enhancement enables customers using NetApp Trident for Kubernetes storage orchestration to create volumes with https://docs.netapp.com/us-en/ontap/flexgroup/provision-automatically-task.html[ONTAP's native placement capability^].
 
 // table end
 |===
