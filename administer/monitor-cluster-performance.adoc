@@ -34,7 +34,7 @@ Beginning with ONTAP 9.19.1, you can view the capacity details of your storage a
 .Steps
 
 . In System Manager, select *Cluster > Overview* and then select *Availability zone*.
-. To modify the warning or critical space thresholds, select image:icon_edit_pencil_blue_outline[blue pencil edit icon] under the threshold that you want to edit.
+. To modify the warning or critical space thresholds, select image:icon_edit_pencil_blue_outline.png[blue pencil edit icon] under the threshold that you want to edit.
 
 
 == Cluster performance

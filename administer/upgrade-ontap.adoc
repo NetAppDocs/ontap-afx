@@ -29,7 +29,7 @@ You don't have to be in the process of upgrading your ONTAP software to execute 
 
 Beginning with ONTAP 9.19.1, errors and warning are displayed separately to help you easily identify issues that must be resolved before you upgrade.  
 
-Learn to link:https://docs.netapp.com/us-en/ontap/upgrade/automated-pre-checks.html[execute ONTAP automated pre-upgrade checks^].
+link:https://docs.netapp.com/us-en/ontap/upgrade/automated-pre-checks.html[Learn to execute ONTAP automated pre-upgrade checks^].
 
 // 2026 May 07, ONTAPDOC-3602
 
