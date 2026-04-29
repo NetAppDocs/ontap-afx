@@ -4,16 +4,20 @@ permalink: administer/monitor-cluster-performance.html
 keywords: afx, afx system, cluster performance
 summary: "You can display a high-level overview of the performance of your AFX cluster."
 ---
-= Monitor AFX storage system cluster performance
+= Monitor AFX storage system cluster performance and storage utilization
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can display a high-level overview of the performance of your AFX cluster.
+You can display a high-level overview of the performance and storage utilization of your AFX cluster.
 
 == Storage capacity
 
-The System Manager dashboard includes a high-level display of the storage utilization for the cluster.
+Monitor your storage utilization to ensure you have sufficient storage capacity for current and future workloads. 
+
+=== Monitor high-level cluster storage utilization
+
+In ONTAP System Manager, you can view a high-level display of the storage utilization for the entire cluster. 
 
 .Steps
 
@@ -22,6 +26,16 @@ The System Manager dashboard includes a high-level display of the storage utiliz
 . Locate the *Capacity* tile and view the physical storage available and used.
 
 . Select *History* to access Active IQ to view the historical data.
+
+=== Monitor storage availability zone capacity details
+
+Beginning with ONTAP 9.19.1, you can view the capacity details of your storage availability zone including space thresholds, space consumed by snapshots, and data reduction.  You can also set space usage thresholds to the percentage at which you want ONTAP to generate warning and critical alerts.
+
+.Steps
+
+. In System Manager, select *Cluster > Overview* and then select *Availability zone*.
+. To modify the warning or critical space thresholds, select image:icon_edit_pencil_blue_outline.png[blue pencil edit icon] under the threshold that you want to edit.
+
 
 == Cluster performance
 
@@ -40,3 +54,5 @@ System Manager provides a detailed overview of the AFX cluster performance.
 == Related information
 
 * link:../administer/additional-ontap-cluster.html[Additional AFX cluster administration]
+
+// 2026 May 07, ONTAPDOC-3613
