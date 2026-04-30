@@ -10,8 +10,10 @@ indexpage:
           url: /get-started/ontap-afx-storage.html
         - title: Quick start
           url: /get-started/quick-start.html
-        - title: Install AFX hardware
+        - title: Install AFX 1K hardware
           url: /install-setup/install-setup-workflow.html
+        - title: Install AFX 2K hardware
+          url: /install-afx-2k/install-setup-workflow.html
         - title: Set up AFX cluster
           url: /install-setup/cluster-setup.html
     - title: Cluster administration

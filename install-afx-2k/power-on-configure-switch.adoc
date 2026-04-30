@@ -1,0 +1,27 @@
+---
+sidebar: sidebar
+permalink: install-afx-2k/power-on-configure-switch.html
+keywords: afx, afx 2k, cable controllers, Cisco Nexus 9332D-GX2B, Cisco Nexus 9364D-GX2A, switches, switch, power on, configure switches,
+summary: Learn how to power on and configure the switches for your AFX 2K storage system. 
+---
+= Power on and configure the switches for your AFX 2K storage system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After you cable your AFX 2K storage system, you need to power on and configure the Cisco Nexus 9332D-GX2B or 9364D-GX2A switches. 
+
+.Steps
+. Plug the power cords for the switches into the power sources.
+. Connect the ISL cables between the two switches.
+ * For Cisco Nexus 9332D-GX2B switches, use ports 31/32 for the ISL connections. See the link:https://www.cisco.com/c/en/us/td/docs/dcn/hw/nx-os/nexus9000/9332d-gx2b/cisco-nexus-9332d-gx2b-nx-os-mode-switch-hardware-installation-guide/m_overview1.html[Cisco Nexus 9332D-GX2B NX-OS Mode Switch Hardware Installation Guide^] for more information.
+* For Cisco Nexus 9364D-GX2A switches, use ports 63/64 for the ISL connections. See the link:https://www.cisco.com/c/en/us/td/docs/dcn/hw/nx-os/nexus9000/9364d-gx2a/cisco-nexus-9364d-gx2a-nx-os-mode-switch-hardware-installation-guide/m_overview1.html[Cisco Nexus 9364D-GX2A NX-OS Mode Switch Hardware Installation Guide^] for more information.
+. Power on each switch. 
+. Configure the switches to support the AFX 2K storage system.
+* For Cisco Nexus 9332D-GX2B switches, see the cluster and storage switches documentation link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9332d-gx2b/configure-software-overview-9332d-cluster.html[Configure Cisco Nexus 9332D-GX2B switch^].
+* For Cisco Nexus 9364D-GX2A switches, see the cluster and storage switches documentation link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9364d-gx2a/configure-software-overview-9364d-cluster.html[Configure Cisco Nexus 9364D-GX2A switch^].
+
+.What's next?
+
+After configuring the switches for your AFX 2K storage system, link:power-on-hardware.html[power on the AFX 2K storage system].
+
