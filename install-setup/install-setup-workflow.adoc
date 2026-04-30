@@ -39,7 +39,14 @@ Cable the hardware, then power on and configure the switches for your AFX 1K sto
 [role="quick-margin-para"]
 Power on each storage shelf and assign a unique shelf ID before powering on the controller nodes to clearly identify each shelf in the setup.
 
-NOTE: If you are deploying AFX 1K with the AI Data Engine (AIDE), install the AIDE data compute nodes after powering on the AFX system. Refer to link:https://docs.netapp.com/us-en/ai-data-engine/install-setup/aide-hardware-requirements.html[Install AIDE data compute nodes] for more information.
+[NOTE]
+====
+If you are deploying AFX 1K with AI Data Engine (AIDE), you can install AIDE data compute nodes after you finish installing the AFX system.
+
+* For third-party server deployments, see https://docs.netapp.com/us-en/ai-data-engine/install-aide-server/aide-mde-server-hardware-requirements.html[requirements for AI Data Engine with AIDE software on third-party servers^] and https://docs.netapp.com/us-en/ai-data-engine/install-setup/install-aide-as-software.html[install AIDE software on third-party servers^].
+* For NetApp DCN deployments, see https://docs.netapp.com/us-en/ai-data-engine/install-dcn/aide-dcn-hardware-requirements.html[requirements for AI Data Engine on NetApp-provided data compute nodes^].
+
+====
 
 // 2025, Jan 25, ONTAPDOC 2261
 // 2024 Sept 23, ONTAPDOC 1922
