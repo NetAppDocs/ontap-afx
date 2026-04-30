@@ -42,7 +42,6 @@ CFSR is enabled by default on AFX systems running ONTAP 9.19.1 or later, but you
 [source,bash]
 ----
 volume modify -volume myvolume -aggressive-readahead-mode cross_file_sequential_read
-
 volume show -volume myvolume -fields aggressive-readahead-mode
 ----
 
