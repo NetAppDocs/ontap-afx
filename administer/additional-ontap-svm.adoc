@@ -34,7 +34,7 @@ A FlexGroup volume consists of several member volumes that share the traffic aut
 
 Cross File Sequential Read (CFSR) is a feature available on AFX systems beginning with ONTAP 9.19.1 that improves the performance of video editing and related applications. For workflows that store video frames as individual sequential files, typically 50 to 250 MB each, CFSR intelligently predicts and prefetches the next files based on sequential filename patterns. Up to 10 files or 500 MB of data can be prefetched, significantly reducing read latency and ensuring smooth playback of 4K/8K raw video at 30 frames per second.
 
-CFSR is enabled by default on AFX systems running ONTAP 9.19.1 or later, but you need to explicitly enable it on the individual volumes. Storage administrators can configure the feature using the CLI or equivalent REST API call. With the CLI, you can create a new volume with CFSR enabled. You can also update an existing volume with the following command:
+CFSR is enabled by default on AFX systems running ONTAP 9.19.1 or later, but you need to explicitly enable it on the individual volumes. Storage administrators can configure the feature with the ONTAP CLI or equivalent REST API call. Using the CLI, you can enable CFSR as part of creating a new volume. You can also update an existing volume with the following command:
 
 `volume modify -volume <volume_name> -aggressive-readahead-mode [cross_file_sequential_read|none]`
 

@@ -29,7 +29,7 @@ Learn about the new and enhanced support for https://docs.netapp.com/us-en/ai-da
 a| ONTAP 9.19.1 supports the expansion of an AFX cluster to a maximum of 32 nodes. This allows you to scale your AFX storage system to meet the growing demands of your workloads and applications.
 
 | Dynamic Storage Efficiency
-a| XXX
+a| Dynamic Storage Efficiency intelligently optimizes storage efficiency operations (compression, deduplication, and compaction) for large workloads that require high performance and maximum throughput. It automatically detects high-volume write conditions and temporarily suspends inline storage efficiency processes to prevent performance degradation during peak loads. When throughout drops, the inline efficiency operations are automatically resumed which ensures storage savings are recovered without manual intervention. The feature is available on AFX storage systems and enabled by default with no configuration required.
 
 | Cross File Sequential Read (CFSR)
 a| Cross File Sequential Read can significantly improve read performance for certain media and entertainment workloads. The feature intelligently prefetches sequential video frames to dramatically improve throughput and reduce latency for video editing applications. Review link:../administer/additional-ontap-svm.html[Additional administration for an AFX storage system SVM] for more information.
