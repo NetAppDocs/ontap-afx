@@ -28,8 +28,8 @@ Learn about the new and enhanced support for https://docs.netapp.com/us-en/ai-da
 | Expanded AFX cluster size
 a| ONTAP 9.19.1 supports the expansion of an AFX cluster to a maximum of 32 nodes. This allows you to scale your AFX storage system to meet the growing demands of your workloads and applications.
 
-| Increased FlexGroup size
-a| The maximum number of volumes in a FlexGroup has been increased to 1024. This allows the AFX storage system to fully deliver the performance capabilities for larger clusters. Note that FlexGroups with more than 200 member volumes can only be mirrored to clusters running ONTAP 9.19.1 or later. Also, FlexGroups exceeding 300 member volumes cannot be protected with SVM-DR due to the limit for each SVM-DR relationship.
+| Dynamic Storage Efficiency
+a| XXX
 
 | Cross File Sequential Read (CFSR)
 a| Cross File Sequential Read can significantly improve read performance for certain media and entertainment workloads. The feature intelligently prefetches sequential video frames to dramatically improve throughput and reduce latency for video editing applications. Review link:../administer/additional-ontap-svm.html[Additional administration for an AFX storage system SVM] for more information.
@@ -48,9 +48,10 @@ a| Global deduplication extends ONTAP deduplication space savings to the entire 
 | Description
 
 | Balanced placement enhancement for Kubernetes storage orchestration
-a| ONTAP 9.19.1 adds six parameters currently available in the `/storage/volumes` REST API endpoint to the `/applications/containers` endpoint. This enhancement enables customers using NetApp Trident for Kubernetes storage orchestration to create volumes with https://docs.netapp.com/us-en/ontap/flexgroup/provision-automatically-task.html[ONTAP's native placement capability^].
+a| ONTAP 9.19.1 adds six parameters currently available in the `/storage/volumes` REST API endpoint to the `/applications/containers` endpoint. This enhancement enables customers using NetApp Trident for Kubernetes storage orchestration to create volumes with ONTAP's native balanced placement capability.
 
 |===
+//https://docs.netapp.com/us-en/ontap/flexgroup/provision-automatically-task.html[ONTAP's placement capability^].
 
 == Security
 
