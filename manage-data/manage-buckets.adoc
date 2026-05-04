@@ -11,6 +11,9 @@ summary: "There are several administrative tasks you can perform as part of mana
 [.lead]
 There are several administrative tasks you can perform as part of managing AFX S3 buckets and client access. S3 configuration and support in AFX is the same as provided with Unified ONTAP. Refer to the Unified ONTAP documentation for details.
 
+[TIP]
+Make sure to keep up with the latest changes and updates to ONTAP's support for S3 storage. For example, beginning with ONTAP 9.19.1 you can generate a second access key for each S3 user. This allows you to maintain access S3 resources if the original access key expires. Learn more at https://docs.netapp.com/us-en/ontap/s3-config/regenerate-access-keys.html[Regenerate ONTAP S3 keys and modify their retention period^]. You can also https://docs.netapp.com/us-en/ontap/s3-config/create-modify-bucket-policy-task.html[Add access rules to the default ONTAP S3 bucket policy^] to control conditional operations.
+
 .Related information
 
 https://docs.netapp.com/us-en/ontap/s3-config/index.html[Learn about ONTAP S3 configuration^]

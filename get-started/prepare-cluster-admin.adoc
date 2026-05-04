@@ -37,6 +37,9 @@ The administrative ONTAP tasks you perform with AFX generally fall into two diff
 
 It's important to note that these levels describe how the administrative tasks are organized and assigned, and not necessarily how the associated security is configured. For example, while a cluster administrator account is needed to perform cluster level administration, it can also be used for SVM administration.
 
+[NOTE]
+Beginning with ONTAP 9.19.1, SVM administrators can monitor and manage their own SVMs using a dedicated System Manager dashboard. Learn more about the https://docs.netapp.com/us-en/ontap/concept-svm-admin-dashboard-sm.html[ONTAP System Manager SVM administrator dashboard^]
+
 Cluster administrator::
 
 The cluster administrator has complete control of the AFX cluster including all the SVMs. The AFX cluster administrative level includes only the tasks that a cluster admin can perform and not any of the SVM-specific administration tasks. See link:../administer/view-dashboard.html[Administer your cluster] for more information.
