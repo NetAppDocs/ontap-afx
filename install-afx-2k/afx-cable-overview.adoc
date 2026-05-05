@@ -16,7 +16,7 @@ The initial configuration of the AFX 2K storage system supports a minimum of fou
 
 Additional controller nodes and disk shelves expand the initial AFX 2K storage system configuration. Expanded AFX 2K configurations follow the same switch-based cabling methodology as the schema depicted below. 
 
-image:../media/drw_afx_cable_overview_half_node_ieops-2358.svg[AFX 2K storage system example cabling]
+image:../media/afx_emr_cabling_diagram_mockup.png[AFX 2K storage system example cabling]
 
 == Supported hardware components
 Review the compatible storage disk shelves, switches, and cable types for the AFX 2K storage system.
@@ -29,15 +29,15 @@ AFX 2K
 a|
 NX224
 a|
+* Cisco Nexus 9808 (400GbE)
 * Cisco Nexus 9332D-GX2B (400GbE)
 * Cisco Nexus 9364D-GX2A (400GbE)
 a|
-* 400GbE QSFP-DD breakout to 4x100GbE QSFP breakout cable cables
+* 400GbE QDD to 400GbE QSFP cables (Controller to switch connections)
+* 400GbE QSFP-DD breakout to 4x100GbE QSFP breakout cable cables (Switch to disk shelf connections)
 +
-NOTE: Breakout cables are used for 100GbE connections between the switches, controllers, and disk shelves. 
+NOTE: Breakout cables are used for 100GbE connections between the switches and disk shelves. 
 +
-** 100GbE cables to controller cluster and HA ports
-** 100GbE cables to disk shelves
 * 2 x 400GbE cables for ISL connections between switch A and switch B 
 * RJ-45 cables for management connections
 |===
