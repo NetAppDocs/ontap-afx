@@ -50,9 +50,6 @@ a| Global deduplication extends ONTAP deduplication space savings to the entire 
 | Balanced placement enhancement for Kubernetes storage orchestration
 a| ONTAP 9.19.1 adds six parameters currently available in the `/storage/volumes` REST API endpoint to the `/applications/containers` endpoint. This enhancement enables customers using NetApp Trident for Kubernetes storage orchestration to create volumes with ONTAP's native balanced placement capability.
 
-| Counter Manager Cached Metrics
-a| This is a monitoring feature that exports performance statistics from large ONTAP clusters which can be retrieved using the REST API. The metrics data, which is collected and cached by ONTAP at regular intervals, is anchored by manifests specifying the CM objects and counters. By decoupling collection from retrieval, the data can be shared among different clients which reduces system overhead. This design also scales well for large clusters as typically deployed with AFX storage systems.
-
 |===
 //https://docs.netapp.com/us-en/ontap/flexgroup/provision-automatically-task.html[ONTAP's placement capability^].
 
