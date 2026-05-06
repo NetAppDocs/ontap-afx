@@ -37,6 +37,9 @@ The administrative ONTAP tasks you perform with AFX generally fall into two diff
 
 It's important to note that these levels describe how the administrative tasks are organized and assigned, and not necessarily how the associated security is configured. For example, while a cluster administrator account is needed to perform cluster level administration, it can also be used for SVM administration.
 
+[NOTE]
+Beginning with ONTAP 9.19.1, SVM administrators can monitor and manage their own SVMs using a dedicated System Manager dashboard. Learn more about the https://docs.netapp.com/us-en/ontap/concept-svm-admin-dashboard-sm.html[ONTAP System Manager SVM administrator dashboard^]
+
 Cluster administrator::
 
 The cluster administrator has complete control of the AFX cluster including all the SVMs. The AFX cluster administrative level includes only the tasks that a cluster admin can perform and not any of the SVM-specific administration tasks. See link:../administer/view-dashboard.html[Administer your cluster] for more information.
@@ -108,10 +111,13 @@ With AFX, a new HA VLAN is added to the backend cluster switches to enable NVRAM
 
 == AFX cluster deployment limitations
 
-There are several limitations, including minimums and maximums, enforced by AFX when configuring and using your cluster. These limits fall into several categories including:
+There are several limitations, including minimums and maximums, enforced by AFX when configuring and using your cluster. These limits fall into several categories.
+
+[CAUTION]
+Before increasing an operational parameter of your AFX storage system, you should assess how it might impact your applications as well as the cluster as a whole. For example, while expanding the number of controller nodes increases overall capacity, it could also increase traffic in the cluster network. It's important to understand the implication of these configuration changes and how they might impact your environment.
 
 Controller nodes per cluster::
-Each AFX cluster must have at least four nodes. The maximum number of nodes varies based on the ONTAP release.
+Each AFX cluster must have at least four nodes. The maximum number of nodes varies based on the ONTAP release; for example the 9.19.1 RC release allows up to 32 nodes per AFX cluster.
 
 Storage capacity::
 This is the total capacity across all the SSD disks in the cluster Storage Availability Zone (SAZ). The maximum storage capacity varies based on the ONTAP release.
