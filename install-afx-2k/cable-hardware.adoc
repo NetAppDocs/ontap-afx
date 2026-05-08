@@ -20,6 +20,60 @@ Contact your network administrator for information about connecting the storage 
 * The I/O slots on an AFX 2K controller are numbered 1 through 11.
 +
 image::../media/afx_emr_back_slots_temp.png[Slot numbering on an AFX controller]
++
+[cols="20%,80%"]
+|===
+
+a|
+image::../media/icon_round_1.svg[Callout number 1] 
+a|
+HA
+
+a|
+image::../media/icon_round_2.svg[[Callout number 2]
+a|
+Cluster
+
+a|
+image::../media/icon_round_3.svg[[Callout number 3]
+a|
+Network
+
+a|
+image::../media/icon_round_4.svg[[Callout number 4]
+
+image::../media/icon_round_5.svg[[Callout number 5]
+a|
+NVRAM
+
+a|
+image::../media/icon_round_6.svg[[Callout number 6]
+
+image::../media/icon_round_7.svg[[Callout number 7]
+a|
+NV12L
+
+a|
+image::../media/icon_round_8.svg[[Callout number 8]
+a|
+Storage
+
+a|
+image::../media/icon_round_9.svg[[Callout number 9]
+a|
+Network
+
+a|
+image::../media/icon_round_10.svg[[Callout number 10]
+a|
+Storage
+
+a|
+image::../media/icon_round_11.svg[[Callout number 11]
+a|
+Empty
+
+|===
 
 * The cabling graphics show arrow icons indicating the proper orientation (up or down) of the cable connector pull-tab when inserting a connector into a port.
 +
@@ -37,10 +91,6 @@ The connector components are delicate and care should be taken when clicking int
 * The AFX 2K storage system utilizes 400GbE cables. The 400GbE connections are made between the controllers and the switches. Connections between the storage shelves and the switches utilize 4x100GbE breakout cables with the 100GbE connections  made to the drive shelf ports. 
 +
 Storage and HA/Cluster connections can be made to any non-ISL port on the switch. All "a" controller ports connect to switch A, and all "b" controller ports connect to switch B.
-+
-** 1 x HA port (slot 1)
-** 1 x cluster port (slot 2)
-** 2 x storage ports (slots 8, 10) 
 
 NOTE: Cisco Nexus 9808 NX-OS, 9332D-GX2B and 9364D-GX2A switch configurations to the AFX 2K storage system require 400GbE breakout cable connections.
 
@@ -52,7 +102,7 @@ Use the 1000BASE-T RJ-45 cables to connect the management (wrench) ports on each
 image::../media/oie_cable_rj45.png[RJ-45 cables,width=100px]
 *1000BASE-T RJ-45 cables*
 
-image::../media/afx_emr_mgmt_connect.png[Connect to your management network]
+image::../media/drw_afx_2k_management_connection_ieops-2863.svg[Connect to your management network]
 
 IMPORTANT: Do not plug in the power cords yet. 
 
@@ -74,7 +124,7 @@ This procedure may differ depending on your I/O module configuration. The follow
 +
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb Ethernet cable]
 +
-image::../media/afx_emr_host_switch_a.png[Cable to Ethernet network]
+image::../media/drw_afx_2k_host_switch_a_ieops-2864.svg[Cable to Ethernet network]
 
 . Connect the following ports to your Ethernet data network switch B.
 * Controller (Example)
@@ -85,7 +135,7 @@ image::../media/afx_emr_host_switch_a.png[Cable to Ethernet network]
 +
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb Ethernet cable]
 +
-image::../media/afx_emr_host_switch_b.png[Cable to Ethernet network]
+image::../media/drw_afx_2k_host_switch_b_ieops-2865.svg[Cable to Ethernet network]
 
 == Step 3: Cable the cluster and HA connections
 Use the Cluster and HA interconnect cable to connect ports e1a and e2a to switch A and e1b and e2b to switch B. The e1a/e1b ports are used for the HA connections, and the e2a/e2a ports are used for the cluster connections.
@@ -101,7 +151,7 @@ Use the Cluster and HA interconnect cable to connect ports e1a and e2a to switch
 +
 image::../media/oie_cable_25Gb_Ethernet_SFP28_ieops-1069.png[Cluster HA cable]
 +
-image::../media/afx_emr_cluster_switch_a.png[Cable cluster connections to cluster network]
+image::../media/drw_afx_2k_cluster_switch_a_ieops-2866.svg[Cable cluster connections to cluster network]
 
 . Connect the following controller ports to any non-ISL port on the cluster network switch B.
 * Controller
@@ -112,7 +162,7 @@ image::../media/afx_emr_cluster_switch_a.png[Cable cluster connections to cluste
 +
 image::../media/oie_cable_25Gb_Ethernet_SFP28_ieops-1069.png[Cluster HA cable]
 +
-image::../media/afx_emr_cluster_switch_b.png[Cable cluster connections to cluster network]
+image::../media/drw_afx_2k_cluster_switch_b_ieops-2867.svg[Cable cluster connections to cluster network]
 
 == Step 4: Cable the controller-to-switch storage connections
 Connect the controller storage ports to the switches.  Ensure you have the correct cables and connectors for your switches. See https://hwu.netapp.com[Hardware Universe^] for more information.
@@ -126,7 +176,7 @@ Connect the controller storage ports to the switches.  Ensure you have the corre
 +
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 +
-image::../media/afx_emr_storage_switch_a.png[Cable controller storage to switch A]
+image::../media/drw_afx_2k_storage_connection_a_ieops-2868.svg[Cable controller storage to switch A]
 
 . Connect the following storage ports to any non-ISL port on switch B.
 * Controller
@@ -137,7 +187,7 @@ image::../media/afx_emr_storage_switch_a.png[Cable controller storage to switch 
 +
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 +
-image::../media/afx_emr_storage_switch_b.png[Cable controller storage to switch B]
+image::../media/drw_afx_2k_storage_connection_b_ieops-2870.svg[Cable controller storage to switch B]
 
 == Step 5: Cable the shelf-to-switch connections
 Connect the NX224 storage shelves to the switches.   

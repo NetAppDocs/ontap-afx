@@ -50,7 +50,7 @@ a|* Bezel
 * Storage system
 * Rail kits with instructions 
 * Storage shelf
-* Cisco Nexus 9332D-GX2B or 9364D-GX2A switch
+* Cisco Nexus 9808, 9332D-GX2B, or 9364D-GX2A switch
 a|* Management Ethernet cables (RJ-45 cables)
 * Network cables
 * Power cords
