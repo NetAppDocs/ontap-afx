@@ -19,7 +19,7 @@ Contact your network administrator for information about connecting the storage 
 * These procedures show common configurations. The specific cabling depends on the components ordered for your storage system. For comprehensive configuration details and slot priorities, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 * The I/O slots on an AFX 2K controller are numbered 1 through 11.
 +
-image::../media/afx_emr_back_slots_temp.png[Slot numbering on an AFX controller]
+image::../media/drw_afx_emr_rear_slots_ieops-2862.svg[Slot numbering on an AFX controller]
 +
 [cols="20%,80%"]
 |===
