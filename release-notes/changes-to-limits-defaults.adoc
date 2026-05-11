@@ -1,0 +1,40 @@
+---
+sidebar: sidebar
+permalink: release-notes/changes-to-limits-defaults.html
+keywords: release notes, changes, updates, defaults, limits, afx storage system, afx system, afx
+summary:  "Learn about the changes to limits and defaults affecting AFX systems. NetApp strives to help its customers understand the most important default and limit changes in each ONTAP release."
+---
+= Changes to ONTAP limits and defaults affecting AFX systems
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+Learn about the changes to limits and defaults affecting AFX systems. NetApp strives to help its customers understand the most important default and limit changes in each ONTAP release.
+
+[TIP]
+You should review the details available at the NetApp Hardware Universe and Interoperability Matrix Tool to determine the capabilities of your AFX cluster.
+
+== Changes to ONTAP limits
+
+[cols="2,4,4" options="header"]
+|===
+
+| Feature
+| Limit change
+| Changed in release
+
+| Nodes per cluster
+a| You can expand your AFX cluster to a maximum of 32 nodes. This allows you to scale your AFX storage system to meet the growing demands of your workloads and applications.
+
+| ONTAP 9.19.1 RC
+
+|===
+
+== Related information
+
+* https://hwu.netapp.com/[NetApp Hardware Universe^]
+* https://imt.netapp.com/[NetApp Interoperability Matrix Tool^]
+* https://docs.netapp.com/us-en/interoperability-matrix-tool/[Interoperability Matrix Tool overview^]
