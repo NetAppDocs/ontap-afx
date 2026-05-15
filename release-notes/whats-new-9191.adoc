@@ -17,7 +17,7 @@ Learn about the new capabilities included with ONTAP 9.19.1 that are available w
 [TIP]
 Learn about the new and enhanced support for https://docs.netapp.com/us-en/ai-data-engine/release-notes/whats-new.html[AI Data Engine^].
 
-== Performance and scale
+== Performance
 
 [cols="2,4" options="header"]
 |===
@@ -25,14 +25,14 @@ Learn about the new and enhanced support for https://docs.netapp.com/us-en/ai-da
 | Update
 | Description
 
-| Expanded AFX cluster size
-a| ONTAP 9.19.1 supports the expansion of an AFX cluster to a maximum of 32 nodes. This allows you to scale your AFX storage system to meet the growing demands of your workloads and applications.
-
 | Cross File Sequential Read (CFSR)
 a| Cross File Sequential Read can significantly improve read performance for certain media and entertainment workloads. The feature intelligently prefetches sequential video frames to dramatically improve throughput and reduce latency for video editing applications. Review link:../administer/additional-ontap-svm.html[Additional administration for an AFX storage system SVM] for more information.
 
 | Global deduplication
 a| Global deduplication extends ONTAP deduplication space savings to the entire Storage Availability Zone (SAZ). By eliminating duplicate data blocks across all the volumes in the SAZ, it can significantly improve storage efficiency and reduce total cost of ownership. The feature is enabled by default on AFX systems and operates transparently without the need for administrative configuration. Refer to link:../administer/additional-ontap-svm.html[Additional administration for an AFX storage system SVM] for more information.
+
+| Dynamic Storage Efficiency
+a| Dynamic Storage Efficiency intelligently optimizes storage efficiency operations (compression, deduplication, and compaction) for large workloads that require high performance and maximum throughput. It automatically detects high-volume write conditions and temporarily suspends inline and background storage efficiency processes to prevent performance degradation during peak loads. When throughput drops below a defined threshold, the storage efficiency operations are resumed and the savings are recovered without manual intervention. The feature is available on AFX storage systems and enabled by default with no configuration required.
 
 |===
 
