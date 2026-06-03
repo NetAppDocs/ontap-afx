@@ -21,7 +21,7 @@ Contact your network administrator for information about connecting the storage 
 +
 image::../media/drw_afx_emr_rear_slots_ieops-2862.svg[Slot numbering on an AFX controller]
 +
-[cols="1,4"]
+[cols="20%,80%"]
 |===
 
 a|
