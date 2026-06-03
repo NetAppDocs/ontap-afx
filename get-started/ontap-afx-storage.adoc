@@ -54,9 +54,9 @@ You should review the link:../faq-ontap-afx.html[FAQ for AFX storage systems] fo
 
 The following hardware components are used with AFX clusters:
 
-* AFX 1K controllers
+* AFX 1K or 2K controllers
 * NX224 shelves
-* Cisco Nexus 9332D-GX2B or Nexus 9364D-GX2A switches
+* Cisco Nexus 9332D-GX2B, Nexus 9364D-GX2A, or Nexus 9808 switches
 
 == Related information
 
