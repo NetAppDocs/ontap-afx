@@ -21,7 +21,7 @@ Contact your network administrator for information about connecting the storage 
 +
 image::../media/drw_afx_emr_rear_slots_ieops-2862.svg[Slot numbering on an AFX controller]
 +
-[cols="20%,80%"]
+[cols="1,4"]
 |===
 
 a|
@@ -169,25 +169,23 @@ Connect the controller storage ports to the switches.  Ensure you have the corre
 
 . Connect the following storage ports to any non-ISL port on switch A.
 * Controller
-** e8a
 ** e10a
 +
 *400GbE cables*
 +
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 +
-image::../media/drw_afx_2k_storage_connection_a_ieops-2868.svg[Cable controller storage to switch A]
+image::../media/drw_afx_2k_storage_connection_a_ieops-temp.png[Cable controller storage to switch A]
 
 . Connect the following storage ports to any non-ISL port on switch B.
 * Controller
 ** e8b
-** e10b
 +
 *400GbE cables*
 +
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 +
-image::../media/drw_afx_2k_storage_connection_b_ieops-2870.svg[Cable controller storage to switch B]
+image::../media/drw_afx_2k_storage_connection_b_ieops-temp.png[Cable controller storage to switch B]
 
 == Step 5: Cable the shelf-to-switch connections
 Connect the NX224 storage shelves to the switches.   
