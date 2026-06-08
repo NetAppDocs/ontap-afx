@@ -21,24 +21,35 @@ image:../media/drw_afx_cable_overview_half_node_ieops-2871.svg[AFX 2K storage sy
 == Supported hardware components
 Review the compatible storage disk shelves, switches, and cable types for the AFX 2K storage system.
 
-[cols="2,2,3,6",options="header"]
+[cols="35%,65%",options="header",width="100%"]
 |===
-a| *Controller Shelf* a| *Disk Shelf* a| *Supported Switches* a| *Supported Cables*
+| Hardware Component | Supported Cables
+
+| AFX 2K (Controller Shelf)
 a|
-AFX 2K
+* 400GbE QDD to 400GbE QSFP cables (controller to switch connections)
+* RJ-45 cables for management connections
+
+| NX224 (Disk Shelf)
 a|
-NX224
+* 400GbE QSFP-DD breakout to 4x100GbE QSFP breakout cables (switch to disk shelf connections)
+
+| Cisco Nexus 9808 (Switch)
 a|
-* Cisco Nexus 9808 (400GbE)
-* Cisco Nexus 9332D-GX2B (400GbE)
-* Cisco Nexus 9364D-GX2A (400GbE)
+* 400GbE QSFP-DD breakout to 4x100GbE QSFP breakout cables (switch to disk shelf connections)
+* 2 x 400GbE cables for ISL connections between switch A and switch B
+* RJ-45 cables for management connections
+
+| Cisco Nexus 9332D-GX2B (Switch)
 a|
-* 400GbE QDD to 400GbE QSFP cables (Controller to switch connections)
-* 400GbE QSFP-DD breakout to 4x100GbE QSFP breakout cable cables (Switch to disk shelf connections)
-+
-NOTE: Breakout cables are used for 100GbE connections between the switches and disk shelves. 
-+
-* 2 x 400GbE cables for ISL connections between switch A and switch B 
+* 400GbE QSFP-DD breakout to 4x100GbE QSFP breakout cables (switch to disk shelf connections)
+* 2 x 400GbE cables for ISL connections between switch A and switch B
+* RJ-45 cables for management connections
+
+| Cisco Nexus 9364D-GX2A (Switch)
+a|
+* 400GbE QSFP-DD breakout to 4x100GbE QSFP breakout cables (switch to disk shelf connections)
+* 2 x 400GbE cables for ISL connections between switch A and switch B
 * RJ-45 cables for management connections
 |===
 

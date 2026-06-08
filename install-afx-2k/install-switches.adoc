@@ -34,6 +34,12 @@ For more detailed information about these switches, please visit the Cisco websi
 
 CAUTION: Always wear a grounded wrist strap connected to a verified ground point during installation and maintenance procedures. Failure to follow proper ESD precautions can cause permanent damage to controller nodes, storage shelves, and network switches.
 
+== Cisco Nexus 9808 switch installation
+If you are installing the Cisco Nexus 9808 switch, refer to the link:https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/hw/9800/9808/nx-os/cisco-nexus-9808-nx-os-mode-switch-hardware-installation-guide/m-8000-install-chassis.html[Cisco Nexus 9808 NX-OS Mode Switch Hardware Installation Guide^] for detailed instructions on how to install the switches in the cabinet or rack.
+
+== Cisco Nexus 933D-GX2B and 9364D-GX2A switch installation
+If you are installing Cisco Nexus 9332D-GX2B or 9364D, perform the following the steps to install the switches in the cabinet or rack. 
+
 .Steps
 . Install the pass-through blanking panel.
 

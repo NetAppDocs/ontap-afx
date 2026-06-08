@@ -129,6 +129,251 @@ image::../media/drw_affa1k_power_source_icon_ieops-1700.svg[AFX storage system p
 [start=4]
 . Secure the power cords using the securing device on each power supply.
 
+== Step 3: Verify the switch connections
+
+From the switch CLI, verify that the switch ports connected to the cluster ports are up, that the cluster nodes are in their correct cluster VLANs, and that the ISL connection between the two switches is functional.
+
+. Verify that the switch ports connected to the cluster ports are up:
++
+`show interface brief`
++
+You can use `| grep up` to filter the output to only show the ports that are up.
++
+.Show example for Cisco Nexus 9332D-GX2B and 9364D-GX2A switches
+[%collapsible]
+====
+
+[subs=+quotes]
+----
+cs1# *show interface brief | grep up*
+.
+.
+Eth1/9/3        1       eth  trunk  up      none                     100G(D) --
+Eth1/9/4        1       eth  trunk  up      none                     100G(D) --
+Eth1/15/1       1       eth  trunk  up      none                     100G(D) --
+Eth1/15/2       1       eth  trunk  up      none                     100G(D) --
+Eth1/15/3       1       eth  trunk  up      none                     100G(D) --
+Eth1/15/4       1       eth  trunk  up      none                     100G(D) --
+Eth1/16/1       1       eth  trunk  up      none                     100G(D) --
+Eth1/16/2       1       eth  trunk  up      none                     100G(D) --
+Eth1/16/3       1       eth  trunk  up      none                     100G(D) --
+Eth1/16/4       1       eth  trunk  up      none                     100G(D) --
+Eth1/17/1       1       eth  trunk  up      none                     100G(D) --
+Eth1/17/2       1       eth  trunk  up      none                     100G(D) --
+Eth1/17/3       1       eth  trunk  up      none                     100G(D) --
+Eth1/17/4       1       eth  trunk  up      none                     100G(D) --
+.
+.
+----
+====
+
+. Verify that the cluster nodes are in their correct cluster VLANs using the following commands:
++
+`show vlan brief`
++
+`show interface trunk`
++
+.Show example for Cisco Nexus 9332D-GX2B switches
+[%collapsible]
+====
+
+[subs=+quotes]
+----
+cs1# *show vlan brief*
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Po1, Po999, Eth1/31, Eth1/32
+                                                Eth1/33, Eth1/34, Eth1/1/1
+                                                Eth1/1/2, Eth1/1/3, Eth1/1/4
+.
+.
+.
+                                                Eth1/29/4, Eth1/30/1, Eth1/30/2
+                                                Eth1/30/3, Eth1/30/4
+17   VLAN0017                         active    Eth1/1/1, Eth1/1/2, Eth1/1/3
+                                                Eth1/1/4, Eth1/2/1, Eth1/2/2
+.
+.
+.
+                                                Eth1/29/3, Eth1/29/4, Eth1/30/1
+                                                Eth1/30/2, Eth1/30/3, Eth1/30/4
+18   VLAN0018                         active    Eth1/1/1, Eth1/1/2, Eth1/1/3
+                                                Eth1/1/4, Eth1/2/1, Eth1/2/2
+.
+.
+.
+                                                Eth1/29/3, Eth1/29/4, Eth1/30/1
+                                                Eth1/30/2, Eth1/30/3, Eth1/30/4
+30   VLAN0030                         active    Eth1/1/1, Eth1/1/2, Eth1/1/3
+                                                Eth1/1/4, Eth1/2/1, Eth1/2/2
+.
+.
+.
+                                                Eth1/29/3, Eth1/29/4, Eth1/30/1
+                                                Eth1/30/2, Eth1/30/3, Eth1/30/4
+40   VLAN0040                         active    Eth1/1/1, Eth1/1/2, Eth1/1/3
+                                                Eth1/1/4, Eth1/2/1, Eth1/2/2
+.
+.
+.
+                                                Eth1/29/3, Eth1/29/4, Eth1/30/1
+                                                Eth1/30/2, Eth1/30/3, Eth1/30/4
+
+cs1# *show interface trunk*
+--------------------------------------------------------------------------------
+Port          Native  Status        Port
+              Vlan                  Channel
+--------------------------------------------------------------------------------
+Eth1/1/1      1       trunking      --
+Eth1/1/2      1       trunking      --
+Eth1/1/3      1       trunking      --
+Eth1/1/4      1       trunking      --
+Eth1/2/1      1       trunking      --
+Eth1/2/2      1       trunking      --
+Eth1/2/3      1       trunking      --
+Eth1/2/4      1       trunking      --
+.
+.
+. 
+Eth1/30/1     none
+Eth1/30/2     none
+Eth1/30/3     none
+Eth1/30/4     none
+Eth1/31       none
+Eth1/32       none
+Po1           1
+----
+====
++
+.Show example for Cisco Nexus 9364D-GX2A switches 
+[%collapsible]
+====
+
+[subs=+quotes]
+----
+cs1# *show vlan brief*
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Po1, Po999, Eth1/63, Eth1/64
+                                                Eth1/65, Eth1/66, Eth1/1/1
+                                                Eth1/1/2, Eth1/1/3, Eth1/1/4
+.
+.
+.
+                                                Eth1/62/1, Eth1/62/2, Eth1/62/3
+                                                Eth1/62/4
+17   VLAN0017                         active    Eth1/1/1, Eth1/1/2, Eth1/1/3
+                                                Eth1/1/4, Eth1/2/1, Eth1/2/2
+.
+.
+.
+                                                Eth1/61/4, Eth1/62/1, Eth1/62/2
+                                                Eth1/62/3, Eth1/62/4
+18   VLAN0018                         active    Eth1/1/1, Eth1/1/2, Eth1/1/3
+                                                Eth1/1/4, Eth1/2/1, Eth1/2/2
+.
+.
+.
+                                                Eth1/61/4, Eth1/62/1, Eth1/62/2
+                                                Eth1/62/3, Eth1/62/4
+30   VLAN0030                         active    Eth1/1/1, Eth1/1/2, Eth1/1/3
+                                                Eth1/1/4, Eth1/2/1, Eth1/2/2
+.
+.
+.
+                                                Eth1/61/4, Eth1/62/1, Eth1/62/2
+                                                Eth1/62/3, Eth1/62/4
+40   VLAN0040                         active    Eth1/1/1, Eth1/1/2, Eth1/1/3
+                                                Eth1/1/4, Eth1/2/1, Eth1/2/2
+.
+.
+.
+                                                Eth1/61/4, Eth1/62/1, Eth1/62/2
+                                                Eth1/62/3, Eth1/62/4
+
+cs1# *show interface trunk*
+
+-----------------------------------------------------
+Port          Native  Status        Port
+              Vlan                  Channel
+-----------------------------------------------------
+Eth1/1/1      1       trunking      --
+Eth1/1/2      1       trunking      --
+Eth1/1/3      1       trunking      --
+Eth1/1/4      1       trunking      --
+Eth1/2/1      1       trunking      --
+Eth1/2/2      1       trunking      --
+Eth1/2/3      1       trunking      --
+Eth1/2/4      1       trunking      --
+.
+.
+.
+Eth1/62/2     none
+Eth1/62/3     none
+Eth1/62/4     none
+Eth1/63       none
+Eth1/64       none
+Po1           1
+----
+====
++
+NOTE: For specific port and VLAN usage details, refer to the banner and important notes section in your RCF.
+
+. Verify that the ISL between the first switch (cs1) and the second switch (cs2) is functional:
++
+`show port-channel summary`
++
+.Show example for Cisco Nexus 9332D-GX2B switches
+[%collapsible]
+====
+
+[subs=+quotes]
+----
+cs1# *show port-channel summary*
+Flags:  D - Down        P - Up in port-channel (members)
+        I - Individual  H - Hot-standby (LACP only)
+        s - Suspended   r - Module-removed
+        b - BFD Session Wait
+        S - Switched    R - Routed
+        U - Up (port-channel)
+        p - Up in delay-lacp mode (member)
+        M - Not in use. Min-links not met
+--------------------------------------------------------------------------------
+Group Port-       Type     Protocol  Member Ports      
+      Channel
+--------------------------------------------------------------------------------
+1     Po1(SU)     Eth      LACP      Eth1/31(P)   Eth1/32(P)      
+999   Po999(SD)   Eth      NONE      --
+cs1#
+----
+====
++
+.Show example for Cisco Nexus 9364D-GX2A switches
+[%collapsible]
+====
+
+[subs=+quotes]
+----
+cs1# *show port-channel summary*
+Flags:  D - Down        P - Up in port-channel (members)
+        I - Individual  H - Hot-standby (LACP only)
+        s - Suspended   r - Module-removed
+        b - BFD Session Wait
+        S - Switched    R - Routed
+        U - Up (port-channel)
+        p - Up in delay-lacp mode (member)
+        M - Not in use. Min-links not met
+--------------------------------------------------------------------------------
+Group Port-       Type     Protocol  Member Ports      
+      Channel
+--------------------------------------------------------------------------------
+1     Po1(SU)     Eth      LACP      Eth1/63(P)   Eth1/64(P) 
+999   Po999(SD)   Eth      NONE      --
+cs1#
+----
+====
+
 .What's next?
 After powering on your AFX 1K storage system, complete the setup based on your deployment option:
 
