@@ -29,7 +29,7 @@ Take the necessary precautions when moving or lifting your AFX 1K storage contro
 
 An AFX 1K storage controller can weigh up to 62.83 lbs (28.5 kg). To lift the storage controller, use two people or a hydraulic lift.
 
-image::../media/drw_a1k_weight_caution_ieops-1698.svg[ASA A1K lifting caution icon]
+image::../media/drw_a1k_weight_caution_ieops-1698.svg[AFX 1K lifting caution icon]
 
 
 === Storage shelf weights
