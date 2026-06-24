@@ -46,7 +46,7 @@ During cluster setup, ONTAP recommends a set of network interfaces appropriate f
 * IP subnet for management network traffic.
 
 == Network requirements for Cisco switches
-For Cisco Nexus 9808 NX-OS, Cisco Nexus 9332D-GX2, and 9364D-GX2A switch installation and maintenance, be sure to review cabling and network requirements.
+For Cisco Nexus 9808, Cisco Nexus 9332D-GX2, and 9364D-GX2A switch installation and maintenance, be sure to review cabling and network requirements.
 
 === Network requirements
 

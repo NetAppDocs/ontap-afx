@@ -21,32 +21,36 @@ Contact your network administrator for information about connecting the storage 
 +
 image::../media/drw_afx_emr_rear_slots_ieops-2862.svg[Slot numbering on an AFX controller]
 +
-[cols="10%,23%,10%,24%,10%,23%", options="header"]
+[cols="10%,40%,10%,40%", options="header", stripes=even]
 |===
-| Slot Number | I/O Slot | Slot Number | I/O Slot | Slot Number | I/O Slot
+| Slot Number | I/O Slot | Slot Number | I/O Slot
 
 a| image::../media/icon_round_1.svg[Callout number 1]
 | HA
+a| image::../media/icon_round_8.svg[Callout number 8]
+| Storage
+
 a| image::../media/icon_round_2.svg[Callout number 2]
 | Cluster
+a| image::../media/icon_round_9.svg[Callout number 9]
+| Network
+
 a| image::../media/icon_round_3.svg[Callout number 3]
 | Network
+a| image::../media/icon_round_10.svg[Callout number 10]
+| Storage
 
 a| image::../media/icon_round_4.svg[Callout number 4]
 image::../media/icon_round_5.svg[Callout number 5]
 | NVRAM12
+a| image::../media/icon_round_11.svg[Callout number 11]
+| Empty
+
 a| image::../media/icon_round_6.svg[Callout number 6]
 image::../media/icon_round_7.svg[Callout number 7]
 | NV12-EX
-a| image::../media/icon_round_8.svg[Callout number 8]
-| Storage
-
-a| image::../media/icon_round_9.svg[Callout number 9]
-| Network
-a| image::../media/icon_round_10.svg[Callout number 10]
-| Storage
-a| image::../media/icon_round_11.svg[Callout number 11]
-| Empty
+|
+|
 
 |===
 
@@ -63,11 +67,9 @@ The connector components are delicate and care should be taken when clicking int
 
 * When cabling to an optical fiber connection, insert the optical transceiver into the controller port before cabling to the switch port.
 
-* The AFX 2K storage system utilizes 400GbE cables. The 400GbE connections are made between the controllers and the switches. Connections between the storage shelves and the switches utilize 4x100GbE breakout cables with the 100GbE connections  made to the drive shelf ports. 
+* The AFX 2K storage system uses 400GbE cables. The 400GbE connections are made between the controllers and the switches. Connections between the storage shelves and the switches use 4x100GbE breakout cables with the 100GbE connections  made to the drive shelf ports. 
 +
 The shelf storage connections can be made to any 100GbE breakout port on the switch. HA/Cluster connections can be made to any 400GbE port on the switch. All "a" controller ports connect to switch A, and all "b" controller ports connect to switch B.
-
-NOTE: Cisco Nexus 9808 NX-OS, 9332D-GX2B and 9364D-GX2A switch configurations to the AFX 2K storage system require 400GbE breakout cable connections.
 
 == Step 1: Connect the controllers to the management network
 Connect the management (wrench) port on each controlller to either of the management switches or connect them directly to your management network.
@@ -81,7 +83,9 @@ image::../media/drw_afx_2k_management_connection_ieops-2863.svg[Connect to your 
 
 IMPORTANT: Do not plug in the power cords yet. 
 
-. Connect to host network. 
+.Steps
+
+. Connect to the management network. 
 
 == Step 2: Connect the controllers to the host network
 Connect the Ethernet module ports to your host network. 
@@ -91,7 +95,7 @@ This procedure may differ depending on your I/O module configuration. The follow
 .Steps
 
 . Connect the following ports to your Ethernet data network switch A.
-* Controller (Example)
+* Controller
 ** e3a
 ** e9a
 +
@@ -102,7 +106,7 @@ image::../media/oie_cable100_gbe_qsfp28.png[100 Gb Ethernet cable]
 image::../media/drw_afx_2k_host_switch_a_ieops-2864.svg[Cable to Ethernet network]
 
 . Connect the following ports to your Ethernet data network switch B.
-* Controller (Example)
+* Controller
 ** e3b
 ** e9b
 +
@@ -144,6 +148,8 @@ Connect the controller storage ports to the switches.  Ensure you have the corre
 
 NOTE: The e10b and e8a ports on the controllers are unused for storage connections in the AFX 2K storage system configuration.
 
+.Steps
+
 . Connect the following storage ports to any non-ISL port on switch A.
 * Controller
 ** e10a
@@ -168,6 +174,8 @@ image::../media/drw_afx_2k_storage_connection_b_ieops-2870.svg[Cable controller 
 Connect the NX224 storage shelves to the 100GbE breakout ports on the switches.   
 
 For the maximum number of shelves supported for your storage system and for all of your cabling options, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
+
+.Steps
 
 . Connect the following shelf ports to any breakout port on switch A and switch B for module A.
 * Module A to switch A connections
