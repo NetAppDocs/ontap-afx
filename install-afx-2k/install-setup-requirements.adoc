@@ -27,17 +27,19 @@ AFX storage controller and storage shelves are heavy. Exercise caution when lift
 === Storage controller weights
 Take the necessary precautions when moving or lifting your AFX 2K storage controller.
 
-An AFX 2K storage controller can weigh up to 29.03 kg (64.0 lb). To lift the storage controller, use two people or a hydraulic lift.
+An AFX 2K storage controller can weigh up to 64.0 lb (29.03 kg). To lift the storage controller, use two people or a hydraulic lift.
 
-image::../media/drw_afx_2k_weight_caution_ieops-2938.svg[AFX 2K lifting caution icon]
+.AFX 2K controller lifting precaution.
+image::../media/drw_afx_2k_weight_caution_ieops-2938.svg[AFX 2K controller lifting caution icon]
 
 === Storage shelf weights
 Take the necessary precautions when moving or lifting your shelf.
 
 .NX224 shelf
 
-An NX224 shelf can weigh up to 27.3 kg (60.1 lb). To lift the shelf, use two people or a hydraulic lift. Keep all components in the shelf (both front and rear) to prevent unbalancing the shelf weight.
+An NX224 shelf can weigh up to 60.1 lb (27.3 kg). To lift the shelf, use two people or a hydraulic lift. Keep all components in the shelf (both front and rear) to prevent unbalancing the shelf weight.
 
+.NX224 shelf lifting precaution.
 image::../media/drw_nx224_lifting_weight_ieops-2437.svg[NX224 NSM100 lifting caution icon]
 
 === Switch weights
@@ -45,10 +47,12 @@ Take the necessary precautions when moving or lifting your switch.
 
 .Cisco Nexus 9808  
 
-An unloaded Cisco 9808 can weigh up to link:https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus9800-series-switches-ds.html#Productspecifications[73 kg (162 lb) and a fully loaded Cisco 9808 switch can up to 347 kg (766 lb)^]. To lift the switch, use a hydraulic lift. 
+An unloaded Cisco 9808 can weigh up to link:https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus9800-series-switches-ds.html#Productspecifications[162 lb (73 kg) and a fully loaded Cisco 9808 switch can up to 766 lb (347 kg) ^]. To lift the switch, use a hydraulic lift. 
 
+.Unloaded Cisco Nexus 9808 lifting precaution.
 image::../media/drw_afx_2k_weight_icon_ieops-2939.svg[Cisco Nexus 9808 lifting caution icon]
 
+.Fully loaded Cisco Nexus 9808 lifting precaution.
 image::../media/drw_afx_2k_nexus9808_loaded_weight_caution_ieops-2940.svg[Cisco Nexus 9808 fully loaded lifting caution icon]
 
 .Cisco Nexus9332D-GX2B 
@@ -57,10 +61,10 @@ A Cisco 9332D-GX2B can weigh up to link:https://www.cisco.com/c/en/us/td/docs/dc
 
 .Cisco Nexus 9364D-GX2A
 
-A Cisco Nexus 9364D-GX2A switch can weigh up to link:https://www.cisco.com/c/en/us/td/docs/dcn/hw/nx-os/nexus9000/9364d-gx2a/cisco-nexus-9364d-gx2a-nx-os-mode-switch-hardware-installation-guide/m_n93xxx_system_specs.html[26.3 kg (58 lb) ^]. To lift the switch, use two people or a hydraulic lift.
+A Cisco Nexus 9364D-GX2A switch can weigh up to link:https://www.cisco.com/c/en/us/td/docs/dcn/hw/nx-os/nexus9000/9364d-gx2a/cisco-nexus-9364d-gx2a-nx-os-mode-switch-hardware-installation-guide/m_n93xxx_system_specs.html[58 lb (26.3 kg)^]. To lift the switch, use two people or a hydraulic lift.
 
+.Cisco Nexus 9364D-GX2A lifting precaution.
 image::../media/drw_afx_2k_9364d_weight_caution_ieops-2942.svg[Cisco Nexus 9364D-GX2A lifting caution icon]
-
 
 .Related information
 
