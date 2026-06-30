@@ -16,7 +16,7 @@ The initial configuration of the AFX 1K storage system supports a minimum of fou
 
 Additional controller nodes and disk shelves expand the initial AFX 1K storage system configuration. Expanded AFX 1K configurations follow the same switch-based cabling methodology as the schema depicted below. 
 
-image:../media/drw_afx_cable_overview_half_node_ieops-2358.svg[AFX 1K storage system example cabling]
+image:../media/drw_afx_cable_overview_half_node_ieops-2358.svg[AFX 1K storage system example cabling, width=1000px]
 
 == Supported hardware components
 Review the compatible storage disk shelves, switches, and cable types for the AFX 1K storage system.

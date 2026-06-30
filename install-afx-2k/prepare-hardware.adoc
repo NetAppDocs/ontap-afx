@@ -24,7 +24,7 @@ To install your AFX 2K storage system, ensure that the site and the cabinet or r
 ** 2U for each AFX controller node and NX224 shelf
 ** 1U for the Cisco Nexus 9332D-GX2B switch.
 ** 2U for the Cisco Nexus 9364D-GX2A switch.
-** 16U is required for the Cisco Nexus 9808 switch. 
+** 16U for the Cisco Nexus 9808 switch. 
 
 
 == Step 2: Unpack the boxes
