@@ -19,7 +19,7 @@ Contact your network administrator for information about connecting the storage 
 * These procedures show common configurations. The specific cabling depends on the components ordered for your storage system. For comprehensive configuration details and slot priorities, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 * The I/O slots on an AFX controller are numbered 1 through 11.
 +
-image::../media/drw_a1K_back_slots_labeled_ieops-2162.svg[Slot numbering on an AFX controller]
+image::../media/drw_a1K_back_slots_labeled_ieops-2162.svg[Slot numbering on an AFX controller, width=800px]
 
 * The cabling graphics show arrow icons indicating the proper orientation (up or down) of the cable connector pull-tab when inserting a connector into a port.
 +
@@ -54,7 +54,7 @@ Use the 1000BASE-T RJ-45 cables to connect the management (wrench) ports on each
 image::../media/oie_cable_rj45.png[RJ-45 cables,width=100px]
 *1000BASE-T RJ-45 cables*
 
-image::../media/drw_afx_management_connection_ieops-2815.svg[Connect to your management network]
+image::../media/drw_afx_management_connection_ieops-2815.svg[Connect to your management network, width=800px]
 
 IMPORTANT: Do not plug in the power cords yet. 
 
@@ -76,7 +76,7 @@ This procedure may differ depending on your I/O module configuration. The follow
 +
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb Ethernet cable]
 +
-image::../media/drw_afx_network_cabling_a_ieops-2813.svg[Cable to Ethernet network]
+image::../media/drw_afx_network_cabling_a_ieops-2813.svg[Cable to Ethernet network, width=800px]
 
 . Connect the following ports to your Ethernet data network switch B.
 * Controller (Example)
@@ -87,7 +87,7 @@ image::../media/drw_afx_network_cabling_a_ieops-2813.svg[Cable to Ethernet netwo
 +
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb Ethernet cable]
 +
-image::../media/drw_afx_network_cabling_b_ieops-2814.svg[Cable to Ethernet network]
+image::../media/drw_afx_network_cabling_b_ieops-2814.svg[Cable to Ethernet network, width=800px]
 
 == Step 3: Cable the cluster, HA, and storage connections to Switch A
 Use the 4x100GbE breakout cable to connect the cluster, HA, and storage ports on the controllers to network switch A. Cluster and HA interconnect cable to connect ports e1a and e7a to switch A. The e1a ports are used for the HA connections, and the e7a ports are used for the cluster connections. For the storage connections, connect ports e10a and e11a to switch A.
@@ -107,7 +107,7 @@ Ensure you have the correct cables and connectors for your switches. See https:/
 +
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 +
-image::../media/drw_afx_ha_cluster_storage_a_ieops-2779.svg[Cable controller cluster, HA, and storage to switch A]
+image::../media/drw_afx_ha_cluster_storage_a_ieops-2779.svg[Cable controller cluster, HA, and storage to switch A, width=800px]
 
 == Step 4: Cable the cluster, HA, and storage connections to Switch B
 Use the 4x100GbE breakout cable to connect the cluster, HA, and storage ports on the controllers to network switch B. Cluster and HA interconnect cable to connect ports e1b and e7b to switch B. The e1b ports are used for the HA connections, and the e7b ports are used for the cluster connections. For the storage connections, connect ports e10b and e11b to switch B.
@@ -125,7 +125,7 @@ Ensure you have the correct cables and connectors for your switches. See https:/
 +
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 +
-image::../media/drw_afx_ha_cluster_storage_b_ieops-2780.svg[Cable controller cluster, HA, and storage to switch B]
+image::../media/drw_afx_ha_cluster_storage_b_ieops-2780.svg[Cable controller cluster, HA, and storage to switch B, width=800px]
 
 == Step 5: Cable the shelf-to-switch connections
 Connect the NX224 storage shelves to the switches.   
@@ -148,7 +148,7 @@ For the maximum number of shelves supported for your storage system and for all 
 +
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 +
-image::../media/drw_afx_shelf_cabling_a_ieops-2356.svg[Cable shelf to switch A and switch B]
+image::../media/drw_afx_shelf_cabling_a_ieops-2356.svg[Cable shelf to switch A and switch B, width=800px]
 
 . Connect the following shelf ports to any non-ISL port on switch A and switch B for module B.
 * Module B to switch A connections
@@ -166,7 +166,7 @@ image::../media/drw_afx_shelf_cabling_a_ieops-2356.svg[Cable shelf to switch A a
 +
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 +
-image::../media/drw_afx_shelf_cabling_b_ieops-2357.svg[Cable shelf to switch A and switch B]
+image::../media/drw_afx_shelf_cabling_b_ieops-2357.svg[Cable shelf to switch A and switch B, width=800px]
 
 .What's next?
 
