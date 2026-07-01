@@ -45,6 +45,12 @@ Adaptive and non-adaptive QoS policy groups are automatically enabled to tempora
 
 Refer to link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html[QoS throughput ceilings^].
 
+=== IPspace TCP performance 
+
+Beginning with ONTAP 9.19.1, ONTAP improves TCP data transfer performance over lossy, high-latency WAN links by integrating two loss-recovery features, PRR and RACK, into the ONTAP TCP stack. PRR is suitable for all networks and is enabled by default. RACK is suitable for congested networks with link speeds of approximately 25 Gigabits/second and is disabled by default.  
+
+Refer to link:https://docs.netapp.com/us-en/ontap/networking/improve-tcp-wan-performance.html[Improve TCP WAN performance with PRR and RACK] for more information.
+
 == Security
 
 There are several optional security features you can configure and use with your AFX deployment.
