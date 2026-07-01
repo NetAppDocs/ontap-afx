@@ -26,7 +26,7 @@ Learn about the new and enhanced support for https://docs.netapp.com/us-en/ai-da
 | Description
 
 | link:../administer/additional-ontap-cluster.html#performance[TCP performance improvements]
-a| Beginning with ONTAP 9.19.1, ONTAP improves TCP data transfer performance over lossy, high-latency WAN links by integrating two loss-recovery features, PRR and RACK, into the ONTAP TCP stack. Review link:../administer/additional-ontap-svm.html[Additional administration for an AFX storage system SVM] for more information.
+a| Beginning with ONTAP 9.19.1, ONTAP improves TCP data transfer performance over lossy, high-latency WAN links by integrating two loss-recovery features, PRR and RACK, into the ONTAP TCP stack.
 
 |===
 
