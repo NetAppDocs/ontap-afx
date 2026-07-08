@@ -71,8 +71,8 @@ a| ONTAP 9.19.1 adds six parameters currently available in the `/storage/volum
 | Update
 | Description
 
-| ARP/AI support for eligible SnapMirror primary volumes
-a| ARP/AI supports eligible primary volumes in SnapMirror synchronous relationships with AFX systems. ARP/AI runs on the active read-write primary volume and provides machine-learning-based ransomware detection. ARP configuration state is automatically replicated from the primary to the secondary volume during SnapMirror synchronous initialization. Upon failover, ARP detection activates automatically on the new primary without requiring manual re-enablement. ARP snapshots remain on the primary volume and are not replicated.
+| https://docs.netapp.com/us-en/ontap/anti-ransomware/use-cases-restrictions-concept.html#snapmirroreligible[ARP/AI support for SnapMirror primary volumes^]
+a| ARP/AI supports eligible primary volumes in SnapMirror synchronous relationships with AFX systems. ARP/AI runs on the active read-write primary volume, creates primary-only ARP snapshots, and provides machine-learning-based ransomware detection.
 
 | link:../administer/additional-ontap-cluster.html[Support for TLS hardware offload]
 a| You can offload Transport Layer Security (TLS) encryption and decryption for your entire cluster to supported Ethernet cards.  This reduces CPU overhead and improves performance for systems using TLS.
