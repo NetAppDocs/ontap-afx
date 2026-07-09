@@ -77,6 +77,9 @@ a| ARP/AI supports eligible primary volumes in SnapMirror synchronous relationsh
 | link:../administer/additional-ontap-cluster.html[Support for TLS hardware offload]
 a| You can offload Transport Layer Security (TLS) encryption and decryption for your entire cluster to supported Ethernet cards.  This reduces CPU overhead and improves performance for systems using TLS.
 
+| link:../administer/additional-ontap-svm.html[NFS over TLS v3]
+a| Beginning with ONTAP 9.19.1, ONTAP adds on-premises support for NFS over TLS with TLS 1.3 to encrypt NFS traffic in transit on NFS-enabled SVMs. The release also supports optional per-LIF mutual TLS host authentication and export-policy controls to deny non-TLS TCP access for matching clients.
+
 |===
 
 == Storage resource management
