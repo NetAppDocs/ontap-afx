@@ -2,18 +2,18 @@
 sidebar: sidebar
 permalink: install-setup/cluster-setup.html
 keywords: afx, afx system, cluster setup, setup
-summary: "After your AFX hardware has been installed, you can complete the ONTAP cluster setup. This process involves related configuration phases that you should perform sequentially. As part of this, you can optionally add the data compute nodes (DCNs) running the AI Data Engine (AIDE), enabling the AFX storage cluster and DCN cluster to operate as a single system that's managed through the same ONTAP control plane."
+summary: "After your AFX hardware has been installed, you can complete the ONTAP cluster setup. This process involves related configuration phases that you should perform sequentially."
 ---
 = Set up your AFX storage system ONTAP cluster
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After your AFX hardware has been installed, you can complete the ONTAP cluster setup. This process involves related configuration phases that you should perform sequentially. As part of this, you can optionally add the data compute nodes (DCNs) running the AI Data Engine (AIDE), enabling the AFX storage cluster and DCN cluster to operate as a single system that's managed through the same ONTAP control plane.
+After your AFX hardware has been installed, you can complete the ONTAP cluster setup. This process involves related configuration phases that you should perform sequentially.
 
 == Prepare to set up an AFX storage system
 
-Before setting up your ONTAP cluster, you should review the core AFX requirements and additional AIDE considerations to ensure you have all the necessary information and resources to complete the setup process successfully.
+Before setting up your ONTAP cluster, you should review the core AFX requirements to ensure you have all the necessary information and resources to complete the setup process successfully.
 
 === Core AFX requirements
 
@@ -45,14 +45,6 @@ You'll also need the following related networking information:
 * NTP server IP addresses
 * Subnet mask
 
-=== Additional AIDE considerations
-
-When installing and setting up AFX for the first time, you can optionally include NetApp AI Data Engine (AIDE). AIDE supports two deployment models: AIDE software on third-party servers or NetApp-provided data compute nodes (DCNs). If you plan to set up AIDE, complete the prerequisites for your deployment model first:
-
-* For third-party server deployments, complete https://docs.netapp.com/us-en/ai-data-engine/install-aide-server/aide-mde-server-hardware-requirements.html[hardware installation for AI Data Engine on third-party servers^], then https://docs.netapp.com/us-en/ai-data-engine/install-setup/install-aide-as-software.html[install AIDE software on third-party servers^].
-* For NetApp DCN deployments, complete https://docs.netapp.com/us-en/ai-data-engine/install-dcn/aide-dcn-hardware-requirements.html[hardware installation for AI Data Engine on NetApp-provided data compute nodes^].
-* Obtain the addresses and any related network configuration for the compute nodes.
-
 == Perform initial cluster setup
 
 You can connect your laptop device to the AFX cluster and set several global configuration values.
@@ -80,8 +72,6 @@ Provide and verify the password for the `admin` account. Select *Continue*.
 . Configure the IP addresses for the AFX cluster and controller nodes.
 +
 Provide IP addresses and the subnet masks.
-
-. If you're installing AI Data Engine with your AFX storage system, provide the IP addresses for the three compute nodes.
 
 . Configure the network services including DNS and NIS. Select *Continue*.
 +
@@ -124,14 +114,9 @@ You need to have the following information:
 
 .What's next
 
-* If you included AIDE as part of AFX cluster setup, complete the additional AIDE configuration steps. Authentication configuration applies to all AIDE deployments. Licensing is required for NetApp DCN deployments that use licensed AIDE features; third-party server deployments are metadata-focused and do not require an AIDE license. See https://docs.netapp.com/us-en/ai-data-engine/install-setup/cluster-setup-afx.html[Set up AI Data Engine^] for more information.
-
 * You should link:../get-started/prepare-cluster-admin.html[Prepare to administer AFX] before using your AFX cluster in a production environment.
 
 == Related information
 
-* link:../get-started/learn-about-aide.html[Learn about the NetApp AI Data Engine]
 * link:../administer/configure-svm.html[Configure an AFX SVM]
 * link:../get-started/prepare-cluster-admin.html[Prepare to administer AFX]
-
-// AIDEDOC-7 - March 12, 2026
