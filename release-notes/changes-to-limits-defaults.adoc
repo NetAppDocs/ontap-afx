@@ -24,11 +24,11 @@ You should review the details available at the NetApp Hardware Universe and Inte
 | Feature | Limit change | Changed in release
 
 | Nodes per cluster
-a| You can expand your AFX cluster to a maximum of 32 nodes. This allows you to scale your AFX storage system to meet the growing demands of your workloads and applications.
+a| You can expand your AFX cluster to a maximum of 32 nodes. This allows you to scale your AFX storage system to meet the growing demands of your workloads and applications. Note that support for 32 nodes is available with a limited feature set; consult your NetApp account team for details.
 | ONTAP 9.19.1
 
 | Volumes per FlexGroup
-a| The maximum number of volumes in a FlexGroup has been increased to 1024. This allows the AFX storage system to fully deliver the performance capabilities for larger clusters.
+a| The maximum number of volumes in a FlexGroup has been increased to 512 with 32 nodes. This allows the AFX storage system to fully deliver the performance capabilities for larger clusters.
 | ONTAP 9.19.1
 
 |===
