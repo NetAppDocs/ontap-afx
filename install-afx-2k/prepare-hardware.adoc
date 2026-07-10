@@ -98,7 +98,7 @@ a|
 New NetApp customer
 a|
 
- .. Click *Register Now*, and create an account.
+ .. Select *Register Now*, and create an account.
  .. Select *Systems* > *Register Systems*.
  .. Enter the storage system's serial number and requested details.
 
