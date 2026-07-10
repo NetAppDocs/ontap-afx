@@ -73,8 +73,6 @@ Provide and verify the password for the `admin` account. Select *Continue*.
 +
 Provide IP addresses and the subnet masks.
 
-. If you're installing AI Data Engine with your AFX storage system, provide the IP addresses for the three compute nodes.
-
 . Configure the network services including DNS and NIS. Select *Continue*.
 +
 Define the details for your DNS and NTP servers.
