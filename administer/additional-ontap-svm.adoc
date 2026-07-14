@@ -65,6 +65,10 @@ A consistency group is a collection of volumes that are managed as a single unit
 
 You can protect your files by converting them to a write once read many (WORM) state at a volume level. SnapLock supports two modes. Compliance mode ensures the files cannot be deleted until their retention period expires which addresses government or industry-specific mandates. Enterprise mode allows privileged users to delete files before their retention period expires. Learn more about https://docs.netapp.com/us-en/ontap/snaplock/index.html[ONTAP SnapLock^].
 
+=== SnapMirror active sync for NAS
+
+SnapMirror active sync allows business services to continue functioning in the event of a complete site failure. This technology enables applications to fail over seamlessly to a secondary copy without manual intervention or custom scripting. Learn more about https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/protect-nas-task.html[SnapMirror active sync for NAS^].
+
 == Storage efficiency
 
 ONTAP provides several storage efficiency features that can help you optimize your storage usage and reduce costs.

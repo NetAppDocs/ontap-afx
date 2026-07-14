@@ -14,6 +14,19 @@ summary: "Learn about the new capabilities included with ONTAP 9.19.1 that are a
 [.lead]
 Learn about the new capabilities included with ONTAP 9.19.1 that are available with your AFX storage system.
 
+== Data protection
+
+[cols="2,4" options="header"]
+|===
+
+| Update
+| Description
+
+| link:../administer/additional-ontap-svm.html[Protect with ONTAP SnapMirror active sync for NAS]
+a| SnapMirror active sync supports NAS workloads at the SVM level using NFS and SMB on AFX clusters (4-node only) and read-write access only on the primary cluster.
+
+|===
+
 == Networking
 
 [cols="2,4" options="header"]
