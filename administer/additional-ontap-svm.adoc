@@ -65,6 +65,10 @@ A consistency group is a collection of volumes that are managed as a single unit
 
 You can protect your files by converting them to a write once read many (WORM) state at a volume level. SnapLock supports two modes. Compliance mode ensures the files cannot be deleted until their retention period expires which addresses government or industry-specific mandates. Enterprise mode allows privileged users to delete files before their retention period expires. Learn more about https://docs.netapp.com/us-en/ontap/snaplock/index.html[ONTAP SnapLock^].
 
+=== SnapMirror active sync for NAS
+
+SnapMirror active sync allows business services to continue functioning in the event of a complete site failure. This technology enables applications to fail over seamlessly to a secondary copy without manual intervention or custom scripting. Learn more about https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/protect-nas-task.html[SnapMirror active sync for NAS^].
+
 == Storage efficiency
 
 ONTAP provides several storage efficiency features that can help you optimize your storage usage and reduce costs.
@@ -84,6 +88,10 @@ There are several optional security features you can configure and use with your
 === FPolicy
 
 FPolicy is a file access notification framework used to monitor and manage file access events on storage virtual machines (SVMs). You can use FPolicy to create policies that define which file operations to monitor, and optionally block, based on criteria you define. FPolicy is commonly used for security auditing, compliance, and data governance. Learn more about https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[ONTAP FPolicy solutions^].
+
+=== NFS over TLS
+
+Beginning with ONTAP 9.19.1, ONTAP adds on-premises support for NFS over TLS with TLS 1.3 to encrypt NFS traffic in transit on NFS-enabled SVMs. The release also supports optional per-LIF mutual TLS host authentication and export-policy controls to deny non-TLS TCP access for matching clients. NFS over TLS works with existing ONTAP NFS infrastructure, so applications continue to use NFS normally while TLS encrypts NFS traffic in transit. NFS over TLS is not available for Cloud platforms in ONTAP 9.19.1. Refer to https://docs.netapp.com/us-en/ontap/nfs-admin/enable-nfs-over-tls-task.html[Enable NFS over TLS^] for more information.
 
 == ONTAP event and performance monitoring
 

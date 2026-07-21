@@ -45,6 +45,11 @@ Adaptive and non-adaptive QoS policy groups are automatically enabled to tempora
 
 Refer to link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html[QoS throughput ceilings^].
 
+=== IPspace TCP performance 
+
+Beginning with ONTAP 9.19.1, ONTAP improves TCP data transfer performance over lossy, high-latency WAN links by integrating two loss-recovery features, PRR and RACK, into the ONTAP TCP stack. PRR is suitable for all networks and is enabled by default. RACK is suitable for congested networks with link speeds of approximately 25 Gigabits/second and is disabled by default.  
+
+Refer to link:https://docs.netapp.com/us-en/ontap/networking/improve-tcp-wan-performance.html[Improve TCP WAN performance with PRR and RACK] for more information.
 
 == Security
 
@@ -73,11 +78,23 @@ OAuth 2.0 is the industry standard authorization framework used to restrict and 
 . Select *Add configuration* and provide the configuration details.
 . Select *Save*.
 
+
+== Data protection
+
+You should be aware of the following ONTAP data protection features and how they relate to the AFX storage system.
+
+=== Load-share mirrors
+
+With ONTAP, a load-sharing mirror (LSM) is a SnapMirror replica of a storage VM (SVM) root volume which serves as the entry point to the SVM's NAS namespace. By maintaining one or more read-only copies of the root volume on other nodes, load-sharing mirrors help keep the NAS namespace accessible to clients even if both nodes of an HA pair become unavailable.
+
+*The AFX storage system does not support load-sharing mirrors.* You cannot create, initialize, or update a load-sharing mirror relationship on AFX. To achieve namespace resiliency, data distribution, or read scaling on AFX, use FlexCache volumes or SnapMirror replication instead. These features provide equivalent or greater capability for keeping data and namespaces available to clients, and they are fully supported on AFX.
+
 == Related information
 
 * link:../faq-ontap-afx.html[FAQ for AFX storage systems]
 * https://kb.netapp.com/nss/Licensing/How_to_download_NLF_licenses_from_the_NetApp_Support_Site[How to download NLF licenses from the NetApp Support Site^]
 * https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html[Overview of the ONTAP OAuth 2.0 implementation^]
 * link:../administer/additional-ontap-svm.html[Additional administration for AFX SVMs]
+* https://docs.netapp.com/us-en/ontap/data-protection/manage-snapmirror-root-volume-replication-concept.html[Learn about ONTAP SnapMirror root volume replication^]
 
 // 2026 May 07, ONTAPDOC-3500, ONTAPDOC-3679
