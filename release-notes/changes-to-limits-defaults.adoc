@@ -31,6 +31,10 @@ a| You can expand your AFX cluster to a maximum of 32 nodes. This allows you to 
 a| The maximum number of volumes in a FlexGroup has been increased to 512 with 32 nodes. This allows the AFX storage system to fully deliver the performance capabilities for larger clusters.
 | ONTAP 9.19.1
 
+| SnapMirror cloud support
+a| The maximum number of S3 buckets supported by SnapMirror cloud has been increased to 100. This allows you to create more S3 buckets for your workloads and applications.
+| ONTAP 9.19.1
+
 |===
 
 == Related information
