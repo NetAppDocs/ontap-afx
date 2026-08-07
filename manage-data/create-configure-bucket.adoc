@@ -29,3 +29,7 @@ You need to configure the S3 service for the SVM for clients to be able to acces
 . Optionally select *More options* for additional configuration related to data protection, locking, and permissions.
 
 . Select *Save* to add the bucket.
+
+.Related information
+
+* https://docs.netapp.com/us-en/ontap/data-protection/cloud-backup-with-snapmirror-task.html[Back up data to the cloud using ONTAP SnapMirror Cloud^]
