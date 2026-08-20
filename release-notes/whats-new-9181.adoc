@@ -23,11 +23,11 @@ There are several new features available for AFX with ONTAP 9.18.1. Some of thes
 |===
 | Update | Description 
 a| 
-xref:../administer/additional-ontap-cluster.html[Additional ONTAP AFX cluster configuration^] 
+xref:../administer/additional-ontap-cluster.html[Additional admin: IPsec hardware offload^] 
 a| 
 IPsec hardware offload support is extended to IPv6. 
 a|
-xref:../administer/additional-ontap-cluster.html[Additional ONTAP AFX cluster configuration^] 
+xref:../administer/additional-ontap-cluster.html[Additional admin: OpenSSL PQC algorithms^] 
 a| 
 ONTAP supports postquantum computing cryptographic algorithms for SSL. These algorithms provide additional protection against potential future quantum computing attacks, and are available when SSL FIPS mode is disabled.  
 |===

@@ -9,10 +9,10 @@ summary: "In addition to the typical AFX cluster administration, there may be ot
 :imagesdir: ../media/
 
 [.lead]
-In addition to the typical AFX cluster administration, there may be other tasks you need to perform based on your environment. Most of the additional tasks can be performed using System Manager, although in some cases you may need to use the CLI.
+In addition to the typical AFX cluster administration, there may be other tasks you need to perform based on your environment. Most of the additional tasks can be performed using System Manager, although in some cases you may need to use the CLI. The ONTAP features and administration described are common to AFX storage systems and AFF or FAS systems running Unified ONTAP. Links to the relevant Unified ONTAP documentation are included as appropriate.
 
-[NOTE]
-The ONTAP features and administration described are common to AFX storage systems and AFF or FAS systems running Unified ONTAP. Links to the relevant Unified ONTAP documentation are included as appropriate.
+[TIP]
+If you don't see the option or feature you're looking for, review the links to additional resources at the bottom.
 
 == Licensing
 
@@ -96,5 +96,7 @@ With ONTAP, a load-sharing mirror (LSM) is a SnapMirror replica of a storage VM 
 * https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html[Overview of the ONTAP OAuth 2.0 implementation^]
 * link:../administer/additional-ontap-svm.html[Additional administration for AFX SVMs]
 * https://docs.netapp.com/us-en/ontap/data-protection/manage-snapmirror-root-volume-replication-concept.html[Learn about ONTAP SnapMirror root volume replication^]
+* https://docs.netapp.com/us-en/ontap/networking/ipsec-prepare.html[Prepare to use IP security on the ONTAP network^]
+* https://docs.netapp.com/us-en/ontap/networking/configure_network_security_using_federal_information_processing_standards_fips.html[Configure ONTAP network security using FIPS for all SSL connections^]
 
 // 2026 May 07, ONTAPDOC-3500, ONTAPDOC-3679

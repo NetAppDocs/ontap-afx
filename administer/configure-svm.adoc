@@ -40,3 +40,7 @@ You need to decide which SVM you are interested in displaying and updating.
 . In System Manager, select *Cluster* and then *Storage VMs*.
 . Select the desired SVM and then the *Settings* tab.
 . Review the configuration options on the page; select and update the settings as desired.
+
+.Related information
+
+* https://docs.netapp.com/us-en/ontap/performance-admin/adaptive-qos-policy-groups-task.html[Adaptive QoS policy groups^]
