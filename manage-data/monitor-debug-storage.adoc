@@ -24,3 +24,4 @@ You can display a list of the NFS and SMB/CIFS clients currently connected to th
 == Related information
 
 * link:../manage-data/prepare-manage-data.html[Prepare to manage your AFX data]
+* https://docs.netapp.com/us-en/ontap/task_nas_file_system_analytics_enable.html[Enable ONTAP File System Analytics^]
