@@ -17,18 +17,34 @@ Learn about the new capabilities included with ONTAP 9.18.1 that are available w
 [NOTE]
 There are several new features available for AFX with ONTAP 9.18.1. Some of these are specific to AFX while many others are derived from a common shared product base. In addition to reviewing the AFX features described below, you should also refer to https://docs.netapp.com/us-en/ontap/release-notes/whats-new-9181.html[What's new in ONTAP 9.18.1^].
 
+== Security
+
+[cols="30%,70%",options="header"]
+|===
+| Update | Description 
+a| 
+xref:../administer/additional-ontap-cluster.html[Additional admin: IPsec hardware offload]
+a| 
+IPsec hardware offload support is extended to IPv6. 
+a|
+xref:../administer/additional-ontap-cluster.html[Additional admin: OpenSSL PQC algorithms]
+a| 
+ONTAP supports postquantum computing cryptographic algorithms for SSL. These algorithms provide additional protection against potential future quantum computing attacks, and are available when SSL FIPS mode is disabled.  
+|===
+
 == Storage resource management enhancements
 
 [cols="2,4" options="header"]
 |===
-// header row
 | Update
 | Description
 
 | Enhanced volume placement
 a| NetApp AFX automatically balances the placement of volumes across all the nodes in a cluster. With previous ONTAP releases, the placement algorithm was based on the number of volumes in the cluster. Every node is assigned the same number of volumes regardless of activity. Beginning with ONTAP 9.18.1, the algorithm has been enhanced to consider the performance of the nodes when placing or moving volumes. This results in improved performance balancing across the nodes in the AFX cluster and makes it much less likely that any single node becomes overloaded.
-
-// table end
+a|
+xref:../administer/configure-svm.html[Support for two-level nested QoS policy groups on SVMs and volumes]
+a|
+You can assign a QoS policy to an SVM and to volumes under the SVM at the same time. 
 |===
 
 .Related information
