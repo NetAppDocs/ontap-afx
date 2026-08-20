@@ -12,7 +12,7 @@ summary: "In addition to the typical AFX SVM administration, there may be other 
 In addition to the typical AFX SVM administration, there may be other tasks you need to perform based on your environment. Most of the additional tasks can be performed using System Manager, although in some cases you may need to use the CLI. The ONTAP features and administration described are common to AFX storage systems and AFF or FAS systems running Unified ONTAP. Links to the relevant Unified ONTAP documentation are included as appropriate.
 
 [TIP]
-If you don't see the option or feature you're looking for, review the links to additional resources at the bottom.
+Review the brief descriptions of the ONTAP AFX features. If you don't find the option you're looking for, make sure to also look at the links to additional resources at the bottom.
 
 == Storage management and performance
 
