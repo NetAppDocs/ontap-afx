@@ -47,6 +47,6 @@ a|
 You can assign a QoS policy to an SVM and to volumes under the SVM at the same time. 
 |===
 
-.Related information
+== Related information
 
 * https://docs.netapp.com/us-en/ontap/release-notes/index.html[ONTAP 9 release highlights^]

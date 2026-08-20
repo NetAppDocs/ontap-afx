@@ -146,7 +146,7 @@ a| When executing automated pre-upgrade checks, errors and warning are displayed
 
 |===
 
-.Related information
+== Related information
 
 * https://docs.netapp.com/us-en/ontap/release-notes/index.html[ONTAP 9 release highlights^]
 
