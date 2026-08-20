@@ -21,7 +21,6 @@ There are several new features available for AFX with ONTAP 9.17.1. Some of thes
 
 [cols="2,4" options="header"]
 |===
-// header row
 | Update
 | Description
 
@@ -32,9 +31,20 @@ a| The following NetApp AFX storage system components are available along with t
 * NX224 shelves
 * Cisco Nexus 9332D-GX2B and Nexus 9364D-GX2A switches
 
-// table end
 |===
 
-.Related information
+== Storage resource management enhancements  
+
+[cols="30%,70%",options="header"]
+|===
+| Update | Description 
+a|
+xref:../manage-data/monitor-debug-storage.html[Monitor and troubleshoot an AFX storage system]
+a|
+Volumes created on newly created SVMs on ONTAP clusters allocated for NAS protocols have File System Analytics (FSA) enabled by default. FSA is automatically activated as soon as a volume is created, providing immediate analytics capabilities without additional configuration.
+
+|===
+
+== Related information
 
 * https://docs.netapp.com/us-en/ontap/release-notes/index.html[ONTAP 9 release highlights^]
