@@ -104,7 +104,6 @@ system node evacuate-volumes show -node <node_to_remove>
 Wait until the pending count is 0 before proceeding.Do not move epsilon or eligibility until the volumes are fully evacuated.
 +
 If necessary, you can use the system node evacuate-volumes abort -node <node> command to abort the evacuation process.
-----
 
 . Confirm if the node you want to remove holds epsilon:
 +
