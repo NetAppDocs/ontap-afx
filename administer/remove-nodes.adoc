@@ -1,0 +1,201 @@
+---
+sidebar: sidebar
+permalink: administer/remove-nodes.html
+keywords: netapp afx, remove node, unjoin, cluster remove-node, evacuate volumes, zero-copy volume move
+summary: "Learn how to remove storage nodes from a NetApp AFX cluster, including volume evacuation, LIF migration, and HA partner unjoin."
+---
+
+= Remove nodes from an AFX storage system cluster
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You might need to remove nodes from your AFX cluster for maintenance or replacement. Nodes must be removed one at a time, but if you remove a node, you must also then remove its HA partner.
+
+.About this task
+
+* For AFX storage systems, all storage is contained within a single Storage Availability Zone (SAZ) which is accessible by every node in the cluster. As a result, when a node is removed, data does not need to be copied from the departing node. Instead, pointers to the volumes on the departing node are updated among the remaining nodes. This is referred to as a Zero Copy Volume Move (ZCVM) and happens instantaneously because no data is actually copied or moved.
++
+[NOTE]
+====
+Volumes that cannot be moved using ZCVM must be manually handled prior to removing the node. This includes clones, offline volumes, NVE rekey, SnapMirror-to-cloud or SMC restore, and audit MDV.  Audit staging and root volumes are handled in the process of unjoining the node.
+====
+
+* Successfully unjoining a node from the cluster does the following:
+** Marks the node ineligible and out of CLAM quorum.
+** Cleanly shuts the node down.
+** Marks rootFA + dataFA defunct and moves ownership to a surviving node (prefers a node that is not the HA partner and that has the fewest defunct FAs)
+** Cleans RAID/HA per-node state and deletes the site from the cluster DB.
+
+== Step 1: Prepare to remove nodes from an AFX cluster
+
+Before you remove nodes from your AFX cluster, you should verify that the cluster and cluster rings are healthy and that there are no data LIFs on the node to be removed.
+
+.Steps
+
+. Confirm that the cluster is healthy:
++
+[source, cli]
+---- 
+cluster show
+----
+
+. Confirm that the cluster ring show is healthy:
++
+[source, cli]
+----
+cluster ring show
+----
+
+. Confirm that the node you want to remove is online and healthy:
++
+[source, cli]
+----
+system node show -node <node> -health -epsilon
+----
+
+. View the LIFs on the node:
++
+[source, cli]
+----
+network interface show -curr-node <node>
+----
+
+. Migrate data LIFs from the node:
++
+[source, cli]
+----
+network interface migrate -vserver <SVM> -lif <LIF> -dest-node <destination_node> -dest-port <destination_port>
+----
++
+Repeat this command for all data LIFs.  Only cluster LIFs and node-mgmt LIFs should remain on the node.
+
+. Verify that all data LIFs have been removed and only cluster LIFs and node-mgmt LIFs remain on the node:
++
+[source, cli]
+----
+network interface show -curr-node <node>
+----
+
+.What’s next?
+After you have completed the preparation steps, you can remove the first node in the HA pair from the cluster and then remove its HA partner.
+
+
+== Step 2: Unjoin a single node from an AFX cluster
+
+Remove a node from an ASA r2 cluster only after you have completed the steps necessary to prepare the node for removal. After you remove a node from the cluster, you must then remove its HA partner.
+
+.Steps
+
+. Evacuate the node volumes:
++
+[source, cli]
+----
+system node evacuate-volumes start -node <node_to_remove>
+----
+
+. Verify that the node volumes have been evacuated:
++
+[source, cli]
+----
+system node evacuate-volumes show -node <node_to_remove>
+----
++
+Wait until the pending count is 0 before proceeding.Do not move epsilon or eligibility until the volumes are fully evacuated.
++
+If necessary, you can use the system node evacuate-volumes abort -node <node> command to abort the evacuation process.
+----
+
+. Confirm if the node you want to remove holds epsilon:
++
+[source, cli]
+----
+cluster show -epsilon true
+----
+
+.. If the node holds epsilon, move it to another node:
++
+[source, cli]
+----
+cluster modify -node <surviving_node> -epsilon true
+----
+
+. Confirm if the node you want to remove is the RDB ring master:
++
+[source, cli]
+----
+cluster ring show
+----
+
+.. If the node is the RDB ring master, make it ineligible:
++
+[source, cli]
+----
+cluster modify -node <node_to_remove> -eligibility false
+----
+
+. Show the home-node of remaining data LIFs:
++
+[source, cli]
+----
+network interface show -home-node <node_to_remove>
+----
+
+. Change the home-node of the remaining data LIFs to another node:
++
+[source, cli]
+----
+network interface modify -vserver <SVM> -lif <LIF> -home-node <surviving_node>
+----
++
+Leave cluster LIFs and node-mgmt LIFs on the departing node.
+
+. Disable takeover of the node to be removed:
++
+[source, cli]
+----
+storage failover modify -node <node_to_remove> -enable-takeover-of false
+----
+
+. Verify that takeover is disabled for the node to be removed:
++
+[source, cli]
+----
+storage failover show
+----
++
+Takeover is not possible on the HA pair while failover is disabled.
+
+. On a surviving, healthy node, set the privilege level to advanced:
++
+[source, cli]
+----
+privilege set -level advanced
+----
+
+. Unjoin the node from the cluster:
++
+[source, cli]
+----
+cluster remove-node -node <node_to_remove>
+----
++
+Confirm the warnings. The job should end with *Node remove succeeded*.
+
+.What's next?
+
+Repeat the previous steps to remove the HA partner from the cluster. You cannot remove additional nodes until the HA partner of the unjoined node is removed.
+
+== Step 3: Optionally, clean the removed hardware
+
+If you are repurposing a node that you have removed from a cluster, you must erase the node configuration and initialize all disks before it can rejoin a cluster.
+
+.Steps
+
+. During the boot process, when prompted, press Ctrl-C to display the boot menu. 
+. Select the boot menu option *(4) Clean configuration and initialize all disks*.
+
+.What's next? 
+You can use the `cluster add-node` command to reuse the HA pair in the same cluster: 
+
+// 2026 Aug 28, ONTAPDOC 4283
