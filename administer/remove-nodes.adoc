@@ -119,7 +119,7 @@ cluster show -epsilon true
 cluster modify -node <surviving_node> -epsilon true
 ----
 
-.Identify the current primary node:
+. Identify the current primary node:
 +
 [source, cli]
 ----
