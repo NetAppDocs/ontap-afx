@@ -10,15 +10,15 @@ summary: "Learn how to remove storage nodes from a NetApp AFX cluster, including
 :imagesdir: ../media/
 
 [.lead]
-You might need to remove nodes from your AFX cluster for maintenance or replacement. Nodes must be removed one at a time, but if you remove a node, you must also then remove its HA partner.
+You might need to remove nodes from your AFX cluster for maintenance or hardware replacement. You can remove only one node at a time, and after removing a node, you must also remove its HA partner.
 
 .About this task
 
-* For AFX storage systems, all storage is contained within a single Storage Availability Zone (SAZ) which is accessible by every node in the cluster. As a result, when a node is removed, data does not need to be copied from the departing node. Instead, pointers to the volumes on the departing node are updated among the remaining nodes. This is referred to as a Zero Copy Volume Move (ZCVM) and happens instantaneously because no data is actually copied or moved.
+* For AFX storage systems, all storage is contained within a single Storage Availability Zone (SAZ) that is accessible by every node in the cluster. As a result, when a node is removed, data does not need to be copied from the departing node. Instead, pointers to the volumes on the departing node are updated among the remaining nodes. This is referred to as a Zero Copy Volume Move (ZCVM) and happens instantaneously because no data is actually copied or moved.
 +
 [NOTE]
 ====
-Volumes that cannot be moved using ZCVM must be manually handled prior to removing the node. This includes clones, offline volumes, NVE rekey, SnapMirror-to-cloud or SMC restore, and audit MDV.  Audit staging and root volumes are handled in the process of unjoining the node.
+You must manually handle volumes that cannot be moved using ZCVM before removing the node. This includes clones, offline volumes, NVE rekey, SnapMirror-to-cloud or SMC restore, and audit MDV.  Audit staging and root volumes are handled in the process of unjoining the node.
 ====
 
 * Successfully unjoining a node from the cluster does the following:
@@ -83,7 +83,7 @@ After you have completed the preparation steps, you can remove the first node in
 
 == Step 2: Unjoin a single node from an AFX cluster
 
-Remove a node from an ASA r2 cluster only after you have completed the steps necessary to prepare the node for removal. After you remove a node from the cluster, you must then remove its HA partner.
+Remove a node from an AFX cluster only after you have completed the steps necessary to prepare the node for removal. After you remove a node from the cluster, you must then remove its HA partner.
 
 .Steps
 
@@ -101,7 +101,7 @@ system node evacuate-volumes start -node <node_to_remove>
 system node evacuate-volumes show -node <node_to_remove>
 ----
 +
-Wait until the pending count is 0 before proceeding.Do not move epsilon or eligibility until the volumes are fully evacuated.
+Wait until the pending count is 0 before proceeding. Do not move epsilon or eligibility until the volumes are fully evacuated.
 +
 If necessary, you can use the system node evacuate-volumes abort -node <node> command to abort the evacuation process.
 
@@ -195,6 +195,6 @@ If you are repurposing a node that you have removed from a cluster, you must era
 . Select the boot menu option *(4) Clean configuration and initialize all disks*.
 
 .What's next? 
-You can use the `cluster add-node` command to reuse the HA pair in the same cluster: 
+You can use the `cluster add-node` command to reuse the HA pair in the same cluster.
 
 // 2026 Aug 28, ONTAPDOC 4283
