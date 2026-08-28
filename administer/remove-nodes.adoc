@@ -119,14 +119,14 @@ cluster show -epsilon true
 cluster modify -node <surviving_node> -epsilon true
 ----
 
-. Confirm if the node you want to remove is the RDB ring master:
+.Identify the current primary node:
 +
 [source, cli]
 ----
 cluster ring show
 ----
 
-.. If the node is the RDB ring master, make it ineligible:
+.. If the node you are removing is the current primary node, make it ineligible:
 +
 [source, cli]
 ----
