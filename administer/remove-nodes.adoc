@@ -24,8 +24,8 @@ You must manually handle volumes that cannot be moved using ZCVM before removing
 * Successfully unjoining a node from the cluster does the following:
 ** Marks the node ineligible and out of CLAM quorum.
 ** Cleanly shuts the node down.
-** Marks rootFA + dataFA defunct and moves ownership to a surviving node (prefers a node that is not the HA partner and that has the fewest defunct FAs)
-** Cleans RAID/HA per-node state and deletes the site from the cluster DB.
+** Moves ownership to a surviving node.
+** Cleans RAID/HA per-node state and deletes the site from the cluster database.
 
 == Step 1: Prepare to remove nodes from an AFX cluster
 
