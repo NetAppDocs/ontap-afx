@@ -18,14 +18,16 @@ You might need to remove nodes from your AFX cluster for maintenance or hardware
 +
 [NOTE]
 ====
-You must manually handle volumes that cannot be moved using ZCVM before removing the node. This includes clones, offline volumes, NVE rekey, SnapMirror-to-cloud or SMC restore, and audit MDV.  Audit staging and root volumes are handled in the process of unjoining the node.
+Before removing the node, manually handle any volumes that cannot be moved by ZCVM. These include volume clones, offline volumes, encrypted volumes whose original encryption key has been changed or rekeyed, and volumes restored using SnapMirror cloud. Audit staging volumes and root volumes are moved by ZCVM during the node unjoin process.
+
+* Learn more about link:../nas-audit/basic-auditing-concept.html[audit staging volumes].
+* Learn more about link:../encryption-at-rest/rekey-encrypted-volume-task.html[rekeyed encrypted volumes].
 ====
 
 * Successfully unjoining a node from the cluster does the following:
 ** Marks the node ineligible and out of CLAM quorum.
-** Cleanly shuts the node down.
-** Moves ownership to a surviving node.
-** Cleans RAID/HA per-node state and deletes the site from the cluster database.
+** Cleanly shuts the node down and moves ownership to a surviving node.
+** Cleans the RAID high-availability (HA) state on the node and deletes it from the cluster database.
 
 == Step 1: Prepare to remove nodes from an AFX cluster
 
@@ -38,13 +40,6 @@ Before you remove nodes from your AFX cluster, you should verify that the cluste
 [source, cli]
 ---- 
 cluster show
-----
-
-. Confirm that the cluster ring show is healthy:
-+
-[source, cli]
-----
-cluster ring show
 ----
 
 . Confirm that the node you want to remove is online and healthy:
@@ -68,9 +63,9 @@ network interface show -curr-node <node>
 network interface migrate -vserver <SVM> -lif <LIF> -dest-node <destination_node> -dest-port <destination_port>
 ----
 +
-Repeat this command for all data LIFs.  Only cluster LIFs and node-mgmt LIFs should remain on the node.
+Repeat this command for all data LIFs.  Only cluster LIFs and node management LIFs should remain on the node.
 
-. Verify that all data LIFs have been removed and only cluster LIFs and node-mgmt LIFs remain on the node:
+. Verify that all data LIFs have been removed and only cluster LIFs and node management LIFs remain on the node:
 +
 [source, cli]
 ----
@@ -105,14 +100,14 @@ Wait until the pending count is 0 before proceeding. Do not move epsilon or elig
 +
 If necessary, you can use the system node evacuate-volumes abort -node <node> command to abort the evacuation process.
 
-. Confirm if the node you want to remove holds epsilon:
+. Identify the node that holds epsilon:
 +
 [source, cli]
 ----
 cluster show -epsilon true
 ----
 
-.. If the node holds epsilon, move it to another node:
+.. If the node that you want to remove holds epsilon, move epsilon to another node:
 +
 [source, cli]
 ----
@@ -147,7 +142,7 @@ network interface show -home-node <node_to_remove>
 network interface modify -vserver <SVM> -lif <LIF> -home-node <surviving_node>
 ----
 +
-Leave cluster LIFs and node-mgmt LIFs on the departing node.
+Leave cluster LIFs and node management LIFs on the departing node.
 
 . Disable takeover of the node to be removed:
 +
