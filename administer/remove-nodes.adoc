@@ -20,8 +20,8 @@ You might need to remove nodes from your AFX cluster for maintenance or hardware
 ====
 Before removing the node, manually handle any volumes that cannot be moved by ZCVM. These include volume clones, offline volumes, encrypted volumes whose original encryption key has been changed or rekeyed, and volumes restored using SnapMirror cloud. Audit staging volumes and root volumes are moved by ZCVM during the node unjoin process.
 
-* Learn more about link:../nas-audit/basic-auditing-concept.html[audit staging volumes].
-* Learn more about link:../encryption-at-rest/rekey-encrypted-volume-task.html[rekeyed encrypted volumes].
+* Learn more about link:https://docs.netapp.com/us-en/ontap/nas-audit/basic-auditing-concept.html[audit staging volumes^].
+* Learn more about link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/rekey-encrypted-volume-task.html[rekeyed encrypted volumes^].
 ====
 
 * Successfully unjoining a node from the cluster does the following:
@@ -31,7 +31,7 @@ Before removing the node, manually handle any volumes that cannot be moved by ZC
 
 == Step 1: Prepare to remove nodes from an AFX cluster
 
-Before you remove nodes from your AFX cluster, you should verify that the cluster and cluster rings are healthy and that there are no data LIFs on the node to be removed.
+Before you remove nodes from your AFX cluster, you should verify that the cluster is healthy and that there are no data LIFs on the node to be removed.
 
 .Steps
 
@@ -96,9 +96,9 @@ system node evacuate-volumes start -node <node_to_remove>
 system node evacuate-volumes show -node <node_to_remove>
 ----
 +
-Wait until the pending count is 0 before proceeding. Do not move epsilon or eligibility until the volumes are fully evacuated.
+Wait until the *pending count* is 0 before proceeding. Do not move epsilon or eligibility until the volumes are fully evacuated.
 +
-If necessary, you can use the system node evacuate-volumes abort -node <node> command to abort the evacuation process.
+If necessary, you can use the `system node evacuate-volumes abort -node <node>` command to abort the evacuation process.
 
 . Identify the node that holds epsilon:
 +
