@@ -4,7 +4,7 @@ permalink: secure-data/secure-ip-connections.html
 keywords: netapp afx, afx, ip security, ipsec, secure data, data security, encryption, data-in-flight, secure connections, hardware offload
 summary: "IP Security (IPsec) is an Internet protocol standard that provides data encryption, integrity, and authentication for traffic flowing among network endpoints at the IP level. You can use IPsec to enhance the security of the front-end network between an AFX cluster and the clients."
 ---
-= Secure IP connections on your AFX storage systems
+= IP security for AFX storage systems
 :icons: font
 :imagesdir: ../media/
 
