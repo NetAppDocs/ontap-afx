@@ -5,7 +5,7 @@ keywords: afx, afx system, prepare, prepare secure, prepare secure data
 summary: "Before managing your AFX data, you should be familiar with the major concepts and capabilities."
 ---
 
-= Prepare to secure your AFX storage system data
+= Learn about data security options for AFX storage systems
 :icons: font
 :imagesdir: ../media/
 
@@ -26,7 +26,7 @@ Digital certificates and PKI::
 A digital certificate is an electronic document used to prove ownership of a public key. The public key and associated private key can be used in various ways, including to establish identity typically as part of a larger security framework such as TLS and IPsec. These keys, as well as the supporting protocols and formatting standards, form the basis for public key infrastructure (PKI). Refer to link:../administer/manage-certificates.html#generate-a-certificate-signing-request[Manage certificates on an AFX storage system] for more information.
 
 Internet Protocol Security::
-IPsec is an Internet standard that provides in-flight data encryption, integrity, and authentication for traffic flowing among network endpoints at the IP level. It secures all IP traffic between ONTAP and clients including higher level protocols such as NFS and SMB. IPsec provides protection against malicious replay and man-in-the-middle attacks on your data. Refer to link:../secure-data/secure-ip-connections.html[Secure IP connections on your AFX storage systems]
+IPsec is an Internet standard that provides in-flight data encryption, integrity, and authentication for traffic flowing among network endpoints at the IP level. It secures all IP traffic between ONTAP and clients including higher level protocols such as NFS and SMB. IPsec provides protection against malicious replay and man-in-the-middle attacks on your data. Refer to link:../secure-data/secure-ip-connections.html[IP security for AFX storage systems]
 for more information.
 
 == Related information
