@@ -1,0 +1,48 @@
+---
+permalink: administer/fabricpool-prepare.html
+sidebar: sidebar
+keywords: afx, fabricpool, requirements, limitations, licensing, prepare, prerequisites, storagegrid, ontap s3
+summary: "Before configuring FabricPool on an AFX storage system, you should prepare by becoming familiar with the requirements, limitations, and selected technology."
+---
+
+= Prepare to implement FabricPool on an AFX storage system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before configuring FabricPool on an AFX storage system, you should prepare by becoming familiar with the requirements, limitations, and selected technology.
+
+== Requirements
+
+The most important requirements when deploying FabricPool on an AFX storage include the following:
+
+* *AFX release.* FabricPool is supported on AFX 9.19.1 and later releases. The feature is not supported on AFX clusters that were upgraded from 9.18.1 due to internal changes in how storage is addressed.
+* *Object store.* A NetApp StorageGRID or ONTAP S3 bucket is needed. As with unified ONTAP, the bucket must already exist and have adequate capacity based on your data. A CA certificate is recommended unless certificate checking is explicitly disabled.
+* *Network connectivity.* All nodes in the AFX cluster must have network connectivity to the object store. This is implemented using a pair of intercluster LIFs at each node.
+
+The AFX and ONTAP FabricPool environments are very similar. Review https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html[Requirements for using ONTAP FabricPool^] for more information.
+
+== Limitations and restrictions
+
+The AFX FabricPool implementation is more restrictive than unified ONTAP in several ways. The following capabilities are *not supported* with FabricPool on AFX:
+
+* The public cloud object stores available for use with ONTAP, such as Amazon S3 and Google Cloud Storage, are not supported with AFX. Only StorageGRID and ONTAP S3 are supported.
+* FabricPool mirroring.
+* Multiple object store buckets or volume-granular bucket attach; a single cluster-level bucket per AFX cluster is used.
+* Optimized volume move, optimized SVM migrate, and optimized clone split.
+* SVM migrate and migration from unified ONTAP to AFX.
+* Inactive data reporting (IDR/AutoIDR).
+
+== Licensing
+
+With unified ONTAP, a capacity-based FabricPool license is required when tiering to third-party public cloud object stores. But no additional license is required when using StorageGRID or ONTAP S3. Because AFX supports only StorageGRID and ONTAP S3, a FabricPool capacity license is not required for AFX FabricPool.
+
+== Intercluster LIFs
+
+An intercluster LIF is a logical network interface used for cross-cluster or external communication. In unified ONTAP, the FabricPool HA pairs require two intercluster LIFs per pair to reach the cloud tier, and NetApp recommends additional intercluster LIFs for resiliency. With AFX, intercluster LIFs are also used for communication with the object store. Connectivity is validated across all nodes in the cluster as part of creating the object store configuration.
+
+== Related information
+
+* https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html[Requirements for using ONTAP FabricPool^]
+* https://docs.netapp.com/us-en/ontap/peering/peering-basics-concept.html[ONTAP peering basics^]
+* https://docs.netapp.com/us-en/ontap/peering/configure-intercluster-lifs-share-data-ports-task.html[Configure ONTAP intercluster LIFs on shared data ports^]
