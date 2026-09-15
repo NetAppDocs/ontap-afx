@@ -16,9 +16,9 @@ Before configuring FabricPool on an AFX storage system, you should prepare by be
 
 The most important requirements when deploying FabricPool on an AFX storage include the following:
 
-* *AFX release.* FabricPool is supported on AFX 9.19.1 and later releases. The feature is not supported on AFX clusters that were upgraded from 9.18.1 due to internal changes in how storage is addressed.
+* *AFX release.* FabricPool is supported on AFX 9.19.1 P3 and later releases. The feature is not supported on AFX clusters that were upgraded from 9.18.1 due to internal changes in how storage is addressed.
 * *Object store.* A NetApp StorageGRID or ONTAP S3 bucket is needed. As with unified ONTAP, the bucket must already exist and have adequate capacity based on your data. A CA certificate is recommended unless certificate checking is explicitly disabled.
-* *Network connectivity.* All nodes in the AFX cluster must have network connectivity to the object store. This is implemented using a pair of intercluster LIFs at each node.
+* *Network connectivity.* All nodes in the AFX cluster must have network connectivity to the object store. This is implemented using a pair of intercluster LIFs at each node which is the same as unified ONTAP.
 
 The AFX and ONTAP FabricPool environments are very similar. Review https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html[Requirements for using ONTAP FabricPool^] for more information.
 
