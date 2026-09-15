@@ -5,7 +5,7 @@ keywords: afx, fabricpool, object store, cluster object-store, tiering policy, a
 summary: "At a high level, configuring and activating FabricPool on an AFX storage system involves processes at two different levels. First you need to define a cloud tier at the cluster level for your data. Then you can activate tiering on specific volumes using one of several tiering policies."
 ---
 
-= Configure FabricPool for ONTAP AFX
+= Configure FabricPool for AFX storage systems
 :icons: font
 :imagesdir: ../media/
 

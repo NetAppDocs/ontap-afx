@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: afx, oam, fabricpool, manage, monitor, space, tiering policy, zcvm, volume move, node join, node unjoin, flexaggr
 summary: "The ongoing management of AFX FabricPool is similar to unified ONTAP; you need to monitor space utilization, manage volumes, and adjust tiering policies. There are a few notable additions for the AFX environment including the behavior when nodes join or leave the AFX cluster."
 ---
-= Manage FabricPool for ONTAP AFX
+= Manage FabricPool for AFX storage systems
 :icons: font
 :imagesdir: ../media/
 
