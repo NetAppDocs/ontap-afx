@@ -16,11 +16,11 @@ Before configuring FabricPool on an AFX storage system, you should prepare by be
 
 The most important requirements when deploying FabricPool on an AFX storage include the following:
 
-* *AFX release.* FabricPool is supported on AFX 9.19.1 P3 and later releases. The feature is not supported on AFX clusters that were upgraded from 9.18.1 due to internal changes in how storage is addressed.
-* *Object store.* A NetApp StorageGRID or ONTAP S3 bucket is needed. As with unified ONTAP, the bucket must already exist and have adequate capacity based on your data. A CA certificate is recommended unless certificate checking is explicitly disabled.
-* *Network connectivity.* All nodes in the AFX cluster must have network connectivity to the object store. This is implemented using a pair of intercluster LIFs at each node which is the same as unified ONTAP.
+* *ONTAP release.* FabricPool is supported on AFX storage systems with ONTAP 9.19.1 P3 and later releases. The feature is not supported on AFX clusters that were upgraded from 9.18.1 due to internal changes in how storage is addressed.
+* *Object store.* A NetApp StorageGRID or ONTAP S3 bucket is needed. As with AFF and FAS storage running unified ONTAP, the bucket must already exist and have adequate capacity based on your data. A CA certificate is recommended unless certificate checking is explicitly disabled.
+* *Network connectivity.* All nodes in the AFX cluster must have network connectivity to the object store. This is implemented using a pair of intercluster LIFs at each node, which is the same as AFF and FAS systems.
 
-The AFX and ONTAP FabricPool environments are very similar. Review https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html[Requirements for using ONTAP FabricPool^] for more information.
+The AFX and ONTAP FabricPool implementations are very similar. Review https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html[Requirements for using ONTAP FabricPool^] for more information.
 
 == Limitations and restrictions
 
@@ -30,16 +30,16 @@ The AFX FabricPool implementation is more restrictive than unified ONTAP in seve
 * FabricPool mirroring.
 * Multiple object store buckets or volume-granular bucket attach; a single cluster-level bucket per AFX cluster is used.
 * Optimized volume move, optimized SVM migrate, and optimized clone split.
-* SVM migrate and migration from unified ONTAP to AFX.
+* SVM migrate and migration from AFF or FAS systems to AFX systems.
 * Inactive data reporting (IDR/AutoIDR).
 
 == Licensing
 
-With unified ONTAP, a capacity-based FabricPool license is required when tiering to third-party public cloud object stores. But no additional license is required when using StorageGRID or ONTAP S3. Because AFX supports only StorageGRID and ONTAP S3, a FabricPool capacity license is not required for AFX FabricPool.
+With AFF and FAS systems, a capacity-based FabricPool license is required when tiering to third-party public cloud object stores, but no additional license is required when using StorageGRID or ONTAP S3. Because AFX supports only StorageGRID and ONTAP S3, a FabricPool capacity license is not required for AFX FabricPool.
 
 == Intercluster LIFs
 
-An intercluster LIF is a logical network interface used for cross-cluster or external communication. In unified ONTAP, the FabricPool HA pairs require two intercluster LIFs per pair to reach the cloud tier, and NetApp recommends additional intercluster LIFs for resiliency. With AFX, intercluster LIFs are also used for communication with the object store. Connectivity is validated across all nodes in the cluster as part of creating the object store configuration.
+An intercluster LIF is a logical network interface used for cross-cluster or external communication. With AFF and FAS systems, the FabricPool HA pairs require two intercluster LIFs per pair to reach the cloud tier, and NetApp recommends additional intercluster LIFs for resiliency. With AFX, intercluster LIFs are also used for communication with the object store. Connectivity is validated across all nodes in the cluster as part of creating the object store configuration.
 
 == Related information
 

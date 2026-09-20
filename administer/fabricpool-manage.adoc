@@ -2,26 +2,26 @@
 permalink: administer/fabricpool-manage.html
 sidebar: sidebar
 keywords: afx, oam, fabricpool, manage, monitor, space, tiering policy, zcvm, volume move, node join, node unjoin, flexaggr
-summary: "The ongoing management of AFX FabricPool is similar to unified ONTAP; you need to monitor space utilization, manage volumes, and adjust tiering policies. There are a few notable additions for the AFX environment including the behavior when nodes join or leave the AFX cluster."
+summary: "The ongoing management of FabricPool on AFX systems is similar to AFF and FAS systems. You need to monitor space utilization, manage volumes, and adjust tiering policies. There are a few notable additions for the AFX environment including the behavior when nodes join or leave the AFX cluster."
 ---
 = Manage FabricPool for AFX storage systems
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The ongoing management of AFX FabricPool is similar to unified ONTAP. You need to monitor space utilization, manage volumes, and adjust tiering policies. There are a few notable additions for the AFX environment including the behavior when nodes join or leave the AFX cluster.
+The ongoing management of FabricPool on AFX systems is similar to AFF and FAS systems. You need to monitor space utilization, manage volumes, and adjust tiering policies. There are a few notable additions for the AFX environment including the behavior when nodes join or leave the AFX cluster.
 
 == Monitor space and manage volumes
 
-The procedures used with AFX to monitor the capacity-tier and performance-tier usage, as well as routine volume management, are generally the same as those used with ONTAP. Note that in AFX, space reporting accounts for the disaggregated architecture. Because a volume can move between flexaggrs, volume-level space counters are accumulated from each flexaggr that owns part of the volume and may be slightly stale. Capacity-tier space information is available through cluster-level and availability-zone reporting rather than through an admin-visible aggregate.
+The procedures used with AFX to monitor the capacity-tier and performance-tier usage, as well as routine volume management, are generally the same as those used with ONTAP. Note that in AFX, space reporting accounts for the disaggregated architecture. Capacity-tier space information is available through cluster-level and availability-zone reporting rather than through an admin-visible aggregate.
 
 == Node join and node unjoin
 
-Node operations are FabricPool-aware on AFX, which is a significant difference with ONTAP. Note the following behaviors:
+Node operations are FabricPool-aware on AFX systems, which is a significant difference with ONTAP. Note the following behaviors:
 
 * *Node join.* When a node joins the AFX cluster and a cluster object store configuration already exists, the object store attach is triggered automatically. If the attach fails, the node join operation also fails.
 
-* *Node unjoin.* When a node is unjoined or removed from the cluster, the data flexaggrs are labeled "defunct". The associated volumes are relocated using ZCVM. The defunct object metafiles are retained so that its cloud objects remain accessible and can be garbage collected.
+* *Node unjoin.* When a node is unjoined or removed from the cluster, the data is labeled "defunct". The associated volumes are relocated using ZCVM. The defunct object metafiles are retained so that its cloud objects remain accessible and can be garbage collected.
 
 == Related information
 

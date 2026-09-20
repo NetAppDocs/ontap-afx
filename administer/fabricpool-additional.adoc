@@ -13,9 +13,7 @@ There are several additional considerations when deploying FabricPool on an AFX 
 
 == FabricPool mirrors
 
-A FabricPool mirror is a high-availability configuration for tiered cloud data, created by attaching a second object store to a single FabricPool. Once the additional mirror is configured, ONTAP synchronously tiers data to both object stores at the same time, ensuring the data remains accessible during a disaster or object-store outage. This same procedure applies to MetroCluster configurations, where the mirror extends object-store protection across two sites.
-
-Because AFX configures a single, cluster-level object store, *FabricPool mirroring is not supported on AFX in the initial release.* MetroCluster configurations, which rely on FabricPool mirrors in unified ONTAP for cross-site protection of tiered data, are likewise not supported with AFX. 
+A FabricPool mirror is a high-availability configuration for tiered cloud data, created by attaching a second object store to a single FabricPool. Once the additional mirror is configured, ONTAP synchronously tiers data to both object stores at the same time, ensuring the data remains accessible during a disaster or object-store outage. Because AFX configures a single, cluster-level object store, *FabricPool mirroring is not supported on AFX in the initial release.
 
 == Encryption
 
@@ -60,11 +58,9 @@ All the ONTAP volume creation and modification commands that control tiering beh
 
 Volumes default to a tiering policy of none, so tiering must be explicitly enabled per volume.
 
-Note that the FabricPool mirroring and MetroCluster commands are not supported on AFX because these features are not available with AFX. Also, any CLI commands related to mirror operations or MetroCluster-specific tiering workflows will not function and should not be attempted.
-
 === REST API
 
-The FabricPool REST API on AFX supports cluster-level object store management and volume-level tiering configuration. Aggregate-based endpoints are not supported due to the cluster-level architecture.
+The FabricPool REST API endpoints on AFX support cluster-level object store management and volume-level tiering configuration. Aggregate-based endpoints are not supported due to the cluster-level architecture.
 
 There are several supported endpoints including:
 

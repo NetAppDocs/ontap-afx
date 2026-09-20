@@ -2,7 +2,7 @@
 permalink: administer/fabricpool.html
 sidebar: sidebar
 keywords: afx, fabricpool, tiering, data tiering, cloud tier, object store
-summary: "You can use FabricPool to extend the usable capacity of your AFX storage system as well as reduce costs and improve efficiency. The feature supports a very large scale and is a key enabler for the types of data-intensive workloads that the AFX storage system is designed for."
+summary: "Beginning with ONTAP 9.19.1 P3, you can configure FabricPool to extend the usable capacity of your AFX storage system as well as reduce costs and improve efficiency."
 ---
 
 = Learn about FabricPool for AFX storage systems
@@ -10,31 +10,27 @@ summary: "You can use FabricPool to extend the usable capacity of your AFX stora
 :imagesdir: ../media/
 
 [.lead]
-You can use FabricPool to extend the usable capacity of your AFX storage system as well as reduce costs and improve efficiency. The feature supports a very large scale and is a key enabler for the types of data-intensive workloads that the AFX storage system is designed for.
+Beginning with ONTAP 9.19.1 P3, you can configure FabricPool to extend the usable capacity of your AFX storage system as well as reduce costs and improve efficiency.
 
 == FabricPool overview
 
-FabricPool is an ONTAP feature that moves data between a high-performance local tier and lower-cost remote cloud or capacity tier based on the data's activity or "temperature." It keeps the frequently accessed _hot_ data on fast local SSD storage while moving the rarely used _cold_ data to less expensive object storage. FabricPool operates automatically and transparently in the background; it doesn't require application changes or significant ongoing administration. And the related ONTAP storage efficiency features, such as compression and deduplication, are preserved when data moves to the cloud tier and back.
+FabricPool is an ONTAP feature that moves data between a high-performance local tier and lower-cost remote cloud or capacity tier based on the data's activity or "temperature." It keeps the frequently accessed _hot_ data on fast local SSD storage while moving the rarely used _cold_ data to less expensive object storage. FabricPool operates automatically and transparently in the background; it doesn't require application changes or significant ongoing administration. Related ONTAP storage efficiency features, such as compression and deduplication, are preserved when data moves to the cloud tier and back.
 
-Beginning with AFX 9.19.1 P3, the FabricPool feature has been extended to the AFX storage system. It's a key enabler of massive data scale, expanding AFX cluster capacity well beyond the local tier for data-heavy workloads. Although the AFX implementation introduces several architectural changes, the core operation and characteristics of the ONTAP feature remain the same.
+FabricPool tiering is supported for AFX storage systems with ONTAP 9.19.1 P3 and later releases, expanding AFX cluster capacity beyond the local tier for data-heavy workloads. Although the AFX implementation of FabricPool introduces a few architectural changes, the core operation and characteristics of the ONTAP feature remain the same.
 
-Administrators continue to control data tiering through per-volume policies as well as a minimum cooling period which defines when inactive data becomes eligible to be moved. This policy-driven model improves storage economics by reclaiming costly flash capacity, deferring new purchases, and offering a simple path to a hybrid capacity environment. It keeps the tiered data protected and available with minimal performance impact on the active working set.
+Administrators continue to control data tiering through per-volume policies as well as a minimum cooling period which defines when inactive data becomes eligible to be moved. This policy-driven model improves storage economics by reclaiming costly flash capacity and offering a simple path to a hybrid storage environment. It keeps the tiered data protected and available with minimal performance impact on the active working set.
 
-== Compare the unified ONTAP and AFX implementations
+== Compare AFF and FAS with AFX implementations
 
-While the FabricPool user-facing behavior is very similar in the two environments, the disaggregated AFX architecture introduces several differences. The most important of these differences are summarized below.
+While FabricPool behavior is very similar across ONTAP personalities (unified ONTAP for AFF and FAS systems, and the AFX ONTAP personality for AFX systems), the disaggregated AFX architecture introduces several differences. The most important areas for comparison between these two implementations are summarized below.
 
 [cols="1,2,2", options="header"]
 |===
-| Area or operation | Unified ONTAP | AFX storage system
+| Area or operation | AFF and FAS storage | AFX storage
 
 | Object store scope
 | Configured per aggregate with two steps; config create and then attach
 | Configured at the cluster level with a single command; one bucket defined per cluster
-
-| Aggregates
-| Visible to administrators
-| FlexAggrs are hidden from administrators
 
 | Default tiering policy
 | Default policy is `none`; must explicitly set a volume policy to begin tiering

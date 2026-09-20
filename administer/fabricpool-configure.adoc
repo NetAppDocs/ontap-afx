@@ -12,9 +12,9 @@ summary: "At a high level, configuring and activating FabricPool on an AFX stora
 [.lead]
 At a high level, configuring and activating FabricPool on an AFX storage system involves processes at two different levels. First you need to define a cloud tier at the cluster level for your data. Then you can activate tiering on specific volumes using one of several tiering policies.
 
-== Configure FabricPool at the AFX cluster level
+== Configure FabricPool at the ONTAP cluster level
 
-You need to define a single object bucket which is available for the entire cluster. All the volumes enabled for FabricPool data tiering use the same bucket.
+You need to define a single object bucket that is available to the entire ONTAP cluster. All the volumes enabled for FabricPool data tiering use the same bucket.
 
 .About this task
 
@@ -57,10 +57,6 @@ Confirm that the Cluster Dashboard Capacity card displays cloud tier usage. Note
 
 After FabricPool is configured at the cluster level, you can enable tiering on the individual volumes by setting the appropriate tiering policy. In general, the policies operate the same with AFX as they do with ONTAP.
 
-=== Understand FabricPool tiering policies
-
-Here are some of the important aspects of data tiering include the following:
-
 * *Volume-level tiering.* Tiering is enabled on a per-volume basis. You can set a different tiering policy for each volume. The volume's data is eligible to be moved to the cloud tier based on the policy.
 
 * *Tiering policies.* There are four tiering policies that can be defined for a volume, including:
@@ -69,7 +65,7 @@ Here are some of the important aspects of data tiering include the following:
 ** `all`
 ** `none`
 
-* *Default tiering policy.* The default policy is `none` which means no data is eligible to be moved to the cloud tier. In comparison, with ONTAP volumes on a newly attached aggregate instead default to `snapshot-only`.
+* *Default tiering policy.* The default policy is `none`, which means no data is eligible to be moved to the cloud tier. In comparison, ONTAP volumes on a newly attached aggregate default to `snapshot-only` on AFF and FAS systems.
 
 * *Policy trigger.* Setting a policy other than `none` triggers a cloud connection and activates data tiering.
 
@@ -83,7 +79,7 @@ For more information about the FabricPool tiering policies, refer to https://doc
 
 To enable tiering on a volume, in System Manager navigate to the *Volumes* page and select *Edit* then *Cloud Tier Settings* to configure a tiering policy and cooling period for each volume as needed. The default policy is none, so tiering must be explicitly enabled per volume. You can use the existing volume commands in the CLI.
 
-After tiering begins, you should monitor tiering and capacity utilization. Also verify volume tiering state and watch performance-tier and capacity-tier space usage. Note that Inactive Data Reporting (IDR/AutoIDR) is disabled on AFX, so plan to gauge tierable/cold data differently than on unified ONTAP.
+After tiering begins, you should monitor tiering and capacity utilization. Also verify volume tiering state and watch performance-tier and capacity-tier space usage. Note that Inactive Data Reporting (IDR/AutoIDR) is disabled on AFX, so plan to gauge tierable/cold data differently than on AFF or FAS systems.
 
 == Related information
 
