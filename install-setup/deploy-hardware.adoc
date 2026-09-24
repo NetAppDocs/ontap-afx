@@ -21,7 +21,7 @@ After you install the switches, you should install the hardware for your AFX 1K 
 
 CAUTION: Always wear a grounded wrist strap connected to a verified ground point during installation and maintenance procedures. Failure to follow proper ESD precautions can cause permanent damage to controller nodes, storage shelves, and network switches.
 
-NOTE: For complete information on supported AFX storage system configurations and limitations, including compatible disk drive types and capacities, see https://hwu.netapp.com[NetApp Hardware Universe^].
+NOTE: AFX does not support mixed drive sizes within a single storage shelf. All drives within a shelf must be of the same size. For complete compatibility information on AFX storage system configurations, see https://hwu.netapp.com[NetApp Hardware Universe^].
 
 .Steps
 
