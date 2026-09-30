@@ -33,8 +33,8 @@ While FabricPool behavior is very similar across ONTAP personalities (unified ON
 | Configured at the cluster level with a single command; one bucket defined per cluster
 
 | Default tiering policy
-| Default policy is `none`; must explicitly set a volume policy to begin tiering
-| Default policy is `none`; must explicitly set a volume policy to begin tiering
+| Default policy is `none` except FabricPool-enabled aggregates where default is `snapshot`
+| Default policy is `none`
 
 | Temperature tracking
 | Per-volume granularity
