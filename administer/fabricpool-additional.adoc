@@ -1,0 +1,86 @@
+---
+permalink: administer/fabricpool-additional.html
+sidebar: sidebar
+keywords: afx, fabricpool, mirrors, commands, cli, encryption, nve
+summary: "There are several additional considerations when deploying FabricPool on an AFX storage system."
+---
+= Additional considerations using FabricPool on AFX storage systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+There are several additional considerations when deploying FabricPool on an AFX storage system.
+
+== FabricPool mirrors
+
+A FabricPool mirror is a high-availability configuration for tiered cloud data, created by attaching a second object store to a single FabricPool. Once the additional mirror is configured, ONTAP synchronously tiers data to both object stores at the same time, ensuring the data remains accessible during a disaster or object-store outage. Because AFX configures a single, cluster-level object store, *FabricPool mirroring is not supported on AFX in the initial release.
+
+== Encryption
+
+Encryption operates with FabricPool on AFX with no additional configuration. But you should be aware of the following:
+
+* AFX supports NetApp Volume Encryption (NVE); NetApp Aggregate Encryption (NAE) is not supported.
+* NVE uses the same key for the performance tier and the capacity tier.
+* A rekey operation rewrites the entire volume's data with the new key, including cloud tier data.
+* A rekey operation and Zero Copy Volume Move cannot run at the same time.
+
+== Alternative administrative interfaces
+
+System Manager is the primary and recommended administrative interface for configuring and managing FabricPool on AFX. But you can also use the command line interface (CLI) or REST API to perform these tasks.
+
+=== Command line interface
+
+The AFX CLI has been redesigned to support FabricPool to align with the cluster focus and lack of aggregates.
+
+==== Cluster-level object store commands
+
+The following commands, available at the `admin` level, are used to manage the object store for tiered data:
+
+* *cluster object-store config create* Defines the configuration for a StorageGRID or ONTAP S3 object store and automatically attaches it to all flexaggrs in the cluster. This single command replaces the two-step process (config create + attach) used in unified ONTAP. The operation is idempotent and can be rerun if the initial attach fails.
+
+* *cluster object-store config modify* Modifies the object store configuration attributes. The same attributes that are modifiable in unified ONTAP (connection settings, credentials, certificate options) can be modified in AFX.
+
+* *cluster object-store config rename* Renames an existing object store configuration.
+
+* *cluster object-store config show* Displays the current object store configuration, including connection details and attachment status.
+
+* *cluster space show* Displays cluster-level space utilization, including the accumulated object store usage. The output includes logical used capacity, logical referenced capacity, logical unreferenced capacity, and total physical used space on the cloud tier.
+
+==== Volume-level tiering commands (admin and advanced mode):
+
+All the ONTAP volume creation and modification commands that control tiering behavior are fully supported on AFX with the same syntax. This includes the standard volume create and volume modify commands with the tiering-related parameters, including:
+
+* -tiering-policy
+* -tiering-minimum-cooling-days
+* -cloud-retrieval-policy
+* -is-cloud-write-enabled
+* -tiering-object-tags
+
+Volumes default to a tiering policy of none, so tiering must be explicitly enabled per volume.
+
+=== REST API
+
+The FabricPool REST API endpoints on AFX support cluster-level object store management and volume-level tiering configuration. Aggregate-based endpoints are not supported due to the cluster-level architecture.
+
+There are several supported endpoints including:
+
+* GET and POST for `/cloud/targets`
+* GET and PATCH for `/cloud/targets/{uuid}`
+
+* GET and POST for `/storage/volumes`
+* GET and PATCH for `/storage/volumes/{uuid} with the following tiering parameters:
+** tiering.policy
+** tiering.min_cooling_days
+** tiering.object_tags
+** cloud_retrieval_policy
+** cloud_write_enabled
+
+Unsupported endpoints and parameters include:
+
+* DELETE `/cloud/targets/{uuid}`
+* `tiering.supported parameter` on volume operations
+* All operations for `/storage/aggregates/{aggregate.uuid}/cloud-stores`
+
+== Related information
+
+* https://docs.netapp.com/us-en/ontap/fabricpool/commands-manage-aggregates-reference.html[ONTAP commands for managing FabricPool resources^]
