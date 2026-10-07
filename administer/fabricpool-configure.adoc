@@ -1,0 +1,87 @@
+---
+permalink: administer/fabricpool-configure.html
+sidebar: sidebar
+keywords: afx, fabricpool, object store, cluster object-store, tiering policy, attach, capacity tier
+summary: "At a high level, configuring and activating FabricPool on an AFX storage system involves processes at two different levels. First you need to define a cloud tier at the cluster level for your data. Then you can activate tiering on specific volumes using one of several tiering policies."
+---
+
+= Configure FabricPool for AFX storage systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+At a high level, configuring and activating FabricPool on an AFX storage system involves processes at two different levels. First you need to define a cloud tier at the cluster level for your data. Then you can activate tiering on specific volumes using one of several tiering policies.
+
+== Configure FabricPool at the ONTAP cluster level
+
+You need to define a single object bucket that is available to the entire ONTAP cluster. All the volumes enabled for FabricPool data tiering use the same bucket.
+
+.About this task
+
+Unlike ONTAP's two-step process which includes a per-aggregate attach, AFX relies on a single cluster-scoped process to configure the object store and attach all nodes to the bucket. Connectivity is also confirmed and the association to the object store is permanent.
+
+The configuration of the cloud tier is described using System Manager, but other options are available. For example, you can use the command `cluster object-store config create` with the CLI. Refer to link:../administer/fabricpool-additional.html[Additional considerations using FabricPool on AFX storage systems] for more information.
+
+.Before you begin
+
+* Review the AFX FabricPool prerequisites. For example, confirm the cluster is at the 9.19.1 level or later and was not upgraded from an earlier release. Refer to link:../administer/fabricpool-prepare.html[Prepare to implement FabricPool on an AFX storage system] for more details.
+* Provision an object store bucket. Create a bucket on either NetApp StorageGRID or ONTAP S3 with adequate capacity for your data. You can optionally install a CA certificate for the object store to provide a more secure connection.
+* Create the intercluster LIFs and verify connectivity to the object store. You need to define a pair of intercluster LIFs to reach the object store on each node in the AFX cluster. Verify that all the nodes can reach the object store endpoint and that name resolution is operational.
+
+.Steps
+
+. In System Manager, select the *Cloud Tiers* menu item in the left navigation pane.
++
+If no cloud tier is configured, an empty state page displays with an Add button.
+. Select *Add* to initiate cloud tier creation; a dialog appears with two options.
+. Select either StorageGRID or ONTAP S3 as your provider. The appropriate *Add Cloud Tier* form opens.
+. Provide the required object store information:, including:
+.. Object store name (configuration identifier)
+.. Server name (FQDN or IP address of the object store endpoint)
+.. Container name (bucket name)
+.. Access key and secret key (object store credentials)
+.. Certificate validation settings (recommended: enable with proper CA certificate)
+. Select the intercluster LIFs that will carry cloud tier traffic.
++
+If no suitable interfaces exist, an option to create new interfaces is provided.
+. Select *Save*.
++
+System Manager creates the cluster-level object store configuration and automatically attaches it to all the nodes in the cluster after verifying network connectivity.
+. Verify the cloud tier details on the Cloud Tiers page card.
+
+.After you finish
+
+Confirm that the Cluster Dashboard Capacity card displays cloud tier usage. Note that the bucket you assigned cannot be renamed after it's been identified for use by FabricPool. You can enable tiering on the individual data volumes as needed.
+
+== Enable tiering with volume-level policies
+
+After FabricPool is configured at the cluster level, you can enable tiering on the individual volumes by setting the appropriate tiering policy. In general, the policies operate the same with AFX as they do with ONTAP.
+
+* *Volume-level tiering.* Tiering is enabled on a per-volume basis. You can set a different tiering policy for each volume. The volume's data is eligible to be moved to the cloud tier based on the policy.
+
+* *Tiering policies.* There are four tiering policies that can be defined for a volume, including:
+** `snapshot-only`
+** `auto`
+** `all`
+** `none`
+
+* *Default tiering policy.* The default policy is `none`, which means no data is eligible to be moved to the cloud tier. In comparison, ONTAP volumes on a newly attached aggregate default to `snapshot-only` on AFF and FAS systems.
+
+* *Policy trigger.* Setting a policy other than `none` triggers a cloud connection and activates data tiering.
+
+* *Cooling period.* The cooling period determines how long data must remain inactive before it's eligible to tier. When using the CLI, this is normally set using the `-tiering-minimum-cooling-days` parameter. The default cooling period is 31 days for the auto policy and effectively ~2 days for snapshot-only. You can tune this for each volume to match the workload.
+
+* *Temperature tracking.* With AFX, temperature tracking is performed per volume rather than at the aggregate level.
+
+For more information about the FabricPool tiering policies, refer to https://docs.netapp.com/us-en/ontap/fabricpool/tiering-policies-concept.html[Tier data efficiently with ONTAP FabricPool policies^].
+
+=== Activate volume-level tiering and next steps
+
+To enable tiering on a volume, in System Manager navigate to the *Volumes* page and select *Edit* then *Cloud Tier Settings* to configure a tiering policy and cooling period for each volume as needed. The default policy is none, so tiering must be explicitly enabled per volume. You can use the existing volume commands in the CLI.
+
+After tiering begins, you should monitor tiering and capacity utilization. Also verify volume tiering state and watch performance-tier and capacity-tier space usage. Note that Inactive Data Reporting (IDR/AutoIDR) is disabled on AFX, so plan to gauge tierable/cold data differently than on AFF or FAS systems.
+
+== Related information
+
+* link:../administer/fabricpool-prepare.html[Prepare to implement FabricPool on an AFX storage system]
+* link:../administer/fabricpool.html[Learn about FabricPool for AFX storage systems]
