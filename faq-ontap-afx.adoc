@@ -127,3 +127,7 @@ In the initial 9.17.1 AFX release, volumes will move only in storage failover re
 .Does AFX support FabricPool?
 
 Yes. Beginning with ONTAP 9.19.1 P3, AFX storage systems support FabricPool for tiering data to capacity object storage. The AFX implementation has several architectural differences with ONTAP. For example, the cloud tier is attached to the entire cluster (or SAZ) versus individual aggregates; and only ONTAP S3 or StorageGRID buckets can be used. For more information, see link:./administer/fabricpool.html[Learn about FabricPool for AFX storage systems].
+
+.Can I use different drive sizes in my AFX storage shelves?
+
+No. AFX does not support mixed drive sizes within a single storage shelf. All the drives within a shelf must be the same size. See https://hwu.netapp.com/[NetApp Hardware Universe^] for complete compatibility information on AFX storage system configurations.
