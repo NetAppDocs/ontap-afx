@@ -81,7 +81,7 @@ The AFX storage system does not support NetApp MetroCluster. This creates a limi
 == Related information
 
 * https://docs.netapp.com/us-en/ontap/svm-migrate/index.html[ONTAP SVM data mobility^]
-* link:../get-started/compare-unified-ontap.html[Compare AFX storage system to AFF and FAS systems]
+* link:../get-started/compare-unified-ontap.html[How AFX differs from AFF and FAS storage systems]
 * link:../faq-ontap-afx.html[FAQ for AFX storage systems]
 
 // ONTAPDOC-3451
