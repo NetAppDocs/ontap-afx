@@ -80,6 +80,10 @@ After you have completed the preparation steps, you can remove the first node in
 
 Remove a node from an AFX cluster only after you have completed the steps necessary to prepare the node for removal. After you remove a node from the cluster, you must then remove its HA partner.
 
+.Before you begin
+
+It is recommended that you link:manage-autosupport.html[issue an AutoSupport message] to notify NetApp technical support that you are removing a node from your cluster.
+
 .Steps
 
 . Evacuate the node volumes:
