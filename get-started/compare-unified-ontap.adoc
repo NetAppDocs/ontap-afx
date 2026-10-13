@@ -4,7 +4,7 @@ permalink: get-started/compare-unified-ontap.html
 keywords: afx, afx system, compare afx, compare unified ontap
 summary: "NetApp AFX systems run a customized personality of ONTAP that differs from the ONTAP personality (referred to as Unified ONTAP) that runs on AFF and FAS storage. You should be aware of how AFX systems are similar to and different than FAS and AFF systems. This provides a valuable perspective and can be helpful when deploying AFX in your environment."
 ---
-= Compare AFX storage system to AFF and FAS systems
+= How AFX differs from AFF and FAS storage systems
 :icons: font
 :imagesdir: ../media/
 
@@ -75,7 +75,7 @@ The ONTAP CLI available with AFX generally mirrors the CLI available with AFF an
 == Related information
 
 * link:../get-started/system-design.html[AFX system characteristics]
-* link:../get-started/software-architecture.html[Details of the AFX architecture]
+* link:../get-started/software-architecture.html[AFX storage system architecture]
 * link:../faq-ontap-afx.html[FAQ for AFX storage systems]
 * link:../administer/additional-ontap-cluster.html[Additional AFX cluster administration]
 * link:../administer/additional-ontap-svm.html[Additional AFX SVM administration]
