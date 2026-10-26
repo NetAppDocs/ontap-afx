@@ -59,7 +59,7 @@ No. You cannot mix system nodes that run different ONTAP personalities in the sa
 
 .Can I use FlexCache with an AFX system cluster?
 
-Yes. AFX storage systems support FlexCache both to and from an AFF or FAS system running the Unified ONTAP personality. The only restriction is that FlexCache with write-back mode is not supported with AFX.
+Yes. AFX storage systems support FlexCache both to and from an AFF or FAS system running the unified ONTAP personality. However, you cannot use FlexCache write-back when FlexGroup Advanced Capacity Balancing is enabled for the same volume. ACB is enabled by default for every volume and so you must first disable it (using the option `-granular-data``) before you can enable FlexCache write-back. This same restriction also exists with unified ONTAP.
 
 .If I want to use an AFF or FAS system (running the Unified ONTAP personality) with an AFX system for SnapMirror or FlexCache, what ONTAP version do I need?
 
