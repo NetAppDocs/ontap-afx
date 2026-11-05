@@ -17,6 +17,19 @@ Learn about the new capabilities included with ONTAP 9.20.1 that are available w
 [NOTE]
 There are several new features available for AFX with ONTAP 9.20.1. Some of these are specific to AFX while many others are derived from a common shared product base. In addition to reviewing the AFX features described below, you should also refer to https://docs.netapp.com/us-en/ontap/release-notes/whats-new-9201.html[What's new in ONTAP 9.20.1^].
 
+== Data protection
+
+[cols="30%,70%",options="header"]
+|===
+| Update | Description
+
+// AS
+|a Replication from a non-SnapLock source consistency group to a SnapLock for SnapVault destination consistency group
+|a
+You can replicate from a non-SnapLock source consistency group to a SnapLock for SnapVault destination consistency group. SnapLock for SnapVault protects the replicated consistency groups from accidental or malicious deletion.
+
+|===
+
 == NAS
 
 [cols="30%,70%",options="header"]
@@ -30,6 +43,16 @@ Windows clients can retrieve canonical file and directory names in a single requ
 a| Support for auto UNMAP with VAAI-NAS to enable space reclamation
 a|
 ONTAP supports automatic space reclamation for NFS datastores through the NetApp NFS Plug-in for VMware VAAI. This helps reclaim space from thin-provisioned VMDK block ranges when VMware ESXi 9.0 or later hosts issue UNMAP operations.
+
+// DP - Unified
+a| Maximum directory size for ONTAP FlexVol volumes
+a|
+ONTAP improves performance for very large directories containing up to approximately 25 million files by qualifying directory sizes up to 4GB. Customers running workloads that generate extremely high file counts in a single directory, such as AI training, can benefit by avoiding the performance penalties previously seen with large directories. It also improves resiliency by ensuring directories stay fully indexed after a data protection failover, so replicated copies perform well even when a SnapMirror relationship is broken. This feature is available with AFX storage systems and can be enabled on each volume as needed.
+
+// DP - Unified
+a| Automatic SID-to-UNIX ID conversion support
+a|
+ONTAP introduces automatic SID-to-UNIX ID conversion support for LDAP-connected SVMs to generate and reverse POSIX UIDs/GIDs from Windows SIDs. This eliminates the need to manually maintain uidNumber/gidNumber attributes in Active Directory, reducing management overhead and helping ensure consistent file access across NFS and SMB. This industry-aligned feature is especially valuable for customers migrating large networks from SSSD-based NAS platforms and who want to preserve identity mapping consistency. The feature is disabled by default and configured per SVM.
 
 |===
 
@@ -76,9 +99,10 @@ ONTAP S3 supports AWS-compatible CRC-64NVME checksums for S3 NAS buckets. When a
 |===
 | Update | Description
 
-a| XXX
+// AS
+a| Support for improved performance after migrating data from an AFF or FAS system to an AFX system
 a|
-XXX
+Beginning with ONTAP 9.20.1, ONTAP reduces additional read latency and CPU usage that can occur after data is migrated from an AFF or FAS system to an AFX system.
 
 |===
 
@@ -88,13 +112,25 @@ XXX
 |===
 | Update | Description
 
+// DB
 a| Enhanced controls for ARP/AI snapshot response policies
 a|
 You can configure the ARP/AI snapshot response policy at the SVM or volume level to control whether ARP/AI creates snapshots when it detects abnormal activity. Three policies are available: `alert-with-proactive-and-periodic-snapshot` (default, preserves existing behavior), `alert-with-proactive-snapshot` (attack snapshots only, no periodic snapshots), and `alert-only` (alerts and event logs only, no snapshots created). After an upgrade to 9.20.1, the default periodic snapshot maximum count changes from 6 to 2, and the default retention period changes from 12 to 7 hours, unless those node-level options were previously modified. Refer to https://docs.netapp.com/us-en/ontap/modify-snapshot-options-arpai.html[Enhanced controls for ARP/AI snapshot response policies^] for more information.
 
 |===
 
-== Storage resource management enhancements
+== Storage efficiency
+
+[cols="30%,70%",options="header"]
+|===
+| Update | Description
+
+// DP - Unified
+a| Automatic Dedupe Scheduler (ADS) Optimization
+a|
+ONTAP improves ADS (Automatic Dedupe Scheduler) performance, allowing more concurrent dedupe sessions per node as well as smarter and more targeted throttling to better balance client I/O. Dedupe activity on DP volumes (from SnapMirror transfers) and Global Dedupe sessions is managed alongside regular volume dedupe which reduces contention and metadata growth. You can benefit from storage efficiency savings, especially under mixed workloads, with no configuration changes required. This feature is enabled by default and is available on AFX storage systems.
+
+== Storage resource management
 
 [cols="30%,70%",options="header"]
 |===
@@ -104,6 +140,21 @@ a| FSA - Accurate Directory Access Times
 a|
 File System Analytics scans and System Manager File System Explorer browsing preserve directory access-time (atime) metadata. This helps maintain accurate atime values for archival, tiering, compliance, and data lifecycle workflows.
 
+// DP - Unified
+a| FlexCache Volume Metrics
+a|
+FlexCache volume metrics report the amount of data and metadata exchanged between a FlexCache volume and its origin volume. Two new properties have been added to the existing ONTAP REST volume statistics and metrics endpoints that provide visibility into FlexCache-to-origin and origin-to-FlexCache data transfer. The counters are collected automatically with no configuration required; they are helpful for capacity planning, performance analysis, network troubleshooting, and chargeback analytics. This feature requires ONTAP 9.20 or later on both the FlexCache and origin nodes. Refer to the ONTAP automation documentation for more information.
+
+// DP - Unified
+a| Intra-cluster rebalancing
+a|
+ONTAP introduces two new Balanced Placement capabilities to help keep clusters performing optimally, with minimal administrative effort, as your workloads and cluster capacity evolve. Provisioning-time placement control allows customers to indicate whether performance or space requirements should be prioritized when a new volume is placed through the REST API. Space Performance Rebalance (SPR) is a background process that continuously looks for developing performance hot spots or aggregate space pressure across the cluster. Depending on the configured mode, SPR either recommends corrective volume moves through EMS notifications or automatically performs the moves using standard and non-disruptive ONTAP volume move operations. Refer to the ONTAP automation documentation for more information.
+
+// DP - Unified
+a| FabricPool tiering
+a|
+FabricPool is an ONTAP feature that moves data between a high-performance local tier and lower-cost remote cloud or capacity tier based on the data's activity. FabricPool has been formally extended to the AFX storage system beginning with ONTAP 9.20.1 and also available with 9.19.1 P3. It enables a much larger data scale to support data-heavy workloads. Although the AFX implementation introduces several architectural changes, the core characteristics of the ONTAP feature remain the same.
+
 |===
 
 == System Manager
@@ -112,10 +163,16 @@ File System Analytics scans and System Manager File System Explorer browsing pre
 |===
 | Update | Description
 
+// AS
 a| Support for certificate and user password expiration alerts
 a|
 System Manager displays a dashboard health alert 30 days before a cluster or storage virtual machine (SVM) certificate expires and updates it daily with the days remaining before expiration.
 
 Also, if the role associated with a user account is configured for password expiry alerts, the user receives a top-of-page banner alert in System Manager immediately after logging in, beginning 14 days before the password expires. The alert is updated each time the user logs in to show the number of days remaining until the password expires. You can configure expiry alerts when you add or edit an administrator role.
+
+// AS
+a|Support for additional AutoSupport alerts
+a|
+System Manager displays new AutoSupport alerts that can help you address AutoSupport configuration issues.
 
 |===
