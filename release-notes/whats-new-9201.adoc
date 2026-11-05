@@ -28,6 +28,26 @@ a| Replication from a non-SnapLock source consistency group to a SnapLock for Sn
 a|
 You can replicate from a non-SnapLock source consistency group to a SnapLock for SnapVault destination consistency group. SnapLock for SnapVault protects the replicated consistency groups from accidental or malicious deletion.
 
+// LV
+a| Object limits for SnapMirror active sync for NAS
+a|
+SnapMirror active sync for NAS increases the number of volumes supported to 600 for AFX platforms (4 x 4).
+
+// LV
+a| Learn about SnapMirror synchronous disaster recovery
+a|
+SnapMirror synchronous increases the number of replication operations to 600 for AFX platforms.
+
+// LV
+a| Enhanced SVM disaster recovery
+a|
+ONTAP 9.20.1 enhances SVM disaster recovery by allowing selected volume modify attributes on SVM-DR destination volumes using standard admin privilege volume modify workflows, reducing the need for Support-assisted procedures. The release also extends opt-in SVM-DR quick resync support to FlexGroup constituents, helping large FlexGroup-bearing SVMs to return to a protected state faster after DR rehearsal, resync, or flip-resync workflows.
+
+// LV
+a| SnapMirror cloud in-place restore to original source volume
+a|
+SnapMirror cloud supports in-place restore operations for FlexVol volumes, enabling you to perform a cloud snapshot restore operation directly back to the original source volume. ONTAP selects the latest common snapshot and performs an incremental transfer, reducing restore time.
+
 |===
 
 == NAS
@@ -184,6 +204,36 @@ ONTAP introduces two new Balanced Placement capabilities to help keep clusters p
 a| FabricPool tiering
 a|
 FabricPool is an ONTAP feature that moves data between a high-performance local tier and lower-cost remote cloud or capacity tier based on the data's activity. FabricPool has been formally extended to the AFX storage system beginning with ONTAP 9.20.1 and also available with 9.19.1 P3. It enables a much larger data scale to support data-heavy workloads. Although the AFX implementation introduces several architectural changes, the core characteristics of the ONTAP feature remain the same.
+
+// LV
+a| Support for deleting ONTAP S3 buckets that contain objects
+a|
+Administrators can schedule bucket deletion of buckets containing objects when using a configurable retention-based recovery window. This enables bucket recovery before the retention window expires. This feature reduces expiration backlog and makes capacity reusable faster for high-churn workloads.
+
+// LV
+a| Support SVM migration of S3 NAS buckets
+a|
+ONTAP 9.20.1 supports SVM migration for SVMs that host S3 NAS buckets on FlexVol volumes, allowing administrators to migrate SVMs without first removing S3 NAS configuration.
+
+// LV
+a| Calculate reclaimable space on FlexGroup volumes
+a|
+ONTAP supports calculating reclaimable space before deleting snapshots on FlexGroup volumes.
+
+// LV
+a| Performance enhancement for asynchronous deletion
+a|
+ONTAP enhances asynchronous deletion performance and accelerates space reclamation for NAS/SMB clients. Contact your NetApp representative for details.
+
+// LV
+a| Auto provisioning high performance FlexGroup volumes
+a|
+ONTAP simplifies FlexGroup provisioning with storage profiles that let customers choose a balanced or high-performance data container for their workloads, reducing the need for administrators to manually configure and size constituent volumes to meet performance requirements.
+
+// LV
+a| NVFAIL support with FlexCache
+a|
+You can create FlexCache relationships with NVFAIL-enabled origins. You can also enable NVFAIL on cache volumes, independent of origin volumes. On origin or cache volumes where NVFAIL has occurred, ONTAP blocks data reads or mutations while preserving write-back of modified cached data, and normal I/O resumes after recovery.
 
 |===
 
