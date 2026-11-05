@@ -185,6 +185,16 @@ ONTAP improves ADS (Automatic Dedupe Scheduler) performance, allowing more concu
 |===
 | Update | Description
 
+// DP
+a| AFX 32-node enterprise support
+a|
+You can deploy ONTAP AFX clusters at full 32-node scale with complete enterprise feature support, matching the capabilities previously available only with smaller AFX deployments. This enables enterprise customers, specifically those running AI/ML training and data pipelines, to build larger and more dense storage clusters without sacrificing enterprise data services such as tiering, data protection, snapshots, and resiliency. Full NAS and object protocol support—​including NFS, SMB, S3, FlexGroup, and FlexCache—​has been validated at this scale, along with HA and recovery workflows, to ensure reliable operation as your AFX deployments grow.
+
+// DP
+a| FabricPool tiering
+a|
+FabricPool is an ONTAP feature that moves data between a high-performance local tier and lower-cost remote cloud or capacity tier based on the data's activity. FabricPool has been formally extended to the AFX storage system beginning with ONTAP 9.20.1 and also available with 9.19.1 P3. It enables a much larger data scale to support data-heavy workloads. Although the AFX implementation introduces several architectural changes, the core characteristics of the ONTAP feature remain the same.
+
 // Deena
 a| FSA - Accurate Directory Access Times
 a|
@@ -199,11 +209,6 @@ FlexCache volume metrics report the amount of data and metadata exchanged betwee
 a| Intra-cluster rebalancing
 a|
 ONTAP introduces two new Balanced Placement capabilities to help keep clusters performing optimally, with minimal administrative effort, as your workloads and cluster capacity evolve. Provisioning-time placement control allows customers to indicate whether performance or space requirements should be prioritized when a new volume is placed through the REST API. Space Performance Rebalance (SPR) is a background process that continuously looks for developing performance hot spots or aggregate space pressure across the cluster. Depending on the configured mode, SPR either recommends corrective volume moves through EMS notifications or automatically performs the moves using standard and non-disruptive ONTAP volume move operations. Refer to the ONTAP automation documentation for more information.
-
-// DP - Unified
-a| FabricPool tiering
-a|
-FabricPool is an ONTAP feature that moves data between a high-performance local tier and lower-cost remote cloud or capacity tier based on the data's activity. FabricPool has been formally extended to the AFX storage system beginning with ONTAP 9.20.1 and also available with 9.19.1 P3. It enables a much larger data scale to support data-heavy workloads. Although the AFX implementation introduces several architectural changes, the core characteristics of the ONTAP feature remain the same.
 
 // LV
 a| Support for deleting ONTAP S3 buckets that contain objects
