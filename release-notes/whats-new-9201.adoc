@@ -70,6 +70,18 @@ ONTAP S3 supports AWS-compatible CRC-64NVME checksums for S3 NAS buckets. When a
 
 |===
 
+== SAN
+
+[cols="30%,70%",options="header"]
+|===
+| Update | Description
+
+a| XXX
+a|
+XXX
+
+|===
+
 == Security
 
 [cols="30%,70%",options="header"]
@@ -91,5 +103,19 @@ You can configure the ARP/AI snapshot response policy at the SVM or volume level
 a| FSA - Accurate Directory Access Times
 a|
 File System Analytics scans and System Manager File System Explorer browsing preserve directory access-time (atime) metadata. This helps maintain accurate atime values for archival, tiering, compliance, and data lifecycle workflows.
+
+|===
+
+== System Manager
+
+[cols="30%,70%",options="header"]
+|===
+| Update | Description
+
+a| Support for certificate and user password expiration alerts
+a|
+System Manager displays a dashboard health alert 30 days before a cluster or storage virtual machine (SVM) certificate expires and updates it daily with the days remaining before expiration.
+
+Also, if the role associated with a user account is configured for password expiry alerts, the user receives a top-of-page banner alert in System Manager immediately after logging in, beginning 14 days before the password expires. The alert is updated each time the user logs in to show the number of days remaining until the password expires. You can configure expiry alerts when you add or edit an administrator role.
 
 |===

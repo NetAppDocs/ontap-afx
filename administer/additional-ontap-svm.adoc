@@ -89,9 +89,9 @@ There are several optional security features you can configure and use with your
 
 FPolicy is a file access notification framework used to monitor and manage file access events on storage virtual machines (SVMs). You can use FPolicy to create policies that define which file operations to monitor, and optionally block, based on criteria you define. FPolicy is commonly used for security auditing, compliance, and data governance. Learn more about https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[ONTAP FPolicy solutions^].
 
-Learn more about https://docs.netapp.com/us-en/ontap/nas-audit/supported-file-operation-filter-fpolicy-nfsv4-concept.html [supported file operation and filter combinations that ONTAP FPolicy monitors for NFSv4^].
+Learn more about https://docs.netapp.com/us-en/ontap/nas-audit/supported-file-operation-filter-fpolicy-nfsv4-concept.html[supported file operation and filter combinations that ONTAP FPolicy monitors for NFSv4^].
 
-Learn more about https://docs.netapp.com/us-en/ontap/nas-audit/supported-file-operation-filter-fpolicy-s3-concept.html [supported file operation and filter combinations that FPolicy can monitor for S3^].
+Learn more about https://docs.netapp.com/us-en/ontap/nas-audit/supported-file-operation-filter-fpolicy-s3-concept.html[supported file operation and filter combinations that FPolicy can monitor for S3^].
 
 === NFS over TLS
 
