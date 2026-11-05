@@ -24,8 +24,8 @@ There are several new features available for AFX with ONTAP 9.20.1. Some of thes
 | Update | Description
 
 // AS
-|a Replication from a non-SnapLock source consistency group to a SnapLock for SnapVault destination consistency group
-|a
+a| Replication from a non-SnapLock source consistency group to a SnapLock for SnapVault destination consistency group
+a|
 You can replicate from a non-SnapLock source consistency group to a SnapLock for SnapVault destination consistency group. SnapLock for SnapVault protects the replicated consistency groups from accidental or malicious deletion.
 
 |===
@@ -129,6 +129,8 @@ You can configure the ARP/AI snapshot response policy at the SVM or volume level
 a| Automatic Dedupe Scheduler (ADS) Optimization
 a|
 ONTAP improves ADS (Automatic Dedupe Scheduler) performance, allowing more concurrent dedupe sessions per node as well as smarter and more targeted throttling to better balance client I/O. Dedupe activity on DP volumes (from SnapMirror transfers) and Global Dedupe sessions is managed alongside regular volume dedupe which reduces contention and metadata growth. You can benefit from storage efficiency savings, especially under mixed workloads, with no configuration changes required. This feature is enabled by default and is available on AFX storage systems.
+
+|===
 
 == Storage resource management
 
