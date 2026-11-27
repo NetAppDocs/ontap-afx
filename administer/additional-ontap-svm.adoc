@@ -91,7 +91,7 @@ FPolicy is a file access notification framework used to monitor and manage file 
 
 Learn more about https://docs.netapp.com/us-en/ontap/nas-audit/supported-file-operation-filter-fpolicy-nfsv4-concept.html[supported file operation and filter combinations that ONTAP FPolicy monitors for NFSv4^].
 
-Learn more about https://docs.netapp.com/us-en/ontap/nas-audit/supported-file-operation-filter-fpolicy-s3-concept.html[supported file operation and filter combinations that FPolicy can monitor for S3^].
+Learn more about https://docs.netapp.com/us-en/ontap/nas-audit/supported-file-operation-filter-fpolicy-s3.html[supported file operation and filter combinations that FPolicy can monitor for S3^].
 
 === NFS over TLS
 
